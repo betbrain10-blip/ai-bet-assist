@@ -16,13 +16,14 @@
   --border:#e6e9f2;
   --grad:linear-gradient(90deg,#4f46e5,#06b6d4);
 }
+*{box-sizing:border-box}
 body{
   margin:0;
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
   background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
   color:var(--ink);
 }
-.wrap{max-width:760px;margin:auto;padding:18px}
+.wrap{max-width:860px;margin:auto;padding:18px}
 .card{
   background:var(--card);
   border:1px solid var(--border);
@@ -36,73 +37,102 @@ body{
   padding:6px 12px;
   border-radius:999px;
   font-size:12px;
-  font-weight:700;
+  font-weight:800;
   background:#eef2ff;
   color:#4338ca
 }
 h1{margin:10px 0 4px;font-size:22px}
 h2{margin:0 0 10px;font-size:16px}
-.sub{font-size:14px;color:var(--muted)}
-.item{
-  border:1px solid var(--border);
-  border-radius:14px;
-  padding:12px;
-  margin:8px 0
+.sub{font-size:14px;color:var(--muted);line-height:1.35}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.actions{
+  display:flex; gap:10px; flex-wrap:wrap; margin-top:12px
 }
+.actions a{
+  flex:1; min-width:160px;
+  text-align:center;
+  padding:12px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  text-decoration:none;
+  font-weight:800;
+  color:var(--ink);
+  background:#fff
+}
+.small{font-size:12px;color:var(--muted)}
+.note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.35}
+hr{border:none;border-top:1px solid var(--border);margin:12px 0}
 button{
-  width:100%;
-  padding:14px;
+  padding:12px 14px;
   border:none;
   border-radius:14px;
   background:var(--grad);
   color:#fff;
-  font-size:16px;
-  font-weight:700;
+  font-size:15px;
+  font-weight:850;
   cursor:pointer
+}
+.btnLight{
+  background:#fff;
+  color:var(--ink);
+  border:1px solid var(--border);
 }
 input,select{
   width:100%;
   padding:12px;
   border-radius:14px;
   border:1px solid var(--border);
-  font-size:16px;
+  font-size:15px;
   margin-top:6px
 }
-.actions{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:12px
+.table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0 8px;
 }
-.actions a{
-  flex:1;
-  text-align:center;
-  padding:12px;
-  border-radius:14px;
+.table th{
+  text-align:left;
+  font-size:12px;
+  color:var(--muted);
+  font-weight:800;
+  padding:0 8px;
+}
+.tr{
+  background:#fff;
   border:1px solid var(--border);
-  text-decoration:none;
-  font-weight:700;
-  color:var(--ink);
-  background:#fff
+  border-radius:14px;
 }
-.note{
-  font-size:12px;
-  color:var(--muted);
-  margin-top:10px
+.table td{
+  padding:10px 8px;
+  vertical-align:top;
 }
-.result{
-  display:none;
-  margin-top:12px;
-  padding:12px;
+.pill{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
   background:#f3f4f6;
-  border-radius:14px
-}
-.footer{
-  text-align:center;
+  border:1px solid var(--border);
   font-size:12px;
-  color:var(--muted);
-  margin:16px 0
+  font-weight:800;
 }
+.kpi{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+}
+@media (min-width:720px){
+  .kpi{grid-template-columns:1fr 1fr 1fr}
+}
+.kcard{
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:12px;
+  background:#fff;
+}
+.klabel{font-size:12px;color:var(--muted);font-weight:800}
+.kvalue{font-size:18px;font-weight:900;margin-top:4px}
+.footer{text-align:center;font-size:12px;color:var(--muted);margin:16px 0}
+.danger{color:#b91c1c;font-weight:800}
 </style>
 </head>
 
@@ -112,82 +142,149 @@ input,select{
 <!-- HEADER -->
 <div class="card">
   <span class="badge">AI BET ASSIST</span>
-  <h1>Esperienza IA per Centri Scommesse</h1>
-  <p class="sub">Quote • Suggerimenti IA • Simulatore (supporto informativo)</p>
+  <h1>Divertiti con Multiple & Sistemi</h1>
+  <p class="sub">
+    Crea la tua giocata: aggiungi partite, inserisci le quote del centro e scegli
+    <b>Multipla</b> oppure <b>Sistema</b> (es. 2/3, 3/5…).<br>
+    <span class="small">Supporto informativo / intrattenimento. Nessuna garanzia di risultato. Gioca responsabilmente.</span>
+  </p>
 
   <div class="actions">
     <a id="btnWhats" href="#" target="_blank">💬 WhatsApp</a>
     <a id="btnMaps" href="#" target="_blank">📍 Maps</a>
     <a id="btnCall" href="#">📞 Chiama</a>
   </div>
+</div>
+
+<!-- LISTA PARTITE (DA AGGIORNARE DAL CENTRO) -->
+<div class="card">
+  <h2>⚽ Partite di oggi (lista del centro)</h2>
+  <p class="note">
+    Qui il centro può mostrare le partite “calde” di oggi. Il cliente sceglie e inserisce le quote reali che vede al banco.
+    <br><span class="small">Per ora è manuale (super semplice). In futuro si può automatizzare con un feed quote.</span>
+  </p>
+
+  <div class="row">
+    <div style="flex:2;min-width:220px">
+      <label class="small">Aggiungi partita (testo)</label>
+      <input id="newMatch" placeholder="Es: Milan - Atalanta">
+    </div>
+    <div style="flex:1;min-width:160px">
+      <label class="small">Mercato</label>
+      <select id="newMarket">
+        <option>1X2</option>
+        <option>Over 1.5</option>
+        <option>Over 2.5</option>
+        <option>Under 2.5</option>
+        <option>Goal/NoGoal</option>
+        <option>DNB</option>
+      </select>
+    </div>
+    <div style="flex:1;min-width:140px">
+      <label class="small">Quota</label>
+      <input id="newOdd" type="number" step="0.01" min="1.01" placeholder="Es: 1.85">
+    </div>
+    <div style="display:flex;align-items:flex-end;gap:8px">
+      <button onclick="addPick()">➕ Aggiungi</button>
+      <button class="btnLight" onclick="addSample()">✨ Esempio</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <table class="table" id="picksTable">
+    <thead>
+      <tr>
+        <th>Partita</th>
+        <th>Mercato</th>
+        <th>Quota</th>
+        <th>Azioni</th>
+      </tr>
+    </thead>
+    <tbody id="picksBody"></tbody>
+  </table>
+
+  <p id="emptyMsg" class="note">Nessuna selezione ancora. Aggiungi 2–6 partite per giocare con multiple e sistemi.</p>
+</div>
+
+<!-- MULTIPLE & SISTEMI -->
+<div class="card">
+  <h2>🧩 Multiple & Sistemi</h2>
+
+  <div class="row">
+    <div style="flex:1;min-width:220px">
+      <label class="small">Tipo giocata</label>
+      <select id="playType" onchange="recalc()">
+        <option value="multi">Multipla (tutte)</option>
+        <option value="system">Sistema</option>
+      </select>
+    </div>
+
+    <div style="flex:1;min-width:220px">
+      <label class="small">Sistema (k su n)</label>
+      <select id="systemType" onchange="recalc()">
+        <option value="2">2 su n</option>
+        <option value="3">3 su n</option>
+        <option value="4">4 su n</option>
+        <option value="5">5 su n</option>
+      </select>
+      <div class="small">Attivo solo se scegli “Sistema”.</div>
+    </div>
+
+    <div style="flex:1;min-width:200px">
+      <label class="small">Stake totale (€)</label>
+      <input id="stake" type="number" min="1" step="1" value="5" oninput="recalc()">
+      <div class="small">Nel sistema lo stake viene diviso su tutte le combinazioni.</div>
+    </div>
+  </div>
+
+  <div style="height:10px"></div>
+
+  <div class="kpi">
+    <div class="kcard">
+      <div class="klabel">Numero selezioni</div>
+      <div class="kvalue" id="k_n">0</div>
+    </div>
+    <div class="kcard">
+      <div class="klabel">Combinazioni</div>
+      <div class="kvalue" id="k_combo">0</div>
+    </div>
+    <div class="kcard">
+      <div class="klabel">Stake per combinazione</div>
+      <div class="kvalue" id="k_unit">€0.00</div>
+    </div>
+  </div>
+
+  <div style="height:10px"></div>
+
+  <div class="kpi">
+    <div class="kcard">
+      <div class="klabel">Quota multipla (tutte)</div>
+      <div class="kvalue" id="k_multiOdd">—</div>
+      <div class="small">Solo informativo (moltiplicazione quote).</div>
+    </div>
+    <div class="kcard">
+      <div class="klabel">Sistema: vincita MIN (1 combo)</div>
+      <div class="kvalue" id="k_min">—</div>
+      <div class="small">Stima minima se ne vince 1 (solo demo calcolo).</div>
+    </div>
+    <div class="kcard">
+      <div class="klabel">Sistema: vincita MAX (tutte combo)</div>
+      <div class="kvalue" id="k_max">—</div>
+      <div class="small">Stima massima se vincono tutte le combo.</div>
+    </div>
+  </div>
 
   <p class="note">
-    Strumento informativo. Gioco responsabile.
+    <b>Nota:</b> i calcoli sono matematici sulle quote inserite. La giocata reale si effettua al banco secondo le regole del centro.
   </p>
-</div>
 
-<!-- QUOTE -->
-<div class="card">
-  <h2>📊 Quote del centro (esempio)</h2>
-
-  <div class="item">
-    <b>Stoccarda — Over 2.5</b><br>
-    <span class="sub">Quota 1.47 • Goal Totali</span>
-  </div>
-
-  <div class="item">
-    <b>Match 2 — 1X</b><br>
-    <span class="sub">Quota 1.35 • Esito Finale</span>
-  </div>
-
-  <div class="item">
-    <b>Match 3 — DNB</b><br>
-    <span class="sub">Quota 1.50 • Draw No Bet</span>
+  <div class="row" style="justify-content:flex-start;align-items:center">
+    <button class="btnLight" onclick="clearAll()">🧹 Svuota</button>
   </div>
 </div>
 
-<!-- IA -->
-<div class="card">
-  <h2>🤖 Suggerimento IA del giorno</h2>
-
-  <div class="item">
-    <b>Selezione:</b> Over 1.5 (1–2 match)<br>
-    <span class="sub">Analisi su trend goal, forma e ritmo partita</span><br><br>
-    <b>Affidabilità stimata:</b> ⭐⭐⭐⭐☆
-  </div>
-
-  <p class="note">
-    Non è un consiglio di gioco e non garantisce risultati.
-  </p>
-</div>
-
-<!-- SIMULATORE -->
-<div class="card">
-  <h2>🎯 Simulatore IA</h2>
-
-  <label>Importo (€)</label>
-  <input id="stake" type="number" value="5">
-
-  <label style="margin-top:10px">Profilo</label>
-  <select id="profile">
-    <option value="prudente">Prudente (1.60–2.00)</option>
-    <option value="equilibrato" selected>Equilibrato (2.00–2.60)</option>
-    <option value="aggressivo">Aggressivo (2.60–3.50)</option>
-  </select>
-
-  <div style="margin-top:14px"></div>
-  <button onclick="simulate()">SIMULA</button>
-
-  <div id="out" class="result"></div>
-
-  <p class="note">
-    La giocata reale è disponibile al banco.
-  </p>
-</div>
-
-<div class="footer">
-  © AI Bet Assist – Demo
-</div>
+<div class="footer">© AI Bet Assist – Template per Centri Scommesse</div>
 
 </div>
 
@@ -196,7 +293,7 @@ input,select{
 const PHONE_INTL = "39XXXXXXXXXX";
 const PHONE_DISPLAY = "+39 XXX XXX XXXX";
 const MAPS_LINK = "https://www.google.com/maps";
-const WHATS_MSG = "Ciao! Ho scansionato il QR dal centro. Vorrei informazioni.";
+const WHATS_MSG = "Ciao! Ho scansionato il QR dal centro. Vorrei informazioni su quote/orari.";
 
 // BOTTONI
 document.getElementById("btnWhats").href =
@@ -205,28 +302,178 @@ document.getElementById("btnMaps").href = MAPS_LINK;
 document.getElementById("btnCall").href = "tel:+" + PHONE_INTL;
 document.getElementById("btnCall").innerText = "📞 " + PHONE_DISPLAY;
 
-// SIMULATORE
-function rnd(min,max){return Math.random()*(max-min)+min}
-function simulate(){
-  const stake = Number(document.getElementById("stake").value);
-  const p = document.getElementById("profile").value;
+// ====== PICKS STORAGE ======
+let picks = [];
 
-  let qMin=2,qMax=2.6,picks=2;
-  if(p==="prudente"){qMin=1.6;qMax=2}
-  if(p==="aggressivo"){qMin=2.6;qMax=3.5;picks=3}
+function fmt2(n){ return "€" + (Math.round(n*100)/100).toFixed(2); }
 
-  const quota = (rnd(qMin,qMax)).toFixed(2);
-  const win = (stake*quota).toFixed(2);
+function addPick(){
+  const m = (document.getElementById("newMatch").value || "").trim();
+  const mk = document.getElementById("newMarket").value;
+  const o = Number(document.getElementById("newOdd").value);
 
-  const out = document.getElementById("out");
-  out.style.display="block";
-  out.innerHTML =
-    "<b>Risultato simulazione</b><br>" +
-    "Profilo: <b>"+p+"</b><br>" +
-    "Selezioni: <b>"+picks+"</b><br>" +
-    "Quota stimata: <b>"+quota+"</b><br>" +
-    "Vincita potenziale: <b>"+win+" €</b>";
+  if(!m){ alert("Inserisci una partita."); return; }
+  if(!o || o < 1.01){ alert("Inserisci una quota valida (>= 1.01)."); return; }
+
+  picks.push({match:m, market:mk, odd:o});
+  document.getElementById("newMatch").value = "";
+  document.getElementById("newOdd").value = "";
+  render();
+  recalc();
 }
+
+function addSample(){
+  const samples = [
+    {match:"Inter - Juventus", market:"Over 1.5", odd:1.55},
+    {match:"Milan - Roma", market:"1X2", odd:1.95},
+    {match:"Napoli - Lazio", market:"DNB", odd:1.70},
+    {match:"Atalanta - Fiorentina", market:"Over 2.5", odd:1.85},
+    {match:"Torino - Bologna", market:"Under 2.5", odd:1.72},
+  ];
+  // aggiunge 3 campioni al massimo
+  const toAdd = samples.slice(0,3);
+  picks = picks.concat(toAdd);
+  render();
+  recalc();
+}
+
+function removePick(i){
+  picks.splice(i,1);
+  render();
+  recalc();
+}
+
+function clearAll(){
+  picks = [];
+  render();
+  recalc();
+}
+
+function render(){
+  const body = document.getElementById("picksBody");
+  body.innerHTML = "";
+  document.getElementById("emptyMsg").style.display = picks.length ? "none" : "block";
+
+  picks.forEach((p,i)=>{
+    const tr = document.createElement("tr");
+    tr.className = "tr";
+    tr.innerHTML = `
+      <td><b>${escapeHtml(p.match)}</b></td>
+      <td><span class="pill">${escapeHtml(p.market)}</span></td>
+      <td><b>${Number(p.odd).toFixed(2)}</b></td>
+      <td><button class="btnLight" onclick="removePick(${i})">❌ Rimuovi</button></td>
+    `;
+    body.appendChild(tr);
+  });
+}
+
+function escapeHtml(str){
+  return String(str)
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+}
+
+// combinazioni nCk
+function nCk(n,k){
+  if(k<0 || k>n) return 0;
+  if(k===0 || k===n) return 1;
+  k = Math.min(k, n-k);
+  let res = 1;
+  for(let i=1;i<=k;i++){
+    res = res * (n - (k - i)) / i;
+  }
+  return Math.round(res);
+}
+
+function recalc(){
+  const n = picks.length;
+  document.getElementById("k_n").innerText = String(n);
+
+  const playType = document.getElementById("playType").value;
+  const k = Number(document.getElementById("systemType").value);
+  const stakeTotal = Number(document.getElementById("stake").value || 0);
+
+  // quota multipla (tutte)
+  let multiOdd = 1;
+  picks.forEach(p=> multiOdd *= Number(p.odd));
+  document.getElementById("k_multiOdd").innerText = n ? multiOdd.toFixed(2) : "—";
+
+  if(playType === "multi"){
+    // combinazioni = 1, stake per combo = stake totale
+    document.getElementById("k_combo").innerText = n ? "1" : "0";
+    document.getElementById("k_unit").innerText = n ? fmt2(stakeTotal) : "€0.00";
+
+    const win = (stakeTotal * multiOdd);
+    document.getElementById("k_min").innerText = n ? fmt2(win) : "—";
+    document.getElementById("k_max").innerText = n ? fmt2(win) : "—";
+    return;
+  }
+
+  // SISTEMA
+  // se k > n, non possibile
+  if(n === 0){
+    document.getElementById("k_combo").innerText = "0";
+    document.getElementById("k_unit").innerText = "€0.00";
+    document.getElementById("k_min").innerText = "—";
+    document.getElementById("k_max").innerText = "—";
+    return;
+  }
+  if(k > n){
+    document.getElementById("k_combo").innerText = "0";
+    document.getElementById("k_unit").innerText = "€0.00";
+    document.getElementById("k_min").innerText = "—";
+    document.getElementById("k_max").innerText = "—";
+    return;
+  }
+
+  const combos = nCk(n,k);
+  document.getElementById("k_combo").innerText = String(combos);
+
+  const unit = combos ? (stakeTotal / combos) : 0;
+  document.getElementById("k_unit").innerText = fmt2(unit);
+
+  // Calcolo range:
+  // - MAX = somma vincite di tutte le combinazioni k (se tutte vincono)
+  // - MIN = vincita di una singola combinazione "più bassa" (stima prudente)
+  // Per farlo semplice: ordina quote crescenti -> min combo = prodotto delle k più basse
+  const odds = picks.map(p=>Number(p.odd)).sort((a,b)=>a-b);
+
+  // MIN stimato: 1 sola combo con quote più basse
+  let minComboOdd = 1;
+  for(let i=0;i<k;i++) minComboOdd *= odds[i];
+  const minWin = unit * minComboOdd;
+
+  // MAX: somma di tutte le combinazioni (calcolo completo per k fino a 5, n ragionevole)
+  // Per n max 10 e k max 5 va benissimo.
+  let maxWin = 0;
+  const arr = picks.map(p=>Number(p.odd));
+
+  // genera combinazioni k
+  function backtrack(start, chosen){
+    if(chosen.length === k){
+      let prod = 1;
+      for(const idx of chosen) prod *= arr[idx];
+      maxWin += unit * prod;
+      return;
+    }
+    for(let i=start; i<arr.length; i++){
+      chosen.push(i);
+      backtrack(i+1, chosen);
+      chosen.pop();
+    }
+  }
+  backtrack(0, []);
+
+  document.getElementById("k_min").innerText = fmt2(minWin);
+  document.getElementById("k_max").innerText = fmt2(maxWin);
+}
+
+// init
+render();
+recalc();
 </script>
 
 </body>
