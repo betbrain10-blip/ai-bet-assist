@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Bet Assist</title>
+
+<style>
+:root{
+  --bg1:#f6f7fb;
+  --bg2:#eef7ff;
+  --bg3:#f7f0ff;
+  --ink:#0b1220;
+  --muted:#5f6b85;
+  --card:#ffffff;
+  --border:#e6e9f2;
+  --grad:linear-gradient(90deg,#4f46e5,#06b6d4);
+}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+  color:var(--ink);
+}
+.wrap{max-width:760px;margin:auto;padding:18px}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:16px;
+  margin:12px 0;
+  box-shadow:0 10px 25px rgba(0,0,0,.08)
+}
+.badge{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  background:#eef2ff;
+  color:#4338ca
+}
+h1{margin:10px 0 4px;font-size:22px}
+h2{margin:0 0 10px;font-size:16px}
+.sub{font-size:14px;color:var(--muted)}
+.item{
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:12px;
+  margin:8px 0
+}
+button{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:var(--grad);
+  color:#fff;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer
+}
+input,select{
+  width:100%;
+  padding:12px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  font-size:16px;
+  margin-top:6px
+}
+.actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:12px
+}
+.actions a{
+  flex:1;
+  text-align:center;
+  padding:12px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  text-decoration:none;
+  font-weight:700;
+  color:var(--ink);
+  background:#fff
+}
+.note{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:10px
+}
+.result{
+  display:none;
+  margin-top:12px;
+  padding:12px;
+  background:#f3f4f6;
+  border-radius:14px
+}
+.footer{
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+  margin:16px 0
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<!-- HEADER -->
+<div class="card">
+  <span class="badge">AI BET ASSIST</span>
+  <h1>Esperienza IA per Centri Scommesse</h1>
+  <p class="sub">Quote • Suggerimenti IA • Simulatore (supporto informativo)</p>
+
+  <div class="actions">
+    <a id="btnWhats" href="#" target="_blank">💬 WhatsApp</a>
+    <a id="btnMaps" href="#" target="_blank">📍 Maps</a>
+    <a id="btnCall" href="#">📞 Chiama</a>
+  </div>
+
+  <p class="note">
+    Strumento informativo. Gioco responsabile.
+  </p>
+</div>
+
+<!-- QUOTE -->
+<div class="card">
+  <h2>📊 Quote del centro (esempio)</h2>
+
+  <div class="item">
+    <b>Stoccarda — Over 2.5</b><br>
+    <span class="sub">Quota 1.47 • Goal Totali</span>
+  </div>
+
+  <div class="item">
+    <b>Match 2 — 1X</b><br>
+    <span class="sub">Quota 1.35 • Esito Finale</span>
+  </div>
+
+  <div class="item">
+    <b>Match 3 — DNB</b><br>
+    <span class="sub">Quota 1.50 • Draw No Bet</span>
+  </div>
+</div>
+
+<!-- IA -->
+<div class="card">
+  <h2>🤖 Suggerimento IA del giorno</h2>
+
+  <div class="item">
+    <b>Selezione:</b> Over 1.5 (1–2 match)<br>
+    <span class="sub">Analisi su trend goal, forma e ritmo partita</span><br><br>
+    <b>Affidabilità stimata:</b> ⭐⭐⭐⭐☆
+  </div>
+
+  <p class="note">
+    Non è un consiglio di gioco e non garantisce risultati.
+  </p>
+</div>
+
+<!-- SIMULATORE -->
+<div class="card">
+  <h2>🎯 Simulatore IA</h2>
+
+  <label>Importo (€)</label>
+  <input id="stake" type="number" value="5">
+
+  <label style="margin-top:10px">Profilo</label>
+  <select id="profile">
+    <option value="prudente">Prudente (1.60–2.00)</option>
+    <option value="equilibrato" selected>Equilibrato (2.00–2.60)</option>
+    <option value="aggressivo">Aggressivo (2.60–3.50)</option>
+  </select>
+
+  <div style="margin-top:14px"></div>
+  <button onclick="simulate()">SIMULA</button>
+
+  <div id="out" class="result"></div>
+
+  <p class="note">
+    La giocata reale è disponibile al banco.
+  </p>
+</div>
+
+<div class="footer">
+  © AI Bet Assist – Demo
+</div>
+
+</div>
+
+<script>
+// ====== DATI CENTRO (CAMBI SOLO QUESTI QUANDO VENDI) ======
+const PHONE_INTL = "39XXXXXXXXXX";
+const PHONE_DISPLAY = "+39 XXX XXX XXXX";
+const MAPS_LINK = "https://www.google.com/maps";
+const WHATS_MSG = "Ciao! Ho scansionato il QR dal centro. Vorrei informazioni.";
+
+// BOTTONI
+document.getElementById("btnWhats").href =
+  "https://wa.me/" + PHONE_INTL + "?text=" + encodeURIComponent(WHATS_MSG);
+document.getElementById("btnMaps").href = MAPS_LINK;
+document.getElementById("btnCall").href = "tel:+" + PHONE_INTL;
+document.getElementById("btnCall").innerText = "📞 " + PHONE_DISPLAY;
+
+// SIMULATORE
+function rnd(min,max){return Math.random()*(max-min)+min}
+function simulate(){
+  const stake = Number(document.getElementById("stake").value);
+  const p = document.getElementById("profile").value;
+
+  let qMin=2,qMax=2.6,picks=2;
+  if(p==="prudente"){qMin=1.6;qMax=2}
+  if(p==="aggressivo"){qMin=2.6;qMax=3.5;picks=3}
+
+  const quota = (rnd(qMin,qMax)).toFixed(2);
+  const win = (stake*quota).toFixed(2);
+
+  const out = document.getElementById("out");
+  out.style.display="block";
+  out.innerHTML =
+    "<b>Risultato simulazione</b><br>" +
+    "Profilo: <b>"+p+"</b><br>" +
+    "Selezioni: <b>"+picks+"</b><br>" +
+    "Quota stimata: <b>"+quota+"</b><br>" +
+    "Vincita potenziale: <b>"+win+" €</b>";
+}
+</script>
+
+</body>
+</html>
