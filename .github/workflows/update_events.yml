@@ -13,18 +13,37 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Mostra file presenti (debug)
+      - name: Genera events.json (inline)
         run: |
-          echo "Contenuto cartella repo:"
-          ls -la
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
-      - name: Genera events.json
-        run: python generate_events.py
+          cat << 'EOF' > events.json
+          {
+            "updated_at": "$(date '+%Y-%m-%d %H:%M')",
+            "timezone": "Europe/Rome",
+            "events": [
+              {
+                "league": "Serie A",
+                "home": "Inter",
+                "away": "Juventus",
+                "start": "Oggi 20:45",
+                "markets": [
+                  { "label": "Over 1.5", "odd": 1.55 },
+                  { "label": "1X", "odd": 1.65 },
+                  { "label": "DNB 1", "odd": 1.70 }
+                ]
+              },
+              {
+                "league": "Serie A",
+                "home": "Milan",
+                "away": "Roma",
+                "start": "Oggi 18:00",
+                "markets": [
+                  { "label": "Goal/NoGoal Sì", "odd": 1.75 },
+                  { "label": "Over 2.5", "odd": 1.85 }
+                ]
+              }
+            ]
+          }
+          EOF
 
       - name: Commit & push events.json
         run: |
