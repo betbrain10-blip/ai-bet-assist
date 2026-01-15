@@ -1,120 +1,507 @@
 <!doctype html>
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Bet Assist</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AI Bet Assist • Futuristico</title>
 <style>
 :root{
-  --bg1:#f6f7fb; --bg2:#eef7ff; --bg3:#f7f0ff;
-  --ink:#0b1220; --muted:#5f6b85;
-  --card:#ffffff; --border:#e6e9f2;
-  --grad:linear-gradient(90deg,#4f46e5,#06b6d4);
+  --bgA:#070A12;
+  --bgB:#0B1022;
+  --card:#0F1633;
+  --card2:#0B122B;
+  --border:rgba(255,255,255,.10);
+  --ink:#EAF0FF;
+  --muted:#A8B3D6;
+  --good:#22c55e;
+  --warn:#f59e0b;
+  --bad:#ef4444;
+  --grad:linear-gradient(90deg,#7c3aed,#06b6d4,#22c55e);
+  --grad2:linear-gradient(135deg,#111a3a,#0f1633,#101b41);
+  --shadow:0 18px 40px rgba(0,0,0,.45);
+  --r:18px;
+  --r2:14px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 *{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));color:var(--ink)}
-.wrap{max-width:920px;margin:auto;padding:18px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 10px 25px rgba(0,0,0,.08)}
-.badge{display:inline-block;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:900;background:#eef2ff;color:#4338ca}
-h1{margin:10px 0 4px;font-size:22px}
-h2{margin:0 0 10px;font-size:16px}
-.sub{font-size:14px;color:var(--muted);line-height:1.35}
-.small{font-size:12px;color:var(--muted)}
-.note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.35}
-.row{display:flex;gap:10px;flex-wrap:wrap}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.actions a{flex:1;min-width:160px;text-align:center;padding:12px;border-radius:14px;border:1px solid var(--border);text-decoration:none;font-weight:900;color:var(--ink);background:#fff}
-button{padding:11px 12px;border:none;border-radius:14px;background:var(--grad);color:#fff;font-size:14px;font-weight:900;cursor:pointer}
-.btnLight{background:#fff;color:var(--ink);border:1px solid var(--border)}
-.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#f3f4f6;border:1px solid var(--border);font-size:12px;font-weight:900}
-.table{width:100%;border-collapse:separate;border-spacing:0 8px}
-.table th{text-align:left;font-size:12px;color:var(--muted);font-weight:900;padding:0 8px}
-.tr{background:#fff;border:1px solid var(--border);border-radius:14px}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,.35), transparent 60%),
+    radial-gradient(900px 500px at 90% 20%, rgba(6,182,212,.25), transparent 60%),
+    radial-gradient(900px 500px at 30% 90%, rgba(34,197,94,.18), transparent 55%),
+    linear-gradient(180deg,var(--bgA),var(--bgB));
+}
+.wrap{max-width:980px;margin:auto;padding:18px}
+.topbar{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  padding:14px 16px;border:1px solid var(--border);border-radius:22px;background:rgba(255,255,255,.04);
+  box-shadow:var(--shadow); backdrop-filter: blur(10px);
+}
+.brand{
+  display:flex;align-items:center;gap:12px;min-width:240px;
+}
+.logo{
+  width:44px;height:44px;border-radius:14px;
+  background:conic-gradient(from 210deg,#7c3aed,#06b6d4,#22c55e,#7c3aed);
+  box-shadow:0 10px 20px rgba(0,0,0,.35);
+  position:relative;overflow:hidden;
+}
+.logo::after{
+  content:"";position:absolute;inset:-20px;
+  background:radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), transparent 55%);
+  transform:rotate(15deg);
+}
+h1{margin:0;font-size:16px;letter-spacing:.3px}
+.sub{margin:2px 0 0;color:var(--muted);font-size:12px;line-height:1.35}
+.pill{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 12px;border-radius:999px;border:1px solid var(--border);
+  background:rgba(255,255,255,.03); color:var(--muted);
+  font-size:12px;font-weight:800;
+}
+.pill b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
+@media(min-width:860px){ .grid{grid-template-columns: 1.15fr .85fr;} }
+
+.card{
+  border:1px solid var(--border);
+  border-radius:22px;
+  background:var(--grad2);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.cardHeader{
+  padding:14px 16px;
+  display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  background:rgba(255,255,255,.03);
+}
+.cardTitle{margin:0;font-size:14px}
+.small{color:var(--muted);font-size:12px;line-height:1.35}
+.section{padding:14px 16px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{
+  cursor:pointer;
+  border:none;
+  padding:11px 14px;border-radius:14px;
+  background:var(--grad);
+  color:#06101b;
+  font-weight:1000;
+  letter-spacing:.2px;
+}
+.btn2{
+  cursor:pointer;
+  border:1px solid var(--border);
+  padding:11px 14px;border-radius:14px;
+  background:rgba(255,255,255,.04);
+  color:var(--ink);
+  font-weight:900;
+}
+.btnSm{padding:8px 10px;border-radius:12px;font-weight:900}
+.input, select{
+  width:100%;
+  padding:12px 12px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background:rgba(0,0,0,.18);
+  color:var(--ink);
+  outline:none;
+  font-size:14px;
+}
+label{font-size:12px;color:var(--muted);font-weight:900}
+.kbd{
+  font-family:var(--mono);
+  font-size:12px;
+  padding:6px 8px;border-radius:10px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.03);
+  color:var(--muted);
+}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab{
+  padding:9px 12px;border-radius:999px;border:1px solid var(--border);
+  background:rgba(255,255,255,.03);
+  color:var(--muted);
+  font-weight:1000;font-size:12px;cursor:pointer;
+}
+.tab.active{background:rgba(255,255,255,.10);color:var(--ink)}
+.hr{height:1px;background:var(--border);margin:12px 0}
+.tag{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 10px;border-radius:999px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.03);
+  font-size:12px;font-weight:1000;color:var(--ink);
+}
+.dot{width:8px;height:8px;border-radius:999px;background:var(--good)}
+.dot.w{background:var(--warn)}
+.dot.r{background:var(--bad)}
+.event{
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:12px;
+  background:rgba(255,255,255,.03);
+  margin:10px 0;
+}
+.evTop{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start}
+.evMatch{font-size:15px;font-weight:1000}
+.evMeta{color:var(--muted);font-size:12px}
+.marketGrid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px}
+@media(min-width:640px){ .marketGrid{grid-template-columns:1fr 1fr;} }
+.market{
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:10px;
+  background:rgba(0,0,0,.14);
+  display:flex;justify-content:space-between;gap:10px;align-items:center;
+}
+.market b{display:block}
+.market .q{font-weight:1000}
+.market .lab{color:var(--muted);font-size:12px}
+.badgeIA{
+  font-size:11px;font-weight:1000;color:rgba(234,240,255,.95);
+  padding:6px 10px;border-radius:999px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.05);
+}
+.badgeIA strong{color:#ffffff}
+.table{width:100%;border-collapse:separate;border-spacing:0 10px}
+.table th{text-align:left;color:var(--muted);font-size:12px;font-weight:1000;padding:0 8px}
 .table td{padding:10px 8px;vertical-align:top}
-.footer{text-align:center;font-size:12px;color:var(--muted);margin:16px 0}
-.danger{color:#b91c1c;font-weight:900}
+.tr{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--border);
+  border-radius:16px;
+}
+.footer{
+  text-align:center;color:var(--muted);font-size:12px;margin:18px 0;
+}
+.notice{font-size:12px;color:var(--muted);line-height:1.35}
+.notice b{color:var(--ink)}
 </style>
 </head>
-
 <body>
+
 <div class="wrap">
-
-<div class="card">
-  <span class="badge">AI BET ASSIST</span>
-  <h1>Eventi automatici • Multiple • Sistemi</h1>
-  <p class="sub">
-    Seleziona gli eventi già pronti, aggiungili alla schedina e calcola multipla o sistema.
-    <br><span class="small">Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.</span>
-  </p>
-
-  <div class="actions">
-    <a id="btnWhats" href="#" target="_blank">💬 WhatsApp</a>
-    <a id="btnMaps" href="#" target="_blank">📍 Maps</a>
-    <a id="btnCall" href="#">📞 Chiama</a>
-  </div>
-</div>
-
-<div class="card">
-  <h2>⚡ Eventi consigliati (auto)</h2>
-  <div class="small">Ultimo aggiornamento: <span id="upd">—</span></div>
-  <div id="eventsBox" class="note">Caricamento eventi…</div>
-</div>
-
-<div class="card">
-  <h2>🧾 La tua schedina</h2>
-  <table class="table">
-    <thead>
-      <tr><th>Partita</th><th>Mercato</th><th>Quota</th><th>Azioni</th></tr>
-    </thead>
-    <tbody id="picksBody"></tbody>
-  </table>
-  <p id="emptyMsg" class="note">Nessuna selezione ancora. Aggiungi 2–6 eventi dalla lista sopra.</p>
-
-  <div class="row" style="margin-top:10px">
-    <div style="flex:1;min-width:220px">
-      <label class="small">Stake totale (€)</label>
-      <input id="stake" type="number" min="1" step="1" value="5" oninput="recalc()" style="width:100%;padding:12px;border-radius:14px;border:1px solid var(--border);font-size:15px;margin-top:6px">
+  <div class="topbar">
+    <div class="brand">
+      <div class="logo"></div>
+      <div>
+        <h1 id="centerName">AI Bet Assist • Demo Futuristica</h1>
+        <div class="sub">Eventi automatici + Combo IA + Multiple & Sistemi • <span class="kbd">supporto informativo</span></div>
+      </div>
     </div>
-    <div style="flex:1;min-width:220px">
-      <label class="small">Tipo giocata</label>
-      <select id="playType" onchange="recalc()" style="width:100%;padding:12px;border-radius:14px;border:1px solid var(--border);font-size:15px;margin-top:6px">
-        <option value="multi">Multipla (tutte)</option>
-        <option value="system">Sistema (2 su n)</option>
-      </select>
+
+    <div class="row">
+      <span class="pill">Centro: <b id="centerCodePill">DEMO</b></span>
+      <span class="pill">Agg.: <b id="upd">—</b></span>
+      <span class="pill">Modalità: <b id="modePill">AUTO</b></span>
     </div>
   </div>
 
-  <p class="note">Nel “Sistema (2 su n)” lo stake viene diviso sulle combinazioni da 2 eventi.</p>
+  <div class="grid">
+    <!-- COLONNA SINISTRA -->
+    <div class="card">
+      <div class="cardHeader">
+        <div>
+          <h2 class="cardTitle">⚡ Eventi (auto) + Esperienza “Futuristica”</h2>
+          <div class="small">Il cliente si diverte, aggiunge eventi e prova multipla o sistema. Quote: <b>prendi sempre quelle del banco</b>.</div>
+        </div>
+        <div class="tabs" id="bookTabs"></div>
+      </div>
 
-  <div class="row" style="margin-top:10px">
-    <button class="btnLight" onclick="clearAll()">🧹 Svuota</button>
+      <div class="section">
+        <div class="row">
+          <button class="btn" onclick="addComboIA()">🤖 Aggiungi Combo IA</button>
+          <button class="btn2" onclick="shuffleFeel()">✨ Cambia “mood” IA</button>
+          <span class="tag"><span class="dot" id="dotMood"></span> <span id="moodText">Mood: equilibrato</span></span>
+        </div>
+
+        <div class="hr"></div>
+
+        <div id="eventsBox" class="notice">Caricamento eventi…</div>
+
+        <div class="hr"></div>
+
+        <div class="notice">
+          <b>Nota centro:</b> per SNAI/Vincitu il cliente può inserire la quota che vede al banco, così non ci sono mismatch.
+          <br>Obiettivo: aumentare coinvolgimento + richieste al banco.
+        </div>
+      </div>
+    </div>
+
+    <!-- COLONNA DESTRA -->
+    <div class="card">
+      <div class="cardHeader">
+        <div>
+          <h2 class="cardTitle">🧾 La tua schedina</h2>
+          <div class="small">Multipla o Sistema 2 su n. (Informativo)</div>
+        </div>
+        <button class="btn2 btnSm" onclick="clearAll()">🧹 Svuota</button>
+      </div>
+
+      <div class="section">
+        <table class="table">
+          <thead>
+            <tr><th>Partita</th><th>Mercato</th><th>Quota</th><th></th></tr>
+          </thead>
+          <tbody id="picksBody"></tbody>
+        </table>
+        <div id="emptyMsg" class="notice">Nessuna selezione. Premi <b>Aggiungi</b> dagli eventi.</div>
+
+        <div class="hr"></div>
+
+        <div class="row">
+          <div style="flex:1;min-width:210px">
+            <label>Stake totale (€)</label>
+            <input class="input" id="stake" type="number" min="1" step="1" value="5" oninput="recalc()">
+          </div>
+          <div style="flex:1;min-width:210px">
+            <label>Tipo giocata</label>
+            <select id="playType" onchange="recalc()">
+              <option value="multi">Multipla (tutte)</option>
+              <option value="system">Sistema (2 su n)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+
+        <div id="calcOut" class="notice"></div>
+
+        <div class="hr"></div>
+
+        <div class="notice">
+          <b>Codice Sala (QR personalizzato):</b><br>
+          Apri con <span class="kbd">?c=SNAI001</span> oppure <span class="kbd">?c=VINC001</span> per cambiare contatti e stile del centro.
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <a class="btn2" id="btnWhats" href="#" target="_blank" style="text-decoration:none">💬 WhatsApp</a>
+          <a class="btn2" id="btnMaps" href="#" target="_blank" style="text-decoration:none">📍 Maps</a>
+          <a class="btn2" id="btnCall" href="#" style="text-decoration:none">📞 Chiama</a>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="note" id="calcOut"></div>
-</div>
-
-<div class="footer">© AI Bet Assist – Demo</div>
+  <div class="footer">© AI Bet Assist • Demo Futuristica • Gioca responsabilmente</div>
 </div>
 
 <script>
-// DATI CENTRO (poi li personalizziamo)
-const PHONE_INTL = "39XXXXXXXXXX";
-const PHONE_DISPLAY = "+39 XXX XXX XXXX";
-const MAPS_LINK = "https://www.google.com/maps";
-const WHATS_MSG = "Ciao! Ho scansionato il QR dal centro. Vorrei info su quote/orari.";
+/** ========= CONFIG & UTILS ========= **/
+const DEFAULT_CENTER = {
+  code: "DEMO",
+  name: "AI Bet Assist • Demo Futuristica",
+  phone_intl: "39XXXXXXXXXX",
+  phone_display: "+39 XXX XXX XXXX",
+  maps_link: "https://www.google.com/maps",
+  whatsapp_msg: "Ciao! Ho scansionato il QR dal centro. Vorrei info su quote/orari.",
+  theme: { }
+};
 
-document.getElementById("btnWhats").href = "https://wa.me/" + PHONE_INTL + "?text=" + encodeURIComponent(WHATS_MSG);
-document.getElementById("btnMaps").href = MAPS_LINK;
-document.getElementById("btnCall").href = "tel:+" + PHONE_INTL;
-document.getElementById("btnCall").innerText = "📞 " + PHONE_DISPLAY;
+const BOOKS = [
+  { id:"SNAI", label:"SNAI", emoji:"🟦" },
+  { id:"VINCITU", label:"Vincitu", emoji:"🟥" },
+  { id:"AUTO", label:"Auto", emoji:"⚡" }
+];
 
+let center = {...DEFAULT_CENTER};
+let currentBook = "AUTO";
 let picks = [];
 
+const moods = [
+  { t:"equilibrato", dot:"" },
+  { t:"aggressivo", dot:"w" },
+  { t:"prudente", dot:"" },
+  { t:"high vibe", dot:"" }
+];
+let moodIdx = 0;
+
+function qs(k){ return new URLSearchParams(location.search).get(k); }
 function escapeHtml(str){
   return String(str).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
     .replaceAll('"',"&quot;").replaceAll("'","&#039;");
 }
+function fmt2(n){ return "€" + (Math.round(n*100)/100).toFixed(2); }
 
+/** ========= CENTER LOADING ========= **/
+async function loadCenter(){
+  const c = (qs("c") || "").trim();
+  if(!c){ applyCenter(DEFAULT_CENTER); return; }
+  try{
+    const res = await fetch(`./centers/${encodeURIComponent(c)}.json?v=` + Date.now(), {cache:"no-store"});
+    if(!res.ok) throw new Error("center json missing");
+    const data = await res.json();
+    applyCenter({...DEFAULT_CENTER, ...data, code: c});
+  }catch(e){
+    applyCenter(DEFAULT_CENTER);
+  }
+}
+function applyCenter(data){
+  center = data;
+  document.getElementById("centerName").innerText = center.name || DEFAULT_CENTER.name;
+  document.getElementById("centerCodePill").innerText = center.code || "DEMO";
+
+  const phoneIntl = center.phone_intl || DEFAULT_CENTER.phone_intl;
+  const phoneDisp = center.phone_display || DEFAULT_CENTER.phone_display;
+  const maps = center.maps_link || DEFAULT_CENTER.maps_link;
+  const wmsg = center.whatsapp_msg || DEFAULT_CENTER.whatsapp_msg;
+
+  document.getElementById("btnWhats").href = "https://wa.me/" + phoneIntl + "?text=" + encodeURIComponent(wmsg);
+  document.getElementById("btnMaps").href = maps;
+  document.getElementById("btnCall").href = "tel:+" + phoneIntl;
+  document.getElementById("btnCall").innerText = "📞 " + phoneDisp;
+}
+
+/** ========= TABS ========= **/
+function renderTabs(){
+  const box = document.getElementById("bookTabs");
+  box.innerHTML = "";
+  BOOKS.forEach(b=>{
+    const el = document.createElement("div");
+    el.className = "tab" + (currentBook===b.id ? " active" : "");
+    el.innerText = `${b.emoji} ${b.label}`;
+    el.onclick = ()=>{ currentBook=b.id; document.getElementById("modePill").innerText = b.id; renderTabs(); loadEvents(); };
+    box.appendChild(el);
+  });
+}
+
+/** ========= EVENTS ========= **/
+function feelTag(){
+  // etichetta “IA” (solo intrattenimento)
+  const mood = moods[moodIdx].t;
+  if(mood==="aggressivo") return {txt:"🔥 Alta energia (IA)", cls:"badgeIA", dot:"w"};
+  if(mood==="prudente") return {txt:"🛡️ Prudente (IA)", cls:"badgeIA", dot:""};
+  if(mood==="high vibe") return {txt:"✨ Trend positivo (IA)", cls:"badgeIA", dot:""};
+  return {txt:"📊 Equilibrato (IA)", cls:"badgeIA", dot:""};
+}
+function shuffleFeel(){
+  moodIdx = (moodIdx + 1) % moods.length;
+  const m = moods[moodIdx];
+  document.getElementById("moodText").innerText = "Mood: " + m.t;
+  document.getElementById("dotMood").className = "dot " + (m.dot || "");
+  loadEvents();
+}
+
+async function loadEvents(){
+  const box = document.getElementById("eventsBox");
+  box.innerHTML = "Caricamento eventi…";
+  try{
+    // Auto: usa events.json (generato dall’automazione)
+    // Snai/Vincitu: usa anche events.json, ma enfatizziamo che la quota va verificata al banco (il cliente può editarla, vedi sotto)
+    const res = await fetch("./events.json?v=" + Date.now(), {cache:"no-store"});
+    if(!res.ok) throw new Error("events.json non trovato");
+    const data = await res.json();
+    document.getElementById("upd").innerText = data.updated_at || "—";
+
+    const ev = Array.isArray(data.events) ? data.events : [];
+    if(!ev.length){ box.innerHTML = "<span class='notice'><b>Nessun evento</b>.</span>"; return; }
+
+    // Rotazione “futuristica” (client-side) in base all’orario: mattina 2, pomeriggio 3, sera 4
+    const h = new Date().getHours();
+    let take = 3;
+    if(h < 12) take = 2;
+    else if(h >= 18) take = 4;
+
+    const sliced = ev.slice(0, take);
+
+    const tag = feelTag();
+    let html = "";
+    sliced.forEach(e=>{
+      const match = `${e.home} - ${e.away}`;
+      html += `
+        <div class="event">
+          <div class="evTop">
+            <div>
+              <div class="tag"><span class="dot"></span> ${escapeHtml(e.league || "")}</div>
+              <div style="height:6px"></div>
+              <div class="evMatch">${escapeHtml(match)}</div>
+              <div class="evMeta">${escapeHtml(e.start || "")}</div>
+            </div>
+            <div class="${tag.cls}"><strong>${escapeHtml(tag.txt)}</strong></div>
+          </div>
+
+          <div class="marketGrid">
+      `;
+
+      (e.markets||[]).forEach(m=>{
+        const label = m.label || "Mercato";
+        const odd = Number(m.odd || 0).toFixed(2);
+
+        // Per Snai/Vincitu facciamo inserire la quota reale al banco (editabile al volo)
+        const editable = (currentBook==="SNAI" || currentBook==="VINCITU");
+        html += `
+          <div class="market">
+            <div>
+              <b>${escapeHtml(label)}</b>
+              <div class="lab">Quota ${editable ? " (inserisci quella del banco)" : ""}</div>
+            </div>
+            <div style="text-align:right">
+              ${editable
+                ? `<input class="input" style="max-width:110px;padding:9px 10px;border-radius:12px;font-weight:1000" id="q_${escapeHtml(match)}_${escapeHtml(label)}" value="${odd}">`
+                : `<div class="q">${odd}</div>`
+              }
+              <div style="height:8px"></div>
+              <button class="btn2 btnSm" onclick="addFromEvent('${escapeHtml(match)}','${escapeHtml(label)}','${odd}')">➕ Aggiungi</button>
+            </div>
+          </div>
+        `;
+      });
+
+      html += `</div></div>`;
+    });
+
+    // info per book
+    if(currentBook==="SNAI" || currentBook==="VINCITU"){
+      html = `
+        <div class="notice">
+          <b>Modalità ${currentBook}:</b> Inserisci la quota che vedi al banco (campo editabile) e poi premi <b>Aggiungi</b>.
+          <br>Così trovi sempre le stesse quote del centro.
+        </div>
+        <div class="hr"></div>
+      ` + html;
+    }
+
+    box.innerHTML = html;
+
+    // aggiorna dot mood
+    const m = moods[moodIdx];
+    document.getElementById("dotMood").className = "dot " + (m.dot || "");
+
+  }catch(e){
+    box.innerHTML = "<span class='notice'><b>Errore:</b> non riesco a leggere events.json. Controlla che sia nel repo.</span>";
+  }
+}
+
+function addFromEvent(match, market, defaultOdd){
+  let odd = Number(defaultOdd);
+  const editable = (currentBook==="SNAI" || currentBook==="VINCITU");
+  if(editable){
+    const id = `q_${match}_${market}`;
+    const el = document.getElementById(id);
+    if(el) odd = Number(el.value || defaultOdd);
+  }
+  if(!odd || odd <= 1){ alert("Quota non valida. Inserisci la quota reale del banco."); return; }
+  addToSlip(match, market, odd);
+}
+
+/** ========= COMBO IA ========= **/
+function addComboIA(){
+  // Combo “intrattenimento”: prende 2 mercati dai primi 2 eventi visibili
+  const cards = document.querySelectorAll(".event");
+  if(cards.length < 2){ alert("Servono almeno 2 eventi."); return; }
+
+  // Prendiamo il primo mercato del primo evento e del secondo evento
+  const firstMarketBtn = cards[0].querySelector(".btn2");
+  const secondMarketBtn = cards[1].querySelector(".btn2");
+  if(firstMarketBtn) firstMarketBtn.click();
+  if(secondMarketBtn) secondMarketBtn.click();
+}
+
+/** ========= SLIP ========= **/
 function addToSlip(match, market, odd){
   picks.push({match, market, odd:Number(odd)});
   renderSlip(); recalc();
@@ -133,15 +520,12 @@ function renderSlip(){
       <td><b>${escapeHtml(p.match)}</b></td>
       <td><span class="pill">${escapeHtml(p.market)}</span></td>
       <td><b>${Number(p.odd).toFixed(2)}</b></td>
-      <td><button class="btnLight" onclick="removePick(${i})">❌</button></td>
+      <td><button class="btn2 btnSm" onclick="removePick(${i})">❌</button></td>
     `;
     body.appendChild(tr);
   });
 }
 
-function fmt2(n){ return "€" + (Math.round(n*100)/100).toFixed(2); }
-
-// combinazioni 2 su n
 function recalc(){
   const stake = Number(document.getElementById("stake").value || 0);
   const type = document.getElementById("playType").value;
@@ -156,12 +540,16 @@ function recalc(){
     picks.forEach(p=> odd *= p.odd);
     const win = stake * odd;
     document.getElementById("calcOut").innerHTML =
-      `<b>Multipla:</b> Quota totale <b>${odd.toFixed(2)}</b> • Vincita stimata <b>${fmt2(win)}</b>`;
+      `<b>Multipla:</b> quota totale <b>${odd.toFixed(2)}</b> • vincita stimata <b>${fmt2(win)}</b>`;
     return;
   }
 
   // sistema 2 su n
   const n = picks.length;
+  if(n < 2){
+    document.getElementById("calcOut").innerHTML = `<b>Sistema:</b> aggiungi almeno 2 selezioni.`;
+    return;
+  }
   const combos = (n*(n-1))/2;
   const unit = stake / combos;
 
@@ -181,58 +569,11 @@ function recalc(){
      Vincita MIN (1 combo): <b>${fmt2(minWin)}</b> • Vincita MAX (tutte combo): <b>${fmt2(maxWin)}</b>`;
 }
 
-async function loadEvents(){
-  const box = document.getElementById("eventsBox");
-  box.innerHTML = "Caricamento eventi…";
-  try{
-    const res = await fetch("./events.json?v=" + Date.now(), {cache:"no-store"});
-    if(!res.ok) throw new Error("events.json non trovato");
-    const data = await res.json();
-
-    document.getElementById("upd").innerText = data.updated_at || "—";
-    const ev = Array.isArray(data.events) ? data.events : [];
-    if(!ev.length){
-      box.innerHTML = "<span class='danger'>Nessun evento.</span>";
-      return;
-    }
-
-    let html = "";
-    ev.forEach(e=>{
-      const match = `${e.home} - ${e.away}`;
-      html += `
-        <div class="card" style="margin:10px 0;box-shadow:none">
-          <div class="pill">${escapeHtml(e.league || "")}</div>
-          <div style="height:6px"></div>
-          <b style="font-size:16px">${escapeHtml(match)}</b><br>
-          <span class="small">${escapeHtml(e.start || "")}</span>
-          <div style="height:10px"></div>
-          <div class="row">
-      `;
-      (e.markets||[]).forEach(m=>{
-        const label = m.label || "Mercato";
-        const odd = Number(m.odd || 0).toFixed(2);
-        html += `
-          <div class="tr" style="padding:10px;border-radius:14px;border:1px solid var(--border);min-width:220px;flex:1">
-            <div><b>${escapeHtml(label)}</b></div>
-            <div class="small">Quota: <b>${odd}</b></div>
-            <div style="height:8px"></div>
-            <button class="btnLight" onclick="addToSlip('${escapeHtml(match)}','${escapeHtml(label)}',${odd})">➕ Aggiungi</button>
-          </div>
-        `;
-      });
-      html += `</div></div>`;
-    });
-
-    box.innerHTML = html;
-  }catch(e){
-    box.innerHTML = "<span class='danger'>Errore:</span> non riesco a leggere events.json. Controlla che sia nel repo.";
-  }
-}
-
+/** ========= INIT ========= **/
+renderTabs();
 renderSlip();
 recalc();
-loadEvents();
+loadCenter().then(()=> loadEvents());
 </script>
-
 </body>
 </html>
