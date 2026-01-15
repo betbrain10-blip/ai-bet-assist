@@ -2,22 +2,20 @@ name: Aggiorna eventi automatici
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # ogni giorno alle 09:00
+    - cron: "0 9 * * *"
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Genera events.json (inline)
         run: |
-          cat << 'EOF' > events.json
+          cat > events.json <<'EOF'
           {
-            "updated_at": "$(date '+%Y-%m-%d %H:%M')",
+            "updated_at": "AUTO",
             "timezone": "Europe/Rome",
             "events": [
               {
@@ -44,8 +42,9 @@ jobs:
             ]
           }
           EOF
+          sed -i "s/\"updated_at\": \"AUTO\"/\"updated_at\": \"$(date '+%Y-%m-%d %H:%M')\"/" events.json
 
-      - name: Commit & push events.json
+      - name: Commit & push
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
