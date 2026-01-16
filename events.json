@@ -4,57 +4,58 @@
   "events": [
     {
       "league": "Serie A",
-      "home": "Inter",
-      "away": "Atalanta",
-      "start": "20:45",
-      "tags": ["Top Match", "Alta dinamicità"],
+      "home": "Evento 1",
+      "away": "Evento 2",
+      "start": "Oggi",
+      "tier": "TOP",
+      "tags": ["Top Italia", "Alta dinamicità"],
+      "why": "Match scelto per coinvolgimento: mercati semplici da banco.",
       "markets": [
         { "label": "Over 1.5", "odd": 1.55 },
-        { "label": "Goal/No Goal Sì", "odd": 1.75 }
+        { "label": "Goal/No Goal Sì", "odd": 1.75 },
+        { "label": "1X", "odd": 1.55 }
       ]
     },
     {
       "league": "Premier League",
-      "home": "Arsenal",
-      "away": "Tottenham",
-      "start": "18:30",
-      "tags": ["Perfetta per multipla"],
-      "markets": [
-        { "label": "Over 2.5", "odd": 1.80 },
-        { "label": "1X", "odd": 1.45 }
-      ]
-    },
-    {
-      "league": "Allsvenskan (Svezia)",
-      "home": "Malmo",
-      "away": "AIK",
-      "start": "19:00",
-      "tags": ["Scelta esplorativa IA", "Evento poco battuto"],
+      "home": "Evento 3",
+      "away": "Evento 4",
+      "start": "Oggi",
+      "tier": "SECONDARY",
+      "tags": ["Europa Explorer", "Perfetta per multipla"],
+      "why": "Campionato top: ideale per multipla o sistema 2 su n.",
       "markets": [
         { "label": "Over 2.5", "odd": 1.85 },
-        { "label": "DNB 1", "odd": 1.65 }
+        { "label": "Over 1.5", "odd": 1.45 },
+        { "label": "DNB 1", "odd": 1.70 }
       ]
     },
     {
-      "league": "Superliga (Danimarca)",
-      "home": "Midtjylland",
-      "away": "Brondby",
-      "start": "20:00",
-      "tags": ["Campionato alternativo"],
+      "league": "Superliga",
+      "home": "Evento 5",
+      "away": "Evento 6",
+      "start": "Oggi",
+      "tier": "MINOR",
+      "tags": ["Campionato alternativo", "Poco battuto"],
+      "why": "Europa minore: effetto ‘IA Explorer’ molto forte in sala.",
       "markets": [
-        { "label": "Goal/No Goal Sì", "odd": 1.70 },
-        { "label": "Over 1.5", "odd": 1.50 }
+        { "label": "Over 1.5", "odd": 1.50 },
+        { "label": "Under 3.5", "odd": 1.45 },
+        { "label": "Goal/No Goal Sì", "odd": 1.80 }
       ]
     },
     {
-      "league": "Ekstraklasa (Polonia)",
-      "home": "Legia",
-      "away": "Lech",
-      "start": "21:00",
-      "tags": ["Europa Explorer"],
+      "league": "Allsvenskan",
+      "home": "Evento 7",
+      "away": "Evento 8",
+      "start": "Oggi",
+      "tier": "MINOR",
+      "tags": ["Scelta esplorativa IA", "Alta intensità"],
+      "why": "Campionato europeo alternativo: mercati gol spesso divertenti.",
       "markets": [
-        { "label": "Over 2.5", "odd": 1.90 },
-        { "label": "1X", "odd": 1.40 }
+        { "label": "Over 2.5", "odd": 1.95 },
+        { "label": "Over 1.5", "odd": 1.55 },
+        { "label": "DNB 2", "odd": 1.75 }
       ]
     }
   ]
