@@ -3,531 +3,846 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vincitu • WOW Portal</title>
-  <meta name="theme-color" content="#0b1220"/>
+  <title>Vincitu • IA Portal</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="vincitu-stemma-128.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="vincitu-stemma-256.png">
+  <link rel="apple-touch-icon" href="vincitu-stemma-256.png">
 
   <style>
     :root{
-      --bg1:#070a12;
-      --bg2:#101b32;
-      --stroke: rgba(255,255,255,.10);
-      --txt: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.65);
-      --muted2: rgba(255,255,255,.45);
-      --accent:#34d399;
-      --accent2:#60a5fa;
-      --danger:#fb7185;
-      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --bg1:#0b1020;
+      --bg2:#101a2f;
+      --card:#0f1526cc;
+      --card2:#0b1020cc;
+      --border:rgba(255,255,255,.08);
+      --txt:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.65);
+      --muted2:rgba(255,255,255,.45);
+      --accent:#35d3ff;
+      --accent2:#27ffb2;
+      --warn:#ffb020;
+      --danger:#ff4d6d;
+      --ok:#2dff86;
+      --shadow: 0 22px 60px rgba(0,0,0,.55);
       --radius: 18px;
     }
 
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
       color:var(--txt);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
       background:
-        radial-gradient(1200px 800px at 20% 10%, rgba(124,58,237,.35), transparent 55%),
-        radial-gradient(900px 700px at 80% 30%, rgba(56,189,248,.25), transparent 60%),
-        radial-gradient(900px 900px at 50% 90%, rgba(34,197,94,.14), transparent 60%),
+        radial-gradient(900px 700px at 15% 15%, rgba(132,72,255,.45), transparent 60%),
+        radial-gradient(800px 650px at 85% 20%, rgba(0,210,255,.35), transparent 55%),
+        radial-gradient(900px 650px at 70% 85%, rgba(0,255,178,.18), transparent 60%),
         linear-gradient(180deg, var(--bg1), var(--bg2));
       min-height:100vh;
     }
 
-    .wrap{max-width:1180px;margin:0 auto;padding:26px 18px 40px;}
+    .wrap{
+      max-width: 1150px;
+      margin: 28px auto;
+      padding: 0 16px 40px;
+    }
 
     .topbar{
-      display:flex;align-items:center;justify-content:space-between;gap:14px;
-      padding:18px;border:1px solid var(--stroke);
-      background: rgba(10,15,28,.65);
-      border-radius:20px;box-shadow:var(--shadow);backdrop-filter: blur(10px);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 18px 18px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
     }
 
-    .brand{display:flex;align-items:center;gap:12px;min-width:280px;}
-
-    /* LOGO WOW: più visibile */
-    .logoPill{
-      display:flex;align-items:center;justify-content:center;
-      padding:8px 10px;
-      background: rgba(255,255,255,.10);
-      border:1px solid rgba(255,255,255,.18);
-      border-radius:14px;
-    }
-    .brand img{
-      height:48px;width:auto;
-      filter: brightness(1.25) contrast(1.15) drop-shadow(0 10px 22px rgba(0,0,0,.55));
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-width: 260px;
     }
 
-    .brand h1{margin:0;font-size:18px;line-height:1.15;letter-spacing:.2px;font-weight:780;}
-    .brand .sub{margin-top:4px;font-size:12px;color:var(--muted);}
+    .logoBox{
+      width:56px;height:56px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.10), rgba(255,255,255,.03));
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+    }
+    .logoBox img{
+      height:44px; width:auto;
+      display:block;
+      filter:
+        drop-shadow(0 10px 18px rgba(0,0,0,.70))
+        drop-shadow(0 0 18px rgba(53,211,255,.28));
+      image-rendering: -webkit-optimize-contrast;
+    }
 
-    .chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;align-items:center;}
-    .chip{padding:8px 10px;border:1px solid var(--stroke);background: rgba(255,255,255,.06);border-radius:999px;font-size:12px;color:var(--muted);}
-    .chip b{color: var(--txt)}
+    .brandText h1{
+      margin:0;
+      font-size: 18px;
+      letter-spacing:.2px;
+      line-height: 1.1;
+    }
+    .brandText .sub{
+      margin-top:4px;
+      font-size: 12px;
+      color: var(--muted);
+    }
 
-    .grid{margin-top:18px;display:grid;grid-template-columns:1.2fr .8fr;gap:14px;}
-    @media (max-width:980px){ .grid{grid-template-columns:1fr} .brand{min-width:unset} }
+    .chips{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .chip{
+      padding: 8px 12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      border-radius: 999px;
+      font-size: 12px;
+      color: rgba(255,255,255,.80);
+      display:flex; align-items:center; gap:8px;
+    }
+    .dot{
+      width:8px; height:8px; border-radius:50%;
+      background: var(--accent);
+      box-shadow: 0 0 14px rgba(53,211,255,.7);
+    }
+    .dot2{ background: var(--accent2); box-shadow:0 0 14px rgba(39,255,178,.55); }
+    .dot3{ background: var(--warn); box-shadow:0 0 14px rgba(255,176,32,.55); }
 
-    .card{
-      border:1px solid var(--stroke);
-      background: rgba(10,15,28,.55);
-      border-radius: var(--radius);
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .9fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .panel{
+      border:1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.018));
+      border-radius: 22px;
       box-shadow: var(--shadow);
       backdrop-filter: blur(10px);
       overflow:hidden;
     }
-    .cardHead{
-      padding:14px;border-bottom:1px solid var(--stroke);
-      display:flex;align-items:center;justify-content:space-between;gap:10px;
-    }
-    .cardHead h2{margin:0;font-size:14px;letter-spacing:.2px;}
-    .cardBody{padding:14px}
 
-    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+    .panelHeader{
+      padding: 14px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    .panelHeader .title{
+      display:flex; align-items:center; gap:10px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing:.2px;
+    }
+
+    .btnRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
     .btn{
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.08);
-      color: var(--txt);
-      padding:10px 12px;border-radius:12px;font-weight:720;
-      cursor:pointer;transition:.15s ease;user-select:none;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.15);
+      color: rgba(255,255,255,.88);
+      padding: 9px 12px;
+      border-radius: 12px;
+      cursor:pointer;
+      font-weight: 700;
+      font-size: 12px;
+      transition: .15s transform, .15s background;
+      display:flex; align-items:center; gap:8px;
+      user-select:none;
     }
-    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.11)}
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(52,211,153,.95), rgba(96,165,250,.85));
-      border-color: transparent;color:#041016;
+    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.06); }
+    .btnPrimary{
+      background: linear-gradient(90deg, rgba(39,255,178,.22), rgba(53,211,255,.20));
+      border-color: rgba(53,211,255,.22);
+      box-shadow: 0 10px 25px rgba(0,0,0,.35);
     }
-    .btn.danger{background: rgba(251,113,133,.14);border-color: rgba(251,113,133,.28);color:#ffd3da;}
 
-    .pill{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;border-radius:999px;border:1px solid var(--stroke);background: rgba(255,255,255,.06);font-size:12px;color: var(--muted);}
-    .dot{width:8px;height:8px;border-radius:50%;background: var(--accent);box-shadow: 0 0 0 5px rgba(52,211,153,.12);}
-    .dot.blue{background: var(--accent2); box-shadow: 0 0 0 5px rgba(96,165,250,.12);}
-    .dot.orange{background:#f59e0b; box-shadow: 0 0 0 5px rgba(245,158,11,.14);}
-
-    .small{font-size:12px;color: var(--muted);}
-    .tiny{font-size:11px;color: var(--muted2);}
-
-    .events{display:flex;flex-direction:column;gap:12px;}
-    .event{border:1px solid var(--stroke);background: rgba(255,255,255,.05);border-radius:16px;padding:12px;}
-    .eventTop{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px;}
-    .leagueTag{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;background: rgba(255,255,255,.06);border:1px solid var(--stroke);font-size:12px;color: var(--muted);}
-    .eventTitle{margin:8px 0 2px;font-size:16px;font-weight:820;letter-spacing:.2px;}
-    .eventMeta{font-size:12px;color: var(--muted);}
-    .badgeIA{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;border-radius:999px;border:1px solid var(--stroke);background: rgba(255,255,255,.06);font-size:12px;color: var(--muted);white-space:nowrap;}
-
-    .markets{display:grid;grid-template-columns: repeat(3, minmax(0,1fr));gap:10px;margin-top:10px;}
-    @media (max-width:700px){ .markets{grid-template-columns:1fr} }
-
-    .mkt{border:1px solid var(--stroke);background: rgba(0,0,0,.18);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:8px;min-height:112px;}
-    .mktTop{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
-    .mktName{font-weight:780;font-size:13px;line-height:1.15;}
-    .mktHint{font-size:11px;color: var(--muted2);}
-
-    .oddsLine{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:auto;}
-    .oddsInput{
-      width:110px;max-width:46%;
-      padding:10px 10px;border-radius:12px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.06);
-      color: var(--txt);
-      outline:none;font-weight:800;text-align:center;
+    .pillRow{
+      padding: 10px 16px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      border-bottom:1px solid rgba(255,255,255,.06);
     }
-    .oddsInput::placeholder{color: rgba(255,255,255,.35)}
+
+    .pill{
+      display:flex; align-items:center; gap:8px;
+      padding: 7px 10px;
+      border-radius:999px;
+      font-size:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.14);
+      color: rgba(255,255,255,.82);
+    }
+    .pill strong{ color: rgba(255,255,255,.92); }
+    .hint{
+      color: var(--muted2);
+      font-size: 12px;
+      padding: 10px 16px 0;
+    }
+
+    .events{
+      padding: 14px 16px 18px;
+      display:flex;
+      flex-direction:column;
+      gap: 14px;
+    }
+
+    .eventCard{
+      border:1px solid rgba(255,255,255,.08);
+      background: linear-gradient(180deg, rgba(0,0,0,.16), rgba(0,0,0,.10));
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .eventTop{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      align-items:flex-start;
+      margin-bottom: 10px;
+    }
+
+    .leagueTag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.14);
+      color: rgba(255,255,255,.85);
+    }
+
+    .teams{
+      margin-top: 8px;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing:.2px;
+    }
+
+    .meta{
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .badgeIA{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      border:1px solid rgba(53,211,255,.16);
+      background: rgba(53,211,255,.08);
+      color: rgba(255,255,255,.88);
+      white-space:nowrap;
+    }
+
+    .markets{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .market{
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.14);
+      border-radius: 14px;
+      padding: 10px;
+      min-height: 110px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+
+    .market .mname{
+      font-weight: 900;
+      font-size: 13px;
+    }
+    .market .msub{
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .market .row{
+      display:flex;
+      gap: 8px;
+      align-items:flex-end;
+      justify-content:space-between;
+      margin-top: 10px;
+    }
+
+    .oddInput{
+      width: 72px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.92);
+      font-weight: 900;
+      outline:none;
+    }
+
     .addBtn{
-      flex:1;padding:10px 10px;border-radius:12px;border:1px solid var(--stroke);
-      background: rgba(255,255,255,.08);color: var(--txt);font-weight:800;cursor:pointer;transition:.15s ease;
+      flex:1;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.92);
+      cursor:pointer;
+      font-weight: 900;
+      transition:.15s transform, .15s background;
     }
-    .addBtn:hover{background: rgba(255,255,255,.12); transform: translateY(-1px)}
+    .addBtn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.10); }
 
-    .slipTable{width:100%;border-collapse:collapse;margin-top:10px;}
-    .slipTable th,.slipTable td{padding:10px 8px;border-bottom:1px solid rgba(255,255,255,.08);font-size:12px;vertical-align:top;}
-    .slipTable th{color: var(--muted); font-weight:800; text-align:left}
-    .xBtn{border:1px solid rgba(251,113,133,.28);background: rgba(251,113,133,.12);color:#ffd3da;border-radius:10px;padding:6px 10px;cursor:pointer;font-weight:800;}
-
-    .formGroup{display:grid;grid-template-columns: 1fr 1fr;gap:10px;margin-top:10px;}
-    @media (max-width:700px){ .formGroup{grid-template-columns:1fr} }
-
-    label{font-size:12px;color: var(--muted); font-weight:800;}
-    select,input[type="number"],input[type="text"]{
-      width:100%;padding:10px 10px;border-radius:12px;border:1px solid var(--stroke);
-      background: rgba(255,255,255,.06);color: var(--txt);outline:none;margin-top:6px;font-weight:750;
+    /* Right panel (scheda) */
+    .side{
+      padding: 14px 16px 16px;
+    }
+    .side h3{
+      margin:0;
+      font-size: 13px;
+      color: rgba(255,255,255,.90);
+    }
+    .small{
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
     }
 
-    .kpis{display:grid;grid-template-columns: repeat(3, minmax(0,1fr));gap:10px;margin-top:12px;}
-    .kpi{border:1px solid var(--stroke);background: rgba(255,255,255,.05);border-radius:14px;padding:12px;}
-    .kpi .k{font-size:12px;color: var(--muted); font-weight:800}
-    .kpi .v{margin-top:6px;font-size:18px;font-weight:900}
-
-    .footerNote{margin-top:12px;font-size:11px;color: var(--muted2);line-height:1.35;}
-
-    .linkRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;}
-    .linkBtn{
-      flex:1;min-width:140px;display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      padding:10px 12px;border-radius:12px;border:1px solid var(--stroke);
-      background: rgba(255,255,255,.08);color: var(--txt);font-weight:820;text-decoration:none;
+    .formRow{
+      display:flex;
+      gap:10px;
+      margin-top: 12px;
+      align-items:center;
+      flex-wrap:wrap;
     }
-    .linkBtn:hover{background: rgba(255,255,255,.12); transform: translateY(-1px)}
+    .inp{
+      flex:1;
+      min-width: 120px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.92);
+      font-weight: 800;
+      outline:none;
+    }
+    select.inp{ font-weight:900; }
+
+    .stats{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top: 12px;
+    }
+    .stat{
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.14);
+      border-radius: 14px;
+      padding: 10px;
+    }
+    .stat .k{ font-size: 11px; color: var(--muted); }
+    .stat .v{ margin-top: 6px; font-size: 16px; font-weight: 1000; }
+
+    .ctaRow{
+      display:flex;
+      gap:10px;
+      margin-top: 12px;
+      flex-wrap:wrap;
+    }
+    .cta{
+      flex:1;
+      min-width: 140px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.14);
+      color: rgba(255,255,255,.90);
+      font-weight: 900;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .call{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border:1px solid rgba(255,77,109,.25);
+      background: rgba(255,77,109,.08);
+      color: rgba(255,255,255,.92);
+      font-weight: 1000;
+      margin-top: 10px;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .note{
+      margin-top: 10px;
+      font-size: 11px;
+      color: rgba(255,255,255,.40);
+      line-height: 1.35;
+    }
+
+    .list{
+      margin-top: 10px;
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.14);
+      border-radius: 14px;
+      overflow:hidden;
+    }
+    .listHead, .listRow{
+      display:grid;
+      grid-template-columns: 1.4fr .8fr .6fr .6fr;
+      gap: 8px;
+      padding: 10px 10px;
+      align-items:center;
+    }
+    .listHead{
+      font-size: 11px;
+      color: rgba(255,255,255,.65);
+      border-bottom:1px solid rgba(255,255,255,.06);
+      background: rgba(255,255,255,.03);
+    }
+    .listRow{
+      font-size: 12px;
+      border-bottom:1px solid rgba(255,255,255,.05);
+    }
+    .listRow:last-child{ border-bottom:none; }
+    .xbtn{
+      border:none;
+      background: rgba(255,255,255,.08);
+      color: rgba(255,255,255,.92);
+      border-radius: 10px;
+      padding: 8px 10px;
+      cursor:pointer;
+      font-weight: 1000;
+    }
+
+    @media (max-width: 980px){
+      .grid{ grid-template-columns: 1fr; }
+      .brand{ min-width:auto; }
+      .markets{ grid-template-columns: 1fr; }
+      .listHead, .listRow{ grid-template-columns: 1.2fr .7fr .5fr .5fr; }
+    }
   </style>
 </head>
 
 <body>
   <div class="wrap">
+
     <div class="topbar">
       <div class="brand">
-        <div class="logoPill">
-          <img src="vincitu-stemma-256.png" alt="Vincitu" />
+        <div class="logoBox" title="Vincitu">
+          <!-- LOGO SUPER VISIBILE -->
+          <img src="vincitu-stemma-256.png" alt="Vincitu Logo">
         </div>
-        <div>
-          <h1>Vincitu • WOW Portal</h1>
-          <div class="sub">Eventi “WOW” + schedina • Quote già precompilate (poi puoi correggerle dal banco)</div>
+        <div class="brandText">
+          <h1>Vincitu • IA Portal</h1>
+          <div class="sub">Eventi + schedina • Quote precompilate (puoi correggerle dal banco)</div>
         </div>
       </div>
 
       <div class="chips">
-        <div class="chip">Centro: <b id="chipCenter">VINC001</b></div>
-        <div class="chip">Agg.: <b id="chipUpdated">AUTO</b></div>
-        <div class="chip">Modalità: <b>VINCITU</b></div>
+        <div class="chip"><span class="dot"></span> Centro: <strong id="centerName">VINC001</strong></div>
+        <div class="chip"><span class="dot2"></span> Agg.: <strong id="modeAgg">AUTO</strong></div>
+        <div class="chip"><span class="dot3"></span> Modalità: <strong>VINCITU</strong></div>
       </div>
     </div>
 
     <div class="grid">
-      <div class="card">
-        <div class="cardHead">
-          <h2>⚡ Vincitu • Eventi (WOW)</h2>
-          <div class="row">
-            <button class="btn primary" id="btnReload">🔄 WOW Casual (rigenera)</button>
-            <button class="btn" id="btnMood">✨ Cambia mood</button>
+
+      <!-- LEFT: EVENTS -->
+      <div class="panel">
+        <div class="panelHeader">
+          <div class="title">⚡ Vincitu • Eventi (IA)</div>
+          <div class="btnRow">
+            <button class="btn btnPrimary" id="regenBtn">🧠 IA: rigenera eventi</button>
+            <button class="btn" id="moodBtn">✨ Cambia mood</button>
           </div>
         </div>
-        <div class="cardBody">
-          <div class="row" style="margin-bottom:10px;">
-            <span class="pill"><span class="dot" id="moodDot"></span> <b>Mood:</b> <span id="moodText">equilibrato</span></span>
-            <span class="pill"><span class="dot blue"></span> Quote precompilate (modificabili)</span>
-            <span class="tiny">Se al banco vedi una quota diversa: scrivila sopra e premi “Aggiungi”.</span>
+
+        <div class="pillRow">
+          <div class="pill">🟢 Mood: <strong id="moodLabel">equilibrato</strong></div>
+          <div class="pill">🧾 Quote precompilate <strong>(modificabili)</strong></div>
+        </div>
+
+        <div class="hint" id="hintTxt">
+          Se al banco vedi una quota diversa: scrivila sopra e premi “Aggiungi”.
+        </div>
+
+        <div class="events" id="eventsWrap"></div>
+      </div>
+
+      <!-- RIGHT: SLIP -->
+      <div class="panel">
+        <div class="panelHeader">
+          <div class="title">🧾 Schedina</div>
+          <div class="btnRow">
+            <button class="btn" id="clearBtn">🧹 Svuota</button>
+          </div>
+        </div>
+
+        <div class="side">
+          <h3>Multipla o Sistema 2 su n (informativo)</h3>
+          <div class="small">Seleziona dagli eventi con “Aggiungi”.</div>
+
+          <div class="formRow">
+            <input class="inp" id="stakeInp" type="number" min="1" step="1" value="5" />
+            <select class="inp" id="betTypeSel">
+              <option value="multi">Multipla (tutte)</option>
+              <option value="system2">Sistema 2 su n</option>
+            </select>
           </div>
 
-          <div class="events" id="events"></div>
+          <div class="stats">
+            <div class="stat"><div class="k">Numero selezioni</div><div class="v" id="nSel">0</div></div>
+            <div class="stat"><div class="k">Quota totale</div><div class="v" id="qTot">—</div></div>
+            <div class="stat"><div class="k">Stake per combo</div><div class="v" id="stakeCombo">—</div></div>
+            <div class="stat"><div class="k">Vincita stimata</div><div class="v" id="winEst">—</div></div>
+          </div>
 
-          <div class="footerNote">
-            Supporto informativo / intrattenimento. Nessuna garanzia di risultato. Gioca responsabilmente. 18+.
+          <div class="list" id="slipList">
+            <div class="listHead">
+              <div>Partita</div><div>Mercato</div><div>Quota</div><div>Az.</div>
+            </div>
+            <div id="slipRows"></div>
+          </div>
+
+          <div class="ctaRow">
+            <button class="cta" id="waBtn">💬 WhatsApp</button>
+            <button class="cta" id="mapsBtn">📍 Maps</button>
+          </div>
+          <button class="call" id="callBtn">📞 +39 000 000 0000</button>
+
+          <div class="note">
+            Supporto informativo / intrattenimento. Nessuna garanzia di risultato. Gioca responsabilmente.
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="cardHead">
-          <h2>🧾 Schedina</h2>
-          <button class="btn danger" id="btnClear">🧹 Svuota</button>
-        </div>
-        <div class="cardBody">
-          <div class="small" style="margin-bottom:6px;">Multipla o Sistema 2 su n (informativo)</div>
-
-          <table class="slipTable">
-            <thead>
-              <tr>
-                <th>Partita</th>
-                <th>Mercato</th>
-                <th>Quota</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody id="slipBody">
-              <tr><td colspan="4" class="small">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>
-            </tbody>
-          </table>
-
-          <div class="formGroup">
-            <div>
-              <label>Stake totale (€)</label>
-              <input type="number" id="stake" min="1" step="1" value="5"/>
-            </div>
-            <div>
-              <label>Tipo giocata</label>
-              <select id="betType">
-                <option value="multi">Multipla (tutte)</option>
-                <option value="system2">Sistema (2 su n)</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="kpis">
-            <div class="kpi">
-              <div class="k">Numero selezioni</div>
-              <div class="v" id="kSel">0</div>
-            </div>
-            <div class="kpi">
-              <div class="k">Quota totale (multipla)</div>
-              <div class="v" id="kOdd">—</div>
-            </div>
-            <div class="kpi">
-              <div class="k">Vincita potenziale</div>
-              <div class="v" id="kWin">—</div>
-            </div>
-          </div>
-
-          <div class="linkRow">
-            <a class="linkBtn" id="waBtn" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
-            <a class="linkBtn" id="mapsBtn" href="#" target="_blank" rel="noopener">📍 Maps</a>
-          </div>
-          <div class="linkRow">
-            <a class="linkBtn" id="telBtn" href="tel:+390000000000">📞 +39 000 000 0000</a>
-          </div>
-
-          <div class="tiny" style="margin-top:10px;">
-            Code sala (QR): apri con <b>?c=VINC001</b> per cambiare contatti.
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
 <script>
-const CENTERS = {
-  "VINC001": {
-    name: "Vincitu • Centro Demo",
-    phone: "+39 000 000 0000",
-    whatsapp: "+390000000000",
-    maps: "https://www.google.com/maps",
-  }
+/** ======= CONFIG DEMO (poi mettiamo telefono/WA/maps del tuo centro) ======= **/
+const CONTACTS = {
+  phone: "+390000000000",
+  whatsappText: "Ciao! Vorrei info su una schedina dal Vincitu IA Portal.",
+  mapsQuery: "Salerno"
 };
 
+/** ======= MOODS ======= **/
 const MOODS = [
-  { key:"equilibrato", dot:"", label:"equilibrato" },
-  { key:"aggressivo", dot:"orange", label:"aggressivo" },
-  { key:"safe", dot:"blue", label:"prudente" },
+  {key:"equilibrato", label:"equilibrato", pick:["1X","Over 1.5","Goal/NoGoal Si","Under 3.5","DNB 1"]},
+  {key:"aggressivo", label:"aggressivo", pick:["Over 2.5","Goal Si","1","2","Over 3.5"]},
+  {key:"prudente", label:"prudente", pick:["1X","Under 3.5","DNB 1","DNB 2","Over 1.5"]},
+  {key:"spettacolo", label:"spettacolo", pick:["Goal Si","Over 2.5","Over 3.5","Over 1.5","1X"]},
 ];
+let moodIdx = 0;
 
-let moodIndex = 0;
-let allEvents = [];
-let shownEvents = [];
-let slip = [];
+/** ======= STATE ======= **/
+let EVENTS = [];
+let SLIP = []; // {match, market, odd}
 
-function qs(name){
-  const url = new URL(window.location.href);
-  return url.searchParams.get(name);
+/** ======= HELPERS ======= **/
+function qs(k){ return new URLSearchParams(location.search).get(k); }
+function f2(x){
+  if(!isFinite(x)) return "—";
+  return (Math.round(x*100)/100).toFixed(2);
 }
-function fmt2(n){
-  if (typeof n !== "number" || !isFinite(n)) return "—";
-  return n.toFixed(2);
+function clampOdd(x){
+  // “vicine” e credibili, non assurde
+  x = Number(x);
+  if(!isFinite(x)) return 1.70;
+  if(x < 1.20) x = 1.20;
+  if(x > 3.50) x = 3.50;
+  return Math.round(x*100)/100;
 }
-
-function setCenterFromQuery(){
-  const code = (qs("c") || "VINC001").toUpperCase();
-  const center = CENTERS[code] || CENTERS["VINC001"];
-  document.getElementById("chipCenter").textContent = code;
-
-  const wa = document.getElementById("waBtn");
-  const maps = document.getElementById("mapsBtn");
-  const tel = document.getElementById("telBtn");
-  wa.href = `https://wa.me/${(center.whatsapp||"").replace(/\\D/g,"")}?text=${encodeURIComponent("Ciao! Ho visto il portale WOW. Info?")}`;
-  maps.href = center.maps || "https://www.google.com/maps";
-  tel.href = `tel:${center.phone || "+390000000000"}`;
-  tel.textContent = `📞 ${center.phone || "+39 000 000 0000"}`;
+function calcCombos2(n){
+  if(n < 2) return 0;
+  return (n*(n-1))/2;
 }
 
-function setMood(){
-  const m = MOODS[moodIndex % MOODS.length];
-  document.getElementById("moodText").textContent = m.label;
-  const dot = document.getElementById("moodDot");
-  dot.className = "dot" + (m.dot ? (" " + m.dot) : "");
-}
-
-async function loadEvents(){
-  try{
-    const res = await fetch("./events.json?v=" + Date.now(), {cache:"no-store"});
-    const data = await res.json();
-    document.getElementById("chipUpdated").textContent = (data.updated_at || "AUTO");
-    allEvents = (data.events || []);
-  }catch(e){
-    allEvents = [];
-  }
-}
-
-function pickWowEvents(){
-  if(!allEvents.length){
-    shownEvents = [];
-    renderEvents();
-    return;
-  }
-
-  const m = MOODS[moodIndex % MOODS.length].key;
-  const arr = [...allEvents].sort(()=>Math.random()-0.5);
-  shownEvents = arr.slice(0, 10).map(ev=>{
-    const badge = (m==="aggressivo") ? "Alta energia (IA)" : (m==="safe" ? "Prudente (IA)" : "Equilibrato (IA)");
-    return {...ev, badge};
-  });
-
-  renderEvents();
-}
-
+/** ======= RENDER ======= **/
 function renderEvents(){
-  const root = document.getElementById("events");
-  root.innerHTML = "";
+  const wrap = document.getElementById("eventsWrap");
+  wrap.innerHTML = "";
 
-  if(!shownEvents.length){
-    root.innerHTML = `<div class="small">Nessun evento caricato. Controlla che <b>events.json</b> esista nel repo.</div>`;
-    return;
-  }
+  const mood = MOODS[moodIdx];
 
-  for(const ev of shownEvents){
-    const title = `${ev.home} - ${ev.away}`;
-    const when = ev.start || "—";
-    const league = ev.league || "Campionato";
+  EVENTS.forEach((ev, i) => {
+    const card = document.createElement("div");
+    card.className = "eventCard";
 
-    const el = document.createElement("div");
-    el.className = "event";
+    const league = ev.league || "Calcio";
+    const start = ev.start || "Oggi";
+    const teams = (ev.home && ev.away) ? `${ev.home} - ${ev.away}` : ev.match || "Match";
 
-    el.innerHTML = `
-      <div class="eventTop">
-        <div>
-          <span class="leagueTag">🟢 ${league}</span>
-          <div class="eventTitle">${title}</div>
-          <div class="eventMeta">🕒 ${when} • <span class="tiny">${(ev.tags||[]).join(" • ")}</span></div>
-          ${ev.note ? `<div class="tiny" style="margin-top:6px;">ℹ️ ${ev.note}</div>` : ""}
-        </div>
-        <div class="badgeIA">✨ ${ev.badge || "IA"}</div>
-      </div>
+    const top = document.createElement("div");
+    top.className = "eventTop";
 
-      <div class="markets">
-        ${(ev.markets||[]).map(mk => `
-          <div class="mkt" data-ev="${encodeURIComponent(title)}" data-mk="${encodeURIComponent(mk.label)}">
-            <div class="mktTop">
-              <div>
-                <div class="mktName">${mk.label}</div>
-                <div class="mktHint">${mk.tip || "Quota precompilata (modifica se diversa al banco)"}</div>
-              </div>
-            </div>
-            <div class="oddsLine">
-              <input class="oddsInput" type="text" inputmode="decimal" data-odd value="${mk.odd ? String(mk.odd).replace('.', ',') : ''}" placeholder="es. 1,72" />
-              <button class="addBtn" data-add>＋ Aggiungi</button>
-            </div>
-          </div>
-        `).join("")}
-      </div>
+    const left = document.createElement("div");
+    left.innerHTML = `
+      <div class="leagueTag">🟢 ${league}</div>
+      <div class="teams">${teams}</div>
+      <div class="meta">🕒 ${start} <span style="opacity:.35">•</span> 🔥 ${ev.tag || "IA"} </div>
     `;
 
-    root.appendChild(el);
-  }
+    const right = document.createElement("div");
+    right.innerHTML = `<div class="badgeIA">🤖 ${mood.label} (IA)</div>`;
 
-  root.querySelectorAll("[data-add]").forEach(btn=>{
-    btn.addEventListener("click", (e)=>{
-      const box = e.target.closest(".mkt");
-      const match = decodeURIComponent(box.getAttribute("data-ev"));
-      const market = decodeURIComponent(box.getAttribute("data-mk"));
-      const input = box.querySelector("[data-odd]");
-      const raw = (input.value || "").trim().replace(",", ".");
-      const odd = parseFloat(raw);
+    top.appendChild(left);
+    top.appendChild(right);
 
-      if(!isFinite(odd) || odd < 1.01){
-        input.focus();
-        input.style.borderColor = "rgba(251,113,133,.55)";
-        setTimeout(()=> input.style.borderColor = "rgba(255,255,255,.10)", 800);
-        return;
-      }
+    card.appendChild(top);
 
-      slip.push({match, market, odd});
-      renderSlip();
+    // markets: 3
+    const mWrap = document.createElement("div");
+    mWrap.className = "markets";
+
+    const markets = (ev.markets || []).slice(0,3);
+    markets.forEach((m, mi) => {
+      const mDiv = document.createElement("div");
+      mDiv.className = "market";
+
+      const odd = clampOdd(m.odd);
+
+      mDiv.innerHTML = `
+        <div>
+          <div class="mname">${m.label}</div>
+          <div class="msub">Quota Vincitu (puoi correggerla)</div>
+        </div>
+        <div class="row">
+          <input class="oddInput" value="${odd}" inputmode="decimal" />
+          <button class="addBtn">＋ Aggiungi</button>
+        </div>
+      `;
+
+      const inp = mDiv.querySelector("input");
+      const btn = mDiv.querySelector("button");
+
+      btn.addEventListener("click", () => {
+        const val = clampOdd(inp.value);
+        inp.value = val;
+        addToSlip({ match: teams, market: m.label, odd: val });
+      });
+
+      mWrap.appendChild(mDiv);
     });
+
+    card.appendChild(mWrap);
+    wrap.appendChild(card);
   });
 }
 
 function renderSlip(){
-  const body = document.getElementById("slipBody");
-  body.innerHTML = "";
+  document.getElementById("nSel").textContent = String(SLIP.length);
 
-  if(!slip.length){
-    body.innerHTML = `<tr><td colspan="4" class="small">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>`;
-    updateKPIs();
-    return;
-  }
+  const rows = document.getElementById("slipRows");
+  rows.innerHTML = "";
 
-  slip.forEach((s, i)=>{
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${s.match}</td>
-      <td>${s.market}</td>
-      <td><b>${fmt2(s.odd)}</b></td>
-      <td><button class="xBtn" data-del="${i}">X</button></td>
+  SLIP.forEach((s, idx) => {
+    const r = document.createElement("div");
+    r.className = "listRow";
+    r.innerHTML = `
+      <div style="font-weight:800">${s.match}</div>
+      <div>${s.market}</div>
+      <div style="font-weight:900">${f2(s.odd)}</div>
+      <div><button class="xbtn">X</button></div>
     `;
-    body.appendChild(tr);
-  });
-
-  body.querySelectorAll("[data-del]").forEach(b=>{
-    b.addEventListener("click", ()=>{
-      const idx = parseInt(b.getAttribute("data-del"),10);
-      slip.splice(idx,1);
+    r.querySelector("button").addEventListener("click", () => {
+      SLIP.splice(idx,1);
       renderSlip();
+      renderCalc();
     });
+    rows.appendChild(r);
   });
 
-  updateKPIs();
+  renderCalc();
 }
 
-function updateKPIs(){
-  const sel = slip.length;
-  document.getElementById("kSel").textContent = sel;
+function renderCalc(){
+  const stake = Number(document.getElementById("stakeInp").value || 0);
+  const type = document.getElementById("betTypeSel").value;
 
-  const stake = parseFloat(document.getElementById("stake").value || "0") || 0;
-  const betType = document.getElementById("betType").value;
-
-  if(sel === 0 || stake <= 0){
-    document.getElementById("kOdd").textContent = "—";
-    document.getElementById("kWin").textContent = "—";
+  if(SLIP.length === 0){
+    document.getElementById("qTot").textContent = "—";
+    document.getElementById("stakeCombo").textContent = "—";
+    document.getElementById("winEst").textContent = "—";
     return;
   }
 
-  let totalOdd = slip.reduce((acc, s)=> acc * s.odd, 1);
-
-  if(betType === "multi"){
-    document.getElementById("kOdd").textContent = fmt2(totalOdd);
-    document.getElementById("kWin").textContent = "€" + fmt2(stake * totalOdd);
-    return;
-  }
-
-  if(sel < 2){
-    document.getElementById("kOdd").textContent = "—";
-    document.getElementById("kWin").textContent = "—";
-    return;
-  }
-
-  const combos = (sel * (sel - 1)) / 2;
-  const stakePer = stake / combos;
-
-  let payoutSum = 0;
-  for(let i=0;i<sel;i++){
-    for(let j=i+1;j<sel;j++){
-      payoutSum += stakePer * (slip[i].odd * slip[j].odd);
+  if(type === "multi"){
+    let q = 1;
+    SLIP.forEach(s => q *= Number(s.odd));
+    q = Number(f2(q));
+    document.getElementById("qTot").textContent = f2(q);
+    document.getElementById("stakeCombo").textContent = "—";
+    document.getElementById("winEst").textContent = f2(stake * q) + "€";
+  } else {
+    const n = SLIP.length;
+    const combos = calcCombos2(n);
+    if(combos === 0){
+      document.getElementById("qTot").textContent = "2 su n";
+      document.getElementById("stakeCombo").textContent = "—";
+      document.getElementById("winEst").textContent = "—";
+      return;
     }
+    const stakePer = stake / combos;
+    document.getElementById("qTot").textContent = `2 su ${n} (${combos} combo)`;
+    document.getElementById("stakeCombo").textContent = f2(stakePer) + "€";
+    // stima: migliore combo (max)
+    let best = 0;
+    for(let i=0;i<n;i++){
+      for(let j=i+1;j<n;j++){
+        const q = Number(SLIP[i].odd) * Number(SLIP[j].odd);
+        if(q > best) best = q;
+      }
+    }
+    document.getElementById("winEst").textContent = "≈ " + f2(best * stakePer) + "€ (stima)";
   }
-  document.getElementById("kOdd").textContent = `Sistema 2 su ${sel} (${combos} combo)`;
-  document.getElementById("kWin").textContent = "€" + fmt2(payoutSum);
 }
 
-function wire(){
-  document.getElementById("btnClear").addEventListener("click", ()=>{
-    slip = [];
-    renderSlip();
-  });
-
-  document.getElementById("btnMood").addEventListener("click", ()=>{
-    moodIndex++;
-    setMood();
-    pickWowEvents();
-  });
-
-  document.getElementById("btnReload").addEventListener("click", ()=>{
-    pickWowEvents();
-  });
-
-  document.getElementById("stake").addEventListener("input", updateKPIs);
-  document.getElementById("betType").addEventListener("change", updateKPIs);
+/** ======= ACTIONS ======= **/
+function addToSlip(x){
+  SLIP.push(x);
+  renderSlip();
 }
 
-(async function init(){
-  setCenterFromQuery();
-  wire();
+function clearSlip(){
+  SLIP = [];
+  renderSlip();
+}
+
+function setCenter(){
+  const c = qs("c") || "VINC001";
+  document.getElementById("centerName").textContent = c;
+}
+
+function setMood(){
+  document.getElementById("moodLabel").textContent = MOODS[moodIdx].label;
+}
+
+function changeMood(){
+  moodIdx = (moodIdx + 1) % MOODS.length;
   setMood();
+}
+
+/** ======= EVENTS LOADING ======= **/
+async function loadEvents(){
+  // Se hai events.json: lo usa
+  try{
+    const res = await fetch("events.json?v=" + (qs("v") || Date.now()));
+    if(res.ok){
+      const data = await res.json();
+      if(Array.isArray(data.events)) {
+        EVENTS = data.events.map(e => ({
+          league: e.league || "Calcio",
+          home: e.home,
+          away: e.away,
+          start: e.start || "Oggi",
+          tag: e.tag || "IA",
+          markets: (e.markets || []).map(m => ({ label: m.label, odd: m.odd }))
+        }));
+        return;
+      }
+    }
+  }catch(e){}
+
+  // fallback demo (credibile)
+  EVENTS = [
+    { league:"Ekstraklasa (Polonia)", home:"Legia Varsavia", away:"Lech Poznan", start:"Oggi • Minore", tag:"WOW",
+      markets:[ {label:"1X", odd:1.35},{label:"Under 3.5", odd:1.38},{label:"Goal Si", odd:1.85} ] },
+    { league:"Premier League", home:"Arsenal", away:"Tottenham", start:"Oggi • Derby", tag:"IA",
+      markets:[ {label:"Over 2.5", odd:1.75},{label:"1X", odd:1.32},{label:"Goal Si", odd:1.62} ] },
+    { league:"Eredivisie", home:"Ajax", away:"PSV", start:"Oggi", tag:"IA",
+      markets:[ {label:"Over 2.5", odd:1.68},{label:"Over 1.5", odd:1.25},{label:"Goal Si", odd:1.55} ] },
+  ];
+}
+
+function regenEventsFake(){
+  // “Rigenera” = cambia solo l’ordine e micro-varia quote (restano credibili)
+  EVENTS = EVENTS.map(ev => {
+    const mk = ev.markets.map(m => ({
+      label: m.label,
+      odd: clampOdd(Number(m.odd) + (Math.random()*0.16 - 0.08))
+    }));
+    mk.sort(() => Math.random() - 0.5);
+    return {...ev, markets: mk};
+  }).sort(() => Math.random() - 0.5);
+
+  renderEvents();
+}
+
+/** ======= CONTACTS ======= **/
+function openWhatsApp(){
+  const text = encodeURIComponent(CONTACTS.whatsappText);
+  window.open("https://wa.me/?text=" + text, "_blank");
+}
+function openMaps(){
+  const q = encodeURIComponent(CONTACTS.mapsQuery);
+  window.open("https://www.google.com/maps/search/?api=1&query=" + q, "_blank");
+}
+function callPhone(){
+  window.location.href = "tel:" + CONTACTS.phone;
+}
+
+/** ======= INIT ======= **/
+(async function init(){
+  setCenter();
+  setMood();
+
+  document.getElementById("regenBtn").addEventListener("click", regenEventsFake);
+  document.getElementById("moodBtn").addEventListener("click", () => { changeMood(); });
+  document.getElementById("clearBtn").addEventListener("click", clearSlip);
+
+  document.getElementById("stakeInp").addEventListener("input", renderCalc);
+  document.getElementById("betTypeSel").addEventListener("change", renderCalc);
+
+  document.getElementById("waBtn").addEventListener("click", openWhatsApp);
+  document.getElementById("mapsBtn").addEventListener("click", openMaps);
+  document.getElementById("callBtn").addEventListener("click", callPhone);
+
   await loadEvents();
-  pickWowEvents();
+  renderEvents();
   renderSlip();
 })();
 </script>
