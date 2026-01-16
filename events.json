@@ -1,26 +1,60 @@
 {
-  "updated_at": "2026-01-16 09:48",
+  "updated_at": "AUTO",
   "timezone": "Europe/Rome",
   "events": [
     {
       "league": "Serie A",
       "home": "Inter",
-      "away": "Juventus",
-      "start": "Oggi 20:45",
+      "away": "Atalanta",
+      "start": "20:45",
+      "tags": ["Top Match", "Alta dinamicità"],
       "markets": [
         { "label": "Over 1.5", "odd": 1.55 },
-        { "label": "1X", "odd": 1.65 },
-        { "label": "DNB 1", "odd": 1.70 }
+        { "label": "Goal/No Goal Sì", "odd": 1.75 }
       ]
     },
     {
-      "league": "Serie A",
-      "home": "Milan",
-      "away": "Roma",
-      "start": "Oggi 18:00",
+      "league": "Premier League",
+      "home": "Arsenal",
+      "away": "Tottenham",
+      "start": "18:30",
+      "tags": ["Perfetta per multipla"],
       "markets": [
-        { "label": "Goal/NoGoal Sì", "odd": 1.75 },
-        { "label": "Over 2.5", "odd": 1.85 }
+        { "label": "Over 2.5", "odd": 1.80 },
+        { "label": "1X", "odd": 1.45 }
+      ]
+    },
+    {
+      "league": "Allsvenskan (Svezia)",
+      "home": "Malmo",
+      "away": "AIK",
+      "start": "19:00",
+      "tags": ["Scelta esplorativa IA", "Evento poco battuto"],
+      "markets": [
+        { "label": "Over 2.5", "odd": 1.85 },
+        { "label": "DNB 1", "odd": 1.65 }
+      ]
+    },
+    {
+      "league": "Superliga (Danimarca)",
+      "home": "Midtjylland",
+      "away": "Brondby",
+      "start": "20:00",
+      "tags": ["Campionato alternativo"],
+      "markets": [
+        { "label": "Goal/No Goal Sì", "odd": 1.70 },
+        { "label": "Over 1.5", "odd": 1.50 }
+      ]
+    },
+    {
+      "league": "Ekstraklasa (Polonia)",
+      "home": "Legia",
+      "away": "Lech",
+      "start": "21:00",
+      "tags": ["Europa Explorer"],
+      "markets": [
+        { "label": "Over 2.5", "odd": 1.90 },
+        { "label": "1X", "odd": 1.40 }
       ]
     }
   ]
