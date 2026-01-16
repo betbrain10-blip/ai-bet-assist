@@ -1,425 +1,789 @@
 <!doctype html>
 <html lang="it">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Vincitu • AI Bet Assist (WOW)</title>
-<style>
-:root{
-  --bgA:#070A12; --bgB:#0B1022;
-  --border:rgba(255,255,255,.10);
-  --ink:#EAF0FF; --muted:#A8B3D6;
-  --grad:linear-gradient(90deg,#ef4444,#f59e0b,#22c55e);
-  --shadow:0 18px 40px rgba(0,0,0,.45);
-}
-*{box-sizing:border-box}
-body{
-  margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--ink);
-  background:
-    radial-gradient(1200px 600px at 10% 10%, rgba(239,68,68,.22), transparent 60%),
-    radial-gradient(900px 500px at 90% 20%, rgba(245,158,11,.20), transparent 60%),
-    radial-gradient(900px 500px at 30% 90%, rgba(34,197,94,.16), transparent 55%),
-    linear-gradient(180deg,var(--bgA),var(--bgB));
-}
-.wrap{max-width:980px;margin:auto;padding:18px}
-.topbar{
-  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
-  padding:14px 16px;border:1px solid var(--border);border-radius:22px;
-  background:rgba(255,255,255,.04);box-shadow:var(--shadow);backdrop-filter: blur(10px);
-}
-.brand{display:flex;align-items:center;gap:12px;min-width:280px}
-.logo{
-  width:44px;height:44px;border-radius:14px;background:conic-gradient(from 210deg,#ef4444,#f59e0b,#22c55e,#ef4444);
-  box-shadow:0 10px 20px rgba(0,0,0,.35);
-}
-h1{margin:0;font-size:16px}
-.sub{margin:2px 0 0;color:var(--muted);font-size:12px}
-.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);color:var(--muted);font-size:12px;font-weight:900}
-.pill b{color:var(--ink)}
-.grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
-@media(min-width:860px){ .grid{grid-template-columns: 1.15fr .85fr;} }
-.card{border:1px solid var(--border);border-radius:22px;background:rgba(255,255,255,.03);box-shadow:var(--shadow);overflow:hidden}
-.cardHeader{padding:14px 16px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;background:rgba(255,255,255,.03)}
-.cardTitle{margin:0;font-size:14px}
-.small{color:var(--muted);font-size:12px;line-height:1.35}
-.section{padding:14px 16px}
-.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.btn{cursor:pointer;border:none;padding:11px 14px;border-radius:14px;background:var(--grad);color:#06101b;font-weight:1000}
-.btn2{cursor:pointer;border:1px solid var(--border);padding:11px 14px;border-radius:14px;background:rgba(255,255,255,.04);color:var(--ink);font-weight:900}
-.btnSm{padding:8px 10px;border-radius:12px;font-weight:900}
-.input, select{width:100%;padding:12px;border-radius:14px;border:1px solid var(--border);background:rgba(0,0,0,.18);color:var(--ink);outline:none;font-size:14px}
-label{font-size:12px;color:var(--muted);font-weight:900}
-.hr{height:1px;background:var(--border);margin:12px 0}
-.tag{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.03);font-size:12px;font-weight:1000}
-.dot{width:8px;height:8px;border-radius:999px;background:#22c55e}
-.dot.w{background:#f59e0b}
-.dot.r{background:#ef4444}
-.event{border:1px solid var(--border);border-radius:18px;padding:12px;background:rgba(255,255,255,.03);margin:10px 0}
-.evTop{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start}
-.evMatch{font-size:15px;font-weight:1000}
-.evMeta{color:var(--muted);font-size:12px}
-.marketGrid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px}
-@media(min-width:640px){ .marketGrid{grid-template-columns:1fr 1fr;} }
-.market{border:1px solid var(--border);border-radius:16px;padding:10px;background:rgba(0,0,0,.14);display:flex;justify-content:space-between;gap:10px;align-items:center}
-.market .lab{color:var(--muted);font-size:12px}
-.badgeIA{font-size:11px;font-weight:1000;color:rgba(234,240,255,.95);padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.05)}
-.table{width:100%;border-collapse:separate;border-spacing:0 10px}
-.table th{text-align:left;color:var(--muted);font-size:12px;font-weight:1000;padding:0 8px}
-.table td{padding:10px 8px;vertical-align:top}
-.tr{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:16px}
-.notice{font-size:12px;color:var(--muted);line-height:1.35}
-.footer{text-align:center;color:var(--muted);font-size:12px;margin:18px 0}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vincitu • WOW Portal</title>
+  <meta name="theme-color" content="#0b1220"/>
+
+  <style>
+    :root{
+      --bg1:#070a12;
+      --bg2:#101b32;
+      --card: rgba(255,255,255,.07);
+      --card2: rgba(255,255,255,.10);
+      --stroke: rgba(255,255,255,.10);
+      --txt: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.65);
+      --muted2: rgba(255,255,255,.45);
+      --accent:#34d399;
+      --accent2:#60a5fa;
+      --danger:#fb7185;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--txt);
+      background:
+        radial-gradient(1200px 800px at 20% 10%, rgba(124,58,237,.35), transparent 55%),
+        radial-gradient(900px 700px at 80% 30%, rgba(56,189,248,.25), transparent 60%),
+        radial-gradient(900px 900px at 50% 90%, rgba(34,197,94,.14), transparent 60%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      min-height:100vh;
+    }
+
+    .wrap{
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 26px 18px 40px;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding: 18px 18px;
+      border:1px solid var(--stroke);
+      background: rgba(10,15,28,.65);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width: 280px;
+    }
+
+    .brand img{
+      height: 38px;
+      width: auto;
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,.35));
+    }
+
+    .brand h1{
+      margin:0;
+      font-size: 18px;
+      line-height: 1.15;
+      letter-spacing:.2px;
+      font-weight: 780;
+    }
+    .brand .sub{
+      margin-top:4px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .chips{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      align-items:center;
+    }
+    .chip{
+      padding:8px 10px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.06);
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .chip b{color: var(--txt)}
+
+    .grid{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 14px;
+    }
+    @media (max-width: 980px){
+      .grid{grid-template-columns:1fr}
+      .brand{min-width:unset}
+    }
+
+    .card{
+      border:1px solid var(--stroke);
+      background: rgba(10,15,28,.55);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      overflow:hidden;
+    }
+    .cardHead{
+      padding: 14px 14px 12px;
+      border-bottom:1px solid var(--stroke);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+    }
+    .cardHead h2{
+      margin:0;
+      font-size: 14px;
+      letter-spacing:.2px;
+    }
+    .cardBody{padding: 14px}
+
+    .row{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.08);
+      color: var(--txt);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 720;
+      cursor:pointer;
+      transition: .15s ease;
+      user-select:none;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.11)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(52,211,153,.95), rgba(96,165,250,.85));
+      border-color: transparent;
+      color:#041016;
+    }
+    .btn.danger{
+      background: rgba(251,113,133,.14);
+      border-color: rgba(251,113,133,.28);
+      color: #ffd3da;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.06);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .dot{
+      width:8px;height:8px;border-radius:50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(52,211,153,.12);
+    }
+    .dot.blue{background: var(--accent2); box-shadow: 0 0 0 5px rgba(96,165,250,.12);}
+    .dot.orange{background:#f59e0b; box-shadow: 0 0 0 5px rgba(245,158,11,.14);}
+
+    .small{font-size:12px;color:var(--muted)}
+    .tiny{font-size:11px;color:var(--muted2)}
+
+    .events{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .event{
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.05);
+      border-radius: 16px;
+      padding: 12px;
+    }
+
+    .eventTop{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom: 10px;
+    }
+
+    .leagueTag{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding: 6px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid var(--stroke);
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .eventTitle{
+      margin: 8px 0 2px;
+      font-size: 16px;
+      font-weight: 820;
+      letter-spacing:.2px;
+    }
+    .eventMeta{font-size:12px;color:var(--muted)}
+    .badgeIA{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.06);
+      font-size: 12px;
+      color: var(--muted);
+      white-space:nowrap;
+    }
+
+    .markets{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap:10px;
+      margin-top: 10px;
+    }
+    @media (max-width: 700px){
+      .markets{grid-template-columns:1fr}
+    }
+
+    .mkt{
+      border:1px solid var(--stroke);
+      background: rgba(0,0,0,.18);
+      border-radius: 14px;
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      min-height: 102px;
+    }
+
+    .mktTop{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:10px;
+    }
+    .mktName{
+      font-weight: 780;
+      font-size: 13px;
+      line-height: 1.15;
+    }
+    .mktHint{font-size:11px;color:var(--muted2)}
+
+    .oddsLine{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      justify-content:space-between;
+      margin-top:auto;
+    }
+
+    .oddsInput{
+      width: 110px;
+      max-width: 46%;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.06);
+      color: var(--txt);
+      outline:none;
+      font-weight: 800;
+      text-align:center;
+    }
+    .oddsInput::placeholder{color: rgba(255,255,255,.35)}
+    .addBtn{
+      flex:1;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.08);
+      color: var(--txt);
+      font-weight: 800;
+      cursor:pointer;
+      transition:.15s ease;
+    }
+    .addBtn:hover{background: rgba(255,255,255,.12); transform: translateY(-1px)}
+
+    /* Slip */
+    .slipTable{
+      width:100%;
+      border-collapse: collapse;
+      margin-top:10px;
+    }
+    .slipTable th, .slipTable td{
+      padding: 10px 8px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      font-size: 12px;
+      vertical-align: top;
+    }
+    .slipTable th{color: var(--muted); font-weight: 800; text-align:left}
+    .xBtn{
+      border:1px solid rgba(251,113,133,.28);
+      background: rgba(251,113,133,.12);
+      color:#ffd3da;
+      border-radius: 10px;
+      padding:6px 10px;
+      cursor:pointer;
+      font-weight: 800;
+    }
+
+    .formGroup{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top: 10px;
+    }
+    @media (max-width: 700px){ .formGroup{grid-template-columns:1fr} }
+
+    label{font-size:12px;color: var(--muted); font-weight: 800;}
+    select, input[type="number"], input[type="text"]{
+      width:100%;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.06);
+      color: var(--txt);
+      outline:none;
+      margin-top:6px;
+      font-weight: 750;
+    }
+
+    .kpis{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap:10px;
+      margin-top: 12px;
+    }
+    .kpi{
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.05);
+      border-radius: 14px;
+      padding: 12px;
+    }
+    .kpi .k{font-size:12px;color:var(--muted); font-weight:800}
+    .kpi .v{margin-top:6px;font-size:18px;font-weight: 900}
+    .footerNote{
+      margin-top: 12px;
+      font-size: 11px;
+      color: var(--muted2);
+      line-height: 1.35;
+    }
+
+    .linkRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 10px;
+    }
+    .linkBtn{
+      flex:1;
+      min-width: 140px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.08);
+      color: var(--txt);
+      font-weight: 820;
+      text-decoration:none;
+    }
+    .linkBtn:hover{background: rgba(255,255,255,.12); transform: translateY(-1px)}
+  </style>
 </head>
+
 <body>
+  <div class="wrap">
 
-<div class="wrap">
-  <div class="topbar">
-    <div class="brand">
-      <div class="logo"></div>
-      <div>
-        <h1 id="centerName">Vincitu • WOW Portal</h1>
-        <div class="sub">Eventi + schedina • Quote: inserisci sempre quelle del banco Vincitu</div>
-      </div>
-    </div>
-    <div class="row">
-      <span class="pill">Centro: <b id="centerCodePill">VINCITU</b></span>
-      <span class="pill">Agg.: <b id="upd">—</b></span>
-      <span class="pill">Modalità: <b>VINCITU</b></span>
-    </div>
-  </div>
-
-  <div class="grid">
-    <div class="card">
-      <div class="cardHeader">
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <div class="brand">
+        <!-- Usa questo file che carichi nel repo -->
+        <img src="vincitu-stemma-256.png" alt="Vincitu" />
         <div>
-          <h2 class="cardTitle">🟥 Vincitu • Eventi (WOW)</h2>
-          <div class="small">Per ogni mercato inserisci la quota che vedi al banco e premi <b>Aggiungi</b>.</div>
-        </div>
-        <div class="row">
-          <button class="btn" onclick="addComboWOW()">🤖 WOW Casual (2 eventi)</button>
-          <button class="btn2" onclick="shuffleMood()">✨ Cambia mood</button>
+          <h1>Vincitu • WOW Portal</h1>
+          <div class="sub">Eventi “WOW” + schedina • Quote: inserisci sempre quelle del banco Vincitu</div>
         </div>
       </div>
 
-      <div class="section">
-        <div class="row">
-          <span class="tag"><span class="dot" id="dotMood"></span> <span id="moodText">Mood: equilibrato</span></span>
-          <span class="tag"><span class="dot w"></span> Quote inserite dal banco</span>
-        </div>
-
-        <div class="hr"></div>
-        <div id="eventsBox" class="notice">Caricamento eventi…</div>
-
-        <div class="hr"></div>
-        <div class="notice">
-          <b>Nota:</b> supporto informativo / intrattenimento. Quote indicative solo come esempio: <b>fa sempre fede il banco Vincitu</b>.
-        </div>
+      <div class="chips" id="chips">
+        <div class="chip">Centro: <b id="chipCenter">VINCITU</b></div>
+        <div class="chip">Agg.: <b id="chipUpdated">AUTO</b></div>
+        <div class="chip">Modalità: <b>VINCITU</b></div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="cardHeader">
-        <div>
-          <h2 class="cardTitle">🧾 Schedina</h2>
-          <div class="small">Multipla o Sistema 2 su n</div>
-        </div>
-        <button class="btn2 btnSm" onclick="clearAll()">🧹 Svuota</button>
-      </div>
-
-      <div class="section">
-        <table class="table">
-          <thead><tr><th>Partita</th><th>Mercato</th><th>Quota</th><th></th></tr></thead>
-          <tbody id="picksBody"></tbody>
-        </table>
-        <div id="emptyMsg" class="notice">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</div>
-
-        <div class="hr"></div>
-
-        <div class="row">
-          <div style="flex:1;min-width:210px">
-            <label>Stake totale (€)</label>
-            <input class="input" id="stake" type="number" min="1" step="1" value="5" oninput="recalc()">
-          </div>
-          <div style="flex:1;min-width:210px">
-            <label>Tipo giocata</label>
-            <select id="playType" onchange="recalc()">
-              <option value="multi">Multipla (tutte)</option>
-              <option value="system">Sistema (2 su n)</option>
-            </select>
+    <div class="grid">
+      <!-- LEFT: EVENTS -->
+      <div class="card">
+        <div class="cardHead">
+          <h2>⚡ Vincitu • Eventi (WOW)</h2>
+          <div class="row">
+            <button class="btn primary" id="btnReload">🔄 WOW Casual (rigenera)</button>
+            <button class="btn" id="btnMood">✨ Cambia mood</button>
           </div>
         </div>
+        <div class="cardBody">
+          <div class="row" style="margin-bottom:10px;">
+            <span class="pill"><span class="dot" id="moodDot"></span> <b id="moodLabel">Mood:</b> <span id="moodText">equilibrato</span></span>
+            <span class="pill"><span class="dot blue"></span> Quote inserite dal banco</span>
+            <span class="tiny">Vincitu: quota sempre inserita dal banco → così corrisponde al 100%.</span>
+          </div>
 
-        <div class="hr"></div>
-        <div id="calcOut" class="notice"></div>
+          <div class="events" id="events"></div>
 
-        <div class="hr"></div>
-        <div class="row" style="margin-top:10px">
-          <a class="btn2" id="btnWhats" href="#" target="_blank" style="text-decoration:none">💬 WhatsApp</a>
-          <a class="btn2" id="btnMaps" href="#" target="_blank" style="text-decoration:none">📍 Maps</a>
-          <a class="btn2" id="btnCall" href="#" style="text-decoration:none">📞 Chiama</a>
+          <div class="footerNote">
+            Supporto informativo / intrattenimento. Nessuna garanzia di risultato. Gioca responsabilmente. 18+.
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: SLIP -->
+      <div class="card">
+        <div class="cardHead">
+          <h2>🧾 Schedina</h2>
+          <button class="btn danger" id="btnClear">🧹 Svuota</button>
+        </div>
+        <div class="cardBody">
+          <div class="small" style="margin-bottom:6px;">Multipla o Sistema 2 su n (informativo)</div>
+
+          <table class="slipTable" id="slipTable">
+            <thead>
+              <tr>
+                <th>Partita</th>
+                <th>Mercato</th>
+                <th>Quota</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="slipBody">
+              <tr><td colspan="4" class="small">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>
+            </tbody>
+          </table>
+
+          <div class="formGroup">
+            <div>
+              <label>Stake totale (€)</label>
+              <input type="number" id="stake" min="1" step="1" value="5"/>
+            </div>
+            <div>
+              <label>Tipo giocata</label>
+              <select id="betType">
+                <option value="multi">Multipla (tutte)</option>
+                <option value="system2">Sistema (2 su n)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi">
+              <div class="k">Numero selezioni</div>
+              <div class="v" id="kSel">0</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Quota totale (multipla)</div>
+              <div class="v" id="kOdd">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Vincita potenziale</div>
+              <div class="v" id="kWin">—</div>
+            </div>
+          </div>
+
+          <div class="footerNote">
+            Le vincite sono stime informative (non considerano tasse/bonus/variazioni). Per Sistema 2 su n: calcolo base su combinazioni.
+          </div>
+
+          <div class="linkRow">
+            <a class="linkBtn" id="waBtn" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a class="linkBtn" id="mapsBtn" href="#" target="_blank" rel="noopener">📍 Maps</a>
+          </div>
+          <div class="linkRow">
+            <a class="linkBtn" id="telBtn" href="tel:+390000000000">📞 +39 XXX XXX XXXX</a>
+          </div>
+
+          <div class="tiny" style="margin-top:10px;">
+            Code sala (QR): apri con <b>?c=VINC001</b> per cambiare contatti e stile del centro.
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="footer">© Vincitu • AI Bet Assist (WOW)</div>
-</div>
 
 <script>
-/** ====== CONFIG (domani personalizziamo i dati sala) ====== **/
-const CENTER = {
-  name: "Vincitu • WOW Portal",
-  code: "VINCITU",
-  phone_intl: "39XXXXXXXXXX",
-  phone_display: "+39 XXX XXX XXXX",
-  maps_link: "https://www.google.com/maps",
-  whatsapp_msg: "Ciao! Ho scansionato il QR Vincitu. Vorrei info su quote/orari."
+/* ============================
+   CONFIG CENTRI (personalizza)
+   ============================ */
+const CENTERS = {
+  "VINC001": {
+    name: "Vincitu • Centro Demo",
+    phone: "+39 000 000 0000",
+    whatsapp: "+390000000000",
+    maps: "https://www.google.com/maps",
+  }
 };
 
-let picks = [];
-let cachedEvents = [];
-
-const moods = [
-  { t:"equilibrato", dot:"" },
-  { t:"prudente", dot:"" },
-  { t:"aggressivo", dot:"w" },
-  { t:"wow", dot:"w" }
+const MOODS = [
+  { key:"equilibrato", dot:"", label:"equilibrato", hint:"Mix bilanciato (molto apprezzato in sala)" },
+  { key:"aggressivo", dot:"orange", label:"aggressivo", hint:"Più rischio/quote più alte (solo per divertirsi)" },
+  { key:"safe", dot:"blue", label:"prudente", hint:"Quote più basse, selezioni più “tranquille”" },
 ];
-let moodIdx = 0;
 
-function escapeHtml(str){
-  return String(str).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
-    .replaceAll('"',"&quot;").replaceAll("'","&#039;");
-}
-function fmt2(n){ return "€" + (Math.round(n*100)/100).toFixed(2); }
+let moodIndex = 0;
+let allEvents = [];
+let shownEvents = [];
+let slip = []; // {match, market, odd}
 
-function applyCenter(){
-  document.getElementById("centerName").innerText = CENTER.name;
-  document.getElementById("centerCodePill").innerText = CENTER.code;
+/* Helpers */
+function qs(name){
+  const url = new URL(window.location.href);
+  return url.searchParams.get(name);
+}
+function fmt2(n){
+  if (typeof n !== "number" || !isFinite(n)) return "—";
+  return n.toFixed(2);
+}
+function clamp(n, a, b){ return Math.max(a, Math.min(b, n)); }
 
-  document.getElementById("btnWhats").href = "https://wa.me/" + CENTER.phone_intl + "?text=" + encodeURIComponent(CENTER.whatsapp_msg);
-  document.getElementById("btnMaps").href = CENTER.maps_link;
-  document.getElementById("btnCall").href = "tel:+" + CENTER.phone_intl;
-  document.getElementById("btnCall").innerText = "📞 " + CENTER.phone_display;
+function setCenterFromQuery(){
+  const code = (qs("c") || "VINC001").toUpperCase();
+  const center = CENTERS[code] || CENTERS["VINC001"];
+  document.getElementById("chipCenter").textContent = code;
+
+  const wa = document.getElementById("waBtn");
+  const maps = document.getElementById("mapsBtn");
+  const tel = document.getElementById("telBtn");
+  wa.href = `https://wa.me/${(center.whatsapp||"").replace(/\D/g,"")}?text=${encodeURIComponent("Ciao! Ho visto il portale WOW. Info?")}`;
+  maps.href = center.maps || "https://www.google.com/maps";
+  tel.href = `tel:${center.phone || "+390000000000"}`;
+  tel.textContent = `📞 ${center.phone || "+39 XXX XXX XXXX"}`;
 }
 
-function shuffleMood(){
-  moodIdx = (moodIdx + 1) % moods.length;
-  const m = moods[moodIdx];
-  document.getElementById("moodText").innerText = "Mood: " + m.t;
-  document.getElementById("dotMood").className = "dot " + (m.dot || "");
-  renderEvents();
-}
-
-function moodBadgeText(){
-  const m = moods[moodIdx].t;
-  if(m==="aggressivo") return "🔥 Alta energia (IA)";
-  if(m==="prudente") return "🛡️ Prudente (IA)";
-  if(m==="wow") return "✨ WOW Explorer (IA)";
-  return "📊 Equilibrato (IA)";
-}
-function pickCountByHour(){
-  const h = new Date().getHours();
-  if(h < 12) return 2;
-  if(h < 18) return 3;
-  return 4;
-}
-function shuffleArray(a){
-  const arr = [...a];
-  for(let i=arr.length-1;i>0;i--){
-    const j = Math.floor(Math.random()*(i+1));
-    [arr[i],arr[j]] = [arr[j],arr[i]];
-  }
-  return arr;
+function setMood(){
+  const m = MOODS[moodIndex % MOODS.length];
+  document.getElementById("moodText").textContent = m.label;
+  const dot = document.getElementById("moodDot");
+  dot.className = "dot" + (m.dot ? (" " + m.dot) : "");
 }
 
 async function loadEvents(){
-  const box = document.getElementById("eventsBox");
-  box.innerHTML = "Caricamento eventi…";
   try{
     const res = await fetch("./events.json?v=" + Date.now(), {cache:"no-store"});
-    if(!res.ok) throw new Error("events.json non trovato");
     const data = await res.json();
-    document.getElementById("upd").innerText = data.updated_at || "—";
-    cachedEvents = Array.isArray(data.events) ? data.events : [];
-    renderEvents();
+    document.getElementById("chipUpdated").textContent = (data.updated_at || "AUTO");
+    allEvents = (data.events || []);
   }catch(e){
-    box.innerHTML = "Errore: non riesco a leggere events.json";
+    allEvents = [];
   }
+}
+
+function pickWowEvents(){
+  // Se non ci sono eventi, fallback
+  if(!allEvents.length){
+    shownEvents = [];
+    renderEvents();
+    return;
+  }
+
+  // Mood influenza quante partite “alte”
+  const m = MOODS[moodIndex % MOODS.length].key;
+
+  // shuffle
+  const arr = [...allEvents].sort(()=>Math.random()-0.5);
+
+  // prendi 12 eventi (wow ma non troppi)
+  shownEvents = arr.slice(0, 12);
+
+  // aggiungi badge “IA”
+  shownEvents = shownEvents.map(ev => {
+    const badge = (m==="aggressivo") ? "Alta energia (IA)" : (m==="safe" ? "Prudente (IA)" : "Equilibrato (IA)");
+    return {...ev, badge};
+  });
+
+  renderEvents();
 }
 
 function renderEvents(){
-  const box = document.getElementById("eventsBox");
-  if(!cachedEvents.length){
-    box.innerHTML = "Nessun evento disponibile.";
+  const root = document.getElementById("events");
+  root.innerHTML = "";
+
+  if(!shownEvents.length){
+    root.innerHTML = `<div class="small">Nessun evento caricato. Controlla che <b>events.json</b> esista nel repo.</div>`;
     return;
   }
 
-  // filtro campionati “seri”
-  const validLeagues = new Set([
-    "Serie A","Serie B","Premier League","Championship",
-    "LaLiga","Bundesliga","Ligue 1","Ligue 2",
-    "Eredivisie","Primeira Liga",
-    "Allsvenskan","Superliga","Ekstraklasa","Super League"
-  ]);
+  for(const ev of shownEvents){
+    const el = document.createElement("div");
+    el.className = "event";
 
-  let ev = cachedEvents.filter(e => validLeagues.has(e.league));
-  ev = shuffleArray(ev);
+    const title = `${ev.home} - ${ev.away}`;
+    const when = ev.start || "—";
+    const league = ev.league || "Campionato";
 
-  const take = Math.min(pickCountByHour(), ev.length);
-  const showEvents = ev.slice(0, take);
-  const badge = moodBadgeText();
+    el.innerHTML = `
+      <div class="eventTop">
+        <div>
+          <span class="leagueTag">🟢 ${league}</span>
+          <div class="eventTitle">${title}</div>
+          <div class="eventMeta">🕒 ${when} • <span class="tiny">${ev.tags ? ev.tags.join(" • ") : ""}</span></div>
+          ${ev.note ? `<div class="tiny" style="margin-top:6px;">ℹ️ ${ev.note}</div>` : ""}
+        </div>
+        <div class="badgeIA">✨ ${ev.badge || "IA"}</div>
+      </div>
 
-  let html = `
-    <div class="notice">
-      <b>Vincitu:</b> quota <b>sempre</b> inserita dal banco → così corrisponde al 100%.
-    </div>
-    <div class="hr"></div>
-  `;
-
-  showEvents.forEach(e=>{
-    const match = `${e.home} - ${e.away}`;
-    const tags = Array.isArray(e.tags) ? e.tags.slice(0,3) : [];
-    const why = e.why ? e.why : "Selezione per intrattenimento: evento europeo reale o da palinsesto.";
-    html += `
-      <div class="event">
-        <div class="evTop">
-          <div>
-            <div class="tag"><span class="dot"></span> ${escapeHtml(e.league || "")}</div>
-            <div style="height:6px"></div>
-            <div class="evMatch">${escapeHtml(match)}</div>
-            <div class="evMeta">🕒 ${escapeHtml(e.start || "")}</div>
+      <div class="markets">
+        ${(ev.markets||[]).map((mk, idx) => `
+          <div class="mkt" data-ev="${encodeURIComponent(title)}" data-mk="${encodeURIComponent(mk.label)}">
+            <div class="mktTop">
+              <div>
+                <div class="mktName">${mk.label}</div>
+                <div class="mktHint">Quota Vincitu (inserisci quella del banco)</div>
+              </div>
+              <div class="tiny" style="text-align:right;">${mk.tip || ""}</div>
+            </div>
+            <div class="oddsLine">
+              <input class="oddsInput" type="text" inputmode="decimal" placeholder="es. 1.72" data-odd />
+              <button class="addBtn" data-add>＋ Aggiungi</button>
+            </div>
           </div>
-          <div class="badgeIA"><strong>${escapeHtml(badge)}</strong></div>
-        </div>
-
-        <div class="small" style="margin-top:8px">
-          ${tags.map(t=>`<span class="tag" style="margin-right:6px"><span class="dot w"></span>${escapeHtml(t)}</span>`).join("")}
-        </div>
-
-        <div class="small" style="margin-top:8px">🧠 <b>Perché:</b> ${escapeHtml(why)}</div>
-
-        <div class="marketGrid">
+        `).join("")}
+      </div>
     `;
 
-    (e.markets||[]).forEach(m=>{
-      const label = m.label || "Mercato";
-      const oddDefault = Number(m.odd || 1.50).toFixed(2);
-      const inputId = `q_${match}_${label}`.replaceAll(" ","_");
+    root.appendChild(el);
+  }
 
-      html += `
-        <div class="market">
-          <div>
-            <b>${escapeHtml(label)}</b>
-            <div class="lab">Quota Vincitu (inserisci quella del banco)</div>
-          </div>
-          <div style="text-align:right">
-            <input class="input" style="max-width:110px;padding:9px 10px;border-radius:12px;font-weight:1000"
-                   id="${escapeHtml(inputId)}" value="${oddDefault}">
-            <div style="height:8px"></div>
-            <button class="btn2 btnSm" onclick="addFromEvent('${escapeHtml(match)}','${escapeHtml(label)}','${oddDefault}','${escapeHtml(inputId)}')">➕ Aggiungi</button>
-          </div>
-        </div>
-      `;
+  // bind add buttons
+  root.querySelectorAll("[data-add]").forEach(btn=>{
+    btn.addEventListener("click", (e)=>{
+      const box = e.target.closest(".mkt");
+      const match = decodeURIComponent(box.getAttribute("data-ev"));
+      const market = decodeURIComponent(box.getAttribute("data-mk"));
+      const input = box.querySelector("[data-odd]");
+      const raw = (input.value || "").trim().replace(",", ".");
+      const odd = parseFloat(raw);
+
+      if(!isFinite(odd) || odd < 1.01){
+        input.focus();
+        input.style.borderColor = "rgba(251,113,133,.55)";
+        setTimeout(()=> input.style.borderColor = "rgba(255,255,255,.10)", 800);
+        return;
+      }
+
+      slip.push({match, market, odd});
+      input.value = "";
+      renderSlip();
     });
-
-    html += `</div></div>`;
   });
-
-  box.innerHTML = html;
 }
-
-function addFromEvent(match, market, defaultOdd, inputId){
-  const el = document.getElementById(inputId);
-  const odd = Number((el ? el.value : defaultOdd) || defaultOdd);
-  if(!odd || odd <= 1){ alert("Quota non valida. Inserisci la quota reale Vincitu."); return; }
-  addToSlip(match, market, odd);
-}
-
-function addComboWOW(){
-  // Prende 2 eventi tra quelli validi: 1 TOP se presente + 1 Explorer
-  const ev = cachedEvents.filter(e => e && e.league);
-  if(ev.length < 2){ alert("Non ci sono abbastanza eventi."); return; }
-
-  const top = ev.filter(e => String(e.tier||"").toUpperCase()==="TOP");
-  const other = ev.filter(e => String(e.tier||"").toUpperCase()!=="TOP");
-
-  const A = top[0] || ev[0];
-  const B = other[0] || ev[1];
-
-  const mA = (A.markets||[])[0];
-  const mB = (B.markets||[])[0];
-
-  if(mA) addToSlip(`${A.home} - ${A.away}`, mA.label || "Mercato", Number(mA.odd||1.50));
-  if(mB) addToSlip(`${B.home} - ${B.away}`, mB.label || "Mercato", Number(mB.odd||1.50));
-}
-
-/** ====== SLIP ====== **/
-function addToSlip(match, market, odd){
-  picks.push({match, market, odd:Number(odd)});
-  renderSlip(); recalc();
-}
-function removePick(i){ picks.splice(i,1); renderSlip(); recalc(); }
-function clearAll(){ picks = []; renderSlip(); recalc(); }
 
 function renderSlip(){
-  const body = document.getElementById("picksBody");
+  const body = document.getElementById("slipBody");
   body.innerHTML = "";
-  document.getElementById("emptyMsg").style.display = picks.length ? "none" : "block";
-  picks.forEach((p,i)=>{
+
+  if(!slip.length){
+    body.innerHTML = `<tr><td colspan="4" class="small">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>`;
+    updateKPIs();
+    return;
+  }
+
+  slip.forEach((s, i)=>{
     const tr = document.createElement("tr");
-    tr.className = "tr";
     tr.innerHTML = `
-      <td><b>${escapeHtml(p.match)}</b></td>
-      <td><span class="pill">${escapeHtml(p.market)}</span></td>
-      <td><b>${Number(p.odd).toFixed(2)}</b></td>
-      <td><button class="btn2 btnSm" onclick="removePick(${i})">❌</button></td>
+      <td>${s.match}</td>
+      <td>${s.market}</td>
+      <td><b>${fmt2(s.odd)}</b></td>
+      <td><button class="xBtn" data-del="${i}">X</button></td>
     `;
     body.appendChild(tr);
   });
+
+  body.querySelectorAll("[data-del]").forEach(b=>{
+    b.addEventListener("click", ()=>{
+      const idx = parseInt(b.getAttribute("data-del"),10);
+      slip.splice(idx,1);
+      renderSlip();
+    });
+  });
+
+  updateKPIs();
 }
 
-function recalc(){
-  const stake = Number(document.getElementById("stake").value || 0);
-  const type = document.getElementById("playType").value;
+function updateKPIs(){
+  const sel = slip.length;
+  document.getElementById("kSel").textContent = sel;
 
-  if(picks.length === 0){ document.getElementById("calcOut").innerHTML = ""; return; }
+  const stake = parseFloat(document.getElementById("stake").value || "0") || 0;
+  const betType = document.getElementById("betType").value;
 
-  if(type === "multi"){
-    let odd = 1;
-    picks.forEach(p=> odd *= p.odd);
-    const win = stake * odd;
-    document.getElementById("calcOut").innerHTML =
-      `<b>Multipla:</b> quota totale <b>${odd.toFixed(2)}</b> • vincita stimata <b>${fmt2(win)}</b>`;
+  if(sel === 0 || stake <= 0){
+    document.getElementById("kOdd").textContent = "—";
+    document.getElementById("kWin").textContent = "—";
     return;
   }
 
-  const n = picks.length;
-  if(n < 2){ document.getElementById("calcOut").innerHTML = `<b>Sistema:</b> aggiungi almeno 2 selezioni.`; return; }
-  const combos = (n*(n-1))/2;
-  const unit = stake / combos;
+  // multipla quota
+  let totalOdd = slip.reduce((acc, s)=> acc * s.odd, 1);
 
-  let minWin = Infinity;
-  let maxWin = 0;
-  for(let i=0;i<n;i++){
-    for(let j=i+1;j<n;j++){
-      const o = picks[i].odd * picks[j].odd;
-      const w = unit * o;
-      if(w < minWin) minWin = w;
-      maxWin += w;
-    }
+  if(betType === "multi"){
+    document.getElementById("kOdd").textContent = fmt2(totalOdd);
+    document.getElementById("kWin").textContent = "€" + fmt2(stake * totalOdd);
+    return;
   }
 
-  document.getElementById("calcOut").innerHTML =
-    `<b>Sistema (2 su n):</b> combinazioni <b>${combos}</b> • stake per combo <b>${fmt2(unit)}</b><br>
-     Vincita MIN (1 combo): <b>${fmt2(minWin)}</b> • Vincita MAX (tutte combo): <b>${fmt2(maxWin)}</b>`;
+  // sistema 2 su n
+  if(sel < 2){
+    document.getElementById("kOdd").textContent = "—";
+    document.getElementById("kWin").textContent = "—";
+    return;
+  }
+
+  const combos = (sel * (sel - 1)) / 2;
+  const stakePer = stake / combos;
+
+  // calcolo payout per ogni combo 2
+  let payoutSum = 0;
+  for(let i=0;i<sel;i++){
+    for(let j=i+1;j<sel;j++){
+      payoutSum += stakePer * (slip[i].odd * slip[j].odd);
+    }
+  }
+  document.getElementById("kOdd").textContent = `Sistema 2 su ${sel} (${combos} combo)`;
+  document.getElementById("kWin").textContent = "€" + fmt2(payoutSum);
 }
 
-/** ====== INIT ====== **/
-applyCenter();
-document.getElementById("dotMood").className = "dot";
-loadEvents();
+function wire(){
+  document.getElementById("btnClear").addEventListener("click", ()=>{
+    slip = [];
+    renderSlip();
+  });
+
+  document.getElementById("btnMood").addEventListener("click", ()=>{
+    moodIndex++;
+    setMood();
+    pickWowEvents();
+  });
+
+  document.getElementById("btnReload").addEventListener("click", ()=>{
+    pickWowEvents();
+  });
+
+  document.getElementById("stake").addEventListener("input", updateKPIs);
+  document.getElementById("betType").addEventListener("change", updateKPIs);
+}
+
+(async function init(){
+  setCenterFromQuery();
+  wire();
+  setMood();
+  await loadEvents();
+  pickWowEvents();
+  renderSlip();
+})();
 </script>
+
 </body>
 </html>
