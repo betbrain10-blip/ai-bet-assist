@@ -4,58 +4,158 @@
   "events": [
     {
       "league": "Serie A",
-      "home": "Evento 1",
-      "away": "Evento 2",
+      "home": "Inter",
+      "away": "Atalanta",
       "start": "Oggi",
-      "tier": "TOP",
-      "tags": ["Top Italia", "Alta dinamicità"],
-      "why": "Match scelto per coinvolgimento: mercati semplici da banco.",
+      "tags": ["Top Italia", "Alta dinamica"],
+      "note": "Inserisci le quote reali che vedi al banco Vincitu.",
       "markets": [
-        { "label": "Over 1.5", "odd": 1.55 },
-        { "label": "Goal/No Goal Sì", "odd": 1.75 },
-        { "label": "1X", "odd": 1.55 }
+        { "label": "Over 1.5", "tip": "Molto usato" },
+        { "label": "Goal/NoGoal Sì", "tip": "Partita aperta" },
+        { "label": "DNB 1", "tip": "Copertura" }
+      ]
+    },
+    {
+      "league": "Serie A",
+      "home": "Milan",
+      "away": "Roma",
+      "start": "Oggi",
+      "tags": ["Big Match", "WOW"],
+      "note": "Inserisci le quote del banco.",
+      "markets": [
+        { "label": "1X", "tip": "Prudente" },
+        { "label": "Over 2.5", "tip": "Alta energia" },
+        { "label": "Goal Sì", "tip": "Classico" }
       ]
     },
     {
       "league": "Premier League",
-      "home": "Evento 3",
-      "away": "Evento 4",
+      "home": "Arsenal",
+      "away": "Tottenham",
       "start": "Oggi",
-      "tier": "SECONDARY",
-      "tags": ["Europa Explorer", "Perfetta per multipla"],
-      "why": "Campionato top: ideale per multipla o sistema 2 su n.",
+      "tags": ["Derby", "Inghilterra"],
+      "note": "Quota sempre dal banco.",
       "markets": [
-        { "label": "Over 2.5", "odd": 1.85 },
-        { "label": "Over 1.5", "odd": 1.45 },
-        { "label": "DNB 1", "odd": 1.70 }
+        { "label": "Over 2.5", "tip": "Spettacolo" },
+        { "label": "1X", "tip": "Copertura" },
+        { "label": "Goal Sì", "tip": "Molto giocata" }
       ]
     },
     {
-      "league": "Superliga",
-      "home": "Evento 5",
-      "away": "Evento 6",
+      "league": "LaLiga",
+      "home": "Real Madrid",
+      "away": "Sevilla",
       "start": "Oggi",
-      "tier": "MINOR",
-      "tags": ["Campionato alternativo", "Poco battuto"],
-      "why": "Europa minore: effetto ‘IA Explorer’ molto forte in sala.",
+      "tags": ["Spagna", "Top"],
+      "note": "Quota Vincitu = quella che vedi al banco.",
       "markets": [
-        { "label": "Over 1.5", "odd": 1.50 },
-        { "label": "Under 3.5", "odd": 1.45 },
-        { "label": "Goal/No Goal Sì", "odd": 1.80 }
+        { "label": "1", "tip": "Favorita" },
+        { "label": "Over 1.5", "tip": "Safe" },
+        { "label": "DNB 1", "tip": "Protezione" }
       ]
     },
     {
-      "league": "Allsvenskan",
-      "home": "Evento 7",
-      "away": "Evento 8",
+      "league": "Bundesliga",
+      "home": "Bayern Monaco",
+      "away": "Leipzig",
       "start": "Oggi",
-      "tier": "MINOR",
-      "tags": ["Scelta esplorativa IA", "Alta intensità"],
-      "why": "Campionato europeo alternativo: mercati gol spesso divertenti.",
+      "tags": ["Germania", "Gol"],
+      "note": "Inserisci quota reale.",
       "markets": [
-        { "label": "Over 2.5", "odd": 1.95 },
-        { "label": "Over 1.5", "odd": 1.55 },
-        { "label": "DNB 2", "odd": 1.75 }
+        { "label": "Over 2.5", "tip": "Gol" },
+        { "label": "Goal Sì", "tip": "Spesso" },
+        { "label": "1X", "tip": "Copertura" }
+      ]
+    },
+    {
+      "league": "Ligue 1",
+      "home": "PSG",
+      "away": "Lyon",
+      "start": "Oggi",
+      "tags": ["Francia", "WOW"],
+      "note": "Quota del banco.",
+      "markets": [
+        { "label": "1", "tip": "Favorita" },
+        { "label": "Over 2.5", "tip": "Alta energia" },
+        { "label": "Goal Sì", "tip": "Partita viva" }
+      ]
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Ajax",
+      "away": "PSV",
+      "start": "Oggi",
+      "tags": ["Olanda", "Gol facile"],
+      "note": "Quota dal banco Vincitu.",
+      "markets": [
+        { "label": "Over 2.5", "tip": "Gol" },
+        { "label": "Over 1.5", "tip": "Safe" },
+        { "label": "Goal Sì", "tip": "Spesso" }
+      ]
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Benfica",
+      "away": "Sporting CP",
+      "start": "Oggi",
+      "tags": ["Portogallo", "Derby"],
+      "note": "Quota reale dal banco.",
+      "markets": [
+        { "label": "1X", "tip": "Copertura" },
+        { "label": "Under 3.5", "tip": "Prudente" },
+        { "label": "DNB 1", "tip": "Protezione" }
+      ]
+    },
+    {
+      "league": "Scottish Premiership",
+      "home": "Celtic",
+      "away": "Rangers",
+      "start": "Oggi",
+      "tags": ["Scozia", "WOW"],
+      "note": "Inserisci quota del banco.",
+      "markets": [
+        { "label": "Over 1.5", "tip": "Buona" },
+        { "label": "Goal Sì", "tip": "Derby" },
+        { "label": "1X", "tip": "Copertura" }
+      ]
+    },
+    {
+      "league": "Allsvenskan (Svezia)",
+      "home": "Malmo",
+      "away": "AIK",
+      "start": "Oggi",
+      "tags": ["Europa minore", "Poco battuto"],
+      "note": "Perfetta per l'effetto WOW: quota solo dal banco.",
+      "markets": [
+        { "label": "Over 2.5", "tip": "Energia" },
+        { "label": "DNB 1", "tip": "Copertura" },
+        { "label": "Under 3.5", "tip": "Safe" }
+      ]
+    },
+    {
+      "league": "Superliga (Danimarca)",
+      "home": "FC Copenhagen",
+      "away": "Midtjylland",
+      "start": "Oggi",
+      "tags": ["Minore", "Interessante"],
+      "note": "Inserisci quota reale.",
+      "markets": [
+        { "label": "Goal Sì", "tip": "Viva" },
+        { "label": "Over 1.5", "tip": "Safe" },
+        { "label": "DNB 1", "tip": "Copertura" }
+      ]
+    },
+    {
+      "league": "Ekstraklasa (Polonia)",
+      "home": "Legia Varsavia",
+      "away": "Lech Poznan",
+      "start": "Oggi",
+      "tags": ["Minore", "WOW"],
+      "note": "Quota solo dal banco Vincitu.",
+      "markets": [
+        { "label": "1X", "tip": "Copertura" },
+        { "label": "Under 3.5", "tip": "Prudente" },
+        { "label": "Goal Sì", "tip": "Rischio medio" }
       ]
     }
   ]
