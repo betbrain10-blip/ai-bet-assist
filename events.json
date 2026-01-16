@@ -8,11 +8,11 @@
       "away": "Atalanta",
       "start": "Oggi",
       "tags": ["Top Italia", "Alta dinamica"],
-      "note": "Inserisci le quote reali che vedi al banco Vincitu.",
+      "note": "Quote precompilate: se al banco differiscono, puoi correggerle.",
       "markets": [
-        { "label": "Over 1.5", "tip": "Molto usato" },
-        { "label": "Goal/NoGoal Sì", "tip": "Partita aperta" },
-        { "label": "DNB 1", "tip": "Copertura" }
+        { "label": "Over 1.5", "odd": 1.35, "tip": "Molto usato" },
+        { "label": "Goal/NoGoal Sì", "odd": 1.70, "tip": "Partita aperta" },
+        { "label": "DNB 1", "odd": 1.55, "tip": "Copertura" }
       ]
     },
     {
@@ -21,11 +21,11 @@
       "away": "Roma",
       "start": "Oggi",
       "tags": ["Big Match", "WOW"],
-      "note": "Inserisci le quote del banco.",
+      "note": "Quote precompilate: modificabili.",
       "markets": [
-        { "label": "1X", "tip": "Prudente" },
-        { "label": "Over 2.5", "tip": "Alta energia" },
-        { "label": "Goal Sì", "tip": "Classico" }
+        { "label": "1X", "odd": 1.40, "tip": "Prudente" },
+        { "label": "Over 2.5", "odd": 1.85, "tip": "Alta energia" },
+        { "label": "Goal Sì", "odd": 1.72, "tip": "Classico" }
       ]
     },
     {
@@ -34,11 +34,11 @@
       "away": "Tottenham",
       "start": "Oggi",
       "tags": ["Derby", "Inghilterra"],
-      "note": "Quota sempre dal banco.",
+      "note": "Quote precompilate: modificabili.",
       "markets": [
-        { "label": "Over 2.5", "tip": "Spettacolo" },
-        { "label": "1X", "tip": "Copertura" },
-        { "label": "Goal Sì", "tip": "Molto giocata" }
+        { "label": "Over 2.5", "odd": 1.75, "tip": "Spettacolo" },
+        { "label": "1X", "odd": 1.32, "tip": "Copertura" },
+        { "label": "Goal Sì", "odd": 1.62, "tip": "Molto giocata" }
       ]
     },
     {
@@ -47,11 +47,11 @@
       "away": "Sevilla",
       "start": "Oggi",
       "tags": ["Spagna", "Top"],
-      "note": "Quota Vincitu = quella che vedi al banco.",
+      "note": "Quote precompilate: modificabili.",
       "markets": [
-        { "label": "1", "tip": "Favorita" },
-        { "label": "Over 1.5", "tip": "Safe" },
-        { "label": "DNB 1", "tip": "Protezione" }
+        { "label": "1", "odd": 1.45, "tip": "Favorita" },
+        { "label": "Over 1.5", "odd": 1.28, "tip": "Safe" },
+        { "label": "DNB 1", "odd": 1.22, "tip": "Protezione" }
       ]
     },
     {
@@ -60,11 +60,11 @@
       "away": "Leipzig",
       "start": "Oggi",
       "tags": ["Germania", "Gol"],
-      "note": "Inserisci quota reale.",
+      "note": "Quote precompilate: modificabili.",
       "markets": [
-        { "label": "Over 2.5", "tip": "Gol" },
-        { "label": "Goal Sì", "tip": "Spesso" },
-        { "label": "1X", "tip": "Copertura" }
+        { "label": "Over 2.5", "odd": 1.68, "tip": "Gol" },
+        { "label": "Goal Sì", "odd": 1.55, "tip": "Spesso" },
+        { "label": "1X", "odd": 1.25, "tip": "Copertura" }
       ]
     },
     {
@@ -73,11 +73,11 @@
       "away": "Lyon",
       "start": "Oggi",
       "tags": ["Francia", "WOW"],
-      "note": "Quota del banco.",
+      "note": "Quote precompilate: modificabili.",
       "markets": [
-        { "label": "1", "tip": "Favorita" },
-        { "label": "Over 2.5", "tip": "Alta energia" },
-        { "label": "Goal Sì", "tip": "Partita viva" }
+        { "label": "1", "odd": 1.50, "tip": "Favorita" },
+        { "label": "Over 2.5", "odd": 1.78, "tip": "Alta energia" },
+        { "label": "Goal Sì", "odd": 1.66, "tip": "Partita viva" }
       ]
     },
     {
@@ -86,37 +86,11 @@
       "away": "PSV",
       "start": "Oggi",
       "tags": ["Olanda", "Gol facile"],
-      "note": "Quota dal banco Vincitu.",
+      "note": "Quote precompilate: modificabili.",
       "markets": [
-        { "label": "Over 2.5", "tip": "Gol" },
-        { "label": "Over 1.5", "tip": "Safe" },
-        { "label": "Goal Sì", "tip": "Spesso" }
-      ]
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Benfica",
-      "away": "Sporting CP",
-      "start": "Oggi",
-      "tags": ["Portogallo", "Derby"],
-      "note": "Quota reale dal banco.",
-      "markets": [
-        { "label": "1X", "tip": "Copertura" },
-        { "label": "Under 3.5", "tip": "Prudente" },
-        { "label": "DNB 1", "tip": "Protezione" }
-      ]
-    },
-    {
-      "league": "Scottish Premiership",
-      "home": "Celtic",
-      "away": "Rangers",
-      "start": "Oggi",
-      "tags": ["Scozia", "WOW"],
-      "note": "Inserisci quota del banco.",
-      "markets": [
-        { "label": "Over 1.5", "tip": "Buona" },
-        { "label": "Goal Sì", "tip": "Derby" },
-        { "label": "1X", "tip": "Copertura" }
+        { "label": "Over 2.5", "odd": 1.62, "tip": "Gol" },
+        { "label": "Over 1.5", "odd": 1.25, "tip": "Safe" },
+        { "label": "Goal Sì", "odd": 1.50, "tip": "Spesso" }
       ]
     },
     {
@@ -124,25 +98,12 @@
       "home": "Malmo",
       "away": "AIK",
       "start": "Oggi",
-      "tags": ["Europa minore", "Poco battuto"],
-      "note": "Perfetta per l'effetto WOW: quota solo dal banco.",
+      "tags": ["Europa minore", "WOW"],
+      "note": "Effetto WOW: quote precompilate ma modificabili al banco.",
       "markets": [
-        { "label": "Over 2.5", "tip": "Energia" },
-        { "label": "DNB 1", "tip": "Copertura" },
-        { "label": "Under 3.5", "tip": "Safe" }
-      ]
-    },
-    {
-      "league": "Superliga (Danimarca)",
-      "home": "FC Copenhagen",
-      "away": "Midtjylland",
-      "start": "Oggi",
-      "tags": ["Minore", "Interessante"],
-      "note": "Inserisci quota reale.",
-      "markets": [
-        { "label": "Goal Sì", "tip": "Viva" },
-        { "label": "Over 1.5", "tip": "Safe" },
-        { "label": "DNB 1", "tip": "Copertura" }
+        { "label": "Over 2.5", "odd": 1.85, "tip": "Energia" },
+        { "label": "DNB 1", "odd": 1.60, "tip": "Copertura" },
+        { "label": "Under 3.5", "odd": 1.40, "tip": "Safe" }
       ]
     },
     {
@@ -151,11 +112,11 @@
       "away": "Lech Poznan",
       "start": "Oggi",
       "tags": ["Minore", "WOW"],
-      "note": "Quota solo dal banco Vincitu.",
+      "note": "Effetto WOW: quote precompilate ma modificabili al banco.",
       "markets": [
-        { "label": "1X", "tip": "Copertura" },
-        { "label": "Under 3.5", "tip": "Prudente" },
-        { "label": "Goal Sì", "tip": "Rischio medio" }
+        { "label": "1X", "odd": 1.35, "tip": "Copertura" },
+        { "label": "Under 3.5", "odd": 1.38, "tip": "Prudente" },
+        { "label": "Goal Sì", "odd": 1.85, "tip": "Rischio medio" }
       ]
     }
   ]
