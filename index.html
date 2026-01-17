@@ -2,850 +2,715 @@
 <html lang="it">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vincitu • Portal</title>
-
-  <link rel="icon" type="image/png" sizes="32x32" href="vincitu-stemma-128.png">
-  <link rel="apple-touch-icon" href="vincitu-stemma-256.png">
-
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vincitu • IA Portal</title>
   <style>
     :root{
-      --bgA:#080b12;
-      --bgB:#0b0f1b;
-      --card:#101522cc;
-      --card2:#0d1220cc;
-      --stroke:rgba(255,255,255,.10);
-      --stroke2:rgba(255,255,255,.07);
-      --txt:rgba(255,255,255,.92);
-      --muted:rgba(255,255,255,.62);
-      --muted2:rgba(255,255,255,.42);
-      --accent:#ffb020;     /* giallo pulsante */
-      --cyan:#35d3ff;
-      --green:#27ffb2;
-      --shadow: 0 28px 70px rgba(0,0,0,.72);
-      --shadow2: 0 18px 45px rgba(0,0,0,.55);
-      --r1:24px;
-      --r2:18px;
-      --r3:14px;
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      --bg1:#0b0a14;
+      --bg2:#0a1530;
+      --card: rgba(18, 22, 38, .72);
+      --card2: rgba(18, 22, 38, .55);
+      --stroke: rgba(255,255,255,.10);
+      --stroke2: rgba(255,255,255,.18);
+      --text:#e9ecff;
+      --muted: rgba(233,236,255,.65);
+      --chip: rgba(255,255,255,.08);
+      --chip2: rgba(255,255,255,.12);
+      --accent:#ffb020;
+      --accent2:#7c5cff;
+      --good:#2ee59d;
+      --danger:#ff5c7a;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
     }
 
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: var(--font);
-      color:var(--txt);
-      min-height:100vh;
+      font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      color:var(--text);
       background:
-        radial-gradient(900px 700px at 25% 18%, rgba(170,110,255,.22), transparent 60%),
-        radial-gradient(900px 700px at 75% 22%, rgba(45,210,255,.16), transparent 60%),
-        radial-gradient(900px 700px at 70% 85%, rgba(255,176,32,.08), transparent 60%),
-        linear-gradient(180deg, var(--bgA), var(--bgB));
-      overflow-x:hidden;
+        radial-gradient(1100px 700px at 15% 15%, rgba(124,92,255,.35), transparent 60%),
+        radial-gradient(900px 650px at 85% 30%, rgba(255,176,32,.25), transparent 60%),
+        radial-gradient(900px 650px at 80% 85%, rgba(46,229,157,.18), transparent 55%),
+        linear-gradient(140deg, var(--bg1), var(--bg2));
+      min-height:100vh;
     }
 
-    /* “cornice” glow come screenshot */
-    .frame{
-      width:min(1080px, 92vw);
-      margin: 26px auto;
+    .wrap{
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 26px 18px 40px;
+    }
+
+    .shell{
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border-radius: 26px;
       padding: 18px;
-      border-radius: 34px;
-      background:
-        radial-gradient(800px 500px at 20% 20%, rgba(180,120,255,.10), transparent 60%),
-        radial-gradient(800px 500px at 80% 20%, rgba(45,210,255,.09), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      border: 1px solid rgba(255,255,255,.10);
-      box-shadow: 0 40px 120px rgba(0,0,0,.78);
+      box-shadow: var(--shadow);
       backdrop-filter: blur(10px);
     }
 
-    /* HEADER TOP */
     .topbar{
       display:flex;
       align-items:center;
       justify-content:space-between;
       gap:14px;
-      padding: 14px 16px;
-      border-radius: 22px;
+      padding: 14px 14px 18px;
+      border-radius: 20px;
       border: 1px solid var(--stroke);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      box-shadow: var(--shadow2);
+      background: rgba(0,0,0,.18);
     }
 
     .brand{
       display:flex;
       align-items:center;
       gap:12px;
-      min-width: 280px;
+      min-width: 260px;
     }
 
-    .logo{
-      width:46px;
-      height:46px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: radial-gradient(circle at 35% 35%, rgba(255,255,255,.10), rgba(255,255,255,.03));
+    /* LOGO SUPER VISIBILE */
+    .logoBox{
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
       display:grid;
       place-items:center;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.22);
+      box-shadow:
+        0 10px 30px rgba(0,0,0,.35),
+        0 0 0 3px rgba(255,255,255,.06),
+        0 0 28px rgba(255,176,32,.22);
       overflow:hidden;
     }
-    .logo img{
-      height:34px;
-      width:auto;
-      filter:
-        drop-shadow(0 10px 18px rgba(0,0,0,.75))
-        drop-shadow(0 0 20px rgba(255,176,32,.20));
-      image-rendering: -webkit-optimize-contrast;
+    .logoBox img{
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 14px rgba(0,0,0,.55));
+      transform: translateY(1px);
     }
 
     .brand h1{
       margin:0;
       font-size: 18px;
       letter-spacing:.2px;
-      line-height: 1.05;
+      line-height:1.15;
     }
-    .brand .sub{
-      margin-top:4px;
+    .brand p{
+      margin:3px 0 0;
       font-size: 12px;
       color: var(--muted);
-      max-width: 520px;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
     }
 
-    .pillRowTop{
+    .chips{
       display:flex;
-      align-items:center;
-      gap:10px;
       flex-wrap:wrap;
+      gap:10px;
       justify-content:flex-end;
     }
     .chip{
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      color: rgba(255,255,255,.82);
-      font-size: 12px;
       display:flex;
+      align-items:center;
       gap:8px;
-      align-items:center;
-    }
-    .dot{
-      width:8px;height:8px;border-radius:50%;
-      background: rgba(255,255,255,.75);
-      opacity:.7;
-    }
-
-    /* SECOND ROW TABS (Orizzonte / Casual / Strada...) */
-    .tabsRow{
-      margin-top: 14px;
-      display:flex;
-      gap: 12px;
-      align-items:center;
-      justify-content:space-between;
-    }
-    .tabsLeft{
-      display:flex;
-      gap: 12px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-
-    .tab{
-      padding: 12px 14px;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.20);
-      box-shadow: 0 12px 28px rgba(0,0,0,.45);
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-weight: 900;
-      color: rgba(255,255,255,.88);
-      user-select:none;
-    }
-    .tab select{
-      appearance:none;
-      border:none;
-      outline:none;
-      background:transparent;
-      color: rgba(255,255,255,.88);
-      font-weight: 900;
-      font-size: 16px;
-      cursor:pointer;
-    }
-    .tabSmall{
-      font-weight: 900;
-      font-size: 16px;
-      padding: 12px 16px;
-    }
-    .tabBadge{
-      margin-left: 8px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,176,32,.25);
-      background: rgba(255,176,32,.10);
-      color: rgba(255,255,255,.92);
-      font-size: 12px;
-      font-weight: 900;
-    }
-
-    /* MAIN GRID */
-    .main{
-      margin-top: 14px;
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 14px;
-      align-items:start;
-    }
-
-    .panel{
-      border-radius: 26px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-
-    /* LEFT PANEL HEADER: Sfida AI / Giorno di sfida */
-    .panelHead{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding: 14px 16px;
-      border-bottom: 1px solid rgba(255,255,255,.07);
-      background: rgba(0,0,0,.12);
-    }
-    .panelHead .title{
-      display:flex;
-      align-items:center;
-      gap: 10px;
-      font-size: 18px;
-      font-weight: 1000;
-    }
-    .panelHead .rightHint{
-      color: rgba(255,176,32,.92);
-      font-weight: 900;
-      font-size: 14px;
-      display:flex;
-      gap:10px;
-      align-items:center;
-      white-space:nowrap;
-    }
-
-    .panelBody{
-      padding: 14px 16px 18px;
-    }
-
-    .desc{
-      color: rgba(255,255,255,.70);
-      font-size: 13px;
-      margin-bottom: 12px;
-      display:flex;
-      gap:10px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-    .desc .mini{
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      color: rgba(255,255,255,.78);
-      font-weight: 900;
-      font-size: 12px;
-    }
-
-    /* EVENT CARD */
-    .event{
-      border-radius: 22px;
-      border: 1px solid rgba(255,255,255,.09);
-      background: linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.10));
-      padding: 14px;
-      margin-bottom: 14px;
-      box-shadow: 0 18px 45px rgba(0,0,0,.55);
-    }
-    .eventTop{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom: 10px;
-    }
-    .match{
-      font-size: 18px;
-      font-weight: 1000;
-      letter-spacing:.2px;
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-    .ball{
-      width: 22px; height: 22px;
-      border-radius: 50%;
-      border: 2px solid rgba(255,255,255,.25);
-      box-shadow: 0 0 16px rgba(255,255,255,.08);
-      display:inline-grid;
-      place-items:center;
-      font-size: 12px;
-      opacity:.95;
-    }
-
-    .badgeLine{
-      display:flex;
-      gap:10px;
-      align-items:center;
-      flex-wrap:wrap;
-      color: rgba(255,255,255,.62);
-      font-size: 12px;
-    }
-
-    .iaTag{
-      margin-left:auto;
-      padding: 7px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      font-size: 12px;
-      font-weight: 1000;
-      color: rgba(255,255,255,.86);
-      white-space:nowrap;
-    }
-
-    .markets{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 12px;
-    }
-    .mkt{
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.09);
-      background: rgba(0,0,0,.16);
-      padding: 12px;
-      min-height: 110px;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-    }
-    .mkt .name{
-      font-weight: 1000;
-      font-size: 13px;
-      letter-spacing:.2px;
-    }
-    .mkt .sub{
-      margin-top: 6px;
-      color: rgba(255,255,255,.55);
-      font-size: 11px;
-      line-height: 1.15;
-    }
-
-    .mkt .bottom{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .odd{
-      font-weight: 1000;
-      font-size: 14px;
-      color: rgba(255,255,255,.92);
       padding: 8px 10px;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      width: 84px;
-      outline:none;
-    }
-    .add{
-      flex:1;
-      padding: 10px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.90);
-      font-weight: 1000;
-      cursor:pointer;
-      transition:.15s transform, .15s background;
-    }
-    .add:hover{ transform: translateY(-1px); background: rgba(255,255,255,.10); }
-
-    /* RIGHT PANEL (Schedina) */
-    .slipHead{
-      padding: 14px 16px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      border-bottom: 1px solid rgba(255,255,255,.07);
-      background: rgba(0,0,0,.12);
-    }
-    .slipHead .title{
-      font-size: 18px;
-      font-weight: 1000;
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-    .slipBody{
-      padding: 14px 16px 18px;
-    }
-
-    .miniText{
-      color: rgba(255,255,255,.62);
+      border-radius: 999px;
+      border:1px solid var(--stroke);
+      background: var(--chip);
       font-size: 12px;
-      margin-bottom: 12px;
-      line-height: 1.35;
+      color: var(--muted);
     }
+    .dot{width:8px;height:8px;border-radius:99px;background:var(--good);box-shadow:0 0 12px rgba(46,229,157,.45)}
+    .dot2{background:var(--accent);box-shadow:0 0 12px rgba(255,176,32,.35)}
+    .dot3{background:var(--accent2);box-shadow:0 0 12px rgba(124,92,255,.35)}
 
-    .grid3{
+    .grid{
       display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
-    .inp{
-      width:100%;
-      padding: 11px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      color: rgba(255,255,255,.92);
-      font-weight: 900;
-      outline:none;
-    }
-    select.inp{ cursor:pointer; }
-
-    .btnRow{
-      display:flex;
-      gap: 10px;
-      margin-top: 12px;
-      flex-wrap:wrap;
-    }
-    .cta{
-      flex:1;
-      min-width: 140px;
-      padding: 12px 12px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      color: rgba(255,255,255,.90);
-      font-weight: 1000;
-      cursor:pointer;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-    }
-
-    .phone{
-      margin-top: 10px;
-      width: 100%;
-      padding: 12px 12px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      color: rgba(255,255,255,.90);
-      font-weight: 1000;
-      cursor:pointer;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-    }
-
-    .printBtn{
-      margin-top: 14px;
-      width: 100%;
-      padding: 14px 14px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,176,32,.55);
-      background: linear-gradient(180deg, rgba(255,176,32,.95), rgba(255,176,32,.80));
-      color: rgba(0,0,0,.88);
-      font-weight: 1100;
-      font-size: 15px;
-      cursor:pointer;
-      box-shadow: 0 18px 40px rgba(255,176,32,.18);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-    }
-
-    .rows{
-      margin-top: 12px;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,.09);
-      background: rgba(0,0,0,.14);
-      overflow:hidden;
-    }
-    .rowHead,.row{
-      display:grid;
-      grid-template-columns: 1.4fr .8fr .6fr .6fr;
-      gap: 8px;
-      padding: 10px 10px;
-      align-items:center;
-    }
-    .rowHead{
-      font-size: 11px;
-      color: rgba(255,255,255,.65);
-      border-bottom:1px solid rgba(255,255,255,.06);
-      background: rgba(255,255,255,.03);
-    }
-    .row{
-      font-size: 12px;
-      border-bottom:1px solid rgba(255,255,255,.05);
-    }
-    .row:last-child{ border-bottom:none; }
-
-    .x{
-      border:none;
-      border-radius: 12px;
-      padding: 9px 10px;
-      background: rgba(255,255,255,.08);
-      color: rgba(255,255,255,.92);
-      font-weight: 1100;
-      cursor:pointer;
-    }
-
-    .footNote{
-      margin-top: 12px;
-      color: rgba(255,255,255,.45);
-      font-size: 11px;
-      line-height: 1.35;
+      grid-template-columns: 1.25fr .9fr;
+      gap: 16px;
+      padding: 16px 6px 6px;
     }
 
     @media (max-width: 980px){
-      .main{ grid-template-columns: 1fr; }
-      .markets{ grid-template-columns: 1fr; }
-      .grid3{ grid-template-columns: 1fr; }
-      .rowHead,.row{ grid-template-columns: 1.2fr .8fr .6fr .6fr; }
+      .grid{grid-template-columns: 1fr}
+      .chips{justify-content:flex-start}
+      .brand{min-width:auto}
+    }
+
+    .panel{
+      border-radius: 22px;
+      border:1px solid var(--stroke);
+      background: var(--card);
+      box-shadow: 0 14px 44px rgba(0,0,0,.34);
+      overflow:hidden;
+    }
+    .panelHead{
+      padding: 14px 16px;
+      border-bottom:1px solid var(--stroke);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      background: rgba(0,0,0,.16);
+    }
+    .panelHead .title{
+      display:flex; align-items:center; gap:10px;
+      font-weight: 700;
+      letter-spacing:.2px;
+    }
+    .panelHead small{color:var(--muted);font-weight:500}
+
+    .btnRow{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .btn{
+      border:1px solid var(--stroke2);
+      background: rgba(255,255,255,.07);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 9px 12px;
+      font-weight: 650;
+      cursor:pointer;
+      transition: .15s transform, .15s background;
+      display:flex; align-items:center; gap:8px;
+      user-select:none;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.10)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(124,92,255,.55), rgba(46,229,157,.35));
+      border-color: rgba(255,255,255,.20);
+    }
+    .btn.warn{
+      background: linear-gradient(135deg, rgba(255,176,32,.55), rgba(255,92,122,.12));
+      border-color: rgba(255,255,255,.20);
+    }
+
+    .subtabs{
+      padding: 12px 16px 0;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 9px 12px;
+      border-radius: 14px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-weight: 650;
+    }
+    .pill select{
+      background: transparent;
+      border:none;
+      color: var(--text);
+      font-weight: 700;
+      outline:none;
+      cursor:pointer;
+    }
+
+    .content{padding: 12px 14px 16px}
+
+    .hint{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+      color: var(--muted);
+      font-size: 12px;
+      margin: 2px 0 12px;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.06);
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .events{
+      display:flex;
+      flex-direction:column;
+      gap: 12px;
+    }
+
+    .event{
+      border:1px solid var(--stroke);
+      background: var(--card2);
+      border-radius: 18px;
+      padding: 12px 12px 10px;
+    }
+
+    .eventTop{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+      margin-bottom: 10px;
+    }
+
+    .eventMeta{
+      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .leagueTag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border:1px solid var(--stroke);
+      background: rgba(0,0,0,.12);
+      color: rgba(233,236,255,.85);
+      font-weight: 800;
+      letter-spacing:.2px;
+    }
+    .flag{
+      font-size: 15px;
+      line-height: 1;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,.35));
+    }
+
+    .eventName{
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing:.2px;
+      margin: 6px 0 2px;
+    }
+    .eventSub{color: var(--muted); font-size: 12px}
+
+    .markets{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    @media (max-width: 760px){
+      .markets{grid-template-columns: 1fr}
+    }
+
+    .mcard{
+      border:1px solid var(--stroke);
+      background: rgba(0,0,0,.18);
+      border-radius: 16px;
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+      min-height: 92px;
+    }
+
+    .mcard .mname{
+      font-weight: 900;
+      font-size: 12px;
+      letter-spacing:.2px;
+      color: rgba(233,236,255,.92);
+    }
+
+    .row{
+      display:flex;
+      align-items:center;
+      gap: 8px;
+    }
+    .odds{
+      width: 78px;
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.07);
+      padding: 9px 10px;
+      color: var(--text);
+      font-weight: 900;
+      text-align:center;
+      outline:none;
+    }
+
+    .add{
+      flex:1;
+      border-radius: 12px;
+      padding: 10px 10px;
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.08);
+      color: var(--text);
+      font-weight: 900;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap: 8px;
+    }
+    .add:hover{background: rgba(255,255,255,.12)}
+    .note{
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.25;
+    }
+
+    /* SLIP */
+    .slipBody{padding: 12px 14px 16px}
+    .slipTop{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom: 10px;
+    }
+    .slipTop input, .slipTop select{
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.07);
+      color: var(--text);
+      padding: 10px 10px;
+      font-weight: 800;
+      outline:none;
+    }
+    .mini{
+      font-size: 12px; color: var(--muted);
+    }
+
+    table{
+      width:100%;
+      border-collapse: collapse;
+      overflow:hidden;
+      border-radius: 14px;
+      border:1px solid var(--stroke);
+      background: rgba(0,0,0,.16);
+      margin-top: 10px;
+    }
+    th,td{
+      padding: 10px 10px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      font-size: 12px;
+      color: rgba(233,236,255,.88);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{color: var(--muted); font-weight: 900; letter-spacing:.2px}
+    tr:last-child td{border-bottom:none}
+    .xbtn{
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.08);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 6px 9px;
+      cursor:pointer;
+      font-weight: 900;
+    }
+
+    .cta{
+      margin-top: 12px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .bigbtn{
+      width: 100%;
+      border:none;
+      background: linear-gradient(135deg, rgba(255,176,32,.95), rgba(255,176,32,.55));
+      color: #19140a;
+      font-weight: 1000;
+      letter-spacing:.3px;
+      border-radius: 14px;
+      padding: 12px 14px;
+      cursor:pointer;
+      box-shadow: 0 14px 36px rgba(255,176,32,.18);
+    }
+
+    .foot{
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.35;
     }
   </style>
 </head>
 
 <body>
-  <div class="frame">
-
-    <!-- TOP HEADER -->
-    <div class="topbar">
-      <div class="brand">
-        <div class="logo">
-          <img src="vincitu-stemma-256.png" alt="Vincitu">
-        </div>
-        <div>
-          <!-- QUI se vuoi cambiamo testo: WOW Portal / IA Portal / ecc -->
-          <h1>Vincitu • WOW Portal</h1>
-          <div class="sub">Eventi + schedina • quote (puoi correggerle dal banco Vincitu)</div>
-        </div>
-      </div>
-
-      <div class="pillRowTop">
-        <div class="chip"><span class="dot"></span> Centro: <strong id="centerChip">VINC001</strong></div>
-        <div class="chip"><span class="dot"></span> Agg.: <strong>AUTO</strong></div>
-        <div class="chip"><span class="dot"></span> VINCITU</div>
-      </div>
-    </div>
-
-    <!-- TABS ROW -->
-    <div class="tabsRow">
-      <div class="tabsLeft">
-        <div class="tab">
-          <select id="orizSel">
-            <option>Orizzonte</option>
-            <option>Rapido</option>
-            <option>Serale</option>
-          </select>
-          <span style="opacity:.55">▾</span>
-        </div>
-
-        <div class="tab tabSmall" id="modeTab">Casual (IA)</div>
-
-        <div class="tab tabSmall">
-          Strada <span class="tabBadge" id="progressBadge">2 eventi su 3</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- MAIN -->
-    <div class="main">
-
-      <!-- LEFT -->
-      <div class="panel">
-        <div class="panelHead">
-          <div class="title">🏆 Sfida AI (<span id="sfidaCount">2</span> eventi su <span id="sfidaTot">3</span>)</div>
-          <div class="rightHint">✨ Giorno di sfida (<span id="dayBadge">14</span>)</div>
-        </div>
-
-        <div class="panelBody">
-          <div class="desc">
-            <span class="mini">🎯 Sfida</span>
-            <span class="mini">🧠 IA</span>
-            <span style="color:var(--muted)">Seleziona le quote, aggiungi in schedina e stampa.</span>
+  <div class="wrap">
+    <div class="shell">
+      <div class="topbar">
+        <div class="brand">
+          <div class="logoBox" title="Vincitu">
+            <img src="vincitu-stemma-256.png" alt="Vincitu logo">
           </div>
-
-          <div id="events"></div>
-
-          <div class="footNote">
-            Note: supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+          <div>
+            <h1>Vincitu • IA Portal</h1>
+            <p>Eventi + schedina • quote precompilate (puoi correggere dal banco)</p>
           </div>
         </div>
+
+        <div class="chips" id="chips">
+          <div class="chip"><span class="dot"></span> Centro: <b id="chipCenter">VINC001</b></div>
+          <div class="chip"><span class="dot2"></span> Agg.: <b id="chipAgg">AUTO</b></div>
+          <div class="chip"><span class="dot3"></span> Modalità: <b id="chipMode">VINCITU</b></div>
+        </div>
       </div>
 
-      <!-- RIGHT -->
-      <div class="panel">
-        <div class="slipHead">
-          <div class="title">🧾 Schedina</div>
-          <button class="x" id="clearBtn">Svuota</button>
-        </div>
-
-        <div class="slipBody">
-          <div class="miniText">Multipla o sistema • aggiungi dagli eventi a sinistra.</div>
-
-          <div class="grid3">
-            <input id="stake" class="inp" type="number" min="1" step="1" value="5" />
-            <select id="tipo" class="inp">
-              <option value="multi">Multipla (tutte)</option>
-              <option value="system2">Sistema 2 su n</option>
-            </select>
-            <input id="quotaTot" class="inp" value="Quota" disabled />
-          </div>
-
-          <div class="rows">
-            <div class="rowHead">
-              <div>Partita</div><div>Mercato</div><div>Quota</div><div>Az.</div>
+      <div class="grid">
+        <!-- EVENTS -->
+        <div class="panel">
+          <div class="panelHead">
+            <div class="title">⚡ Vincitu • Eventi (IA)</div>
+            <div class="btnRow">
+              <button class="btn primary" id="regenBtn">🔁 Rigenera</button>
+              <button class="btn" id="moodBtn">✨ Cambia mood</button>
             </div>
-            <div id="slipRows"></div>
           </div>
 
-          <div class="btnRow">
-            <button class="cta" id="waBtn">💬 WhatsApp</button>
-            <button class="cta" id="mapsBtn">📍 Maps</button>
+          <div class="subtabs">
+            <span class="pill">Orizzonte
+              <select id="horizon">
+                <option value="oggi">Oggi</option>
+                <option value="24h">24h</option>
+                <option value="48h">48h</option>
+              </select>
+            </span>
+            <span class="pill">Stile
+              <select id="style">
+                <option value="casual">Casual (IA)</option>
+                <option value="sfida">Sfida IA</option>
+                <option value="mix">Mix WOW</option>
+              </select>
+            </span>
+            <span class="badge">✅ Quote precompilate</span>
           </div>
-          <button class="phone" id="callBtn">📞 199 XXX XXX XXXX</button>
 
-          <button class="printBtn" id="printBtn">🖨️ Stampa schedina</button>
+          <div class="content">
+            <div class="hint">
+              <span class="badge">Se al banco vedi una quota diversa: modificaci sopra e premi “Aggiungi”.</span>
+            </div>
 
-          <div class="footNote">
-            Le quote sono stimate e possono essere modificate al banco. In stampa usiamo la tua selezione.
+            <div class="events" id="events"></div>
+          </div>
+        </div>
+
+        <!-- SLIP -->
+        <div class="panel">
+          <div class="panelHead">
+            <div class="title">🧾 Schedina</div>
+            <div class="btnRow">
+              <button class="btn warn" id="clearBtn">🧹 Svuota</button>
+            </div>
+          </div>
+
+          <div class="slipBody">
+            <div class="slipTop">
+              <div class="mini">Stake (€)</div>
+              <input id="stake" type="number" value="5" min="1" step="1" style="width:90px">
+              <div class="mini">Tipo</div>
+              <select id="betType">
+                <option value="multipla">Multipla (tutte)</option>
+                <option value="system2">Sistema 2 su n</option>
+              </select>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Partita</th>
+                  <th>Mercato</th>
+                  <th>Quota</th>
+                  <th>Az.</th>
+                </tr>
+              </thead>
+              <tbody id="slipRows">
+                <tr><td colspan="4" style="color:rgba(233,236,255,.6)">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>
+              </tbody>
+            </table>
+
+            <div class="cta">
+              <button class="bigbtn" id="printBtn">🖨️ Stampa schedina</button>
+            </div>
+
+            <div class="foot">
+              Note: supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
 <script>
-  // === CONFIG ===
-  const CONTACTS = {
-    phone: "+390000000000",
-    whatsappText: "Ciao! Vorrei info su una schedina.",
-    mapsQuery: "Salerno"
-  };
+  // ---- PARAMS ----
+  const qs = new URLSearchParams(location.search);
+  const center = (qs.get("c") || "VINC001").toUpperCase();
+  const v = qs.get("v") || "";
+  document.getElementById("chipCenter").textContent = center;
 
-  const url = new URLSearchParams(location.search);
-  const center = url.get("c") || "VINC001";
-  document.getElementById("centerChip").textContent = center;
+  // ---- LEAGUE -> FLAG ----
+  function flagForLeague(league){
+    const L = (league||"").toLowerCase();
+    if (L.includes("serie") || L.includes("ital")) return "🇮🇹";
+    if (L.includes("premier") || L.includes("eng")) return "🏴";
+    if (L.includes("laliga") || L.includes("spain") || L.includes("liga")) return "🇪🇸";
+    if (L.includes("bundes") || L.includes("german")) return "🇩🇪";
+    if (L.includes("ligue") || L.includes("fran")) return "🇫🇷";
+    if (L.includes("erediv") || L.includes("oland")) return "🇳🇱";
+    if (L.includes("portog") || L.includes("primeira")) return "🇵🇹";
+    if (L.includes("belg")) return "🇧🇪";
+    if (L.includes("svizz")) return "🇨🇭";
+    if (L.includes("turk")) return "🇹🇷";
+    if (L.includes("greek") || L.includes("grec")) return "🇬🇷";
+    if (L.includes("polon")) return "🇵🇱";
+    if (L.includes("svez") || L.includes("swed")) return "🇸🇪";
+    if (L.includes("norv")) return "🇳🇴";
+    if (L.includes("dan")) return "🇩🇰";
+    if (L.includes("czech") || L.includes("ceca")) return "🇨🇿";
+    if (L.includes("austr")) return "🇦🇹";
+    return "🌍";
+  }
 
-  // Demo eventi: se hai events.json lo legge, altrimenti usa questi.
-  async function loadEvents(){
+  // ---- DATA ----
+  async function loadData(){
+    // prova: centers/<CENTER>.json (se esiste), altrimenti events.json
+    const centerUrl = `centers/${center}.json`;
+    const fallbackUrl = `events.json`;
+
+    let data = null;
     try{
-      const res = await fetch("events.json?v=" + (url.get("v") || Date.now()));
-      if(res.ok){
-        const data = await res.json();
-        if(Array.isArray(data.events) && data.events.length){
-          return data.events.map(e => ({
-            league: e.league || "Calcio",
-            match: (e.home && e.away) ? `${e.home} - ${e.away}` : (e.match || "Match"),
-            note: e.note || "IA • selezione consigliata",
-            markets: (e.markets || []).slice(0,3).map(m => ({ label: m.label, odd: fixOdd(m.odd) }))
-          }));
-        }
-      }
+      const r = await fetch(centerUrl, {cache:"no-store"});
+      if (r.ok) data = await r.json();
     }catch(e){}
-    return [
-      {
-        league:"Serie A",
-        match:"Inter - Atalanta",
-        note:"Top Italia • match caldo",
-        markets:[
-          {label:"Over 1.5", odd:1.55},
-          {label:"Goal Si", odd:1.50},
-          {label:"1X", odd:1.45}
-        ]
-      },
-      {
-        league:"Premier League",
-        match:"Arsenal - Tottenham",
-        note:"Derby • alta intensità",
-        markets:[
-          {label:"Over 2.5", odd:1.38},
-          {label:"DNB 1", odd:1.80},
-          {label:"Goal Si", odd:1.60}
-        ]
-      },
-      {
-        league:"Portogallo",
-        match:"Benfica - Sporting",
-        note:"Big match • atmosfera",
-        markets:[
-          {label:"Over 1.5", odd:1.28},
-          {label:"1X", odd:1.32},
-          {label:"Goal Si", odd:1.62}
-        ]
-      }
-    ];
+
+    if(!data){
+      const r2 = await fetch(fallbackUrl, {cache:"no-store"});
+      data = await r2.json();
+    }
+    return data;
   }
 
-  function fixOdd(x){
-    x = Number(x);
-    if(!isFinite(x)) x = 1.70;
-    if(x < 1.20) x = 1.20;
-    if(x > 3.50) x = 3.50;
-    return Math.round(x*100)/100;
-  }
-
-  // === SLIP STATE ===
-  let SLIP = [];
-
-  function f2(x){
-    if(!isFinite(x)) return "—";
-    return (Math.round(x*100)/100).toFixed(2);
-  }
+  // ---- RENDER ----
+  const eventsEl = document.getElementById("events");
+  const slipRows = document.getElementById("slipRows");
+  let slip = [];
 
   function renderSlip(){
-    const rows = document.getElementById("slipRows");
-    rows.innerHTML = "";
-    SLIP.forEach((s, i) => {
-      const r = document.createElement("div");
-      r.className = "row";
-      r.innerHTML = `
-        <div style="font-weight:1000">${s.match}</div>
-        <div>${s.market}</div>
-        <div style="font-weight:1000">${f2(s.odd)}</div>
-        <div><button class="x">X</button></div>
-      `;
-      r.querySelector("button").onclick = () => {
-        SLIP.splice(i,1);
+    if(!slip.length){
+      slipRows.innerHTML = `<tr><td colspan="4" style="color:rgba(233,236,255,.6)">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>`;
+      return;
+    }
+    slipRows.innerHTML = slip.map((s,i)=>`
+      <tr>
+        <td>${escapeHtml(s.match)}</td>
+        <td><b>${escapeHtml(s.market)}</b></td>
+        <td>${Number(s.odd).toFixed(2)}</td>
+        <td><button class="xbtn" data-i="${i}">✕</button></td>
+      </tr>
+    `).join("");
+
+    slipRows.querySelectorAll(".xbtn").forEach(b=>{
+      b.addEventListener("click", ()=>{
+        const i = Number(b.dataset.i);
+        slip.splice(i,1);
         renderSlip();
-      };
-      rows.appendChild(r);
+      });
     });
-    calcQuotaTot();
   }
 
-  function calcQuotaTot(){
-    const tipo = document.getElementById("tipo").value;
-    const stake = Number(document.getElementById("stake").value || 0);
+  function escapeHtml(str){
+    return String(str||"").replace(/[&<>"']/g, m => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+    }[m]));
+  }
 
-    if(SLIP.length === 0){
-      document.getElementById("quotaTot").value = "Quota";
+  function renderEvents(payload){
+    const updated = payload.updated_at ? `Aggiornato: ${payload.updated_at}` : "Aggiornato: AUTO";
+    document.getElementById("chipAgg").textContent = (payload.updated_at ? payload.updated_at : "AUTO");
+
+    const list = payload.events || [];
+    if(!list.length){
+      eventsEl.innerHTML = `<div class="event">Nessun evento trovato.</div>`;
       return;
     }
 
-    if(tipo === "multi"){
-      let q = 1;
-      SLIP.forEach(s => q *= Number(s.odd));
-      document.getElementById("quotaTot").value = "Quota: " + f2(q) + "  |  Vincita: " + f2(q*stake) + "€";
-    } else {
-      const n = SLIP.length;
-      if(n < 2){
-        document.getElementById("quotaTot").value = "Sistema 2 su n: min 2 selezioni";
-        return;
-      }
-      const combos = (n*(n-1))/2;
-      const perCombo = stake / combos;
-      document.getElementById("quotaTot").value = `Sistema 2 su ${n} (${combos} combo) • ${f2(perCombo)}€/combo`;
-    }
-  }
+    eventsEl.innerHTML = list.map((ev, idx)=>{
+      const league = ev.league || "Campionato";
+      const flag = flagForLeague(league);
+      const match = `${ev.home || "Squadra A"} - ${ev.away || "Squadra B"}`;
+      const when = ev.start || "Oggi";
+      const markets = (ev.markets || []).slice(0,3);
 
-  function addToSlip(match, market, odd){
-    SLIP.push({match, market, odd: fixOdd(odd)});
-    renderSlip();
-  }
-
-  function renderEvents(events){
-    const root = document.getElementById("events");
-    root.innerHTML = "";
-
-    events.forEach((ev) => {
-      const card = document.createElement("div");
-      card.className = "event";
-
-      card.innerHTML = `
-        <div class="eventTop">
-          <div>
-            <div class="match"><span class="ball">⚽</span> ${ev.match}</div>
-            <div class="badgeLine">
-              <span style="opacity:.9">🏷️ ${ev.league}</span>
-              <span style="opacity:.35">•</span>
-              <span>${ev.note}</span>
+      return `
+        <div class="event">
+          <div class="eventTop">
+            <div>
+              <div class="eventMeta">
+                <span class="leagueTag"><span class="flag">${flag}</span>${escapeHtml(league)}</span>
+                <span>🕒 ${escapeHtml(when)}</span>
+                <span style="opacity:.85">• ${escapeHtml(updated)}</span>
+              </div>
+              <div class="eventName">${escapeHtml(match)}</div>
+              <div class="eventSub">Seleziona una quota e aggiungi in schedina</div>
             </div>
           </div>
-          <div class="iaTag">🔥 evento centrale</div>
+
+          <div class="markets">
+            ${markets.map((m, mi)=>{
+              const lbl = m.label || "Mercato";
+              const odd = (m.odd ?? 1.70);
+              const id = `odd_${idx}_${mi}`;
+              return `
+                <div class="mcard">
+                  <div class="mname">${escapeHtml(lbl)}</div>
+                  <div class="row">
+                    <input class="odds" id="${id}" type="number" step="0.01" min="1.01" value="${Number(odd).toFixed(2)}">
+                    <button class="add" data-match="${escapeHtml(match)}" data-market="${escapeHtml(lbl)}" data-oddid="${id}">
+                      ➕ Aggiungi
+                    </button>
+                  </div>
+                  <div class="note">Quota Vincitu (modificabile)</div>
+                </div>
+              `;
+            }).join("")}
+          </div>
         </div>
-
-        <div class="markets"></div>
       `;
+    }).join("");
 
-      const mWrap = card.querySelector(".markets");
-      ev.markets.forEach((m) => {
-        const mkt = document.createElement("div");
-        mkt.className = "mkt";
-        mkt.innerHTML = `
-          <div>
-            <div class="name">${m.label}</div>
-            <div class="sub">Quota Vincitu (modificabile)</div>
-          </div>
-          <div class="bottom">
-            <input class="odd" value="${f2(m.odd)}" />
-            <button class="add">Aggiungi</button>
-          </div>
-        `;
-        const inp = mkt.querySelector("input");
-        const btn = mkt.querySelector("button");
-        btn.onclick = () => {
-          const val = fixOdd(inp.value);
-          inp.value = f2(val);
-          addToSlip(ev.match, m.label, val);
-        };
-        mWrap.appendChild(mkt);
+    // bind add buttons
+    eventsEl.querySelectorAll(".add").forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        const match = btn.dataset.match;
+        const market = btn.dataset.market;
+        const oddId = btn.dataset.oddid;
+        const odd = Number(document.getElementById(oddId).value || "0");
+        if(!odd || odd < 1.01) return;
+        slip.push({match, market, odd});
+        renderSlip();
       });
-
-      root.appendChild(card);
     });
   }
 
-  // === CONTACT BUTTONS ===
-  document.getElementById("waBtn").onclick = () => {
-    window.open("https://wa.me/?text=" + encodeURIComponent(CONTACTS.whatsappText), "_blank");
-  };
-  document.getElementById("mapsBtn").onclick = () => {
-    window.open("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(CONTACTS.mapsQuery), "_blank");
-  };
-  document.getElementById("callBtn").onclick = () => {
-    window.location.href = "tel:" + CONTACTS.phone;
-  };
-
-  document.getElementById("clearBtn").onclick = () => {
-    SLIP = [];
+  // ---- ACTIONS ----
+  document.getElementById("clearBtn").addEventListener("click", ()=>{
+    slip = [];
     renderSlip();
-  };
+  });
 
-  document.getElementById("tipo").onchange = calcQuotaTot;
-  document.getElementById("stake").oninput = calcQuotaTot;
+  document.getElementById("printBtn").addEventListener("click", ()=>{
+    // stampa semplice
+    window.print();
+  });
 
-  // “Stampa schedina” (stampa pagina)
-  document.getElementById("printBtn").onclick = () => window.print();
+  document.getElementById("regenBtn").addEventListener("click", async ()=>{
+    // rigenera “soft”: ricarica JSON senza cache
+    const data = await loadData();
+    renderEvents(data);
+  });
 
-  // Init
-  (async () => {
-    const events = await loadEvents();
-    renderEvents(events);
+  document.getElementById("moodBtn").addEventListener("click", ()=>{
+    // effetto “mood” leggero: cambia accento del bottone (solo estetico)
+    const btn = document.getElementById("regenBtn");
+    btn.classList.toggle("warn");
+    btn.classList.toggle("primary");
+  });
+
+  // ---- INIT ----
+  (async ()=>{
+    const data = await loadData();
+    renderEvents(data);
     renderSlip();
   })();
 </script>
