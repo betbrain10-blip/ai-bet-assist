@@ -14,8 +14,9 @@
       --stroke:rgba(255,255,255,.10);
       --text:#eef2ff;
       --muted:rgba(238,242,255,.68);
-      --accent:#ff7a18;
-      --accent2:#ffb000;
+      --accent:#ff2b2b; /* ROSSO per Vincitu */
+      --accentGlow: rgba(255,43,43,.28);
+      --gold:#ffb000;
       --good:#34d399;
       --chip:rgba(255,255,255,.08);
       --shadow: 0 18px 60px rgba(0,0,0,.46);
@@ -31,7 +32,7 @@
       background:
         radial-gradient(1200px 700px at 20% 10%, rgba(120,70,255,.28), transparent 60%),
         radial-gradient(1100px 700px at 80% 10%, rgba(0,255,200,.12), transparent 60%),
-        radial-gradient(900px 650px at 70% 90%, rgba(255,122,24,.12), transparent 55%),
+        radial-gradient(900px 650px at 70% 90%, rgba(255,176,0,.10), transparent 55%),
         linear-gradient(135deg, var(--bg2), var(--bg1));
       display:flex;
       align-items:flex-start;
@@ -65,18 +66,19 @@
       display:flex;
       align-items:center;
       gap:12px;
-      min-width: 340px;
+      min-width: 360px;
     }
 
-    /* LOGO: reso SEMPRE visibile */
+    /* LOGO: testo rosso su nero (sempre visibile) */
     .logoBox{
-      width:62px;height:62px;
-      border-radius:18px;
-      background:linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,.06));
-      border:1px solid rgba(255,255,255,.22);
-      display:grid;
-      place-items:center;
-      box-shadow: 0 10px 28px rgba(0,0,0,.35);
+      width:72px;height:56px;
+      border-radius:16px;
+      background:linear-gradient(180deg, rgba(0,0,0,.92), rgba(0,0,0,.62));
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow: 0 12px 26px rgba(0,0,0,.45);
+      display:flex;
+      align-items:center;
+      justify-content:center;
       position:relative;
       overflow:hidden;
     }
@@ -84,41 +86,27 @@
       content:"";
       position:absolute; inset:-40%;
       background:
-        radial-gradient(circle at 25% 30%, rgba(255,176,0,.30), transparent 58%),
-        radial-gradient(circle at 70% 70%, rgba(255,122,24,.24), transparent 60%);
-      filter: blur(10px);
-      opacity:.95;
+        radial-gradient(circle at 30% 30%, var(--accentGlow), transparent 60%),
+        radial-gradient(circle at 70% 70%, rgba(255,176,0,.12), transparent 60%);
+      filter: blur(12px);
+      opacity:.9;
       pointer-events:none;
     }
-    /* “piastra” chiara dietro al PNG (così non sparisce mai) */
-    .logoPlate{
-      width:52px;height:52px;
-      border-radius:16px;
-      background:rgba(255,255,255,.92);
-      box-shadow: 0 10px 18px rgba(0,0,0,.35);
-      display:grid;
-      place-items:center;
+    .logoWord{
       position:relative;
       z-index:2;
+      font-weight:1100;
+      letter-spacing:.2px;
+      font-size:18px;
+      text-transform:lowercase;
+      display:flex;
+      gap:1px;
+      align-items:baseline;
     }
-    .logoPlate img{
-      width:46px;height:46px;
-      object-fit:contain;
-      /* alza contrasto del logo */
-      filter: drop-shadow(0 10px 12px rgba(0,0,0,.35)) saturate(1.15) contrast(1.1);
-    }
-    .logoFallback{
-      position:absolute;
-      inset:0;
-      display:grid;
-      place-items:center;
-      font-weight:1000;
-      letter-spacing:.8px;
-      color:#0d1020;
-      text-transform:uppercase;
-      font-size:12px;
-      z-index:3;
-      opacity:0;
+    .logoWord .vin{color:#ffffff}
+    .logoWord .citu{
+      color:var(--accent);
+      text-shadow: 0 12px 20px rgba(255,43,43,.32);
     }
 
     .brand h1{
@@ -131,17 +119,7 @@
       gap:8px;
       flex-wrap:wrap;
     }
-    /* scritta Vincitu “wow” */
-    .wordmark{
-      font-weight:1100;
-      letter-spacing:.3px;
-      text-transform:lowercase;
-      font-size:20px;
-      line-height:1;
-    }
-    .wordmark .vin{color:var(--text)}
-    .wordmark .citu{color:var(--accent); text-shadow:0 10px 18px rgba(255,122,24,.22)}
-    .brand h1 .ia{color:var(--accent2); font-weight:1100}
+    .brand h1 .ia{color:var(--gold); font-weight:1100}
     .brand .sub{
       margin:4px 0 0;
       font-size:12px;
@@ -475,16 +453,10 @@
     <div class="topbar">
       <div class="brand">
         <div class="logoBox" title="Vincitu">
-          <div class="logoPlate">
-            <img id="logoImg" src="./vincitu-stemma-256.png" alt="Vincitu" />
-          </div>
-          <div class="logoFallback" id="logoFallback">VINCITU</div>
+          <div class="logoWord"><span class="vin">vin</span><span class="citu">citu</span></div>
         </div>
         <div>
-          <h1>
-            <span class="wordmark"><span class="vin">vin</span><span class="citu">citu</span></span>
-            <span class="ia">IA Portal</span>
-          </h1>
+          <h1><span style="color:var(--accent);font-weight:1100;">Vincitu</span> <span class="ia">IA Portal</span></h1>
           <div class="sub">Eventi misti (top + minori) • sempre nuovi: mattina • pomeriggio • sera</div>
         </div>
       </div>
@@ -573,14 +545,9 @@ const v = qp.get("v") || "";
 
 const SLOT_ORDER = ["morning","afternoon","evening"];
 const SLOT_LABEL = { morning:"Mattina", afternoon:"Pomeriggio", evening:"Sera" };
+const PER_SLOT = 5; // ✅ 5 eventi per fascia
 
 document.getElementById("centerLbl").textContent = center;
-
-/* Logo fallback */
-const logoImg = document.getElementById("logoImg");
-logoImg.addEventListener("error", () => {
-  document.getElementById("logoFallback").style.opacity = "1";
-});
 
 /* Flags */
 function leagueFlag(league){
@@ -648,7 +615,7 @@ async function loadEvents(){
   return res.json();
 }
 
-/* Slots: 3+3+3, NO DUPLICATI, MISTI per campionato */
+/* Slots */
 let ALL_EVENTS = [];
 let ACTIVE_SLOT = slotParam;
 let SLOTS = { morning:[], afternoon:[], evening:[] };
@@ -657,73 +624,85 @@ function eventKey(ev){
   return `${(ev.league||"").trim()}|${(ev.home||"").trim()}|${(ev.away||"").trim()}`.toLowerCase();
 }
 
-/* prende N eventi “misti”: prova a variare campionati */
-function pickMixedUnique(events, n, seed){
-  // 1) dedup globale
-  const map = new Map();
-  for(const e of events){
-    const k = eventKey(e);
-    if(!map.has(k)) map.set(k, e);
-  }
-  const unique = Array.from(map.values());
-
-  // 2) shuffle
-  const shuffled = shuffleSeeded(unique, seed);
-
-  // 3) gruppi per league
-  const byLeague = new Map();
-  for(const e of shuffled){
-    const L = (e.league || "Altro").trim();
-    if(!byLeague.has(L)) byLeague.set(L, []);
-    byLeague.get(L).push(e);
-  }
-
-  // 4) interleaving: prende 1 per campionato a giro (così non fa “solo Serie A”)
-  const leagues = Array.from(byLeague.keys());
-  const out = [];
-  let guard = 0;
-  while(out.length < n && guard < 9999){
-    guard++;
-    let pushed = false;
-    for(const L of leagues){
-      if(out.length >= n) break;
-      const arr = byLeague.get(L);
-      if(arr && arr.length){
-        // evita che lo stesso campionato occupi tutto
-        const next = arr.shift();
-        if(next) { out.push(next); pushed = true; }
-      }
-    }
-    if(!pushed) break;
-  }
-
-  // 5) se ancora mancano, riempi da shuffled (sempre unico)
-  if(out.length < n){
-    const used = new Set(out.map(eventKey));
-    for(const e of shuffled){
-      if(out.length >= n) break;
-      const k = eventKey(e);
-      if(!used.has(k)){
-        out.push(e);
-        used.add(k);
-      }
-    }
-  }
-  return out.slice(0,n);
-}
-
+/* ✅ dedup globale, ma se pochi match: riuso tra fasce, NON dentro fascia */
 function buildSlots(){
   const counterKey = `seed_counter_${center}`;
   const counter = parseInt(localStorage.getItem(counterKey) || "0", 10);
   const base = (document.getElementById("updatedLbl").textContent || "") + "|" + center + "|" + String(counter);
   const seed = xfnv1a(base);
 
-  // Prendiamo 9 eventi MISTI e UNICI
-  const nine = pickMixedUnique(ALL_EVENTS, 9, seed);
+  // 1) unique globale
+  const map = new Map();
+  for(const e of ALL_EVENTS){
+    const k = eventKey(e);
+    if(!map.has(k)) map.set(k, e);
+  }
+  const unique = Array.from(map.values());
+  const shuffled = shuffleSeeded(unique.length ? unique : ALL_EVENTS, seed);
 
-  SLOTS.morning = nine.slice(0,3);
-  SLOTS.afternoon = nine.slice(3,6);
-  SLOTS.evening = nine.slice(6,9);
+  // 2) funzione che prende PER_SLOT eventi senza duplicati INTERNI
+  function pickForSlot(slotSeed){
+    const out = [];
+    const used = new Set();
+    const rnd = shuffleSeeded(shuffled, slotSeed);
+
+    // Prima passata: prova a variare campionati
+    const byLeague = new Map();
+    for(const e of rnd){
+      const L = (e.league || "Altro").trim();
+      if(!byLeague.has(L)) byLeague.set(L, []);
+      byLeague.get(L).push(e);
+    }
+    const leagues = Array.from(byLeague.keys());
+
+    while(out.length < PER_SLOT){
+      let pushed = false;
+      for(const L of leagues){
+        if(out.length >= PER_SLOT) break;
+        const arr = byLeague.get(L);
+        if(arr && arr.length){
+          const cand = arr.shift();
+          const k = eventKey(cand);
+          if(!used.has(k)){
+            out.push(cand);
+            used.add(k);
+            pushed = true;
+          }
+        }
+      }
+      if(!pushed) break;
+    }
+
+    // Seconda passata: riempi comunque fino a 5 (senza duplicati interni)
+    if(out.length < PER_SLOT){
+      for(const e of rnd){
+        if(out.length >= PER_SLOT) break;
+        const k = eventKey(e);
+        if(!used.has(k)){
+          out.push(e);
+          used.add(k);
+        }
+      }
+    }
+
+    // Ultima spiaggia: se events.json ha davvero pochissimi match, duplica “gentile”
+    // (ma sempre non duplicati interni: qui aggiungiamo copiando e cambiando la label del campionato)
+    while(out.length < PER_SLOT){
+      if(out.length === 0) break;
+      const baseEv = out[out.length % out.length];
+      const clone = JSON.parse(JSON.stringify(baseEv));
+      clone.league = (clone.league || "Campionato") + " • Extra";
+      // chiave diversa così non viene scartato internamente
+      clone._k = Math.random().toString(16).slice(2);
+      out.push(clone);
+    }
+
+    return out.slice(0, PER_SLOT);
+  }
+
+  SLOTS.morning   = pickForSlot(seed ^ 0xA1B2C3D4);
+  SLOTS.afternoon = pickForSlot(seed ^ 0xB2C3D4E5);
+  SLOTS.evening   = pickForSlot(seed ^ 0xC3D4E5F6);
 }
 
 function setSlotUI(){
@@ -762,7 +741,7 @@ function render(){
             <span class="flag">${flag}</span>
             <span><b>${league}</b></span>
             <span style="opacity:.65;">•</span>
-            <span style="opacity:.75;">Evento ${idx+1}/3</span>
+            <span style="opacity:.75;">Evento ${idx+1}/${events.length}</span>
             <span style="opacity:.65;">•</span>
             <span style="opacity:.75;">Misto</span>
           </div>
@@ -875,6 +854,7 @@ setInterval(tick, 1000); tick();
 
 /* Init */
 (async () => {
+  document.getElementById("centerLbl").textContent = center;
   setSlotUI();
   try{
     const data = await loadEvents();
