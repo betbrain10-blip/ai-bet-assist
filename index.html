@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vincitu • IA Portal</title>
+
   <style>
     :root{
       --bg1:#070b18;
@@ -19,7 +20,6 @@
       --chip:rgba(255,255,255,.08);
       --shadow: 0 18px 60px rgba(0,0,0,.46);
       --radius:24px;
-      --radius2:16px;
       --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
     }
 
@@ -65,14 +65,14 @@
       display:flex;
       align-items:center;
       gap:12px;
-      min-width: 280px;
+      min-width: 340px;
     }
 
-    /* LOGO: più visibile + fallback */
+    /* LOGO: reso SEMPRE visibile */
     .logoBox{
-      width:58px;height:58px;
+      width:62px;height:62px;
       border-radius:18px;
-      background:linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
+      background:linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,.06));
       border:1px solid rgba(255,255,255,.22);
       display:grid;
       place-items:center;
@@ -83,18 +83,29 @@
     .logoBox::after{
       content:"";
       position:absolute; inset:-40%;
-      background: radial-gradient(circle at 30% 30%, rgba(255,176,0,.28), transparent 55%),
-                  radial-gradient(circle at 70% 70%, rgba(255,122,24,.22), transparent 55%);
+      background:
+        radial-gradient(circle at 25% 30%, rgba(255,176,0,.30), transparent 58%),
+        radial-gradient(circle at 70% 70%, rgba(255,122,24,.24), transparent 60%);
       filter: blur(10px);
-      opacity:.9;
+      opacity:.95;
       pointer-events:none;
     }
-    .logoBox img{
-      width:48px;height:48px;
-      object-fit:contain;
+    /* “piastra” chiara dietro al PNG (così non sparisce mai) */
+    .logoPlate{
+      width:52px;height:52px;
+      border-radius:16px;
+      background:rgba(255,255,255,.92);
+      box-shadow: 0 10px 18px rgba(0,0,0,.35);
+      display:grid;
+      place-items:center;
       position:relative;
       z-index:2;
-      filter: drop-shadow(0 10px 12px rgba(0,0,0,.55));
+    }
+    .logoPlate img{
+      width:46px;height:46px;
+      object-fit:contain;
+      /* alza contrasto del logo */
+      filter: drop-shadow(0 10px 12px rgba(0,0,0,.35)) saturate(1.15) contrast(1.1);
     }
     .logoFallback{
       position:absolute;
@@ -106,8 +117,8 @@
       color:#0d1020;
       text-transform:uppercase;
       font-size:12px;
-      z-index:1;
-      opacity:.0; /* lo mostriamo solo se img fallisce */
+      z-index:3;
+      opacity:0;
     }
 
     .brand h1{
@@ -118,11 +129,21 @@
       display:flex;
       align-items:center;
       gap:8px;
+      flex-wrap:wrap;
     }
-    .brand h1 .v{color:var(--text); font-weight:900}
-    .brand h1 .ia{color:var(--accent); font-weight:1000}
+    /* scritta Vincitu “wow” */
+    .wordmark{
+      font-weight:1100;
+      letter-spacing:.3px;
+      text-transform:lowercase;
+      font-size:20px;
+      line-height:1;
+    }
+    .wordmark .vin{color:var(--text)}
+    .wordmark .citu{color:var(--accent); text-shadow:0 10px 18px rgba(255,122,24,.22)}
+    .brand h1 .ia{color:var(--accent2); font-weight:1100}
     .brand .sub{
-      margin:3px 0 0;
+      margin:4px 0 0;
       font-size:12px;
       color:var(--muted);
     }
@@ -206,6 +227,7 @@
       align-items:center;
       transition: transform .06s ease, background .18s ease;
       user-select:none;
+      white-space:nowrap;
     }
     .btn:hover{background:rgba(255,255,255,.10)}
     .btn:active{transform: translateY(1px)}
@@ -284,6 +306,7 @@
       gap:8px;
       color:rgba(233,238,252,.78);
       font-size:12px;
+      flex-wrap:wrap;
     }
 
     .flag{
@@ -331,7 +354,6 @@
       display:flex; gap:10px; flex-wrap:wrap;
     }
 
-    /* MERCATI: UNA RIGA PULITA (NO CONFUSIONE) */
     .markets{
       display:flex;
       flex-direction:column;
@@ -349,9 +371,8 @@
       padding:10px;
       background:rgba(0,0,0,.14);
     }
-
     @media (max-width: 650px){
-      .mkt{grid-template-columns: 1fr; }
+      .mkt{grid-template-columns: 1fr;}
     }
 
     .mktLabel{
@@ -412,9 +433,7 @@
       line-height:0;
     }
 
-    /* Right card */
     .pad{padding:14px 16px}
-    .row{display:flex; gap:10px; align-items:center; justify-content:space-between; flex-wrap:wrap}
     .field{
       width:100%;
       border-radius:14px;
@@ -450,17 +469,23 @@
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <div class="topbar">
       <div class="brand">
         <div class="logoBox" title="Vincitu">
-          <img id="logoImg" src="./vincitu-stemma-256.png" alt="Vincitu" />
+          <div class="logoPlate">
+            <img id="logoImg" src="./vincitu-stemma-256.png" alt="Vincitu" />
+          </div>
           <div class="logoFallback" id="logoFallback">VINCITU</div>
         </div>
         <div>
-          <h1><span class="v">Vincitu</span> <span class="ia">IA Portal</span></h1>
-          <div class="sub">Eventi sempre nuovi: mattina • pomeriggio • sera</div>
+          <h1>
+            <span class="wordmark"><span class="vin">vin</span><span class="citu">citu</span></span>
+            <span class="ia">IA Portal</span>
+          </h1>
+          <div class="sub">Eventi misti (top + minori) • sempre nuovi: mattina • pomeriggio • sera</div>
         </div>
       </div>
 
@@ -506,7 +531,7 @@
           </div>
         </div>
         <div class="pad">
-          <div class="row" style="margin-bottom:10px;">
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:10px;">
             <div style="flex:1;min-width:170px;">
               <div style="font-size:11px;color:rgba(233,238,252,.6);margin-bottom:6px;">Stake (€)</div>
               <input class="field mono" id="stake" value="5" />
@@ -532,7 +557,7 @@
           <button class="btn btnPrimary" style="width:100%;justify-content:center;margin-top:12px;" id="printBtn">🖨️ Stampa schedina</button>
 
           <div class="hint">
-            Le quote sono precompilate per effetto WOW. Se al banco differiscono, cambia la quota nel box e premi “Aggiungi”.
+            Quote precompilate per effetto WOW. Se al banco differiscono, modifica la quota e premi “Aggiungi”.
           </div>
         </div>
       </div>
@@ -540,10 +565,10 @@
   </div>
 
 <script>
-/* ---------- Params ---------- */
+/* Params */
 const qp = new URLSearchParams(location.search);
 const center = (qp.get("c") || "VINC001").toUpperCase();
-const slotParam = (qp.get("slot") || "morning").toLowerCase(); // morning/afternoon/evening
+const slotParam = (qp.get("slot") || "morning").toLowerCase();
 const v = qp.get("v") || "";
 
 const SLOT_ORDER = ["morning","afternoon","evening"];
@@ -551,13 +576,13 @@ const SLOT_LABEL = { morning:"Mattina", afternoon:"Pomeriggio", evening:"Sera" }
 
 document.getElementById("centerLbl").textContent = center;
 
-/* ---------- Logo fallback ---------- */
+/* Logo fallback */
 const logoImg = document.getElementById("logoImg");
 logoImg.addEventListener("error", () => {
   document.getElementById("logoFallback").style.opacity = "1";
 });
 
-/* ---------- Flags by league/country ---------- */
+/* Flags */
 function leagueFlag(league){
   const L = (league||"").toLowerCase();
   if (L.includes("serie") || L.includes("ital")) return "🇮🇹";
@@ -580,16 +605,15 @@ function leagueFlag(league){
   return "🌍";
 }
 
-/* ---------- Team initials badge ---------- */
 function teamCode(name){
   const t = String(name||"").trim();
   if(!t) return "—";
   const parts = t.split(/\s+/).filter(Boolean);
-  const pick = (parts.length === 1) ? parts[0] : (parts[0][0] + parts[1][0]);
-  return pick.slice(0,3).toUpperCase();
+  const code = (parts.length===1) ? parts[0].slice(0,3) : (parts[0][0]+parts[1][0]+(parts[2]?.[0]||""));
+  return code.slice(0,3).toUpperCase();
 }
 
-/* ---------- Seeded shuffle ---------- */
+/* Seeded shuffle */
 function xfnv1a(str){
   let h = 2166136261;
   for (let i=0;i<str.length;i++){
@@ -616,7 +640,7 @@ function shuffleSeeded(arr, seed){
   return a;
 }
 
-/* ---------- Fetch events ---------- */
+/* Fetch events */
 async function loadEvents(){
   const url = `./events.json${v ? `?v=${encodeURIComponent(v)}` : ""}`;
   const res = await fetch(url, {cache:"no-store"});
@@ -624,28 +648,82 @@ async function loadEvents(){
   return res.json();
 }
 
-/* ---------- Slots ALWAYS: 3+3+3 ---------- */
+/* Slots: 3+3+3, NO DUPLICATI, MISTI per campionato */
 let ALL_EVENTS = [];
 let ACTIVE_SLOT = slotParam;
 let SLOTS = { morning:[], afternoon:[], evening:[] };
 
+function eventKey(ev){
+  return `${(ev.league||"").trim()}|${(ev.home||"").trim()}|${(ev.away||"").trim()}`.toLowerCase();
+}
+
+/* prende N eventi “misti”: prova a variare campionati */
+function pickMixedUnique(events, n, seed){
+  // 1) dedup globale
+  const map = new Map();
+  for(const e of events){
+    const k = eventKey(e);
+    if(!map.has(k)) map.set(k, e);
+  }
+  const unique = Array.from(map.values());
+
+  // 2) shuffle
+  const shuffled = shuffleSeeded(unique, seed);
+
+  // 3) gruppi per league
+  const byLeague = new Map();
+  for(const e of shuffled){
+    const L = (e.league || "Altro").trim();
+    if(!byLeague.has(L)) byLeague.set(L, []);
+    byLeague.get(L).push(e);
+  }
+
+  // 4) interleaving: prende 1 per campionato a giro (così non fa “solo Serie A”)
+  const leagues = Array.from(byLeague.keys());
+  const out = [];
+  let guard = 0;
+  while(out.length < n && guard < 9999){
+    guard++;
+    let pushed = false;
+    for(const L of leagues){
+      if(out.length >= n) break;
+      const arr = byLeague.get(L);
+      if(arr && arr.length){
+        // evita che lo stesso campionato occupi tutto
+        const next = arr.shift();
+        if(next) { out.push(next); pushed = true; }
+      }
+    }
+    if(!pushed) break;
+  }
+
+  // 5) se ancora mancano, riempi da shuffled (sempre unico)
+  if(out.length < n){
+    const used = new Set(out.map(eventKey));
+    for(const e of shuffled){
+      if(out.length >= n) break;
+      const k = eventKey(e);
+      if(!used.has(k)){
+        out.push(e);
+        used.add(k);
+      }
+    }
+  }
+  return out.slice(0,n);
+}
+
 function buildSlots(){
   const counterKey = `seed_counter_${center}`;
   const counter = parseInt(localStorage.getItem(counterKey) || "0", 10);
-
   const base = (document.getElementById("updatedLbl").textContent || "") + "|" + center + "|" + String(counter);
   const seed = xfnv1a(base);
 
-  const shuffled = shuffleSeeded(ALL_EVENTS, seed);
+  // Prendiamo 9 eventi MISTI e UNICI
+  const nine = pickMixedUnique(ALL_EVENTS, 9, seed);
 
-  const need = 9;
-  const list = [];
-  for(let i=0;i<need;i++){
-    list.push(shuffled[i % Math.max(1, shuffled.length)]);
-  }
-  SLOTS.morning = list.slice(0,3);
-  SLOTS.afternoon = list.slice(3,6);
-  SLOTS.evening = list.slice(6,9);
+  SLOTS.morning = nine.slice(0,3);
+  SLOTS.afternoon = nine.slice(3,6);
+  SLOTS.evening = nine.slice(6,9);
 }
 
 function setSlotUI(){
@@ -677,59 +755,54 @@ function render(){
     const card = document.createElement("div");
     card.className = "event";
 
-    const top = document.createElement("div");
-    top.className = "eventTop";
-    top.innerHTML = `
-      <div class="eventTitle">
-        <div class="leagueLine">
-          <span class="flag">${flag}</span>
-          <span><b>${league}</b></span>
-          <span style="opacity:.65;">•</span>
-          <span style="opacity:.75;">Evento ${idx+1}/3</span>
-        </div>
+    card.innerHTML = `
+      <div class="eventTop">
+        <div class="eventTitle">
+          <div class="leagueLine">
+            <span class="flag">${flag}</span>
+            <span><b>${league}</b></span>
+            <span style="opacity:.65;">•</span>
+            <span style="opacity:.75;">Evento ${idx+1}/3</span>
+            <span style="opacity:.65;">•</span>
+            <span style="opacity:.75;">Misto</span>
+          </div>
 
-        <div class="matchLine">
-          <span class="clubBadge">${homeCode}</span>
-          <div class="match">${match}</div>
-          <span class="clubBadge">${awayCode}</span>
-        </div>
+          <div class="matchLine">
+            <span class="clubBadge">${homeCode}</span>
+            <div class="match">${match}</div>
+            <span class="clubBadge">${awayCode}</span>
+          </div>
 
-        <div class="meta">
-          <span>🕒 ${when}</span>
-          <span>✨ IA: selezione fascia</span>
+          <div class="meta">
+            <span>🕒 ${when}</span>
+            <span>✨ IA: selezione fascia</span>
+          </div>
         </div>
+        <div class="badge">🎯 ${SLOT_LABEL[ACTIVE_SLOT] || ACTIVE_SLOT}</div>
       </div>
-      <div class="badge">🎯 ${SLOT_LABEL[ACTIVE_SLOT] || ACTIVE_SLOT}</div>
     `;
-    card.appendChild(top);
 
     const markets = document.createElement("div");
     markets.className = "markets";
 
     (ev.markets || []).slice(0,3).forEach(m => {
-      const row = document.createElement("div");
-      row.className = "mkt";
-
       const odd = (m.odd ?? "").toString().replace(",",".");
       const label = (m.label || "Mercato");
 
+      const row = document.createElement("div");
+      row.className = "mkt";
       row.innerHTML = `
         <div class="mktLabel">
           <div class="name">${label}</div>
           <div class="note">Quota precompilata (modificabile)</div>
         </div>
-
         <input class="oddInput mono" value="${odd}" placeholder="Quota" />
-
-        <button class="addBtn" type="button">
-          <span class="plus">+</span> Aggiungi
-        </button>
+        <button class="addBtn" type="button"><span class="plus">+</span> Aggiungi</button>
       `;
 
       const input = row.querySelector(".oddInput");
       const btn = row.querySelector(".addBtn");
       btn.addEventListener("click", () => addToSlip(match, label, input.value || odd || "—"));
-
       markets.appendChild(row);
     });
 
@@ -738,19 +811,16 @@ function render(){
   });
 }
 
-/* ---------- Slip ---------- */
+/* Slip */
 let SLIP = [];
-
 function addToSlip(match, market, odd){
   SLIP.push({match, market, odd});
   renderSlip();
 }
-
 function removeFromSlip(i){
   SLIP.splice(i,1);
   renderSlip();
 }
-
 function renderSlip(){
   const tbody = document.querySelector("#slipTable tbody");
   tbody.innerHTML = "";
@@ -771,7 +841,7 @@ function renderSlip(){
   });
 }
 
-/* ---------- Buttons + fascia ---------- */
+/* Buttons + fascia */
 document.getElementById("switchBtn").addEventListener("click", () => {
   const idx = SLOT_ORDER.indexOf(ACTIVE_SLOT);
   ACTIVE_SLOT = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
@@ -779,7 +849,6 @@ document.getElementById("switchBtn").addEventListener("click", () => {
   render();
   history.replaceState({}, "", `${location.pathname}?c=${encodeURIComponent(center)}&slot=${encodeURIComponent(ACTIVE_SLOT)}&v=${encodeURIComponent(v)}`);
 });
-
 document.getElementById("regenBtn").addEventListener("click", () => {
   const counterKey = `seed_counter_${center}`;
   const c = parseInt(localStorage.getItem(counterKey) || "0", 10) + 1;
@@ -787,15 +856,13 @@ document.getElementById("regenBtn").addEventListener("click", () => {
   buildSlots();
   render();
 });
-
 document.getElementById("clearBtn").addEventListener("click", () => {
   SLIP = [];
   renderSlip();
 });
-
 document.getElementById("printBtn").addEventListener("click", () => window.print());
 
-/* ---------- Countdown WOW (60 min) ---------- */
+/* Countdown 60 min */
 let sec = 60*60;
 function tick(){
   sec--;
@@ -804,10 +871,9 @@ function tick(){
   const ss = String(sec%60).padStart(2,"0");
   document.getElementById("countdown").textContent = `${mm}:${ss}`;
 }
-setInterval(tick, 1000);
-tick();
+setInterval(tick, 1000); tick();
 
-/* ---------- Init ---------- */
+/* Init */
 (async () => {
   setSlotUI();
   try{
