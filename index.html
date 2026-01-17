@@ -6,19 +6,19 @@
   <title>Vincitu • IA Portal</title>
   <style>
     :root{
-      --bg1:#0b0f1e;
+      --bg1:#070b18;
       --bg2:#1a0f2e;
-      --panel:rgba(15,18,28,.66);
-      --panel2:rgba(20,23,36,.72);
+      --panel:rgba(18,22,38,.64);
+      --panel2:rgba(18,22,38,.78);
       --stroke:rgba(255,255,255,.10);
-      --text:#e9eefc;
-      --muted:rgba(233,238,252,.65);
+      --text:#eef2ff;
+      --muted:rgba(238,242,255,.68);
       --accent:#ff7a18;
       --accent2:#ffb000;
       --good:#34d399;
       --chip:rgba(255,255,255,.08);
-      --shadow: 0 18px 60px rgba(0,0,0,.45);
-      --radius:22px;
+      --shadow: 0 18px 60px rgba(0,0,0,.46);
+      --radius:24px;
       --radius2:16px;
       --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
     }
@@ -30,20 +30,20 @@
       color:var(--text);
       background:
         radial-gradient(1200px 700px at 20% 10%, rgba(120,70,255,.28), transparent 60%),
-        radial-gradient(1000px 650px at 80% 20%, rgba(0,255,200,.12), transparent 60%),
-        radial-gradient(900px 650px at 70% 90%, rgba(255,122,24,.10), transparent 55%),
+        radial-gradient(1100px 700px at 80% 10%, rgba(0,255,200,.12), transparent 60%),
+        radial-gradient(900px 650px at 70% 90%, rgba(255,122,24,.12), transparent 55%),
         linear-gradient(135deg, var(--bg2), var(--bg1));
       display:flex;
       align-items:flex-start;
       justify-content:center;
-      padding:28px 14px 40px;
+      padding:26px 14px 38px;
     }
 
     .wrap{
       width:min(1120px, 100%);
       background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
       border:1px solid var(--stroke);
-      border-radius:28px;
+      border-radius:30px;
       box-shadow:var(--shadow);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
@@ -56,7 +56,7 @@
       justify-content:space-between;
       gap:14px;
       padding:14px 14px 18px;
-      border-radius:22px;
+      border-radius:24px;
       background:rgba(0,0,0,.18);
       border:1px solid rgba(255,255,255,.08);
     }
@@ -65,23 +65,49 @@
       display:flex;
       align-items:center;
       gap:12px;
-      min-width: 260px;
+      min-width: 280px;
     }
 
-    /* LOGO WOW: più grande + contrasto */
+    /* LOGO: più visibile + fallback */
     .logoBox{
-      width:56px;height:56px;
-      border-radius:16px;
-      background:rgba(255,255,255,.10);
-      border:1px solid rgba(255,255,255,.16);
+      width:58px;height:58px;
+      border-radius:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
+      border:1px solid rgba(255,255,255,.22);
       display:grid;
       place-items:center;
-      box-shadow: 0 10px 25px rgba(0,0,0,.35);
+      box-shadow: 0 10px 28px rgba(0,0,0,.35);
+      position:relative;
+      overflow:hidden;
+    }
+    .logoBox::after{
+      content:"";
+      position:absolute; inset:-40%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,176,0,.28), transparent 55%),
+                  radial-gradient(circle at 70% 70%, rgba(255,122,24,.22), transparent 55%);
+      filter: blur(10px);
+      opacity:.9;
+      pointer-events:none;
     }
     .logoBox img{
-      width:46px;height:46px;
+      width:48px;height:48px;
       object-fit:contain;
-      filter: drop-shadow(0 8px 10px rgba(0,0,0,.55));
+      position:relative;
+      z-index:2;
+      filter: drop-shadow(0 10px 12px rgba(0,0,0,.55));
+    }
+    .logoFallback{
+      position:absolute;
+      inset:0;
+      display:grid;
+      place-items:center;
+      font-weight:1000;
+      letter-spacing:.8px;
+      color:#0d1020;
+      text-transform:uppercase;
+      font-size:12px;
+      z-index:1;
+      opacity:.0; /* lo mostriamo solo se img fallisce */
     }
 
     .brand h1{
@@ -93,8 +119,8 @@
       align-items:center;
       gap:8px;
     }
-    .brand h1 .v{color:var(--text); font-weight:800}
-    .brand h1 .ia{color:var(--accent); font-weight:900}
+    .brand h1 .v{color:var(--text); font-weight:900}
+    .brand h1 .ia{color:var(--accent); font-weight:1000}
     .brand .sub{
       margin:3px 0 0;
       font-size:12px;
@@ -113,7 +139,7 @@
       background:var(--chip);
       border:1px solid rgba(255,255,255,.10);
       font-size:12px;
-      color:rgba(233,238,252,.85);
+      color:rgba(233,238,252,.86);
       display:flex;
       align-items:center;
       gap:8px;
@@ -157,6 +183,7 @@
       align-items:center;
       gap:8px;
     }
+
     .actions{
       display:flex;
       align-items:center;
@@ -172,7 +199,7 @@
       padding:9px 12px;
       border-radius:12px;
       cursor:pointer;
-      font-weight:700;
+      font-weight:900;
       font-size:12px;
       display:inline-flex;
       gap:8px;
@@ -183,14 +210,10 @@
     .btn:hover{background:rgba(255,255,255,.10)}
     .btn:active{transform: translateY(1px)}
     .btnPrimary{
-      background:linear-gradient(90deg, rgba(255,122,24,.95), rgba(255,176,0,.90));
+      background:linear-gradient(90deg, rgba(255,122,24,.95), rgba(255,176,0,.92));
       border:1px solid rgba(255,255,255,.14);
       color:#15131d;
-      box-shadow: 0 10px 22px rgba(255,122,24,.20);
-    }
-    .btnPrimary:hover{filter:brightness(1.02)}
-    .btnGhost{
-      background:rgba(0,0,0,.15);
+      box-shadow: 0 10px 22px rgba(255,122,24,.22);
     }
 
     .filters{
@@ -212,7 +235,7 @@
       align-items:center;
       gap:8px;
     }
-    .pill strong{color:rgba(233,238,252,.95)}
+    .pill strong{color:rgba(233,238,252,.96)}
     .timer{
       display:flex; align-items:center; gap:8px;
       font-size:12px; color:rgba(233,238,252,.75);
@@ -236,7 +259,7 @@
     .event{
       background:var(--panel2);
       border:1px solid rgba(255,255,255,.10);
-      border-radius:var(--radius2);
+      border-radius:18px;
       padding:12px;
     }
 
@@ -247,18 +270,22 @@
       gap:10px;
       margin-bottom:10px;
     }
+
     .eventTitle{
       display:flex;
       flex-direction:column;
-      gap:2px;
+      gap:4px;
+      min-width:0;
     }
-    .eventTitle .league{
-      font-size:12px;
-      color:rgba(233,238,252,.75);
+
+    .leagueLine{
       display:flex;
       align-items:center;
       gap:8px;
+      color:rgba(233,238,252,.78);
+      font-size:12px;
     }
+
     .flag{
       width:22px;height:22px;
       display:grid;place-items:center;
@@ -267,93 +294,121 @@
       border:1px solid rgba(255,255,255,.10);
       font-size:14px;
     }
-    .eventTitle .match{
-      font-size:16px;
-      font-weight:900;
-      letter-spacing:.2px;
+
+    .matchLine{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
     }
-    .eventTitle .meta{
+
+    .clubBadge{
+      width:28px;height:28px;
+      border-radius:10px;
+      display:grid;
+      place-items:center;
+      font-weight:1000;
+      font-size:11px;
+      letter-spacing:.4px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow: 0 10px 20px rgba(0,0,0,.18);
+    }
+
+    .match{
+      font-size:16px;
+      font-weight:1000;
+      letter-spacing:.2px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width: 520px;
+    }
+
+    .meta{
       font-size:12px;
       color:rgba(233,238,252,.62);
       display:flex; gap:10px; flex-wrap:wrap;
     }
 
+    /* MERCATI: UNA RIGA PULITA (NO CONFUSIONE) */
     .markets{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      display:flex;
+      flex-direction:column;
       gap:10px;
-    }
-    @media (max-width: 650px){
-      .markets{grid-template-columns:1fr}
+      margin-top:8px;
     }
 
-    /* TASTO AGGIUNGI IN RIGA: fix “fuori riga” */
     .mkt{
+      display:grid;
+      grid-template-columns: 1fr 92px 128px;
+      gap:10px;
+      align-items:center;
       border:1px solid rgba(255,255,255,.10);
       border-radius:14px;
       padding:10px;
       background:rgba(0,0,0,.14);
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      min-height:64px;
     }
-    .mkt .left{
+
+    @media (max-width: 650px){
+      .mkt{grid-template-columns: 1fr; }
+    }
+
+    .mktLabel{
       display:flex;
       flex-direction:column;
-      gap:2px;
-      min-width: 0;
+      gap:3px;
+      min-width:0;
     }
-    .mkt .label{
-      font-size:12px;
-      color:rgba(233,238,252,.75);
+    .mktLabel .name{
+      font-size:13px;
+      font-weight:900;
+      color:rgba(233,238,252,.92);
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
     }
-    .mkt .odd{
-      font-size:16px;
-      font-weight:900;
-      color:rgba(233,238,252,.96);
+    .mktLabel .note{
+      font-size:11px;
+      color:rgba(233,238,252,.58);
     }
-    .mkt .right{
-      display:flex;
-      align-items:center;
-      gap:8px;
-    }
+
     .oddInput{
-      width:72px;
-      padding:9px 10px;
+      width:100%;
+      padding:10px 10px;
       border-radius:12px;
       border:1px solid rgba(255,255,255,.12);
       background:rgba(255,255,255,.06);
       color:var(--text);
-      font-weight:900;
+      font-weight:1000;
       outline:none;
       font-variant-numeric: tabular-nums;
+      text-align:center;
     }
+
     .addBtn{
-      padding:9px 11px;
+      width:100%;
+      padding:10px 12px;
       border-radius:12px;
       border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.08);
+      background:rgba(255,255,255,.10);
       color:var(--text);
       cursor:pointer;
-      font-weight:900;
+      font-weight:1000;
       display:inline-flex;
       align-items:center;
+      justify-content:center;
       gap:8px;
       white-space:nowrap;
     }
-    .addBtn:hover{background:rgba(255,255,255,.12)}
+    .addBtn:hover{background:rgba(255,255,255,.14)}
     .addBtn:active{transform: translateY(1px)}
     .addBtn .plus{
-      width:18px;height:18px;border-radius:7px;
-      background:rgba(255,255,255,.10);
+      width:20px;height:20px;border-radius:8px;
+      background:rgba(255,255,255,.12);
       display:grid;place-items:center;
-      border:1px solid rgba(255,255,255,.14);
-      font-weight:900;
+      border:1px solid rgba(255,255,255,.16);
+      font-weight:1000;
       line-height:0;
     }
 
@@ -368,7 +423,7 @@
       padding:12px;
       color:rgba(233,238,252,.90);
       outline:none;
-      font-weight:800;
+      font-weight:900;
     }
     .table{
       width:100%;
@@ -382,7 +437,7 @@
       padding:8px 6px;
       text-align:left;
     }
-    .table th{color:rgba(233,238,252,.65); font-weight:800}
+    .table th{color:rgba(233,238,252,.65); font-weight:900}
     .hint{font-size:11px;color:rgba(233,238,252,.55);margin-top:10px;line-height:1.35}
     .footerNote{padding:0 16px 14px;color:rgba(233,238,252,.52);font-size:11px}
 
@@ -400,8 +455,8 @@
     <div class="topbar">
       <div class="brand">
         <div class="logoBox" title="Vincitu">
-          <!-- LOGO: usa quello che hai nel repo -->
-          <img src="./vincitu-stemma-256.png" alt="Vincitu" />
+          <img id="logoImg" src="./vincitu-stemma-256.png" alt="Vincitu" />
+          <div class="logoFallback" id="logoFallback">VINCITU</div>
         </div>
         <div>
           <h1><span class="v">Vincitu</span> <span class="ia">IA Portal</span></h1>
@@ -423,7 +478,7 @@
           <h2>⚡ Eventi (IA)</h2>
           <div class="actions">
             <button class="btn btnPrimary" id="regenBtn">🔁 Nuovi eventi</button>
-            <button class="btn btnGhost" id="switchBtn">🌓 Cambia fascia</button>
+            <button class="btn" id="switchBtn">🌓 Cambia fascia</button>
           </div>
         </div>
 
@@ -477,7 +532,7 @@
           <button class="btn btnPrimary" style="width:100%;justify-content:center;margin-top:12px;" id="printBtn">🖨️ Stampa schedina</button>
 
           <div class="hint">
-            Suggerimento: qui le quote sono <b>precompilate</b> per effetto WOW. Se al banco differiscono, puoi cambiarle nel box quota prima di “Aggiungi”.
+            Le quote sono precompilate per effetto WOW. Se al banco differiscono, cambia la quota nel box e premi “Aggiungi”.
           </div>
         </div>
       </div>
@@ -485,12 +540,10 @@
   </div>
 
 <script>
-/* -----------------------------
-   Helper: query params
---------------------------------*/
+/* ---------- Params ---------- */
 const qp = new URLSearchParams(location.search);
 const center = (qp.get("c") || "VINC001").toUpperCase();
-const slotParam = (qp.get("slot") || "evening").toLowerCase(); // morning/afternoon/evening
+const slotParam = (qp.get("slot") || "morning").toLowerCase(); // morning/afternoon/evening
 const v = qp.get("v") || "";
 
 const SLOT_ORDER = ["morning","afternoon","evening"];
@@ -498,14 +551,17 @@ const SLOT_LABEL = { morning:"Mattina", afternoon:"Pomeriggio", evening:"Sera" }
 
 document.getElementById("centerLbl").textContent = center;
 
-/* -----------------------------
-   Flags by league/country
-   (emoji = leggero, non rompe nulla)
---------------------------------*/
+/* ---------- Logo fallback ---------- */
+const logoImg = document.getElementById("logoImg");
+logoImg.addEventListener("error", () => {
+  document.getElementById("logoFallback").style.opacity = "1";
+});
+
+/* ---------- Flags by league/country ---------- */
 function leagueFlag(league){
   const L = (league||"").toLowerCase();
-  if (L.includes("serie a") || L.includes("coppa italia") || L.includes("ital")) return "🇮🇹";
-  if (L.includes("premier") || L.includes("fa cup") || L.includes("ingh")) return "🇬🇧";
+  if (L.includes("serie") || L.includes("ital")) return "🇮🇹";
+  if (L.includes("premier") || L.includes("ingh") || L.includes("fa cup")) return "🇬🇧";
   if (L.includes("liga") || L.includes("spagna") || L.includes("laliga")) return "🇪🇸";
   if (L.includes("bundes") || L.includes("german")) return "🇩🇪";
   if (L.includes("ligue") || L.includes("fran")) return "🇫🇷";
@@ -520,27 +576,47 @@ function leagueFlag(league){
   if (L.includes("grec")) return "🇬🇷";
   if (L.includes("turch")) return "🇹🇷";
   if (L.includes("austr")) return "🇦🇹";
-  if (L.includes("rep. ceca") || L.includes("ceca")) return "🇨🇿";
+  if (L.includes("ceca")) return "🇨🇿";
   return "🌍";
 }
 
-/* -----------------------------
-   Slot from event start time
-   If event.slot exists -> use it
---------------------------------*/
-function slotFromStart(startStr){
-  // startStr expected like "Oggi 20:45" or "20:45" or "2026-01-17 20:45"
-  const m = String(startStr||"").match(/(\d{1,2}):(\d{2})/);
-  if(!m) return "evening";
-  const h = parseInt(m[1],10);
-  if (h < 12) return "morning";
-  if (h < 18) return "afternoon";
-  return "evening";
+/* ---------- Team initials badge ---------- */
+function teamCode(name){
+  const t = String(name||"").trim();
+  if(!t) return "—";
+  const parts = t.split(/\s+/).filter(Boolean);
+  const pick = (parts.length === 1) ? parts[0] : (parts[0][0] + parts[1][0]);
+  return pick.slice(0,3).toUpperCase();
 }
 
-/* -----------------------------
-   Fetch events.json
---------------------------------*/
+/* ---------- Seeded shuffle ---------- */
+function xfnv1a(str){
+  let h = 2166136261;
+  for (let i=0;i<str.length;i++){
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+function mulberry32(a){
+  return function(){
+    let t = a += 0x6D2B79F5;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  }
+}
+function shuffleSeeded(arr, seed){
+  const a = arr.slice();
+  const rnd = mulberry32(seed);
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(rnd()*(i+1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/* ---------- Fetch events ---------- */
 async function loadEvents(){
   const url = `./events.json${v ? `?v=${encodeURIComponent(v)}` : ""}`;
   const res = await fetch(url, {cache:"no-store"});
@@ -548,63 +624,82 @@ async function loadEvents(){
   return res.json();
 }
 
-/* -----------------------------
-   Render
---------------------------------*/
+/* ---------- Slots ALWAYS: 3+3+3 ---------- */
 let ALL_EVENTS = [];
 let ACTIVE_SLOT = slotParam;
+let SLOTS = { morning:[], afternoon:[], evening:[] };
 
-function setSlotUI(){
-  document.getElementById("slotLbl").textContent = SLOT_LABEL[ACTIVE_SLOT] || ACTIVE_SLOT;
-  document.getElementById("slotPill").textContent = (SLOT_LABEL[ACTIVE_SLOT] || ACTIVE_SLOT) + " (test)";
+function buildSlots(){
+  const counterKey = `seed_counter_${center}`;
+  const counter = parseInt(localStorage.getItem(counterKey) || "0", 10);
+
+  const base = (document.getElementById("updatedLbl").textContent || "") + "|" + center + "|" + String(counter);
+  const seed = xfnv1a(base);
+
+  const shuffled = shuffleSeeded(ALL_EVENTS, seed);
+
+  const need = 9;
+  const list = [];
+  for(let i=0;i<need;i++){
+    list.push(shuffled[i % Math.max(1, shuffled.length)]);
+  }
+  SLOTS.morning = list.slice(0,3);
+  SLOTS.afternoon = list.slice(3,6);
+  SLOTS.evening = list.slice(6,9);
 }
 
-function render(events){
+function setSlotUI(){
+  const lbl = SLOT_LABEL[ACTIVE_SLOT] || ACTIVE_SLOT;
+  document.getElementById("slotLbl").textContent = lbl;
+  document.getElementById("slotPill").textContent = lbl;
+}
+
+function render(){
+  const events = SLOTS[ACTIVE_SLOT] || [];
   const list = document.getElementById("eventsList");
   list.innerHTML = "";
+  document.getElementById("countEvents").textContent = String(events.length);
 
-  // filter by slot
-  let filtered = events.filter(e => {
-    const s = (e.slot || slotFromStart(e.start)).toLowerCase();
-    return s === ACTIVE_SLOT;
-  });
-
-  // FALLBACK WOW: se non trova nulla, mostra tutto (così non resta vuoto)
-  if(filtered.length === 0){
-    const box = document.createElement("div");
-    box.className = "empty";
-    box.innerHTML = `<b>Nessun evento nella fascia ${SLOT_LABEL[ACTIVE_SLOT] || ACTIVE_SLOT}.</b><br>
-    Ti mostro comunque gli eventi disponibili.`;
-    list.appendChild(box);
-    filtered = events.slice(0);
+  if(events.length === 0){
+    list.innerHTML = `<div class="empty">Nessun evento disponibile.</div>`;
+    return;
   }
 
-  document.getElementById("countEvents").textContent = String(filtered.length);
-
-  filtered.forEach((ev, idx) => {
-    const card = document.createElement("div");
-    card.className = "event";
-
-    const flag = leagueFlag(ev.league);
-    const when = ev.start || "Oggi";
+  events.forEach((ev, idx) => {
     const league = ev.league || "Campionato";
     const match = `${ev.home || "Squadra A"} - ${ev.away || "Squadra B"}`;
+    const when = ev.start || "Oggi";
+    const flag = leagueFlag(league);
+
+    const homeCode = teamCode(ev.home);
+    const awayCode = teamCode(ev.away);
+
+    const card = document.createElement("div");
+    card.className = "event";
 
     const top = document.createElement("div");
     top.className = "eventTop";
     top.innerHTML = `
       <div class="eventTitle">
-        <div class="league">
+        <div class="leagueLine">
           <span class="flag">${flag}</span>
           <span><b>${league}</b></span>
+          <span style="opacity:.65;">•</span>
+          <span style="opacity:.75;">Evento ${idx+1}/3</span>
         </div>
-        <div class="match">${match}</div>
+
+        <div class="matchLine">
+          <span class="clubBadge">${homeCode}</span>
+          <div class="match">${match}</div>
+          <span class="clubBadge">${awayCode}</span>
+        </div>
+
         <div class="meta">
           <span>🕒 ${when}</span>
-          <span>✨ IA: precompilato</span>
+          <span>✨ IA: selezione fascia</span>
         </div>
       </div>
-      <div class="badge">🎯 Evento #${idx+1}</div>
+      <div class="badge">🎯 ${SLOT_LABEL[ACTIVE_SLOT] || ACTIVE_SLOT}</div>
     `;
     card.appendChild(top);
 
@@ -614,21 +709,26 @@ function render(events){
     (ev.markets || []).slice(0,3).forEach(m => {
       const row = document.createElement("div");
       row.className = "mkt";
+
       const odd = (m.odd ?? "").toString().replace(",",".");
+      const label = (m.label || "Mercato");
+
       row.innerHTML = `
-        <div class="left">
-          <div class="label">${m.label || "Mercato"}</div>
-          <div class="odd mono">${odd || "—"}</div>
+        <div class="mktLabel">
+          <div class="name">${label}</div>
+          <div class="note">Quota precompilata (modificabile)</div>
         </div>
-        <div class="right">
-          <input class="oddInput mono" value="${odd || ""}" placeholder="Quota" />
-          <button class="addBtn"><span class="plus">+</span> Aggiungi</button>
-        </div>
+
+        <input class="oddInput mono" value="${odd}" placeholder="Quota" />
+
+        <button class="addBtn" type="button">
+          <span class="plus">+</span> Aggiungi
+        </button>
       `;
 
       const input = row.querySelector(".oddInput");
       const btn = row.querySelector(".addBtn");
-      btn.addEventListener("click", () => addToSlip(match, m.label || "Mercato", input.value || odd || "—"));
+      btn.addEventListener("click", () => addToSlip(match, label, input.value || odd || "—"));
 
       markets.appendChild(row);
     });
@@ -638,9 +738,7 @@ function render(events){
   });
 }
 
-/* -----------------------------
-   Slip handling
---------------------------------*/
+/* ---------- Slip ---------- */
 let SLIP = [];
 
 function addToSlip(match, market, odd){
@@ -673,16 +771,21 @@ function renderSlip(){
   });
 }
 
-/* -----------------------------
-   Buttons + slot rotation
---------------------------------*/
-document.getElementById("regenBtn").addEventListener("click", () => render(ALL_EVENTS));
+/* ---------- Buttons + fascia ---------- */
 document.getElementById("switchBtn").addEventListener("click", () => {
   const idx = SLOT_ORDER.indexOf(ACTIVE_SLOT);
   ACTIVE_SLOT = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
   setSlotUI();
-  render(ALL_EVENTS);
+  render();
   history.replaceState({}, "", `${location.pathname}?c=${encodeURIComponent(center)}&slot=${encodeURIComponent(ACTIVE_SLOT)}&v=${encodeURIComponent(v)}`);
+});
+
+document.getElementById("regenBtn").addEventListener("click", () => {
+  const counterKey = `seed_counter_${center}`;
+  const c = parseInt(localStorage.getItem(counterKey) || "0", 10) + 1;
+  localStorage.setItem(counterKey, String(c));
+  buildSlots();
+  render();
 });
 
 document.getElementById("clearBtn").addEventListener("click", () => {
@@ -690,13 +793,9 @@ document.getElementById("clearBtn").addEventListener("click", () => {
   renderSlip();
 });
 
-document.getElementById("printBtn").addEventListener("click", () => {
-  window.print();
-});
+document.getElementById("printBtn").addEventListener("click", () => window.print());
 
-/* -----------------------------
-   Countdown (fake WOW: 60 min)
---------------------------------*/
+/* ---------- Countdown WOW (60 min) ---------- */
 let sec = 60*60;
 function tick(){
   sec--;
@@ -708,20 +807,15 @@ function tick(){
 setInterval(tick, 1000);
 tick();
 
-/* -----------------------------
-   Init
---------------------------------*/
+/* ---------- Init ---------- */
 (async () => {
   setSlotUI();
   try{
     const data = await loadEvents();
     document.getElementById("updatedLbl").textContent = data.updated_at || "—";
-    ALL_EVENTS = (data.events || []).map(ev => {
-      // ensure slot exists if missing
-      if(!ev.slot) ev.slot = slotFromStart(ev.start);
-      return ev;
-    });
-    render(ALL_EVENTS);
+    ALL_EVENTS = (data.events || []);
+    buildSlots();
+    render();
     renderSlip();
   }catch(e){
     document.getElementById("eventsList").innerHTML = `<div class="empty"><b>Errore:</b> ${e.message}</div>`;
