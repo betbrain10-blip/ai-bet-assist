@@ -3,410 +3,438 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vincitu • IA Portal</title>
+  <title>Vincitu • Portal</title>
 
-  <!-- Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="vincitu-stemma-128.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="vincitu-stemma-256.png">
   <link rel="apple-touch-icon" href="vincitu-stemma-256.png">
 
   <style>
     :root{
-      --bg1:#0b1020;
-      --bg2:#101a2f;
-      --card:#0f1526cc;
-      --card2:#0b1020cc;
-      --border:rgba(255,255,255,.08);
+      --bgA:#080b12;
+      --bgB:#0b0f1b;
+      --card:#101522cc;
+      --card2:#0d1220cc;
+      --stroke:rgba(255,255,255,.10);
+      --stroke2:rgba(255,255,255,.07);
       --txt:rgba(255,255,255,.92);
-      --muted:rgba(255,255,255,.65);
-      --muted2:rgba(255,255,255,.45);
-      --accent:#35d3ff;
-      --accent2:#27ffb2;
-      --warn:#ffb020;
-      --danger:#ff4d6d;
-      --ok:#2dff86;
-      --shadow: 0 22px 60px rgba(0,0,0,.55);
-      --radius: 18px;
+      --muted:rgba(255,255,255,.62);
+      --muted2:rgba(255,255,255,.42);
+      --accent:#ffb020;     /* giallo pulsante */
+      --cyan:#35d3ff;
+      --green:#27ffb2;
+      --shadow: 0 28px 70px rgba(0,0,0,.72);
+      --shadow2: 0 18px 45px rgba(0,0,0,.55);
+      --r1:24px;
+      --r2:18px;
+      --r3:14px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
     }
 
     *{box-sizing:border-box}
     body{
       margin:0;
+      font-family: var(--font);
       color:var(--txt);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
-      background:
-        radial-gradient(900px 700px at 15% 15%, rgba(132,72,255,.45), transparent 60%),
-        radial-gradient(800px 650px at 85% 20%, rgba(0,210,255,.35), transparent 55%),
-        radial-gradient(900px 650px at 70% 85%, rgba(0,255,178,.18), transparent 60%),
-        linear-gradient(180deg, var(--bg1), var(--bg2));
       min-height:100vh;
+      background:
+        radial-gradient(900px 700px at 25% 18%, rgba(170,110,255,.22), transparent 60%),
+        radial-gradient(900px 700px at 75% 22%, rgba(45,210,255,.16), transparent 60%),
+        radial-gradient(900px 700px at 70% 85%, rgba(255,176,32,.08), transparent 60%),
+        linear-gradient(180deg, var(--bgA), var(--bgB));
+      overflow-x:hidden;
     }
 
-    .wrap{
-      max-width: 1150px;
-      margin: 28px auto;
-      padding: 0 16px 40px;
+    /* “cornice” glow come screenshot */
+    .frame{
+      width:min(1080px, 92vw);
+      margin: 26px auto;
+      padding: 18px;
+      border-radius: 34px;
+      background:
+        radial-gradient(800px 500px at 20% 20%, rgba(180,120,255,.10), transparent 60%),
+        radial-gradient(800px 500px at 80% 20%, rgba(45,210,255,.09), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: 0 40px 120px rgba(0,0,0,.78);
+      backdrop-filter: blur(10px);
     }
 
+    /* HEADER TOP */
     .topbar{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      padding: 18px 18px;
-      border: 1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      gap:14px;
+      padding: 14px 16px;
       border-radius: 22px;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
+      border: 1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      box-shadow: var(--shadow2);
     }
 
     .brand{
       display:flex;
       align-items:center;
-      gap:14px;
-      min-width: 260px;
+      gap:12px;
+      min-width: 280px;
     }
 
-    .logoBox{
-      width:56px;height:56px;
+    .logo{
+      width:46px;
+      height:46px;
       border-radius: 14px;
-      border:1px solid rgba(255,255,255,.12);
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.10), rgba(255,255,255,.03));
+      border: 1px solid rgba(255,255,255,.12);
+      background: radial-gradient(circle at 35% 35%, rgba(255,255,255,.10), rgba(255,255,255,.03));
       display:grid;
       place-items:center;
       overflow:hidden;
     }
-    .logoBox img{
-      height:44px; width:auto;
-      display:block;
+    .logo img{
+      height:34px;
+      width:auto;
       filter:
-        drop-shadow(0 10px 18px rgba(0,0,0,.70))
-        drop-shadow(0 0 18px rgba(53,211,255,.28));
+        drop-shadow(0 10px 18px rgba(0,0,0,.75))
+        drop-shadow(0 0 20px rgba(255,176,32,.20));
       image-rendering: -webkit-optimize-contrast;
     }
 
-    .brandText h1{
+    .brand h1{
       margin:0;
       font-size: 18px;
       letter-spacing:.2px;
-      line-height: 1.1;
+      line-height: 1.05;
     }
-    .brandText .sub{
+    .brand .sub{
       margin-top:4px;
       font-size: 12px;
       color: var(--muted);
+      max-width: 520px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
     }
 
-    .chips{
+    .pillRowTop{
       display:flex;
+      align-items:center;
       gap:10px;
       flex-wrap:wrap;
       justify-content:flex-end;
     }
     .chip{
       padding: 8px 12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
       border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.82);
       font-size: 12px;
-      color: rgba(255,255,255,.80);
-      display:flex; align-items:center; gap:8px;
+      display:flex;
+      gap:8px;
+      align-items:center;
     }
     .dot{
-      width:8px; height:8px; border-radius:50%;
-      background: var(--accent);
-      box-shadow: 0 0 14px rgba(53,211,255,.7);
+      width:8px;height:8px;border-radius:50%;
+      background: rgba(255,255,255,.75);
+      opacity:.7;
     }
-    .dot2{ background: var(--accent2); box-shadow:0 0 14px rgba(39,255,178,.55); }
-    .dot3{ background: var(--warn); box-shadow:0 0 14px rgba(255,176,32,.55); }
 
-    .grid{
+    /* SECOND ROW TABS (Orizzonte / Casual / Strada...) */
+    .tabsRow{
+      margin-top: 14px;
+      display:flex;
+      gap: 12px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .tabsLeft{
+      display:flex;
+      gap: 12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .tab{
+      padding: 12px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.20);
+      box-shadow: 0 12px 28px rgba(0,0,0,.45);
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight: 900;
+      color: rgba(255,255,255,.88);
+      user-select:none;
+    }
+    .tab select{
+      appearance:none;
+      border:none;
+      outline:none;
+      background:transparent;
+      color: rgba(255,255,255,.88);
+      font-weight: 900;
+      font-size: 16px;
+      cursor:pointer;
+    }
+    .tabSmall{
+      font-weight: 900;
+      font-size: 16px;
+      padding: 12px 16px;
+    }
+    .tabBadge{
+      margin-left: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,176,32,.25);
+      background: rgba(255,176,32,.10);
+      color: rgba(255,255,255,.92);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    /* MAIN GRID */
+    .main{
+      margin-top: 14px;
       display:grid;
-      grid-template-columns: 1.2fr .9fr;
-      gap: 16px;
-      margin-top: 16px;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 14px;
+      align-items:start;
     }
 
     .panel{
-      border:1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.018));
-      border-radius: 22px;
+      border-radius: 26px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
       box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
       overflow:hidden;
     }
 
-    .panelHeader{
-      padding: 14px 16px;
+    /* LEFT PANEL HEADER: Sfida AI / Giorno di sfida */
+    .panelHead{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      border-bottom: 1px solid rgba(255,255,255,.06);
+      gap:12px;
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      background: rgba(0,0,0,.12);
     }
-
-    .panelHeader .title{
-      display:flex; align-items:center; gap:10px;
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing:.2px;
-    }
-
-    .btnRow{
+    .panelHead .title{
       display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.15);
-      color: rgba(255,255,255,.88);
-      padding: 9px 12px;
-      border-radius: 12px;
-      cursor:pointer;
-      font-weight: 700;
-      font-size: 12px;
-      transition: .15s transform, .15s background;
-      display:flex; align-items:center; gap:8px;
-      user-select:none;
-    }
-    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.06); }
-    .btnPrimary{
-      background: linear-gradient(90deg, rgba(39,255,178,.22), rgba(53,211,255,.20));
-      border-color: rgba(53,211,255,.22);
-      box-shadow: 0 10px 25px rgba(0,0,0,.35);
-    }
-
-    .pillRow{
-      padding: 10px 16px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
       align-items:center;
-      border-bottom:1px solid rgba(255,255,255,.06);
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 1000;
     }
-
-    .pill{
-      display:flex; align-items:center; gap:8px;
-      padding: 7px 10px;
-      border-radius:999px;
-      font-size:12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.14);
-      color: rgba(255,255,255,.82);
-    }
-    .pill strong{ color: rgba(255,255,255,.92); }
-    .hint{
-      color: var(--muted2);
-      font-size: 12px;
-      padding: 10px 16px 0;
-    }
-
-    .events{
-      padding: 14px 16px 18px;
+    .panelHead .rightHint{
+      color: rgba(255,176,32,.92);
+      font-weight: 900;
+      font-size: 14px;
       display:flex;
-      flex-direction:column;
-      gap: 14px;
+      gap:10px;
+      align-items:center;
+      white-space:nowrap;
     }
 
-    .eventCard{
-      border:1px solid rgba(255,255,255,.08);
-      background: linear-gradient(180deg, rgba(0,0,0,.16), rgba(0,0,0,.10));
-      border-radius: 18px;
+    .panelBody{
+      padding: 14px 16px 18px;
+    }
+
+    .desc{
+      color: rgba(255,255,255,.70);
+      font-size: 13px;
+      margin-bottom: 12px;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .desc .mini{
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.78);
+      font-weight: 900;
+      font-size: 12px;
+    }
+
+    /* EVENT CARD */
+    .event{
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.09);
+      background: linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.10));
       padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.55);
     }
-
     .eventTop{
       display:flex;
+      align-items:center;
       justify-content:space-between;
-      gap:10px;
-      align-items:flex-start;
+      gap:12px;
       margin-bottom: 10px;
     }
-
-    .leagueTag{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding: 6px 10px;
-      border-radius:999px;
-      font-size:12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.14);
-      color: rgba(255,255,255,.85);
-    }
-
-    .teams{
-      margin-top: 8px;
+    .match{
       font-size: 18px;
-      font-weight: 900;
+      font-weight: 1000;
       letter-spacing:.2px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .ball{
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,.25);
+      box-shadow: 0 0 16px rgba(255,255,255,.08);
+      display:inline-grid;
+      place-items:center;
+      font-size: 12px;
+      opacity:.95;
     }
 
-    .meta{
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 12px;
+    .badgeLine{
       display:flex;
       gap:10px;
-      flex-wrap:wrap;
       align-items:center;
+      flex-wrap:wrap;
+      color: rgba(255,255,255,.62);
+      font-size: 12px;
     }
 
-    .badgeIA{
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      padding: 7px 10px;
+    .iaTag{
+      margin-left:auto;
+      padding: 7px 12px;
       border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
       font-size: 12px;
-      border:1px solid rgba(53,211,255,.16);
-      background: rgba(53,211,255,.08);
-      color: rgba(255,255,255,.88);
+      font-weight: 1000;
+      color: rgba(255,255,255,.86);
       white-space:nowrap;
     }
 
     .markets{
       display:grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 10px;
+      gap: 12px;
+      margin-top: 12px;
     }
-
-    .market{
-      border:1px solid rgba(255,255,255,.08);
-      background: rgba(0,0,0,.14);
-      border-radius: 14px;
-      padding: 10px;
+    .mkt{
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.09);
+      background: rgba(0,0,0,.16);
+      padding: 12px;
       min-height: 110px;
       display:flex;
       flex-direction:column;
       justify-content:space-between;
     }
-
-    .market .mname{
-      font-weight: 900;
+    .mkt .name{
+      font-weight: 1000;
       font-size: 13px;
+      letter-spacing:.2px;
     }
-    .market .msub{
+    .mkt .sub{
+      margin-top: 6px;
+      color: rgba(255,255,255,.55);
       font-size: 11px;
-      color: var(--muted);
-      margin-top: 2px;
+      line-height: 1.15;
     }
 
-    .market .row{
+    .mkt .bottom{
       display:flex;
-      gap: 8px;
-      align-items:flex-end;
+      align-items:center;
       justify-content:space-between;
+      gap: 10px;
       margin-top: 10px;
     }
-
-    .oddInput{
-      width: 72px;
+    .odd{
+      font-weight: 1000;
+      font-size: 14px;
+      color: rgba(255,255,255,.92);
       padding: 8px 10px;
       border-radius: 12px;
-      border:1px solid rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.10);
       background: rgba(0,0,0,.18);
-      color: rgba(255,255,255,.92);
-      font-weight: 900;
+      width: 84px;
       outline:none;
     }
-
-    .addBtn{
+    .add{
       flex:1;
-      padding: 10px 10px;
-      border-radius: 12px;
-      border:1px solid rgba(255,255,255,.12);
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
       background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.92);
+      color: rgba(255,255,255,.90);
+      font-weight: 1000;
       cursor:pointer;
-      font-weight: 900;
       transition:.15s transform, .15s background;
     }
-    .addBtn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.10); }
+    .add:hover{ transform: translateY(-1px); background: rgba(255,255,255,.10); }
 
-    /* Right panel (scheda) */
-    .side{
-      padding: 14px 16px 16px;
-    }
-    .side h3{
-      margin:0;
-      font-size: 13px;
-      color: rgba(255,255,255,.90);
-    }
-    .small{
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 6px;
-    }
-
-    .formRow{
+    /* RIGHT PANEL (Schedina) */
+    .slipHead{
+      padding: 14px 16px;
       display:flex;
-      gap:10px;
-      margin-top: 12px;
       align-items:center;
-      flex-wrap:wrap;
+      justify-content:space-between;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      background: rgba(0,0,0,.12);
     }
+    .slipHead .title{
+      font-size: 18px;
+      font-weight: 1000;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .slipBody{
+      padding: 14px 16px 18px;
+    }
+
+    .miniText{
+      color: rgba(255,255,255,.62);
+      font-size: 12px;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+
+    .grid3{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
     .inp{
-      flex:1;
-      min-width: 120px;
-      padding: 10px 12px;
-      border-radius: 12px;
-      border:1px solid rgba(255,255,255,.10);
+      width:100%;
+      padding: 11px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
       background: rgba(0,0,0,.18);
       color: rgba(255,255,255,.92);
-      font-weight: 800;
+      font-weight: 900;
       outline:none;
     }
-    select.inp{ font-weight:900; }
+    select.inp{ cursor:pointer; }
 
-    .stats{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
-      margin-top: 12px;
-    }
-    .stat{
-      border:1px solid rgba(255,255,255,.08);
-      background: rgba(0,0,0,.14);
-      border-radius: 14px;
-      padding: 10px;
-    }
-    .stat .k{ font-size: 11px; color: var(--muted); }
-    .stat .v{ margin-top: 6px; font-size: 16px; font-weight: 1000; }
-
-    .ctaRow{
+    .btnRow{
       display:flex;
-      gap:10px;
+      gap: 10px;
       margin-top: 12px;
       flex-wrap:wrap;
     }
     .cta{
       flex:1;
       min-width: 140px;
-      padding: 10px 12px;
-      border-radius: 14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.14);
-      color: rgba(255,255,255,.90);
-      font-weight: 900;
-      cursor:pointer;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-    }
-
-    .call{
-      width:100%;
       padding: 12px 12px;
-      border-radius: 14px;
-      border:1px solid rgba(255,77,109,.25);
-      background: rgba(255,77,109,.08);
-      color: rgba(255,255,255,.92);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.90);
       font-weight: 1000;
-      margin-top: 10px;
       cursor:pointer;
       display:flex;
       align-items:center;
@@ -414,146 +442,196 @@
       gap:10px;
     }
 
-    .note{
+    .phone{
       margin-top: 10px;
-      font-size: 11px;
-      color: rgba(255,255,255,.40);
-      line-height: 1.35;
+      width: 100%;
+      padding: 12px 12px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.90);
+      font-weight: 1000;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
     }
 
-    .list{
-      margin-top: 10px;
-      border:1px solid rgba(255,255,255,.08);
+    .printBtn{
+      margin-top: 14px;
+      width: 100%;
+      padding: 14px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,176,32,.55);
+      background: linear-gradient(180deg, rgba(255,176,32,.95), rgba(255,176,32,.80));
+      color: rgba(0,0,0,.88);
+      font-weight: 1100;
+      font-size: 15px;
+      cursor:pointer;
+      box-shadow: 0 18px 40px rgba(255,176,32,.18);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .rows{
+      margin-top: 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.09);
       background: rgba(0,0,0,.14);
-      border-radius: 14px;
       overflow:hidden;
     }
-    .listHead, .listRow{
+    .rowHead,.row{
       display:grid;
       grid-template-columns: 1.4fr .8fr .6fr .6fr;
       gap: 8px;
       padding: 10px 10px;
       align-items:center;
     }
-    .listHead{
+    .rowHead{
       font-size: 11px;
       color: rgba(255,255,255,.65);
       border-bottom:1px solid rgba(255,255,255,.06);
       background: rgba(255,255,255,.03);
     }
-    .listRow{
+    .row{
       font-size: 12px;
       border-bottom:1px solid rgba(255,255,255,.05);
     }
-    .listRow:last-child{ border-bottom:none; }
-    .xbtn{
+    .row:last-child{ border-bottom:none; }
+
+    .x{
       border:none;
+      border-radius: 12px;
+      padding: 9px 10px;
       background: rgba(255,255,255,.08);
       color: rgba(255,255,255,.92);
-      border-radius: 10px;
-      padding: 8px 10px;
+      font-weight: 1100;
       cursor:pointer;
-      font-weight: 1000;
+    }
+
+    .footNote{
+      margin-top: 12px;
+      color: rgba(255,255,255,.45);
+      font-size: 11px;
+      line-height: 1.35;
     }
 
     @media (max-width: 980px){
-      .grid{ grid-template-columns: 1fr; }
-      .brand{ min-width:auto; }
+      .main{ grid-template-columns: 1fr; }
       .markets{ grid-template-columns: 1fr; }
-      .listHead, .listRow{ grid-template-columns: 1.2fr .7fr .5fr .5fr; }
+      .grid3{ grid-template-columns: 1fr; }
+      .rowHead,.row{ grid-template-columns: 1.2fr .8fr .6fr .6fr; }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
+  <div class="frame">
 
+    <!-- TOP HEADER -->
     <div class="topbar">
       <div class="brand">
-        <div class="logoBox" title="Vincitu">
-          <!-- LOGO SUPER VISIBILE -->
-          <img src="vincitu-stemma-256.png" alt="Vincitu Logo">
+        <div class="logo">
+          <img src="vincitu-stemma-256.png" alt="Vincitu">
         </div>
-        <div class="brandText">
-          <h1>Vincitu • IA Portal</h1>
-          <div class="sub">Eventi + schedina • Quote precompilate (puoi correggerle dal banco)</div>
+        <div>
+          <!-- QUI se vuoi cambiamo testo: WOW Portal / IA Portal / ecc -->
+          <h1>Vincitu • WOW Portal</h1>
+          <div class="sub">Eventi + schedina • quote (puoi correggerle dal banco Vincitu)</div>
         </div>
       </div>
 
-      <div class="chips">
-        <div class="chip"><span class="dot"></span> Centro: <strong id="centerName">VINC001</strong></div>
-        <div class="chip"><span class="dot2"></span> Agg.: <strong id="modeAgg">AUTO</strong></div>
-        <div class="chip"><span class="dot3"></span> Modalità: <strong>VINCITU</strong></div>
+      <div class="pillRowTop">
+        <div class="chip"><span class="dot"></span> Centro: <strong id="centerChip">VINC001</strong></div>
+        <div class="chip"><span class="dot"></span> Agg.: <strong>AUTO</strong></div>
+        <div class="chip"><span class="dot"></span> VINCITU</div>
       </div>
     </div>
 
-    <div class="grid">
+    <!-- TABS ROW -->
+    <div class="tabsRow">
+      <div class="tabsLeft">
+        <div class="tab">
+          <select id="orizSel">
+            <option>Orizzonte</option>
+            <option>Rapido</option>
+            <option>Serale</option>
+          </select>
+          <span style="opacity:.55">▾</span>
+        </div>
 
-      <!-- LEFT: EVENTS -->
+        <div class="tab tabSmall" id="modeTab">Casual (IA)</div>
+
+        <div class="tab tabSmall">
+          Strada <span class="tabBadge" id="progressBadge">2 eventi su 3</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+      <!-- LEFT -->
       <div class="panel">
-        <div class="panelHeader">
-          <div class="title">⚡ Vincitu • Eventi (IA)</div>
-          <div class="btnRow">
-            <button class="btn btnPrimary" id="regenBtn">🧠 IA: rigenera eventi</button>
-            <button class="btn" id="moodBtn">✨ Cambia mood</button>
+        <div class="panelHead">
+          <div class="title">🏆 Sfida AI (<span id="sfidaCount">2</span> eventi su <span id="sfidaTot">3</span>)</div>
+          <div class="rightHint">✨ Giorno di sfida (<span id="dayBadge">14</span>)</div>
+        </div>
+
+        <div class="panelBody">
+          <div class="desc">
+            <span class="mini">🎯 Sfida</span>
+            <span class="mini">🧠 IA</span>
+            <span style="color:var(--muted)">Seleziona le quote, aggiungi in schedina e stampa.</span>
+          </div>
+
+          <div id="events"></div>
+
+          <div class="footNote">
+            Note: supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
           </div>
         </div>
-
-        <div class="pillRow">
-          <div class="pill">🟢 Mood: <strong id="moodLabel">equilibrato</strong></div>
-          <div class="pill">🧾 Quote precompilate <strong>(modificabili)</strong></div>
-        </div>
-
-        <div class="hint" id="hintTxt">
-          Se al banco vedi una quota diversa: scrivila sopra e premi “Aggiungi”.
-        </div>
-
-        <div class="events" id="eventsWrap"></div>
       </div>
 
-      <!-- RIGHT: SLIP -->
+      <!-- RIGHT -->
       <div class="panel">
-        <div class="panelHeader">
+        <div class="slipHead">
           <div class="title">🧾 Schedina</div>
-          <div class="btnRow">
-            <button class="btn" id="clearBtn">🧹 Svuota</button>
-          </div>
+          <button class="x" id="clearBtn">Svuota</button>
         </div>
 
-        <div class="side">
-          <h3>Multipla o Sistema 2 su n (informativo)</h3>
-          <div class="small">Seleziona dagli eventi con “Aggiungi”.</div>
+        <div class="slipBody">
+          <div class="miniText">Multipla o sistema • aggiungi dagli eventi a sinistra.</div>
 
-          <div class="formRow">
-            <input class="inp" id="stakeInp" type="number" min="1" step="1" value="5" />
-            <select class="inp" id="betTypeSel">
+          <div class="grid3">
+            <input id="stake" class="inp" type="number" min="1" step="1" value="5" />
+            <select id="tipo" class="inp">
               <option value="multi">Multipla (tutte)</option>
               <option value="system2">Sistema 2 su n</option>
             </select>
+            <input id="quotaTot" class="inp" value="Quota" disabled />
           </div>
 
-          <div class="stats">
-            <div class="stat"><div class="k">Numero selezioni</div><div class="v" id="nSel">0</div></div>
-            <div class="stat"><div class="k">Quota totale</div><div class="v" id="qTot">—</div></div>
-            <div class="stat"><div class="k">Stake per combo</div><div class="v" id="stakeCombo">—</div></div>
-            <div class="stat"><div class="k">Vincita stimata</div><div class="v" id="winEst">—</div></div>
-          </div>
-
-          <div class="list" id="slipList">
-            <div class="listHead">
+          <div class="rows">
+            <div class="rowHead">
               <div>Partita</div><div>Mercato</div><div>Quota</div><div>Az.</div>
             </div>
             <div id="slipRows"></div>
           </div>
 
-          <div class="ctaRow">
+          <div class="btnRow">
             <button class="cta" id="waBtn">💬 WhatsApp</button>
             <button class="cta" id="mapsBtn">📍 Maps</button>
           </div>
-          <button class="call" id="callBtn">📞 +39 000 000 0000</button>
+          <button class="phone" id="callBtn">📞 199 XXX XXX XXXX</button>
 
-          <div class="note">
-            Supporto informativo / intrattenimento. Nessuna garanzia di risultato. Gioca responsabilmente.
+          <button class="printBtn" id="printBtn">🖨️ Stampa schedina</button>
+
+          <div class="footNote">
+            Le quote sono stimate e possono essere modificate al banco. In stampa usiamo la tua selezione.
           </div>
         </div>
       </div>
@@ -562,289 +640,214 @@
   </div>
 
 <script>
-/** ======= CONFIG DEMO (poi mettiamo telefono/WA/maps del tuo centro) ======= **/
-const CONTACTS = {
-  phone: "+390000000000",
-  whatsappText: "Ciao! Vorrei info su una schedina dal Vincitu IA Portal.",
-  mapsQuery: "Salerno"
-};
+  // === CONFIG ===
+  const CONTACTS = {
+    phone: "+390000000000",
+    whatsappText: "Ciao! Vorrei info su una schedina.",
+    mapsQuery: "Salerno"
+  };
 
-/** ======= MOODS ======= **/
-const MOODS = [
-  {key:"equilibrato", label:"equilibrato", pick:["1X","Over 1.5","Goal/NoGoal Si","Under 3.5","DNB 1"]},
-  {key:"aggressivo", label:"aggressivo", pick:["Over 2.5","Goal Si","1","2","Over 3.5"]},
-  {key:"prudente", label:"prudente", pick:["1X","Under 3.5","DNB 1","DNB 2","Over 1.5"]},
-  {key:"spettacolo", label:"spettacolo", pick:["Goal Si","Over 2.5","Over 3.5","Over 1.5","1X"]},
-];
-let moodIdx = 0;
+  const url = new URLSearchParams(location.search);
+  const center = url.get("c") || "VINC001";
+  document.getElementById("centerChip").textContent = center;
 
-/** ======= STATE ======= **/
-let EVENTS = [];
-let SLIP = []; // {match, market, odd}
-
-/** ======= HELPERS ======= **/
-function qs(k){ return new URLSearchParams(location.search).get(k); }
-function f2(x){
-  if(!isFinite(x)) return "—";
-  return (Math.round(x*100)/100).toFixed(2);
-}
-function clampOdd(x){
-  // “vicine” e credibili, non assurde
-  x = Number(x);
-  if(!isFinite(x)) return 1.70;
-  if(x < 1.20) x = 1.20;
-  if(x > 3.50) x = 3.50;
-  return Math.round(x*100)/100;
-}
-function calcCombos2(n){
-  if(n < 2) return 0;
-  return (n*(n-1))/2;
-}
-
-/** ======= RENDER ======= **/
-function renderEvents(){
-  const wrap = document.getElementById("eventsWrap");
-  wrap.innerHTML = "";
-
-  const mood = MOODS[moodIdx];
-
-  EVENTS.forEach((ev, i) => {
-    const card = document.createElement("div");
-    card.className = "eventCard";
-
-    const league = ev.league || "Calcio";
-    const start = ev.start || "Oggi";
-    const teams = (ev.home && ev.away) ? `${ev.home} - ${ev.away}` : ev.match || "Match";
-
-    const top = document.createElement("div");
-    top.className = "eventTop";
-
-    const left = document.createElement("div");
-    left.innerHTML = `
-      <div class="leagueTag">🟢 ${league}</div>
-      <div class="teams">${teams}</div>
-      <div class="meta">🕒 ${start} <span style="opacity:.35">•</span> 🔥 ${ev.tag || "IA"} </div>
-    `;
-
-    const right = document.createElement("div");
-    right.innerHTML = `<div class="badgeIA">🤖 ${mood.label} (IA)</div>`;
-
-    top.appendChild(left);
-    top.appendChild(right);
-
-    card.appendChild(top);
-
-    // markets: 3
-    const mWrap = document.createElement("div");
-    mWrap.className = "markets";
-
-    const markets = (ev.markets || []).slice(0,3);
-    markets.forEach((m, mi) => {
-      const mDiv = document.createElement("div");
-      mDiv.className = "market";
-
-      const odd = clampOdd(m.odd);
-
-      mDiv.innerHTML = `
-        <div>
-          <div class="mname">${m.label}</div>
-          <div class="msub">Quota Vincitu (puoi correggerla)</div>
-        </div>
-        <div class="row">
-          <input class="oddInput" value="${odd}" inputmode="decimal" />
-          <button class="addBtn">＋ Aggiungi</button>
-        </div>
-      `;
-
-      const inp = mDiv.querySelector("input");
-      const btn = mDiv.querySelector("button");
-
-      btn.addEventListener("click", () => {
-        const val = clampOdd(inp.value);
-        inp.value = val;
-        addToSlip({ match: teams, market: m.label, odd: val });
-      });
-
-      mWrap.appendChild(mDiv);
-    });
-
-    card.appendChild(mWrap);
-    wrap.appendChild(card);
-  });
-}
-
-function renderSlip(){
-  document.getElementById("nSel").textContent = String(SLIP.length);
-
-  const rows = document.getElementById("slipRows");
-  rows.innerHTML = "";
-
-  SLIP.forEach((s, idx) => {
-    const r = document.createElement("div");
-    r.className = "listRow";
-    r.innerHTML = `
-      <div style="font-weight:800">${s.match}</div>
-      <div>${s.market}</div>
-      <div style="font-weight:900">${f2(s.odd)}</div>
-      <div><button class="xbtn">X</button></div>
-    `;
-    r.querySelector("button").addEventListener("click", () => {
-      SLIP.splice(idx,1);
-      renderSlip();
-      renderCalc();
-    });
-    rows.appendChild(r);
-  });
-
-  renderCalc();
-}
-
-function renderCalc(){
-  const stake = Number(document.getElementById("stakeInp").value || 0);
-  const type = document.getElementById("betTypeSel").value;
-
-  if(SLIP.length === 0){
-    document.getElementById("qTot").textContent = "—";
-    document.getElementById("stakeCombo").textContent = "—";
-    document.getElementById("winEst").textContent = "—";
-    return;
+  // Demo eventi: se hai events.json lo legge, altrimenti usa questi.
+  async function loadEvents(){
+    try{
+      const res = await fetch("events.json?v=" + (url.get("v") || Date.now()));
+      if(res.ok){
+        const data = await res.json();
+        if(Array.isArray(data.events) && data.events.length){
+          return data.events.map(e => ({
+            league: e.league || "Calcio",
+            match: (e.home && e.away) ? `${e.home} - ${e.away}` : (e.match || "Match"),
+            note: e.note || "IA • selezione consigliata",
+            markets: (e.markets || []).slice(0,3).map(m => ({ label: m.label, odd: fixOdd(m.odd) }))
+          }));
+        }
+      }
+    }catch(e){}
+    return [
+      {
+        league:"Serie A",
+        match:"Inter - Atalanta",
+        note:"Top Italia • match caldo",
+        markets:[
+          {label:"Over 1.5", odd:1.55},
+          {label:"Goal Si", odd:1.50},
+          {label:"1X", odd:1.45}
+        ]
+      },
+      {
+        league:"Premier League",
+        match:"Arsenal - Tottenham",
+        note:"Derby • alta intensità",
+        markets:[
+          {label:"Over 2.5", odd:1.38},
+          {label:"DNB 1", odd:1.80},
+          {label:"Goal Si", odd:1.60}
+        ]
+      },
+      {
+        league:"Portogallo",
+        match:"Benfica - Sporting",
+        note:"Big match • atmosfera",
+        markets:[
+          {label:"Over 1.5", odd:1.28},
+          {label:"1X", odd:1.32},
+          {label:"Goal Si", odd:1.62}
+        ]
+      }
+    ];
   }
 
-  if(type === "multi"){
-    let q = 1;
-    SLIP.forEach(s => q *= Number(s.odd));
-    q = Number(f2(q));
-    document.getElementById("qTot").textContent = f2(q);
-    document.getElementById("stakeCombo").textContent = "—";
-    document.getElementById("winEst").textContent = f2(stake * q) + "€";
-  } else {
-    const n = SLIP.length;
-    const combos = calcCombos2(n);
-    if(combos === 0){
-      document.getElementById("qTot").textContent = "2 su n";
-      document.getElementById("stakeCombo").textContent = "—";
-      document.getElementById("winEst").textContent = "—";
+  function fixOdd(x){
+    x = Number(x);
+    if(!isFinite(x)) x = 1.70;
+    if(x < 1.20) x = 1.20;
+    if(x > 3.50) x = 3.50;
+    return Math.round(x*100)/100;
+  }
+
+  // === SLIP STATE ===
+  let SLIP = [];
+
+  function f2(x){
+    if(!isFinite(x)) return "—";
+    return (Math.round(x*100)/100).toFixed(2);
+  }
+
+  function renderSlip(){
+    const rows = document.getElementById("slipRows");
+    rows.innerHTML = "";
+    SLIP.forEach((s, i) => {
+      const r = document.createElement("div");
+      r.className = "row";
+      r.innerHTML = `
+        <div style="font-weight:1000">${s.match}</div>
+        <div>${s.market}</div>
+        <div style="font-weight:1000">${f2(s.odd)}</div>
+        <div><button class="x">X</button></div>
+      `;
+      r.querySelector("button").onclick = () => {
+        SLIP.splice(i,1);
+        renderSlip();
+      };
+      rows.appendChild(r);
+    });
+    calcQuotaTot();
+  }
+
+  function calcQuotaTot(){
+    const tipo = document.getElementById("tipo").value;
+    const stake = Number(document.getElementById("stake").value || 0);
+
+    if(SLIP.length === 0){
+      document.getElementById("quotaTot").value = "Quota";
       return;
     }
-    const stakePer = stake / combos;
-    document.getElementById("qTot").textContent = `2 su ${n} (${combos} combo)`;
-    document.getElementById("stakeCombo").textContent = f2(stakePer) + "€";
-    // stima: migliore combo (max)
-    let best = 0;
-    for(let i=0;i<n;i++){
-      for(let j=i+1;j<n;j++){
-        const q = Number(SLIP[i].odd) * Number(SLIP[j].odd);
-        if(q > best) best = q;
-      }
-    }
-    document.getElementById("winEst").textContent = "≈ " + f2(best * stakePer) + "€ (stima)";
-  }
-}
 
-/** ======= ACTIONS ======= **/
-function addToSlip(x){
-  SLIP.push(x);
-  renderSlip();
-}
-
-function clearSlip(){
-  SLIP = [];
-  renderSlip();
-}
-
-function setCenter(){
-  const c = qs("c") || "VINC001";
-  document.getElementById("centerName").textContent = c;
-}
-
-function setMood(){
-  document.getElementById("moodLabel").textContent = MOODS[moodIdx].label;
-}
-
-function changeMood(){
-  moodIdx = (moodIdx + 1) % MOODS.length;
-  setMood();
-}
-
-/** ======= EVENTS LOADING ======= **/
-async function loadEvents(){
-  // Se hai events.json: lo usa
-  try{
-    const res = await fetch("events.json?v=" + (qs("v") || Date.now()));
-    if(res.ok){
-      const data = await res.json();
-      if(Array.isArray(data.events)) {
-        EVENTS = data.events.map(e => ({
-          league: e.league || "Calcio",
-          home: e.home,
-          away: e.away,
-          start: e.start || "Oggi",
-          tag: e.tag || "IA",
-          markets: (e.markets || []).map(m => ({ label: m.label, odd: m.odd }))
-        }));
+    if(tipo === "multi"){
+      let q = 1;
+      SLIP.forEach(s => q *= Number(s.odd));
+      document.getElementById("quotaTot").value = "Quota: " + f2(q) + "  |  Vincita: " + f2(q*stake) + "€";
+    } else {
+      const n = SLIP.length;
+      if(n < 2){
+        document.getElementById("quotaTot").value = "Sistema 2 su n: min 2 selezioni";
         return;
       }
+      const combos = (n*(n-1))/2;
+      const perCombo = stake / combos;
+      document.getElementById("quotaTot").value = `Sistema 2 su ${n} (${combos} combo) • ${f2(perCombo)}€/combo`;
     }
-  }catch(e){}
+  }
 
-  // fallback demo (credibile)
-  EVENTS = [
-    { league:"Ekstraklasa (Polonia)", home:"Legia Varsavia", away:"Lech Poznan", start:"Oggi • Minore", tag:"WOW",
-      markets:[ {label:"1X", odd:1.35},{label:"Under 3.5", odd:1.38},{label:"Goal Si", odd:1.85} ] },
-    { league:"Premier League", home:"Arsenal", away:"Tottenham", start:"Oggi • Derby", tag:"IA",
-      markets:[ {label:"Over 2.5", odd:1.75},{label:"1X", odd:1.32},{label:"Goal Si", odd:1.62} ] },
-    { league:"Eredivisie", home:"Ajax", away:"PSV", start:"Oggi", tag:"IA",
-      markets:[ {label:"Over 2.5", odd:1.68},{label:"Over 1.5", odd:1.25},{label:"Goal Si", odd:1.55} ] },
-  ];
-}
+  function addToSlip(match, market, odd){
+    SLIP.push({match, market, odd: fixOdd(odd)});
+    renderSlip();
+  }
 
-function regenEventsFake(){
-  // “Rigenera” = cambia solo l’ordine e micro-varia quote (restano credibili)
-  EVENTS = EVENTS.map(ev => {
-    const mk = ev.markets.map(m => ({
-      label: m.label,
-      odd: clampOdd(Number(m.odd) + (Math.random()*0.16 - 0.08))
-    }));
-    mk.sort(() => Math.random() - 0.5);
-    return {...ev, markets: mk};
-  }).sort(() => Math.random() - 0.5);
+  function renderEvents(events){
+    const root = document.getElementById("events");
+    root.innerHTML = "";
 
-  renderEvents();
-}
+    events.forEach((ev) => {
+      const card = document.createElement("div");
+      card.className = "event";
 
-/** ======= CONTACTS ======= **/
-function openWhatsApp(){
-  const text = encodeURIComponent(CONTACTS.whatsappText);
-  window.open("https://wa.me/?text=" + text, "_blank");
-}
-function openMaps(){
-  const q = encodeURIComponent(CONTACTS.mapsQuery);
-  window.open("https://www.google.com/maps/search/?api=1&query=" + q, "_blank");
-}
-function callPhone(){
-  window.location.href = "tel:" + CONTACTS.phone;
-}
+      card.innerHTML = `
+        <div class="eventTop">
+          <div>
+            <div class="match"><span class="ball">⚽</span> ${ev.match}</div>
+            <div class="badgeLine">
+              <span style="opacity:.9">🏷️ ${ev.league}</span>
+              <span style="opacity:.35">•</span>
+              <span>${ev.note}</span>
+            </div>
+          </div>
+          <div class="iaTag">🔥 evento centrale</div>
+        </div>
 
-/** ======= INIT ======= **/
-(async function init(){
-  setCenter();
-  setMood();
+        <div class="markets"></div>
+      `;
 
-  document.getElementById("regenBtn").addEventListener("click", regenEventsFake);
-  document.getElementById("moodBtn").addEventListener("click", () => { changeMood(); });
-  document.getElementById("clearBtn").addEventListener("click", clearSlip);
+      const mWrap = card.querySelector(".markets");
+      ev.markets.forEach((m) => {
+        const mkt = document.createElement("div");
+        mkt.className = "mkt";
+        mkt.innerHTML = `
+          <div>
+            <div class="name">${m.label}</div>
+            <div class="sub">Quota Vincitu (modificabile)</div>
+          </div>
+          <div class="bottom">
+            <input class="odd" value="${f2(m.odd)}" />
+            <button class="add">Aggiungi</button>
+          </div>
+        `;
+        const inp = mkt.querySelector("input");
+        const btn = mkt.querySelector("button");
+        btn.onclick = () => {
+          const val = fixOdd(inp.value);
+          inp.value = f2(val);
+          addToSlip(ev.match, m.label, val);
+        };
+        mWrap.appendChild(mkt);
+      });
 
-  document.getElementById("stakeInp").addEventListener("input", renderCalc);
-  document.getElementById("betTypeSel").addEventListener("change", renderCalc);
+      root.appendChild(card);
+    });
+  }
 
-  document.getElementById("waBtn").addEventListener("click", openWhatsApp);
-  document.getElementById("mapsBtn").addEventListener("click", openMaps);
-  document.getElementById("callBtn").addEventListener("click", callPhone);
+  // === CONTACT BUTTONS ===
+  document.getElementById("waBtn").onclick = () => {
+    window.open("https://wa.me/?text=" + encodeURIComponent(CONTACTS.whatsappText), "_blank");
+  };
+  document.getElementById("mapsBtn").onclick = () => {
+    window.open("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(CONTACTS.mapsQuery), "_blank");
+  };
+  document.getElementById("callBtn").onclick = () => {
+    window.location.href = "tel:" + CONTACTS.phone;
+  };
 
-  await loadEvents();
-  renderEvents();
-  renderSlip();
-})();
+  document.getElementById("clearBtn").onclick = () => {
+    SLIP = [];
+    renderSlip();
+  };
+
+  document.getElementById("tipo").onchange = calcQuotaTot;
+  document.getElementById("stake").oninput = calcQuotaTot;
+
+  // “Stampa schedina” (stampa pagina)
+  document.getElementById("printBtn").onclick = () => window.print();
+
+  // Init
+  (async () => {
+    const events = await loadEvents();
+    renderEvents(events);
+    renderSlip();
+  })();
 </script>
 </body>
 </html>
