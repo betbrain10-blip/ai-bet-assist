@@ -4,715 +4,689 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vincitu • IA Portal</title>
+  <link rel="icon" href="./vincitu-stemma-128.png" />
   <style>
     :root{
-      --bg1:#0b0a14;
-      --bg2:#0a1530;
-      --card: rgba(18, 22, 38, .72);
-      --card2: rgba(18, 22, 38, .55);
+      --bg1:#140f2d; --bg2:#0b2a38;
+      --glass: rgba(18, 20, 32, .55);
       --stroke: rgba(255,255,255,.10);
-      --stroke2: rgba(255,255,255,.18);
-      --text:#e9ecff;
-      --muted: rgba(233,236,255,.65);
-      --chip: rgba(255,255,255,.08);
-      --chip2: rgba(255,255,255,.12);
-      --accent:#ffb020;
-      --accent2:#7c5cff;
-      --good:#2ee59d;
-      --danger:#ff5c7a;
-      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.65);
+      --muted2: rgba(255,255,255,.45);
+      --orange:#ff5a1f; --orange2:#ff7a3a; --gold:#f0b23e;
+      --good:#39d98a;
+      --shadow: 0 18px 60px rgba(0,0,0,.55);
+      --shadow2: 0 10px 30px rgba(0,0,0,.35);
     }
-
     *{box-sizing:border-box}
+    html,body{height:100%}
     body{
       margin:0;
-      font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color:var(--text);
       background:
-        radial-gradient(1100px 700px at 15% 15%, rgba(124,92,255,.35), transparent 60%),
-        radial-gradient(900px 650px at 85% 30%, rgba(255,176,32,.25), transparent 60%),
-        radial-gradient(900px 650px at 80% 85%, rgba(46,229,157,.18), transparent 55%),
-        linear-gradient(140deg, var(--bg1), var(--bg2));
-      min-height:100vh;
+        radial-gradient(1200px 800px at 10% 20%, rgba(128,60,255,.35), transparent 55%),
+        radial-gradient(900px 700px at 85% 30%, rgba(0,255,255,.14), transparent 60%),
+        radial-gradient(900px 700px at 70% 85%, rgba(255,122,58,.12), transparent 55%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
+      padding: 22px;
     }
-
-    .wrap{
+    .shell{
       max-width: 1120px;
       margin: 0 auto;
-      padding: 26px 18px 40px;
-    }
-
-    .shell{
-      border:1px solid var(--stroke);
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      border-radius: 26px;
-      padding: 18px;
+      padding: 22px;
+      border-radius: 28px;
+      background: rgba(15, 16, 26, .38);
+      border: 1px solid rgba(255,255,255,.10);
       box-shadow: var(--shadow);
       backdrop-filter: blur(10px);
     }
 
     .topbar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-      padding: 14px 14px 18px;
-      border-radius: 20px;
-      border: 1px solid var(--stroke);
-      background: rgba(0,0,0,.18);
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width: 260px;
-    }
-
-    /* LOGO SUPER VISIBILE */
-    .logoBox{
-      width: 56px;
-      height: 56px;
-      border-radius: 16px;
-      display:grid;
-      place-items:center;
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.22);
-      box-shadow:
-        0 10px 30px rgba(0,0,0,.35),
-        0 0 0 3px rgba(255,255,255,.06),
-        0 0 28px rgba(255,176,32,.22);
-      overflow:hidden;
-    }
-    .logoBox img{
-      width: 44px;
-      height: 44px;
-      object-fit: contain;
-      filter: drop-shadow(0 6px 14px rgba(0,0,0,.55));
-      transform: translateY(1px);
-    }
-
-    .brand h1{
-      margin:0;
-      font-size: 18px;
-      letter-spacing:.2px;
-      line-height:1.15;
-    }
-    .brand p{
-      margin:3px 0 0;
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:flex-end;
-    }
-    .chip{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      padding: 8px 10px;
-      border-radius: 999px;
-      border:1px solid var(--stroke);
-      background: var(--chip);
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .dot{width:8px;height:8px;border-radius:99px;background:var(--good);box-shadow:0 0 12px rgba(46,229,157,.45)}
-    .dot2{background:var(--accent);box-shadow:0 0 12px rgba(255,176,32,.35)}
-    .dot3{background:var(--accent2);box-shadow:0 0 12px rgba(124,92,255,.35)}
-
-    .grid{
-      display:grid;
-      grid-template-columns: 1.25fr .9fr;
-      gap: 16px;
-      padding: 16px 6px 6px;
-    }
-
-    @media (max-width: 980px){
-      .grid{grid-template-columns: 1fr}
-      .chips{justify-content:flex-start}
-      .brand{min-width:auto}
-    }
-
-    .panel{
-      border-radius: 22px;
-      border:1px solid var(--stroke);
-      background: var(--card);
-      box-shadow: 0 14px 44px rgba(0,0,0,.34);
-      overflow:hidden;
-    }
-    .panelHead{
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
       padding: 14px 16px;
-      border-bottom:1px solid var(--stroke);
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      background: rgba(0,0,0,.16);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow: var(--shadow2);
     }
-    .panelHead .title{
-      display:flex; align-items:center; gap:10px;
-      font-weight: 700;
-      letter-spacing:.2px;
+    .brand{display:flex; align-items:center; gap:12px; min-width: 240px;}
+    .brandLogo{
+      width:48px;height:48px;border-radius: 14px;
+      background: rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.14);
+      display:flex;align-items:center;justify-content:center;
+      overflow:hidden;
+      box-shadow:
+        0 10px 30px rgba(0,0,0,.45),
+        0 0 0 1px rgba(255,90,31,.22) inset;
     }
-    .panelHead small{color:var(--muted);font-weight:500}
-
-    .btnRow{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
-    .btn{
-      border:1px solid var(--stroke2);
-      background: rgba(255,255,255,.07);
-      color: var(--text);
-      border-radius: 12px;
-      padding: 9px 12px;
-      font-weight: 650;
-      cursor:pointer;
-      transition: .15s transform, .15s background;
+    .brandLogo img{
+      width: 44px;height:44px;object-fit:contain;
+      filter: drop-shadow(0 6px 18px rgba(255,90,31,.35));
+    }
+    .brandText{display:flex;flex-direction:column;line-height:1.05;}
+    .brandText .t1{
+      font-weight:900; letter-spacing:.2px; font-size: 18px;
       display:flex; align-items:center; gap:8px;
+    }
+    .brandText .t1 .vincitu{color:#fff;text-shadow:0 0 18px rgba(255,255,255,.14);}
+    .brandText .t1 .iaportal{color:var(--orange2);text-shadow:0 0 18px rgba(255,90,31,.35);font-weight:1000;}
+    .brandText .t2{margin-top:4px;color:var(--muted);font-size: 12px;}
+
+    .chips{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;}
+    .chip{
+      display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      color: var(--muted); font-size: 12px; white-space:nowrap;
+    }
+    .dot{width:8px;height:8px;border-radius:99px;background:var(--good); box-shadow:0 0 12px rgba(57,217,138,.45)}
+    .dot.gray{background:rgba(255,255,255,.35); box-shadow:none}
+
+    .grid{margin-top: 18px; display:grid; grid-template-columns: 1.35fr .9fr; gap: 16px;}
+    @media (max-width: 980px){ .grid{grid-template-columns:1fr} .chips{justify-content:flex-start} }
+
+    .card{
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow: var(--shadow2);
+      padding: 14px;
+      backdrop-filter: blur(10px);
+    }
+    .cardHead{display:flex; align-items:center; justify-content:space-between; gap: 12px; margin-bottom: 10px;}
+    .cardTitle{display:flex; align-items:center; gap:10px; font-weight:1000;}
+    .small{font-size:12px;color:var(--muted);}
+
+    .actionsRow{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;}
+    .btn{
+      border:0; cursor:pointer; font-weight:1000;
+      border-radius: 12px; padding: 10px 12px;
+      color: rgba(255,255,255,.92);
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      transition: transform .08s ease, background .12s ease;
       user-select:none;
     }
-    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.10)}
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.08)}
     .btn.primary{
-      background: linear-gradient(135deg, rgba(124,92,255,.55), rgba(46,229,157,.35));
-      border-color: rgba(255,255,255,.20);
+      background: linear-gradient(180deg, rgba(255,90,31,.35), rgba(255,90,31,.18));
+      border:1px solid rgba(255,90,31,.35);
     }
-    .btn.warn{
-      background: linear-gradient(135deg, rgba(255,176,32,.55), rgba(255,92,122,.12));
-      border-color: rgba(255,255,255,.20);
+    .btn.gold{
+      background: linear-gradient(180deg, rgba(240,178,62,.35), rgba(240,178,62,.18));
+      border:1px solid rgba(240,178,62,.35);
+      color:#1a1208;
     }
+    .btn.ghost{background: rgba(0,0,0,.18);}
 
-    .subtabs{
-      padding: 12px 16px 0;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
+    .toolbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px; flex-wrap:wrap; margin: 8px 0 12px;
     }
     .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding: 9px 12px;
-      border-radius: 14px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.06);
-      color: var(--text);
-      font-weight: 650;
-    }
-    .pill select{
-      background: transparent;
-      border:none;
-      color: var(--text);
-      font-weight: 700;
-      outline:none;
-      cursor:pointer;
-    }
-
-    .content{padding: 12px 14px 16px}
-
-    .hint{
-      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+      display:flex; align-items:center; gap:8px;
+      padding: 8px 10px; border-radius: 999px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.10);
       color: var(--muted);
       font-size: 12px;
-      margin: 2px 0 12px;
     }
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding: 7px 10px;
-      border-radius: 999px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.06);
-      color: var(--muted);
-      font-weight: 650;
-    }
-
-    .events{
-      display:flex;
-      flex-direction:column;
-      gap: 12px;
-    }
+    .pill b{color: rgba(255,255,255,.90)}
+    .pill .ico{opacity:.95}
 
     .event{
-      border:1px solid var(--stroke);
-      background: var(--card2);
       border-radius: 18px;
-      padding: 12px 12px 10px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.10);
+      padding: 12px;
+      margin-bottom: 12px;
     }
-
     .eventTop{
-      display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
-      margin-bottom: 10px;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; flex-wrap:wrap; margin-bottom: 10px;
+    }
+    .leagueBadge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 6px 10px; border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      font-size: 12px; color: rgba(255,255,255,.85);
+    }
+    .flag{font-size:14px}
+
+    .matchLine{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+    .team{display:flex; align-items:center; gap:10px; font-weight:1000; font-size: 16px;}
+
+    /* crest smart */
+    .crest{
+      width:30px;height:30px;border-radius:12px;
+      display:flex;align-items:center;justify-content:center;
+      background: radial-gradient(circle at 30% 20%, rgba(255,255,255,.18), rgba(255,255,255,.06));
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow: 0 10px 22px rgba(0,0,0,.35);
+      position:relative; overflow:hidden;
+    }
+    .crest:after{
+      content:""; position:absolute; inset:-40%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,90,31,.28), transparent 55%);
+      transform: rotate(15deg);
+    }
+    .crest span{
+      position:relative; z-index:2;
+      font-weight:1000; font-size:12px; letter-spacing:.3px;
+      color:#fff; text-shadow:0 0 16px rgba(255,255,255,.22);
     }
 
-    .eventMeta{
-      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
-      color: var(--muted);
+    .subline{
+      font-size: 12px; color: var(--muted);
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+      margin-top: 4px;
+    }
+    .tag{
+      display:inline-flex; align-items:center; gap:8px;
+      padding: 5px 9px; border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      color: rgba(255,255,255,.80);
       font-size: 12px;
     }
-
-    .leagueTag{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border:1px solid var(--stroke);
-      background: rgba(0,0,0,.12);
-      color: rgba(233,236,255,.85);
-      font-weight: 800;
-      letter-spacing:.2px;
+    .tag.hot{
+      background: rgba(255,90,31,.14);
+      border:1px solid rgba(255,90,31,.22);
+      color: rgba(255,255,255,.92);
     }
-    .flag{
-      font-size: 15px;
-      line-height: 1;
-      filter: drop-shadow(0 6px 12px rgba(0,0,0,.35));
-    }
-
-    .eventName{
-      font-size: 16px;
-      font-weight: 900;
-      letter-spacing:.2px;
-      margin: 6px 0 2px;
-    }
-    .eventSub{color: var(--muted); font-size: 12px}
 
     .markets{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 10px;
+      display:grid; grid-template-columns: repeat(3, 1fr);
+      gap: 10px; margin-top: 10px;
     }
-    @media (max-width: 760px){
-      .markets{grid-template-columns: 1fr}
-    }
+    @media (max-width: 760px){ .markets{grid-template-columns:1fr} }
 
-    .mcard{
-      border:1px solid var(--stroke);
-      background: rgba(0,0,0,.18);
+    .market{
       border-radius: 16px;
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.10);
       padding: 10px;
-      display:flex;
-      flex-direction:column;
-      gap: 8px;
-      min-height: 92px;
+      display:flex; flex-direction:column; gap:8px;
     }
+    .market .m1{display:flex; justify-content:space-between; align-items:center; gap:10px;}
+    .market .m1 b{font-size:13px}
+    .market .m1 .hint{font-size:11px;color:var(--muted2);}
 
-    .mcard .mname{
-      font-weight: 900;
-      font-size: 12px;
-      letter-spacing:.2px;
-      color: rgba(233,236,255,.92);
-    }
-
-    .row{
-      display:flex;
-      align-items:center;
-      gap: 8px;
-    }
-    .odds{
-      width: 78px;
-      border-radius: 12px;
-      border:1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.07);
-      padding: 9px 10px;
-      color: var(--text);
-      font-weight: 900;
+    /* quota + aggiungi in riga perfetta */
+    .addRow{display:flex; gap:8px; align-items:stretch;}
+    .quota{
+      flex: 1 1 auto; min-width: 0;
+      height: 40px; border-radius: 12px;
+      padding: 0 10px;
+      background: rgba(0,0,0,.22);
+      border:1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.92);
+      outline:none;
+      font-weight:1000; font-size: 14px;
       text-align:center;
-      outline:none;
     }
-
-    .add{
-      flex:1;
+    .quota:focus{border-color: rgba(255,90,31,.35); box-shadow:0 0 0 3px rgba(255,90,31,.12)}
+    .btnAdd{
+      width: 112px; height: 40px;
       border-radius: 12px;
-      padding: 10px 10px;
-      border:1px solid rgba(255,255,255,.18);
-      background: rgba(255,255,255,.08);
-      color: var(--text);
-      font-weight: 900;
+      border:1px solid rgba(255,90,31,.35);
+      background: linear-gradient(180deg, rgba(255,90,31,.40), rgba(255,90,31,.20));
+      color:#fff;
+      font-weight:1000;
       cursor:pointer;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap: 8px;
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      transition: transform .08s ease;
+      user-select:none;
+      flex: 0 0 auto;
     }
-    .add:hover{background: rgba(255,255,255,.12)}
-    .note{
-      font-size: 11px;
-      color: var(--muted);
-      line-height: 1.25;
+    .btnAdd:hover{transform: translateY(-1px)}
+    .btnAdd:active{transform: translateY(0px) scale(.99)}
+
+    .slipRow{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin: 10px 0 10px;}
+    .field{
+      display:flex; align-items:center; gap:8px;
+      padding: 8px 10px; border-radius: 14px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.10);
+      color: var(--muted); font-size: 12px;
+    }
+    .field input, .field select{
+      background: transparent; border:0; outline:none;
+      color: rgba(255,255,255,.95);
+      font-weight:1000; font-size: 13px;
+      min-width: 80px;
     }
 
-    /* SLIP */
-    .slipBody{padding: 12px 14px 16px}
-    .slipTop{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-bottom: 10px;
-    }
-    .slipTop input, .slipTop select{
-      border-radius: 12px;
-      border:1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.07);
-      color: var(--text);
-      padding: 10px 10px;
-      font-weight: 800;
-      outline:none;
-    }
-    .mini{
-      font-size: 12px; color: var(--muted);
-    }
-
-    table{
-      width:100%;
-      border-collapse: collapse;
-      overflow:hidden;
-      border-radius: 14px;
-      border:1px solid var(--stroke);
-      background: rgba(0,0,0,.16);
-      margin-top: 10px;
-    }
-    th,td{
-      padding: 10px 10px;
-      border-bottom:1px solid rgba(255,255,255,.08);
-      font-size: 12px;
-      color: rgba(233,236,255,.88);
-      text-align:left;
-      vertical-align:top;
-    }
-    th{color: var(--muted); font-weight: 900; letter-spacing:.2px}
-    tr:last-child td{border-bottom:none}
+    table{width:100%; border-collapse:collapse; margin-top:10px; font-size:12px; color:rgba(255,255,255,.85);}
+    th,td{padding:8px; border-bottom:1px solid rgba(255,255,255,.08); text-align:left; vertical-align:top;}
+    th{color:rgba(255,255,255,.70); font-weight:1000;}
     .xbtn{
-      border:1px solid rgba(255,255,255,.18);
-      background: rgba(255,255,255,.08);
-      color: var(--text);
-      border-radius: 10px;
-      padding: 6px 9px;
-      cursor:pointer;
-      font-weight: 900;
+      cursor:pointer; border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.22); color: rgba(255,255,255,.92);
+      border-radius: 10px; padding: 6px 9px; font-weight:1000;
     }
 
     .cta{
-      margin-top: 12px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
-      justify-content:space-between;
-    }
-    .bigbtn{
-      width: 100%;
-      border:none;
-      background: linear-gradient(135deg, rgba(255,176,32,.95), rgba(255,176,32,.55));
-      color: #19140a;
-      font-weight: 1000;
-      letter-spacing:.3px;
+      width:100%; margin-top:12px; height:48px;
       border-radius: 14px;
-      padding: 12px 14px;
-      cursor:pointer;
-      box-shadow: 0 14px 36px rgba(255,176,32,.18);
+      border:1px solid rgba(240,178,62,.35);
+      background: linear-gradient(180deg, rgba(240,178,62,.42), rgba(240,178,62,.22));
+      font-weight:1000; cursor:pointer; color:#17120b;
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      user-select:none;
     }
-
-    .foot{
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: 11px;
-      line-height: 1.35;
+    .note{margin-top:10px;color:var(--muted2);font-size:11px;line-height:1.35;}
+    .toast{
+      position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%);
+      background: rgba(10,10,18,.78);
+      border:1px solid rgba(255,255,255,.14);
+      color: rgba(255,255,255,.92);
+      padding: 10px 12px;
+      border-radius: 14px;
+      box-shadow: var(--shadow2);
+      backdrop-filter: blur(10px);
+      font-size: 13px;
+      display:none;
+      z-index: 9999;
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="shell">
-      <div class="topbar">
-        <div class="brand">
-          <div class="logoBox" title="Vincitu">
-            <img src="vincitu-stemma-256.png" alt="Vincitu logo">
-          </div>
-          <div>
-            <h1>Vincitu • IA Portal</h1>
-            <p>Eventi + schedina • quote precompilate (puoi correggere dal banco)</p>
-          </div>
-        </div>
+  <div class="shell">
 
-        <div class="chips" id="chips">
-          <div class="chip"><span class="dot"></span> Centro: <b id="chipCenter">VINC001</b></div>
-          <div class="chip"><span class="dot2"></span> Agg.: <b id="chipAgg">AUTO</b></div>
-          <div class="chip"><span class="dot3"></span> Modalità: <b id="chipMode">VINCITU</b></div>
+    <div class="topbar">
+      <div class="brand">
+        <div class="brandLogo" title="Vincitu">
+          <img src="./vincitu-stemma-256.png" alt="Vincitu" />
+        </div>
+        <div class="brandText">
+          <div class="t1">
+            <span class="vincitu">Vincitu</span>
+            <span class="iaportal">IA Portal</span>
+          </div>
+          <div class="t2">Eventi sempre nuovi: mattina • pomeriggio • sera</div>
         </div>
       </div>
 
-      <div class="grid">
-        <!-- EVENTS -->
-        <div class="panel">
-          <div class="panelHead">
-            <div class="title">⚡ Vincitu • Eventi (IA)</div>
-            <div class="btnRow">
-              <button class="btn primary" id="regenBtn">🔁 Rigenera</button>
-              <button class="btn" id="moodBtn">✨ Cambia mood</button>
-            </div>
-          </div>
+      <div class="chips">
+        <div class="chip"><span class="dot"></span> Centro: <b id="chipCenter">VINC001</b></div>
+        <div class="chip"><span class="dot gray"></span> Agg.: <b id="chipUpdated">AUTO</b></div>
+        <div class="chip">Fascia: <b id="chipSlot">AUTO</b></div>
+      </div>
+    </div>
 
-          <div class="subtabs">
-            <span class="pill">Orizzonte
-              <select id="horizon">
-                <option value="oggi">Oggi</option>
-                <option value="24h">24h</option>
-                <option value="48h">48h</option>
-              </select>
-            </span>
-            <span class="pill">Stile
-              <select id="style">
-                <option value="casual">Casual (IA)</option>
-                <option value="sfida">Sfida IA</option>
-                <option value="mix">Mix WOW</option>
-              </select>
-            </span>
-            <span class="badge">✅ Quote precompilate</span>
-          </div>
-
-          <div class="content">
-            <div class="hint">
-              <span class="badge">Se al banco vedi una quota diversa: modificaci sopra e premi “Aggiungi”.</span>
-            </div>
-
-            <div class="events" id="events"></div>
+    <div class="grid">
+      <!-- LEFT -->
+      <div class="card">
+        <div class="cardHead">
+          <div class="cardTitle">⚡ Eventi (IA)</div>
+          <div class="actionsRow">
+            <button class="btn primary" id="btnRefresh">🔁 Nuovi eventi</button>
+            <button class="btn ghost" id="btnSwitch">🕒 Cambia fascia</button>
           </div>
         </div>
 
-        <!-- SLIP -->
-        <div class="panel">
-          <div class="panelHead">
-            <div class="title">🧾 Schedina</div>
-            <div class="btnRow">
-              <button class="btn warn" id="clearBtn">🧹 Svuota</button>
-            </div>
+        <div class="toolbar">
+          <div class="pill"><span class="ico">🧭</span> Fascia attiva: <b id="slotLabel">AUTO</b></div>
+          <div class="pill"><span class="ico">⏳</span> Cambio tra: <b id="countdown">--:--</b></div>
+          <div class="pill"><span class="ico">✅</span> Eventi: <b>3</b></div>
+        </div>
+
+        <div class="small" style="margin-bottom:10px">
+          Quote precompilate e modificabili. Se al banco sono diverse, correggile e premi “Aggiungi”.
+        </div>
+
+        <div id="events"></div>
+
+        <div class="note">
+          Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="card">
+        <div class="cardHead">
+          <div class="cardTitle">🧾 Schedina</div>
+          <button class="btn gold" id="btnClear">🧹 Svuota</button>
+        </div>
+
+        <div class="slipRow">
+          <div class="field">Stake (€)
+            <input id="stake" type="number" min="1" step="1" value="5" />
           </div>
-
-          <div class="slipBody">
-            <div class="slipTop">
-              <div class="mini">Stake (€)</div>
-              <input id="stake" type="number" value="5" min="1" step="1" style="width:90px">
-              <div class="mini">Tipo</div>
-              <select id="betType">
-                <option value="multipla">Multipla (tutte)</option>
-                <option value="system2">Sistema 2 su n</option>
-              </select>
-            </div>
-
-            <table>
-              <thead>
-                <tr>
-                  <th>Partita</th>
-                  <th>Mercato</th>
-                  <th>Quota</th>
-                  <th>Az.</th>
-                </tr>
-              </thead>
-              <tbody id="slipRows">
-                <tr><td colspan="4" style="color:rgba(233,236,255,.6)">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>
-              </tbody>
-            </table>
-
-            <div class="cta">
-              <button class="bigbtn" id="printBtn">🖨️ Stampa schedina</button>
-            </div>
-
-            <div class="foot">
-              Note: supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
-            </div>
+          <div class="field">Tipo
+            <select id="type">
+              <option value="multipla" selected>Multipla (tutte)</option>
+              <option value="sistema2su3">Sistema 2 su 3</option>
+              <option value="sistema2su4">Sistema 2 su 4</option>
+            </select>
           </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Partita</th>
+              <th>Mercato</th>
+              <th>Quota</th>
+              <th>Az.</th>
+            </tr>
+          </thead>
+          <tbody id="slipBody">
+            <tr><td colspan="4" class="small">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>
+          </tbody>
+        </table>
+
+        <button class="cta" id="btnPrint">🖨️ Stampa schedina</button>
+
+        <div class="note">
+          Suggerimento: fai scegliere 2 quote e poi stampa. Il cliente vede “nuovi eventi” nelle fasce successive.
         </div>
       </div>
     </div>
   </div>
 
+  <div class="toast" id="toast"></div>
+
 <script>
-  // ---- PARAMS ----
-  const qs = new URLSearchParams(location.search);
-  const center = (qs.get("c") || "VINC001").toUpperCase();
-  const v = qs.get("v") || "";
-  document.getElementById("chipCenter").textContent = center;
+/* ====== PARAMS ====== */
+const params = new URLSearchParams(location.search);
+const center = (params.get("c") || "VINC001").toUpperCase();
+document.getElementById("chipCenter").textContent = center;
 
-  // ---- LEAGUE -> FLAG ----
-  function flagForLeague(league){
-    const L = (league||"").toLowerCase();
-    if (L.includes("serie") || L.includes("ital")) return "🇮🇹";
-    if (L.includes("premier") || L.includes("eng")) return "🏴";
-    if (L.includes("laliga") || L.includes("spain") || L.includes("liga")) return "🇪🇸";
-    if (L.includes("bundes") || L.includes("german")) return "🇩🇪";
-    if (L.includes("ligue") || L.includes("fran")) return "🇫🇷";
-    if (L.includes("erediv") || L.includes("oland")) return "🇳🇱";
-    if (L.includes("portog") || L.includes("primeira")) return "🇵🇹";
-    if (L.includes("belg")) return "🇧🇪";
-    if (L.includes("svizz")) return "🇨🇭";
-    if (L.includes("turk")) return "🇹🇷";
-    if (L.includes("greek") || L.includes("grec")) return "🇬🇷";
-    if (L.includes("polon")) return "🇵🇱";
-    if (L.includes("svez") || L.includes("swed")) return "🇸🇪";
-    if (L.includes("norv")) return "🇳🇴";
-    if (L.includes("dan")) return "🇩🇰";
-    if (L.includes("czech") || L.includes("ceca")) return "🇨🇿";
-    if (L.includes("austr")) return "🇦🇹";
-    return "🌍";
-  }
+/* override slot per test: ?slot=morning/afternoon/evening */
+const forcedSlot = (params.get("slot") || "").toLowerCase();
 
-  // ---- DATA ----
-  async function loadData(){
-    // prova: centers/<CENTER>.json (se esiste), altrimenti events.json
-    const centerUrl = `centers/${center}.json`;
-    const fallbackUrl = `events.json`;
+/* ====== UTIL ====== */
+function qs(id){ return document.getElementById(id); }
+function toast(msg){
+  const t = qs("toast");
+  t.textContent = msg;
+  t.style.display = "block";
+  clearTimeout(t._tm);
+  t._tm = setTimeout(()=> t.style.display="none", 1600);
+}
+function escapeHTML(str){
+  return String(str)
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+}
+function initials(name){
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  if(parts.length===1) return parts[0].slice(0,2).toUpperCase();
+  return (parts[0][0] + parts[1][0]).toUpperCase();
+}
+function crestHTML(team){
+  return `<div class="crest" title="${escapeHTML(team)}"><span>${escapeHTML(initials(team))}</span></div>`;
+}
 
-    let data = null;
-    try{
-      const r = await fetch(centerUrl, {cache:"no-store"});
-      if (r.ok) data = await r.json();
-    }catch(e){}
+/* ====== SLOT LOGIC (3 fasce) ======
+   Mattina: 06:00–12:00
+   Pomeriggio: 12:00–18:00
+   Sera: 18:00–06:00
+*/
+function detectSlot(){
+  const h = new Date().getHours();
+  if (h >= 6 && h < 12) return "morning";
+  if (h >= 12 && h < 18) return "afternoon";
+  return "evening";
+}
+function slotLabel(slot){
+  if(slot==="morning") return "Mattina";
+  if(slot==="afternoon") return "Pomeriggio";
+  return "Sera";
+}
+function nextSwitchTime(){
+  const now = new Date();
+  const h = now.getHours();
+  const target = new Date(now);
 
-    if(!data){
-      const r2 = await fetch(fallbackUrl, {cache:"no-store"});
-      data = await r2.json();
+  if (h >= 6 && h < 12){
+    target.setHours(12,0,0,0);
+  } else if (h >= 12 && h < 18){
+    target.setHours(18,0,0,0);
+  } else {
+    // evening -> next day 06:00
+    if (h >= 18) {
+      target.setDate(target.getDate()+1);
+      target.setHours(6,0,0,0);
+    } else {
+      target.setHours(6,0,0,0);
     }
-    return data;
+  }
+  return target;
+}
+function fmtCountdown(ms){
+  const s = Math.max(0, Math.floor(ms/1000));
+  const m = String(Math.floor((s%3600)/60)).padStart(2,"0");
+  const ss = String(s%60).padStart(2,"0");
+  return `${m}:${ss}`;
+}
+
+/* ====== FLAGS (emoji) ====== */
+const LEAGUE_FLAGS = {
+  "Serie A":"🇮🇹",
+  "Premier League":"🇬🇧",
+  "LaLiga":"🇪🇸",
+  "Bundesliga":"🇩🇪",
+  "Ligue 1":"🇫🇷",
+  "Eredivisie":"🇳🇱",
+  "Primeira Liga":"🇵🇹",
+  "Scottish Premiership":"🏴",
+  "Jupiler Pro League":"🇧🇪",
+  "Super Lig":"🇹🇷",
+  "Allsvenskan (Svezia)":"🇸🇪",
+  "Eliteserien (Norvegia)":"🇳🇴",
+  "Ekstraklasa (Polonia)":"🇵🇱",
+  "Fortuna Liga (Cechia)":"🇨🇿",
+  "Liga I (Romania)":"🇷🇴",
+  "Superliga (Danimarca)":"🇩🇰",
+  "Veikkausliiga (Finlandia)":"🇫🇮",
+  "Europa (WOW)":"🌍"
+};
+function leagueFlag(league){ return LEAGUE_FLAGS[league] || "🌍"; }
+
+/* ====== DATA + RENDER ====== */
+let slip = [];
+let currentSlot = null;
+
+async function loadEvents(noCache=true){
+  const url = "./events.json" + (noCache ? ("?v="+Date.now()) : "");
+  const res = await fetch(url, {cache:"no-store"});
+  const data = await res.json();
+
+  qs("chipUpdated").textContent = data.updated_at || "AUTO";
+
+  // scegli slot
+  const auto = detectSlot();
+  const chosen =
+    (forcedSlot==="morning" || forcedSlot==="afternoon" || forcedSlot==="evening")
+      ? forcedSlot
+      : auto;
+
+  currentSlot = chosen;
+  qs("chipSlot").textContent = slotLabel(chosen);
+  qs("slotLabel").textContent = slotLabel(chosen) + (forcedSlot ? " (test)" : "");
+
+  const slotObj = data.slots && data.slots[chosen] ? data.slots[chosen] : null;
+  const events = slotObj && Array.isArray(slotObj.events) ? slotObj.events : [];
+
+  renderEvents(events.slice(0,3));
+}
+
+function renderEvents(events){
+  const wrap = qs("events");
+  if(!events.length){
+    wrap.innerHTML = `<div class="event"><b>Nessun evento trovato.</b><div class="small">Controlla events.json e i tuoi slots.</div></div>`;
+    return;
   }
 
-  // ---- RENDER ----
-  const eventsEl = document.getElementById("events");
-  const slipRows = document.getElementById("slipRows");
-  let slip = [];
+  wrap.innerHTML = events.map((ev, idx)=>{
+    const league = ev.league || "Europa (WOW)";
+    const flag = leagueFlag(league);
+    const when = ev.start || "Oggi";
+    const home = ev.home || "Squadra A";
+    const away = ev.away || "Squadra B";
+    const tag = ev.tag_icon ? `${ev.tag_icon} ${ev.tag || "scelta IA"}` : "🤖 scelta IA";
 
-  function renderSlip(){
-    if(!slip.length){
-      slipRows.innerHTML = `<tr><td colspan="4" style="color:rgba(233,236,255,.6)">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>`;
-      return;
-    }
-    slipRows.innerHTML = slip.map((s,i)=>`
-      <tr>
-        <td>${escapeHtml(s.match)}</td>
-        <td><b>${escapeHtml(s.market)}</b></td>
-        <td>${Number(s.odd).toFixed(2)}</td>
-        <td><button class="xbtn" data-i="${i}">✕</button></td>
-      </tr>
-    `).join("");
-
-    slipRows.querySelectorAll(".xbtn").forEach(b=>{
-      b.addEventListener("click", ()=>{
-        const i = Number(b.dataset.i);
-        slip.splice(i,1);
-        renderSlip();
-      });
-    });
-  }
-
-  function escapeHtml(str){
-    return String(str||"").replace(/[&<>"']/g, m => ({
-      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-    }[m]));
-  }
-
-  function renderEvents(payload){
-    const updated = payload.updated_at ? `Aggiornato: ${payload.updated_at}` : "Aggiornato: AUTO";
-    document.getElementById("chipAgg").textContent = (payload.updated_at ? payload.updated_at : "AUTO");
-
-    const list = payload.events || [];
-    if(!list.length){
-      eventsEl.innerHTML = `<div class="event">Nessun evento trovato.</div>`;
-      return;
-    }
-
-    eventsEl.innerHTML = list.map((ev, idx)=>{
-      const league = ev.league || "Campionato";
-      const flag = flagForLeague(league);
-      const match = `${ev.home || "Squadra A"} - ${ev.away || "Squadra B"}`;
-      const when = ev.start || "Oggi";
-      const markets = (ev.markets || []).slice(0,3);
-
+    const markets = (ev.markets || []).slice(0,3).map((m, mi)=>{
+      const label = m.label || "Mercato";
+      const odd = (m.odd ?? 1.70);
+      const inputId = `q_${idx}_${mi}`;
       return `
-        <div class="event">
-          <div class="eventTop">
-            <div>
-              <div class="eventMeta">
-                <span class="leagueTag"><span class="flag">${flag}</span>${escapeHtml(league)}</span>
-                <span>🕒 ${escapeHtml(when)}</span>
-                <span style="opacity:.85">• ${escapeHtml(updated)}</span>
-              </div>
-              <div class="eventName">${escapeHtml(match)}</div>
-              <div class="eventSub">Seleziona una quota e aggiungi in schedina</div>
-            </div>
+        <div class="market">
+          <div class="m1">
+            <b>${escapeHTML(label)}</b>
+            <span class="hint">modifica se serve</span>
           </div>
 
-          <div class="markets">
-            ${markets.map((m, mi)=>{
-              const lbl = m.label || "Mercato";
-              const odd = (m.odd ?? 1.70);
-              const id = `odd_${idx}_${mi}`;
-              return `
-                <div class="mcard">
-                  <div class="mname">${escapeHtml(lbl)}</div>
-                  <div class="row">
-                    <input class="odds" id="${id}" type="number" step="0.01" min="1.01" value="${Number(odd).toFixed(2)}">
-                    <button class="add" data-match="${escapeHtml(match)}" data-market="${escapeHtml(lbl)}" data-oddid="${id}">
-                      ➕ Aggiungi
-                    </button>
-                  </div>
-                  <div class="note">Quota Vincitu (modificabile)</div>
-                </div>
-              `;
-            }).join("")}
+          <div class="addRow">
+            <input class="quota" id="${inputId}" value="${String(odd).replace(".",",")}" inputmode="decimal" />
+            <button class="btnAdd" onclick="addToSlip('${escapeHTML(home)} - ${escapeHTML(away)}','${escapeHTML(label)}','${inputId}')">
+              ➕ Aggiungi
+            </button>
           </div>
+
+          <div class="small">Quota precompilata (verifica al banco)</div>
         </div>
       `;
     }).join("");
 
-    // bind add buttons
-    eventsEl.querySelectorAll(".add").forEach(btn=>{
-      btn.addEventListener("click", ()=>{
-        const match = btn.dataset.match;
-        const market = btn.dataset.market;
-        const oddId = btn.dataset.oddid;
-        const odd = Number(document.getElementById(oddId).value || "0");
-        if(!odd || odd < 1.01) return;
-        slip.push({match, market, odd});
-        renderSlip();
-      });
-    });
+    return `
+      <div class="event">
+        <div class="eventTop">
+          <div class="matchLine">
+            <span class="leagueBadge"><span class="flag">${flag}</span> ${escapeHTML(league)}</span>
+            <div class="team">
+              ${crestHTML(home)}
+              <span>${escapeHTML(home)} <span style="opacity:.55">-</span> ${escapeHTML(away)}</span>
+              ${crestHTML(away)}
+            </div>
+          </div>
+          <div class="tag hot">🕒 ${escapeHTML(when)}</div>
+        </div>
+
+        <div class="subline">
+          <span class="tag">${escapeHTML(tag)}</span>
+          <span class="tag">✨ fascia: ${escapeHTML(slotLabel(currentSlot))}</span>
+          <span class="tag">🎯 eventi: 3</span>
+        </div>
+
+        <div class="markets">${markets}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+/* ====== SLIP ====== */
+function renderSlip(){
+  const body = qs("slipBody");
+  if(!slip.length){
+    body.innerHTML = `<tr><td colspan="4" class="small">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>`;
+    return;
   }
+  body.innerHTML = slip.map((s,i)=>`
+    <tr>
+      <td>${escapeHTML(s.match)}</td>
+      <td>${escapeHTML(s.market)}</td>
+      <td><b>${String(s.odd).replace(".",",")}</b></td>
+      <td><button class="xbtn" onclick="removeSlip(${i})">✖</button></td>
+    </tr>
+  `).join("");
+}
+function addToSlip(match, market, inputId){
+  const raw = (document.getElementById(inputId)?.value || "").trim();
+  const odd = parseFloat(raw.replace(",", "."));
+  if(!odd || odd < 1.01){ toast("⚠️ Quota non valida"); return; }
+  slip.push({match, market, odd});
+  renderSlip();
+  toast("✅ Aggiunto in schedina");
+}
+function removeSlip(i){ slip.splice(i,1); renderSlip(); }
+function clearSlip(){ slip = []; renderSlip(); toast("🧹 Schedina svuotata"); }
 
-  // ---- ACTIONS ----
-  document.getElementById("clearBtn").addEventListener("click", ()=>{
-    slip = [];
-    renderSlip();
-  });
+/* ====== PRINT ====== */
+function printSlip(){
+  if(!slip.length){ toast("Aggiungi almeno una quota"); return; }
+  const stake = parseFloat(qs("stake").value || "0") || 0;
+  const type = qs("type").value;
 
-  document.getElementById("printBtn").addEventListener("click", ()=>{
-    // stampa semplice
-    window.print();
-  });
+  const html = `
+    <html><head><meta charset="utf-8"><title>Schedina Vincitu IA</title>
+    <style>
+      body{font-family:Arial,sans-serif;padding:18px}
+      h2{margin:0 0 8px}
+      .m{color:#333;margin:0 0 14px}
+      table{width:100%;border-collapse:collapse}
+      th,td{border:1px solid #ccc;padding:8px;text-align:left;font-size:13px}
+      th{background:#f5f5f5}
+      .foot{margin-top:14px;font-size:12px;color:#666}
+    </style></head><body>
+      <h2>Vincitu • IA Portal</h2>
+      <div class="m">Fascia: <b>${slotLabel(currentSlot)}</b> • Stake: <b>${stake.toFixed(0)}€</b> • Tipo: <b>${escapeHTML(type)}</b></div>
+      <table>
+        <thead><tr><th>Partita</th><th>Mercato</th><th>Quota</th></tr></thead>
+        <tbody>
+          ${slip.map(s=>`<tr><td>${escapeHTML(s.match)}</td><td>${escapeHTML(s.market)}</td><td>${String(s.odd).replace(".", ",")}</td></tr>`).join("")}
+        </tbody>
+      </table>
+      <div class="foot">Quote indicative/modificabili al banco. Gioca responsabilmente.</div>
+    </body></html>
+  `;
+  const w = window.open("", "_blank");
+  w.document.write(html);
+  w.document.close();
+  w.focus();
+  w.print();
+}
 
-  document.getElementById("regenBtn").addEventListener("click", async ()=>{
-    // rigenera “soft”: ricarica JSON senza cache
-    const data = await loadData();
-    renderEvents(data);
-  });
+/* ====== AUTO COUNTDOWN + AUTO SWITCH ====== */
+function startCountdown(){
+  function tick(){
+    const target = nextSwitchTime();
+    const ms = target - new Date();
+    qs("countdown").textContent = fmtCountdown(ms);
 
-  document.getElementById("moodBtn").addEventListener("click", ()=>{
-    // effetto “mood” leggero: cambia accento del bottone (solo estetico)
-    const btn = document.getElementById("regenBtn");
-    btn.classList.toggle("warn");
-    btn.classList.toggle("primary");
-  });
+    // quando scatta la fascia, ricarica
+    if(ms <= 0){
+      loadEvents(true);
+    }
+  }
+  tick();
+  setInterval(tick, 1000);
+}
 
-  // ---- INIT ----
-  (async ()=>{
-    const data = await loadData();
-    renderEvents(data);
-    renderSlip();
-  })();
+/* ====== BUTTONS ====== */
+qs("btnClear").addEventListener("click", clearSlip);
+qs("btnPrint").addEventListener("click", printSlip);
+
+qs("btnRefresh").addEventListener("click", ()=>{
+  loadEvents(true);
+  toast("🔁 Eventi aggiornati");
+});
+
+// Cambia fascia manualmente (solo per demo in sala)
+qs("btnSwitch").addEventListener("click", ()=>{
+  const order = ["morning","afternoon","evening"];
+  const i = Math.max(0, order.indexOf(currentSlot));
+  const next = order[(i+1)%order.length];
+  const newUrl = new URL(location.href);
+  newUrl.searchParams.set("slot", next);
+  newUrl.searchParams.set("v", Date.now().toString());
+  location.href = newUrl.toString();
+});
+
+/* ====== INIT ====== */
+loadEvents(true);
+renderSlip();
+startCountdown();
 </script>
 </body>
 </html>
