@@ -1,179 +1,203 @@
 {
-  "updated_at": "2026-01-17 10:15",
+  "updated_at": "2026-01-18 16:40",
   "timezone": "Europe/Rome",
   "events": [
-
-    /* ===== MATTINA (5) ===== */
     {
       "slot": "morning",
-      "league": "Serie A",
       "country": "IT",
+      "league": "Serie A",
       "home": "Inter",
       "away": "Juventus",
       "start": "Oggi 12:30",
       "markets": [
         { "label": "Over 1.5", "odd": 1.55 },
-        { "label": "1X", "odd": 1.60 }
+        { "label": "1X", "odd": 1.65 },
+        { "label": "DNB 1", "odd": 1.70 }
       ]
     },
     {
       "slot": "morning",
-      "league": "Premier League",
-      "country": "GB",
-      "home": "Arsenal",
-      "away": "Tottenham",
+      "country": "ES",
+      "league": "LaLiga",
+      "home": "Real Sociedad",
+      "away": "Villarreal",
       "start": "Oggi 13:00",
       "markets": [
-        { "label": "Goal Sì", "odd": 1.65 }
+        { "label": "Under 3.5", "odd": 1.40 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.78 },
+        { "label": "1X", "odd": 1.50 }
       ]
     },
     {
       "slot": "morning",
-      "league": "Bundesliga",
-      "country": "DE",
-      "home": "Bayern Monaco",
-      "away": "Stoccarda",
-      "start": "Oggi 12:00",
-      "markets": [
-        { "label": "Over 2.5", "odd": 1.60 }
-      ]
-    },
-    {
-      "slot": "morning",
-      "league": "Eredivisie",
       "country": "NL",
+      "league": "Eredivisie",
       "home": "Ajax",
-      "away": "Utrecht",
-      "start": "Oggi 11:45",
+      "away": "PSV",
+      "start": "Oggi 13:30",
       "markets": [
-        { "label": "1X", "odd": 1.35 }
+        { "label": "Over 2.5", "odd": 1.80 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.62 },
+        { "label": "1X", "odd": 1.42 }
       ]
     },
     {
       "slot": "morning",
-      "league": "Ekstraklasa",
-      "country": "PL",
-      "home": "Legia Varsavia",
-      "away": "Gornik Zabrze",
-      "start": "Oggi 11:30",
+      "country": "TR",
+      "league": "Süper Lig",
+      "home": "Fenerbahçe",
+      "away": "Trabzonspor",
+      "start": "Oggi 14:00",
       "markets": [
-        { "label": "Under 3.5", "odd": 1.45 }
+        { "label": "Over 1.5", "odd": 1.47 },
+        { "label": "1X", "odd": 1.58 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.70 }
+      ]
+    },
+    {
+      "slot": "morning",
+      "country": "PL",
+      "league": "Ekstraklasa",
+      "home": "Legia Varsavia",
+      "away": "Lech Poznan",
+      "start": "Oggi 14:30",
+      "markets": [
+        { "label": "Under 3.5", "odd": 1.38 },
+        { "label": "1X", "odd": 1.35 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.85 }
       ]
     },
 
-    /* ===== POMERIGGIO (5) ===== */
     {
       "slot": "afternoon",
-      "league": "Serie A",
-      "country": "IT",
-      "home": "Milan",
-      "away": "Roma",
-      "start": "Oggi 15:00",
+      "country": "EN",
+      "league": "Premier League",
+      "home": "Arsenal",
+      "away": "Tottenham",
+      "start": "Oggi 16:00",
       "markets": [
-        { "label": "Goal Sì", "odd": 1.75 }
+        { "label": "Over 2.5", "odd": 1.75 },
+        { "label": "1X", "odd": 1.32 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.60 }
       ]
     },
     {
       "slot": "afternoon",
-      "league": "LaLiga",
-      "country": "ES",
-      "home": "Atletico Madrid",
-      "away": "Valencia",
-      "start": "Oggi 16:15",
+      "country": "IT",
+      "league": "Serie A",
+      "home": "Milan",
+      "away": "Roma",
+      "start": "Oggi 16:30",
       "markets": [
+        { "label": "Goal/NoGoal: Sì", "odd": 1.75 },
+        { "label": "Over 2.5", "odd": 1.85 },
         { "label": "1X", "odd": 1.40 }
       ]
     },
     {
       "slot": "afternoon",
-      "league": "Ligue 1",
-      "country": "FR",
-      "home": "Monaco",
-      "away": "Lille",
+      "country": "DE",
+      "league": "Bundesliga",
+      "home": "Dortmund",
+      "away": "Leverkusen",
       "start": "Oggi 17:00",
       "markets": [
-        { "label": "Over 1.5", "odd": 1.50 }
+        { "label": "Over 1.5", "odd": 1.36 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.58 },
+        { "label": "DNB 1", "odd": 1.72 }
       ]
     },
     {
       "slot": "afternoon",
-      "league": "Serie B",
-      "country": "IT",
-      "home": "Parma",
-      "away": "Brescia",
-      "start": "Oggi 14:00",
+      "country": "PT",
+      "league": "Primeira Liga",
+      "home": "Sporting",
+      "away": "Braga",
+      "start": "Oggi 17:30",
       "markets": [
-        { "label": "1X", "odd": 1.45 }
+        { "label": "Over 1.5", "odd": 1.44 },
+        { "label": "1X", "odd": 1.35 },
+        { "label": "Under 3.5", "odd": 1.45 }
       ]
     },
     {
       "slot": "afternoon",
-      "league": "Superliga Danese",
-      "country": "DK",
-      "home": "Copenhagen",
-      "away": "Brondby",
-      "start": "Oggi 15:30",
+      "country": "SE",
+      "league": "Allsvenskan",
+      "home": "Malmö",
+      "away": "AIK",
+      "start": "Oggi 18:00",
       "markets": [
-        { "label": "Goal Sì", "odd": 1.70 }
+        { "label": "Over 2.5", "odd": 1.85 },
+        { "label": "1X", "odd": 1.40 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.76 }
       ]
     },
 
-    /* ===== SERA (5) ===== */
     {
       "slot": "evening",
-      "league": "Serie A",
-      "country": "IT",
-      "home": "Napoli",
-      "away": "Atalanta",
+      "country": "FR",
+      "league": "Ligue 1",
+      "home": "PSG",
+      "away": "Lyon",
       "start": "Oggi 20:45",
       "markets": [
-        { "label": "Over 2.5", "odd": 1.80 }
+        { "label": "Over 2.5", "odd": 1.55 },
+        { "label": "1X", "odd": 1.22 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.62 }
       ]
     },
     {
       "slot": "evening",
-      "league": "Premier League",
-      "country": "GB",
-      "home": "Liverpool",
-      "away": "Chelsea",
+      "country": "ES",
+      "league": "LaLiga",
+      "home": "Barcelona",
+      "away": "Betis",
       "start": "Oggi 21:00",
       "markets": [
-        { "label": "Goal Sì", "odd": 1.60 }
+        { "label": "Over 2.5", "odd": 1.60 },
+        { "label": "1X", "odd": 1.18 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.70 }
       ]
     },
     {
       "slot": "evening",
-      "league": "Primeira Liga",
-      "country": "PT",
-      "home": "Benfica",
-      "away": "Braga",
-      "start": "Oggi 21:15",
+      "country": "EN",
+      "league": "Championship",
+      "home": "Leeds",
+      "away": "Norwich",
+      "start": "Oggi 21:00",
       "markets": [
-        { "label": "1X", "odd": 1.30 }
+        { "label": "Over 1.5", "odd": 1.42 },
+        { "label": "1X", "odd": 1.48 },
+        { "label": "Under 3.5", "odd": 1.40 }
       ]
     },
     {
       "slot": "evening",
-      "league": "Super Lig",
-      "country": "TR",
-      "home": "Galatasaray",
-      "away": "Fenerbahce",
-      "start": "Oggi 20:00",
+      "country": "GR",
+      "league": "Super League (Grecia)",
+      "home": "Olympiacos",
+      "away": "PAOK",
+      "start": "Oggi 21:30",
       "markets": [
-        { "label": "Over 1.5", "odd": 1.55 }
+        { "label": "Under 3.5", "odd": 1.35 },
+        { "label": "1X", "odd": 1.40 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.95 }
       ]
     },
     {
       "slot": "evening",
-      "league": "Jupiler Pro League",
-      "country": "BE",
-      "home": "Club Brugge",
-      "away": "Genk",
-      "start": "Oggi 19:45",
+      "country": "CH",
+      "league": "Super League (Svizzera)",
+      "home": "Young Boys",
+      "away": "Basel",
+      "start": "Oggi 21:45",
       "markets": [
-        { "label": "Goal Sì", "odd": 1.68 }
+        { "label": "Over 2.5", "odd": 1.78 },
+        { "label": "Goal/NoGoal: Sì", "odd": 1.66 },
+        { "label": "1X", "odd": 1.36 }
       ]
     }
-
   ]
 }
