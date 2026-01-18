@@ -2,156 +2,99 @@
 <html lang="it">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vincitu • IA Portal</title>
-
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vincitù • IA Portal</title>
   <style>
     :root{
-      --bg1:#070b18;
-      --bg2:#1a0f2e;
-      --panel:rgba(18,22,38,.64);
-      --panel2:rgba(18,22,38,.78);
-      --stroke:rgba(255,255,255,.10);
-      --text:#eef2ff;
-      --muted:rgba(238,242,255,.68);
-      --accent:#ff2b2b; /* ROSSO per Vincitu */
-      --accentGlow: rgba(255,43,43,.28);
-      --gold:#ffb000;
-      --good:#34d399;
-      --chip:rgba(255,255,255,.08);
-      --shadow: 0 18px 60px rgba(0,0,0,.46);
-      --radius:24px;
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      --bg1:#2b1457;
+      --bg2:#0c2b36;
+      --glass: rgba(20,22,30,.55);
+      --glass2: rgba(20,22,30,.35);
+      --stroke: rgba(255,255,255,.10);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.68);
+      --accent:#ff8a00;
+      --accent2:#ffb000;
+      --danger:#ff4a4a;
     }
-
-    html,body{height:100%}
+    *{box-sizing:border-box}
     body{
       margin:0;
-      font-family:var(--font);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color:var(--text);
+      min-height:100vh;
       background:
-        radial-gradient(1200px 700px at 20% 10%, rgba(120,70,255,.28), transparent 60%),
-        radial-gradient(1100px 700px at 80% 10%, rgba(0,255,200,.12), transparent 60%),
-        radial-gradient(900px 650px at 70% 90%, rgba(255,176,0,.10), transparent 55%),
-        linear-gradient(135deg, var(--bg2), var(--bg1));
-      display:flex;
-      align-items:flex-start;
-      justify-content:center;
-      padding:26px 14px 38px;
+        radial-gradient(1200px 700px at 20% 10%, rgba(140,70,255,.35), transparent 60%),
+        radial-gradient(900px 600px at 85% 25%, rgba(0,220,255,.18), transparent 65%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
     }
 
-    .wrap{
-      width:min(1120px, 100%);
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+    .wrap{max-width:1150px;margin:36px auto;padding:0 16px;}
+    .shell{
       border:1px solid var(--stroke);
-      border-radius:30px;
-      box-shadow:var(--shadow);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      padding:18px;
+      border-radius:28px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      box-shadow: 0 40px 120px rgba(0,0,0,.45);
+      overflow:hidden;
+      position:relative;
+    }
+    .shell::before{
+      content:"";
+      position:absolute;inset:-40px;
+      background:
+        radial-gradient(520px 340px at 15% 10%, rgba(255,120,0,.18), transparent 60%),
+        radial-gradient(620px 420px at 90% 20%, rgba(255,0,140,.14), transparent 65%),
+        radial-gradient(520px 420px at 55% 95%, rgba(0,210,255,.12), transparent 60%);
+      filter: blur(10px);
+      pointer-events:none;
     }
 
     .topbar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-      padding:14px 14px 18px;
-      border-radius:24px;
-      background:rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.08);
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width: 360px;
-    }
-
-    /* LOGO: testo rosso su nero (sempre visibile) */
-    .logoBox{
-      width:72px;height:56px;
-      border-radius:16px;
-      background:linear-gradient(180deg, rgba(0,0,0,.92), rgba(0,0,0,.62));
-      border:1px solid rgba(255,255,255,.14);
-      box-shadow: 0 12px 26px rgba(0,0,0,.45);
-      display:flex;
-      align-items:center;
-      justify-content:center;
       position:relative;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:16px 18px;
+      background: rgba(10,12,18,.35);
+      border-bottom:1px solid var(--stroke);
+      backdrop-filter: blur(10px);
+    }
+    .brand{
+      display:flex;align-items:center;gap:12px;min-width:260px;
+    }
+    .logoBadge{
+      width:54px;height:38px;border-radius:10px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.45);
+      display:flex;align-items:center;justify-content:center;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
       overflow:hidden;
     }
-    .logoBox::after{
-      content:"";
-      position:absolute; inset:-40%;
-      background:
-        radial-gradient(circle at 30% 30%, var(--accentGlow), transparent 60%),
-        radial-gradient(circle at 70% 70%, rgba(255,176,0,.12), transparent 60%);
-      filter: blur(12px);
-      opacity:.9;
-      pointer-events:none;
-    }
-    .logoWord{
-      position:relative;
-      z-index:2;
-      font-weight:1100;
-      letter-spacing:.2px;
-      font-size:18px;
+    .logoText{
+      font-weight:900; letter-spacing:.4px;
+      font-size:14px;
+      color:#ff2a2a;
       text-transform:lowercase;
-      display:flex;
-      gap:1px;
-      align-items:baseline;
     }
-    .logoWord .vin{color:#ffffff}
-    .logoWord .citu{
-      color:var(--accent);
-      text-shadow: 0 12px 20px rgba(255,43,43,.32);
+    .brandTitle{
+      display:flex;flex-direction:column;gap:2px;
     }
-
-    .brand h1{
-      font-size:18px;
-      margin:0;
-      line-height:1.1;
-      letter-spacing:.2px;
-      display:flex;
-      align-items:center;
-      gap:8px;
-      flex-wrap:wrap;
-    }
-    .brand h1 .ia{color:var(--gold); font-weight:1100}
-    .brand .sub{
-      margin:4px 0 0;
-      font-size:12px;
-      color:var(--muted);
-    }
-
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      justify-content:flex-end;
-    }
+    .brandTitle b{font-size:16px}
+    .brandTitle span{font-size:12px;color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
     .chip{
-      padding:8px 10px;
-      border-radius:999px;
-      background:var(--chip);
+      display:flex;gap:8px;align-items:center;
+      padding:8px 10px;border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
-      font-size:12px;
-      color:rgba(233,238,252,.86);
-      display:flex;
-      align-items:center;
-      gap:8px;
-      white-space:nowrap;
+      background: rgba(0,0,0,.22);
+      color:var(--muted); font-size:12px;
     }
-    .dot{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 0 3px rgba(52,211,153,.18)}
-    .mono{font-variant-numeric: tabular-nums; font-feature-settings:"tnum" 1;}
+    .dot{width:8px;height:8px;border-radius:99px;background:#4cff7a;box-shadow:0 0 16px rgba(76,255,122,.35)}
 
     .grid{
+      position:relative;
       display:grid;
-      grid-template-columns: 1.2fr .9fr;
-      gap:14px;
-      padding: 0 14px 14px;
+      grid-template-columns: 1.35fr .9fr;
+      gap:16px;
+      padding:16px;
     }
     @media (max-width: 980px){
       .grid{grid-template-columns:1fr}
@@ -159,377 +102,248 @@
     }
 
     .card{
-      background:var(--panel);
       border:1px solid rgba(255,255,255,.10);
-      border-radius:var(--radius);
-      box-shadow: 0 14px 40px rgba(0,0,0,.25);
-      overflow:hidden;
+      background: rgba(10,12,18,.35);
+      border-radius:22px;
+      padding:14px;
+      backdrop-filter: blur(10px);
     }
-    .cardHead{
-      padding:14px 16px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      border-bottom:1px solid rgba(255,255,255,.08);
-      background:linear-gradient(180deg, rgba(255,255,255,.06), transparent);
-    }
-    .cardHead h2{
-      margin:0;
+    .card h3{
+      margin:0 0 10px 0;
       font-size:14px;
-      letter-spacing:.2px;
-      display:flex;
-      align-items:center;
-      gap:8px;
+      display:flex;align-items:center;justify-content:space-between;
+      color:rgba(255,255,255,.88);
     }
 
-    .actions{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      flex-wrap:wrap;
-      justify-content:flex-end;
+    .toolbar{
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+      margin-bottom:12px;
     }
-
     .btn{
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.07);
-      color:var(--text);
-      padding:9px 12px;
-      border-radius:12px;
-      cursor:pointer;
-      font-weight:900;
-      font-size:12px;
-      display:inline-flex;
-      gap:8px;
-      align-items:center;
-      transition: transform .06s ease, background .18s ease;
-      user-select:none;
-      white-space:nowrap;
-    }
-    .btn:hover{background:rgba(255,255,255,.10)}
-    .btn:active{transform: translateY(1px)}
-    .btnPrimary{
-      background:linear-gradient(90deg, rgba(255,122,24,.95), rgba(255,176,0,.92));
       border:1px solid rgba(255,255,255,.14);
-      color:#15131d;
-      box-shadow: 0 10px 22px rgba(255,122,24,.22);
+      background: rgba(0,0,0,.22);
+      color:rgba(255,255,255,.92);
+      padding:10px 12px;
+      border-radius:12px;
+      font-weight:700;
+      cursor:pointer;
+      display:inline-flex;align-items:center;gap:8px;
     }
-
-    .filters{
-      padding:12px 16px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      flex-wrap:wrap;
+    .btnPrimary{
+      background: linear-gradient(180deg, rgba(255,140,0,.95), rgba(255,105,0,.85));
+      border-color: rgba(255,180,0,.45);
+      color:#1b0f05;
+      box-shadow: 0 18px 45px rgba(255,120,0,.25);
+    }
+    .btnGhost{
+      background: rgba(0,0,0,.15);
     }
     .pill{
-      padding:8px 10px;
-      border-radius:999px;
-      background:rgba(255,255,255,.06);
+      font-size:12px;color:var(--muted);
+      padding:6px 10px;border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
-      font-size:12px;
-      color:rgba(233,238,252,.80);
-      display:flex;
-      align-items:center;
-      gap:8px;
-    }
-    .pill strong{color:rgba(233,238,252,.96)}
-    .timer{
-      display:flex; align-items:center; gap:8px;
-      font-size:12px; color:rgba(233,238,252,.75);
-    }
-    .badge{
-      padding:5px 9px;
-      border-radius:999px;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.12);
-      font-size:12px;
-      display:flex; align-items:center; gap:8px;
-    }
-
-    .list{
-      padding: 6px 12px 14px;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
+      background: rgba(0,0,0,.18);
+      display:inline-flex;gap:8px;align-items:center;
     }
 
     .event{
-      background:var(--panel2);
       border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.16);
       border-radius:18px;
       padding:12px;
+      margin-bottom:12px;
     }
-
-    .eventTop{
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap:10px;
+    .eventHead{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
       margin-bottom:10px;
     }
-
-    .eventTitle{
-      display:flex;
-      flex-direction:column;
-      gap:4px;
-      min-width:0;
-    }
-
     .leagueLine{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      color:rgba(233,238,252,.78);
-      font-size:12px;
-      flex-wrap:wrap;
+      display:flex;align-items:center;gap:10px;color:var(--muted);font-size:12px
     }
-
     .flag{
-      width:22px;height:22px;
+      width:22px;height:22px;border-radius:999px;
       display:grid;place-items:center;
-      border-radius:8px;
-      background:rgba(255,255,255,.08);
+      background: rgba(255,255,255,.08);
       border:1px solid rgba(255,255,255,.10);
-      font-size:14px;
     }
-
-    .matchLine{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      flex-wrap:wrap;
+    .teams{
+      display:flex;align-items:center;gap:10px;font-weight:900
     }
-
-    .clubBadge{
-      width:28px;height:28px;
-      border-radius:10px;
-      display:grid;
-      place-items:center;
-      font-weight:1000;
-      font-size:11px;
-      letter-spacing:.4px;
-      background:rgba(255,255,255,.08);
+    .teamBadge{
+      width:28px;height:28px;border-radius:10px;
+      display:grid;place-items:center;
+      background: rgba(255,255,255,.08);
       border:1px solid rgba(255,255,255,.12);
-      box-shadow: 0 10px 20px rgba(0,0,0,.18);
-    }
-
-    .match{
-      font-size:16px;
-      font-weight:1000;
-      letter-spacing:.2px;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-      max-width: 520px;
-    }
-
-    .meta{
+      font-weight:900;
+      color: rgba(255,255,255,.92);
       font-size:12px;
-      color:rgba(233,238,252,.62);
-      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .meta{
+      font-size:12px;color:var(--muted);
+      display:flex;gap:10px;align-items:center;
     }
 
     .markets{
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-      margin-top:8px;
-    }
-
-    .mkt{
       display:grid;
-      grid-template-columns: 1fr 92px 128px;
+      grid-template-columns: repeat(3, minmax(0,1fr));
       gap:10px;
-      align-items:center;
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:14px;
-      padding:10px;
-      background:rgba(0,0,0,.14);
     }
-    @media (max-width: 650px){
-      .mkt{grid-template-columns: 1fr;}
+    @media (max-width: 680px){
+      .markets{grid-template-columns:1fr}
     }
 
-    .mktLabel{
+    .market{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.14);
+      border-radius:16px;
+      padding:10px;
       display:flex;
       flex-direction:column;
-      gap:3px;
-      min-width:0;
-    }
-    .mktLabel .name{
-      font-size:13px;
-      font-weight:900;
-      color:rgba(233,238,252,.92);
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-    }
-    .mktLabel .note{
-      font-size:11px;
-      color:rgba(233,238,252,.58);
-    }
-
-    .oddInput{
-      width:100%;
-      padding:10px 10px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.06);
-      color:var(--text);
-      font-weight:1000;
-      outline:none;
-      font-variant-numeric: tabular-nums;
-      text-align:center;
-    }
-
-    .addBtn{
-      width:100%;
-      padding:10px 12px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.10);
-      color:var(--text);
-      cursor:pointer;
-      font-weight:1000;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
       gap:8px;
-      white-space:nowrap;
     }
-    .addBtn:hover{background:rgba(255,255,255,.14)}
-    .addBtn:active{transform: translateY(1px)}
-    .addBtn .plus{
-      width:20px;height:20px;border-radius:8px;
-      background:rgba(255,255,255,.12);
-      display:grid;place-items:center;
-      border:1px solid rgba(255,255,255,.16);
-      font-weight:1000;
-      line-height:0;
+    .mTop{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:10px;
     }
-
-    .pad{padding:14px 16px}
-    .field{
-      width:100%;
+    .mLabel{font-weight:800;font-size:12px}
+    .mHint{font-size:11px;color:var(--muted)}
+    .mRow{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+    }
+    .oddBox{
+      width:92px;
+      text-align:center;
+      padding:10px 10px;
       border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background:rgba(0,0,0,.14);
-      padding:12px;
-      color:rgba(233,238,252,.90);
-      outline:none;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
       font-weight:900;
     }
-    .table{
-      width:100%;
-      border-collapse:collapse;
-      margin-top:10px;
-      font-size:12px;
-      color:rgba(233,238,252,.80);
+    .addBtn{
+      flex:1;
+      padding:10px 10px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.92);
+      font-weight:900;
+      cursor:pointer;
+      display:flex;align-items:center;justify-content:center;gap:8px;
+      white-space:nowrap;
     }
-    .table th,.table td{
-      border-bottom:1px solid rgba(255,255,255,.08);
-      padding:8px 6px;
-      text-align:left;
-    }
-    .table th{color:rgba(233,238,252,.65); font-weight:900}
-    .hint{font-size:11px;color:rgba(233,238,252,.55);margin-top:10px;line-height:1.35}
-    .footerNote{padding:0 16px 14px;color:rgba(233,238,252,.52);font-size:11px}
+    .addBtn:hover{border-color: rgba(255,180,0,.40); box-shadow: 0 0 0 2px rgba(255,140,0,.10) inset;}
 
-    .empty{
-      padding:14px;
+    .right h3{margin-bottom:12px}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .input, select{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.92);
+      outline:none;
+      font-weight:700;
+    }
+    .kpi{
+      display:grid;grid-template-columns: repeat(3, 1fr);
+      gap:10px;margin-top:10px;
+    }
+    .kpi .box{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.16);
       border-radius:16px;
-      border:1px dashed rgba(255,255,255,.16);
-      color:rgba(233,238,252,.70);
-      background:rgba(0,0,0,.12);
+      padding:10px;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .kpi .box b{display:block;color:rgba(255,255,255,.92);font-size:14px;margin-top:6px}
+    .printBtn{
+      width:100%;
+      margin-top:12px;
+      padding:14px 14px;
+      border-radius:14px;
+      border:1px solid rgba(255,180,0,.45);
+      background: linear-gradient(180deg, rgba(255,160,0,.95), rgba(255,110,0,.85));
+      color:#1b0f05;
+      font-weight:1000;
+      cursor:pointer;
+      box-shadow: 0 18px 45px rgba(255,120,0,.25);
+    }
+    .note{margin-top:10px;font-size:11px;color:rgba(255,255,255,.60);line-height:1.35}
+    .err{
+      margin-top:10px;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,74,74,.28);
+      background: rgba(255,74,74,.10);
+      color: rgba(255,220,220,.92);
+      font-size:12px;
     }
   </style>
 </head>
-
 <body>
   <div class="wrap">
-    <div class="topbar">
-      <div class="brand">
-        <div class="logoBox" title="Vincitu">
-          <div class="logoWord"><span class="vin">vin</span><span class="citu">citu</span></div>
-        </div>
-        <div>
-          <h1><span style="color:var(--accent);font-weight:1100;">Vincitu</span> <span class="ia">IA Portal</span></h1>
-          <div class="sub">Eventi misti (top + minori) • sempre nuovi: mattina • pomeriggio • sera</div>
-        </div>
-      </div>
-
-      <div class="chips">
-        <div class="chip"><span class="dot"></span> Centro: <strong id="centerLbl">VINC001</strong></div>
-        <div class="chip">Agg.: <span class="mono" id="updatedLbl">—</span></div>
-        <div class="chip">Fascia: <strong id="slotLbl">—</strong></div>
-      </div>
-    </div>
-
-    <div class="grid">
-      <!-- LEFT -->
-      <div class="card">
-        <div class="cardHead">
-          <h2>⚡ Eventi (IA)</h2>
-          <div class="actions">
-            <button class="btn btnPrimary" id="regenBtn">🔁 Nuovi eventi</button>
-            <button class="btn" id="switchBtn">🌓 Cambia fascia</button>
+    <div class="shell">
+      <div class="topbar">
+        <div class="brand">
+          <div class="logoBadge" aria-label="Vincitù">
+            <div class="logoText">vin<span style="color:#ffb000">ci</span>tù</div>
+          </div>
+          <div class="brandTitle">
+            <b>Vincitù • IA Portal</b>
+            <span>Eventi misti (top + minori) • fasce: mattina • pomeriggio • sera</span>
           </div>
         </div>
 
-        <div class="filters">
-          <div class="pill">Fascia attiva: <strong id="slotPill">—</strong></div>
-          <div class="timer">
-            ⏳ Cambio tra: <span class="badge mono" id="countdown">—</span>
-            <span class="badge">Eventi: <strong class="mono" id="countEvents">0</strong></span>
-          </div>
+        <div class="chips">
+          <div class="chip"><span class="dot"></span> Centro: <b id="centerChip" style="color:rgba(255,255,255,.92)">VINC001</b></div>
+          <div class="chip">Agg.: <b id="updatedChip" style="color:rgba(255,255,255,.92)">—</b></div>
+          <div class="chip">Fascia: <b id="slotChip" style="color:rgba(255,255,255,.92)">Mattina</b></div>
         </div>
-
-        <div class="list" id="eventsList">
-          <div class="empty">Caricamento eventi…</div>
-        </div>
-
-        <div class="footerNote">Note: supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.</div>
       </div>
 
-      <!-- RIGHT -->
-      <div class="card">
-        <div class="cardHead">
-          <h2>📄 Schedina</h2>
-          <div class="actions">
-            <button class="btn btnPrimary" id="clearBtn">🧹 Svuota</button>
+      <div class="grid">
+        <div class="card left">
+          <h3>⚡ Eventi (IA) <span class="pill">Quote precompilate (poi correggi al banco)</span></h3>
+
+          <div class="toolbar">
+            <button class="btn btnPrimary" id="btnNew">🧠 Nuovi eventi</button>
+            <button class="btn btnGhost" id="btnSlot">🕒 Cambia fascia</button>
+            <span class="pill">Eventi mostrati: <b id="count">0</b>/5</span>
           </div>
+
+          <div id="events"></div>
+          <div id="err" class="err" style="display:none;"></div>
+
+          <div class="note">Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.</div>
         </div>
-        <div class="pad">
-          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:10px;">
-            <div style="flex:1;min-width:170px;">
-              <div style="font-size:11px;color:rgba(233,238,252,.6);margin-bottom:6px;">Stake (€)</div>
-              <input class="field mono" id="stake" value="5" />
+
+        <div class="card right">
+          <h3>🧾 Schedina</h3>
+
+          <div class="row">
+            <div style="flex:1">
+              <label style="font-size:12px;color:var(--muted)">Stake (€)</label>
+              <input id="stake" class="input" type="number" value="5" min="1" step="1" />
             </div>
-            <div style="flex:1;min-width:170px;">
-              <div style="font-size:11px;color:rgba(233,238,252,.6);margin-bottom:6px;">Tipo</div>
-              <select class="field" id="type">
-                <option value="multipla">Multipla (tutte)</option>
-                <option value="sistema2">Sistema 2 su n</option>
+            <div style="flex:1">
+              <label style="font-size:12px;color:var(--muted)">Tipo</label>
+              <select id="type">
+                <option value="multiple">Multipla (tutte)</option>
               </select>
             </div>
           </div>
 
-          <table class="table" id="slipTable">
-            <thead>
-              <tr><th>Partita</th><th>Mercato</th><th>Quota</th><th>Az.</th></tr>
-            </thead>
-            <tbody>
-              <tr><td colspan="4" style="color:rgba(233,238,252,.55);padding:10px 6px;">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>
-            </tbody>
-          </table>
+          <div class="kpi">
+            <div class="box">Selezioni<b id="kSel">0</b></div>
+            <div class="box">Quota totale<b id="kOdd">—</b></div>
+            <div class="box">Vincita pot.<b id="kWin">—</b></div>
+          </div>
 
-          <button class="btn btnPrimary" style="width:100%;justify-content:center;margin-top:12px;" id="printBtn">🖨️ Stampa schedina</button>
+          <button class="printBtn" id="btnPrint">🖨️ Stampa schedina</button>
 
-          <div class="hint">
-            Quote precompilate per effetto WOW. Se al banco differiscono, modifica la quota e premi “Aggiungi”.
+          <div class="note">
+            Se al banco vedi quote diverse, sostituiscile prima di confermare. In stampa usiamo la tua selezione.
           </div>
         </div>
       </div>
@@ -537,336 +351,186 @@
   </div>
 
 <script>
-/* Params */
-const qp = new URLSearchParams(location.search);
-const center = (qp.get("c") || "VINC001").toUpperCase();
-const slotParam = (qp.get("slot") || "morning").toLowerCase();
-const v = qp.get("v") || "";
+  const qs = new URLSearchParams(location.search);
+  const center = (qs.get("c") || "VINC001").toUpperCase();
+  let slot = (qs.get("slot") || "morning").toLowerCase(); // morning | afternoon | evening
+  let seed = parseInt(qs.get("v") || (Date.now() % 100000), 10);
 
-const SLOT_ORDER = ["morning","afternoon","evening"];
-const SLOT_LABEL = { morning:"Mattina", afternoon:"Pomeriggio", evening:"Sera" };
-const PER_SLOT = 5; // ✅ 5 eventi per fascia
+  const slotLabel = (s)=> s==="morning" ? "Mattina" : s==="afternoon" ? "Pomeriggio" : "Sera";
+  const flagEmoji = (cc)=>{
+    const map = { IT:"🇮🇹", EN:"🏴", ES:"🇪🇸", FR:"🇫🇷", DE:"🇩🇪", NL:"🇳🇱", PT:"🇵🇹", SE:"🇸🇪", TR:"🇹🇷", PL:"🇵🇱", GR:"🇬🇷", CH:"🇨🇭" };
+    return map[cc] || "🌍";
+  };
+  const code2 = (name)=>{
+    const n = (name||"").replace(/[^A-Za-zÀ-ž ]/g,"").trim().split(/\s+/);
+    const a = (n[0]||"X")[0];
+    const b = (n.length>1 ? n[n.length-1][0] : (n[0]||"Y")[1] || "Y");
+    return (a+b).toUpperCase();
+  };
 
-document.getElementById("centerLbl").textContent = center;
+  const elEvents = document.getElementById("events");
+  const elErr = document.getElementById("err");
 
-/* Flags */
-function leagueFlag(league){
-  const L = (league||"").toLowerCase();
-  if (L.includes("serie") || L.includes("ital")) return "🇮🇹";
-  if (L.includes("premier") || L.includes("ingh") || L.includes("fa cup")) return "🇬🇧";
-  if (L.includes("liga") || L.includes("spagna") || L.includes("laliga")) return "🇪🇸";
-  if (L.includes("bundes") || L.includes("german")) return "🇩🇪";
-  if (L.includes("ligue") || L.includes("fran")) return "🇫🇷";
-  if (L.includes("eredivisie") || L.includes("olanda")) return "🇳🇱";
-  if (L.includes("portog")) return "🇵🇹";
-  if (L.includes("belg")) return "🇧🇪";
-  if (L.includes("svizz")) return "🇨🇭";
-  if (L.includes("polon")) return "🇵🇱";
-  if (L.includes("svez")) return "🇸🇪";
-  if (L.includes("norve")) return "🇳🇴";
-  if (L.includes("danim")) return "🇩🇰";
-  if (L.includes("grec")) return "🇬🇷";
-  if (L.includes("turch")) return "🇹🇷";
-  if (L.includes("austr")) return "🇦🇹";
-  if (L.includes("ceca")) return "🇨🇿";
-  return "🌍";
-}
+  document.getElementById("centerChip").textContent = center;
+  document.getElementById("slotChip").textContent = slotLabel(slot);
 
-function teamCode(name){
-  const t = String(name||"").trim();
-  if(!t) return "—";
-  const parts = t.split(/\s+/).filter(Boolean);
-  const code = (parts.length===1) ? parts[0].slice(0,3) : (parts[0][0]+parts[1][0]+(parts[2]?.[0]||""));
-  return code.slice(0,3).toUpperCase();
-}
-
-/* Seeded shuffle */
-function xfnv1a(str){
-  let h = 2166136261;
-  for (let i=0;i<str.length;i++){
-    h ^= str.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return h >>> 0;
-}
-function mulberry32(a){
-  return function(){
-    let t = a += 0x6D2B79F5;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  }
-}
-function shuffleSeeded(arr, seed){
-  const a = arr.slice();
-  const rnd = mulberry32(seed);
-  for(let i=a.length-1;i>0;i--){
-    const j = Math.floor(rnd()*(i+1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-/* Fetch events */
-async function loadEvents(){
-  const url = `./events.json${v ? `?v=${encodeURIComponent(v)}` : ""}`;
-  const res = await fetch(url, {cache:"no-store"});
-  if(!res.ok) throw new Error("Errore caricamento events.json");
-  return res.json();
-}
-
-/* Slots */
-let ALL_EVENTS = [];
-let ACTIVE_SLOT = slotParam;
-let SLOTS = { morning:[], afternoon:[], evening:[] };
-
-function eventKey(ev){
-  return `${(ev.league||"").trim()}|${(ev.home||"").trim()}|${(ev.away||"").trim()}`.toLowerCase();
-}
-
-/* ✅ dedup globale, ma se pochi match: riuso tra fasce, NON dentro fascia */
-function buildSlots(){
-  const counterKey = `seed_counter_${center}`;
-  const counter = parseInt(localStorage.getItem(counterKey) || "0", 10);
-  const base = (document.getElementById("updatedLbl").textContent || "") + "|" + center + "|" + String(counter);
-  const seed = xfnv1a(base);
-
-  // 1) unique globale
-  const map = new Map();
-  for(const e of ALL_EVENTS){
-    const k = eventKey(e);
-    if(!map.has(k)) map.set(k, e);
-  }
-  const unique = Array.from(map.values());
-  const shuffled = shuffleSeeded(unique.length ? unique : ALL_EVENTS, seed);
-
-  // 2) funzione che prende PER_SLOT eventi senza duplicati INTERNI
-  function pickForSlot(slotSeed){
-    const out = [];
-    const used = new Set();
-    const rnd = shuffleSeeded(shuffled, slotSeed);
-
-    // Prima passata: prova a variare campionati
-    const byLeague = new Map();
-    for(const e of rnd){
-      const L = (e.league || "Altro").trim();
-      if(!byLeague.has(L)) byLeague.set(L, []);
-      byLeague.get(L).push(e);
+  function mulberry32(a){
+    return function(){
+      let t = a += 0x6D2B79F5;
+      t = Math.imul(t ^ t >>> 15, t | 1);
+      t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
     }
-    const leagues = Array.from(byLeague.keys());
-
-    while(out.length < PER_SLOT){
-      let pushed = false;
-      for(const L of leagues){
-        if(out.length >= PER_SLOT) break;
-        const arr = byLeague.get(L);
-        if(arr && arr.length){
-          const cand = arr.shift();
-          const k = eventKey(cand);
-          if(!used.has(k)){
-            out.push(cand);
-            used.add(k);
-            pushed = true;
-          }
-        }
-      }
-      if(!pushed) break;
-    }
-
-    // Seconda passata: riempi comunque fino a 5 (senza duplicati interni)
-    if(out.length < PER_SLOT){
-      for(const e of rnd){
-        if(out.length >= PER_SLOT) break;
-        const k = eventKey(e);
-        if(!used.has(k)){
-          out.push(e);
-          used.add(k);
-        }
-      }
-    }
-
-    // Ultima spiaggia: se events.json ha davvero pochissimi match, duplica “gentile”
-    // (ma sempre non duplicati interni: qui aggiungiamo copiando e cambiando la label del campionato)
-    while(out.length < PER_SLOT){
-      if(out.length === 0) break;
-      const baseEv = out[out.length % out.length];
-      const clone = JSON.parse(JSON.stringify(baseEv));
-      clone.league = (clone.league || "Campionato") + " • Extra";
-      // chiave diversa così non viene scartato internamente
-      clone._k = Math.random().toString(16).slice(2);
-      out.push(clone);
-    }
-
-    return out.slice(0, PER_SLOT);
   }
 
-  SLOTS.morning   = pickForSlot(seed ^ 0xA1B2C3D4);
-  SLOTS.afternoon = pickForSlot(seed ^ 0xB2C3D4E5);
-  SLOTS.evening   = pickForSlot(seed ^ 0xC3D4E5F6);
-}
+  let selected = []; // {match, market, odd}
 
-function setSlotUI(){
-  const lbl = SLOT_LABEL[ACTIVE_SLOT] || ACTIVE_SLOT;
-  document.getElementById("slotLbl").textContent = lbl;
-  document.getElementById("slotPill").textContent = lbl;
-}
-
-function render(){
-  const events = SLOTS[ACTIVE_SLOT] || [];
-  const list = document.getElementById("eventsList");
-  list.innerHTML = "";
-  document.getElementById("countEvents").textContent = String(events.length);
-
-  if(events.length === 0){
-    list.innerHTML = `<div class="empty">Nessun evento disponibile.</div>`;
-    return;
+  function updateKPI(){
+    const stake = parseFloat(document.getElementById("stake").value || "0");
+    const totalOdd = selected.reduce((acc,x)=>acc*(x.odd||1), 1);
+    document.getElementById("kSel").textContent = String(selected.length);
+    document.getElementById("kOdd").textContent = selected.length ? totalOdd.toFixed(2) : "—";
+    document.getElementById("kWin").textContent = selected.length ? (stake*totalOdd).toFixed(2) : "—";
   }
 
-  events.forEach((ev, idx) => {
-    const league = ev.league || "Campionato";
-    const match = `${ev.home || "Squadra A"} - ${ev.away || "Squadra B"}`;
-    const when = ev.start || "Oggi";
-    const flag = leagueFlag(league);
+  function addPick(match, marketLabel, odd){
+    selected.push({ match, market: marketLabel, odd });
+    updateKPI();
+  }
 
-    const homeCode = teamCode(ev.home);
-    const awayCode = teamCode(ev.away);
+  function render(events, updatedAt){
+    document.getElementById("updatedChip").textContent = updatedAt || "—";
+    document.getElementById("count").textContent = String(events.length);
 
-    const card = document.createElement("div");
-    card.className = "event";
+    elEvents.innerHTML = "";
+    events.forEach((ev, idx)=>{
+      const cc = (ev.country || "").toUpperCase();
+      const flag = flagEmoji(cc);
+      const home = ev.home, away = ev.away;
 
-    card.innerHTML = `
-      <div class="eventTop">
-        <div class="eventTitle">
-          <div class="leagueLine">
-            <span class="flag">${flag}</span>
-            <span><b>${league}</b></span>
-            <span style="opacity:.65;">•</span>
-            <span style="opacity:.75;">Evento ${idx+1}/${events.length}</span>
-            <span style="opacity:.65;">•</span>
-            <span style="opacity:.75;">Misto</span>
+      const node = document.createElement("div");
+      node.className = "event";
+      node.innerHTML = `
+        <div class="eventHead">
+          <div>
+            <div class="leagueLine">
+              <span class="flag">${flag}</span>
+              <b>${ev.league || "Campionato"}</b>
+              <span style="opacity:.8">•</span>
+              <span>${ev.start || ""}</span>
+              <span style="opacity:.8">•</span>
+              <span style="color:rgba(255,200,120,.95);font-weight:900">${slotLabel(ev.slot || slot)}</span>
+            </div>
+            <div class="teams" style="margin-top:8px">
+              <span class="teamBadge">${code2(home)}</span>
+              <span>${home} - ${away}</span>
+              <span class="teamBadge">${code2(away)}</span>
+            </div>
           </div>
-
-          <div class="matchLine">
-            <span class="clubBadge">${homeCode}</span>
-            <div class="match">${match}</div>
-            <span class="clubBadge">${awayCode}</span>
-          </div>
-
-          <div class="meta">
-            <span>🕒 ${when}</span>
-            <span>✨ IA: selezione fascia</span>
-          </div>
+          <div class="meta">Evento ${idx+1}/5</div>
         </div>
-        <div class="badge">🎯 ${SLOT_LABEL[ACTIVE_SLOT] || ACTIVE_SLOT}</div>
-      </div>
-    `;
 
-    const markets = document.createElement("div");
-    markets.className = "markets";
-
-    (ev.markets || []).slice(0,3).forEach(m => {
-      const odd = (m.odd ?? "").toString().replace(",",".");
-      const label = (m.label || "Mercato");
-
-      const row = document.createElement("div");
-      row.className = "mkt";
-      row.innerHTML = `
-        <div class="mktLabel">
-          <div class="name">${label}</div>
-          <div class="note">Quota precompilata (modificabile)</div>
-        </div>
-        <input class="oddInput mono" value="${odd}" placeholder="Quota" />
-        <button class="addBtn" type="button"><span class="plus">+</span> Aggiungi</button>
+        <div class="markets"></div>
       `;
 
-      const input = row.querySelector(".oddInput");
-      const btn = row.querySelector(".addBtn");
-      btn.addEventListener("click", () => addToSlip(match, label, input.value || odd || "—"));
-      markets.appendChild(row);
+      const mk = node.querySelector(".markets");
+      (ev.markets || []).slice(0,3).forEach(m=>{
+        const mNode = document.createElement("div");
+        mNode.className = "market";
+        mNode.innerHTML = `
+          <div class="mTop">
+            <div>
+              <div class="mLabel">${m.label || "Mercato"}</div>
+              <div class="mHint">Quota precompilata (modificabile)</div>
+            </div>
+          </div>
+          <div class="mRow">
+            <div class="oddBox">${Number(m.odd || 1).toFixed(2)}</div>
+            <button class="addBtn">➕ Aggiungi</button>
+          </div>
+        `;
+        mNode.querySelector(".addBtn").addEventListener("click", ()=>{
+          addPick(`${home} - ${away}`, m.label, Number(m.odd||1));
+        });
+        mk.appendChild(mNode);
+      });
+
+      elEvents.appendChild(node);
     });
-
-    card.appendChild(markets);
-    list.appendChild(card);
-  });
-}
-
-/* Slip */
-let SLIP = [];
-function addToSlip(match, market, odd){
-  SLIP.push({match, market, odd});
-  renderSlip();
-}
-function removeFromSlip(i){
-  SLIP.splice(i,1);
-  renderSlip();
-}
-function renderSlip(){
-  const tbody = document.querySelector("#slipTable tbody");
-  tbody.innerHTML = "";
-  if(SLIP.length === 0){
-    tbody.innerHTML = `<tr><td colspan="4" style="color:rgba(233,238,252,.55);padding:10px 6px;">Nessuna selezione. Premi <b>Aggiungi</b> sugli eventi.</td></tr>`;
-    return;
   }
-  SLIP.forEach((s,i) => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${s.match}</td>
-      <td>${s.market}</td>
-      <td class="mono">${s.odd}</td>
-      <td><button class="btn" style="padding:6px 8px;border-radius:10px;" title="Rimuovi">✖</button></td>
-    `;
-    tr.querySelector("button").addEventListener("click", () => removeFromSlip(i));
-    tbody.appendChild(tr);
-  });
-}
 
-/* Buttons + fascia */
-document.getElementById("switchBtn").addEventListener("click", () => {
-  const idx = SLOT_ORDER.indexOf(ACTIVE_SLOT);
-  ACTIVE_SLOT = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
-  setSlotUI();
-  render();
-  history.replaceState({}, "", `${location.pathname}?c=${encodeURIComponent(center)}&slot=${encodeURIComponent(ACTIVE_SLOT)}&v=${encodeURIComponent(v)}`);
-});
-document.getElementById("regenBtn").addEventListener("click", () => {
-  const counterKey = `seed_counter_${center}`;
-  const c = parseInt(localStorage.getItem(counterKey) || "0", 10) + 1;
-  localStorage.setItem(counterKey, String(c));
-  buildSlots();
-  render();
-});
-document.getElementById("clearBtn").addEventListener("click", () => {
-  SLIP = [];
-  renderSlip();
-});
-document.getElementById("printBtn").addEventListener("click", () => window.print());
+  async function load(){
+    elErr.style.display = "none";
+    try{
+      const res = await fetch("events.json?ts=" + Date.now());
+      const txt = await res.text();
 
-/* Countdown 60 min */
-let sec = 60*60;
-function tick(){
-  sec--;
-  if(sec <= 0) sec = 60*60;
-  const mm = String(Math.floor(sec/60)).padStart(2,"0");
-  const ss = String(sec%60).padStart(2,"0");
-  document.getElementById("countdown").textContent = `${mm}:${ss}`;
-}
-setInterval(tick, 1000); tick();
+      // Protezione: se qualcuno ha inserito roba non-JSON, lo segnaliamo chiaro
+      let data;
+      try{
+        data = JSON.parse(txt);
+      }catch(e){
+        throw new Error("events.json non è JSON valido. Apri events.json e incolla il file completo che ti ho dato (senza commenti).");
+      }
 
-/* Init */
-(async () => {
-  document.getElementById("centerLbl").textContent = center;
-  setSlotUI();
-  try{
-    const data = await loadEvents();
-    document.getElementById("updatedLbl").textContent = data.updated_at || "—";
-    ALL_EVENTS = (data.events || []);
-    buildSlots();
-    render();
-    renderSlip();
-  }catch(e){
-    document.getElementById("eventsList").innerHTML = `<div class="empty"><b>Errore:</b> ${e.message}</div>`;
+      const all = Array.isArray(data.events) ? data.events : [];
+      const filtered = all.filter(x => (x.slot||"").toLowerCase() === slot);
+
+      // Se per qualche motivo la fascia è vuota, mostra comunque 5 dal totale (misti)
+      const base = filtered.length ? filtered : all;
+
+      // Selezione 5 unici senza duplicati
+      const rnd = mulberry32(seed);
+      const used = new Set();
+      const out = [];
+
+      // Mescola indice
+      const idxs = base.map((_,i)=>i);
+      for(let i=idxs.length-1;i>0;i--){
+        const j = Math.floor(rnd()*(i+1));
+        [idxs[i], idxs[j]] = [idxs[j], idxs[i]];
+      }
+
+      for(const i of idxs){
+        const ev = base[i];
+        const key = `${ev.home}__${ev.away}__${ev.league}`;
+        if(used.has(key)) continue;
+        used.add(key);
+        out.push(ev);
+        if(out.length>=5) break;
+      }
+
+      render(out, data.updated_at);
+
+    }catch(err){
+      elEvents.innerHTML = "";
+      elErr.textContent = "Errore: " + (err?.message || String(err));
+      elErr.style.display = "block";
+    }
   }
-})();
+
+  document.getElementById("btnNew").addEventListener("click", ()=>{
+    seed = (seed + 1337) % 1000000;
+    load();
+  });
+
+  document.getElementById("btnSlot").addEventListener("click", ()=>{
+    slot = slot==="morning" ? "afternoon" : slot==="afternoon" ? "evening" : "morning";
+    document.getElementById("slotChip").textContent = slotLabel(slot);
+    // aggiorna URL senza ricaricare
+    const u = new URL(location.href);
+    u.searchParams.set("slot", slot);
+    u.searchParams.set("v", String(seed));
+    history.replaceState({}, "", u.toString());
+    load();
+  });
+
+  document.getElementById("btnPrint").addEventListener("click", ()=>{
+    alert("Stampa demo: qui poi mettiamo la stampa bella (PDF/receipt). Per ora calcola quota e vincita in alto.");
+  });
+
+  updateKPI();
+  load();
 </script>
 </body>
 </html>
