@@ -1,27 +1,179 @@
 {
-  "updated_at": "2026-01-18 09:38",
+  "updated_at": "2026-01-17 10:15",
   "timezone": "Europe/Rome",
   "events": [
+
+    /* ===== MATTINA (5) ===== */
     {
+      "slot": "morning",
       "league": "Serie A",
+      "country": "IT",
       "home": "Inter",
       "away": "Juventus",
-      "start": "Oggi 20:45",
+      "start": "Oggi 12:30",
       "markets": [
         { "label": "Over 1.5", "odd": 1.55 },
-        { "label": "1X", "odd": 1.65 },
-        { "label": "DNB 1", "odd": 1.70 }
+        { "label": "1X", "odd": 1.60 }
       ]
     },
     {
+      "slot": "morning",
+      "league": "Premier League",
+      "country": "GB",
+      "home": "Arsenal",
+      "away": "Tottenham",
+      "start": "Oggi 13:00",
+      "markets": [
+        { "label": "Goal Sì", "odd": 1.65 }
+      ]
+    },
+    {
+      "slot": "morning",
+      "league": "Bundesliga",
+      "country": "DE",
+      "home": "Bayern Monaco",
+      "away": "Stoccarda",
+      "start": "Oggi 12:00",
+      "markets": [
+        { "label": "Over 2.5", "odd": 1.60 }
+      ]
+    },
+    {
+      "slot": "morning",
+      "league": "Eredivisie",
+      "country": "NL",
+      "home": "Ajax",
+      "away": "Utrecht",
+      "start": "Oggi 11:45",
+      "markets": [
+        { "label": "1X", "odd": 1.35 }
+      ]
+    },
+    {
+      "slot": "morning",
+      "league": "Ekstraklasa",
+      "country": "PL",
+      "home": "Legia Varsavia",
+      "away": "Gornik Zabrze",
+      "start": "Oggi 11:30",
+      "markets": [
+        { "label": "Under 3.5", "odd": 1.45 }
+      ]
+    },
+
+    /* ===== POMERIGGIO (5) ===== */
+    {
+      "slot": "afternoon",
       "league": "Serie A",
+      "country": "IT",
       "home": "Milan",
       "away": "Roma",
-      "start": "Oggi 18:00",
+      "start": "Oggi 15:00",
       "markets": [
-        { "label": "Goal/NoGoal Sì", "odd": 1.75 },
-        { "label": "Over 2.5", "odd": 1.85 }
+        { "label": "Goal Sì", "odd": 1.75 }
+      ]
+    },
+    {
+      "slot": "afternoon",
+      "league": "LaLiga",
+      "country": "ES",
+      "home": "Atletico Madrid",
+      "away": "Valencia",
+      "start": "Oggi 16:15",
+      "markets": [
+        { "label": "1X", "odd": 1.40 }
+      ]
+    },
+    {
+      "slot": "afternoon",
+      "league": "Ligue 1",
+      "country": "FR",
+      "home": "Monaco",
+      "away": "Lille",
+      "start": "Oggi 17:00",
+      "markets": [
+        { "label": "Over 1.5", "odd": 1.50 }
+      ]
+    },
+    {
+      "slot": "afternoon",
+      "league": "Serie B",
+      "country": "IT",
+      "home": "Parma",
+      "away": "Brescia",
+      "start": "Oggi 14:00",
+      "markets": [
+        { "label": "1X", "odd": 1.45 }
+      ]
+    },
+    {
+      "slot": "afternoon",
+      "league": "Superliga Danese",
+      "country": "DK",
+      "home": "Copenhagen",
+      "away": "Brondby",
+      "start": "Oggi 15:30",
+      "markets": [
+        { "label": "Goal Sì", "odd": 1.70 }
+      ]
+    },
+
+    /* ===== SERA (5) ===== */
+    {
+      "slot": "evening",
+      "league": "Serie A",
+      "country": "IT",
+      "home": "Napoli",
+      "away": "Atalanta",
+      "start": "Oggi 20:45",
+      "markets": [
+        { "label": "Over 2.5", "odd": 1.80 }
+      ]
+    },
+    {
+      "slot": "evening",
+      "league": "Premier League",
+      "country": "GB",
+      "home": "Liverpool",
+      "away": "Chelsea",
+      "start": "Oggi 21:00",
+      "markets": [
+        { "label": "Goal Sì", "odd": 1.60 }
+      ]
+    },
+    {
+      "slot": "evening",
+      "league": "Primeira Liga",
+      "country": "PT",
+      "home": "Benfica",
+      "away": "Braga",
+      "start": "Oggi 21:15",
+      "markets": [
+        { "label": "1X", "odd": 1.30 }
+      ]
+    },
+    {
+      "slot": "evening",
+      "league": "Super Lig",
+      "country": "TR",
+      "home": "Galatasaray",
+      "away": "Fenerbahce",
+      "start": "Oggi 20:00",
+      "markets": [
+        { "label": "Over 1.5", "odd": 1.55 }
+      ]
+    },
+    {
+      "slot": "evening",
+      "league": "Jupiler Pro League",
+      "country": "BE",
+      "home": "Club Brugge",
+      "away": "Genk",
+      "start": "Oggi 19:45",
+      "markets": [
+        { "label": "Goal Sì", "odd": 1.68 }
       ]
     }
+
   ]
 }
