@@ -1,53 +1,40 @@
-name: Aggiorna eventi automatici
+name: Auto update events
 
 on:
-  schedule:
-    - cron: "0 9 * * *"
   workflow_dispatch:
+  schedule:
+    # ogni 2 ore (stabile, non ti bruci il rate limit)
+    - cron: "0 */2 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Genera events.json (inline)
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
         run: |
-          cat > events.json <<'EOF'
-          {
-            "updated_at": "AUTO",
-            "timezone": "Europe/Rome",
-            "events": [
-              {
-                "league": "Serie A",
-                "home": "Inter",
-                "away": "Juventus",
-                "start": "Oggi 20:45",
-                "markets": [
-                  { "label": "Over 1.5", "odd": 1.55 },
-                  { "label": "1X", "odd": 1.65 },
-                  { "label": "DNB 1", "odd": 1.70 }
-                ]
-              },
-              {
-                "league": "Serie A",
-                "home": "Milan",
-                "away": "Roma",
-                "start": "Oggi 18:00",
-                "markets": [
-                  { "label": "Goal/NoGoal Sì", "odd": 1.75 },
-                  { "label": "Over 2.5", "odd": 1.85 }
-                ]
-              }
-            ]
-          }
-          EOF
-          sed -i "s/\"updated_at\": \"AUTO\"/\"updated_at\": \"$(date '+%Y-%m-%d %H:%M')\"/" events.json
+          python -m pip install --upgrade pip
+          pip install requests
 
-      - name: Commit & push
+      - name: Generate events.json
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: |
+          python generate_events.py
+
+      - name: Commit & push if changed
         run: |
           git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.email "github-actions@users.noreply.github.com"
           git add events.json
-          git commit -m "Auto update events" || echo "Niente da committare"
-          git push
+          git diff --cached --quiet || (git commit -m "Auto update events" && git push)
