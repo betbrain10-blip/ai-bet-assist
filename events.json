@@ -1,16 +1,9 @@
 {
-  "updated_at": "2026-01-17 09:36",
+  "updated_at": "2026-01-18 09:38",
   "timezone": "Europe/Rome",
   "events": [
-
-    /* =======================
-       🌅 MATTINA (5 EVENTI)
-       ======================= */
-
     {
-      "slot": "morning",
-      "league": "Serie A (Italia)",
-      "country": "IT",
+      "league": "Serie A",
       "home": "Inter",
       "away": "Juventus",
       "start": "Oggi 20:45",
@@ -21,173 +14,14 @@
       ]
     },
     {
-      "slot": "morning",
-      "league": "Premier League (Inghilterra)",
-      "country": "EN",
-      "home": "Arsenal",
-      "away": "Tottenham",
-      "start": "Oggi 18:30",
-      "markets": [
-        { "label": "Over 2.5", "odd": 1.80 },
-        { "label": "Goal Sì", "odd": 1.62 }
-      ]
-    },
-    {
-      "slot": "morning",
-      "league": "Eredivisie (Olanda)",
-      "country": "NL",
-      "home": "Ajax",
-      "away": "PSV",
-      "start": "Oggi 16:45",
-      "markets": [
-        { "label": "Over 2.5", "odd": 1.75 },
-        { "label": "Goal Sì", "odd": 1.60 }
-      ]
-    },
-    {
-      "slot": "morning",
-      "league": "Allsvenskan (Svezia)",
-      "country": "SE",
-      "home": "Malmo",
-      "away": "AIK",
-      "start": "Oggi 15:00",
-      "markets": [
-        { "label": "Over 2.5", "odd": 1.85 }
-      ]
-    },
-    {
-      "slot": "morning",
-      "league": "Ekstraklasa (Polonia)",
-      "country": "PL",
-      "home": "Legia Varsavia",
-      "away": "Lech Poznan",
-      "start": "Oggi 14:30",
-      "markets": [
-        { "label": "1X", "odd": 1.40 },
-        { "label": "Under 3.5", "odd": 1.38 }
-      ]
-    },
-
-    /* =======================
-       🌤️ POMERIGGIO (5 EVENTI)
-       ======================= */
-
-    {
-      "slot": "afternoon",
-      "league": "Serie A (Italia)",
-      "country": "IT",
+      "league": "Serie A",
       "home": "Milan",
       "away": "Roma",
       "start": "Oggi 18:00",
       "markets": [
-        { "label": "Goal Sì", "odd": 1.75 },
+        { "label": "Goal/NoGoal Sì", "odd": 1.75 },
         { "label": "Over 2.5", "odd": 1.85 }
       ]
-    },
-    {
-      "slot": "afternoon",
-      "league": "Liga (Spagna)",
-      "country": "ES",
-      "home": "Atletico Madrid",
-      "away": "Villarreal",
-      "start": "Oggi 17:15",
-      "markets": [
-        { "label": "1X", "odd": 1.35 }
-      ]
-    },
-    {
-      "slot": "afternoon",
-      "league": "Bundesliga (Germania)",
-      "country": "DE",
-      "home": "Leverkusen",
-      "away": "Eintracht",
-      "start": "Oggi 15:30",
-      "markets": [
-        { "label": "Over 2.5", "odd": 1.70 }
-      ]
-    },
-    {
-      "slot": "afternoon",
-      "league": "Superliga (Danimarca)",
-      "country": "DK",
-      "home": "Copenhagen",
-      "away": "Midtjylland",
-      "start": "Oggi 16:00",
-      "markets": [
-        { "label": "Goal Sì", "odd": 1.68 }
-      ]
-    },
-    {
-      "slot": "afternoon",
-      "league": "Serie B (Italia)",
-      "country": "IT",
-      "home": "Parma",
-      "away": "Bari",
-      "start": "Oggi 14:00",
-      "markets": [
-        { "label": "1X", "odd": 1.45 }
-      ]
-    },
-
-    /* =======================
-       🌙 SERA (5 EVENTI)
-       ======================= */
-
-    {
-      "slot": "evening",
-      "league": "Ligue 1 (Francia)",
-      "country": "FR",
-      "home": "PSG",
-      "away": "Lyon",
-      "start": "Oggi 21:00",
-      "markets": [
-        { "label": "Over 2.5", "odd": 1.65 }
-      ]
-    },
-    {
-      "slot": "evening",
-      "league": "Primeira Liga (Portogallo)",
-      "country": "PT",
-      "home": "Benfica",
-      "away": "Sporting",
-      "start": "Oggi 22:00",
-      "markets": [
-        { "label": "Goal Sì", "odd": 1.60 }
-      ]
-    },
-    {
-      "slot": "evening",
-      "league": "Scottish Premiership",
-      "country": "SC",
-      "home": "Celtic",
-      "away": "Rangers",
-      "start": "Oggi 20:45",
-      "markets": [
-        { "label": "Over 2.5", "odd": 1.75 }
-      ]
-    },
-    {
-      "slot": "evening",
-      "league": "Super Lig (Turchia)",
-      "country": "TR",
-      "home": "Galatasaray",
-      "away": "Besiktas",
-      "start": "Oggi 19:30",
-      "markets": [
-        { "label": "1X", "odd": 1.40 }
-      ]
-    },
-    {
-      "slot": "evening",
-      "league": "Serie A (Brasile)",
-      "country": "BR",
-      "home": "Flamengo",
-      "away": "Palmeiras",
-      "start": "Oggi 23:30",
-      "markets": [
-        { "label": "Goal Sì", "odd": 1.70 }
-      ]
     }
-
   ]
 }
