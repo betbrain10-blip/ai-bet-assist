@@ -3,7 +3,6 @@ name: Auto update events
 on:
   workflow_dispatch:
   schedule:
-    # ogni 2 ore (stabile, non ti bruci il rate limit)
     - cron: "0 */2 * * *"
 
 jobs:
@@ -30,11 +29,12 @@ jobs:
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: |
-          python generate_events.py
+          python .github/workflows/generate_events.py
 
       - name: Commit & push if changed
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add events.json
-          git diff --cached --quiet || (git commit -m "Auto update events" && git push)
+          git commit -m "Auto update events" || echo "No changes"
+          git push
