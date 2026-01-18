@@ -1,196 +1,266 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import os
 import json
 import math
-import hashlib
-from datetime import datetime, timedelta, timezone
+import random
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 import requests
 
+
 # =========================
 # CONFIG
 # =========================
-TZ_NAME = "Europe/Rome"
-TZ = ZoneInfo(TZ_NAME)
+TZ = ZoneInfo("Europe/Rome")
 
-# Campionati "primari" (Football-Data codes)
-PRIMARY_COMPETITIONS = [
-    ("PL",  "Premier League", "GB"),
-    ("SA",  "Serie A",        "IT"),
-    ("PD",  "LaLiga",         "ES"),
-    ("BL1", "Bundesliga",     "DE"),
-    ("FL1", "Ligue 1",        "FR"),
-    ("CL",  "Champions League","EU"),
-]
+# Fasce orarie (ora locale Italia)
+MORNING_START = 6
+MORNING_END = 12     # escluso
+AFTERNOON_START = 12
+AFTERNOON_END = 18   # escluso
+EVENING_START = 18
+EVENING_END = 24     # escluso
 
-LOOKAHEAD_HOURS = 48  # quante ore avanti prendere (48 = 2 giorni, così trovi sempre match)
+PER_SLOT = 5  # 5 mattina + 5 pomeriggio + 5 sera
+
+# Competizioni principali europee (Football-Data codes)
+# (Se il tuo piano non le include tutte, verranno semplicemente ignorate)
+ALLOW_COMP_CODES = {
+    "CL",   # Champions League
+    "EL",   # Europa League
+    "EC",   # Conference League (in alcuni piani può variare, se non esce non succede nulla)
+    "PL",   # Premier League
+    "PD",   # LaLiga
+    "SA",   # Serie A
+    "BL1",  # Bundesliga
+    "FL1",  # Ligue 1
+    "DED",  # Eredivisie
+    "PPL",  # Primeira Liga
+}
+
+# Quanto avanti cercare partite
+LOOKAHEAD_DAYS = 2
 
 OUT_FILE = "events.json"
-API_BASE = "https://api.football-data.org/v4"
 
-# =========================
-# UTILS
-# =========================
-def _stable_rand01(seed: str) -> float:
-    """Numero pseudo-random deterministico 0..1 basato su seed."""
-    h = hashlib.sha256(seed.encode("utf-8")).hexdigest()
-    # prendo 8 hex => int => 0..1
-    x = int(h[:8], 16)
-    return (x % 10_000_000) / 10_000_000.0
 
-def _clamp(x, a, b):
-    return max(a, min(b, x))
+def _env_token() -> str:
+    t = os.getenv("FOOTBALL_DATA_TOKEN", "").strip()
+    if not t:
+        raise RuntimeError("FOOTBALL_DATA_TOKEN missing in env (GitHub Secrets).")
+    return t
 
-def _fmt_odd(x: float) -> float:
-    return round(x + 1e-9, 2)
 
-def _slot_for_local_hour(h: int) -> str:
-    # mattina 06-12, pomeriggio 12-18, sera 18-24, notte 00-06
-    if 6 <= h < 12:
+def _football_data_get(url: str, token: str, params: dict | None = None) -> dict:
+    headers = {"X-Auth-Token": token}
+    r = requests.get(url, headers=headers, params=params, timeout=30)
+    r.raise_for_status()
+    return r.json()
+
+
+def _format_start(dt_rome: datetime) -> str:
+    # Esempio: "Oggi 20:45" oppure "Dom 14:00"
+    now = datetime.now(TZ)
+    if dt_rome.date() == now.date():
+        day = "Oggi"
+    elif dt_rome.date() == (now.date() + timedelta(days=1)):
+        day = "Domani"
+    else:
+        # Giorni abbreviati in IT
+        wk = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"]
+        day = wk[dt_rome.weekday()]
+    return f"{day} {dt_rome.strftime('%H:%M')}"
+
+
+def _slot_of(dt_rome: datetime) -> str | None:
+    h = dt_rome.hour
+    if MORNING_START <= h < MORNING_END:
         return "mattina"
-    if 12 <= h < 18:
+    if AFTERNOON_START <= h < AFTERNOON_END:
         return "pomeriggio"
-    if 18 <= h < 24:
+    if EVENING_START <= h < EVENING_END:
         return "sera"
-    return "notte"
+    return None
 
-def _make_markets(match_seed: str):
+
+def _stable_rng(seed_value: int) -> random.Random:
+    rng = random.Random()
+    rng.seed(seed_value)
+    return rng
+
+
+def _mk_odds(match_id: int, market_type: str) -> float:
     """
-    Quote 'verosimili' (NON reali) ma stabili e vicine a range realistici.
-    Il cliente poi può correggerle al banco.
+    Quote "verosimili" (non quote reali del book).
+    Stabili: a parità di match_id non cambiano a ogni refresh.
     """
-    r = _stable_rand01(match_seed)
+    rng = _stable_rng(match_id * 97 + sum(ord(c) for c in market_type))
 
-    # 1X range ~ 1.25 - 1.75
-    odd_1x = 1.25 + r * 0.50
+    # range tipici
+    if market_type == "over15":
+        v = rng.uniform(1.35, 1.70)
+    elif market_type == "over25":
+        v = rng.uniform(1.55, 2.05)
+    elif market_type == "goal_si":
+        v = rng.uniform(1.55, 2.00)
+    elif market_type == "1x":
+        v = rng.uniform(1.25, 1.70)
+    elif market_type == "dnb1":
+        v = rng.uniform(1.40, 2.05)
+    else:
+        v = rng.uniform(1.50, 2.10)
 
-    # Over 1.5 range ~ 1.25 - 1.65 (di solito più bassa)
-    odd_o15 = 1.25 + (_stable_rand01(match_seed + "|o15")) * 0.40
+    # arrotonda a 2 decimali
+    return float(f"{v:.2f}")
 
-    # Goal/NoGoal SI range ~ 1.45 - 2.05
-    odd_gg = 1.45 + (_stable_rand01(match_seed + "|gg")) * 0.60
 
+def _build_markets(match_id: int) -> list[dict]:
+    # Misti (semplici e “da banco”)
     return [
-        {"label": "1X", "odd": _fmt_odd(_clamp(odd_1x, 1.20, 2.50))},
-        {"label": "Over 1.5", "odd": _fmt_odd(_clamp(odd_o15, 1.15, 2.20))},
-        {"label": "Goal/NoGoal Si", "odd": _fmt_odd(_clamp(odd_gg, 1.20, 3.50))},
+        {"label": "Over 1.5", "odd": _mk_odds(match_id, "over15")},
+        {"label": "1X", "odd": _mk_odds(match_id, "1x")},
+        {"label": "Goal/NoGoal Sì", "odd": _mk_odds(match_id, "goal_si")},
     ]
 
-def fetch_competition_matches(token: str, comp_code: str, date_from: str, date_to: str):
-    url = f"{API_BASE}/competitions/{comp_code}/matches"
-    params = {
-        "status": "SCHEDULED",
-        "dateFrom": date_from,
-        "dateTo": date_to,
-    }
-    headers = {"X-Auth-Token": token}
 
-    r = requests.get(url, params=params, headers=headers, timeout=30)
-    if r.status_code == 429:
-        raise RuntimeError("RATE LIMIT (429): troppe richieste su Football-Data. Riprova più tardi o riduci la frequenza.")
-    if r.status_code in (401, 403):
-        raise RuntimeError(f"AUTH ERROR ({r.status_code}): token Football-Data mancante/sbagliato.")
-    r.raise_for_status()
+def _iso_date(d: datetime) -> str:
+    return d.strftime("%Y-%m-%d")
 
-    data = r.json()
-    return data.get("matches", [])
 
 def main():
-    token = os.getenv("FOOTBALL_DATA_TOKEN", "").strip()
-    if not token:
-        raise RuntimeError("Manca la variabile FOOTBALL_DATA_TOKEN (imposta il Secret su GitHub).")
+    token = _env_token()
 
-    now_utc = datetime.now(timezone.utc)
-    end_utc = now_utc + timedelta(hours=LOOKAHEAD_HOURS)
+    today = datetime.now(TZ).date()
+    date_from = today
+    date_to = today + timedelta(days=LOOKAHEAD_DAYS)
 
-    # Football-Data usa date (YYYY-MM-DD) non datetime, quindi allarghiamo al giorno intero
-    date_from = now_utc.date().isoformat()
-    date_to = end_utc.date().isoformat()
+    # endpoint generale match (più semplice, poi filtriamo per competizione)
+    url = "https://api.football-data.org/v4/matches"
+    data = _football_data_get(
+        url,
+        token,
+        params={
+            "dateFrom": _iso_date(datetime.combine(date_from, datetime.min.time())),
+            "dateTo": _iso_date(datetime.combine(date_to, datetime.min.time())),
+        },
+    )
 
-    events = []
-    seen_keys = set()
+    matches = data.get("matches", []) or []
 
-    for comp_code, comp_name, country_code in PRIMARY_COMPETITIONS:
-        try:
-            matches = fetch_competition_matches(token, comp_code, date_from, date_to)
-        except Exception as e:
-            # Non blocchiamo tutto se un campionato fallisce (es. rate limit su uno)
-            print(f"[WARN] {comp_code} -> {e}")
+    # Filtra: solo SCHEDULED + competizioni in allowlist
+    filtered = []
+    for m in matches:
+        if m.get("status") != "SCHEDULED":
             continue
 
-        for m in matches:
-            # prendo solo quelli con data valida
-            utc_date = m.get("utcDate")
-            if not utc_date:
-                continue
+        comp = m.get("competition") or {}
+        comp_code = (comp.get("code") or "").strip()
+        if comp_code and comp_code not in ALLOW_COMP_CODES:
+            continue
 
-            # parse ISO
-            try:
-                dt_utc = datetime.fromisoformat(utc_date.replace("Z", "+00:00"))
-            except Exception:
-                continue
+        utc_dt = m.get("utcDate")
+        if not utc_dt:
+            continue
 
-            # filtro: entro LOOKAHEAD_HOURS
-            if dt_utc < now_utc or dt_utc > end_utc:
-                continue
+        # parse ISO: "2026-01-17T20:45:00Z"
+        try:
+            dt_utc = datetime.fromisoformat(utc_dt.replace("Z", "+00:00"))
+        except Exception:
+            continue
 
-            home = (m.get("homeTeam") or {}).get("name") or "Home"
-            away = (m.get("awayTeam") or {}).get("name") or "Away"
+        dt_rome = dt_utc.astimezone(TZ)
+        slot = _slot_of(dt_rome)
+        if not slot:
+            # fuori fasce (es. notte) → ignoriamo
+            continue
 
-            # chiave univoca per evitare duplicati
-            key = f"{comp_code}|{home}|{away}|{utc_date}"
-            if key in seen_keys:
-                continue
-            seen_keys.add(key)
+        home = (m.get("homeTeam") or {})
+        away = (m.get("awayTeam") or {})
 
-            dt_local = dt_utc.astimezone(TZ)
-            start_local = dt_local.strftime("%d/%m %H:%M")
-            slot = _slot_for_local_hour(dt_local.hour)
+        match_id = int(m.get("id", 0)) or int(abs(hash(f"{home.get('name')}|{away.get('name')}|{utc_dt}")) % 10**9)
 
-            match_id = str(m.get("id") or key)
-            match_seed = f"{comp_code}|{match_id}|{utc_date}"
+        event = {
+            "id": match_id,
+            "slot": slot,  # "mattina" / "pomeriggio" / "sera"
+            "league": comp.get("name") or comp_code or "Calcio",
+            "league_code": comp_code,
+            "country": (comp.get("area") or {}).get("name", ""),
+            "country_code": (comp.get("area") or {}).get("code", ""),
+            "competition_emblem": comp.get("emblem", ""),
+            "home": home.get("name") or "Home",
+            "away": away.get("name") or "Away",
+            "home_short": home.get("tla") or "",
+            "away_short": away.get("tla") or "",
+            "home_crest": home.get("crest") or "",
+            "away_crest": away.get("crest") or "",
+            "start_iso": dt_rome.isoformat(),
+            "start": _format_start(dt_rome),
+            "markets": _build_markets(match_id),
+        }
 
-            event = {
-                "id": match_id,
-                "competition_code": comp_code,
-                "league": comp_name,
-                "country": country_code,          # per bandierina campionato (se la UI la usa)
-                "home": home,
-                "away": away,
-                "utcDate": utc_date,
-                "start_local": start_local,
-                "slot": slot,                    # mattina/pomeriggio/sera/notte
-                "markets": _make_markets(match_seed),
-                "source": "football-data.org",
-                "note": "Quote stimate e modificabili al banco"
-            }
-            events.append(event)
+        filtered.append((dt_rome, event))
 
     # Ordina per orario
-    def _sort_key(ev):
-        try:
-            return datetime.fromisoformat(ev["utcDate"].replace("Z", "+00:00"))
-        except Exception:
-            return datetime.max.replace(tzinfo=timezone.utc)
+    filtered.sort(key=lambda x: x[0])
 
-    events.sort(key=_sort_key)
+    # Selezione 5/5/5 senza duplicati (id univoco)
+    picked_ids = set()
+    slots = {"mattina": [], "pomeriggio": [], "sera": []}
+
+    for dt_rome, ev in filtered:
+        if ev["id"] in picked_ids:
+            continue
+        s = ev["slot"]
+        if len(slots[s]) >= PER_SLOT:
+            continue
+        slots[s].append(ev)
+        picked_ids.add(ev["id"])
+
+        if all(len(slots[k]) >= PER_SLOT for k in slots):
+            break
+
+    # Se una fascia ha meno di 5 (manca copertura), riempiamo con altri eventi restanti (sempre reali),
+    # mantenendo comunque 15 totali se possibile.
+    if not all(len(slots[k]) >= PER_SLOT for k in slots):
+        for dt_rome, ev in filtered:
+            if ev["id"] in picked_ids:
+                continue
+
+            # trova fascia più “vuota”
+            target = min(slots.keys(), key=lambda k: len(slots[k]))
+            if len(slots[target]) >= PER_SLOT:
+                break
+
+            # forziamo lo slot target solo per riempire la schermata (evento sempre reale)
+            ev2 = dict(ev)
+            ev2["slot"] = target
+            slots[target].append(ev2)
+            picked_ids.add(ev2["id"])
+
+            if all(len(slots[k]) >= PER_SLOT for k in slots):
+                break
+
+    # Output finale: concateno in ordine mattina->pomeriggio->sera
+    out_events = slots["mattina"] + slots["pomeriggio"] + slots["sera"]
 
     out = {
-        "updated_at": datetime.now(TZ).strftime("%Y-%m-%d %H:%M:%S"),
-        "timezone": TZ_NAME,
-        "range_hours": LOOKAHEAD_HOURS,
-        "competitions": [c[0] for c in PRIMARY_COMPETITIONS],
-        "events": events,
+        "updated_at": datetime.now(TZ).strftime("%Y-%m-%d %H:%M"),
+        "timezone": "Europe/Rome",
+        "counts": {
+            "mattina": len(slots["mattina"]),
+            "pomeriggio": len(slots["pomeriggio"]),
+            "sera": len(slots["sera"]),
+            "total": len(out_events),
+        },
+        "events": out_events,
     }
 
-    # Scrivi JSON sempre valido
+    # Scrive JSON valido SEMPRE
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
-    print(f"[OK] Scritto {OUT_FILE} con {len(events)} eventi reali (primari).")
+    print(f"Wrote {OUT_FILE} with {len(out_events)} events.")
+
 
 if __name__ == "__main__":
     main()
