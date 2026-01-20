@@ -1,12 +1,9 @@
 import os
 import json
-import math
-import random
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 import requests
-
 
 # =========================
 # CONFIG
@@ -24,11 +21,9 @@ EVENING_END = 24     # escluso
 PER_SLOT = 5  # 5 mattina + 5 pomeriggio + 5 sera
 
 # Competizioni principali europee (Football-Data codes)
-# (Se il tuo piano non le include tutte, verranno semplicemente ignorate)
 ALLOW_COMP_CODES = {
     "CL",   # Champions League
     "EL",   # Europa League
-    "EC",   # Conference League (in alcuni piani può variare, se non esce non succede nulla)
     "PL",   # Premier League
     "PD",   # LaLiga
     "SA",   # Serie A
@@ -38,9 +33,7 @@ ALLOW_COMP_CODES = {
     "PPL",  # Primeira Liga
 }
 
-# Quanto avanti cercare partite
 LOOKAHEAD_DAYS = 2
-
 OUT_FILE = "events.json"
 
 
@@ -51,7 +44,7 @@ def _env_token() -> str:
     return t
 
 
-def _football_data_get(url: str, token: str, params: dict | None = None) -> dict:
+def _football_data_get(url: str, token: str, params=None) -> dict:
     headers = {"X-Auth-Token": token}
     r = requests.get(url, headers=headers, params=params, timeout=30)
     r.raise_for_status()
@@ -59,14 +52,12 @@ def _football_data_get(url: str, token: str, params: dict | None = None) -> dict
 
 
 def _format_start(dt_rome: datetime) -> str:
-    # Esempio: "Oggi 20:45" oppure "Dom 14:00"
     now = datetime.now(TZ)
     if dt_rome.date() == now.date():
         day = "Oggi"
     elif dt_rome.date() == (now.date() + timedelta(days=1)):
         day = "Domani"
     else:
-        # Giorni abbreviati in IT
         wk = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"]
         day = wk[dt_rome.weekday()]
     return f"{day} {dt_rome.strftime('%H:%M')}"
@@ -83,50 +74,6 @@ def _slot_of(dt_rome: datetime) -> str | None:
     return None
 
 
-def _stable_rng(seed_value: int) -> random.Random:
-    rng = random.Random()
-    rng.seed(seed_value)
-    return rng
-
-
-def _mk_odds(match_id: int, market_type: str) -> float:
-    """
-    Quote "verosimili" (non quote reali del book).
-    Stabili: a parità di match_id non cambiano a ogni refresh.
-    """
-    rng = _stable_rng(match_id * 97 + sum(ord(c) for c in market_type))
-
-    # range tipici
-    if market_type == "over15":
-        v = rng.uniform(1.35, 1.70)
-    elif market_type == "over25":
-        v = rng.uniform(1.55, 2.05)
-    elif market_type == "goal_si":
-        v = rng.uniform(1.55, 2.00)
-    elif market_type == "1x":
-        v = rng.uniform(1.25, 1.70)
-    elif market_type == "dnb1":
-        v = rng.uniform(1.40, 2.05)
-    else:
-        v = rng.uniform(1.50, 2.10)
-
-    # arrotonda a 2 decimali
-    return float(f"{v:.2f}")
-
-
-def _build_markets(match_id: int) -> list[dict]:
-    # Misti (semplici e “da banco”)
-    return [
-        {"label": "Over 1.5", "odd": _mk_odds(match_id, "over15")},
-        {"label": "1X", "odd": _mk_odds(match_id, "1x")},
-        {"label": "Goal/NoGoal Sì", "odd": _mk_odds(match_id, "goal_si")},
-    ]
-
-
-def _iso_date(d: datetime) -> str:
-    return d.strftime("%Y-%m-%d")
-
-
 def main():
     token = _env_token()
 
@@ -134,20 +81,19 @@ def main():
     date_from = today
     date_to = today + timedelta(days=LOOKAHEAD_DAYS)
 
-    # endpoint generale match (più semplice, poi filtriamo per competizione)
     url = "https://api.football-data.org/v4/matches"
     data = _football_data_get(
         url,
         token,
         params={
-            "dateFrom": _iso_date(datetime.combine(date_from, datetime.min.time())),
-            "dateTo": _iso_date(datetime.combine(date_to, datetime.min.time())),
+            "dateFrom": date_from.strftime("%Y-%m-%d"),
+            "dateTo": date_to.strftime("%Y-%m-%d"),
         },
     )
 
     matches = data.get("matches", []) or []
 
-    # Filtra: solo SCHEDULED + competizioni in allowlist
+    # Filtra: solo SCHEDULED + competizioni allowlist + dentro fasce
     filtered = []
     for m in matches:
         if m.get("status") != "SCHEDULED":
@@ -162,7 +108,6 @@ def main():
         if not utc_dt:
             continue
 
-        # parse ISO: "2026-01-17T20:45:00Z"
         try:
             dt_utc = datetime.fromisoformat(utc_dt.replace("Z", "+00:00"))
         except Exception:
@@ -171,17 +116,16 @@ def main():
         dt_rome = dt_utc.astimezone(TZ)
         slot = _slot_of(dt_rome)
         if not slot:
-            # fuori fasce (es. notte) → ignoriamo
             continue
 
-        home = (m.get("homeTeam") or {})
-        away = (m.get("awayTeam") or {})
+        home = m.get("homeTeam") or {}
+        away = m.get("awayTeam") or {}
 
-        match_id = int(m.get("id", 0)) or int(abs(hash(f"{home.get('name')}|{away.get('name')}|{utc_dt}")) % 10**9)
+        match_id = int(m.get("id", 0)) or 0
 
         event = {
             "id": match_id,
-            "slot": slot,  # "mattina" / "pomeriggio" / "sera"
+            "slot": slot,
             "league": comp.get("name") or comp_code or "Calcio",
             "league_code": comp_code,
             "country": (comp.get("area") or {}).get("name", ""),
@@ -195,19 +139,19 @@ def main():
             "away_crest": away.get("crest") or "",
             "start_iso": dt_rome.isoformat(),
             "start": _format_start(dt_rome),
-            "markets": _build_markets(match_id),
+            # IMPORTANTISSIMO: qui NON inventiamo quote.
+            "markets": [],
         }
 
         filtered.append((dt_rome, event))
 
-    # Ordina per orario
     filtered.sort(key=lambda x: x[0])
 
-    # Selezione 5/5/5 senza duplicati (id univoco)
+    # Selezione 5/5/5 senza duplicati
     picked_ids = set()
     slots = {"mattina": [], "pomeriggio": [], "sera": []}
 
-    for dt_rome, ev in filtered:
+    for _, ev in filtered:
         if ev["id"] in picked_ids:
             continue
         s = ev["slot"]
@@ -219,28 +163,21 @@ def main():
         if all(len(slots[k]) >= PER_SLOT for k in slots):
             break
 
-    # Se una fascia ha meno di 5 (manca copertura), riempiamo con altri eventi restanti (sempre reali),
-    # mantenendo comunque 15 totali se possibile.
+    # Riempimento se mancano eventi in una fascia (sempre eventi REALI)
     if not all(len(slots[k]) >= PER_SLOT for k in slots):
-        for dt_rome, ev in filtered:
+        for _, ev in filtered:
             if ev["id"] in picked_ids:
                 continue
-
-            # trova fascia più “vuota”
             target = min(slots.keys(), key=lambda k: len(slots[k]))
             if len(slots[target]) >= PER_SLOT:
                 break
-
-            # forziamo lo slot target solo per riempire la schermata (evento sempre reale)
             ev2 = dict(ev)
             ev2["slot"] = target
             slots[target].append(ev2)
             picked_ids.add(ev2["id"])
-
             if all(len(slots[k]) >= PER_SLOT for k in slots):
                 break
 
-    # Output finale: concateno in ordine mattina->pomeriggio->sera
     out_events = slots["mattina"] + slots["pomeriggio"] + slots["sera"]
 
     out = {
@@ -255,7 +192,6 @@ def main():
         "events": out_events,
     }
 
-    # Scrive JSON valido SEMPRE
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
