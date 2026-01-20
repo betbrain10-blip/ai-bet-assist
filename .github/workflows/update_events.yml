@@ -3,18 +3,13 @@ name: Auto update events
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"   # ogni 30 minuti
-
-permissions:
-  contents: write
-
-concurrency:
-  group: auto-update-events
-  cancel-in-progress: true
+    - cron: "0 */2 * * *"   # ogni 2 ore
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
