@@ -89,6 +89,8 @@ def _slot_of(dt_rome: datetime) -> str | None:
         return "mattina"
     if AFTERNOON_START <= h < AFTERNOON_END:
         return "pomeriggio"
+    if EVENING_START <= h < AFTERNOON_END:
+        return "pomeriggio"
     if EVENING_START <= h < EVENING_END:
         return "sera"
     return None
@@ -112,11 +114,8 @@ def _clamp(x: float, lo: float, hi: float) -> float:
 
 
 def _prob_match_outcomes(lam_home: float, lam_away: float, max_goals: int = 10) -> tuple[float, float, float]:
-    """
-    Ritorna (P_home_win, P_draw, P_away_win) via enumerazione Poisson fino a max_goals.
-    """
-    ph = [ _poisson_pmf(i, lam_home) for i in range(max_goals + 1) ]
-    pa = [ _poisson_pmf(i, lam_away) for i in range(max_goals + 1) ]
+    ph = [_poisson_pmf(i, lam_home) for i in range(max_goals + 1)]
+    pa = [_poisson_pmf(i, lam_away) for i in range(max_goals + 1)]
 
     p_hw = 0.0
     p_d = 0.0
@@ -132,21 +131,16 @@ def _prob_match_outcomes(lam_home: float, lam_away: float, max_goals: int = 10) 
             else:
                 p_aw += p
 
-    # massa persa oltre max_goals: normalizziamo leggermente
     tot = p_hw + p_d + p_aw
     if tot > 0:
         p_hw /= tot
-        p_d  /= tot
+        p_d /= tot
         p_aw /= tot
 
     return p_hw, p_d, p_aw
 
 
 def _odd_from_prob(p: float, margin: float = BOOK_MARGIN) -> float:
-    """
-    Trasforma prob in quota “book” con margine.
-    quota = 1 / (p * (1 - margin))
-    """
     p = _clamp(p, 1e-6, 0.999999)
     o = 1.0 / (p * (1.0 - margin))
     o = _clamp(o, MIN_ODD, MAX_ODD)
@@ -154,13 +148,9 @@ def _odd_from_prob(p: float, margin: float = BOOK_MARGIN) -> float:
 
 
 # =========================
-# TEAM FORM (ultime partite finite)
+# TEAM FORM
 # =========================
 def _team_form_stats(team_id: int, token: str, cache: dict) -> dict:
-    """
-    Ritorna medie gol fatti/subiti nelle ultime FORM_MATCHES partite finite.
-    Cache per evitare troppe chiamate.
-    """
     if team_id in cache:
         return cache[team_id]
 
@@ -168,7 +158,7 @@ def _team_form_stats(team_id: int, token: str, cache: dict) -> dict:
         data = _fd_get(
             f"/teams/{team_id}/matches",
             token,
-            params={"status": "FINISHED", "limit": FORM_MATCHES}
+            params={"status": "FINISHED", "limit": FORM_MATCHES},
         )
         matches = data.get("matches") or []
     except Exception:
@@ -201,7 +191,6 @@ def _team_form_stats(team_id: int, token: str, cache: dict) -> dict:
             n += 1
 
     if n <= 0:
-        # fallback neutro
         res = {"gf": 1.25, "ga": 1.25, "n": 0}
     else:
         res = {"gf": gf / n, "ga": ga / n, "n": n}
@@ -211,29 +200,21 @@ def _team_form_stats(team_id: int, token: str, cache: dict) -> dict:
 
 
 def _estimate_lambdas(home_id: int, away_id: int, token: str, cache: dict) -> tuple[float, float]:
-    """
-    Stima gol attesi (lambda) da forma recente.
-    Aggiunge piccolo vantaggio casa.
-    """
     hs = _team_form_stats(home_id, token, cache)
     as_ = _team_form_stats(away_id, token, cache)
 
-    # Attacco vs difesa (media semplice)
     lam_home = (hs["gf"] + as_["ga"]) / 2.0
     lam_away = (as_["gf"] + hs["ga"]) / 2.0
 
-    # Home advantage leggero
-    lam_home *= 1.08
+    lam_home *= 1.08  # home advantage
 
-    # clamp ragionevoli
     lam_home = _clamp(lam_home, 0.55, 2.60)
     lam_away = _clamp(lam_away, 0.55, 2.40)
-
     return lam_home, lam_away
 
 
 # =========================
-# FALLBACK STABILE (se manca forma)
+# FALLBACK STABILE
 # =========================
 def _stable_rng(seed_value: int) -> random.Random:
     rng = random.Random()
@@ -243,51 +224,50 @@ def _stable_rng(seed_value: int) -> random.Random:
 
 def _fallback_odds(match_id: int, market_type: str) -> float:
     rng = _stable_rng(match_id * 97 + sum(ord(c) for c in market_type))
-    if market_type == "over15":
-        v = rng.uniform(1.35, 1.75)
+    if market_type == "over25":
+        v = rng.uniform(1.55, 2.30)
     elif market_type == "1x":
-        v = rng.uniform(1.25, 1.80)
+        v = rng.uniform(1.25, 1.90)
     elif market_type == "btts":
-        v = rng.uniform(1.55, 2.10)
+        v = rng.uniform(1.55, 2.20)
     else:
-        v = rng.uniform(1.50, 2.20)
+        v = rng.uniform(1.50, 2.40)
     return float(f"{v:.2f}")
 
 
 def _build_markets_realistic(match_id: int, lam_home: float | None, lam_away: float | None) -> list[dict]:
     """
     Mercati:
-    - Over 1.5 (totale)
+    - Over 2.5 (totale)
     - 1X (home win o draw)
     - Goal/NoGoal Sì (BTTS)
     """
     if lam_home is None or lam_away is None:
         return [
-            {"label": "Over 1.5", "odd": _fallback_odds(match_id, "over15")},
+            {"label": "Over 2.5", "odd": _fallback_odds(match_id, "over25")},
             {"label": "1X", "odd": _fallback_odds(match_id, "1x")},
             {"label": "Goal/NoGoal Sì", "odd": _fallback_odds(match_id, "btts")},
         ]
 
-    # Totale gol ~ Poisson(lam_home + lam_away)
     lam_total = lam_home + lam_away
 
-    # P(Over 1.5) = 1 - P(0) - P(1)
+    # P(Over 2.5) = 1 - P(0) - P(1) - P(2)
     p0 = _poisson_pmf(0, lam_total)
     p1 = _poisson_pmf(1, lam_total)
-    p_over15 = _clamp(1.0 - (p0 + p1), 0.01, 0.99)
+    p2 = _poisson_pmf(2, lam_total)
+    p_over25 = _clamp(1.0 - (p0 + p1 + p2), 0.01, 0.99)
 
-    # BTTS (Goal Sì) = 1 - P(H=0) - P(A=0) + P(H=0,A=0)
+    # BTTS
     p_h0 = _poisson_pmf(0, lam_home)
     p_a0 = _poisson_pmf(0, lam_away)
-    p_both0 = p_h0 * p_a0
-    p_btts = _clamp(1.0 - p_h0 - p_a0 + p_both0, 0.01, 0.99)
+    p_btts = _clamp(1.0 - p_h0 - p_a0 + (p_h0 * p_a0), 0.01, 0.99)
 
-    # 1X = P(home win) + P(draw)
+    # 1X
     p_hw, p_d, _ = _prob_match_outcomes(lam_home, lam_away, max_goals=10)
     p_1x = _clamp(p_hw + p_d, 0.01, 0.99)
 
     return [
-        {"label": "Over 1.5", "odd": _odd_from_prob(p_over15)},
+        {"label": "Over 2.5", "odd": _odd_from_prob(p_over25)},
         {"label": "1X", "odd": _odd_from_prob(p_1x)},
         {"label": "Goal/NoGoal Sì", "odd": _odd_from_prob(p_btts)},
     ]
@@ -302,7 +282,6 @@ def main():
     date_from = today
     date_to = today + timedelta(days=LOOKAHEAD_DAYS)
 
-    # 1) Prende match in range
     data = _fd_get(
         "/matches",
         token,
@@ -313,10 +292,9 @@ def main():
     )
     matches = data.get("matches", []) or []
 
-    # cache per forma team
     form_cache: dict[int, dict] = {}
-
     filtered = []
+
     for m in matches:
         if m.get("status") != "SCHEDULED":
             continue
@@ -347,7 +325,6 @@ def main():
 
         match_id = int(m.get("id", 0)) or int(abs(hash(f"{home.get('name')}|{away.get('name')}|{utc_dt}")) % 10**9)
 
-        # 2) Stima lambdas da forma recente
         lam_home = None
         lam_away = None
         if isinstance(home_id, int) and isinstance(away_id, int):
@@ -377,10 +354,8 @@ def main():
 
         filtered.append((dt_rome, event))
 
-    # Ordina per orario
     filtered.sort(key=lambda x: x[0])
 
-    # 3) Pick 5/5/5
     picked_ids = set()
     slots = {"mattina": [], "pomeriggio": [], "sera": []}
 
@@ -395,7 +370,6 @@ def main():
         if all(len(slots[k]) >= PER_SLOT for k in slots):
             break
 
-    # Se qualche fascia è vuota, riempi “forzando” lo slot (evento reale)
     if not all(len(slots[k]) >= PER_SLOT for k in slots):
         for _, ev in filtered:
             if ev["id"] in picked_ids:
