@@ -3,30 +3,25 @@ name: Auto update events
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/20 * * * *"
-
-concurrency:
-  group: auto-update-events
-  cancel-in-progress: true
+    - cron: "*/30 * * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install deps
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
@@ -37,28 +32,10 @@ jobs:
         run: |
           python generate_events.py
 
-      - name: Commit & push if changed (robust)
+      - name: Commit & push if changed
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-
           git add events.json
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-
-          # prova 3 volte: se qualcuno ha pushato prima di noi, facciamo fetch+rebase e riproviamo
-          for i in 1 2 3; do
-            echo "Attempt $i/3"
-            git fetch origin main
-            git rebase origin/main || { git rebase --abort || true; git reset --hard origin/main; }
-            git add events.json
-            git commit -m "Auto update events" || true
-            git push && exit 0
-            echo "Push failed, retrying..."
-            sleep 2
-          done
-
-          echo "Push failed after 3 attempts"
-          exit 1
+          git diff --cached --quiet || git commit -m "Auto update events"
+          git push
