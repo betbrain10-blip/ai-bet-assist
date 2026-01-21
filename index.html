@@ -8,6 +8,8 @@
     :root{
       --bg1:#2b1457;
       --bg2:#0c2b36;
+      --glass: rgba(20,22,30,.55);
+      --glass2: rgba(20,22,30,.35);
       --stroke: rgba(255,255,255,.10);
       --text: rgba(255,255,255,.92);
       --muted: rgba(255,255,255,.68);
@@ -54,8 +56,6 @@
       background: rgba(10,12,18,.35);
       border-bottom:1px solid var(--stroke);
       backdrop-filter: blur(10px);
-      gap:14px;
-      flex-wrap:wrap;
     }
     .brand{
       display:flex;align-items:center;gap:12px;min-width:260px;
@@ -63,17 +63,16 @@
     .logoBadge{
       width:54px;height:38px;border-radius:10px;
       border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.55);
+      background: rgba(0,0,0,.45);
       display:flex;align-items:center;justify-content:center;
       box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
       overflow:hidden;
     }
     .logoText{
-      font-weight:1000; letter-spacing:.4px;
+      font-weight:900; letter-spacing:.4px;
       font-size:14px;
-      color:#ff2a2a;
+      color:#ff2a2a; /* SOLO ROSSO come volevi */
       text-transform:lowercase;
-      user-select:none;
     }
     .brandTitle{
       display:flex;flex-direction:column;gap:2px;
@@ -114,7 +113,6 @@
       font-size:14px;
       display:flex;align-items:center;justify-content:space-between;
       color:rgba(255,255,255,.88);
-      gap:10px;
     }
 
     .toolbar{
@@ -127,10 +125,9 @@
       color:rgba(255,255,255,.92);
       padding:10px 12px;
       border-radius:12px;
-      font-weight:800;
+      font-weight:700;
       cursor:pointer;
       display:inline-flex;align-items:center;gap:8px;
-      user-select:none;
     }
     .btnPrimary{
       background: linear-gradient(180deg, rgba(255,140,0,.95), rgba(255,105,0,.85));
@@ -138,16 +135,14 @@
       color:#1b0f05;
       box-shadow: 0 18px 45px rgba(255,120,0,.25);
     }
-    .btnGhost{
-      background: rgba(0,0,0,.15);
-    }
+    .btnGhost{ background: rgba(0,0,0,.15); }
+
     .pill{
       font-size:12px;color:var(--muted);
       padding:6px 10px;border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(0,0,0,.18);
       display:inline-flex;gap:8px;align-items:center;
-      white-space:nowrap;
     }
 
     .event{
@@ -158,62 +153,33 @@
       margin-bottom:12px;
     }
     .eventHead{
-      display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap;
+      display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
       margin-bottom:10px;
     }
-
     .leagueLine{
-      display:flex;align-items:center;gap:10px;color:var(--muted);font-size:12px;
-      flex-wrap:wrap;
+      display:flex;align-items:center;gap:10px;color:var(--muted);font-size:12px
     }
     .flag{
       width:22px;height:22px;border-radius:999px;
       display:grid;place-items:center;
       background: rgba(255,255,255,.08);
       border:1px solid rgba(255,255,255,.10);
-      user-select:none;
     }
-    .compLogo{
-      width:18px;height:18px;border-radius:6px;
-      background: rgba(0,0,0,.25);
-      border:1px solid rgba(255,255,255,.10);
-      overflow:hidden;
-      display:grid;place-items:center;
-    }
-    .compLogo img{
-      width:100%;height:100%;
-      object-fit:contain;
-      display:block;
-      filter: drop-shadow(0 6px 12px rgba(0,0,0,.35));
-    }
-
     .teams{
-      display:flex;align-items:center;gap:10px;font-weight:1000;
-      margin-top:8px;
-      flex-wrap:wrap;
+      display:flex;align-items:center;gap:10px;font-weight:900
     }
-    .teamLogo{
+    .teamBadge{
       width:28px;height:28px;border-radius:10px;
-      background: rgba(0,0,0,.25);
-      border:1px solid rgba(255,255,255,.12);
       display:grid;place-items:center;
-      overflow:hidden;
-    }
-    .teamLogo img{
-      width:100%;height:100%;
-      object-fit:contain;
-      display:block;
-      filter: drop-shadow(0 6px 12px rgba(0,0,0,.35));
-    }
-    .teamFallback{
-      font-weight:1000;
-      color:rgba(255,255,255,.92);
+      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      font-weight:900;
+      color: rgba(255,255,255,.92);
       font-size:12px;
     }
     .meta{
       font-size:12px;color:var(--muted);
       display:flex;gap:10px;align-items:center;
-      white-space:nowrap;
     }
 
     .markets{
@@ -237,20 +203,28 @@
     .mTop{
       display:flex;align-items:flex-start;justify-content:space-between;gap:10px;
     }
-    .mLabel{font-weight:900;font-size:12px}
+    .mLabel{font-weight:800;font-size:12px}
     .mHint{font-size:11px;color:var(--muted)}
     .mRow{
       display:flex;align-items:center;justify-content:space-between;gap:10px;
     }
+
     .oddBox{
-      width:92px;
+      width:120px;
       text-align:center;
       padding:10px 10px;
       border-radius:14px;
       border:1px solid rgba(255,255,255,.12);
       background: rgba(0,0,0,.18);
-      font-weight:1000;
+      font-weight:900;
     }
+    .oddHint{
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.2px;
+      opacity:.95;
+    }
+
     .addBtn{
       flex:1;
       padding:10px 10px;
@@ -258,7 +232,7 @@
       border:1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.06);
       color: rgba(255,255,255,.92);
-      font-weight:1000;
+      font-weight:900;
       cursor:pointer;
       display:flex;align-items:center;justify-content:center;gap:8px;
       white-space:nowrap;
@@ -275,7 +249,7 @@
       background: rgba(0,0,0,.18);
       color: rgba(255,255,255,.92);
       outline:none;
-      font-weight:800;
+      font-weight:700;
     }
     .kpi{
       display:grid;grid-template-columns: repeat(3, 1fr);
@@ -290,6 +264,7 @@
       font-size:12px;
     }
     .kpi .box b{display:block;color:rgba(255,255,255,.92);font-size:14px;margin-top:6px}
+
     .printBtn{
       width:100%;
       margin-top:12px;
@@ -320,11 +295,11 @@
       <div class="topbar">
         <div class="brand">
           <div class="logoBadge" aria-label="Vincitù">
-            <div class="logoText">vin<span style="color:#ffb000">ci</span>tù</div>
+            <div class="logoText">vincitù</div>
           </div>
           <div class="brandTitle">
             <b>Vincitù • IA Portal</b>
-            <span>Eventi reali da Football-Data • fasce: mattina • pomeriggio • sera</span>
+            <span>Eventi misti (top + minori) • fasce: mattina • pomeriggio • sera</span>
           </div>
         </div>
 
@@ -337,7 +312,7 @@
 
       <div class="grid">
         <div class="card left">
-          <h3>⚡ Eventi (IA) <span class="pill">Quote precompilate (poi correggi al banco)</span></h3>
+          <h3>⚡ Eventi (IA) <span class="pill">Quote indicative (verifica al banco)</span></h3>
 
           <div class="toolbar">
             <button class="btn btnPrimary" id="btnNew">🧠 Nuovi eventi</button>
@@ -373,11 +348,15 @@
             <div class="box">Vincita pot.<b id="kWin">—</b></div>
           </div>
 
+          <div id="pickList" class="note" style="margin-top:10px;line-height:1.45"></div>
+
           <button class="printBtn" id="btnPrint">🖨️ Stampa schedina</button>
 
           <div class="note">
-            Se al banco vedi quote diverse, sostituiscile prima di confermare. In stampa usiamo la tua selezione.
+            Quote indicative: verifica sempre al banco prima di confermare.
           </div>
+
+          <div class="note" id="funLine" style="margin-top:12px;font-size:12px;color:rgba(255,255,255,.78)"></div>
         </div>
       </div>
     </div>
@@ -386,33 +365,18 @@
 <script>
   const qs = new URLSearchParams(location.search);
   const center = (qs.get("c") || "VINC001").toUpperCase();
-
-  // Il tuo JSON usa: mattina / pomeriggio / sera
-  // L'URL può usare sia: slot=mattina oppure slot=morning ecc.
-  let slot = (qs.get("slot") || "mattina").toLowerCase();
+  let slot = (qs.get("slot") || "morning").toLowerCase(); // morning | afternoon | evening
   let seed = parseInt(qs.get("v") || (Date.now() % 100000), 10);
 
-  const toITSlot = (s)=>{
-    s = (s||"").toLowerCase();
-    if (s === "morning") return "mattina";
-    if (s === "afternoon") return "pomeriggio";
-    if (s === "evening") return "sera";
-    if (s === "mattina" || s === "pomeriggio" || s === "sera") return s;
-    return "mattina";
-  };
-  slot = toITSlot(slot);
-
-  const slotLabel = (s)=> s==="mattina" ? "Mattina" : s==="pomeriggio" ? "Pomeriggio" : "Sera";
-
+  const slotLabel = (s)=> s==="morning" ? "Mattina" : s==="afternoon" ? "Pomeriggio" : "Sera";
   const flagEmoji = (cc)=>{
-    const map = { IT:"🇮🇹", GB:"🏴", EN:"🏴", ES:"🇪🇸", FR:"🇫🇷", DE:"🇩🇪", NL:"🇳🇱", PT:"🇵🇹", SE:"🇸🇪", TR:"🇹🇷", PL:"🇵🇱", GR:"🇬🇷", CH:"🇨🇭", AT:"🇦🇹", BE:"🇧🇪", DK:"🇩🇰", NO:"🇳🇴", RO:"🇷🇴", CZ:"🇨🇿", HR:"🇭🇷", RS:"🇷🇸", UA:"🇺🇦" };
+    const map = { IT:"🇮🇹", EN:"🏴", ES:"🇪🇸", FR:"🇫🇷", DE:"🇩🇪", NL:"🇳🇱", PT:"🇵🇹", SE:"🇸🇪", TR:"🇹🇷", PL:"🇵🇱", GR:"🇬🇷", CH:"🇨🇭" };
     return map[cc] || "🌍";
   };
-
   const code2 = (name)=>{
     const n = (name||"").replace(/[^A-Za-zÀ-ž ]/g,"").trim().split(/\s+/);
     const a = (n[0]||"X")[0];
-    const b = (n.length>1 ? n[n.length-1][0] : ((n[0]||"Y")[1] || "Y"));
+    const b = (n.length>1 ? n[n.length-1][0] : (n[0]||"Y")[1] || "Y");
     return (a+b).toUpperCase();
   };
 
@@ -431,38 +395,52 @@
     }
   }
 
-  let selected = []; // {match, market, odd}
+  // Selezioni scelti
+  let selected = []; // {match, market}
+
+  // Frasi divertenti/motivazionali
+  const funPhrases = [
+    "🎯 Oggi si gioca con testa, non con fretta.",
+    "🔥 Un passo alla volta: la schedina perfetta nasce così.",
+    "😄 Qui si punta al divertimento: verifica al banco e via!",
+    "🧠 Strategia > fortuna. Sempre.",
+    "🍀 Non inseguire: scegli bene e respira.",
+    "⚡ Pronto a provarci? Ma con responsabilità.",
+    "🏆 Piccole scelte, grandi emozioni.",
+    "🎮 Modalità gioco attiva: scegli, verifica, stampa!"
+  ];
+
+  function pickPhrase(){
+    const i = Math.abs(seed) % funPhrases.length;
+    return funPhrases[i];
+  }
 
   function updateKPI(){
     const stake = parseFloat(document.getElementById("stake").value || "0");
-    const totalOdd = selected.reduce((acc,x)=>acc*(x.odd||1), 1);
+
     document.getElementById("kSel").textContent = String(selected.length);
-    document.getElementById("kOdd").textContent = selected.length ? totalOdd.toFixed(2) : "—";
-    document.getElementById("kWin").textContent = selected.length ? (stake*totalOdd).toFixed(2) : "—";
-  }
 
-  function addPick(match, marketLabel, odd){
-    selected.push({ match, market: marketLabel, odd });
-    updateKPI();
-  }
+    // NON mostriamo quota totale / vincita perché non abbiamo quote reali
+    document.getElementById("kOdd").textContent = selected.length ? "— (al banco)" : "—";
+    document.getElementById("kWin").textContent = selected.length ? "— (al banco)" : "—";
 
-  function imgSafe(url){
-    // evita valori null/undefined
-    return (typeof url === "string" && url.trim().length) ? url.trim() : "";
-  }
+    const list = document.getElementById("pickList");
+    if(!list) return;
 
-  function teamLogoHTML(url, fallbackText){
-    const u = imgSafe(url);
-    if(!u){
-      return `<span class="teamFallback">${fallbackText}</span>`;
+    if(!selected.length){
+      list.innerHTML = "Nessuna selezione. Aggiungi una giocata e poi verifica quota al banco.";
+      return;
     }
-    return `<img src="${u}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.innerHTML='<span class=&quot;teamFallback&quot;>${fallbackText}</span>';">`;
+
+    list.innerHTML =
+      "<b>Selezioni scelte:</b><br>" +
+      selected.map((x)=> `• ${x.match} — <b>${x.market}</b>`).join("<br>") +
+      `<br><br><b>Stake:</b> ${stake.toFixed(2)}€ <span style="opacity:.75">(quota/vincita si calcolano al banco)</span>`;
   }
 
-  function compLogoHTML(url){
-    const u = imgSafe(url);
-    if(!u) return `<span style="font-size:11px;opacity:.8">🏆</span>`;
-    return `<img src="${u}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove(); this.parentElement.innerHTML='🏆';">`;
+  function addPick(match, marketLabel){
+    selected.push({ match, market: marketLabel });
+    updateKPI();
   }
 
   function render(events, updatedAt){
@@ -471,15 +449,9 @@
 
     elEvents.innerHTML = "";
     events.forEach((ev, idx)=>{
-      // country_code è quello giusto per le bandiere
-      const cc = (ev.country_code || "").toUpperCase();
+      const cc = (ev.country || "").toUpperCase();
       const flag = flagEmoji(cc);
-
-      const home = ev.home || "Home";
-      const away = ev.away || "Away";
-
-      const homeFB = code2(home);
-      const awayFB = code2(away);
+      const home = ev.home, away = ev.away;
 
       const node = document.createElement("div");
       node.className = "event";
@@ -488,18 +460,16 @@
           <div>
             <div class="leagueLine">
               <span class="flag">${flag}</span>
-              <span class="compLogo">${compLogoHTML(ev.competition_emblem)}</span>
               <b>${ev.league || "Campionato"}</b>
               <span style="opacity:.8">•</span>
               <span>${ev.start || ""}</span>
               <span style="opacity:.8">•</span>
-              <span style="color:rgba(255,200,120,.95);font-weight:1000">${slotLabel(ev.slot || slot)}</span>
+              <span style="color:rgba(255,200,120,.95);font-weight:900">${slotLabel(ev.slot || slot)}</span>
             </div>
-
-            <div class="teams">
-              <span class="teamLogo">${teamLogoHTML(ev.home_crest, homeFB)}</span>
+            <div class="teams" style="margin-top:8px">
+              <span class="teamBadge">${code2(home)}</span>
               <span>${home} - ${away}</span>
-              <span class="teamLogo">${teamLogoHTML(ev.away_crest, awayFB)}</span>
+              <span class="teamBadge">${code2(away)}</span>
             </div>
           </div>
           <div class="meta">Evento ${idx+1}/5</div>
@@ -509,25 +479,28 @@
       `;
 
       const mk = node.querySelector(".markets");
+
+      // Prendiamo sempre max 3 mercati
       (ev.markets || []).slice(0,3).forEach(m=>{
-        const odd = Number(m.odd || 1);
         const mNode = document.createElement("div");
         mNode.className = "market";
         mNode.innerHTML = `
           <div class="mTop">
             <div>
               <div class="mLabel">${m.label || "Mercato"}</div>
-              <div class="mHint">Quota precompilata (modificabile)</div>
+              <div class="mHint">Quota indicativa • verifica al banco</div>
             </div>
           </div>
           <div class="mRow">
-            <div class="oddBox">${odd.toFixed(2)}</div>
-            <button class="addBtn" type="button">➕ Aggiungi</button>
+            <div class="oddBox oddHint">Verifica al banco</div>
+            <button class="addBtn">➕ Aggiungi</button>
           </div>
         `;
+
         mNode.querySelector(".addBtn").addEventListener("click", ()=>{
-          addPick(`${home} - ${away}`, m.label, odd);
+          addPick(`${home} - ${away}`, m.label || "Mercato");
         });
+
         mk.appendChild(mNode);
       });
 
@@ -535,38 +508,24 @@
     });
   }
 
-  function uniqueKey(ev){
-    // usa prima "uniq", poi "id", poi fallback
-    if(ev && typeof ev.uniq === "string" && ev.uniq.trim()) return ev.uniq.trim();
-    if(ev && (typeof ev.id === "number" || typeof ev.id === "string")) return "id:" + String(ev.id);
-    return `${ev.home}__${ev.away}__${ev.league}__${ev.start_iso || ev.start || ""}`;
-  }
-
   async function load(){
     elErr.style.display = "none";
     try{
-      // cache-bust
-      const res = await fetch("events.json?ts=" + Date.now(), { cache: "no-store" });
+      const res = await fetch("events.json?ts=" + Date.now());
       const txt = await res.text();
 
       let data;
       try{
         data = JSON.parse(txt);
       }catch(e){
-        throw new Error("events.json non è JSON valido. Apri events.json e verifica che non ci siano caratteri extra o testo fuori dal JSON.");
+        throw new Error("events.json non è JSON valido. Incolla un file JSON completo (senza commenti).");
       }
 
       const all = Array.isArray(data.events) ? data.events : [];
-      if(!all.length){
-        render([], data.updated_at);
-        throw new Error("events.json è valido ma non contiene eventi (events=[]). Controlla che GitHub Actions stia estraendo le partite.");
-      }
-
-      // slot in JSON è già: mattina/pomeriggio/sera
       const filtered = all.filter(x => (x.slot||"").toLowerCase() === slot);
+
       const base = filtered.length ? filtered : all;
 
-      // selezione 5 unici, random ma stabile per seed
       const rnd = mulberry32(seed);
       const used = new Set();
       const out = [];
@@ -579,18 +538,17 @@
 
       for(const i of idxs){
         const ev = base[i];
-        const key = uniqueKey(ev);
+        const key = `${ev.home}__${ev.away}__${ev.league}`;
         if(used.has(key)) continue;
         used.add(key);
-
-        // se stiamo mostrando fascia vera, forza ev.slot corretto
-        const ev2 = Object.assign({}, ev, { slot: slot });
-
-        out.push(ev2);
+        out.push(ev);
         if(out.length>=5) break;
       }
 
       render(out, data.updated_at);
+
+      // frase WOW che cambia con seed
+      document.getElementById("funLine").textContent = pickPhrase();
 
     }catch(err){
       elEvents.innerHTML = "";
@@ -601,17 +559,12 @@
 
   document.getElementById("btnNew").addEventListener("click", ()=>{
     seed = (seed + 1337) % 1000000;
-    const u = new URL(location.href);
-    u.searchParams.set("slot", slot);
-    u.searchParams.set("v", String(seed));
-    history.replaceState({}, "", u.toString());
     load();
   });
 
   document.getElementById("btnSlot").addEventListener("click", ()=>{
-    slot = slot==="mattina" ? "pomeriggio" : slot==="pomeriggio" ? "sera" : "mattina";
+    slot = slot==="morning" ? "afternoon" : slot==="afternoon" ? "evening" : "morning";
     document.getElementById("slotChip").textContent = slotLabel(slot);
-
     const u = new URL(location.href);
     u.searchParams.set("slot", slot);
     u.searchParams.set("v", String(seed));
@@ -620,7 +573,19 @@
   });
 
   document.getElementById("btnPrint").addEventListener("click", ()=>{
-    alert("Stampa demo: dopo la rendiamo bella (ricevuta/PDF). Per ora KPI in alto.");
+    if(!selected.length){
+      alert("Aggiungi almeno una selezione prima di stampare.");
+      return;
+    }
+    const stake = parseFloat(document.getElementById("stake").value || "0").toFixed(2);
+    const txt =
+      "SCHEDINA (DEMO)\n\n" +
+      selected.map((x,i)=> `${i+1}) ${x.match} — ${x.market}`).join("\n") +
+      "\n\nStake: " + stake + " €" +
+      "\nQuota/Vincita: verifica al banco." +
+      "\n\n" + pickPhrase();
+
+    alert(txt);
   });
 
   document.getElementById("stake").addEventListener("input", updateKPI);
