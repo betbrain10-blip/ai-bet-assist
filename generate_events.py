@@ -4,9 +4,7 @@ from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from typing import Any, Dict, List, Optional, Tuple
 import hashlib
-
 import requests
-
 
 # =========================
 # CONFIG
@@ -14,7 +12,7 @@ import requests
 TZ = ZoneInfo("Europe/Rome")
 OUT_FILE = "events.json"
 
-LOOKAHEAD_DAYS = 2          # cerca partite oggi + prossimi 2 giorni
+LOOKAHEAD_DAYS = 7          # ✅ più ampio: oggi + prossimi 7 giorni
 PER_SLOT = 5                # 5 mattina + 5 pomeriggio + 5 sera = 15
 
 # Fasce orarie (Italia)
@@ -26,10 +24,10 @@ EVENING_START = 18
 EVENING_END = 24
 
 # Competizioni principali europee (Football-Data codes)
-ALLOW_COMP_CODES = {
+ALLOW_COMP_CODES = [
     "CL",   # Champions League
     "EL",   # Europa League
-    "EC",   # Conference League (se il piano la supporta)
+    "EC",   # Conference League
     "PL",   # Premier League
     "PD",   # LaLiga
     "SA",   # Serie A
@@ -37,11 +35,9 @@ ALLOW_COMP_CODES = {
     "FL1",  # Ligue 1
     "DED",  # Eredivisie
     "PPL",  # Primeira Liga
-}
+]
 
-# Margine “book” per rendere le quote più realistiche (più basso = quote più alte)
-BOOK_MARGIN = 0.06
-
+BOOK_MARGIN = 0.06  # margine per quote più realistiche
 
 # =========================
 # HELPERS
@@ -52,17 +48,14 @@ def _env_token() -> str:
         raise RuntimeError("FOOTBALL_DATA_TOKEN missing in env (GitHub Secrets).")
     return t
 
-
 def _get_json(url: str, token: str, params: Optional[dict] = None) -> dict:
     headers = {"X-Auth-Token": token}
     r = requests.get(url, headers=headers, params=params, timeout=30)
     r.raise_for_status()
     return r.json()
 
-
 def _iso_date(d: datetime) -> str:
     return d.strftime("%Y-%m-%d")
-
 
 def _slot_of(dt_rome: datetime) -> Optional[str]:
     h = dt_rome.hour
@@ -73,7 +66,6 @@ def _slot_of(dt_rome: datetime) -> Optional[str]:
     if EVENING_START <= h < EVENING_END:
         return "sera"
     return None
-
 
 def _format_start(dt_rome: datetime) -> str:
     now = datetime.now(TZ)
@@ -86,80 +78,68 @@ def _format_start(dt_rome: datetime) -> str:
         day = wk[dt_rome.weekday()]
     return f"{day} {dt_rome.strftime('%H:%M')}"
 
-
 def _stable_int(s: str) -> int:
-    # numero stabile 0..2^31-1 dalla stringa (per avere quote stabili a parità match)
     h = hashlib.sha256(s.encode("utf-8")).hexdigest()
     return int(h[:8], 16)
-
 
 def _clamp(x: float, a: float, b: float) -> float:
     return max(a, min(b, x))
 
-
 def _odd_from_prob(p: float, margin: float = BOOK_MARGIN) -> float:
-    # quota “da book”: più bassa della fair
     p = _clamp(p, 0.02, 0.98)
     fair = 1.0 / p
     book = fair * (1.0 - margin)
     return float(f"{book:.2f}")
 
-
 def _mk_probs(home: str, away: str, league_code: str) -> Tuple[float, float, float]:
-    """
-    Genera probabilità REALISTICHE (non casuali pure) basate su:
-    - forza relativa (hash dei nomi)
-    - competizione (leghe top un po' più "stabili")
-    Restituisce: (p_over25, p_1x, p_goal_si)
-    """
     key = f"{league_code}|{home}|{away}"
     x = _stable_int(key)
 
-    # forza “pseudo” 0..1
     home_s = ((x % 1000) / 1000.0)
     away_s = (((x // 1000) % 1000) / 1000.0)
-    diff = home_s - away_s  # positivo = home più forte
+    diff = home_s - away_s
 
-    # base per leghe
     league_bias = 0.0
     if league_code in {"PL", "SA", "PD", "BL1", "FL1"}:
         league_bias = 0.02
     if league_code in {"CL", "EL"}:
-        league_bias = -0.01  # spesso match più “tattici”
+        league_bias = -0.01
 
-    # Over 2.5: 0.40 - 0.70
+    # ✅ Over 2.5
     p_over25 = 0.52 + (diff * 0.08) + league_bias
     p_over25 = _clamp(p_over25, 0.40, 0.70)
 
-    # Goal Sì: 0.45 - 0.65
+    # Goal Sì
     p_goal_si = 0.54 + (abs(diff) * -0.05) + (league_bias * 0.5)
     p_goal_si = _clamp(p_goal_si, 0.45, 0.65)
 
-    # 1X: 0.58 - 0.82 (dipende molto dalla forza home)
+    # 1X
     p_1x = 0.70 + (diff * 0.18)
     p_1x = _clamp(p_1x, 0.58, 0.82)
 
     return p_over25, p_1x, p_goal_si
 
-
 def _build_markets(home: str, away: str, league_code: str) -> List[Dict[str, Any]]:
     p_over25, p_1x, p_goal_si = _mk_probs(home, away, league_code)
 
-    odd_over25 = _odd_from_prob(p_over25)
-    odd_1x = _odd_from_prob(p_1x)
-    odd_goal_si = _odd_from_prob(p_goal_si)
-
-    # Clamp finale in range “credibili” (per evitare estremi strani)
-    odd_over25 = float(f"{_clamp(odd_over25, 1.45, 2.20):.2f}")
-    odd_1x = float(f"{_clamp(odd_1x, 1.25, 1.80):.2f}")
-    odd_goal_si = float(f"{_clamp(odd_goal_si, 1.50, 2.05):.2f}")
+    odd_over25 = float(f"{_clamp(_odd_from_prob(p_over25), 1.45, 2.35):.2f}")
+    odd_1x     = float(f"{_clamp(_odd_from_prob(p_1x),     1.25, 1.85):.2f}")
+    odd_goal   = float(f"{_clamp(_odd_from_prob(p_goal_si), 1.50, 2.10):.2f}")
 
     return [
         {"label": "Over 2.5", "odd": odd_over25},
         {"label": "1X", "odd": odd_1x},
-        {"label": "Goal/NoGoal Sì", "odd": odd_goal_si},
+        {"label": "Goal/NoGoal Sì", "odd": odd_goal},
     ]
 
+def _fetch_matches_for_comp(token: str, comp_code: str, date_from: str, date_to: str) -> List[dict]:
+    url = f"https://api.football-data.org/v4/competitions/{comp_code}/matches"
+    try:
+        data = _get_json(url, token, params={"dateFrom": date_from, "dateTo": date_to})
+        return data.get("matches", []) or []
+    except Exception as e:
+        print(f"[WARN] {comp_code} fetch failed: {e}")
+        return []
 
 def main():
     token = _env_token()
@@ -168,28 +148,24 @@ def main():
     date_from = today
     date_to = today + timedelta(days=LOOKAHEAD_DAYS)
 
-    url = "https://api.football-data.org/v4/matches"
-    data = _get_json(
-        url,
-        token,
-        params={
-            "dateFrom": _iso_date(datetime.combine(date_from, datetime.min.time())),
-            "dateTo": _iso_date(datetime.combine(date_to, datetime.min.time())),
-        },
-    )
+    date_from_s = _iso_date(datetime.combine(date_from, datetime.min.time()))
+    date_to_s   = _iso_date(datetime.combine(date_to,   datetime.min.time()))
 
-    matches = data.get("matches", []) or []
+    # ✅ prendi match per competizione (più affidabile)
+    matches: List[dict] = []
+    for code in ALLOW_COMP_CODES:
+        matches.extend(_fetch_matches_for_comp(token, code, date_from_s, date_to_s))
+
     filtered: List[Tuple[datetime, Dict[str, Any]]] = []
 
     for m in matches:
-        # Prendiamo scheduled e, se ci sono, anche TIMED (alcuni piani/status)
         status = (m.get("status") or "").upper()
         if status not in {"SCHEDULED", "TIMED"}:
             continue
 
         comp = m.get("competition") or {}
-        comp_code = (comp.get("code") or "").strip()
-        if comp_code and comp_code not in ALLOW_COMP_CODES:
+        comp_code = (comp.get("code") or "").strip() or ""
+        if comp_code and comp_code not in set(ALLOW_COMP_CODES):
             continue
 
         utc_dt = m.get("utcDate")
@@ -237,7 +213,6 @@ def main():
 
     filtered.sort(key=lambda x: x[0])
 
-    # Prendiamo 5 per slot (mattina/pomeriggio/sera)
     picked_ids = set()
     slots: Dict[str, List[Dict[str, Any]]] = {"mattina": [], "pomeriggio": [], "sera": []}
 
@@ -252,7 +227,7 @@ def main():
         if all(len(slots[k]) >= PER_SLOT for k in slots):
             break
 
-    # Se manca copertura in qualche fascia, riempiamo con eventi reali rimasti
+    # fallback riempimento se una fascia è vuota
     if not all(len(slots[k]) >= PER_SLOT for k in slots):
         for dt_rome, ev in filtered:
             if ev["id"] in picked_ids:
@@ -285,7 +260,6 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=2)
 
     print(f"Wrote {OUT_FILE} with {len(out_events)} events. counts={out['counts']}")
-
 
 if __name__ == "__main__":
     main()
