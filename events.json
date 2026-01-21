@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-21 19:24",
+  "updated_at": "2026-01-21 19:55",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 1,
@@ -25,22 +25,28 @@
       "away_crest": "https://crests.football-data.org/1903.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "C’è una favorita abbastanza chiara: occhio alle giocate di copertura.",
+      "tip": "Casa favorita: valuta giocate di copertura e verifica quota al banco.",
+      "context": {
+        "diff": 0.71,
+        "fav": "home",
+        "tempo": 0.1,
+        "goals": 0.42
+      },
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Media",
-          "note": "Attacchi attivi / ritmo gara: se vedi squadre che spingono, può avere senso."
+          "tag": "Bassa",
+          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
         },
         {
           "label": "1X",
           "tag": "Alta",
-          "note": "🛡️ Casa più affidabile: 1X da valutare come scelta “tranquilla”."
+          "note": "🛡️ Casa favorita: 1X può essere una copertura sensata (verifica quota al banco)."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Media",
-          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da ambo i lati."
+          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
         }
       ]
     },
@@ -61,22 +67,28 @@
       "away_crest": "https://crests.football-data.org/11034.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "Match equilibrato: scegli 1 giocata sola e mantieni lo stake sotto controllo.",
+      "tip": "Equilibrio alto: scegli una sola giocata che ti piace e mantieni lo stake fisso.",
+      "context": {
+        "diff": 0.23,
+        "fav": "balanced",
+        "tempo": 0.17,
+        "goals": 0.47
+      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Media",
-          "note": "Attacchi attivi / ritmo gara: se vedi squadre che spingono, può avere senso."
+          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
         },
         {
           "label": "1X",
           "tag": "Media",
-          "note": "Copertura casa: utile se la squadra di casa sembra più solida o ha spinta del pubblico."
+          "note": "⚖️ Match equilibrato: 1X è discreta, ma non chiamarla “sicura”. Verifica quota."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "⚡ Occasioni da entrambe: Goal Sì interessante, sempre con controllo stake."
+          "tag": "Media",
+          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
         }
       ]
     },
@@ -97,22 +109,28 @@
       "away_crest": "https://crests.football-data.org/64.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "Ritmo alto e fase offensiva viva: partita da seguire con attenzione.",
+      "tip": "Ospiti favoriti: attenzione alle giocate “tranquille”, spesso la quota è bassa.",
+      "context": {
+        "diff": -0.87,
+        "fav": "away",
+        "tempo": 0.93,
+        "goals": 0.64
+      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Alta",
-          "note": "🔥 Alta spinta offensiva: partita da gol (verifica quota al banco)."
+          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Controlla sempre la quota al banco."
         },
         {
           "label": "1X",
           "tag": "Bassa",
-          "note": "⚠️ Equilibrio alto: 1X meno “sicuro”, valuta bene prima di aggiungere."
+          "note": "🚨 Ospiti favoriti: 1X è rischiosa. Valutala solo se hai un motivo chiaro."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "⚡ Occasioni da entrambe: Goal Sì interessante, sempre con controllo stake."
+          "tag": "Media",
+          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
         }
       ]
     },
@@ -133,22 +151,28 @@
       "away_crest": "https://crests.football-data.org/674.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "Ritmo alto e fase offensiva viva: partita da seguire con attenzione.",
+      "tip": "Ospiti favoriti: attenzione alle giocate “tranquille”, spesso la quota è bassa.",
+      "context": {
+        "diff": -0.36,
+        "fav": "away",
+        "tempo": 0.8,
+        "goals": 0.89
+      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Alta",
-          "note": "🔥 Alta spinta offensiva: partita da gol (verifica quota al banco)."
+          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Controlla sempre la quota al banco."
         },
         {
           "label": "1X",
           "tag": "Bassa",
-          "note": "⚠️ Equilibrio alto: 1X meno “sicuro”, valuta bene prima di aggiungere."
+          "note": "🚨 Ospiti favoriti: 1X è rischiosa. Valutala solo se hai un motivo chiaro."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Alta",
-          "note": "⚡ Occasioni da entrambe: Goal Sì interessante, sempre con controllo stake."
+          "note": "⚡ Buone chance di Goal Sì: entrambe con potenziale. Sempre con stake controllato."
         }
       ]
     },
@@ -169,22 +193,28 @@
       "away_crest": "https://crests.football-data.org/77.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "C’è una favorita abbastanza chiara: occhio alle giocate di copertura.",
+      "tip": "Ospiti favoriti: attenzione alle giocate “tranquille”, spesso la quota è bassa.",
+      "context": {
+        "diff": -0.58,
+        "fav": "away",
+        "tempo": 0.85,
+        "goals": 0.58
+      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Alta",
-          "note": "🔥 Alta spinta offensiva: partita da gol (verifica quota al banco)."
+          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Controlla sempre la quota al banco."
         },
         {
           "label": "1X",
           "tag": "Bassa",
-          "note": "⚠️ Equilibrio alto: 1X meno “sicuro”, valuta bene prima di aggiungere."
+          "note": "🚨 Ospiti favoriti: 1X è rischiosa. Valutala solo se hai un motivo chiaro."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "⚡ Occasioni da entrambe: Goal Sì interessante, sempre con controllo stake."
+          "tag": "Media",
+          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
         }
       ]
     },
@@ -205,22 +235,28 @@
       "away_crest": "https://crests.football-data.org/3929.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "Match equilibrato: scegli 1 giocata sola e mantieni lo stake sotto controllo.",
+      "tip": "Equilibrio alto: scegli una sola giocata che ti piace e mantieni lo stake fisso.",
+      "context": {
+        "diff": 0.21,
+        "fav": "balanced",
+        "tempo": 0.71,
+        "goals": 0.49
+      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Alta",
-          "note": "🔥 Alta spinta offensiva: partita da gol (verifica quota al banco)."
+          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Controlla sempre la quota al banco."
         },
         {
           "label": "1X",
           "tag": "Media",
-          "note": "Copertura casa: utile se la squadra di casa sembra più solida o ha spinta del pubblico."
+          "note": "⚖️ Match equilibrato: 1X è discreta, ma non chiamarla “sicura”. Verifica quota."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Alta",
-          "note": "⚡ Occasioni da entrambe: Goal Sì interessante, sempre con controllo stake."
+          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
         }
       ]
     },
@@ -241,22 +277,28 @@
       "away_crest": "https://crests.football-data.org/81.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "C’è una favorita abbastanza chiara: occhio alle giocate di copertura.",
+      "tip": "Casa favorita: valuta giocate di copertura e verifica quota al banco.",
+      "context": {
+        "diff": 0.49,
+        "fav": "home",
+        "tempo": 0.19,
+        "goals": 0.81
+      },
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "🔥 Alta spinta offensiva: partita da gol (verifica quota al banco)."
+          "tag": "Media",
+          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
         },
         {
           "label": "1X",
           "tag": "Alta",
-          "note": "🛡️ Casa più affidabile: 1X da valutare come scelta “tranquilla”."
+          "note": "🛡️ Casa favorita: 1X può essere una copertura sensata (verifica quota al banco)."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Alta",
-          "note": "⚡ Occasioni da entrambe: Goal Sì interessante, sempre con controllo stake."
+          "note": "⚡ Buone chance di Goal Sì: entrambe con potenziale. Sempre con stake controllato."
         }
       ]
     }
