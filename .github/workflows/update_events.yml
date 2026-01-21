@@ -6,7 +6,7 @@ on:
     - cron: "*/20 * * * *"   # ogni 20 minuti
 
 concurrency:
-  group: "auto-update-events"
+  group: auto-update-events
   cancel-in-progress: true
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Checkout
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -42,7 +42,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
 
-          # prende eventuali cambi remoti (evita errore "fetch first")
+          # evita errore "fetch first"
           git pull --rebase origin main
 
           git add events.json
