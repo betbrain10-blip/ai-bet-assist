@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-21 19:55",
+  "updated_at": "2026-01-21 20:24",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 1,
@@ -9,177 +9,9 @@
   },
   "events": [
     {
-      "id": 551988,
-      "uniq": "551988|2026-01-21T20:00:00Z|Juventus FC|Sport Lisboa e Benfica",
-      "slot": "mattina",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Juventus FC",
-      "away": "Sport Lisboa e Benfica",
-      "home_short": "JUV",
-      "away_short": "BEN",
-      "home_crest": "https://crests.football-data.org/109.png",
-      "away_crest": "https://crests.football-data.org/1903.png",
-      "start_iso": "2026-01-21T21:00:00+01:00",
-      "start": "Oggi 21:00",
-      "tip": "Casa favorita: valuta giocate di copertura e verifica quota al banco.",
-      "context": {
-        "diff": 0.71,
-        "fav": "home",
-        "tempo": 0.1,
-        "goals": 0.42
-      },
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Bassa",
-          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
-        },
-        {
-          "label": "1X",
-          "tag": "Alta",
-          "note": "🛡️ Casa favorita: 1X può essere una copertura sensata (verifica quota al banco)."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Media",
-          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
-        }
-      ]
-    },
-    {
-      "id": 551921,
-      "uniq": "551921|2026-01-21T20:00:00Z|Chelsea FC|Paphos FC",
-      "slot": "pomeriggio",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Chelsea FC",
-      "away": "Paphos FC",
-      "home_short": "CHE",
-      "away_short": "AEP",
-      "home_crest": "https://crests.football-data.org/61.png",
-      "away_crest": "https://crests.football-data.org/11034.png",
-      "start_iso": "2026-01-21T21:00:00+01:00",
-      "start": "Oggi 21:00",
-      "tip": "Equilibrio alto: scegli una sola giocata che ti piace e mantieni lo stake fisso.",
-      "context": {
-        "diff": 0.23,
-        "fav": "balanced",
-        "tempo": 0.17,
-        "goals": 0.47
-      },
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Media",
-          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
-        },
-        {
-          "label": "1X",
-          "tag": "Media",
-          "note": "⚖️ Match equilibrato: 1X è discreta, ma non chiamarla “sicura”. Verifica quota."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Media",
-          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
-        }
-      ]
-    },
-    {
-      "id": 551949,
-      "uniq": "551949|2026-01-21T20:00:00Z|Olympique de Marseille|Liverpool FC",
-      "slot": "sera",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Olympique de Marseille",
-      "away": "Liverpool FC",
-      "home_short": "MAR",
-      "away_short": "LIV",
-      "home_crest": "https://crests.football-data.org/516.png",
-      "away_crest": "https://crests.football-data.org/64.png",
-      "start_iso": "2026-01-21T21:00:00+01:00",
-      "start": "Oggi 21:00",
-      "tip": "Ospiti favoriti: attenzione alle giocate “tranquille”, spesso la quota è bassa.",
-      "context": {
-        "diff": -0.87,
-        "fav": "away",
-        "tempo": 0.93,
-        "goals": 0.64
-      },
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Controlla sempre la quota al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "🚨 Ospiti favoriti: 1X è rischiosa. Valutala solo se hai un motivo chiaro."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Media",
-          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
-        }
-      ]
-    },
-    {
-      "id": 552036,
-      "uniq": "552036|2026-01-21T20:00:00Z|Newcastle United FC|PSV",
-      "slot": "sera",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Newcastle United FC",
-      "away": "PSV",
-      "home_short": "NEW",
-      "away_short": "PSV",
-      "home_crest": "https://crests.football-data.org/67.png",
-      "away_crest": "https://crests.football-data.org/674.png",
-      "start_iso": "2026-01-21T21:00:00+01:00",
-      "start": "Oggi 21:00",
-      "tip": "Ospiti favoriti: attenzione alle giocate “tranquille”, spesso la quota è bassa.",
-      "context": {
-        "diff": -0.36,
-        "fav": "away",
-        "tempo": 0.8,
-        "goals": 0.89
-      },
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Controlla sempre la quota al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "🚨 Ospiti favoriti: 1X è rischiosa. Valutala solo se hai un motivo chiaro."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "⚡ Buone chance di Goal Sì: entrambe con potenziale. Sempre con stake controllato."
-        }
-      ]
-    },
-    {
       "id": 551986,
       "uniq": "551986|2026-01-21T20:00:00Z|Atalanta BC|Athletic Club",
-      "slot": "sera",
+      "slot": "mattina",
       "league": "UEFA Champions League",
       "league_code": "CL",
       "country": "",
@@ -193,35 +25,38 @@
       "away_crest": "https://crests.football-data.org/77.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "Ospiti favoriti: attenzione alle giocate “tranquille”, spesso la quota è bassa.",
+      "tip": "Ospiti favoriti: attenzione alle giocate “comode”, spesso quota bassa.",
       "context": {
         "diff": -0.58,
         "fav": "away",
         "tempo": 0.85,
-        "goals": 0.58
+        "goals": 0.58,
+        "grit": 0.99,
+        "corners": 0.8,
+        "cards": 0.99
       },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Alta",
-          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Controlla sempre la quota al banco."
+          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Stake controllato."
         },
         {
           "label": "1X",
           "tag": "Bassa",
-          "note": "🚨 Ospiti favoriti: 1X è rischiosa. Valutala solo se hai un motivo chiaro."
+          "note": "🚨 Ospiti favoriti: 1X rischiosa. Valutala solo con motivo chiaro."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Media",
-          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
+          "note": "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
         }
       ]
     },
     {
       "id": 551914,
       "uniq": "551914|2026-01-21T20:00:00Z|FC Bayern München|Royale Union Saint-Gilloise",
-      "slot": "sera",
+      "slot": "pomeriggio",
       "league": "UEFA Champions League",
       "league_code": "CL",
       "country": "",
@@ -235,28 +70,31 @@
       "away_crest": "https://crests.football-data.org/3929.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "Equilibrio alto: scegli una sola giocata che ti piace e mantieni lo stake fisso.",
+      "tip": "Match equilibrato: una sola giocata fatta bene vale di più.",
       "context": {
         "diff": 0.21,
         "fav": "balanced",
         "tempo": 0.71,
-        "goals": 0.49
+        "goals": 0.49,
+        "grit": 0.92,
+        "corners": 0.73,
+        "cards": 0.91
       },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Alta",
-          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Controlla sempre la quota al banco."
+          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
         },
         {
           "label": "1X",
           "tag": "Media",
-          "note": "⚖️ Match equilibrato: 1X è discreta, ma non chiamarla “sicura”. Verifica quota."
+          "note": "⚖️ Equilibrio: 1X discreta ma non “sicura”. Verifica quota."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
+          "tag": "Media",
+          "note": "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
         }
       ]
     },
@@ -277,12 +115,15 @@
       "away_crest": "https://crests.football-data.org/81.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
-      "tip": "Casa favorita: valuta giocate di copertura e verifica quota al banco.",
+      "tip": "Casa favorita: ok coperture, ma verifica sempre la quota al banco.",
       "context": {
         "diff": 0.49,
         "fav": "home",
         "tempo": 0.19,
-        "goals": 0.81
+        "goals": 0.81,
+        "grit": 0.16,
+        "corners": 0.45,
+        "cards": 0.48
       },
       "markets": [
         {
@@ -293,12 +134,192 @@
         {
           "label": "1X",
           "tag": "Alta",
-          "note": "🛡️ Casa favorita: 1X può essere una copertura sensata (verifica quota al banco)."
+          "note": "🛡️ Casa favorita: 1X può essere copertura sensata (verifica quota)."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Alta",
-          "note": "⚡ Buone chance di Goal Sì: entrambe con potenziale. Sempre con stake controllato."
+          "note": "⚡ Buone chance Goal Sì: potenziale da entrambe. Stake controllato."
+        }
+      ]
+    },
+    {
+      "id": 551988,
+      "uniq": "551988|2026-01-21T20:00:00Z|Juventus FC|Sport Lisboa e Benfica",
+      "slot": "sera",
+      "league": "UEFA Champions League",
+      "league_code": "CL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/CL.png",
+      "home": "Juventus FC",
+      "away": "Sport Lisboa e Benfica",
+      "home_short": "JUV",
+      "away_short": "BEN",
+      "home_crest": "https://crests.football-data.org/109.png",
+      "away_crest": "https://crests.football-data.org/1903.png",
+      "start_iso": "2026-01-21T21:00:00+01:00",
+      "start": "Oggi 21:00",
+      "tip": "Casa favorita: ok coperture, ma verifica sempre la quota al banco.",
+      "context": {
+        "diff": 0.71,
+        "fav": "home",
+        "tempo": 0.1,
+        "goals": 0.42,
+        "grit": 0.11,
+        "corners": 0.3,
+        "cards": 0.57
+      },
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Bassa",
+          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
+        },
+        {
+          "label": "1X",
+          "tag": "Alta",
+          "note": "🛡️ Casa favorita: 1X può essere copertura sensata (verifica quota)."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
+        }
+      ]
+    },
+    {
+      "id": 551921,
+      "uniq": "551921|2026-01-21T20:00:00Z|Chelsea FC|Paphos FC",
+      "slot": "sera",
+      "league": "UEFA Champions League",
+      "league_code": "CL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/CL.png",
+      "home": "Chelsea FC",
+      "away": "Paphos FC",
+      "home_short": "CHE",
+      "away_short": "AEP",
+      "home_crest": "https://crests.football-data.org/61.png",
+      "away_crest": "https://crests.football-data.org/11034.png",
+      "start_iso": "2026-01-21T21:00:00+01:00",
+      "start": "Oggi 21:00",
+      "tip": "Match equilibrato: una sola giocata fatta bene vale di più.",
+      "context": {
+        "diff": 0.23,
+        "fav": "balanced",
+        "tempo": 0.17,
+        "goals": 0.47,
+        "grit": 0.65,
+        "corners": 0.39,
+        "cards": 0.77
+      },
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Bassa",
+          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
+        },
+        {
+          "label": "1X",
+          "tag": "Media",
+          "note": "⚖️ Equilibrio: 1X discreta ma non “sicura”. Verifica quota."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
+        }
+      ]
+    },
+    {
+      "id": 551949,
+      "uniq": "551949|2026-01-21T20:00:00Z|Olympique de Marseille|Liverpool FC",
+      "slot": "sera",
+      "league": "UEFA Champions League",
+      "league_code": "CL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/CL.png",
+      "home": "Olympique de Marseille",
+      "away": "Liverpool FC",
+      "home_short": "MAR",
+      "away_short": "LIV",
+      "home_crest": "https://crests.football-data.org/516.png",
+      "away_crest": "https://crests.football-data.org/64.png",
+      "start_iso": "2026-01-21T21:00:00+01:00",
+      "start": "Oggi 21:00",
+      "tip": "Ospiti favoriti: attenzione alle giocate “comode”, spesso quota bassa.",
+      "context": {
+        "diff": -0.87,
+        "fav": "away",
+        "tempo": 0.93,
+        "goals": 0.64,
+        "grit": 1.0,
+        "corners": 0.84,
+        "cards": 1.0
+      },
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Stake controllato."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "🚨 Ospiti favoriti: 1X rischiosa. Valutala solo con motivo chiaro."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
+        }
+      ]
+    },
+    {
+      "id": 552036,
+      "uniq": "552036|2026-01-21T20:00:00Z|Newcastle United FC|PSV",
+      "slot": "sera",
+      "league": "UEFA Champions League",
+      "league_code": "CL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/CL.png",
+      "home": "Newcastle United FC",
+      "away": "PSV",
+      "home_short": "NEW",
+      "away_short": "PSV",
+      "home_crest": "https://crests.football-data.org/67.png",
+      "away_crest": "https://crests.football-data.org/674.png",
+      "start_iso": "2026-01-21T21:00:00+01:00",
+      "start": "Oggi 21:00",
+      "tip": "Ospiti favoriti: attenzione alle giocate “comode”, spesso quota bassa.",
+      "context": {
+        "diff": -0.36,
+        "fav": "away",
+        "tempo": 0.8,
+        "goals": 0.89,
+        "grit": 0.97,
+        "corners": 0.85,
+        "cards": 0.89
+      },
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Stake controllato."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "🚨 Ospiti favoriti: 1X rischiosa. Valutala solo con motivo chiaro."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "⚡ Buone chance Goal Sì: potenziale da entrambe. Stake controllato."
         }
       ]
     }
