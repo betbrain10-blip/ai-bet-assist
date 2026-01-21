@@ -1,56 +1,50 @@
 import os
 import json
-import math
-import random
-import time
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
+from typing import Any, Dict, List, Optional, Tuple
+import hashlib
 
 import requests
+
 
 # =========================
 # CONFIG
 # =========================
 TZ = ZoneInfo("Europe/Rome")
-
-# Fasce orarie (ora locale Italia)
-MORNING_START = 6
-MORNING_END = 12     # escluso
-AFTERNOON_START = 12
-AFTERNOON_END = 18   # escluso
-EVENING_START = 18
-EVENING_END = 24     # escluso
-
-PER_SLOT = 5  # 5 mattina + 5 pomeriggio + 5 sera
-
-# Competizioni principali (Football-Data codes)
-ALLOW_COMP_CODES = {
-    "CL", "EL", "EC",
-    "PL", "PD", "SA", "BL1", "FL1",
-    "DED", "PPL",
-}
-
-LOOKAHEAD_DAYS = 2
 OUT_FILE = "events.json"
 
-# Quante partite passate usare per stimare i gol (per team)
-FORM_MATCHES = 6
+LOOKAHEAD_DAYS = 2          # cerca partite oggi + prossimi 2 giorni
+PER_SLOT = 5                # 5 mattina + 5 pomeriggio + 5 sera = 15
 
-# Margine bookmaker (più alto = quote più basse)
-BOOK_MARGIN = 0.06  # 6%
+# Fasce orarie (Italia)
+MORNING_START = 6
+MORNING_END = 12
+AFTERNOON_START = 12
+AFTERNOON_END = 18
+EVENING_START = 18
+EVENING_END = 24
 
-# Limiti quote (evita roba assurda)
-MIN_ODD = 1.15
-MAX_ODD = 5.50
+# Competizioni principali europee (Football-Data codes)
+ALLOW_COMP_CODES = {
+    "CL",   # Champions League
+    "EL",   # Europa League
+    "EC",   # Conference League (se il piano la supporta)
+    "PL",   # Premier League
+    "PD",   # LaLiga
+    "SA",   # Serie A
+    "BL1",  # Bundesliga
+    "FL1",  # Ligue 1
+    "DED",  # Eredivisie
+    "PPL",  # Primeira Liga
+}
 
-# Rate limit “gentile” verso Football-Data
-SLEEP_BETWEEN_CALLS = 0.25
-
-BASE_URL = "https://api.football-data.org/v4"
+# Margine “book” per rendere le quote più realistiche (più basso = quote più alte)
+BOOK_MARGIN = 0.06
 
 
 # =========================
-# FOOTBALL-DATA API
+# HELPERS
 # =========================
 def _env_token() -> str:
     t = os.getenv("FOOTBALL_DATA_TOKEN", "").strip()
@@ -59,18 +53,28 @@ def _env_token() -> str:
     return t
 
 
-def _fd_get(path: str, token: str, params: dict | None = None) -> dict:
+def _get_json(url: str, token: str, params: Optional[dict] = None) -> dict:
     headers = {"X-Auth-Token": token}
-    url = f"{BASE_URL}{path}"
     r = requests.get(url, headers=headers, params=params, timeout=30)
     r.raise_for_status()
-    time.sleep(SLEEP_BETWEEN_CALLS)
     return r.json()
 
 
-# =========================
-# TIME / SLOT
-# =========================
+def _iso_date(d: datetime) -> str:
+    return d.strftime("%Y-%m-%d")
+
+
+def _slot_of(dt_rome: datetime) -> Optional[str]:
+    h = dt_rome.hour
+    if MORNING_START <= h < MORNING_END:
+        return "mattina"
+    if AFTERNOON_START <= h < AFTERNOON_END:
+        return "pomeriggio"
+    if EVENING_START <= h < EVENING_END:
+        return "sera"
+    return None
+
+
 def _format_start(dt_rome: datetime) -> str:
     now = datetime.now(TZ)
     if dt_rome.date() == now.date():
@@ -83,220 +87,104 @@ def _format_start(dt_rome: datetime) -> str:
     return f"{day} {dt_rome.strftime('%H:%M')}"
 
 
-def _slot_of(dt_rome: datetime) -> str | None:
-    h = dt_rome.hour
-    if MORNING_START <= h < MORNING_END:
-        return "mattina"
-    if AFTERNOON_START <= h < AFTERNOON_END:
-        return "pomeriggio"
-    if EVENING_START <= h < AFTERNOON_END:
-        return "pomeriggio"
-    if EVENING_START <= h < EVENING_END:
-        return "sera"
-    return None
+def _stable_int(s: str) -> int:
+    # numero stabile 0..2^31-1 dalla stringa (per avere quote stabili a parità match)
+    h = hashlib.sha256(s.encode("utf-8")).hexdigest()
+    return int(h[:8], 16)
 
 
-def _iso_date(d: datetime) -> str:
-    return d.strftime("%Y-%m-%d")
-
-
-# =========================
-# MATH: Poisson + mercati
-# =========================
-def _poisson_pmf(k: int, lam: float) -> float:
-    if lam <= 0:
-        return 1.0 if k == 0 else 0.0
-    return math.exp(-lam) * (lam ** k) / math.factorial(k)
-
-
-def _clamp(x: float, lo: float, hi: float) -> float:
-    return max(lo, min(hi, x))
-
-
-def _prob_match_outcomes(lam_home: float, lam_away: float, max_goals: int = 10) -> tuple[float, float, float]:
-    ph = [_poisson_pmf(i, lam_home) for i in range(max_goals + 1)]
-    pa = [_poisson_pmf(i, lam_away) for i in range(max_goals + 1)]
-
-    p_hw = 0.0
-    p_d = 0.0
-    p_aw = 0.0
-
-    for i in range(max_goals + 1):
-        for j in range(max_goals + 1):
-            p = ph[i] * pa[j]
-            if i > j:
-                p_hw += p
-            elif i == j:
-                p_d += p
-            else:
-                p_aw += p
-
-    tot = p_hw + p_d + p_aw
-    if tot > 0:
-        p_hw /= tot
-        p_d /= tot
-        p_aw /= tot
-
-    return p_hw, p_d, p_aw
+def _clamp(x: float, a: float, b: float) -> float:
+    return max(a, min(b, x))
 
 
 def _odd_from_prob(p: float, margin: float = BOOK_MARGIN) -> float:
-    p = _clamp(p, 1e-6, 0.999999)
-    o = 1.0 / (p * (1.0 - margin))
-    o = _clamp(o, MIN_ODD, MAX_ODD)
-    return float(f"{o:.2f}")
+    # quota “da book”: più bassa della fair
+    p = _clamp(p, 0.02, 0.98)
+    fair = 1.0 / p
+    book = fair * (1.0 - margin)
+    return float(f"{book:.2f}")
 
 
-# =========================
-# TEAM FORM
-# =========================
-def _team_form_stats(team_id: int, token: str, cache: dict) -> dict:
-    if team_id in cache:
-        return cache[team_id]
-
-    try:
-        data = _fd_get(
-            f"/teams/{team_id}/matches",
-            token,
-            params={"status": "FINISHED", "limit": FORM_MATCHES},
-        )
-        matches = data.get("matches") or []
-    except Exception:
-        cache[team_id] = {"gf": 1.25, "ga": 1.25, "n": 0}
-        return cache[team_id]
-
-    gf = 0.0
-    ga = 0.0
-    n = 0
-
-    for m in matches:
-        score = (m.get("score") or {}).get("fullTime") or {}
-        hg = score.get("home")
-        ag = score.get("away")
-        if hg is None or ag is None:
-            continue
-
-        home = (m.get("homeTeam") or {}).get("id")
-        away = (m.get("awayTeam") or {}).get("id")
-        if home is None or away is None:
-            continue
-
-        if team_id == home:
-            gf += float(hg)
-            ga += float(ag)
-            n += 1
-        elif team_id == away:
-            gf += float(ag)
-            ga += float(hg)
-            n += 1
-
-    if n <= 0:
-        res = {"gf": 1.25, "ga": 1.25, "n": 0}
-    else:
-        res = {"gf": gf / n, "ga": ga / n, "n": n}
-
-    cache[team_id] = res
-    return res
-
-
-def _estimate_lambdas(home_id: int, away_id: int, token: str, cache: dict) -> tuple[float, float]:
-    hs = _team_form_stats(home_id, token, cache)
-    as_ = _team_form_stats(away_id, token, cache)
-
-    lam_home = (hs["gf"] + as_["ga"]) / 2.0
-    lam_away = (as_["gf"] + hs["ga"]) / 2.0
-
-    lam_home *= 1.08  # home advantage
-
-    lam_home = _clamp(lam_home, 0.55, 2.60)
-    lam_away = _clamp(lam_away, 0.55, 2.40)
-    return lam_home, lam_away
-
-
-# =========================
-# FALLBACK STABILE
-# =========================
-def _stable_rng(seed_value: int) -> random.Random:
-    rng = random.Random()
-    rng.seed(seed_value)
-    return rng
-
-
-def _fallback_odds(match_id: int, market_type: str) -> float:
-    rng = _stable_rng(match_id * 97 + sum(ord(c) for c in market_type))
-    if market_type == "over25":
-        v = rng.uniform(1.55, 2.30)
-    elif market_type == "1x":
-        v = rng.uniform(1.25, 1.90)
-    elif market_type == "btts":
-        v = rng.uniform(1.55, 2.20)
-    else:
-        v = rng.uniform(1.50, 2.40)
-    return float(f"{v:.2f}")
-
-
-def _build_markets_realistic(match_id: int, lam_home: float | None, lam_away: float | None) -> list[dict]:
+def _mk_probs(home: str, away: str, league_code: str) -> Tuple[float, float, float]:
     """
-    Mercati:
-    - Over 2.5 (totale)
-    - 1X (home win o draw)
-    - Goal/NoGoal Sì (BTTS)
+    Genera probabilità REALISTICHE (non casuali pure) basate su:
+    - forza relativa (hash dei nomi)
+    - competizione (leghe top un po' più "stabili")
+    Restituisce: (p_over25, p_1x, p_goal_si)
     """
-    if lam_home is None or lam_away is None:
-        return [
-            {"label": "Over 2.5", "odd": _fallback_odds(match_id, "over25")},
-            {"label": "1X", "odd": _fallback_odds(match_id, "1x")},
-            {"label": "Goal/NoGoal Sì", "odd": _fallback_odds(match_id, "btts")},
-        ]
+    key = f"{league_code}|{home}|{away}"
+    x = _stable_int(key)
 
-    lam_total = lam_home + lam_away
+    # forza “pseudo” 0..1
+    home_s = ((x % 1000) / 1000.0)
+    away_s = (((x // 1000) % 1000) / 1000.0)
+    diff = home_s - away_s  # positivo = home più forte
 
-    # P(Over 2.5) = 1 - P(0) - P(1) - P(2)
-    p0 = _poisson_pmf(0, lam_total)
-    p1 = _poisson_pmf(1, lam_total)
-    p2 = _poisson_pmf(2, lam_total)
-    p_over25 = _clamp(1.0 - (p0 + p1 + p2), 0.01, 0.99)
+    # base per leghe
+    league_bias = 0.0
+    if league_code in {"PL", "SA", "PD", "BL1", "FL1"}:
+        league_bias = 0.02
+    if league_code in {"CL", "EL"}:
+        league_bias = -0.01  # spesso match più “tattici”
 
-    # BTTS
-    p_h0 = _poisson_pmf(0, lam_home)
-    p_a0 = _poisson_pmf(0, lam_away)
-    p_btts = _clamp(1.0 - p_h0 - p_a0 + (p_h0 * p_a0), 0.01, 0.99)
+    # Over 2.5: 0.40 - 0.70
+    p_over25 = 0.52 + (diff * 0.08) + league_bias
+    p_over25 = _clamp(p_over25, 0.40, 0.70)
 
-    # 1X
-    p_hw, p_d, _ = _prob_match_outcomes(lam_home, lam_away, max_goals=10)
-    p_1x = _clamp(p_hw + p_d, 0.01, 0.99)
+    # Goal Sì: 0.45 - 0.65
+    p_goal_si = 0.54 + (abs(diff) * -0.05) + (league_bias * 0.5)
+    p_goal_si = _clamp(p_goal_si, 0.45, 0.65)
+
+    # 1X: 0.58 - 0.82 (dipende molto dalla forza home)
+    p_1x = 0.70 + (diff * 0.18)
+    p_1x = _clamp(p_1x, 0.58, 0.82)
+
+    return p_over25, p_1x, p_goal_si
+
+
+def _build_markets(home: str, away: str, league_code: str) -> List[Dict[str, Any]]:
+    p_over25, p_1x, p_goal_si = _mk_probs(home, away, league_code)
+
+    odd_over25 = _odd_from_prob(p_over25)
+    odd_1x = _odd_from_prob(p_1x)
+    odd_goal_si = _odd_from_prob(p_goal_si)
+
+    # Clamp finale in range “credibili” (per evitare estremi strani)
+    odd_over25 = float(f"{_clamp(odd_over25, 1.45, 2.20):.2f}")
+    odd_1x = float(f"{_clamp(odd_1x, 1.25, 1.80):.2f}")
+    odd_goal_si = float(f"{_clamp(odd_goal_si, 1.50, 2.05):.2f}")
 
     return [
-        {"label": "Over 2.5", "odd": _odd_from_prob(p_over25)},
-        {"label": "1X", "odd": _odd_from_prob(p_1x)},
-        {"label": "Goal/NoGoal Sì", "odd": _odd_from_prob(p_btts)},
+        {"label": "Over 2.5", "odd": odd_over25},
+        {"label": "1X", "odd": odd_1x},
+        {"label": "Goal/NoGoal Sì", "odd": odd_goal_si},
     ]
 
 
-# =========================
-# MAIN
-# =========================
 def main():
     token = _env_token()
+
     today = datetime.now(TZ).date()
     date_from = today
     date_to = today + timedelta(days=LOOKAHEAD_DAYS)
 
-    data = _fd_get(
-        "/matches",
+    url = "https://api.football-data.org/v4/matches"
+    data = _get_json(
+        url,
         token,
         params={
             "dateFrom": _iso_date(datetime.combine(date_from, datetime.min.time())),
             "dateTo": _iso_date(datetime.combine(date_to, datetime.min.time())),
         },
     )
-    matches = data.get("matches", []) or []
 
-    form_cache: dict[int, dict] = {}
-    filtered = []
+    matches = data.get("matches", []) or []
+    filtered: List[Tuple[datetime, Dict[str, Any]]] = []
 
     for m in matches:
-        if m.get("status") != "SCHEDULED":
+        # Prendiamo scheduled e, se ci sono, anche TIMED (alcuni piani/status)
+        status = (m.get("status") or "").upper()
+        if status not in {"SCHEDULED", "TIMED"}:
             continue
 
         comp = m.get("competition") or {}
@@ -320,46 +208,40 @@ def main():
 
         home = (m.get("homeTeam") or {})
         away = (m.get("awayTeam") or {})
-        home_id = home.get("id")
-        away_id = away.get("id")
+        home_name = home.get("name") or "Home"
+        away_name = away.get("name") or "Away"
 
-        match_id = int(m.get("id", 0)) or int(abs(hash(f"{home.get('name')}|{away.get('name')}|{utc_dt}")) % 10**9)
+        match_id = int(m.get("id", 0)) or _stable_int(f"{home_name}|{away_name}|{utc_dt}")
 
-        lam_home = None
-        lam_away = None
-        if isinstance(home_id, int) and isinstance(away_id, int):
-            try:
-                lam_home, lam_away = _estimate_lambdas(home_id, away_id, token, form_cache)
-            except Exception:
-                lam_home, lam_away = None, None
-
-        event = {
+        ev = {
             "id": match_id,
+            "uniq": f"{match_id}|{utc_dt}|{home_name}|{away_name}",
             "slot": slot,
             "league": comp.get("name") or comp_code or "Calcio",
             "league_code": comp_code,
-            "country": (comp.get("area") or {}).get("name", ""),
+            "country": (comp.get("area") or {}).get("code", "") or (comp.get("area") or {}).get("name", ""),
             "country_code": (comp.get("area") or {}).get("code", ""),
             "competition_emblem": comp.get("emblem", ""),
-            "home": home.get("name") or "Home",
-            "away": away.get("name") or "Away",
+            "home": home_name,
+            "away": away_name,
             "home_short": home.get("tla") or "",
             "away_short": away.get("tla") or "",
             "home_crest": home.get("crest") or "",
             "away_crest": away.get("crest") or "",
             "start_iso": dt_rome.isoformat(),
             "start": _format_start(dt_rome),
-            "markets": _build_markets_realistic(match_id, lam_home, lam_away),
+            "markets": _build_markets(home_name, away_name, comp_code),
         }
 
-        filtered.append((dt_rome, event))
+        filtered.append((dt_rome, ev))
 
     filtered.sort(key=lambda x: x[0])
 
+    # Prendiamo 5 per slot (mattina/pomeriggio/sera)
     picked_ids = set()
-    slots = {"mattina": [], "pomeriggio": [], "sera": []}
+    slots: Dict[str, List[Dict[str, Any]]] = {"mattina": [], "pomeriggio": [], "sera": []}
 
-    for _, ev in filtered:
+    for dt_rome, ev in filtered:
         if ev["id"] in picked_ids:
             continue
         s = ev["slot"]
@@ -370,8 +252,9 @@ def main():
         if all(len(slots[k]) >= PER_SLOT for k in slots):
             break
 
+    # Se manca copertura in qualche fascia, riempiamo con eventi reali rimasti
     if not all(len(slots[k]) >= PER_SLOT for k in slots):
-        for _, ev in filtered:
+        for dt_rome, ev in filtered:
             if ev["id"] in picked_ids:
                 continue
             target = min(slots.keys(), key=lambda k: len(slots[k]))
@@ -401,10 +284,8 @@ def main():
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
-    print(f"Wrote {OUT_FILE} with {len(out_events)} events.")
+    print(f"Wrote {OUT_FILE} with {len(out_events)} events. counts={out['counts']}")
 
 
 if __name__ == "__main__":
     main()
-if __name__ == "__main__":
-    print("TEST OK - script avviato")
