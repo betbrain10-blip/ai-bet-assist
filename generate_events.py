@@ -73,11 +73,12 @@ def _stable_int(s: str) -> int:
 def _clamp(x: float, a: float, b: float) -> float:
     return max(a, min(b, x))
 
-def _mk_strength(home: str, away: str, league_code: str) -> Tuple[float, float, float]:
+def _mk_strength(home: str, away: str, league_code: str) -> Tuple[float, float, float, float]:
     """
-    Punteggi pseudo (stabili) SOLO per generare tag e descrizioni.
     diff: >0 home più forte, <0 away più forte
-    tempo/goals: 0..1
+    tempo: ritmo/pressione
+    goals: propensione ai gol
+    grit: "agonismo"/fisicità (per cartellini)
     """
     key = f"{league_code}|{home}|{away}"
     x = _stable_int(key)
@@ -88,98 +89,107 @@ def _mk_strength(home: str, away: str, league_code: str) -> Tuple[float, float, 
 
     tempo = ((x // 2000) % 1000) / 1000.0
     goals = ((x // 3000) % 1000) / 1000.0
+    grit = ((x // 4000) % 1000) / 1000.0
 
-    # Leghe top: un filo più “stabili”
+    # Leghe top: un filo più "ordinate"
     if league_code in {"PL","SA","PD","BL1","FL1"}:
         tempo = _clamp(tempo + 0.05, 0, 1)
+
+    # Coppe: spesso più tattiche
     if league_code in {"CL","EL"}:
         tempo = _clamp(tempo - 0.03, 0, 1)
+        grit = _clamp(grit + 0.05, 0, 1)
 
-    return diff, tempo, goals
+    return diff, tempo, goals, grit
 
 def _tag(score: float) -> str:
-    if score >= 0.72: return "Alta"
-    if score >= 0.52: return "Media"
+    if score >= 0.74: return "Alta"
+    if score >= 0.54: return "Media"
     return "Bassa"
 
 def _fav_label(diff: float) -> str:
-    # soglie “umane”
-    if diff >= 0.28:
-        return "home"
-    if diff <= -0.28:
-        return "away"
+    if diff >= 0.28: return "home"
+    if diff <= -0.28: return "away"
     return "balanced"
 
 def _event_tip(diff: float, tempo: float, goals: float) -> str:
     fav = _fav_label(diff)
     if fav == "home":
         if tempo > 0.62:
-            return "Favorita di casa con buon ritmo: partita interessante ma scegli poche selezioni."
-        return "Casa favorita: valuta giocate di copertura e verifica quota al banco."
+            return "Casa favorita con ritmo buono: se scegli, mantieni poche selezioni."
+        return "Casa favorita: ok coperture, ma verifica sempre la quota al banco."
     if fav == "away":
         if tempo > 0.62:
-            return "Ospiti favoriti: attenzione alle giocate “tranquille”, spesso la quota è bassa."
-        return "Favorita esterna: 1X rischiosa. Meglio selezionare con prudenza."
-    # balanced
+            return "Ospiti favoriti: attenzione alle giocate “comode”, spesso quota bassa."
+        return "Favorita esterna: 1X rischiosa. Meglio prudenza."
     if goals > 0.65 and tempo > 0.60:
-        return "Match equilibrato ma vivace: può diventare aperta, verifica bene prima di aggiungere."
+        return "Equilibrio ma partita viva: può diventare aperta, scegli con testa."
     if goals < 0.40:
-        return "Equilibrio con rischio partita bloccata: se non ti convince, salta."
-    return "Equilibrio alto: scegli una sola giocata che ti piace e mantieni lo stake fisso."
+        return "Possibile gara bloccata: se non ti convince, salta."
+    return "Match equilibrato: una sola giocata fatta bene vale di più."
 
-def _build_markets(home: str, away: str, league_code: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
-    diff, tempo, goals = _mk_strength(home, away, league_code)
+def _build_markets_and_scores(home: str, away: str, league_code: str) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+    diff, tempo, goals, grit = _mk_strength(home, away, league_code)
     fav = _fav_label(diff)
 
-    # “propensioni” (0..1) solo per etichette e descrizioni
+    # Score "indicativi"
     score_over25 = _clamp(0.25 + tempo*0.40 + goals*0.45, 0, 1)
     score_goal = _clamp(0.25 + goals*0.55 + (0.25 - abs(diff)*0.20), 0, 1)
 
-    # 1X: dipende dalla favorita
+    # 1X realistico
     if fav == "home":
         score_1x = _clamp(0.70 + diff*0.20, 0, 1)
     elif fav == "balanced":
-        score_1x = _clamp(0.55 + diff*0.12, 0, 1)  # diff può essere leggermente pro home
+        score_1x = _clamp(0.55 + diff*0.12, 0, 1)
     else:
-        # away favorita => 1X più “debole”
-        score_1x = _clamp(0.40 + (diff+0.28)*0.10, 0, 1)  # diff è negativo
+        score_1x = _clamp(0.40 + (diff+0.28)*0.10, 0, 1)
 
-    markets = []
+    # Corner: più ritmo/pressione => più corner
+    score_corners = _clamp(0.22 + tempo*0.62 + goals*0.18 - abs(diff)*0.08, 0, 1)
 
-    # Over 2.5
+    # Cartellini: più agonismo + equilibrio/pressione => più cartellini
+    score_cards = _clamp(0.20 + grit*0.55 + abs(diff)*0.18 + (0.25 - goals*0.18), 0, 1)
+
+    # Note
     note_over = "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
-    if score_over25 >= 0.75:
-        note_over = "🔥 Gara da gol probabile: ritmo alto e occasioni. Controlla sempre la quota al banco."
+    if score_over25 >= 0.78:
+        note_over = "🔥 Gara da gol probabile: ritmo alto e occasioni. Stake controllato."
     elif score_over25 <= 0.45:
-        note_over = "🧊 Rischio partita più chiusa: meglio non forzare, scegli altro se sei indeciso."
-    markets.append({"label": "Over 2.5", "tag": _tag(score_over25), "note": note_over})
+        note_over = "🧊 Rischio gara chiusa: se sei indeciso, meglio saltare."
 
-    # 1X
     if fav == "home":
-        note_1x = "🛡️ Casa favorita: 1X può essere una copertura sensata (verifica quota al banco)."
+        note_1x = "🛡️ Casa favorita: 1X può essere copertura sensata (verifica quota)."
         if score_1x < 0.55:
-            note_1x = "⚠️ Casa favorita ma non troppo: 1X ok solo se ti convince davvero."
+            note_1x = "⚠️ Casa favorita ma non troppo: 1X ok solo se ti convince."
     elif fav == "balanced":
-        note_1x = "⚖️ Match equilibrato: 1X è discreta, ma non chiamarla “sicura”. Verifica quota."
+        note_1x = "⚖️ Equilibrio: 1X discreta ma non “sicura”. Verifica quota."
         if score_1x < 0.52:
-            note_1x = "⚠️ Equilibrio forte: 1X non è una passeggiata. Meglio 1 selezione sola."
+            note_1x = "⚠️ Equilibrio forte: 1X non è facile. Meglio una sola selezione."
     else:
-        # away favorita (es. Barca)
-        note_1x = "🚨 Ospiti favoriti: 1X è rischiosa. Valutala solo se hai un motivo chiaro."
-        if score_1x >= 0.52:
-            note_1x = "👀 Ospiti favoriti ma match particolare: 1X solo con prudenza e quota giusta."
-    markets.append({"label": "1X", "tag": _tag(score_1x), "note": note_1x})
+        note_1x = "🚨 Ospiti favoriti: 1X rischiosa. Valutala solo con motivo chiaro."
 
-    # Goal Sì
-    note_goal = "Entrambe possono segnare: meglio se vedi difese distratte e occasioni da entrambe."
-    if score_goal >= 0.75:
-        note_goal = "⚡ Buone chance di Goal Sì: entrambe con potenziale. Sempre con stake controllato."
+    note_goal = "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
+    if score_goal >= 0.76:
+        note_goal = "⚡ Buone chance Goal Sì: potenziale da entrambe. Stake controllato."
     elif score_goal <= 0.50:
-        note_goal = "🔍 Non è detto che segnino entrambe: scegli solo se ti convince davvero."
-    markets.append({"label": "Goal/NoGoal Sì", "tag": _tag(score_goal), "note": note_goal})
+        note_goal = "🔍 Goal Sì non scontato: scegli solo se ti convince."
 
-    context = {"diff": float(f"{diff:.2f}"), "fav": fav, "tempo": float(f"{tempo:.2f}"), "goals": float(f"{goals:.2f}")}
-    return markets, context
+    markets = [
+        {"label": "Over 2.5", "tag": _tag(score_over25), "note": note_over},
+        {"label": "1X", "tag": _tag(score_1x), "note": note_1x},
+        {"label": "Goal/NoGoal Sì", "tag": _tag(score_goal), "note": note_goal},
+    ]
+
+    scores = {
+        "diff": float(f"{diff:.2f}"),
+        "fav": fav,
+        "tempo": float(f"{tempo:.2f}"),
+        "goals": float(f"{goals:.2f}"),
+        "grit": float(f"{grit:.2f}"),
+        "corners": float(f"{score_corners:.2f}"),
+        "cards": float(f"{score_cards:.2f}"),
+    }
+    return markets, scores
 
 def main():
     token = _env_token()
@@ -232,9 +242,8 @@ def main():
 
         match_id = int(m.get("id", 0)) or _stable_int(f"{home_name}|{away_name}|{utc_dt}")
 
-        diff, tempo, goals = _mk_strength(home_name, away_name, comp_code)
-        tip = _event_tip(diff, tempo, goals)
-        markets, ctx = _build_markets(home_name, away_name, comp_code)
+        markets, ctx = _build_markets_and_scores(home_name, away_name, comp_code)
+        tip = _event_tip(ctx["diff"], ctx["tempo"], ctx["goals"])
 
         ev = {
             "id": match_id,
@@ -254,7 +263,7 @@ def main():
             "start_iso": dt_rome.isoformat(),
             "start": _format_start(dt_rome),
             "tip": tip,
-            "context": ctx,
+            "context": ctx,          # <-- QUI CI SONO corners/cards
             "markets": markets,
         }
 
