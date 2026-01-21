@@ -13,7 +13,6 @@
       --text: rgba(255,255,255,.92);
       --muted: rgba(255,255,255,.68);
       --accent:#ff8a00;
-      --accent2:#ffb000;
       --danger:#ff4a4a;
       --ok:#4cff7a;
     }
@@ -42,8 +41,8 @@
       content:"";
       position:absolute;inset:-40px;
       background:
-        radial-gradient(520px 340px at 15% 10%, rgba(255,120,0,.18), transparent 60%),
-        radial-gradient(620px 420px at 90% 20%, rgba(255,0,140,.14), transparent 65%),
+        radial-gradient(520px 340px at 15% 10%, rgba(255,120,0,.16), transparent 60%),
+        radial-gradient(620px 420px at 90% 20%, rgba(255,0,140,.12), transparent 65%),
         radial-gradient(520px 420px at 55% 95%, rgba(0,210,255,.12), transparent 60%);
       filter: blur(10px);
       pointer-events:none;
@@ -68,8 +67,10 @@
       box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
       overflow:hidden;
     }
+    /* LOGO TUTTO ROSSO */
     .logoText{
-      font-weight:900; letter-spacing:.4px;
+      font-weight:1000;
+      letter-spacing:.3px;
       font-size:14px;
       color:#ff2a2a;
       text-transform:lowercase;
@@ -99,7 +100,7 @@
       border:1px solid rgba(255,255,255,.10);
       background: rgba(0,0,0,.18);
       color:rgba(255,255,255,.80);
-      font-weight:800;
+      font-weight:900;
     }
 
     .grid{
@@ -138,7 +139,7 @@
       color:rgba(255,255,255,.92);
       padding:10px 12px;
       border-radius:12px;
-      font-weight:800;
+      font-weight:900;
       cursor:pointer;
       display:inline-flex;align-items:center;gap:8px;
     }
@@ -178,7 +179,7 @@
     }
 
     .teams{
-      display:flex;align-items:center;gap:10px;font-weight:900;flex-wrap:wrap;
+      display:flex;align-items:center;gap:10px;font-weight:1000;flex-wrap:wrap;
       margin-top:8px;
     }
     .crest{
@@ -194,7 +195,7 @@
       display:grid;place-items:center;
       background: rgba(255,255,255,.08);
       border:1px solid rgba(255,255,255,.12);
-      font-weight:900;
+      font-weight:1000;
       color: rgba(255,255,255,.92);
       font-size:12px;
     }
@@ -222,13 +223,13 @@
       gap:8px;
     }
     .mTop{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
-    .mLabel{font-weight:900;font-size:12px}
+    .mLabel{font-weight:1000;font-size:12px}
     .mHint{font-size:11px;color:var(--muted);line-height:1.25}
     .badge{
       padding:6px 10px;border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(0,0,0,.18);
-      font-size:11px;font-weight:900;
+      font-size:11px;font-weight:1000;
       color:rgba(255,255,255,.85);
       white-space:nowrap;
     }
@@ -273,7 +274,7 @@
       background: rgba(0,0,0,.18);
       color: rgba(255,255,255,.92);
       outline:none;
-      font-weight:800;
+      font-weight:900;
     }
 
     .kpi{
@@ -357,6 +358,130 @@
       font-size:12px;
     }
 
+    /* ===== RUOTA MODAL ===== */
+    .modal{
+      position:fixed; inset:0;
+      background: rgba(0,0,0,.55);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:16px;
+      z-index:9999;
+      backdrop-filter: blur(6px);
+    }
+    .modal.open{display:flex}
+    .modalCard{
+      width:min(920px, 100%);
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(10,12,18,.85);
+      box-shadow: 0 40px 120px rgba(0,0,0,.55);
+      overflow:hidden;
+      position:relative;
+    }
+    .modalTop{
+      padding:12px 14px;
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+    }
+    .modalTop b{font-size:13px}
+    .xBtn{
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.22);
+      color:rgba(255,255,255,.92);
+      border-radius:12px;
+      padding:10px 12px;
+      cursor:pointer;
+      font-weight:1000;
+    }
+    .modalBody{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      padding:14px;
+    }
+    @media (max-width: 860px){
+      .modalBody{grid-template-columns:1fr}
+    }
+    .wheelWrap{
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:18px;
+      background: rgba(0,0,0,.22);
+      padding:14px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:12px;
+    }
+    .wheel{
+      width:320px;height:320px;
+      border-radius:50%;
+      border:10px solid rgba(255,255,255,.08);
+      background:
+        conic-gradient(
+          rgba(255,140,0,.85) 0 45deg,
+          rgba(0,210,255,.35) 45deg 90deg,
+          rgba(255,74,74,.35) 90deg 135deg,
+          rgba(76,255,122,.30) 135deg 180deg,
+          rgba(140,70,255,.35) 180deg 225deg,
+          rgba(255,200,120,.40) 225deg 270deg,
+          rgba(0,0,0,.18) 270deg 315deg,
+          rgba(255,255,255,.06) 315deg 360deg
+        );
+      box-shadow: 0 30px 80px rgba(0,0,0,.55);
+      transform: rotate(0deg);
+      transition: transform 3.2s cubic-bezier(.14,.9,.12,1);
+      position:relative;
+      overflow:hidden;
+    }
+    .wheel::after{
+      content:"";
+      position:absolute; inset:0;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.18), transparent 60%);
+      pointer-events:none;
+    }
+    .pin{
+      width:0;height:0;
+      border-left:14px solid transparent;
+      border-right:14px solid transparent;
+      border-bottom:24px solid rgba(255,255,255,.92);
+      filter: drop-shadow(0 8px 12px rgba(0,0,0,.45));
+      margin-top:-6px;
+    }
+    .spinBtn{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,180,0,.45);
+      background: linear-gradient(180deg, rgba(255,160,0,.95), rgba(255,110,0,.85));
+      color:#1b0f05;
+      font-weight:1000;
+      cursor:pointer;
+    }
+    .spinBtn:disabled{
+      opacity:.55; cursor:not-allowed;
+    }
+    .resultBox{
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:18px;
+      background: rgba(0,0,0,.22);
+      padding:14px;
+    }
+    .resultBox h4{margin:0 0 8px 0;font-size:13px}
+    .result{
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color:rgba(255,255,255,.88);
+      font-weight:900;
+      line-height:1.25;
+      min-height:50px;
+      display:flex;align-items:center;
+    }
+    .small{font-size:11px;color:rgba(255,255,255,.65);line-height:1.35;margin-top:10px}
+
     @media print{
       body{background:#fff;color:#000}
       .wrap{margin:0;max-width:100%;padding:0}
@@ -364,6 +489,7 @@
       .topbar,.left{display:none !important}
       .grid{grid-template-columns:1fr;padding:0}
       .right{border:none}
+      .modal{display:none !important}
     }
   </style>
 </head>
@@ -375,7 +501,7 @@
       <div class="topbar">
         <div class="brand">
           <div class="logoBadge" aria-label="Vincitù">
-            <div class="logoText">vin<span style="color:#ffb000">ci</span>tù</div>
+            <div class="logoText">vincitù</div>
           </div>
           <div class="brandTitle">
             <b>Vincitù • IA Portal</b>
@@ -386,13 +512,16 @@
         <div class="chips">
           <div class="chip"><span class="dot"></span> Centro: <b id="centerChip" style="color:rgba(255,255,255,.92)">VINC001</b></div>
           <div class="chip">Agg.: <b id="updatedChip" style="color:rgba(255,255,255,.92)">—</b></div>
-          <div class="chip">Fascia: <b id="slotChip" style="color:rgba(255,255,255,.92)">Mattina</b></div>
+          <div class="chip">Fascia: <b id="slotChip" style="color:rgba(255,255,255,.92)">Sera</b></div>
+          <button class="btn" id="btnWheel">🎡 Ruota</button>
         </div>
 
         <div class="motto">
-          <span class="tag">🎯 Modalità cliente</span>
+          <span class="tag">🧠 Modalità cliente</span>
           <span id="mottoText">Carica la schedina: scegli, verifica al banco, stampa.</span>
-          <b id="mottoStrong">Piccoli step, grande controllo.</b>
+          <b id="mottoStrong">Pochi step, grande controllo.</b>
+          <span class="pill" id="badgePill">Badge: <b id="badgeText">Bronzo</b></span>
+          <span class="pill" id="missionPill">Missione: <b id="missionText">Max 2 selezioni</b></span>
         </div>
       </div>
 
@@ -457,13 +586,38 @@
     </div>
   </div>
 
+  <!-- MODAL RUOTA -->
+  <div class="modal" id="wheelModal" aria-hidden="true">
+    <div class="modalCard">
+      <div class="modalTop">
+        <b>🎡 Ruota della Fortuna (consigli & missioni)</b>
+        <button class="xBtn" id="btnCloseWheel">Chiudi ✖</button>
+      </div>
+      <div class="modalBody">
+        <div class="wheelWrap">
+          <div class="pin"></div>
+          <div class="wheel" id="wheel"></div>
+          <button class="spinBtn" id="btnSpin">Gira la ruota</button>
+          <div class="small">1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.</div>
+        </div>
+        <div class="resultBox">
+          <h4>🎁 Risultato</h4>
+          <div class="result" id="wheelResult">Premi “Gira la ruota” per ottenere un consiglio bonus.</div>
+          <div class="small" id="wheelInfo">Suggerimento: usa la ruota per rendere l’esperienza più divertente per i clienti.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <script>
   const qs = new URLSearchParams(location.search);
   const center = (qs.get("c") || "VINC001").toUpperCase();
-  let slot = (qs.get("slot") || "morning").toLowerCase(); // morning | afternoon | evening
+  let slot = (qs.get("slot") || "evening").toLowerCase(); // morning | afternoon | evening
   let seed = parseInt(qs.get("v") || (Date.now() % 100000), 10);
 
   const slotLabel = (s)=> s==="morning" ? "Mattina" : s==="afternoon" ? "Pomeriggio" : "Sera";
+  const slotIT = (it)=> it==="mattina" ? "Mattina" : it==="pomeriggio" ? "Pomeriggio" : "Sera";
+
   const flagEmoji = (cc)=>{
     const map = { IT:"🇮🇹", EN:"🏴", ES:"🇪🇸", FR:"🇫🇷", DE:"🇩🇪", NL:"🇳🇱", PT:"🇵🇹", SE:"🇸🇪", TR:"🇹🇷", PL:"🇵🇱", GR:"🇬🇷", CH:"🇨🇭" };
     return map[cc] || "🌍";
@@ -483,12 +637,13 @@
     }
   }
 
+  // ====== MOTTO / MISSIONI / BADGE ======
   const MOTTO = [
-    { t:"Carica la schedina: scegli, verifica al banco, stampa.", b:"Piccoli step, grande controllo." },
-    { t:"Oggi si gioca con testa: meno selezioni, più qualità.", b:"Disciplina batte fortuna." },
-    { t:"La migliore quota è quella verificata: fai la mossa giusta al banco.", b:"Controllo = vantaggio." },
-    { t:"Divertiti, ma resta lucido: imposta lo stake e rispettalo.", b:"Stake fisso, stress basso." },
-    { t:"Modalità cliente: scegli una giocata che ti convince davvero.", b:"Scegli bene, poi stop." },
+    { t:"Scegli, verifica al banco, stampa: semplice e pulito.", b:"Poche selezioni = più controllo." },
+    { t:"Se una cosa non ti convince… saltala.", b:"La miglior giocata è quella che capisci." },
+    { t:"Stake fisso: niente corse dietro alle perdite.", b:"Calma oggi, più continuità domani." },
+    { t:"Prima la quota reale, poi la schedina.", b:"Verifica sempre al banco." },
+    { t:"Una giocata fatta bene vale più di tre a caso.", b:"Qualità > quantità." }
   ];
   function bumpMotto(){
     const r = Math.floor((Date.now()/1000) % MOTTO.length);
@@ -496,22 +651,55 @@
     document.getElementById("mottoStrong").textContent = MOTTO[r].b;
   }
 
-  // Schedina: selezioni con quota editabile
+  const MISSIONS = [
+    "Max 2 selezioni",
+    "Stake fisso (5€)",
+    "1 sola giocata “Alta”",
+    "Inserisci tutte le quote reali",
+    "Stampa solo se convinto"
+  ];
+  function missionOfDay(){
+    const d = new Date();
+    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+    const idx = (hash(key) % MISSIONS.length);
+    document.getElementById("missionText").textContent = MISSIONS[idx];
+  }
+
+  function hash(s){
+    let h = 2166136261;
+    for(let i=0;i<s.length;i++){
+      h ^= s.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return (h>>>0);
+  }
+
+  function badgeFromPrints(n){
+    if(n >= 20) return "Oro";
+    if(n >= 8) return "Argento";
+    return "Bronzo";
+  }
+  function refreshBadge(){
+    const n = Number(localStorage.getItem("bb_prints") || "0");
+    const b = badgeFromPrints(n);
+    document.getElementById("badgeText").textContent = b;
+  }
+
+  // ====== SCHEDINA ======
   let selected = []; // {id, match, market, note, tag, odd}
 
   function badgeClass(tag){
     const x = (tag||"").toLowerCase();
-    if(x.includes("alta") || x.includes("high")) return "high";
-    if(x.includes("media") || x.includes("mid")) return "mid";
+    if(x.includes("alta")) return "high";
+    if(x.includes("media")) return "mid";
     return "low";
   }
 
   function totalOdd(){
-    // moltiplica solo quote valide >1
     let acc = 1;
     let okCount = 0;
     for(const s of selected){
-      const o = Number(s.odd);
+      const o = Number(String(s.odd||"").replace(",", "."));
       if(Number.isFinite(o) && o > 1){
         acc *= o;
         okCount++;
@@ -549,7 +737,7 @@
       row.innerHTML = `
         <div class="cartLeft">
           <b>${idx+1}) ${escapeHtml(s.match)} • <span style="color:rgba(255,200,120,.95)">${escapeHtml(s.market)}</span></b>
-          <span>${escapeHtml(s.note || "Suggerimento: verifica quota e gioca responsabile.")}</span>
+          <span>${escapeHtml(s.note || "Verifica quota reale al banco prima di confermare.")}</span>
         </div>
         <div class="cartRight">
           <input class="oddInput" inputmode="decimal" placeholder="Quota" value="${s.odd ? String(s.odd) : ""}" />
@@ -572,7 +760,6 @@
   }
 
   function addPick(ev, market){
-    // evita duplicati stessa partita+mercato
     const key = `${ev.id}__${market.label}`;
     if(selected.some(x => x.id === key)) return;
 
@@ -580,7 +767,7 @@
       id: key,
       match: `${ev.home} - ${ev.away}`,
       market: market.label || "Mercato",
-      note: market.note || ev.tip || "Se ti convince: verifica quota al banco e inseriscila qui.",
+      note: market.note || ev.tip || "Verifica quota reale al banco e inseriscila qui.",
       tag: market.tag || "Media",
       odd: ""
     });
@@ -593,13 +780,34 @@
     }[m]));
   }
 
+  function crestOrBadge(url, short, name){
+    const safeUrl = (url || "").trim();
+    if(safeUrl){
+      const alt = (short || name || "Team");
+      return `
+        <img class="crest" src="${safeUrl}" alt="${escapeHtml(alt)}"
+             onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<span class=\\'teamBadge\\'>${abbr(name, short)}</span>')">
+      `;
+    }
+    return `<span class="teamBadge">${abbr(name, short)}</span>`;
+  }
+
+  function abbr(name, short){
+    const s = (short || "").trim();
+    if(s) return escapeHtml(s.slice(0,3).toUpperCase());
+    const n = String(name||"").replace(/[^A-Za-zÀ-ž ]/g,"").trim().split(/\s+/);
+    const a = (n[0]||"X")[0] || "X";
+    const b = (n.length>1 ? n[n.length-1][0] : ((n[0]||"Y")[1] || "Y"));
+    return escapeHtml((a+b).toUpperCase());
+  }
+
   function render(events, updatedAt){
     document.getElementById("updatedChip").textContent = updatedAt || "—";
     document.getElementById("count").textContent = String(events.length);
     elEvents.innerHTML = "";
 
     events.forEach((ev, idx)=>{
-      const cc = (ev.country_code || ev.country || "").toUpperCase();
+      const cc = (ev.country_code || "").toUpperCase();
       const flag = flagEmoji(cc);
 
       const node = document.createElement("div");
@@ -613,7 +821,7 @@
               <span style="opacity:.8">•</span>
               <span>${escapeHtml(ev.start || "")}</span>
               <span style="opacity:.8">•</span>
-              <span style="color:rgba(255,200,120,.95);font-weight:1000">${slotLabel(ev.slot_ui || "")}</span>
+              <span style="color:rgba(255,200,120,.95);font-weight:1000">${slotIT(ev.slot || "")}</span>
             </div>
 
             <div class="teams">
@@ -656,35 +864,13 @@
           addPick(ev, m);
           bumpMotto();
           document.getElementById("rightNote").textContent =
-            "✅ Inserisci la quota reale qui a destra e vedrai quota totale e vincita potenziale.";
+            "✅ Inserisci la quota reale a destra: vedrai quota totale e vincita potenziale.";
         });
         mk.appendChild(mNode);
       });
 
       elEvents.appendChild(node);
     });
-  }
-
-  function crestOrBadge(url, short, name){
-    const safeUrl = (url || "").trim();
-    if(safeUrl){
-      // img con fallback invisibile se errore
-      const alt = (short || name || "Team");
-      return `
-        <img class="crest" src="${safeUrl}" alt="${escapeHtml(alt)}"
-             onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<span class=\\'teamBadge\\'>${abbr(name, short)}</span>')">
-      `;
-    }
-    return `<span class="teamBadge">${abbr(name, short)}</span>`;
-  }
-
-  function abbr(name, short){
-    const s = (short || "").trim();
-    if(s) return escapeHtml(s.slice(0,3).toUpperCase());
-    const n = String(name||"").replace(/[^A-Za-zÀ-ž ]/g,"").trim().split(/\s+/);
-    const a = (n[0]||"X")[0] || "X";
-    const b = (n.length>1 ? n[n.length-1][0] : ((n[0]||"Y")[1] || "Y"));
-    return escapeHtml((a+b).toUpperCase());
   }
 
   async function load(){
@@ -702,12 +888,10 @@
         throw new Error("events.json è valido ma non contiene eventi (events=[]). Controlla GitHub Actions.");
       }
 
-      // mappa slot UI: i dati sono in italiano (mattina/pomeriggio/sera)
       const want = slot==="morning" ? "mattina" : slot==="afternoon" ? "pomeriggio" : "sera";
       const base = all.filter(x => (x.slot||"").toLowerCase() === want);
       const pool = base.length ? base : all;
 
-      // scegli 5 unici
       const rnd = mulberry32(seed);
       const idxs = pool.map((_,i)=>i);
       for(let i=idxs.length-1;i>0;i--){
@@ -722,15 +906,14 @@
         const key = `${ev.home}__${ev.away}__${ev.league}`;
         if(used.has(key)) continue;
         used.add(key);
-        out.push({
-          ...ev,
-          slot_ui: want
-        });
+        out.push(ev);
         if(out.length>=5) break;
       }
 
       render(out, data.updated_at);
       bumpMotto();
+      missionOfDay();
+      refreshBadge();
 
     }catch(err){
       elEvents.innerHTML = "";
@@ -757,7 +940,6 @@
   });
 
   document.getElementById("btnPrint").addEventListener("click", ()=>{
-    // stampa la colonna destra (CSS @media print)
     if(!selected.length){
       alert("Aggiungi almeno una selezione prima di stampare.");
       return;
@@ -767,14 +949,99 @@
       const go = confirm("Mancano alcune quote. Vuoi stampare lo stesso?");
       if(!go) return;
     }
+
+    // badge: conta stampe
+    const n = Number(localStorage.getItem("bb_prints") || "0") + 1;
+    localStorage.setItem("bb_prints", String(n));
+    refreshBadge();
+
     window.print();
   });
 
   document.getElementById("stake").addEventListener("input", updateKPI);
 
+  // ===== RUOTA =====
+  const wheelModal = document.getElementById("wheelModal");
+  const wheel = document.getElementById("wheel");
+  const btnWheel = document.getElementById("btnWheel");
+  const btnCloseWheel = document.getElementById("btnCloseWheel");
+  const btnSpin = document.getElementById("btnSpin");
+  const wheelResult = document.getElementById("wheelResult");
+  const wheelInfo = document.getElementById("wheelInfo");
+
+  const PRIZES = [
+    "🎯 Missione bonus: oggi fai massimo 2 selezioni.",
+    "🧠 Consiglio: se una quota è troppo bassa, non forzare la multipla.",
+    "⏸️ Pausa 20 secondi: respira e scegli una sola giocata.",
+    "✅ Regola d’oro: stake fisso, niente rincorse.",
+    "🔍 Verifica: controlla quota al banco prima di inserire.",
+    "🏅 Badge boost: stampa solo se tutte le quote sono inserite.",
+    "🎲 Modalità safe: scegli 1 mercato ‘Alta’ e stop.",
+    "💡 Tip: meglio saltare un match che inseguirlo."
+  ];
+
+  function todayKey(){
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+  }
+  function wheelState(){
+    const key = "bb_wheel_" + todayKey();
+    return {
+      key,
+      used: localStorage.getItem(key) === "1"
+    };
+  }
+
+  function openWheel(){
+    wheelModal.classList.add("open");
+    wheelModal.setAttribute("aria-hidden", "false");
+    const st = wheelState();
+    btnSpin.disabled = st.used;
+    wheelInfo.textContent = st.used
+      ? "Hai già girato oggi su questo PC. Domani si resetta automaticamente."
+      : "1 giro al giorno. Solo intrattenimento: consigli e missioni (gioco responsabile).";
+  }
+  function closeWheel(){
+    wheelModal.classList.remove("open");
+    wheelModal.setAttribute("aria-hidden", "true");
+  }
+
+  btnWheel.addEventListener("click", openWheel);
+  btnCloseWheel.addEventListener("click", closeWheel);
+  wheelModal.addEventListener("click", (e)=>{ if(e.target === wheelModal) closeWheel(); });
+
+  let spinning = false;
+  btnSpin.addEventListener("click", ()=>{
+    const st = wheelState();
+    if(st.used || spinning) return;
+    spinning = true;
+    btnSpin.disabled = true;
+
+    // esito deterministico (stabile) basato su data+centro
+    const idx = hash(todayKey() + "|" + center) % PRIZES.length;
+
+    // rotazione: fai 6 giri + offset per "settore"
+    const sector = 360 / PRIZES.length;
+    const targetDeg = (idx * sector) + (sector/2);
+    const spins = 6*360;
+    const finalDeg = spins + (360 - targetDeg);
+
+    wheel.style.transform = `rotate(${finalDeg}deg)`;
+
+    setTimeout(()=>{
+      wheelResult.textContent = PRIZES[idx];
+      localStorage.setItem(st.key, "1");
+      wheelInfo.textContent = "Fatto! Domani puoi girare di nuovo su questo PC.";
+      spinning = false;
+      bumpMotto();
+    }, 3300);
+  });
+
   renderCart();
   load();
   bumpMotto();
+  missionOfDay();
+  refreshBadge();
 </script>
 </body>
 </html>
