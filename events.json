@@ -1,13 +1,45 @@
 {
-  "updated_at": "2026-01-21 12:45",
+  "updated_at": "2026-01-21 14:59",
   "timezone": "Europe/Rome",
   "counts": {
-    "mattina": 3,
-    "pomeriggio": 2,
+    "mattina": 5,
+    "pomeriggio": 5,
     "sera": 5,
-    "total": 10
+    "total": 15
   },
   "events": [
+    {
+      "id": 551986,
+      "uniq": "551986|2026-01-21T20:00:00Z|Atalanta BC|Athletic Club",
+      "slot": "mattina",
+      "league": "UEFA Champions League",
+      "league_code": "CL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/CL.png",
+      "home": "Atalanta BC",
+      "away": "Athletic Club",
+      "home_short": "ATA",
+      "away_short": "ATH",
+      "home_crest": "https://crests.football-data.org/102.png",
+      "away_crest": "https://crests.football-data.org/77.png",
+      "start_iso": "2026-01-21T21:00:00+01:00",
+      "start": "Oggi 21:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 2.03
+        },
+        {
+          "label": "1X",
+          "odd": 1.58
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.86
+        }
+      ]
+    },
     {
       "id": 551988,
       "uniq": "551988|2026-01-21T20:00:00Z|Juventus FC|Sport Lisboa e Benfica",
@@ -105,26 +137,154 @@
       ]
     },
     {
-      "id": 551949,
-      "uniq": "551949|2026-01-21T20:00:00Z|Olympique de Marseille|Liverpool FC",
-      "slot": "pomeriggio",
+      "id": 551921,
+      "uniq": "551921|2026-01-21T20:00:00Z|Chelsea FC|Paphos FC",
+      "slot": "mattina",
       "league": "UEFA Champions League",
       "league_code": "CL",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Olympique de Marseille",
-      "away": "Liverpool FC",
-      "home_short": "MAR",
-      "away_short": "LIV",
-      "home_crest": "https://crests.football-data.org/516.png",
-      "away_crest": "https://crests.football-data.org/64.png",
+      "home": "Chelsea FC",
+      "away": "Paphos FC",
+      "home_short": "CHE",
+      "away_short": "AEP",
+      "home_crest": "https://crests.football-data.org/61.png",
+      "away_crest": "https://crests.football-data.org/11034.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "odd": 2.13
+          "odd": 1.78
+        },
+        {
+          "label": "1X",
+          "odd": 1.27
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.8
+        }
+      ]
+    },
+    {
+      "id": 538014,
+      "uniq": "538014|2026-01-24T12:30:00Z|West Ham United FC|Sunderland AFC",
+      "slot": "pomeriggio",
+      "league": "Premier League",
+      "league_code": "PL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/PL.png",
+      "home": "West Ham United FC",
+      "away": "Sunderland AFC",
+      "home_short": "WHU",
+      "away_short": "SUN",
+      "home_crest": "https://crests.football-data.org/563.png",
+      "away_crest": "https://crests.football-data.org/71.png",
+      "start_iso": "2026-01-24T13:30:00+01:00",
+      "start": "Sab 13:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.7
+        },
+        {
+          "label": "1X",
+          "odd": 1.29
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.73
+        }
+      ]
+    },
+    {
+      "id": 544419,
+      "uniq": "544419|2026-01-24T13:00:00Z|Rayo Vallecano de Madrid|CA Osasuna",
+      "slot": "pomeriggio",
+      "league": "Primera Division",
+      "league_code": "PD",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/laliga.png",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "CA Osasuna",
+      "home_short": "RAY",
+      "away_short": "OSA",
+      "home_crest": "https://crests.football-data.org/87.png",
+      "away_crest": "https://crests.football-data.org/79.png",
+      "start_iso": "2026-01-24T14:00:00+01:00",
+      "start": "Sab 14:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.67
+        },
+        {
+          "label": "1X",
+          "odd": 1.26
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.75
+        }
+      ]
+    },
+    {
+      "id": 537029,
+      "uniq": "537029|2026-01-24T14:00:00Z|Como 1907|Torino FC",
+      "slot": "pomeriggio",
+      "league": "Serie A",
+      "league_code": "SA",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/c111.png",
+      "home": "Como 1907",
+      "away": "Torino FC",
+      "home_short": "COM",
+      "away_short": "TOR",
+      "home_crest": "https://crests.football-data.org/7397.png",
+      "away_crest": "https://crests.football-data.org/586.png",
+      "start_iso": "2026-01-24T15:00:00+01:00",
+      "start": "Sab 15:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.62
+        },
+        {
+          "label": "1X",
+          "odd": 1.25
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.79
+        }
+      ]
+    },
+    {
+      "id": 540569,
+      "uniq": "540569|2026-01-24T14:30:00Z|1. FC Heidenheim 1846|RB Leipzig",
+      "slot": "pomeriggio",
+      "league": "Bundesliga",
+      "league_code": "BL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/BL1.png",
+      "home": "1. FC Heidenheim 1846",
+      "away": "RB Leipzig",
+      "home_short": "HEI",
+      "away_short": "RBL",
+      "home_crest": "https://crests.football-data.org/44.png",
+      "away_crest": "https://crests.football-data.org/721.png",
+      "start_iso": "2026-01-24T15:30:00+01:00",
+      "start": "Sab 15:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.99
         },
         {
           "label": "1X",
@@ -132,39 +292,71 @@
         },
         {
           "label": "Goal/NoGoal Sì",
-          "odd": 1.91
+          "odd": 1.85
         }
       ]
     },
     {
-      "id": 551986,
-      "uniq": "551986|2026-01-21T20:00:00Z|Atalanta BC|Athletic Club",
+      "id": 540570,
+      "uniq": "540570|2026-01-24T14:30:00Z|Bayer 04 Leverkusen|SV Werder Bremen",
       "slot": "pomeriggio",
+      "league": "Bundesliga",
+      "league_code": "BL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/BL1.png",
+      "home": "Bayer 04 Leverkusen",
+      "away": "SV Werder Bremen",
+      "home_short": "B04",
+      "away_short": "SVW",
+      "home_crest": "https://crests.football-data.org/3.png",
+      "away_crest": "https://crests.football-data.org/12.png",
+      "start_iso": "2026-01-24T15:30:00+01:00",
+      "start": "Sab 15:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.64
+        },
+        {
+          "label": "1X",
+          "odd": 1.25
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.77
+        }
+      ]
+    },
+    {
+      "id": 552001,
+      "uniq": "552001|2026-01-21T17:45:00Z|Qarabağ Ağdam FK|Eintracht Frankfurt",
+      "slot": "sera",
       "league": "UEFA Champions League",
       "league_code": "CL",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Atalanta BC",
-      "away": "Athletic Club",
-      "home_short": "ATA",
-      "away_short": "ATH",
-      "home_crest": "https://crests.football-data.org/102.png",
-      "away_crest": "https://crests.football-data.org/77.png",
-      "start_iso": "2026-01-21T21:00:00+01:00",
-      "start": "Oggi 21:00",
+      "home": "Qarabağ Ağdam FK",
+      "away": "Eintracht Frankfurt",
+      "home_short": "QAR",
+      "away_short": "SGE",
+      "home_crest": "https://crests.football-data.org/611.png",
+      "away_crest": "https://crests.football-data.org/19.png",
+      "start_iso": "2026-01-21T18:45:00+01:00",
+      "start": "Oggi 18:45",
       "markets": [
         {
           "label": "Over 2.5",
-          "odd": 2.03
+          "odd": 1.87
         },
         {
           "label": "1X",
-          "odd": 1.58
+          "odd": 1.38
         },
         {
           "label": "Goal/NoGoal Sì",
-          "odd": 1.86
+          "odd": 1.77
         }
       ]
     },
@@ -233,66 +425,34 @@
       ]
     },
     {
-      "id": 552001,
-      "uniq": "552001|2026-01-21T17:45:00Z|Qarabağ Ağdam FK|Eintracht Frankfurt",
+      "id": 551949,
+      "uniq": "551949|2026-01-21T20:00:00Z|Olympique de Marseille|Liverpool FC",
       "slot": "sera",
       "league": "UEFA Champions League",
       "league_code": "CL",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Qarabağ Ağdam FK",
-      "away": "Eintracht Frankfurt",
-      "home_short": "QAR",
-      "away_short": "SGE",
-      "home_crest": "https://crests.football-data.org/611.png",
-      "away_crest": "https://crests.football-data.org/19.png",
-      "start_iso": "2026-01-21T18:45:00+01:00",
-      "start": "Oggi 18:45",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "odd": 1.87
-        },
-        {
-          "label": "1X",
-          "odd": 1.38
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "odd": 1.77
-        }
-      ]
-    },
-    {
-      "id": 551921,
-      "uniq": "551921|2026-01-21T20:00:00Z|Chelsea FC|Paphos FC",
-      "slot": "sera",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Chelsea FC",
-      "away": "Paphos FC",
-      "home_short": "CHE",
-      "away_short": "AEP",
-      "home_crest": "https://crests.football-data.org/61.png",
-      "away_crest": "https://crests.football-data.org/11034.png",
+      "home": "Olympique de Marseille",
+      "away": "Liverpool FC",
+      "home_short": "MAR",
+      "away_short": "LIV",
+      "home_crest": "https://crests.football-data.org/516.png",
+      "away_crest": "https://crests.football-data.org/64.png",
       "start_iso": "2026-01-21T21:00:00+01:00",
       "start": "Oggi 21:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "odd": 1.78
+          "odd": 2.13
         },
         {
           "label": "1X",
-          "odd": 1.27
+          "odd": 1.62
         },
         {
           "label": "Goal/NoGoal Sì",
-          "odd": 1.8
+          "odd": 1.91
         }
       ]
     },
