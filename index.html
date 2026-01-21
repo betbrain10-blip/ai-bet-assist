@@ -67,7 +67,7 @@
       box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
       overflow:hidden;
     }
-    /* LOGO TUTTO ROSSO */
+    /* LOGO ROSSO */
     .logoText{
       font-weight:1000;
       letter-spacing:.3px;
@@ -156,6 +156,43 @@
       background: rgba(0,0,0,.18);
       display:inline-flex;gap:8px;align-items:center;
     }
+
+    .special{
+      border:1px solid rgba(255,180,0,.20);
+      background: rgba(255,140,0,.08);
+      border-radius:18px;
+      padding:12px;
+      margin: 10px 0 14px 0;
+    }
+    .specialHead{
+      display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+    .specialGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width: 700px){ .specialGrid{grid-template-columns:1fr} }
+    .spItem{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.14);
+      border-radius:16px;
+      padding:10px;
+    }
+    .spItem b{display:block;font-size:12px}
+    .spItem span{display:block;font-size:11px;color:rgba(255,255,255,.72);margin-top:6px;line-height:1.25}
+    .spTag{
+      display:inline-flex;
+      padding:6px 10px;border-radius:999px;
+      border:1px solid rgba(76,255,122,.35);
+      background: rgba(76,255,122,.10);
+      font-size:11px;font-weight:1000;
+      color:rgba(255,255,255,.90);
+      margin-top:8px;
+    }
+    .spTag.mid{border-color: rgba(255,180,0,.35); background: rgba(255,180,0,.10);}
+    .spTag.low{border-color: rgba(255,74,74,.28); background: rgba(255,74,74,.10);}
 
     .event{
       border:1px solid rgba(255,255,255,.10);
@@ -358,7 +395,7 @@
       font-size:12px;
     }
 
-    /* ===== RUOTA MODAL ===== */
+    /* MODAL */
     .modal{
       position:fixed; inset:0;
       background: rgba(0,0,0,.55);
@@ -404,6 +441,8 @@
     @media (max-width: 860px){
       .modalBody{grid-template-columns:1fr}
     }
+
+    /* RUOTA */
     .wheelWrap{
       border:1px solid rgba(255,255,255,.10);
       border-radius:18px;
@@ -413,6 +452,8 @@
       flex-direction:column;
       align-items:center;
       gap:12px;
+      position:relative;
+      overflow:hidden;
     }
     .wheel{
       width:320px;height:320px;
@@ -431,7 +472,7 @@
         );
       box-shadow: 0 30px 80px rgba(0,0,0,.55);
       transform: rotate(0deg);
-      transition: transform 3.2s cubic-bezier(.14,.9,.12,1);
+      transition: transform 2.9s cubic-bezier(.14,.9,.12,1);
       position:relative;
       overflow:hidden;
     }
@@ -449,8 +490,9 @@
       filter: drop-shadow(0 8px 12px rgba(0,0,0,.45));
       margin-top:-6px;
     }
+    .spinRow{display:flex;gap:10px;width:100%}
     .spinBtn{
-      width:100%;
+      flex:1;
       padding:12px 12px;
       border-radius:14px;
       border:1px solid rgba(255,180,0,.45);
@@ -459,8 +501,10 @@
       font-weight:1000;
       cursor:pointer;
     }
-    .spinBtn:disabled{
-      opacity:.55; cursor:not-allowed;
+    .spinBtn.alt{
+      border-color: rgba(255,255,255,.16);
+      background: rgba(255,255,255,.08);
+      color: rgba(255,255,255,.92);
     }
     .resultBox{
       border:1px solid rgba(255,255,255,.10);
@@ -475,21 +519,42 @@
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.04);
       color:rgba(255,255,255,.88);
-      font-weight:900;
+      font-weight:1000;
       line-height:1.25;
       min-height:50px;
       display:flex;align-items:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .pop{
+      animation: pop .35s ease-out;
+    }
+    @keyframes pop{
+      0%{transform:scale(.96);opacity:.7}
+      100%{transform:scale(1);opacity:1}
     }
     .small{font-size:11px;color:rgba(255,255,255,.65);line-height:1.35;margin-top:10px}
+
+    /* CONFETTI */
+    .confetti{
+      position:absolute;
+      width:10px;height:14px;
+      border-radius:3px;
+      opacity:.9;
+      top:-20px;
+      animation: fall 1.1s linear forwards;
+    }
+    @keyframes fall{
+      to{ transform: translateY(420px) rotate(240deg); opacity:0; }
+    }
 
     @media print{
       body{background:#fff;color:#000}
       .wrap{margin:0;max-width:100%;padding:0}
       .shell{box-shadow:none;border:none;border-radius:0}
-      .topbar,.left{display:none !important}
+      .topbar,.left .toolbar,.special,.modal{display:none !important}
       .grid{grid-template-columns:1fr;padding:0}
-      .right{border:none}
-      .modal{display:none !important}
+      .left{display:none !important}
     }
   </style>
 </head>
@@ -500,9 +565,7 @@
 
       <div class="topbar">
         <div class="brand">
-          <div class="logoBadge" aria-label="Vincitù">
-            <div class="logoText">vincitù</div>
-          </div>
+          <div class="logoBadge"><div class="logoText">vincitù</div></div>
           <div class="brandTitle">
             <b>Vincitù • IA Portal</b>
             <span>Eventi reali • quote non mostrate: si inseriscono al banco</span>
@@ -514,14 +577,15 @@
           <div class="chip">Agg.: <b id="updatedChip" style="color:rgba(255,255,255,.92)">—</b></div>
           <div class="chip">Fascia: <b id="slotChip" style="color:rgba(255,255,255,.92)">Sera</b></div>
           <button class="btn" id="btnWheel">🎡 Ruota</button>
+          <button class="btn" id="btnQuiz">🧠 Quiz</button>
         </div>
 
         <div class="motto">
           <span class="tag">🧠 Modalità cliente</span>
           <span id="mottoText">Carica la schedina: scegli, verifica al banco, stampa.</span>
           <b id="mottoStrong">Pochi step, grande controllo.</b>
-          <span class="pill" id="badgePill">Badge: <b id="badgeText">Bronzo</b></span>
-          <span class="pill" id="missionPill">Missione: <b id="missionText">Max 2 selezioni</b></span>
+          <span class="pill">Missione: <b id="missionText">Max 2 selezioni</b></span>
+          <span class="pill">Sfida: <b id="timerText">20s focus</b></span>
         </div>
       </div>
 
@@ -532,7 +596,29 @@
           <div class="toolbar">
             <button class="btn btnPrimary" id="btnNew">🧠 Nuovi eventi</button>
             <button class="btn" id="btnSlot">🕒 Cambia fascia</button>
+            <button class="btn" id="btnTimer">⏱️ Start 20s</button>
             <span class="pill">Eventi mostrati: <b id="count">0</b>/5</span>
+          </div>
+
+          <!-- ANGLO SPECIALE -->
+          <div class="special">
+            <div class="specialHead">
+              <b>📌 Angolo Speciale • Corner & Ammonizioni (Alta probabilità)</b>
+              <span class="pill">Selezioni “di sala” • senza quote</span>
+            </div>
+            <div class="specialGrid">
+              <div class="spItem" id="spCorners">
+                <b>🚩 Corner consigliati</b>
+                <span>Carico…</span>
+              </div>
+              <div class="spItem" id="spCards">
+                <b>🟨 Ammonizioni consigliate</b>
+                <span>Carico…</span>
+              </div>
+            </div>
+            <div class="note" style="margin-top:10px">
+              Nota: sono indicazioni basate su “ritmo/agonismo” stimati. La quota reale va sempre verificata al banco.
+            </div>
           </div>
 
           <div id="events"></div>
@@ -540,7 +626,6 @@
 
           <div class="note">
             Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
-            <br>⚠️ Le quote reali possono cambiare: inseriscile tu nella schedina dopo averle viste al banco.
           </div>
         </div>
 
@@ -594,17 +679,42 @@
         <button class="xBtn" id="btnCloseWheel">Chiudi ✖</button>
       </div>
       <div class="modalBody">
-        <div class="wheelWrap">
+        <div class="wheelWrap" id="wheelWrap">
           <div class="pin"></div>
           <div class="wheel" id="wheel"></div>
-          <button class="spinBtn" id="btnSpin">Gira la ruota</button>
-          <div class="small">1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.</div>
+
+          <div class="spinRow">
+            <button class="spinBtn" id="btnSpinDaily">Gira (oggi)</button>
+            <button class="spinBtn alt" id="btnSpinDemo">Gira demo</button>
+          </div>
+
+          <div class="small" id="wheelInfo">1 giro ufficiale al giorno + demo illimitata (intrattenimento, gioco responsabile).</div>
         </div>
+
         <div class="resultBox">
           <h4>🎁 Risultato</h4>
-          <div class="result" id="wheelResult">Premi “Gira la ruota” per ottenere un consiglio bonus.</div>
-          <div class="small" id="wheelInfo">Suggerimento: usa la ruota per rendere l’esperienza più divertente per i clienti.</div>
+          <div class="result" id="wheelResult">Premi un pulsante per ottenere un consiglio bonus.</div>
+          <div class="small">Suggerimento: usa la ruota per rendere l’esperienza più divertente per i clienti.</div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL QUIZ -->
+  <div class="modal" id="quizModal" aria-hidden="true">
+    <div class="modalCard">
+      <div class="modalTop">
+        <b>🧠 Quiz rapido (in sala)</b>
+        <button class="xBtn" id="btnCloseQuiz">Chiudi ✖</button>
+      </div>
+      <div style="padding:14px">
+        <div class="result" id="quizQ" style="margin-bottom:12px">Domanda…</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btnPrimary" id="quizA">A</button>
+          <button class="btn btnPrimary" id="quizB">B</button>
+          <button class="btn" id="quizNext">↻ Nuova domanda</button>
+        </div>
+        <div class="note" id="quizHint" style="margin-top:12px">Gioco leggero: serve solo a intrattenere.</div>
       </div>
     </div>
   </div>
@@ -612,21 +722,17 @@
 <script>
   const qs = new URLSearchParams(location.search);
   const center = (qs.get("c") || "VINC001").toUpperCase();
-  let slot = (qs.get("slot") || "evening").toLowerCase(); // morning | afternoon | evening
+  let slot = (qs.get("slot") || "evening").toLowerCase();
   let seed = parseInt(qs.get("v") || (Date.now() % 100000), 10);
 
   const slotLabel = (s)=> s==="morning" ? "Mattina" : s==="afternoon" ? "Pomeriggio" : "Sera";
   const slotIT = (it)=> it==="mattina" ? "Mattina" : it==="pomeriggio" ? "Pomeriggio" : "Sera";
 
-  const flagEmoji = (cc)=>{
-    const map = { IT:"🇮🇹", EN:"🏴", ES:"🇪🇸", FR:"🇫🇷", DE:"🇩🇪", NL:"🇳🇱", PT:"🇵🇹", SE:"🇸🇪", TR:"🇹🇷", PL:"🇵🇱", GR:"🇬🇷", CH:"🇨🇭" };
-    return map[cc] || "🌍";
-  };
+  document.getElementById("centerChip").textContent = center;
+  document.getElementById("slotChip").textContent = slotLabel(slot);
 
   const elEvents = document.getElementById("events");
   const elErr = document.getElementById("err");
-  document.getElementById("centerChip").textContent = center;
-  document.getElementById("slotChip").textContent = slotLabel(slot);
 
   function mulberry32(a){
     return function(){
@@ -636,8 +742,17 @@
       return ((t ^ t >>> 14) >>> 0) / 4294967296;
     }
   }
+  function hash(s){
+    let h = 2166136261;
+    for(let i=0;i<s.length;i++){
+      h ^= s.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return (h>>>0);
+  }
+  function clamp(x,a,b){ return Math.max(a, Math.min(b, x)); }
 
-  // ====== MOTTO / MISSIONI / BADGE ======
+  // ===== MOTTO / MISSIONE =====
   const MOTTO = [
     { t:"Scegli, verifica al banco, stampa: semplice e pulito.", b:"Poche selezioni = più controllo." },
     { t:"Se una cosa non ti convince… saltala.", b:"La miglior giocata è quella che capisci." },
@@ -650,7 +765,6 @@
     document.getElementById("mottoText").textContent = MOTTO[r].t;
     document.getElementById("mottoStrong").textContent = MOTTO[r].b;
   }
-
   const MISSIONS = [
     "Max 2 selezioni",
     "Stake fisso (5€)",
@@ -660,41 +774,44 @@
   ];
   function missionOfDay(){
     const d = new Date();
-    const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+    const key = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
     const idx = (hash(key) % MISSIONS.length);
     document.getElementById("missionText").textContent = MISSIONS[idx];
   }
 
-  function hash(s){
-    let h = 2166136261;
-    for(let i=0;i<s.length;i++){
-      h ^= s.charCodeAt(i);
-      h = Math.imul(h, 16777619);
-    }
-    return (h>>>0);
+  // ===== TIMER 20s =====
+  let timerInt = null;
+  function startTimer(){
+    if(timerInt) clearInterval(timerInt);
+    let left = 20;
+    document.getElementById("timerText").textContent = left + "s focus";
+    timerInt = setInterval(()=>{
+      left--;
+      document.getElementById("timerText").textContent = left + "s focus";
+      if(left<=0){
+        clearInterval(timerInt);
+        timerInt = null;
+        document.getElementById("timerText").textContent = "Bravo! ✅";
+        bumpMotto();
+      }
+    }, 1000);
   }
+  document.getElementById("btnTimer").addEventListener("click", startTimer);
 
-  function badgeFromPrints(n){
-    if(n >= 20) return "Oro";
-    if(n >= 8) return "Argento";
-    return "Bronzo";
+  // ===== SCHEDINA =====
+  let selected = [];
+
+  function escapeHtml(s){
+    return String(s || "").replace(/[&<>"']/g, (m)=>({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+    }[m]));
   }
-  function refreshBadge(){
-    const n = Number(localStorage.getItem("bb_prints") || "0");
-    const b = badgeFromPrints(n);
-    document.getElementById("badgeText").textContent = b;
-  }
-
-  // ====== SCHEDINA ======
-  let selected = []; // {id, match, market, note, tag, odd}
-
   function badgeClass(tag){
     const x = (tag||"").toLowerCase();
     if(x.includes("alta")) return "high";
     if(x.includes("media")) return "mid";
     return "low";
   }
-
   function totalOdd(){
     let acc = 1;
     let okCount = 0;
@@ -707,11 +824,9 @@
     }
     return { acc, okCount };
   }
-
   function updateKPI(){
     const stake = parseFloat(document.getElementById("stake").value || "0");
     document.getElementById("kSel").textContent = String(selected.length);
-
     const {acc, okCount} = totalOdd();
     if(selected.length && okCount === selected.length){
       document.getElementById("kOdd").textContent = acc.toFixed(2);
@@ -721,7 +836,6 @@
       document.getElementById("kWin").textContent = "—";
     }
   }
-
   function renderCart(){
     const box = document.getElementById("cartList");
     if(!selected.length){
@@ -729,7 +843,6 @@
       updateKPI();
       return;
     }
-
     box.innerHTML = "";
     selected.forEach((s, idx)=>{
       const row = document.createElement("div");
@@ -755,14 +868,11 @@
       });
       box.appendChild(row);
     });
-
     updateKPI();
   }
-
   function addPick(ev, market){
     const key = `${ev.id}__${market.label}`;
     if(selected.some(x => x.id === key)) return;
-
     selected.push({
       id: key,
       match: `${ev.home} - ${ev.away}`,
@@ -774,12 +884,14 @@
     renderCart();
   }
 
-  function escapeHtml(s){
-    return String(s || "").replace(/[&<>"']/g, (m)=>({
-      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
-    }[m]));
+  function abbr(name, short){
+    const s = (short || "").trim();
+    if(s) return escapeHtml(s.slice(0,3).toUpperCase());
+    const n = String(name||"").replace(/[^A-Za-zÀ-ž ]/g,"").trim().split(/\s+/);
+    const a = (n[0]||"X")[0] || "X";
+    const b = (n.length>1 ? n[n.length-1][0] : ((n[0]||"Y")[1] || "Y"));
+    return escapeHtml((a+b).toUpperCase());
   }
-
   function crestOrBadge(url, short, name){
     const safeUrl = (url || "").trim();
     if(safeUrl){
@@ -792,13 +904,99 @@
     return `<span class="teamBadge">${abbr(name, short)}</span>`;
   }
 
-  function abbr(name, short){
-    const s = (short || "").trim();
-    if(s) return escapeHtml(s.slice(0,3).toUpperCase());
-    const n = String(name||"").replace(/[^A-Za-zÀ-ž ]/g,"").trim().split(/\s+/);
-    const a = (n[0]||"X")[0] || "X";
-    const b = (n.length>1 ? n[n.length-1][0] : ((n[0]||"Y")[1] || "Y"));
-    return escapeHtml((a+b).toUpperCase());
+  const flagEmoji = (cc)=>{
+    const map = { IT:"🇮🇹", EN:"🏴", ES:"🇪🇸", FR:"🇫🇷", DE:"🇩🇪", NL:"🇳🇱", PT:"🇵🇹", SE:"🇸🇪", TR:"🇹🇷", PL:"🇵🇱", GR:"🇬🇷", CH:"🇨🇭" };
+    return map[cc] || "🌍";
+  };
+
+  function spTagClass(score){
+    if(score >= 0.74) return "";
+    if(score >= 0.54) return "mid";
+    return "low";
+  }
+  function spTagText(score){
+    if(score >= 0.74) return "Alta";
+    if(score >= 0.54) return "Media";
+    return "Bassa";
+  }
+
+  // ===== Angolo Speciale: sceglie top match da tutti gli eventi =====
+  function renderSpecial(allEvents){
+    const cornersBox = document.getElementById("spCorners");
+    const cardsBox = document.getElementById("spCards");
+
+    const scored = allEvents
+      .filter(e => e && e.context)
+      .map(e => ({
+        e,
+        c: Number(e.context.corners ?? 0),
+        y: Number(e.context.cards ?? 0),
+        fav: e.context.fav || "balanced"
+      }));
+
+    // Top 3 corner
+    const topC = scored
+      .slice()
+      .sort((a,b)=> b.c - a.c)
+      .slice(0,3);
+
+    // Top 3 cards
+    const topY = scored
+      .slice()
+      .sort((a,b)=> b.y - a.y)
+      .slice(0,3);
+
+    function mkList(items, kind){
+      if(!items.length) return "<span>Nessun dato disponibile.</span>";
+
+      return items.map(({e, c, y, fav}, i)=>{
+        const score = kind==="c" ? c : y;
+        const tag = spTagText(score);
+        const cls = spTagClass(score);
+
+        // Motivazioni realistiche
+        let note = "";
+        if(kind==="c"){
+          note = score>=0.74
+            ? "Ritmo alto + pressione: corner probabili. Preferisci linee “moderate” (es. 8.5/9.5) se la quota è giusta."
+            : score>=0.54
+              ? "Possibili corner: valuta se una squadra spinge molto. Verifica linea al banco."
+              : "Corner non garantiti: scegli solo se ti convince davvero.";
+        }else{
+          note = score>=0.74
+            ? "Gara fisica/agonistica: cartellini probabili. Buona per Over cartellini se quota ok."
+            : score>=0.54
+              ? "Qualche cartellino possibile: dipende da ritmo e pressione. Verifica linea al banco."
+              : "Cartellini non scontati: meglio evitare se sei indeciso.";
+        }
+
+        // Evita frasi “tranquille” se away favorita
+        if(kind==="c" && fav==="away" && score>=0.54){
+          note = "Ospiti favoriti: corner spesso da pressione della sfavorita. Valuta con prudenza e quota giusta.";
+        }
+
+        const marketLabel = (kind==="c") ? "Corner (indicativo)" : "Cartellini (indicativo)";
+
+        return `
+          <div style="margin-top:10px;border-top:1px solid rgba(255,255,255,.10);padding-top:10px">
+            <b>${i+1}) ${escapeHtml(e.home)} - ${escapeHtml(e.away)}</b>
+            <span>${marketLabel} • ${escapeHtml(e.start || "")}</span>
+            <span>${note}</span>
+            <div class="spTag ${cls}">${tag} • verifica al banco</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    cornersBox.innerHTML = `
+      <b>🚩 Corner consigliati</b>
+      ${mkList(topC, "c")}
+    `;
+
+    cardsBox.innerHTML = `
+      <b>🟨 Ammonizioni consigliate</b>
+      ${mkList(topY, "y")}
+    `;
   }
 
   function render(events, updatedAt){
@@ -888,6 +1086,9 @@
         throw new Error("events.json è valido ma non contiene eventi (events=[]). Controlla GitHub Actions.");
       }
 
+      // aggiorna angolo speciale su tutti gli eventi
+      renderSpecial(all);
+
       const want = slot==="morning" ? "mattina" : slot==="afternoon" ? "pomeriggio" : "sera";
       const base = all.filter(x => (x.slot||"").toLowerCase() === want);
       const pool = base.length ? base : all;
@@ -913,7 +1114,6 @@
       render(out, data.updated_at);
       bumpMotto();
       missionOfDay();
-      refreshBadge();
 
     }catch(err){
       elEvents.innerHTML = "";
@@ -949,34 +1149,30 @@
       const go = confirm("Mancano alcune quote. Vuoi stampare lo stesso?");
       if(!go) return;
     }
-
-    // badge: conta stampe
-    const n = Number(localStorage.getItem("bb_prints") || "0") + 1;
-    localStorage.setItem("bb_prints", String(n));
-    refreshBadge();
-
     window.print();
   });
 
   document.getElementById("stake").addEventListener("input", updateKPI);
 
-  // ===== RUOTA =====
+  // ===== RUOTA / DIVERTIMENTI =====
   const wheelModal = document.getElementById("wheelModal");
   const wheel = document.getElementById("wheel");
+  const wheelWrap = document.getElementById("wheelWrap");
   const btnWheel = document.getElementById("btnWheel");
   const btnCloseWheel = document.getElementById("btnCloseWheel");
-  const btnSpin = document.getElementById("btnSpin");
+  const btnSpinDaily = document.getElementById("btnSpinDaily");
+  const btnSpinDemo = document.getElementById("btnSpinDemo");
   const wheelResult = document.getElementById("wheelResult");
   const wheelInfo = document.getElementById("wheelInfo");
 
   const PRIZES = [
-    "🎯 Missione bonus: oggi fai massimo 2 selezioni.",
-    "🧠 Consiglio: se una quota è troppo bassa, non forzare la multipla.",
-    "⏸️ Pausa 20 secondi: respira e scegli una sola giocata.",
+    "🎯 Missione bonus: oggi massimo 2 selezioni.",
+    "🧠 Consiglio: se la quota è troppo bassa, non forzare la multipla.",
+    "⏸️ Pausa 10 secondi: respira e scegli una sola giocata.",
     "✅ Regola d’oro: stake fisso, niente rincorse.",
     "🔍 Verifica: controlla quota al banco prima di inserire.",
-    "🏅 Badge boost: stampa solo se tutte le quote sono inserite.",
-    "🎲 Modalità safe: scegli 1 mercato ‘Alta’ e stop.",
+    "🏅 Sfida: stampa solo se tutte le quote sono inserite.",
+    "🎲 Modalità safe: scegli 1 mercato “Alta” e stop.",
     "💡 Tip: meglio saltare un match che inseguirlo."
   ];
 
@@ -984,64 +1180,151 @@
     const d = new Date();
     return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
   }
-  function wheelState(){
-    const key = "bb_wheel_" + todayKey();
-    return {
-      key,
-      used: localStorage.getItem(key) === "1"
-    };
+
+  function playTick(){
+    try{
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const o = ctx.createOscillator();
+      const g = ctx.createGain();
+      o.type = "square";
+      o.frequency.value = 720;
+      g.gain.value = 0.05;
+      o.connect(g); g.connect(ctx.destination);
+      o.start();
+      setTimeout(()=>{ o.stop(); ctx.close(); }, 90);
+    }catch(e){}
+  }
+
+  function confettiBurst(){
+    const colors = ["#ff8a00","#4cff7a","#00d2ff","#ff4a4a","#8c46ff","#ffd08a"];
+    for(let i=0;i<26;i++){
+      const c = document.createElement("div");
+      c.className = "confetti";
+      c.style.left = (Math.random()*100) + "%";
+      c.style.background = colors[Math.floor(Math.random()*colors.length)];
+      c.style.animationDuration = (0.9 + Math.random()*0.6) + "s";
+      wheelWrap.appendChild(c);
+      setTimeout(()=> c.remove(), 1400);
+    }
   }
 
   function openWheel(){
     wheelModal.classList.add("open");
     wheelModal.setAttribute("aria-hidden", "false");
-    const st = wheelState();
-    btnSpin.disabled = st.used;
-    wheelInfo.textContent = st.used
-      ? "Hai già girato oggi su questo PC. Domani si resetta automaticamente."
-      : "1 giro al giorno. Solo intrattenimento: consigli e missioni (gioco responsabile).";
+    const used = localStorage.getItem("bb_wheel_" + todayKey()) === "1";
+    btnSpinDaily.disabled = used;
+    wheelInfo.textContent = used
+      ? "Hai già fatto il giro ufficiale oggi. Puoi usare Gira demo (illimitato)."
+      : "1 giro ufficiale al giorno + demo illimitata (intrattenimento, gioco responsabile).";
   }
   function closeWheel(){
     wheelModal.classList.remove("open");
     wheelModal.setAttribute("aria-hidden", "true");
   }
-
   btnWheel.addEventListener("click", openWheel);
   btnCloseWheel.addEventListener("click", closeWheel);
   wheelModal.addEventListener("click", (e)=>{ if(e.target === wheelModal) closeWheel(); });
 
   let spinning = false;
-  btnSpin.addEventListener("click", ()=>{
-    const st = wheelState();
-    if(st.used || spinning) return;
+  function spin(mode){
+    if(spinning) return;
     spinning = true;
-    btnSpin.disabled = true;
 
-    // esito deterministico (stabile) basato su data+centro
-    const idx = hash(todayKey() + "|" + center) % PRIZES.length;
+    // scegli premio:
+    // daily = deterministico per non “barare”
+    // demo = casuale
+    let idx;
+    if(mode === "daily"){
+      idx = hash(todayKey() + "|" + center) % PRIZES.length;
+      localStorage.setItem("bb_wheel_" + todayKey(), "1");
+      btnSpinDaily.disabled = true;
+      wheelInfo.textContent = "Giro ufficiale fatto ✅ Ora puoi usare Gira demo (illimitato).";
+    }else{
+      idx = Math.floor(Math.random() * PRIZES.length);
+      wheelInfo.textContent = "Demo attiva: puoi rigirare quando vuoi.";
+    }
 
-    // rotazione: fai 6 giri + offset per "settore"
     const sector = 360 / PRIZES.length;
     const targetDeg = (idx * sector) + (sector/2);
-    const spins = 6*360;
+    const spins = 5*360 + Math.floor(Math.random()*360);
     const finalDeg = spins + (360 - targetDeg);
 
+    playTick();
     wheel.style.transform = `rotate(${finalDeg}deg)`;
 
     setTimeout(()=>{
-      wheelResult.textContent = PRIZES[idx];
-      localStorage.setItem(st.key, "1");
-      wheelInfo.textContent = "Fatto! Domani puoi girare di nuovo su questo PC.";
-      spinning = false;
+      wheelResult.textContent = (mode==="daily" ? "🎁 (Oggi) " : "🎭 (Demo) ") + PRIZES[idx];
+      wheelResult.classList.remove("pop");
+      void wheelResult.offsetWidth;
+      wheelResult.classList.add("pop");
+      confettiBurst();
       bumpMotto();
-    }, 3300);
-  });
+      spinning = false;
+    }, 3000);
+  }
 
+  btnSpinDaily.addEventListener("click", ()=> spin("daily"));
+  btnSpinDemo.addEventListener("click", ()=> spin("demo"));
+
+  // ===== QUIZ =====
+  const quizModal = document.getElementById("quizModal");
+  const btnQuiz = document.getElementById("btnQuiz");
+  const btnCloseQuiz = document.getElementById("btnCloseQuiz");
+  const quizQ = document.getElementById("quizQ");
+  const quizA = document.getElementById("quizA");
+  const quizB = document.getElementById("quizB");
+  const quizNext = document.getElementById("quizNext");
+  const quizHint = document.getElementById("quizHint");
+
+  const QUIZ = [
+    {q:"Meglio fare 2 selezioni fatte bene o 6 a caso?", a:"2 fatte bene", b:"6 a caso", ok:"a", hint:"Controllo > quantità."},
+    {q:"Prima cosa da fare prima di stampare?", a:"Inserire quote reali", b:"Aggiungere altre selezioni", ok:"a", hint:"Verifica al banco, poi stampa."},
+    {q:"Se un match non ti convince?", a:"Lo salti", b:"Lo giochi lo stesso", ok:"a", hint:"Saltare è una scelta intelligente."},
+    {q:"Stake consigliato per controllo?", a:"Fisso", b:"Aumentare dopo perdita", ok:"a", hint:"Niente rincorse."},
+    {q:"Cosa conta di più in sala?", a:"Divertimento + controllo", b:"Solo rischio", ok:"a", hint:"Responsabile è meglio."},
+  ];
+
+  function openQuiz(){
+    quizModal.classList.add("open");
+    quizModal.setAttribute("aria-hidden","false");
+    newQuiz();
+  }
+  function closeQuiz(){
+    quizModal.classList.remove("open");
+    quizModal.setAttribute("aria-hidden","true");
+  }
+  btnQuiz.addEventListener("click", openQuiz);
+  btnCloseQuiz.addEventListener("click", closeQuiz);
+  quizModal.addEventListener("click", (e)=>{ if(e.target === quizModal) closeQuiz(); });
+
+  let cur = null;
+  function newQuiz(){
+    cur = QUIZ[Math.floor(Math.random()*QUIZ.length)];
+    quizQ.textContent = "❓ " + cur.q;
+    quizA.textContent = "A) " + cur.a;
+    quizB.textContent = "B) " + cur.b;
+    quizHint.textContent = "Scegli A o B (solo intrattenimento).";
+  }
+  function answer(which){
+    if(!cur) return;
+    playTick();
+    if(which === cur.ok){
+      quizHint.textContent = "✅ Giusto! " + cur.hint;
+      confettiBurst();
+    }else{
+      quizHint.textContent = "❌ Quasi. " + cur.hint;
+    }
+    bumpMotto();
+  }
+  quizA.addEventListener("click", ()=>answer("a"));
+  quizB.addEventListener("click", ()=>answer("b"));
+  quizNext.addEventListener("click", newQuiz);
+
+  // ===== BOTTONI PRINCIPALI =====
   renderCart();
   load();
   bumpMotto();
   missionOfDay();
-  refreshBadge();
 </script>
 </body>
 </html>
