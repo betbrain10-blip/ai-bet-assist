@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-21 16:02",
+  "updated_at": "2026-01-21 19:08",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -8,102 +8,6 @@
     "total": 15
   },
   "events": [
-    {
-      "id": 551986,
-      "uniq": "551986|2026-01-21T20:00:00Z|Atalanta BC|Athletic Club",
-      "slot": "mattina",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Atalanta BC",
-      "away": "Athletic Club",
-      "home_short": "ATA",
-      "away_short": "ATH",
-      "home_crest": "https://crests.football-data.org/102.png",
-      "away_crest": "https://crests.football-data.org/77.png",
-      "start_iso": "2026-01-21T21:00:00+01:00",
-      "start": "Oggi 21:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "odd": 2.03
-        },
-        {
-          "label": "1X",
-          "odd": 1.58
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "odd": 1.86
-        }
-      ]
-    },
-    {
-      "id": 551988,
-      "uniq": "551988|2026-01-21T20:00:00Z|Juventus FC|Sport Lisboa e Benfica",
-      "slot": "mattina",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Juventus FC",
-      "away": "Sport Lisboa e Benfica",
-      "home_short": "JUV",
-      "away_short": "BEN",
-      "home_crest": "https://crests.football-data.org/109.png",
-      "away_crest": "https://crests.football-data.org/1903.png",
-      "start_iso": "2026-01-21T21:00:00+01:00",
-      "start": "Oggi 21:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "odd": 1.66
-        },
-        {
-          "label": "1X",
-          "odd": 1.25
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "odd": 1.88
-        }
-      ]
-    },
-    {
-      "id": 552036,
-      "uniq": "552036|2026-01-21T20:00:00Z|Newcastle United FC|PSV",
-      "slot": "mattina",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Newcastle United FC",
-      "away": "PSV",
-      "home_short": "NEW",
-      "away_short": "PSV",
-      "home_crest": "https://crests.football-data.org/67.png",
-      "away_crest": "https://crests.football-data.org/674.png",
-      "start_iso": "2026-01-21T21:00:00+01:00",
-      "start": "Oggi 21:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "odd": 1.95
-        },
-        {
-          "label": "1X",
-          "odd": 1.48
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "odd": 1.82
-        }
-      ]
-    },
     {
       "id": 551914,
       "uniq": "551914|2026-01-21T20:00:00Z|FC Bayern München|Royale Union Saint-Gilloise",
@@ -165,6 +69,102 @@
         {
           "label": "Goal/NoGoal Sì",
           "odd": 1.8
+        }
+      ]
+    },
+    {
+      "id": 542569,
+      "uniq": "542569|2026-01-23T19:00:00Z|AJ Auxerre|Paris Saint-Germain FC",
+      "slot": "mattina",
+      "league": "Ligue 1",
+      "league_code": "FL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/FL1.png",
+      "home": "AJ Auxerre",
+      "away": "Paris Saint-Germain FC",
+      "home_short": "AJA",
+      "away_short": "PSG",
+      "home_crest": "https://crests.football-data.org/519.png",
+      "away_crest": "https://crests.football-data.org/524.png",
+      "start_iso": "2026-01-23T20:00:00+01:00",
+      "start": "Ven 20:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.77
+        },
+        {
+          "label": "1X",
+          "odd": 1.38
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.73
+        }
+      ]
+    },
+    {
+      "id": 540576,
+      "uniq": "540576|2026-01-23T19:30:00Z|FC St. Pauli 1910|Hamburger SV",
+      "slot": "mattina",
+      "league": "Bundesliga",
+      "league_code": "BL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/BL1.png",
+      "home": "FC St. Pauli 1910",
+      "away": "Hamburger SV",
+      "home_short": "STP",
+      "away_short": "HSV",
+      "home_crest": "https://crests.football-data.org/20.png",
+      "away_crest": "https://crests.football-data.org/7.png",
+      "start_iso": "2026-01-23T20:30:00+01:00",
+      "start": "Ven 20:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.96
+        },
+        {
+          "label": "1X",
+          "odd": 1.62
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.83
+        }
+      ]
+    },
+    {
+      "id": 537031,
+      "uniq": "537031|2026-01-23T19:45:00Z|FC Internazionale Milano|AC Pisa 1909",
+      "slot": "mattina",
+      "league": "Serie A",
+      "league_code": "SA",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/c111.png",
+      "home": "FC Internazionale Milano",
+      "away": "AC Pisa 1909",
+      "home_short": "INT",
+      "away_short": "PIS",
+      "home_crest": "https://crests.football-data.org/108.png",
+      "away_crest": "https://crests.football-data.org/487.png",
+      "start_iso": "2026-01-23T20:45:00+01:00",
+      "start": "Ven 20:45",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.83
+        },
+        {
+          "label": "1X",
+          "odd": 1.47
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.76
         }
       ]
     },
@@ -329,102 +329,6 @@
       ]
     },
     {
-      "id": 552001,
-      "uniq": "552001|2026-01-21T17:45:00Z|Qarabağ Ağdam FK|Eintracht Frankfurt",
-      "slot": "sera",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Qarabağ Ağdam FK",
-      "away": "Eintracht Frankfurt",
-      "home_short": "QAR",
-      "away_short": "SGE",
-      "home_crest": "https://crests.football-data.org/611.png",
-      "away_crest": "https://crests.football-data.org/19.png",
-      "start_iso": "2026-01-21T18:45:00+01:00",
-      "start": "Oggi 18:45",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "odd": 1.87
-        },
-        {
-          "label": "1X",
-          "odd": 1.38
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "odd": 1.77
-        }
-      ]
-    },
-    {
-      "id": 552010,
-      "uniq": "552010|2026-01-21T17:45:00Z|Galatasaray SK|Club Atlético de Madrid",
-      "slot": "sera",
-      "league": "UEFA Champions League",
-      "league_code": "CL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/CL.png",
-      "home": "Galatasaray SK",
-      "away": "Club Atlético de Madrid",
-      "home_short": "GAL",
-      "away_short": "ATL",
-      "home_crest": "https://crests.football-data.org/610.png",
-      "away_crest": "https://crests.football-data.org/78.png",
-      "start_iso": "2026-01-21T18:45:00+01:00",
-      "start": "Oggi 18:45",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "odd": 1.78
-        },
-        {
-          "label": "1X",
-          "odd": 1.27
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "odd": 1.8
-        }
-      ]
-    },
-    {
-      "id": 537577,
-      "uniq": "537577|2026-01-21T17:45:00Z|AZ|SBV Excelsior",
-      "slot": "sera",
-      "league": "Eredivisie",
-      "league_code": "DED",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/ED.png",
-      "home": "AZ",
-      "away": "SBV Excelsior",
-      "home_short": "AZ",
-      "away_short": "EXC",
-      "home_crest": "https://crests.football-data.org/682.png",
-      "away_crest": "https://crests.football-data.org/670.png",
-      "start_iso": "2026-01-21T18:45:00+01:00",
-      "start": "Oggi 18:45",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "odd": 1.83
-        },
-        {
-          "label": "1X",
-          "odd": 1.37
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "odd": 1.76
-        }
-      ]
-    },
-    {
       "id": 551949,
       "uniq": "551949|2026-01-21T20:00:00Z|Olympique de Marseille|Liverpool FC",
       "slot": "sera",
@@ -485,6 +389,102 @@
         {
           "label": "Goal/NoGoal Sì",
           "odd": 1.84
+        }
+      ]
+    },
+    {
+      "id": 551986,
+      "uniq": "551986|2026-01-21T20:00:00Z|Atalanta BC|Athletic Club",
+      "slot": "sera",
+      "league": "UEFA Champions League",
+      "league_code": "CL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/CL.png",
+      "home": "Atalanta BC",
+      "away": "Athletic Club",
+      "home_short": "ATA",
+      "away_short": "ATH",
+      "home_crest": "https://crests.football-data.org/102.png",
+      "away_crest": "https://crests.football-data.org/77.png",
+      "start_iso": "2026-01-21T21:00:00+01:00",
+      "start": "Oggi 21:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 2.03
+        },
+        {
+          "label": "1X",
+          "odd": 1.58
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.86
+        }
+      ]
+    },
+    {
+      "id": 551988,
+      "uniq": "551988|2026-01-21T20:00:00Z|Juventus FC|Sport Lisboa e Benfica",
+      "slot": "sera",
+      "league": "UEFA Champions League",
+      "league_code": "CL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/CL.png",
+      "home": "Juventus FC",
+      "away": "Sport Lisboa e Benfica",
+      "home_short": "JUV",
+      "away_short": "BEN",
+      "home_crest": "https://crests.football-data.org/109.png",
+      "away_crest": "https://crests.football-data.org/1903.png",
+      "start_iso": "2026-01-21T21:00:00+01:00",
+      "start": "Oggi 21:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.66
+        },
+        {
+          "label": "1X",
+          "odd": 1.25
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.88
+        }
+      ]
+    },
+    {
+      "id": 552036,
+      "uniq": "552036|2026-01-21T20:00:00Z|Newcastle United FC|PSV",
+      "slot": "sera",
+      "league": "UEFA Champions League",
+      "league_code": "CL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/CL.png",
+      "home": "Newcastle United FC",
+      "away": "PSV",
+      "home_short": "NEW",
+      "away_short": "PSV",
+      "home_crest": "https://crests.football-data.org/67.png",
+      "away_crest": "https://crests.football-data.org/674.png",
+      "start_iso": "2026-01-21T21:00:00+01:00",
+      "start": "Oggi 21:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "odd": 1.95
+        },
+        {
+          "label": "1X",
+          "odd": 1.48
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "odd": 1.82
         }
       ]
     }
