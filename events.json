@@ -1,11 +1,237 @@
 {
-  "updated_at": "2026-01-21 23:56",
+  "updated_at": "2026-01-22 00:49",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 0,
     "pomeriggio": 0,
-    "sera": 0,
-    "total": 0
+    "sera": 5,
+    "total": 5
   },
-  "events": []
+  "events": [
+    {
+      "id": 542569,
+      "uniq": "542569|2026-01-23T19:00:00Z|AJ Auxerre|Paris Saint-Germain FC",
+      "slot": "sera",
+      "league": "Ligue 1",
+      "league_code": "FL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/FL1.png",
+      "home": "AJ Auxerre",
+      "away": "Paris Saint-Germain FC",
+      "home_short": "AJA",
+      "away_short": "PSG",
+      "home_crest": "https://crests.football-data.org/519.png",
+      "away_crest": "https://crests.football-data.org/524.png",
+      "start_iso": "2026-01-23T20:00:00+01:00",
+      "start": "Domani 20:00",
+      "tip": "Possibile gara bloccata: se non ti convince, salta.",
+      "context": {
+        "diff": -0.11,
+        "fav": "balanced",
+        "tempo": 0.62,
+        "goals": 0.38,
+        "grit": 0.28,
+        "corners": 0.66,
+        "cards": 0.56
+      },
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Media",
+          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "⚖️ Equilibrio: 1X discreta ma non “sicura”. Verifica quota."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
+        }
+      ]
+    },
+    {
+      "id": 540576,
+      "uniq": "540576|2026-01-23T19:30:00Z|FC St. Pauli 1910|Hamburger SV",
+      "slot": "sera",
+      "league": "Bundesliga",
+      "league_code": "BL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/BL1.png",
+      "home": "FC St. Pauli 1910",
+      "away": "Hamburger SV",
+      "home_short": "STP",
+      "away_short": "HSV",
+      "home_crest": "https://crests.football-data.org/20.png",
+      "away_crest": "https://crests.football-data.org/7.png",
+      "start_iso": "2026-01-23T20:30:00+01:00",
+      "start": "Domani 20:30",
+      "tip": "Favorita esterna: 1X rischiosa. Meglio prudenza.",
+      "context": {
+        "diff": -0.74,
+        "fav": "away",
+        "tempo": 0.49,
+        "goals": 0.96,
+        "grit": 0.22,
+        "corners": 0.64,
+        "cards": 0.53
+      },
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Stake controllato."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "🚨 Ospiti favoriti: 1X rischiosa. Valutala solo con motivo chiaro."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "⚡ Buone chance Goal Sì: potenziale da entrambe. Stake controllato."
+        }
+      ]
+    },
+    {
+      "id": 537031,
+      "uniq": "537031|2026-01-23T19:45:00Z|FC Internazionale Milano|AC Pisa 1909",
+      "slot": "sera",
+      "league": "Serie A",
+      "league_code": "SA",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/c111.png",
+      "home": "FC Internazionale Milano",
+      "away": "AC Pisa 1909",
+      "home_short": "INT",
+      "away_short": "PIS",
+      "home_crest": "https://crests.football-data.org/108.png",
+      "away_crest": "https://crests.football-data.org/487.png",
+      "start_iso": "2026-01-23T20:45:00+01:00",
+      "start": "Domani 20:45",
+      "tip": "Favorita esterna: 1X rischiosa. Meglio prudenza.",
+      "context": {
+        "diff": -0.34,
+        "fav": "away",
+        "tempo": 0.33,
+        "goals": 0.19,
+        "grit": 0.14,
+        "corners": 0.43,
+        "cards": 0.55
+      },
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Bassa",
+          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "🚨 Ospiti favoriti: 1X rischiosa. Valutala solo con motivo chiaro."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Bassa",
+          "note": "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
+        }
+      ]
+    },
+    {
+      "id": 544416,
+      "uniq": "544416|2026-01-23T20:00:00Z|Levante UD|Elche CF",
+      "slot": "sera",
+      "league": "Primera Division",
+      "league_code": "PD",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/laliga.png",
+      "home": "Levante UD",
+      "away": "Elche CF",
+      "home_short": "LEV",
+      "away_short": "ELC",
+      "home_crest": "https://crests.football-data.org/88.png",
+      "away_crest": "https://crests.football-data.org/285.png",
+      "start_iso": "2026-01-23T21:00:00+01:00",
+      "start": "Domani 21:00",
+      "tip": "Match equilibrato: una sola giocata fatta bene vale di più.",
+      "context": {
+        "diff": -0.14,
+        "fav": "balanced",
+        "tempo": 0.16,
+        "goals": 0.74,
+        "grit": 0.05,
+        "corners": 0.44,
+        "cards": 0.37
+      },
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Media",
+          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "⚖️ Equilibrio: 1X discreta ma non “sicura”. Verifica quota."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "⚡ Buone chance Goal Sì: potenziale da entrambe. Stake controllato."
+        }
+      ]
+    },
+    {
+      "id": 545862,
+      "uniq": "545862|2026-01-23T20:15:00Z|Casa Pia AC|AVS",
+      "slot": "sera",
+      "league": "Primeira Liga",
+      "league_code": "PPL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/PPL.png",
+      "home": "Casa Pia AC",
+      "away": "AVS",
+      "home_short": "CAS",
+      "away_short": "AVS",
+      "home_crest": "https://crests.football-data.org/6618.png",
+      "away_crest": "https://crests.football-data.org/10340.png",
+      "start_iso": "2026-01-23T21:15:00+01:00",
+      "start": "Domani 21:15",
+      "tip": "Match equilibrato: una sola giocata fatta bene vale di più.",
+      "context": {
+        "diff": 0.11,
+        "fav": "balanced",
+        "tempo": 0.38,
+        "goals": 0.92,
+        "grit": 0.69,
+        "corners": 0.62,
+        "cards": 0.68
+      },
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Stake controllato."
+        },
+        {
+          "label": "1X",
+          "tag": "Media",
+          "note": "⚖️ Equilibrio: 1X discreta ma non “sicura”. Verifica quota."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "⚡ Buone chance Goal Sì: potenziale da entrambe. Stake controllato."
+        }
+      ]
+    }
+  ]
 }
