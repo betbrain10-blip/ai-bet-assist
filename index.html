@@ -44,11 +44,7 @@
       overflow-x:hidden;
     }
 
-    .wrap{
-      max-width:1220px;
-      margin:34px auto;
-      padding:0 16px;
-    }
+    .wrap{ max-width:1220px; margin:34px auto; padding:0 16px; }
 
     .shell{
       background: linear-gradient(180deg, rgba(18,24,52,.72), rgba(18,24,52,.58));
@@ -67,7 +63,6 @@
         radial-gradient(800px 240px at 30% 0%, rgba(255,152,0,.18), transparent 60%),
         radial-gradient(680px 240px at 70% 0%, rgba(120,80,255,.14), transparent 55%);
       pointer-events:none;
-      filter: blur(0px);
     }
 
     .topbar{
@@ -80,53 +75,31 @@
     }
 
     .brand{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      min-width: 260px;
+      display:flex; align-items:center; gap:10px;
+      min-width:260px;
     }
 
+    /* LOGO rosso come prima */
     .logo{
       width:34px; height:34px;
       border-radius:10px;
-      background:#d8292f; /* ROSSO come prima */
+      background:#d8292f;
       display:grid; place-items:center;
-      box-shadow: 0 10px 30px rgba(216,41,47,.25);
+      box-shadow: 0 10px 30px rgba(216,41,47,.22);
       border:1px solid rgba(255,255,255,.12);
       flex:0 0 auto;
     }
-    .logo span{
-      font-weight:900;
-      font-size:16px;
-      line-height:1;
-      color:white;
-      transform: translateY(-.5px);
-    }
+    .logo span{ font-weight:1000; font-size:16px; color:#fff; transform:translateY(-.5px); }
 
-    .brand h1{
-      margin:0;
-      font-size:16px;
-      font-weight:800;
-      letter-spacing:.2px;
-    }
-    .brand small{
-      display:block;
-      margin-top:2px;
-      color:var(--muted);
-      font-size:12px;
-    }
+    .brand h1{ margin:0; font-size:16px; font-weight:900; letter-spacing:.2px; }
+    .brand small{ display:block; margin-top:2px; color:var(--muted); font-size:12px; }
 
     .status{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      flex-wrap:wrap;
-      justify-content:flex-end;
+      display:flex; align-items:center; gap:8px;
+      flex-wrap:wrap; justify-content:flex-end;
     }
     .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
+      display:inline-flex; align-items:center; gap:8px;
       padding:7px 10px;
       border:1px solid var(--stroke);
       background:rgba(255,255,255,.06);
@@ -135,13 +108,9 @@
       color:var(--muted);
       white-space:nowrap;
     }
-    .dot{
-      width:8px;height:8px;border-radius:999px;
-      background:var(--ok);
-      box-shadow:0 0 0 3px rgba(39,209,127,.12);
-    }
-    .pill strong{ color:var(--text); font-weight:800; }
-    .pill .mini{ color:var(--muted2); font-weight:700; }
+    .dot{ width:8px;height:8px;border-radius:999px; background:var(--ok); box-shadow:0 0 0 3px rgba(39,209,127,.12); }
+    .pill strong{ color:var(--text); font-weight:900; }
+    .pill .mini{ color:var(--muted2); font-weight:800; }
 
     .row{
       position:relative;
@@ -160,30 +129,15 @@
     }
 
     .panelHeader{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      margin-bottom:10px;
-      flex-wrap:wrap;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px; margin-bottom:10px; flex-wrap:wrap;
     }
-
     .panelHeader .title{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      font-weight:900;
-      font-size:13px;
-      color:var(--text);
+      display:flex; align-items:center; gap:8px;
+      font-weight:1000; font-size:13px; color:var(--text);
     }
-    .bolt{ filter: drop-shadow(0 8px 16px rgba(255,152,0,.18)); }
 
-    .btnRow{
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
+    .btnRow{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
 
     .btn{
       appearance:none;
@@ -192,7 +146,7 @@
       color:var(--text);
       padding:9px 12px;
       border-radius:12px;
-      font-weight:800;
+      font-weight:900;
       font-size:12px;
       cursor:pointer;
       transition: transform .08s ease, background .15s ease, border-color .15s ease;
@@ -210,55 +164,39 @@
     .btn.primary:hover{
       background: linear-gradient(180deg, rgba(255,169,40,.98), rgba(255,152,0,.78));
     }
-
-    .btn.small{
-      padding:7px 10px;
-      border-radius:10px;
-      font-weight:900;
-    }
+    .btn.small{ padding:7px 10px; border-radius:10px; font-weight:1000; }
 
     .subline{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      flex-wrap:wrap;
-      margin:8px 0 10px;
-      color:var(--muted);
-      font-size:12px;
+      display:flex; align-items:center; gap:10px;
+      flex-wrap:wrap; margin:8px 0 10px;
+      color:var(--muted); font-size:12px;
     }
-    .subline .tag{
-      padding:6px 10px;
-      border-radius:999px;
+    .tag{
+      padding:6px 10px; border-radius:999px;
       background: rgba(255,255,255,.06);
       border:1px solid var(--stroke);
-      font-weight:800;
-      color:var(--muted);
+      font-weight:900; color:var(--muted);
     }
 
+    /* ANGOLI SPECIALI più puliti */
     .callout{
       margin-top:10px;
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.045);
+      border:1px solid rgba(255,255,255,.09);
       border-radius:14px;
       padding:12px;
     }
     .calloutHead{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      margin-bottom:8px;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px; margin-bottom:8px;
     }
     .calloutHead .left{
       display:flex; align-items:center; gap:8px;
-      font-weight:900;
-      font-size:12.5px;
+      font-weight:1000; font-size:12.5px;
     }
     .calloutHead .right{
       display:flex; align-items:center; gap:8px;
-      color:var(--muted);
-      font-size:12px;
-      font-weight:800;
+      color:var(--muted); font-size:12px; font-weight:900;
     }
 
     .calloutGrid{
@@ -276,9 +214,16 @@
     .miniCard{
       border-radius:14px;
       border:1px solid rgba(255,255,255,.10);
-      background: rgba(10, 14, 38, .35);
+      background: rgba(10, 14, 38, .34);
       padding:10px;
     }
+
+    .miniTop{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      font-weight:1000; font-size:12px;
+      margin-bottom:8px;
+    }
+    .miniTop .meta{ color:var(--muted); font-weight:900; font-size:11.5px; white-space:nowrap; }
 
     .miniItem{
       padding:10px;
@@ -289,28 +234,14 @@
     }
     .miniItem:first-child{ margin-top:0; }
 
-    .miniTop{
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-      font-weight:900;
-      font-size:12px;
-    }
-    .miniTop .meta{
-      color:var(--muted);
-      font-weight:800;
-      font-size:11.5px;
-      white-space:nowrap;
-    }
-
-    .badges{
-      display:flex; gap:6px; flex-wrap:wrap; margin:8px 0 6px;
-    }
+    .badges{ display:flex; gap:6px; flex-wrap:wrap; margin:8px 0 6px; }
     .badge{
       padding:5px 8px;
       border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.06);
       font-size:11px;
-      font-weight:900;
+      font-weight:1000;
       color:var(--muted);
     }
     .badge.ok{ background: rgba(39,209,127,.14); border-color: rgba(39,209,127,.22); color: rgba(230,255,242,.92); }
@@ -322,7 +253,23 @@
       font-size:12px;
       line-height:1.35;
     }
+    .miniCTA{
+      margin-top:10px;
+      display:flex; align-items:center; justify-content:space-between; gap:8px;
+    }
+    .miniCTA .btnMini{
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:8px 10px;
+      font-weight:1000;
+      cursor:pointer;
+      width:100%;
+    }
+    .miniCTA .btnMini:hover{ background: rgba(255,255,255,.09); }
 
+    /* EVENTI */
     .eventCard{
       margin-top:12px;
       border-radius:16px;
@@ -330,68 +277,43 @@
       background: rgba(255,255,255,.035);
       overflow:hidden;
     }
-
     .eventHead{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      padding:12px;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px; padding:12px;
       background: rgba(0,0,0,.12);
       border-bottom:1px solid rgba(255,255,255,.08);
     }
-
-    .eventLeft{
-      display:flex; align-items:center; gap:10px; min-width:0;
-    }
-
+    .eventLeft{ display:flex; align-items:center; gap:10px; min-width:0; }
     .leagueDot{
       width:10px;height:10px;border-radius:999px;
       background: rgba(0,255,180,.7);
       box-shadow:0 0 0 3px rgba(0,255,180,.12);
       flex:0 0 auto;
     }
-
-    .eventTitle{
-      min-width:0;
-    }
-
+    .eventTitle{ min-width:0; }
     .eventTitle .meta{
       display:flex; gap:8px; flex-wrap:wrap;
       align-items:center;
       color:var(--muted);
       font-size:11.5px;
-      font-weight:800;
+      font-weight:900;
       margin-bottom:3px;
     }
     .chip{
-      padding:4px 8px;
-      border-radius:999px;
+      padding:4px 8px; border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.05);
       color:var(--muted);
-      font-weight:900;
+      font-weight:1000;
       font-size:11px;
       white-space:nowrap;
     }
-
     .matchLine{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-weight:950;
-      font-size:13px;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
+      display:flex; align-items:center; gap:10px;
+      font-weight:1000; font-size:13px;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
     }
-
-    .team{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      min-width:0;
-    }
+    .team{ display:flex; align-items:center; gap:8px; min-width:0; }
 
     .crest{
       width:18px; height:18px; border-radius:6px;
@@ -401,41 +323,30 @@
       overflow:hidden;
       flex:0 0 auto;
     }
-    .crest img{
-      width:100%; height:100%;
-      object-fit:contain;
-      background: transparent;
-      display:block;
-    }
-    .crest .ini{
-      font-size:10px;
-      font-weight:1000;
-      color:rgba(255,255,255,.82);
-    }
+    .crest img{ width:100%; height:100%; object-fit:contain; display:block; }
+    .crest .ini{ font-size:10px; font-weight:1000; color:rgba(255,255,255,.82); }
 
-    .eventRight{
-      display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:flex-end;
-    }
+    .eventRight{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
+    .eventBody{ padding:12px; }
 
-    .eventBody{
-      padding:12px;
-    }
-
-    .reasonLine{
-      color: var(--muted);
-      font-size:12px;
-      line-height:1.35;
+    /* Motivazioni più chiare: 3 righe massimo */
+    .reasonBox{
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(10,14,38,.24);
+      padding:10px;
       margin-bottom:10px;
     }
+    .reasonBox .r1{ font-weight:1000; font-size:12.5px; margin-bottom:6px; }
+    .reasonBox .r2{ color:var(--muted); font-size:12px; line-height:1.35; }
+    .reasonBox .r3{ margin-top:8px; color:rgba(255,255,255,.78); font-size:12px; font-weight:900; }
 
     .markets{
       display:grid;
       grid-template-columns: repeat(3, 1fr);
       gap:10px;
     }
-    @media (max-width: 980px){
-      .markets{ grid-template-columns: 1fr; }
-    }
+    @media (max-width: 980px){ .markets{ grid-template-columns: 1fr; } }
 
     .mkt{
       border-radius:14px;
@@ -445,30 +356,18 @@
       display:flex;
       flex-direction:column;
       gap:8px;
-      min-height:104px;
+      min-height:110px;
     }
-
     .mktTop{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:8px;
+      display:flex; align-items:center; justify-content:space-between; gap:8px;
     }
-
-    .mktName{
-      font-weight:950;
-      font-size:12.5px;
-      display:flex;
-      align-items:center;
-      gap:8px;
-    }
+    .mktName{ font-weight:1000; font-size:12.5px; display:flex; align-items:center; gap:8px; }
 
     .prio{
-      padding:5px 8px;
-      border-radius:999px;
+      padding:5px 8px; border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
       font-size:11px;
-      font-weight:950;
+      font-weight:1000;
       color:var(--muted);
       background: rgba(255,255,255,.06);
       white-space:nowrap;
@@ -477,26 +376,15 @@
     .prio.warn{ background: rgba(255,201,58,.14); border-color: rgba(255,201,58,.24); color: rgba(255,245,210,.95); }
     .prio.bad{ background: rgba(255,90,122,.14); border-color: rgba(255,90,122,.22); color: rgba(255,230,236,.95); }
 
-    .mktText{
-      color:var(--muted);
-      font-size:12px;
-      line-height:1.35;
-      min-height:34px;
-    }
-
-    .mktActions{
-      display:flex;
-      gap:8px;
-      align-items:center;
-      margin-top:auto;
-    }
+    .mktText{ color:var(--muted); font-size:12px; line-height:1.35; min-height:40px; }
+    .mktActions{ display:flex; gap:8px; align-items:center; margin-top:auto; }
 
     .btn2{
       flex:1;
       border-radius:12px;
       padding:9px 10px;
       font-size:12px;
-      font-weight:950;
+      font-weight:1000;
       cursor:pointer;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.06);
@@ -505,7 +393,6 @@
     }
     .btn2:hover{ background: rgba(255,255,255,.09); }
     .btn2:active{ transform: translateY(1px); }
-
     .btn2.add{
       border-color: rgba(255,152,0,.35);
       background: linear-gradient(180deg, rgba(255,152,0,.92), rgba(255,152,0,.70));
@@ -515,13 +402,13 @@
       background: linear-gradient(180deg, rgba(255,169,40,.96), rgba(255,152,0,.76));
     }
 
+    /* RIGHT */
     .rightPanel h3{
       margin:0 0 10px;
       font-size:13px;
-      font-weight:950;
+      font-weight:1000;
       display:flex; align-items:center; gap:8px;
     }
-
     .formGrid{
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -549,7 +436,7 @@
       padding:9px 10px;
       border-radius:12px;
       outline:none;
-      font-weight:900;
+      font-weight:1000;
     }
 
     .sumRow{
@@ -558,7 +445,6 @@
       gap:10px;
       margin:10px 0 12px;
     }
-
     .sumBox{
       border-radius:14px;
       border:1px solid rgba(255,255,255,.10);
@@ -575,7 +461,6 @@
       padding:12px;
       margin-top:10px;
     }
-
     .ticketHead{
       display:flex; align-items:center; justify-content:space-between; gap:10px;
       color:var(--muted);
@@ -583,10 +468,7 @@
       font-weight:900;
       margin-bottom:8px;
     }
-    .ticketList{
-      display:flex; flex-direction:column; gap:8px;
-      margin:8px 0 10px;
-    }
+    .ticketList{ display:flex; flex-direction:column; gap:8px; margin:8px 0 10px; }
     .pick{
       border-radius:14px;
       border:1px solid rgba(255,255,255,.10);
@@ -594,9 +476,7 @@
       padding:10px;
       display:flex; align-items:center; justify-content:space-between; gap:10px;
     }
-    .pick .left{
-      min-width:0;
-    }
+    .pick .left{ min-width:0; }
     .pick .left strong{
       display:block;
       font-weight:1000;
@@ -612,7 +492,6 @@
       font-weight:900;
       margin-top:2px;
     }
-
     .pick .rm{
       border-radius:12px;
       border:1px solid rgba(255,255,255,.10);
@@ -688,10 +567,7 @@
       padding:12px 14px;
       border-bottom:1px solid rgba(255,255,255,.10);
     }
-    .modalHead strong{
-      font-size:13px;
-      font-weight:1000;
-    }
+    .modalHead strong{ font-size:13px; font-weight:1000; }
     .modalHead button{
       border-radius:12px;
       border:1px solid rgba(255,255,255,.10);
@@ -701,18 +577,14 @@
       font-weight:1000;
       cursor:pointer;
     }
-    .modalBody{
-      padding:14px;
-    }
+    .modalBody{ padding:14px; }
 
     .wheelGrid{
       display:grid;
       grid-template-columns: 1fr 1fr;
       gap:12px;
     }
-    @media (max-width: 860px){
-      .wheelGrid{ grid-template-columns: 1fr; }
-    }
+    @media (max-width: 860px){ .wheelGrid{ grid-template-columns: 1fr; } }
     .wheelBox{
       border-radius:16px;
       border:1px solid rgba(255,255,255,.10);
@@ -720,6 +592,7 @@
       padding:12px;
     }
     canvas{ width:100%; height:auto; display:block; }
+
     .wheelBtn{
       width:100%;
       margin-top:10px;
@@ -729,6 +602,7 @@
       background: linear-gradient(180deg, rgba(255,152,0,.95), rgba(255,152,0,.72));
       color:#1c1208;
       font-weight:1000;
+
       cursor:pointer;
     }
     .wheelNote{
@@ -744,11 +618,7 @@
       background: rgba(255,255,255,.04);
       padding:12px;
     }
-    .qTitle{
-      font-weight:1000;
-      margin:0 0 10px;
-      font-size:13px;
-    }
+    .qTitle{ font-weight:1000; margin:0 0 10px; font-size:13px; }
     .qOpt{
       width:100%;
       text-align:left;
@@ -780,9 +650,7 @@
     <div class="shell">
       <div class="topbar">
         <div class="brand">
-          <div class="logo" title="Vincitù">
-            <span>V</span>
-          </div>
+          <div class="logo" title="Vincitù"><span>V</span></div>
           <div>
             <h1>Vincitù • IA Portal</h1>
             <small>Eventi reali • quote non mostrate: si inseriscono al banco</small>
@@ -802,7 +670,7 @@
         <!-- LEFT -->
         <div class="panel">
           <div class="panelHeader">
-            <div class="title"><span class="bolt">⚡</span> Eventi (IA)</div>
+            <div class="title">⚡ Eventi (IA)</div>
             <div class="btnRow">
               <button class="btn primary" id="btnReload">Nuovi eventi</button>
               <button class="btn" id="btnSlot">Cambia fascia</button>
@@ -813,17 +681,15 @@
 
           <div class="subline">
             <span class="tag">Quote: <strong style="color:var(--text)">verifica al banco</strong></span>
-            <span class="tag" id="modeTag">Modalità cliente: <strong style="color:var(--text)">chiaro & veloce</strong></span>
+            <span class="tag">Modalità cliente: <strong style="color:var(--text)">chiaro & veloce</strong></span>
             <span class="tag" id="missionTag">Missione: <strong style="color:var(--text)">Max 2 selezioni</strong></span>
           </div>
 
-          <!-- Corner & Cards “chiaro” -->
+          <!-- Corner & Cards puliti (NO duplicati) -->
           <div class="callout" id="cornerArea">
             <div class="calloutHead">
               <div class="left">📌 Angolo Speciale • Corner & Cartellini (rapido)</div>
-              <div class="right">
-                <span class="chip" id="cornerHint">Max 2 + 2 (pulito)</span>
-              </div>
+              <div class="right"><span class="chip" id="cornerHint">Max 2 + 2 (pulito)</span></div>
             </div>
 
             <div class="calloutGrid">
@@ -845,7 +711,7 @@
             </div>
 
             <div class="wheelNote" style="margin-top:10px">
-              Nota: queste sono <strong>stime “ritmo / pressione / agonismo”</strong> (senza quote). La quota reale va sempre verificata al banco.
+              Nota: sono stime “ritmo / pressione / agonismo” (senza quote). La quota reale va sempre verificata al banco.
             </div>
           </div>
 
@@ -940,7 +806,7 @@
               <span class="meta" id="wheelWhen">—</span>
             </div>
             <div class="miniText" id="wheelResultText" style="font-size:13px; color:rgba(255,255,255,.88); font-weight:900">
-              Gira la ruota per ottenere un consiglio “da banco” e una micro-missione.
+              Gira la ruota: ti dà un consiglio “da banco” semplice e utile.
             </div>
 
             <div class="badges" style="margin-top:12px">
@@ -950,7 +816,7 @@
             </div>
 
             <div class="wheelNote" style="margin-top:12px">
-              Consiglio serio: se la quota al banco è diversa, <strong>riduci selezioni</strong> o gioca singole.
+              Tip serio: se la quota al banco è diversa, <strong>riduci selezioni</strong> o fai singola.
             </div>
           </div>
         </div>
@@ -1018,7 +884,7 @@
       return `${y}-${m}-${dd} ${hh}:${mm}`;
     }
 
-    // stable hash for deterministic “signals”
+    // Stable hash
     function hash32(str){
       let h = 2166136261;
       for (let i=0;i<str.length;i++){
@@ -1028,6 +894,55 @@
       return (h >>> 0);
     }
 
+    function todayKey(){
+      const d = nowRome();
+      return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+    }
+
+    // =========================
+    // "NUOVI EVENTI" veri: rotazione
+    // =========================
+    function slotOffsetKey(slot){ return `slot_offset_${slot}_${todayKey()}`; }
+    function getSlotOffset(slot){ return parseInt(localStorage.getItem(slotOffsetKey(slot)) || "0", 10) || 0; }
+    function bumpSlotOffset(slot){
+      const n = getSlotOffset(slot) + 1;
+      localStorage.setItem(slotOffsetKey(slot), String(n));
+      return n;
+    }
+
+    function uniqueBy(list, keyFn){
+      const seen = new Set();
+      const out = [];
+      for (const x of list){
+        const k = keyFn(x);
+        if (seen.has(k)) continue;
+        seen.add(k);
+        out.push(x);
+      }
+      return out;
+    }
+
+    // prende 5 eventi dalla fascia, ma ruota l'elenco in modo deterministico
+    function pick5ForSlot(allEvents, slot){
+      const poolRaw = allEvents.filter(e => (e.slot || "").toLowerCase() === slot);
+      const pool = uniqueBy(poolRaw.length ? poolRaw : allEvents, e => e.uniq || `${e.home}|${e.away}|${e.start_iso||e.start||""}`);
+
+      const k = 5;
+      if (pool.length <= k) return pool.slice(0,k);
+
+      const offset = getSlotOffset(slot);
+      const seed = hash32(`${todayKey()}|${slot}|${offset}|VINC001`);
+
+      // "shuffle" stabile: ordina per hash
+      const sorted = [...pool].sort((a,b)=>{
+        const ha = hash32((a.uniq||"")+seed);
+        const hb = hash32((b.uniq||"")+seed);
+        return ha - hb;
+      });
+
+      return sorted.slice(0,k);
+    }
+
     // =========================
     // FETCH
     // =========================
@@ -1035,119 +950,16 @@
       const url = force ? `events.json?v=${Date.now()}` : "events.json";
       const r = await fetch(url, { cache: "no-store" });
       if(!r.ok) throw new Error("Impossibile caricare events.json");
-      const data = await r.json();
-      return data;
-    }
-
-    function pickEventsForSlot(allEvents, slot){
-      // each slot should show 5
-      const list = allEvents.filter(e => (e.slot || "").toLowerCase() === slot);
-      // fallback: if missing slot, slice
-      return (list.length ? list : allEvents).slice(0,5);
+      return await r.json();
     }
 
     // =========================
-    // REALISTIC MOTIVATIONS
-    // =========================
-    function favoriteSide(ev){
-      // try: use team short / league_code deterministic
-      const key = `${ev.league_code||""}|${ev.home||""}|${ev.away||""}|${ev.start_iso||""}`;
-      const x = hash32(key) % 1000;
-      // 0..999 -> favorite strength
-      // decide a slight bias to "home" because 1X market exists
-      const fav = (x < 520) ? "home" : "away";
-      const gap = Math.abs(500 - x); // bigger = more unbalanced
-      return { fav, gap };
-    }
-
-    function riskFromGap(gap){
-      // gap 0..500
-      if (gap > 260) return "Bassa";  // low risk
-      if (gap > 140) return "Media";
-      return "Alta"; // high risk / balanced
-    }
-
-    function prioClassFromText(t){
-      if (t === "Alta") return "bad";
-      if (t === "Media") return "warn";
-      return "ok";
-    }
-
-    function shortMatchContext(ev){
-      const { fav, gap } = favoriteSide(ev);
-      const r = riskFromGap(gap);
-      if (r === "Bassa"){
-        return fav === "home"
-          ? "Favorita in casa: approccio “controllo”, evita di esagerare con la multipla."
-          : "Favorita ospite: possibile dominio, ma attenzione alle sorprese in trasferta.";
-      }
-      if (r === "Media"){
-        return "Match con equilibrio: meglio 1–2 scelte massimo e gestione stake.";
-      }
-      return "Match rischioso/equilibrato: se giochi, fallo leggero o in singola (quota da verificare).";
-    }
-
-    function overReason(ev){
-      const { gap } = favoriteSide(ev);
-      // bigger gap -> more likely “match a senso unico” (over dipende)
-      if (gap > 260) return "Se la favorita spinge, l’Over può arrivare per pressione continua. Verifica quota e lineup.";
-      if (gap > 140) return "Ritmo medio: Over OK solo se quota al banco è corretta e non è match troppo tattico.";
-      return "Equilibrio alto: Over più “da partita aperta”, ma è anche più variabile. Gioca con prudenza.";
-    }
-
-    function oneXReason(ev){
-      const { fav, gap } = favoriteSide(ev);
-      // if away favorite and gap high, 1X is not “tranquillo”
-      if (gap > 260){
-        if (fav === "home") return "Copertura: casa favorita → 1X sensato per protezione, ma quota da banco decide tutto.";
-        return "Ospite favorito: 1X diventa scelta “di copertura rischiosa”. Meglio valutare DNB o singola diversa.";
-      }
-      if (gap > 140){
-        return "Copertura possibile: 1X ha senso solo se quota reale è conveniente e il match non è sbilanciato.";
-      }
-      return "Match molto equilibrato: 1X non è “sicuro”. Se lo fai, stake basso e poche selezioni.";
-    }
-
-    function goalYesReason(ev){
-      const { gap } = favoriteSide(ev);
-      if (gap > 260) return "Goal Sì solo se anche lo sfavorito crea: controlla forma e assenze (quota al banco).";
-      if (gap > 140) return "Possibile Goal Sì se entrambe attaccano: buona opzione da singola se quota reale è ok.";
-      return "Equilibrio: Goal Sì spesso interessante, ma varia molto. Gioca solo con quota reale buona.";
-    }
-
-    function marketPack(ev){
-      return [
-        { label:"Over 2.5", prioFrom: overReason(ev), descFrom: overReason, kind:"over" },
-        { label:"1X", prioFrom: oneXReason(ev), descFrom: oneXReason, kind:"1x" },
-        { label:"Goal/NoGoal Sì", prioFrom: goalYesReason(ev), descFrom: goalYesReason, kind:"gg" }
-      ];
-    }
-
-    function prioForMarket(ev, kind){
-      const { gap } = favoriteSide(ev);
-      // Quick heuristic: if match is very balanced => higher risk
-      let risk = "Media";
-      if (gap < 140) risk = "Alta";
-      if (gap > 260) risk = "Bassa";
-
-      // Adjust per market kind
-      if (kind === "1x" && favoriteSide(ev).fav === "away" && gap > 260){
-        // 1X when away is huge favorite is risky
-        risk = "Alta";
-      }
-      if (kind === "gg" && gap > 260){
-        // in very unbalanced match, GG is often less safe
-        risk = "Media";
-      }
-      return risk;
-    }
-
-    // =========================
-    // RENDER HELPERS
+    // STEMMI (se non arrivano da events.json)
     // =========================
     function crestHTML(url, name){
       if (url){
-        return `<span class="crest"><img src="${url}" alt="" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='<span class=\\'ini\\'>${(name||'?').slice(0,2).toUpperCase()}</span>';"></span>`;
+        return `<span class="crest"><img src="${url}" alt="" referrerpolicy="no-referrer"
+          onerror="this.parentElement.innerHTML='<span class=\\'ini\\'>${(name||'?').slice(0,2).toUpperCase()}</span>';"></span>`;
       }
       return `<span class="crest"><span class="ini">${(name||'?').slice(0,2).toUpperCase()}</span></span>`;
     }
@@ -1155,39 +967,114 @@
     function safeTxt(s){ return (s || "").replaceAll("<","&lt;").replaceAll(">","&gt;"); }
 
     // =========================
-    // CORNER & CARDS PICK (chiaro)
+    // MOTIVAZIONI più credibili e chiare
+    // =========================
+    function favoriteSide(ev){
+      const key = `${ev.league_code||""}|${ev.home||""}|${ev.away||""}|${ev.start_iso||ev.start||""}`;
+      const x = hash32(key) % 1000;
+      const fav = (x < 520) ? "home" : "away";
+      const gap = Math.abs(500 - x); // 0..500
+      return { fav, gap };
+    }
+
+    function riskFromGap(gap){
+      if (gap > 260) return "Bassa";
+      if (gap > 140) return "Media";
+      return "Alta";
+    }
+    function prioClass(r){
+      if (r === "Bassa") return "ok";
+      if (r === "Media") return "warn";
+      return "bad";
+    }
+    function prioLabel(r){
+      if (r === "Bassa") return "Più stabile";
+      if (r === "Media") return "Equilibrata";
+      return "Rischiosa";
+    }
+
+    function scenarioLine(ev){
+      const { fav, gap } = favoriteSide(ev);
+      const r = riskFromGap(gap);
+
+      if (r === "Bassa"){
+        return fav === "home"
+          ? "Scenario: favorita in casa → ritmo spesso alto e pressione continua."
+          : "Scenario: favorita ospite → può comandare, ma attenzione all’effetto trasferta.";
+      }
+      if (r === "Media") return "Scenario: equilibrio medio → partita aperta ma con fasi di controllo.";
+      return "Scenario: match molto equilibrato → può cambiare con un episodio (prudenza).";
+    }
+
+    function bankTip(ev){
+      const { gap } = favoriteSide(ev);
+      if (gap > 260) return "Tip banco: se quota scende troppo, evita la multipla lunga.";
+      if (gap > 140) return "Tip banco: meglio 1–2 selezioni, quota reale fa la differenza.";
+      return "Tip banco: se quota non convince, passa o gioca singola leggera.";
+    }
+
+    function overReason(ev){
+      const { gap } = favoriteSide(ev);
+      if (gap > 260) return "Over 2.5: può arrivare per pressione costante (controlla lineup).";
+      if (gap > 140) return "Over 2.5: buono se ritmo non è troppo tattico (verifica quota).";
+      return "Over 2.5: più variabile in match equilibrato → stake basso.";
+    }
+
+    function oneXReason(ev){
+      const { fav, gap } = favoriteSide(ev);
+      if (gap > 260){
+        if (fav === "home") return "1X: copertura sensata se la casa è favorita (quota decide).";
+        return "1X: attenzione: se l’ospite è molto favorito, non è “tranquillo”.";
+      }
+      if (gap > 140) return "1X: ok come copertura solo con quota reale conveniente.";
+      return "1X: match equilibrato → non è sicuro, valuta alternative o singola.";
+    }
+
+    function ggReason(ev){
+      const { gap } = favoriteSide(ev);
+      if (gap > 260) return "Goal Sì: utile solo se anche lo sfavorito crea (occhio assenze).";
+      if (gap > 140) return "Goal Sì: interessante se entrambe attaccano (quota al banco).";
+      return "Goal Sì: spesso ci sta, ma varia tanto → non forzare multipla.";
+    }
+
+    function prioForMarket(ev, kind){
+      const { fav, gap } = favoriteSide(ev);
+      let r = riskFromGap(gap);
+      if (kind === "1x" && fav === "away" && gap > 260) r = "Alta";
+      if (kind === "gg" && gap > 260) r = "Media";
+      return r;
+    }
+
+    // =========================
+    // CORNER & CARTELLINI "puliti" (NO duplicati)
     // =========================
     function cornerCardSignals(ev, type){
-      // Use deterministic score from hash
-      const k = `${type}|${ev.league_code||""}|${ev.home||""}|${ev.away||""}|${ev.start_iso||""}`;
+      const k = `${type}|${ev.league_code||""}|${ev.home||""}|${ev.away||""}|${ev.start_iso||ev.start||""}`;
       const x = hash32(k) % 100;
-      // base signals
-      const pressure = (x % 3 === 0) ? "Alta" : (x % 3 === 1) ? "Media" : "Media";
+      const pressure = (x > 70) ? "Alta" : (x > 40) ? "Media" : "Media";
       const balance = (x > 65) ? "Equilibrio" : (x > 35) ? "Leggera favorita" : "Favorita netta";
-      const physical = (x > 60) ? "Agonismo alto" : (x > 35) ? "Agonismo medio" : "Agonismo medio";
+      const physical = (x > 60) ? "Alto" : "Medio";
 
-      const reasonCorner = (balance === "Favorita netta")
-        ? "Possibile pressione costante: corner più probabili se la favorita attacca a lungo."
-        : (balance === "Equilibrio")
-          ? "Match aperto: corner possibili su ribaltamenti. Valuta solo con quota reale buona."
-          : "Pressione alternata: corner discreti, ma non forzare la multipla.";
+      const reasonCorner =
+        (balance === "Favorita netta")
+          ? "Corner: probabili se la favorita spinge a lungo (pressione costante)."
+          : (balance === "Equilibrio")
+            ? "Corner: possibili su ribaltamenti e fasce, valuta quota reale."
+            : "Corner: discreti, ma non forzare multipla lunga.";
 
-      const reasonCards = (physical === "Agonismo alto")
-        ? "Gara fisica: contatti e proteste possibili. Buona per cartellini (verifica quota)."
-        : "Agonismo medio: cartellini possibili ma dipende molto dall’arbitro (quota al banco).";
+      const reasonCards =
+        (physical === "Alto")
+          ? "Cartellini: gara fisica → contatti/proteste possibili (quota al banco)."
+          : "Cartellini: possibili, ma dipende molto dall’arbitro (prudenza).";
 
-      return {
-        pressure,
-        balance,
-        physical,
-        reason: type === "corner" ? reasonCorner : reasonCards
-      };
+      return { pressure, balance, physical, reason: type==="corner"?reasonCorner:reasonCards };
     }
 
     function renderMiniPick(ev, type){
       const sig = cornerCardSignals(ev, type);
-      const pClass = sig.pressure === "Alta" ? "ok" : "warn";
-      const bClass = sig.balance === "Equilibrio" ? "warn" : "badge";
+      const lvl = (type==="corner") ? sig.pressure : sig.physical;
+      const lvlClass = (lvl==="Alta" || lvl==="Alto") ? "ok" : "warn";
+
       return `
         <div class="miniItem">
           <div class="miniTop">
@@ -1195,22 +1082,33 @@
             <span class="meta">${safeTxt(ev.start || "")}</span>
           </div>
           <div class="badges">
-            <span class="badge ${pClass}">${type==="corner" ? "Pressione" : "Agonismo"}: ${sig.pressure}</span>
+            <span class="badge ${lvlClass}">${type==="corner" ? "Pressione" : "Agonismo"}: ${lvl}</span>
             <span class="badge">${sig.balance}</span>
+            <span class="badge ok">Verifica al banco</span>
           </div>
           <div class="miniText">${safeTxt(sig.reason)}</div>
-          <div class="badges" style="margin-top:10px">
-            <span class="badge ok">Verifica al banco</span>
+          <div class="miniCTA">
+            <button class="btnMini" onclick="verifyBank()">Verifica al banco</button>
           </div>
         </div>
       `;
     }
 
     function renderCornerArea(allEvents){
-      // pick 2 events for corner and 2 for cards from current 15 (deterministic)
-      const list = allEvents.slice(0, 15);
-      const corners = [...list].sort((a,b)=> (hash32("corner"+a.uniq)-hash32("corner"+b.uniq))).slice(0,2);
-      const cards = [...list].sort((a,b)=> (hash32("cards"+a.uniq)-hash32("cards"+b.uniq))).slice(0,2);
+      const list = uniqueBy(allEvents, e => e.uniq || `${e.home}|${e.away}|${e.start||""}`);
+      if (!list.length){
+        $("cornerList").innerHTML = `<div class="hint" style="margin:0">Nessun dato.</div>`;
+        $("cardsList").innerHTML = `<div class="hint" style="margin:0">Nessun dato.</div>`;
+        return;
+      }
+
+      // scegli 2 + 2 ma garantendo match diversi
+      const seed = hash32(`${todayKey()}|${CURRENT_SLOT}|corner`);
+      const sorted = [...list].sort((a,b)=> (hash32((a.uniq||"")+seed) - hash32((b.uniq||"")+seed)));
+
+      const corners = sorted.slice(0,2);
+      const used = new Set(corners.map(x => x.uniq || `${x.home}|${x.away}|${x.start||""}`));
+      const cards = sorted.filter(x => !used.has(x.uniq || `${x.home}|${x.away}|${x.start||""}`)).slice(0,2);
 
       $("cornerList").innerHTML = corners.map(ev=>renderMiniPick(ev,"corner")).join("");
       $("cardsList").innerHTML = cards.map(ev=>renderMiniPick(ev,"cards")).join("");
@@ -1231,30 +1129,13 @@
       area.innerHTML = picked.map((ev, idx)=>{
         const league = safeTxt(ev.league || ev.league_code || "Calcio");
         const when = safeTxt(ev.start || "");
-        const ctx = shortMatchContext(ev);
-
         const homeC = crestHTML(ev.home_crest, ev.home);
         const awayC = crestHTML(ev.away_crest, ev.away);
 
         const markets = [
-          {
-            label:"Over 2.5",
-            kind:"over",
-            prio: prioForMarket(ev,"over"),
-            txt: overReason(ev)
-          },
-          {
-            label:"1X",
-            kind:"1x",
-            prio: prioForMarket(ev,"1x"),
-            txt: oneXReason(ev)
-          },
-          {
-            label:"Goal/NoGoal Sì",
-            kind:"gg",
-            prio: prioForMarket(ev,"gg"),
-            txt: goalYesReason(ev)
-          }
+          { label:"Over 2.5", kind:"over", txt: overReason(ev), pr: prioForMarket(ev,"over") },
+          { label:"1X", kind:"1x", txt: oneXReason(ev), pr: prioForMarket(ev,"1x") },
+          { label:"Goal/NoGoal Sì", kind:"gg", txt: ggReason(ev), pr: prioForMarket(ev,"gg") }
         ];
 
         return `
@@ -1275,31 +1156,31 @@
                   </div>
                 </div>
               </div>
-
               <div class="eventRight">
                 <span class="chip">Evento ${idx+1}/5</span>
               </div>
             </div>
 
             <div class="eventBody">
-              <div class="reasonLine">💡 ${safeTxt(ctx)}</div>
+              <div class="reasonBox">
+                <div class="r1">🎯 ${safeTxt(scenarioLine(ev))}</div>
+                <div class="r2">📌 ${safeTxt(bankTip(ev))}</div>
+                <div class="r3">💬 “Poche scelte, più controllo.”</div>
+              </div>
 
               <div class="markets">
                 ${markets.map(m=>{
-                  const pr = m.prio; // Alta/Media/Bassa
-                  const cls = prioClassFromText(pr);
-                  const prText = pr === "Bassa" ? "Bassa" : pr === "Media" ? "Media" : "Alta";
-                  const prLabel = pr === "Bassa" ? "Più stabile" : pr === "Media" ? "Equilibrata" : "Rischiosa";
+                  const cls = prioClass(m.pr);
                   return `
                     <div class="mkt">
                       <div class="mktTop">
                         <div class="mktName">${safeTxt(m.label)}</div>
-                        <span class="prio ${cls}">${prLabel}</span>
+                        <span class="prio ${cls}">${prioLabel(m.pr)}</span>
                       </div>
                       <div class="mktText">${safeTxt(m.txt)}</div>
                       <div class="mktActions">
                         <button class="btn2" onclick="verifyBank()">Verifica al banco</button>
-                        <button class="btn2 add" onclick="addPick('${encodeURIComponent(ev.uniq)}','${encodeURIComponent(ev.home)}','${encodeURIComponent(ev.away)}','${encodeURIComponent(m.label)}')">+ Aggiungi</button>
+                        <button class="btn2 add" onclick="addPick('${encodeURIComponent(ev.uniq||"")}', '${encodeURIComponent(ev.home||"")}', '${encodeURIComponent(ev.away||"")}', '${encodeURIComponent(m.label)}')">+ Aggiungi</button>
                       </div>
                     </div>
                   `;
@@ -1319,12 +1200,11 @@
     }
 
     window.addPick = function(uniq, home, away, market){
-      const u = decodeURIComponent(uniq);
-      const h = decodeURIComponent(home);
-      const a = decodeURIComponent(away);
-      const m = decodeURIComponent(market);
+      const u = decodeURIComponent(uniq||"");
+      const h = decodeURIComponent(home||"");
+      const a = decodeURIComponent(away||"");
+      const m = decodeURIComponent(market||"");
 
-      // limit suggestion: max 3
       if (ticket.length >= 3){
         toast("⚠️ Consiglio: max 2–3 selezioni per controllo.");
       }
@@ -1357,28 +1237,22 @@
         `).join("");
       }
 
-      // quota tot / win pot: only if user enters realQuota
       const rq = parseFloat($("realQuota").value);
       const stake = parseFloat($("stake").value) || 0;
 
       if (rq && rq >= 1.01){
         $("quotaTot").textContent = rq.toFixed(2);
-        const win = stake * rq;
-        $("winPot").textContent = win.toFixed(2);
+        $("winPot").textContent = (stake * rq).toFixed(2);
       } else {
         $("quotaTot").textContent = "—";
         $("winPot").textContent = "—";
       }
+
+      $("missionTag").innerHTML = `Missione: <strong style="color:var(--text)">${ticket.length > 1 ? "Max 3 selezioni" : "Max 2 selezioni"}</strong>`;
     }
 
-    // =========================
-    // PRINT
-    // =========================
     $("printBtn").addEventListener("click", ()=>{
-      if (!ticket.length){
-        toast("Aggiungi almeno 1 selezione.");
-        return;
-      }
+      if (!ticket.length){ toast("Aggiungi almeno 1 selezione."); return; }
       window.print();
     });
 
@@ -1413,38 +1287,42 @@
     // =========================
     // SLOT + LOAD
     // =========================
+    function getSlotFromURL(){
+      const u = new URL(location.href);
+      const s = (u.searchParams.get("slot") || "").toLowerCase();
+      return SLOT_ORDER.includes(s) ? s : "";
+    }
+    function setSlotInURL(slot){
+      const u = new URL(location.href);
+      u.searchParams.set("slot", slot);
+      history.replaceState({}, "", u.toString());
+    }
+
     async function loadAll(force=false){
       try{
         const data = await fetchEvents(force);
         EVENTS_DATA = data;
-        const now = nowRome();
 
-        // slot initial: URL param > saved > time
+        const now = nowRome();
         const urlSlot = getSlotFromURL();
         CURRENT_SLOT = urlSlot || localStorage.getItem("slot") || slotFromTime(now);
 
         $("updatedAt").textContent = data.updated_at || "—";
         $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
+        $("centerId").textContent = "VINC001";
 
-        // build 15 list (5 per slot)
-        const all = (data.events || []);
-        const m = pickEventsForSlot(all, "mattina");
-        const p = pickEventsForSlot(all, "pomeriggio");
-        const s = pickEventsForSlot(all, "sera");
-        const all15 = [...m, ...p, ...s];
+        const all = (data.events || []).map(e=>{
+          if (!e.uniq) e.uniq = `${e.home||""}|${e.away||""}|${e.start_iso||e.start||""}`;
+          return e;
+        });
 
-        renderCornerArea(all15);
+        // Corner & Cartellini: usa TUTTO il pool della fascia (non solo i 5 mostrati), così è più vario
+        const slotPool = all.filter(e => (e.slot || "").toLowerCase() === CURRENT_SLOT);
+        renderCornerArea(slotPool.length ? slotPool : all);
 
-        // show current slot 5
-        const picked = pickEventsForSlot(all, CURRENT_SLOT);
+        // Eventi mostrati: 5 ruotabili
+        const picked = pick5ForSlot(all, CURRENT_SLOT);
         renderEvents(picked);
-
-        // persist
-        localStorage.setItem("slot", CURRENT_SLOT);
-
-        // Center & labels
-        $("centerId").textContent = "VINC001"; // puoi anche renderlo da centers/VINC001.json se vuoi
-        $("missionTag").innerHTML = `Missione: <strong style="color:var(--text)">${ticket.length > 0 ? "Max 3 selezioni" : "Max 2 selezioni"}</strong>`;
 
       }catch(e){
         console.error(e);
@@ -1454,18 +1332,6 @@
       }
     }
 
-    function getSlotFromURL(){
-      const u = new URL(location.href);
-      const s = (u.searchParams.get("slot") || "").toLowerCase();
-      return SLOT_ORDER.includes(s) ? s : "";
-    }
-
-    function setSlotInURL(slot){
-      const u = new URL(location.href);
-      u.searchParams.set("slot", slot);
-      history.replaceState({}, "", u.toString());
-    }
-
     $("btnSlot").addEventListener("click", ()=>{
       const idx = SLOT_ORDER.indexOf(CURRENT_SLOT);
       const next = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
@@ -1473,13 +1339,34 @@
       $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
       localStorage.setItem("slot", CURRENT_SLOT);
       setSlotInURL(CURRENT_SLOT);
+      // reset offset per fascia? NO: lasciamo la rotazione (più “nuovi”)
       if (EVENTS_DATA && EVENTS_DATA.events){
-        renderEvents(pickEventsForSlot(EVENTS_DATA.events, CURRENT_SLOT));
+        const all = EVENTS_DATA.events.map(e=>{
+          if (!e.uniq) e.uniq = `${e.home||""}|${e.away||""}|${e.start_iso||e.start||""}`;
+          return e;
+        });
+        const slotPool = all.filter(e => (e.slot || "").toLowerCase() === CURRENT_SLOT);
+        renderCornerArea(slotPool.length ? slotPool : all);
+        renderEvents(pick5ForSlot(all, CURRENT_SLOT));
       }
       toast(`Fascia: ${slotLabel(CURRENT_SLOT)}`);
     });
 
+    // "Nuovi eventi" adesso cambia davvero 5 eventi (offset)
     $("btnReload").addEventListener("click", async ()=>{
+      bumpSlotOffset(CURRENT_SLOT);
+      if (EVENTS_DATA && EVENTS_DATA.events){
+        const all = EVENTS_DATA.events.map(e=>{
+          if (!e.uniq) e.uniq = `${e.home||""}|${e.away||""}|${e.start_iso||e.start||""}`;
+          return e;
+        });
+        const slotPool = all.filter(e => (e.slot || "").toLowerCase() === CURRENT_SLOT);
+        renderCornerArea(slotPool.length ? slotPool : all);
+        renderEvents(pick5ForSlot(all, CURRENT_SLOT));
+        toast("✅ Nuovi eventi caricati");
+        return;
+      }
+      // fallback: refetch
       toast("Aggiorno eventi…");
       await loadAll(true);
       toast("✅ Eventi aggiornati");
@@ -1492,7 +1379,7 @@
       "Missione: 2 selezioni max",
       "Regola: stop dopo 1 perdita",
       "Gioca singola (quota buona)",
-      "Scegli 1 match + 1 copertura",
+      "1 match + 1 copertura (non 3 match)",
       "Solo 1 mercato per match",
       "Controlla lineup (ultima ora)",
       "Riduci stake del 20%",
@@ -1509,9 +1396,7 @@
       drawWheel();
       updateWheelUI();
     }
-    function closeWheel(){
-      wheelBack.style.display = "none";
-    }
+    function closeWheel(){ wheelBack.style.display = "none"; }
 
     const wheelCanvas = $("wheel");
     const ctx = wheelCanvas.getContext("2d");
@@ -1526,7 +1411,6 @@
       const n = wheelItems.length;
       const slice = (Math.PI*2)/n;
 
-      // background circle
       ctx.beginPath();
       ctx.arc(cx,cy,r+6,0,Math.PI*2);
       ctx.fillStyle = "rgba(255,255,255,.04)";
@@ -1544,26 +1428,22 @@
         ctx.arc(cx,cy,r,a0,a1);
         ctx.closePath();
 
-        // color palette (fixed, no external libs)
         const palette = ["#ff9800","#7c4dff","#2dd4bf","#ff5a7a","#ffc93a","#60a5fa","#34d399","#a78bfa"];
         ctx.fillStyle = palette[i % palette.length];
         ctx.globalAlpha = 0.85;
         ctx.fill();
         ctx.globalAlpha = 1;
 
-        // text
         ctx.save();
         ctx.translate(cx,cy);
         ctx.rotate(a0 + slice/2);
         ctx.textAlign = "right";
         ctx.fillStyle = "rgba(10,14,38,.92)";
         ctx.font = "900 16px " + getComputedStyle(document.documentElement).getPropertyValue('--font');
-        const text = wheelItems[i];
-        ctx.fillText(text, r - 16, 6);
+        ctx.fillText(wheelItems[i], r - 16, 6);
         ctx.restore();
       }
 
-      // center
       ctx.beginPath();
       ctx.arc(cx,cy,46,0,Math.PI*2);
       ctx.fillStyle = "rgba(10,14,38,.90)";
@@ -1576,7 +1456,6 @@
       ctx.textAlign = "center";
       ctx.fillText("RUOTA", cx, cy+6);
 
-      // pointer
       ctx.beginPath();
       ctx.moveTo(cx, 10);
       ctx.lineTo(cx-14, 44);
@@ -1586,11 +1465,6 @@
       ctx.fill();
       ctx.strokeStyle = "rgba(0,0,0,.25)";
       ctx.stroke();
-    }
-
-    function todayKey(){
-      const d = nowRome();
-      return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
     }
 
     function updateWheelUI(){
@@ -1604,9 +1478,8 @@
     }
 
     function wheelSetResult(text){
-      $("wheelResultText").textContent = text;
+      $("wheelResultText").textContent = "🔍 " + text + ". Verifica sempre quota al banco prima di inserire.";
 
-      // update “mission/rules” badges simply
       $("wheelMission").textContent = "Missione: " + (
         text.includes("2 selezioni") ? "Max 2 selezioni" :
         text.includes("singola") ? "Gioca 1 singola" :
@@ -1620,10 +1493,7 @@
         "Quota al banco decide"
       );
 
-      $("wheelFun").textContent = "Bonus: " + (
-        text.includes("quiz") ? "Fai 1 quiz" :
-        "Respira 10s"
-      );
+      $("wheelFun").textContent = "Bonus: " + (text.includes("quiz") ? "Fai 1 quiz" : "Respira 10s");
     }
 
     $("spinBtn").addEventListener("click", ()=>{
@@ -1638,11 +1508,10 @@
       spinning = true;
       updateWheelUI();
 
-      const targetIndex = hash32(todayKey() + "|VINC001") % wheelItems.length; // deterministic per day
+      const targetIndex = hash32(todayKey() + "|VINC001") % wheelItems.length;
       const n = wheelItems.length;
       const slice = (Math.PI*2)/n;
 
-      // pointer at top; we want selected slice at top
       const targetAngle = (Math.PI*2) * 6 + (Math.PI*2) - (targetIndex*slice + slice/2);
       const start = wheelAngle;
       const delta = targetAngle - start;
@@ -1661,8 +1530,7 @@
           spinning = false;
           localStorage.setItem(key, "1");
           updateWheelUI();
-          const text = wheelItems[targetIndex];
-          wheelSetResult("🔍 " + text + ". Verifica sempre quota al banco prima di inserire.");
+          wheelSetResult(wheelItems[targetIndex]);
           toast("🎡 Ruota: risultato aggiornato");
         }
       }
@@ -1705,9 +1573,7 @@
       quizBack.style.display = "flex";
       renderQuiz();
     }
-    function closeQuiz(){
-      quizBack.style.display = "none";
-    }
+    function closeQuiz(){ quizBack.style.display = "none"; }
 
     function renderQuiz(){
       const i = hash32(todayKey() + "|quiz") % quizPool.length;
@@ -1720,9 +1586,7 @@
         const b = document.createElement("button");
         b.className = "qOpt";
         b.textContent = opt;
-        b.onclick = ()=>{
-          $("qMsg").textContent = (idx === q.a) ? q.ok : q.no;
-        };
+        b.onclick = ()=>{ $("qMsg").textContent = (idx === q.a) ? q.ok : q.no; };
         box.appendChild(b);
       });
     }
@@ -1731,18 +1595,11 @@
     // INIT
     // =========================
     (function init(){
-      // clock update
-      setInterval(()=>{
-        if (EVENTS_DATA && EVENTS_DATA.updated_at){
-          // keep updatedAt from file, but we can update wheel time
-        }
-      }, 1000);
-
-      // restore slot from URL/time
       CURRENT_SLOT = getSlotFromURL() || localStorage.getItem("slot") || slotFromTime(nowRome());
       $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
+      localStorage.setItem("slot", CURRENT_SLOT);
+      setSlotInURL(CURRENT_SLOT);
 
-      // initial load
       loadAll(false);
       renderTicket();
     })();
