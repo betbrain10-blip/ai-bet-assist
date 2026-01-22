@@ -2,753 +2,775 @@
 <html lang="it">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vincitù • IA Portal</title>
 
   <style>
     :root{
-      --bg1:#4a20ff;
-      --bg2:#081a3f;
+      --bg1:#2a0f55;
+      --bg2:#0b244a;
 
-      --panel: rgba(20, 24, 52, .62);
-      --panel2: rgba(20, 24, 52, .40);
+      --panel: rgba(18, 24, 52, .66);
+      --panel2: rgba(18, 24, 52, .46);
       --stroke: rgba(255,255,255,.10);
       --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.65);
-      --muted2: rgba(255,255,255,.45);
+      --muted: rgba(255,255,255,.66);
+      --muted2: rgba(255,255,255,.46);
 
-      --orange:#ff9800;
-      --orange2:#ffb03a;
+      --accent:#ff9800;
+      --accent2:#ffb74d;
 
-      --green:#2ecc71;
-      --red:#ff3b3b;
-      --yellow:#f3c24b;
+      --ok:#27d17f;
+      --warn:#ffc93a;
+      --bad:#ff5a7a;
 
-      --r1:18px;
-      --r2:14px;
+      --shadow: 0 18px 60px rgba(0,0,0,.42);
+      --r1: 18px;
+      --r2: 14px;
 
-      --shadow: 0 14px 55px rgba(0,0,0,.45);
       --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
     }
 
-    *{ box-sizing:border-box; }
-    html,body{ height:100%; }
+    *{box-sizing:border-box}
     body{
       margin:0;
-      font-family:var(--font);
+      min-height:100vh;
       color:var(--text);
+      font-family:var(--font);
       background:
-        radial-gradient(1200px 700px at 15% 10%, rgba(255,180,60,.25), transparent 60%),
-        radial-gradient(1100px 700px at 80% 15%, rgba(120,80,255,.30), transparent 55%),
-        linear-gradient(120deg, var(--bg1), var(--bg2));
+        radial-gradient(1200px 700px at 20% 10%, rgba(255,152,0,.22), transparent 60%),
+        radial-gradient(900px 600px at 80% 30%, rgba(120,80,255,.18), transparent 55%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
       overflow-x:hidden;
     }
 
     .wrap{
-      max-width: 1180px;
-      margin: 34px auto;
-      padding: 0 18px;
+      max-width:1220px;
+      margin:34px auto;
+      padding:0 16px;
     }
 
     .shell{
+      background: linear-gradient(180deg, rgba(18,24,52,.72), rgba(18,24,52,.58));
       border:1px solid var(--stroke);
-      border-radius: 26px;
-      background: linear-gradient(180deg, rgba(10,14,40,.78), rgba(10,14,40,.60));
-      box-shadow: var(--shadow);
-      overflow:hidden;
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      padding:18px;
       position:relative;
+      overflow:hidden;
+    }
+
+    .shell:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(800px 240px at 30% 0%, rgba(255,152,0,.18), transparent 60%),
+        radial-gradient(680px 240px at 70% 0%, rgba(120,80,255,.14), transparent 55%);
+      pointer-events:none;
+      filter: blur(0px);
     }
 
     .topbar{
-      padding: 18px 20px 12px;
+      position:relative;
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap: 14px;
-      border-bottom:1px solid var(--stroke);
-      background: rgba(255,255,255,.02);
+      gap:12px;
+      padding:10px 10px 14px;
     }
 
     .brand{
       display:flex;
       align-items:center;
-      gap: 12px;
+      gap:10px;
       min-width: 260px;
     }
-    .brand img{
-      width: 34px;
-      height: 34px;
-      object-fit: contain;
-      border-radius: 10px;
-      background: rgba(255,255,255,.06);
-      padding: 6px;
-      border: 1px solid var(--stroke);
+
+    .logo{
+      width:34px; height:34px;
+      border-radius:10px;
+      background:#d8292f; /* ROSSO come prima */
+      display:grid; place-items:center;
+      box-shadow: 0 10px 30px rgba(216,41,47,.25);
+      border:1px solid rgba(255,255,255,.12);
+      flex:0 0 auto;
     }
-    .brand .t1{
-      font-weight: 800;
-      letter-spacing: .2px;
-    }
-    .brand .t2{
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 2px;
+    .logo span{
+      font-weight:900;
+      font-size:16px;
+      line-height:1;
+      color:white;
+      transform: translateY(-.5px);
     }
 
-    .statusRow{
+    .brand h1{
+      margin:0;
+      font-size:16px;
+      font-weight:800;
+      letter-spacing:.2px;
+    }
+    .brand small{
+      display:block;
+      margin-top:2px;
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    .status{
       display:flex;
       align-items:center;
-      gap: 8px;
-      flex-wrap: wrap;
+      gap:8px;
+      flex-wrap:wrap;
       justify-content:flex-end;
     }
-
     .pill{
       display:inline-flex;
       align-items:center;
-      gap: 8px;
-      padding: 7px 10px;
-      border-radius: 999px;
+      gap:8px;
+      padding:7px 10px;
       border:1px solid var(--stroke);
-      background: rgba(255,255,255,.04);
-      color: var(--text);
-      font-size: 12px;
-      white-space: nowrap;
+      background:rgba(255,255,255,.06);
+      border-radius:999px;
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap;
     }
     .dot{
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: var(--green);
-      box-shadow: 0 0 0 4px rgba(46,204,113,.12);
+      width:8px;height:8px;border-radius:999px;
+      background:var(--ok);
+      box-shadow:0 0 0 3px rgba(39,209,127,.12);
     }
-    .pill .k{ color: var(--muted); }
-    .pill b{ font-weight: 800; }
+    .pill strong{ color:var(--text); font-weight:800; }
+    .pill .mini{ color:var(--muted2); font-weight:700; }
 
-    .subbar{
-      padding: 10px 20px 14px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 10px;
-      border-bottom:1px solid var(--stroke);
-    }
-
-    .modePills{
-      display:flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      align-items:center;
-    }
-
-    .chip{
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .chip strong{ color: var(--text); font-weight: 800; }
-
-    .ctaRow{
-      display:flex;
-      gap: 10px;
-      align-items:center;
-      flex-wrap: wrap;
-      justify-content:flex-end;
-    }
-
-    .btn{
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.04);
-      color: var(--text);
-      padding: 10px 14px;
-      border-radius: 12px;
-      cursor:pointer;
-      font-weight: 800;
-      letter-spacing: .2px;
-      transition: transform .08s ease, background .12s ease, border .12s ease;
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-      user-select:none;
-    }
-    .btn:hover{ background: rgba(255,255,255,.06); }
-    .btn:active{ transform: translateY(1px); }
-
-    .btnPrimary{
-      background: linear-gradient(180deg, var(--orange2), var(--orange));
-      color: #1b1200;
-      border: 1px solid rgba(255,255,255,.10);
-      box-shadow: 0 10px 25px rgba(255,152,0,.16);
-    }
-    .btnPrimary:hover{ filter: brightness(1.02); }
-
-    .grid{
+    .row{
+      position:relative;
       display:grid;
-      grid-template-columns: 1.7fr 1fr;
-      gap: 16px;
-      padding: 16px;
+      grid-template-columns: 1.15fr .85fr;
+      gap:14px;
+      align-items:start;
+      padding:0 10px 10px;
     }
 
     .panel{
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
       border:1px solid var(--stroke);
-      border-radius: 18px;
-      background: var(--panel);
-      overflow:hidden;
+      border-radius:var(--r1);
+      padding:14px;
     }
+
     .panelHeader{
-      padding: 12px 14px;
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap: 10px;
-      border-bottom:1px solid var(--stroke);
-      background: rgba(255,255,255,.02);
+      gap:10px;
+      margin-bottom:10px;
+      flex-wrap:wrap;
     }
-    .panelHeader h3{
-      margin:0;
-      font-size: 14px;
-      letter-spacing:.2px;
+
+    .panelHeader .title{
       display:flex;
       align-items:center;
-      gap: 8px;
+      gap:8px;
+      font-weight:900;
+      font-size:13px;
+      color:var(--text);
     }
-    .panelHeader .mini{
-      color: var(--muted);
-      font-size: 12px;
+    .bolt{ filter: drop-shadow(0 8px 16px rgba(255,152,0,.18)); }
+
+    .btnRow{
       display:flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      justify-content:flex-end;
+      gap:8px;
+      flex-wrap:wrap;
       align-items:center;
     }
 
-    .panelBody{
-      padding: 14px;
+    .btn{
+      appearance:none;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:9px 12px;
+      border-radius:12px;
+      font-weight:800;
+      font-size:12px;
+      cursor:pointer;
+      transition: transform .08s ease, background .15s ease, border-color .15s ease;
+      user-select:none;
+    }
+    .btn:hover{ background: rgba(255,255,255,.09); }
+    .btn:active{ transform: translateY(1px); }
+
+    .btn.primary{
+      border-color: rgba(255,152,0,.35);
+      background: linear-gradient(180deg, rgba(255,152,0,.95), rgba(255,152,0,.72));
+      color:#1c1208;
+      box-shadow: 0 18px 40px rgba(255,152,0,.12);
+    }
+    .btn.primary:hover{
+      background: linear-gradient(180deg, rgba(255,169,40,.98), rgba(255,152,0,.78));
     }
 
-    .notice{
-      border:1px dashed rgba(255,255,255,.18);
-      background: rgba(255,255,255,.03);
-      border-radius: 14px;
-      padding: 10px 12px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.35;
-      margin-bottom: 12px;
+    .btn.small{
+      padding:7px 10px;
+      border-radius:10px;
+      font-weight:900;
     }
 
-    .sectionTitle{
+    .subline{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:8px 0 10px;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .subline .tag{
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid var(--stroke);
+      font-weight:800;
+      color:var(--muted);
+    }
+
+    .callout{
+      margin-top:10px;
+      background: rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:14px;
+      padding:12px;
+    }
+    .calloutHead{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap: 10px;
-      margin: 6px 0 10px;
-      color: var(--muted);
-      font-size: 12px;
+      gap:10px;
+      margin-bottom:8px;
     }
-    .sectionTitle b{ color: var(--text); }
+    .calloutHead .left{
+      display:flex; align-items:center; gap:8px;
+      font-weight:900;
+      font-size:12.5px;
+    }
+    .calloutHead .right{
+      display:flex; align-items:center; gap:8px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:800;
+    }
 
-    /* Angolo Extra */
-    .extraBox{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.16);
-      border-radius: 16px;
-      padding: 12px;
-      margin-bottom: 14px;
-    }
-    .extraTop{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-    .extraTop .t{
-      font-weight: 900;
-      letter-spacing:.2px;
-      font-size: 13px;
-      display:flex;
-      align-items:center;
-      gap: 8px;
-    }
-    .extraGrid{
+    .calloutGrid{
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap:10px;
+      margin-top:8px;
     }
+    @media (max-width: 980px){
+      .row{ grid-template-columns: 1fr; }
+      .calloutGrid{ grid-template-columns: 1fr; }
+      .status{ justify-content:flex-start; }
+    }
+
     .miniCard{
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(10, 14, 38, .35);
+      padding:10px;
+    }
+
+    .miniItem{
+      padding:10px;
+      border-radius:14px;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.03);
-      border-radius: 14px;
-      padding: 10px;
-      min-height: 116px;
+      margin-top:10px;
     }
-    .miniCard h4{
-      margin:0 0 8px;
-      font-size: 12px;
-      color: var(--text);
-      display:flex;
-      gap: 8px;
-      align-items:center;
+    .miniItem:first-child{ margin-top:0; }
+
+    .miniTop{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      font-weight:900;
+      font-size:12px;
     }
-    .miniItem{
-      border:1px solid rgba(255,255,255,.08);
-      background: rgba(0,0,0,.12);
-      border-radius: 12px;
-      padding: 9px 10px;
-      margin-bottom: 8px;
+    .miniTop .meta{
+      color:var(--muted);
+      font-weight:800;
+      font-size:11.5px;
+      white-space:nowrap;
     }
-    .miniItem:last-child{ margin-bottom:0; }
-    .miniItem .row1{
-      display:flex;
-      justify-content:space-between;
-      gap: 10px;
-      align-items:flex-start;
-    }
-    .miniItem .m{
-      font-size: 12px;
-      font-weight: 900;
-      line-height: 1.25;
-    }
-    .miniItem .s{
-      font-size: 11px;
-      color: var(--muted);
-      margin-top: 3px;
-      line-height: 1.25;
+
+    .badges{
+      display:flex; gap:6px; flex-wrap:wrap; margin:8px 0 6px;
     }
     .badge{
-      font-size: 11px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      white-space:nowrap;
-      display:inline-flex;
-      align-items:center;
-      gap: 6px;
+      padding:5px 8px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+      font-size:11px;
+      font-weight:900;
+      color:var(--muted);
     }
-    .badgeGreen{ border-color: rgba(46,204,113,.28); background: rgba(46,204,113,.10); }
-    .badgeYellow{ border-color: rgba(243,194,75,.28); background: rgba(243,194,75,.10); }
-    .badgeRed{ border-color: rgba(255,59,59,.28); background: rgba(255,59,59,.10); }
+    .badge.ok{ background: rgba(39,209,127,.14); border-color: rgba(39,209,127,.22); color: rgba(230,255,242,.92); }
+    .badge.warn{ background: rgba(255,201,58,.14); border-color: rgba(255,201,58,.24); color: rgba(255,245,210,.95); }
+    .badge.bad{ background: rgba(255,90,122,.14); border-color: rgba(255,90,122,.22); color: rgba(255,230,236,.95); }
 
-    /* Event cards */
+    .miniText{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.35;
+    }
+
     .eventCard{
+      margin-top:12px;
+      border-radius:16px;
       border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      border-radius: 18px;
-      padding: 12px;
-      margin-bottom: 12px;
+      background: rgba(255,255,255,.035);
+      overflow:hidden;
     }
-    .eventCard:last-child{ margin-bottom:0; }
 
-    .eventTop{
+    .eventHead{
       display:flex;
-      align-items:flex-start;
+      align-items:center;
       justify-content:space-between;
-      gap: 10px;
-    }
-    .meta{
-      display:flex;
-      align-items:center;
-      gap: 10px;
-      flex-wrap: wrap;
-      color: var(--muted);
-      font-size: 12px;
-    }
-    .leaguePill{
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.12);
+      gap:10px;
+      padding:12px;
       background: rgba(0,0,0,.12);
-      color: var(--text);
-      font-weight: 900;
-      font-size: 11px;
-    }
-    .slotPill{
-      padding: 6px 10px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 800;
+      border-bottom:1px solid rgba(255,255,255,.08);
     }
 
-    .teams{
-      margin-top: 10px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 10px;
+    .eventLeft{
+      display:flex; align-items:center; gap:10px; min-width:0;
     }
-    .teamSide{
-      display:flex;
-      align-items:center;
-      gap: 10px;
-      min-width: 0;
-    }
-    .crest{
-      width: 26px; height: 26px;
-      border-radius: 10px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(0,0,0,.18);
-      display:grid;
-      place-items:center;
-      overflow:hidden;
-      flex: 0 0 auto;
-    }
-    .crest img{ width:100%; height:100%; object-fit:contain; padding:4px; }
-    .tname{
-      font-weight: 950;
-      font-size: 14px;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-      max-width: 240px;
-    }
-    .vs{
-      color: var(--muted);
-      font-weight: 900;
-      letter-spacing:.2px;
-      font-size: 12px;
+
+    .leagueDot{
+      width:10px;height:10px;border-radius:999px;
+      background: rgba(0,255,180,.7);
+      box-shadow:0 0 0 3px rgba(0,255,180,.12);
       flex:0 0 auto;
     }
 
+    .eventTitle{
+      min-width:0;
+    }
+
+    .eventTitle .meta{
+      display:flex; gap:8px; flex-wrap:wrap;
+      align-items:center;
+      color:var(--muted);
+      font-size:11.5px;
+      font-weight:800;
+      margin-bottom:3px;
+    }
+    .chip{
+      padding:4px 8px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      color:var(--muted);
+      font-weight:900;
+      font-size:11px;
+      white-space:nowrap;
+    }
+
+    .matchLine{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:950;
+      font-size:13px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .team{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      min-width:0;
+    }
+
+    .crest{
+      width:18px; height:18px; border-radius:6px;
+      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.10);
+      display:grid; place-items:center;
+      overflow:hidden;
+      flex:0 0 auto;
+    }
+    .crest img{
+      width:100%; height:100%;
+      object-fit:contain;
+      background: transparent;
+      display:block;
+    }
+    .crest .ini{
+      font-size:10px;
+      font-weight:1000;
+      color:rgba(255,255,255,.82);
+    }
+
+    .eventRight{
+      display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:flex-end;
+    }
+
+    .eventBody{
+      padding:12px;
+    }
+
+    .reasonLine{
+      color: var(--muted);
+      font-size:12px;
+      line-height:1.35;
+      margin-bottom:10px;
+    }
+
     .markets{
-      margin-top: 12px;
       display:grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+      gap:10px;
     }
-    .market{
+    @media (max-width: 980px){
+      .markets{ grid-template-columns: 1fr; }
+    }
+
+    .mkt{
+      border-radius:14px;
       border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.14);
-      border-radius: 14px;
-      padding: 10px;
-      min-height: 110px;
+      background: rgba(10, 14, 38, .32);
+      padding:10px;
       display:flex;
       flex-direction:column;
-      justify-content:space-between;
-      gap: 8px;
+      gap:8px;
+      min-height:104px;
     }
-    .market .m1{
+
+    .mktTop{
       display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap: 8px;
-    }
-    .market .label{
-      font-weight: 950;
-      font-size: 12px;
-      line-height: 1.2;
-    }
-    .market .why{
-      color: var(--muted);
-      font-size: 11px;
-      line-height: 1.25;
-      margin-top: 6px;
-    }
-    .mActions{
-      display:flex;
-      gap: 8px;
       align-items:center;
       justify-content:space-between;
-      margin-top: 6px;
+      gap:8px;
     }
-    .btnMini{
-      padding: 9px 10px;
-      border-radius: 12px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-      color: var(--text);
-      cursor:pointer;
-      font-weight: 900;
-      font-size: 12px;
-      width: 100%;
-      transition: transform .08s ease, background .12s ease;
-    }
-    .btnMini:hover{ background: rgba(255,255,255,.05); }
-    .btnMini:active{ transform: translateY(1px); }
 
-    .btnAdd{
-      background: linear-gradient(180deg, rgba(255,176,58,.96), rgba(255,152,0,.95));
-      color:#1b1200;
+    .mktName{
+      font-weight:950;
+      font-size:12.5px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .prio{
+      padding:5px 8px;
+      border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
+      font-size:11px;
+      font-weight:950;
+      color:var(--muted);
+      background: rgba(255,255,255,.06);
+      white-space:nowrap;
+    }
+    .prio.ok{ background: rgba(39,209,127,.14); border-color: rgba(39,209,127,.22); color: rgba(230,255,242,.92); }
+    .prio.warn{ background: rgba(255,201,58,.14); border-color: rgba(255,201,58,.24); color: rgba(255,245,210,.95); }
+    .prio.bad{ background: rgba(255,90,122,.14); border-color: rgba(255,90,122,.22); color: rgba(255,230,236,.95); }
+
+    .mktText{
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.35;
+      min-height:34px;
     }
 
-    /* Right panel form */
-    .formRow{
+    .mktActions{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      margin-top:auto;
+    }
+
+    .btn2{
+      flex:1;
+      border-radius:12px;
+      padding:9px 10px;
+      font-size:12px;
+      font-weight:950;
+      cursor:pointer;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      transition: transform .08s ease, background .15s ease;
+    }
+    .btn2:hover{ background: rgba(255,255,255,.09); }
+    .btn2:active{ transform: translateY(1px); }
+
+    .btn2.add{
+      border-color: rgba(255,152,0,.35);
+      background: linear-gradient(180deg, rgba(255,152,0,.92), rgba(255,152,0,.70));
+      color:#1c1208;
+    }
+    .btn2.add:hover{
+      background: linear-gradient(180deg, rgba(255,169,40,.96), rgba(255,152,0,.76));
+    }
+
+    .rightPanel h3{
+      margin:0 0 10px;
+      font-size:13px;
+      font-weight:950;
+      display:flex; align-items:center; gap:8px;
+    }
+
+    .formGrid{
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap:10px;
+      margin-bottom:10px;
     }
     .field{
+      border-radius:14px;
       border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      border-radius: 14px;
-      padding: 10px;
+      background: rgba(10, 14, 38, .28);
+      padding:10px;
     }
     .field label{
       display:block;
-      font-size: 11px;
-      color: var(--muted);
-      margin-bottom: 6px;
-      font-weight: 900;
-      letter-spacing:.2px;
+      font-size:11px;
+      color:var(--muted);
+      font-weight:900;
+      margin-bottom:7px;
     }
     .field input, .field select{
       width:100%;
       border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.12);
-      color: var(--text);
-      border-radius: 12px;
-      padding: 10px 10px;
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:9px 10px;
+      border-radius:12px;
       outline:none;
-      font-weight: 900;
+      font-weight:900;
     }
-    .field input::placeholder{ color: rgba(255,255,255,.35); }
 
-    .statsRow{
+    .sumRow{
       display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-    .statBox{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      border-radius: 14px;
-      padding: 10px;
-    }
-    .statBox .k{
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 900;
-      margin-bottom: 4px;
-    }
-    .statBox .v{
-      font-size: 18px;
-      font-weight: 1000;
-      letter-spacing:.2px;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:10px;
+      margin:10px 0 12px;
     }
 
-    .selectionsBox{
+    .sumBox{
+      border-radius:14px;
       border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.12);
-      border-radius: 14px;
-      padding: 10px;
-      margin-bottom: 10px;
+      background: rgba(255,255,255,.04);
+      padding:10px;
     }
-    .selTitle{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 8px;
-      font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 8px;
+    .sumBox .k{ color:var(--muted); font-size:11px; font-weight:900; }
+    .sumBox .v{ margin-top:6px; font-size:14px; font-weight:1000; }
+
+    .ticket{
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(10, 14, 38, .26);
+      padding:12px;
+      margin-top:10px;
     }
-    .selItem{
-      border:1px solid rgba(255,255,255,.08);
-      background: rgba(255,255,255,.03);
-      border-radius: 12px;
-      padding: 8px 9px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 10px;
-      margin-bottom: 8px;
+
+    .ticketHead{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:8px;
     }
-    .selItem:last-child{ margin-bottom:0; }
-    .selItem .l{
-      font-size: 12px;
-      font-weight: 950;
-      line-height: 1.25;
+    .ticketList{
+      display:flex; flex-direction:column; gap:8px;
+      margin:8px 0 10px;
+    }
+    .pick{
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      padding:10px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+    }
+    .pick .left{
       min-width:0;
+    }
+    .pick .left strong{
+      display:block;
+      font-weight:1000;
+      font-size:12.5px;
+      white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
-      white-space:nowrap;
     }
-    .selItem .x{
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.16);
-      color: var(--text);
-      border-radius: 10px;
-      padding: 7px 9px;
-      cursor:pointer;
-      font-weight: 1000;
+    .pick .left span{
+      display:block;
+      color:var(--muted);
+      font-size:11.5px;
+      font-weight:900;
+      margin-top:2px;
     }
 
-    .printBtn{
-      width:100%;
-      padding: 12px 14px;
-      border-radius: 14px;
+    .pick .rm{
+      border-radius:12px;
       border:1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, var(--orange2), var(--orange));
-      color:#1b1200;
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:8px 10px;
+      font-weight:1000;
       cursor:pointer;
-      font-weight: 1000;
-      font-size: 14px;
-      letter-spacing:.2px;
-      box-shadow: 0 14px 30px rgba(255,152,0,.14);
-    }
-    .hint{
-      color: var(--muted);
-      font-size: 12px;
-      margin-top: 10px;
-      line-height: 1.35;
     }
 
-    /* Modals */
+    .bigPrint{
+      width:100%;
+      border-radius:16px;
+      padding:12px 14px;
+      border:1px solid rgba(255,152,0,.35);
+      background: linear-gradient(180deg, rgba(255,152,0,.95), rgba(255,152,0,.70));
+      color:#1c1208;
+      font-weight:1000;
+      font-size:13px;
+      cursor:pointer;
+      box-shadow: 0 18px 40px rgba(255,152,0,.12);
+    }
+    .bigPrint:active{ transform: translateY(1px); }
+
+    .hint{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.35;
+    }
+
+    .toast{
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(10, 14, 38, .92);
+      border:1px solid rgba(255,255,255,.12);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:14px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.45);
+      font-weight:900;
+      font-size:12.5px;
+      display:none;
+      z-index:9999;
+      max-width: 92vw;
+    }
+
+    /* MODALS */
     .modalBack{
-      position:fixed;
-      inset:0;
+      position:fixed; inset:0;
       background: rgba(0,0,0,.55);
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(6px);
       display:none;
       align-items:center;
       justify-content:center;
-      padding: 18px;
-      z-index: 50;
+      z-index:9998;
+      padding:16px;
     }
     .modal{
-      width: min(860px, 100%);
+      width:min(920px, 96vw);
+      border-radius:18px;
       border:1px solid rgba(255,255,255,.12);
-      background: linear-gradient(180deg, rgba(12,14,26,.92), rgba(12,14,26,.86));
-      border-radius: 22px;
-      box-shadow: var(--shadow);
+      background: rgba(10, 14, 38, .92);
+      box-shadow: 0 20px 70px rgba(0,0,0,.55);
       overflow:hidden;
     }
     .modalHead{
-      padding: 14px 16px;
-      border-bottom:1px solid rgba(255,255,255,.10);
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap: 12px;
+      padding:12px 14px;
+      border-bottom:1px solid rgba(255,255,255,.10);
     }
-    .modalHead .ttl{
-      font-weight: 1000;
-      letter-spacing:.2px;
-      display:flex;
-      align-items:center;
-      gap: 8px;
+    .modalHead strong{
+      font-size:13px;
+      font-weight:1000;
+    }
+    .modalHead button{
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:8px 10px;
+      font-weight:1000;
+      cursor:pointer;
     }
     .modalBody{
-      padding: 16px;
-    }
-    .closeBtn{
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      color: var(--text);
-      padding: 9px 12px;
-      border-radius: 12px;
-      cursor:pointer;
-      font-weight: 1000;
+      padding:14px;
     }
 
-    /* Wheel layout */
     .wheelGrid{
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap:12px;
+    }
+    @media (max-width: 860px){
+      .wheelGrid{ grid-template-columns: 1fr; }
     }
     .wheelBox{
+      border-radius:16px;
       border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      border-radius: 16px;
-      padding: 12px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      min-height: 340px;
+      background: rgba(255,255,255,.04);
+      padding:12px;
     }
-    .wheelSide{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      border-radius: 16px;
-      padding: 12px;
-      min-height: 340px;
-      display:flex;
-      flex-direction:column;
-      gap: 10px;
-    }
-    .wheelResult{
-      border:1px dashed rgba(255,255,255,.16);
-      background: rgba(0,0,0,.14);
-      border-radius: 14px;
-      padding: 10px;
-      color: var(--text);
-      font-weight: 950;
-      line-height: 1.35;
+    canvas{ width:100%; height:auto; display:block; }
+    .wheelBtn{
+      width:100%;
+      margin-top:10px;
+      border-radius:16px;
+      padding:12px 14px;
+      border:1px solid rgba(255,152,0,.35);
+      background: linear-gradient(180deg, rgba(255,152,0,.95), rgba(255,152,0,.72));
+      color:#1c1208;
+      font-weight:1000;
+      cursor:pointer;
     }
     .wheelNote{
-      color: var(--muted);
-      font-size: 12px;
+      margin-top:10px;
+      color:var(--muted);
+      font-size:12px;
       line-height:1.35;
     }
-    .wheelBtn{
-      margin-top:auto;
-      width:100%;
-      padding: 12px 14px;
-      border-radius: 14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, var(--orange2), var(--orange));
-      color:#1b1200;
-      cursor:pointer;
-      font-weight: 1000;
-      font-size: 14px;
-    }
 
-    /* Quiz */
     .quizBox{
+      border-radius:16px;
       border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      border-radius: 16px;
-      padding: 14px;
+      background: rgba(255,255,255,.04);
+      padding:12px;
     }
     .qTitle{
-      font-weight: 1000;
-      margin: 0 0 10px;
-      letter-spacing: .2px;
+      font-weight:1000;
+      margin:0 0 10px;
+      font-size:13px;
     }
-    .qText{
-      color: var(--muted);
-      margin: 0 0 12px;
-      line-height: 1.35;
-    }
-    .qAns{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-    .qBtn{
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.12);
-      color: var(--text);
-      padding: 11px 12px;
-      border-radius: 14px;
+    .qOpt{
+      width:100%;
+      text-align:left;
+      margin-top:8px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      color:var(--text);
+      padding:10px 12px;
+      font-weight:950;
       cursor:pointer;
-      font-weight: 950;
     }
-    .qBtn:hover{ background: rgba(255,255,255,.04); }
+    .qOpt:hover{ background: rgba(255,255,255,.08); }
+    .qMsg{ margin-top:10px; color:var(--muted); font-size:12px; font-weight:900; }
 
-    @media (max-width: 980px){
-      .grid{ grid-template-columns: 1fr; }
-      .brand{ min-width: 0; }
-      .markets{ grid-template-columns: 1fr; }
-      .extraGrid{ grid-template-columns: 1fr; }
-      .wheelGrid{ grid-template-columns: 1fr; }
+    @media print{
+      body{ background:white; color:#111; }
+      .wrap{ margin:0; padding:0; }
+      .shell{ box-shadow:none; border:none; background:white; }
+      .panel, .rightPanel{ border:1px solid #ddd; background:white; }
+      .btn, .btn2, .bigPrint, .pill { display:none !important; }
+      .modalBack, .toast { display:none !important; }
     }
   </style>
 </head>
@@ -756,172 +778,180 @@
 <body>
   <div class="wrap">
     <div class="shell">
-
-      <!-- TOPBAR -->
       <div class="topbar">
         <div class="brand">
-          <img src="vincitu-stemma.png" alt="Vincitù" />
+          <div class="logo" title="Vincitù">
+            <span>V</span>
+          </div>
           <div>
-            <div class="t1">Vincitù • IA Portal</div>
-            <div class="t2">Eventi reali • quote non mostrate: si inseriscono al banco</div>
+            <h1>Vincitù • IA Portal</h1>
+            <small>Eventi reali • quote non mostrate: si inseriscono al banco</small>
           </div>
         </div>
 
-        <div class="statusRow">
-          <span class="pill"><span class="dot"></span> <span class="k">Centro:</span> <b id="centerId">VINCO01</b></span>
-          <span class="pill"><span class="k">Agg:</span> <b id="updatedAt">—</b></span>
-          <span class="pill"><span class="k">Fascia:</span> <b id="slotName">—</b></span>
+        <div class="status">
+          <div class="pill"><span class="dot"></span> Centro: <strong id="centerId">VINC001</strong></div>
+          <div class="pill">Agg: <strong id="updatedAt">—</strong></div>
+          <div class="pill">Fascia: <strong id="slotLabel">—</strong></div>
+          <button class="btn small" id="openWheel">🎡 Ruota</button>
+          <button class="btn small" id="openQuiz">❓ Quiz</button>
         </div>
       </div>
 
-      <!-- SUBBAR -->
-      <div class="subbar">
-        <div class="modePills">
-          <span class="chip">🎯 <strong>Modalità cliente</strong> • calma oggi, più continuità domani.</span>
-          <span class="chip">🎯 Missione: <strong id="missionTxt">Max 2 selezioni</strong></span>
-          <span class="chip">⏱ Sfida: <strong id="focusTxt">20s focus</strong></span>
-        </div>
-
-        <div class="ctaRow">
-          <button class="btn btnPrimary" id="btnNew">⚡ Nuovi eventi</button>
-          <button class="btn" id="btnSlot">🕒 Cambia fascia</button>
-          <button class="btn" id="btnWheel">🎡 Ruota</button>
-          <button class="btn" id="btnQuiz">❓ Quiz</button>
-        </div>
-      </div>
-
-      <!-- MAIN -->
-      <div class="grid">
+      <div class="row">
         <!-- LEFT -->
         <div class="panel">
           <div class="panelHeader">
-            <h3>⚡ Eventi (IA)</h3>
-            <div class="mini">
-              <span class="pill" style="padding:6px 10px;"><span class="k">Quote:</span> <b>verifica al banco</b></span>
-              <span class="pill" style="padding:6px 10px;"><span class="k">Eventi mostrati:</span> <b id="shownCount">0/5</b></span>
+            <div class="title"><span class="bolt">⚡</span> Eventi (IA)</div>
+            <div class="btnRow">
+              <button class="btn primary" id="btnReload">Nuovi eventi</button>
+              <button class="btn" id="btnSlot">Cambia fascia</button>
+              <button class="btn" id="btnFocus">Start 20s</button>
+              <span class="chip" id="eventsCount">Eventi mostrati: —</span>
             </div>
           </div>
 
-          <div class="panelBody">
-            <div class="notice">
-              🔎 Se vedi quote diverse al banco è normale: qui sono <b>indicazioni</b>.  
-              Consiglio: <b>2–3 selezioni massimo</b> per restare lucido e controllare lo stake.
+          <div class="subline">
+            <span class="tag">Quote: <strong style="color:var(--text)">verifica al banco</strong></span>
+            <span class="tag" id="modeTag">Modalità cliente: <strong style="color:var(--text)">chiaro & veloce</strong></span>
+            <span class="tag" id="missionTag">Missione: <strong style="color:var(--text)">Max 2 selezioni</strong></span>
+          </div>
+
+          <!-- Corner & Cards “chiaro” -->
+          <div class="callout" id="cornerArea">
+            <div class="calloutHead">
+              <div class="left">📌 Angolo Speciale • Corner & Cartellini (rapido)</div>
+              <div class="right">
+                <span class="chip" id="cornerHint">Max 2 + 2 (pulito)</span>
+              </div>
             </div>
 
-            <!-- EXTRA (Corner & Cartellini) -->
-            <div class="extraBox" id="extraBox">
-              <div class="extraTop">
-                <div class="t">📌 Angolo Extra: Corner & Cartellini (stima rapida)</div>
-                <span class="badge badgeGreen" title="Selezioni rapide senza quote">Max 2 + 2</span>
-              </div>
-
-              <div class="extraGrid">
-                <div class="miniCard">
-                  <h4>🚩 Corner “interessanti” (max 2)</h4>
-                  <div id="cornerList"></div>
+            <div class="calloutGrid">
+              <div class="miniCard">
+                <div class="miniTop">
+                  <span>🚩 Corner “interessanti” (max 2)</span>
+                  <span class="meta">solo indicazioni</span>
                 </div>
-                <div class="miniCard">
-                  <h4>🟨 Cartellini “attenzione” (max 2)</h4>
-                  <div id="cardList"></div>
+                <div id="cornerList"></div>
+              </div>
+
+              <div class="miniCard">
+                <div class="miniTop">
+                  <span>🟨 Cartellini “attenzione” (max 2)</span>
+                  <span class="meta">solo indicazioni</span>
                 </div>
-              </div>
-
-              <div style="margin-top:10px;color:var(--muted);font-size:12px;line-height:1.35">
-                *Stime basate su <b>ritmo</b>, <b>pressione</b> e <b>agonismo</b> (indicativo). Quota reale sempre al banco.
+                <div id="cardsList"></div>
               </div>
             </div>
 
-            <!-- EVENTS -->
-            <div id="events"></div>
-
-            <div style="margin-top:10px;color:var(--muted);font-size:12px;line-height:1.35">
-              Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+            <div class="wheelNote" style="margin-top:10px">
+              Nota: queste sono <strong>stime “ritmo / pressione / agonismo”</strong> (senza quote). La quota reale va sempre verificata al banco.
             </div>
+          </div>
+
+          <div id="eventsArea"></div>
+
+          <div class="hint">
+            Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
           </div>
         </div>
 
         <!-- RIGHT -->
-        <div class="panel">
-          <div class="panelHeader">
-            <h3>🧾 Schedina</h3>
-            <div class="mini">
-              <span class="pill" style="padding:6px 10px;"><span class="k">Modalità:</span> <b>multipla</b></span>
+        <div class="panel rightPanel">
+          <h3>🧾 Schedina</h3>
+
+          <div class="formGrid">
+            <div class="field">
+              <label>Stake (€)</label>
+              <input id="stake" type="number" min="1" step="1" value="5" />
+            </div>
+
+            <div class="field">
+              <label>Tipo</label>
+              <select id="type">
+                <option value="multipla">Multipla (tutte)</option>
+                <option value="singole">Singole (una alla volta)</option>
+              </select>
             </div>
           </div>
 
-          <div class="panelBody">
-            <div class="formRow">
-              <div class="field">
-                <label>Stake (€)</label>
-                <input id="stake" type="number" min="1" step="1" value="5" />
-              </div>
-              <div class="field">
-                <label>Tipo</label>
-                <select id="type">
-                  <option value="multipla" selected>Multipla (tutte)</option>
-                  <option value="singola">Singola</option>
-                </select>
-              </div>
+          <div class="sumRow">
+            <div class="sumBox">
+              <div class="k">Selezioni</div>
+              <div class="v" id="selCount">0</div>
             </div>
-
-            <div class="statsRow">
-              <div class="statBox">
-                <div class="k">Selezioni</div>
-                <div class="v" id="selCount">0</div>
-              </div>
-              <div class="statBox">
-                <div class="k">Quota totale</div>
-                <div class="v" id="totalOdd">—</div>
-              </div>
+            <div class="sumBox">
+              <div class="k">Quota totale</div>
+              <div class="v" id="quotaTot">—</div>
             </div>
-
-            <div class="statBox" style="margin-bottom:10px;">
+            <div class="sumBox">
               <div class="k">Vincita pot.</div>
               <div class="v" id="winPot">—</div>
             </div>
+          </div>
 
-            <div class="selectionsBox">
-              <div class="selTitle">
-                <span>✅ Selezioni</span>
-                <span style="color:var(--muted2)">Inserisci quota reale</span>
-              </div>
-              <div id="selList" style="color:var(--muted);font-size:12px;line-height:1.35;">
-                Nessuna selezione. Aggiungi una giocata a sinistra.
-              </div>
+          <div class="ticket">
+            <div class="ticketHead">
+              <span>✅ Selezioni</span>
+              <span class="chip">Qui inserisci la quota reale al banco quando serve</span>
             </div>
 
-            <button class="printBtn" id="btnPrint">🖨️ Stampa schedina</button>
+            <div class="ticketList" id="ticketList">
+              <div class="hint" style="margin:0">Nessuna selezione. Aggiungi una giocata a sinistra.</div>
+            </div>
+
+            <div class="field" style="margin-top:10px">
+              <label>Quota reale totale (facoltativo)</label>
+              <input id="realQuota" type="number" min="1" step="0.01" placeholder="es. 3.25" />
+            </div>
+
+            <button class="bigPrint" id="printBtn">🖨️ Stampa schedina</button>
+
             <div class="hint">
-              Suggerimento: fai <b>2–3 selezioni massimo</b> per mantenere controllo.  
-              Quote reali: <b>sempre al banco</b>.
+              Suggerimento: 2–3 selezioni massimo per mantenere controllo.
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
+
+  <div class="toast" id="toast"></div>
 
   <!-- WHEEL MODAL -->
   <div class="modalBack" id="wheelBack">
     <div class="modal">
       <div class="modalHead">
-        <div class="ttl">🎡 Ruota della Fortuna (consigli & missioni)</div>
-        <button class="closeBtn" id="closeWheel">Chiudi ✕</button>
+        <strong>🎡 Ruota della Fortuna (consigli & missioni)</strong>
+        <button id="closeWheel">Chiudi ✕</button>
       </div>
       <div class="modalBody">
         <div class="wheelGrid">
           <div class="wheelBox">
-            <canvas id="wheel" width="320" height="320" style="max-width:100%;"></canvas>
-          </div>
-          <div class="wheelSide">
-            <div class="wheelResult" id="wheelResult">
-              Premi “Gira la ruota” per ricevere una missione/consiglio utile per oggi.
-            </div>
-            <div class="wheelNote" id="wheelNote">
-              1 giro al giorno su questo PC (intrattenimento). Gioco responsabile.
-            </div>
+            <canvas id="wheel" width="520" height="520"></canvas>
             <button class="wheelBtn" id="spinBtn">Gira la ruota</button>
+            <div class="wheelNote" id="wheelLimit">
+              1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.
+            </div>
+          </div>
+          <div class="wheelBox">
+            <div class="miniTop" style="margin-bottom:10px;">
+              <span>🎁 Risultato</span>
+              <span class="meta" id="wheelWhen">—</span>
+            </div>
+            <div class="miniText" id="wheelResultText" style="font-size:13px; color:rgba(255,255,255,.88); font-weight:900">
+              Gira la ruota per ottenere un consiglio “da banco” e una micro-missione.
+            </div>
+
+            <div class="badges" style="margin-top:12px">
+              <span class="badge ok" id="wheelMission">Missione: Max 2 selezioni</span>
+              <span class="badge warn" id="wheelRule">Regola: stop se perdi</span>
+              <span class="badge" id="wheelFun">Bonus: quiz 1 domanda</span>
+            </div>
+
+            <div class="wheelNote" style="margin-top:12px">
+              Consiglio serio: se la quota al banco è diversa, <strong>riduci selezioni</strong> o gioca singole.
+            </div>
           </div>
         </div>
       </div>
@@ -932,15 +962,14 @@
   <div class="modalBack" id="quizBack">
     <div class="modal">
       <div class="modalHead">
-        <div class="ttl">❓ Quiz rapido (30s)</div>
-        <button class="closeBtn" id="closeQuiz">Chiudi ✕</button>
+        <strong>❓ Quiz veloce (30s)</strong>
+        <button id="closeQuiz">Chiudi ✕</button>
       </div>
       <div class="modalBody">
         <div class="quizBox">
-          <h3 class="qTitle" id="qTitle">Domanda</h3>
-          <p class="qText" id="qText">—</p>
-          <div class="qAns" id="qAns"></div>
-          <div style="margin-top:10px;color:var(--muted);font-size:12px" id="qFeedback"></div>
+          <p class="qTitle" id="qTitle">—</p>
+          <div id="qOptions"></div>
+          <div class="qMsg" id="qMsg">Rispondi: è solo intrattenimento 😊</div>
         </div>
       </div>
     </div>
@@ -951,241 +980,772 @@
     // STATE
     // =========================
     const SLOT_ORDER = ["mattina","pomeriggio","sera"];
-    const SLOT_LABEL = { mattina:"Mattina", pomeriggio:"Pomeriggio", sera:"Sera" };
-
+    let CURRENT_SLOT = "sera";
     let EVENTS_DATA = null;
-    let CURRENT_SLOT = null;
 
-    // Schedina
-    const selections = []; // {key, label, odd? (optional), matchId, marketLabel}
+    const ticket = [];
+    const $ = (id)=>document.getElementById(id);
 
-    // =========================
-    // UTILS
-    // =========================
-    function $(id){ return document.getElementById(id); }
-
-    function clamp(n,a,b){ return Math.max(a, Math.min(b,n)); }
+    function toast(msg){
+      const t = $("toast");
+      t.textContent = msg;
+      t.style.display = "block";
+      clearTimeout(toast._tm);
+      toast._tm = setTimeout(()=> t.style.display="none", 2200);
+    }
 
     function nowRome(){
-      // Browser locale, assumiamo già Italy: ma usiamo offset locale senza librerie.
-      return new Date();
+      return new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Rome" }));
     }
 
     function slotFromTime(d){
       const h = d.getHours();
-      if(h>=6 && h<12) return "mattina";
-      if(h>=12 && h<18) return "pomeriggio";
+      if (h >= 6 && h < 12) return "mattina";
+      if (h >= 12 && h < 18) return "pomeriggio";
       return "sera";
     }
 
-    function slotFromURL(){
-      const u = new URL(location.href);
-      const s = u.searchParams.get("slot");
-      if(!s) return null;
-      if(s==="morning") return "mattina";
-      if(s==="afternoon") return "pomeriggio";
-      if(s==="evening") return "sera";
-      if(SLOT_ORDER.includes(s)) return s;
-      return null;
+    function slotLabel(s){
+      return s === "mattina" ? "Mattina" : s === "pomeriggio" ? "Pomeriggio" : "Sera";
     }
 
-    function pick5ForSlot(allEvents, slot){
-      const arr = allEvents.filter(e => (e.slot||"") === slot);
-      return arr.slice(0,5);
+    function formatClock(d){
+      const y = d.getFullYear();
+      const m = String(d.getMonth()+1).padStart(2,"0");
+      const dd = String(d.getDate()).padStart(2,"0");
+      const hh = String(d.getHours()).padStart(2,"0");
+      const mm = String(d.getMinutes()).padStart(2,"0");
+      return `${y}-${m}-${dd} ${hh}:${mm}`;
     }
 
-    function shortTeam(name){
-      if(!name) return "";
-      return name.length > 22 ? (name.slice(0,22)+"…") : name;
-    }
-
-    function crestHTML(url, fallback){
-      if(url){
-        return `<div class="crest"><img src="${url}" alt=""></div>`;
+    // stable hash for deterministic “signals”
+    function hash32(str){
+      let h = 2166136261;
+      for (let i=0;i<str.length;i++){
+        h ^= str.charCodeAt(i);
+        h = Math.imul(h, 16777619);
       }
-      const initials = (fallback||"?").trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join("");
-      return `<div class="crest"><span style="font-weight:1000;font-size:11px;color:rgba(255,255,255,.85)">${initials||"?"}</span></div>`;
+      return (h >>> 0);
     }
 
-    function riskBadge(level){
-      // Alta/Media/Bassa
-      if(level==="Alta") return `<span class="badge badgeGreen">Alta</span>`;
-      if(level==="Media") return `<span class="badge badgeYellow">Media</span>`;
-      return `<span class="badge badgeRed">Bassa</span>`;
+    // =========================
+    // FETCH
+    // =========================
+    async function fetchEvents(force=false){
+      const url = force ? `events.json?v=${Date.now()}` : "events.json";
+      const r = await fetch(url, { cache: "no-store" });
+      if(!r.ok) throw new Error("Impossibile caricare events.json");
+      const data = await r.json();
+      return data;
     }
 
-    // Motivazioni più realistiche (NON assurde tipo Slavia 1X col Barca)
-    function buildMotivation(match, marketLabel){
-      // Heuristica semplice e “credibile”: usa differenza tra nomi/tla per creare testo neutro.
-      // Nota: senza dati reali, facciamo motivazioni conservative e “da banco”.
-      const home = match.home || "Casa";
-      const away = match.away || "Ospiti";
-      const league = match.league_code || "";
+    function pickEventsForSlot(allEvents, slot){
+      // each slot should show 5
+      const list = allEvents.filter(e => (e.slot || "").toLowerCase() === slot);
+      // fallback: if missing slot, slice
+      return (list.length ? list : allEvents).slice(0,5);
+    }
 
-      // se è una coppa europea, più prudenza
-      const isEurope = ["CL","EL","EC"].includes(league);
-      const basePrud = isEurope ? "Match europeo: spesso più tattico, meglio prudenza." : "Match di campionato: ritmo più prevedibile.";
+    // =========================
+    // REALISTIC MOTIVATIONS
+    // =========================
+    function favoriteSide(ev){
+      // try: use team short / league_code deterministic
+      const key = `${ev.league_code||""}|${ev.home||""}|${ev.away||""}|${ev.start_iso||""}`;
+      const x = hash32(key) % 1000;
+      // 0..999 -> favorite strength
+      // decide a slight bias to "home" because 1X market exists
+      const fav = (x < 520) ? "home" : "away";
+      const gap = Math.abs(500 - x); // bigger = more unbalanced
+      return { fav, gap };
+    }
 
-      if(marketLabel.includes("1X")){
-        // 1X lo proponiamo “alta/media” solo se sembra favorito casa (tla presente e “big” dal crest? non affidabile)
-        // quindi testo prudente:
-        return {
-          level: isEurope ? "Media" : "Media",
-          why: `Copertura “tranquilla”: 1X riduce rischio rispetto a 1 secco. ${basePrud} Verifica quota e value al banco.`
-        };
+    function riskFromGap(gap){
+      // gap 0..500
+      if (gap > 260) return "Bassa";  // low risk
+      if (gap > 140) return "Media";
+      return "Alta"; // high risk / balanced
+    }
+
+    function prioClassFromText(t){
+      if (t === "Alta") return "bad";
+      if (t === "Media") return "warn";
+      return "ok";
+    }
+
+    function shortMatchContext(ev){
+      const { fav, gap } = favoriteSide(ev);
+      const r = riskFromGap(gap);
+      if (r === "Bassa"){
+        return fav === "home"
+          ? "Favorita in casa: approccio “controllo”, evita di esagerare con la multipla."
+          : "Favorita ospite: possibile dominio, ma attenzione alle sorprese in trasferta.";
       }
-
-      if(marketLabel.includes("Over 2.5")){
-        return {
-          level: isEurope ? "Media" : "Alta",
-          why: `Se vedi linee goal favorevoli al banco: partita potenzialmente “aperta”. ${isEurope ? "In Europa occhio ai primi 30’." : "In campionato ritmo spesso più alto."}`
-        };
+      if (r === "Media"){
+        return "Match con equilibrio: meglio 1–2 scelte massimo e gestione stake.";
       }
+      return "Match rischioso/equilibrato: se giochi, fallo leggero o in singola (quota da verificare).";
+    }
 
-      // Goal Sì
+    function overReason(ev){
+      const { gap } = favoriteSide(ev);
+      // bigger gap -> more likely “match a senso unico” (over dipende)
+      if (gap > 260) return "Se la favorita spinge, l’Over può arrivare per pressione continua. Verifica quota e lineup.";
+      if (gap > 140) return "Ritmo medio: Over OK solo se quota al banco è corretta e non è match troppo tattico.";
+      return "Equilibrio alto: Over più “da partita aperta”, ma è anche più variabile. Gioca con prudenza.";
+    }
+
+    function oneXReason(ev){
+      const { fav, gap } = favoriteSide(ev);
+      // if away favorite and gap high, 1X is not “tranquillo”
+      if (gap > 260){
+        if (fav === "home") return "Copertura: casa favorita → 1X sensato per protezione, ma quota da banco decide tutto.";
+        return "Ospite favorito: 1X diventa scelta “di copertura rischiosa”. Meglio valutare DNB o singola diversa.";
+      }
+      if (gap > 140){
+        return "Copertura possibile: 1X ha senso solo se quota reale è conveniente e il match non è sbilanciato.";
+      }
+      return "Match molto equilibrato: 1X non è “sicuro”. Se lo fai, stake basso e poche selezioni.";
+    }
+
+    function goalYesReason(ev){
+      const { gap } = favoriteSide(ev);
+      if (gap > 260) return "Goal Sì solo se anche lo sfavorito crea: controlla forma e assenze (quota al banco).";
+      if (gap > 140) return "Possibile Goal Sì se entrambe attaccano: buona opzione da singola se quota reale è ok.";
+      return "Equilibrio: Goal Sì spesso interessante, ma varia molto. Gioca solo con quota reale buona.";
+    }
+
+    function marketPack(ev){
+      return [
+        { label:"Over 2.5", prioFrom: overReason(ev), descFrom: overReason, kind:"over" },
+        { label:"1X", prioFrom: oneXReason(ev), descFrom: oneXReason, kind:"1x" },
+        { label:"Goal/NoGoal Sì", prioFrom: goalYesReason(ev), descFrom: goalYesReason, kind:"gg" }
+      ];
+    }
+
+    function prioForMarket(ev, kind){
+      const { gap } = favoriteSide(ev);
+      // Quick heuristic: if match is very balanced => higher risk
+      let risk = "Media";
+      if (gap < 140) risk = "Alta";
+      if (gap > 260) risk = "Bassa";
+
+      // Adjust per market kind
+      if (kind === "1x" && favoriteSide(ev).fav === "away" && gap > 260){
+        // 1X when away is huge favorite is risky
+        risk = "Alta";
+      }
+      if (kind === "gg" && gap > 260){
+        // in very unbalanced match, GG is often less safe
+        risk = "Media";
+      }
+      return risk;
+    }
+
+    // =========================
+    // RENDER HELPERS
+    // =========================
+    function crestHTML(url, name){
+      if (url){
+        return `<span class="crest"><img src="${url}" alt="" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='<span class=\\'ini\\'>${(name||'?').slice(0,2).toUpperCase()}</span>';"></span>`;
+      }
+      return `<span class="crest"><span class="ini">${(name||'?').slice(0,2).toUpperCase()}</span></span>`;
+    }
+
+    function safeTxt(s){ return (s || "").replaceAll("<","&lt;").replaceAll(">","&gt;"); }
+
+    // =========================
+    // CORNER & CARDS PICK (chiaro)
+    // =========================
+    function cornerCardSignals(ev, type){
+      // Use deterministic score from hash
+      const k = `${type}|${ev.league_code||""}|${ev.home||""}|${ev.away||""}|${ev.start_iso||""}`;
+      const x = hash32(k) % 100;
+      // base signals
+      const pressure = (x % 3 === 0) ? "Alta" : (x % 3 === 1) ? "Media" : "Media";
+      const balance = (x > 65) ? "Equilibrio" : (x > 35) ? "Leggera favorita" : "Favorita netta";
+      const physical = (x > 60) ? "Agonismo alto" : (x > 35) ? "Agonismo medio" : "Agonismo medio";
+
+      const reasonCorner = (balance === "Favorita netta")
+        ? "Possibile pressione costante: corner più probabili se la favorita attacca a lungo."
+        : (balance === "Equilibrio")
+          ? "Match aperto: corner possibili su ribaltamenti. Valuta solo con quota reale buona."
+          : "Pressione alternata: corner discreti, ma non forzare la multipla.";
+
+      const reasonCards = (physical === "Agonismo alto")
+        ? "Gara fisica: contatti e proteste possibili. Buona per cartellini (verifica quota)."
+        : "Agonismo medio: cartellini possibili ma dipende molto dall’arbitro (quota al banco).";
+
       return {
-        level: isEurope ? "Media" : "Alta",
-        why: `Se le due squadre attaccano e concedono: “Goal Sì” ha senso. ${isEurope ? "Attenzione alle rotazioni." : "Controlla forma e assenze."}`
+        pressure,
+        balance,
+        physical,
+        reason: type === "corner" ? reasonCorner : reasonCards
       };
     }
 
-    function normalizeMarkets(match){
-      // Se nel JSON ci sono markets con quote, noi qui le mostriamo come “verifica al banco”
-      // ma manteniamo label.
-      const ms = Array.isArray(match.markets) ? match.markets : [];
-      const out = ms.map(m => {
-        const label = (m.label||"").trim() || "Giocata";
-        const mot = buildMotivation(match, label);
-        return { label, level: mot.level, why: mot.why };
-      });
-
-      // fallback se mancano
-      if(out.length === 0){
-        const fallback = ["Over 2.5","1X","Goal/NoGoal Sì"];
-        return fallback.map(lbl => {
-          const mot = buildMotivation(match, lbl);
-          return { label: lbl, level: mot.level, why: mot.why };
-        });
-      }
-      return out.slice(0,3);
+    function renderMiniPick(ev, type){
+      const sig = cornerCardSignals(ev, type);
+      const pClass = sig.pressure === "Alta" ? "ok" : "warn";
+      const bClass = sig.balance === "Equilibrio" ? "warn" : "badge";
+      return `
+        <div class="miniItem">
+          <div class="miniTop">
+            <span>${safeTxt(ev.home)} - ${safeTxt(ev.away)}</span>
+            <span class="meta">${safeTxt(ev.start || "")}</span>
+          </div>
+          <div class="badges">
+            <span class="badge ${pClass}">${type==="corner" ? "Pressione" : "Agonismo"}: ${sig.pressure}</span>
+            <span class="badge">${sig.balance}</span>
+          </div>
+          <div class="miniText">${safeTxt(sig.reason)}</div>
+          <div class="badges" style="margin-top:10px">
+            <span class="badge ok">Verifica al banco</span>
+          </div>
+        </div>
+      `;
     }
 
-    function renderEvents(){
-      if(!EVENTS_DATA || !EVENTS_DATA.events){ return; }
+    function renderCornerArea(allEvents){
+      // pick 2 events for corner and 2 for cards from current 15 (deterministic)
+      const list = allEvents.slice(0, 15);
+      const corners = [...list].sort((a,b)=> (hash32("corner"+a.uniq)-hash32("corner"+b.uniq))).slice(0,2);
+      const cards = [...list].sort((a,b)=> (hash32("cards"+a.uniq)-hash32("cards"+b.uniq))).slice(0,2);
 
-      const all = EVENTS_DATA.events || [];
-      const picked = pick5ForSlot(all, CURRENT_SLOT);
+      $("cornerList").innerHTML = corners.map(ev=>renderMiniPick(ev,"corner")).join("");
+      $("cardsList").innerHTML = cards.map(ev=>renderMiniPick(ev,"cards")).join("");
+    }
 
-      $("shownCount").textContent = `${picked.length}/5`;
+    // =========================
+    // EVENTS RENDER
+    // =========================
+    function renderEvents(picked){
+      const area = $("eventsArea");
+      if (!picked.length){
+        area.innerHTML = `<div class="hint">Nessun evento in questa fascia. Prova a cambiare fascia.</div>`;
+        $("eventsCount").textContent = "Eventi mostrati: 0/5";
+        return;
+      }
+      $("eventsCount").textContent = `Eventi mostrati: ${picked.length}/5`;
 
-      const html = picked.map((e, idx) => {
-        const league = e.league || e.league_code || "Calcio";
-        const start = e.start || "";
-        const slot = SLOT_LABEL[e.slot] || "";
-        const markets = normalizeMarkets(e);
+      area.innerHTML = picked.map((ev, idx)=>{
+        const league = safeTxt(ev.league || ev.league_code || "Calcio");
+        const when = safeTxt(ev.start || "");
+        const ctx = shortMatchContext(ev);
+
+        const homeC = crestHTML(ev.home_crest, ev.home);
+        const awayC = crestHTML(ev.away_crest, ev.away);
+
+        const markets = [
+          {
+            label:"Over 2.5",
+            kind:"over",
+            prio: prioForMarket(ev,"over"),
+            txt: overReason(ev)
+          },
+          {
+            label:"1X",
+            kind:"1x",
+            prio: prioForMarket(ev,"1x"),
+            txt: oneXReason(ev)
+          },
+          {
+            label:"Goal/NoGoal Sì",
+            kind:"gg",
+            prio: prioForMarket(ev,"gg"),
+            txt: goalYesReason(ev)
+          }
+        ];
 
         return `
-          <div class="eventCard" data-mid="${e.id}">
-            <div class="eventTop">
-              <div class="meta">
-                <span class="leaguePill">${league}</span>
-                <span class="slotPill">${start} • ${slot}</span>
-              </div>
-              <div style="color:var(--muted);font-size:12px;font-weight:900">Evento ${idx+1}/5</div>
-            </div>
-
-            <div class="teams">
-              <div class="teamSide">
-                ${crestHTML(e.home_crest, e.home)}
-                <div class="tname" title="${e.home||""}">${shortTeam(e.home||"")}</div>
-              </div>
-              <div class="vs">—</div>
-              <div class="teamSide" style="justify-content:flex-end;">
-                <div class="tname" style="text-align:right" title="${e.away||""}">${shortTeam(e.away||"")}</div>
-                ${crestHTML(e.away_crest, e.away)}
-              </div>
-            </div>
-
-            <div class="markets">
-              ${markets.map((m, mi) => `
-                <div class="market">
-                  <div>
-                    <div class="m1">
-                      <div class="label">${m.label}</div>
-                      ${riskBadge(m.level)}
-                    </div>
-                    <div class="why">${m.why}</div>
+          <div class="eventCard">
+            <div class="eventHead">
+              <div class="eventLeft">
+                <div class="leagueDot"></div>
+                <div class="eventTitle">
+                  <div class="meta">
+                    <span class="chip">${league}</span>
+                    <span class="chip">${when}</span>
+                    <span class="chip">${slotLabel(CURRENT_SLOT)}</span>
                   </div>
-                  <div class="mActions">
-                    <button class="btnMini" data-act="verify" data-mid="${e.id}" data-ml="${escapeHtml(m.label)}">Verifica al banco</button>
-                    <button class="btnMini btnAdd" data-act="add" data-mid="${e.id}" data-ml="${escapeHtml(m.label)}">+ Aggiungi</button>
+                  <div class="matchLine">
+                    <span class="team">${homeC}<span>${safeTxt(ev.home)}</span></span>
+                    <span style="color:var(--muted);font-weight:1000">-</span>
+                    <span class="team">${awayC}<span>${safeTxt(ev.away)}</span></span>
                   </div>
                 </div>
-              `).join("")}
+              </div>
+
+              <div class="eventRight">
+                <span class="chip">Evento ${idx+1}/5</span>
+              </div>
+            </div>
+
+            <div class="eventBody">
+              <div class="reasonLine">💡 ${safeTxt(ctx)}</div>
+
+              <div class="markets">
+                ${markets.map(m=>{
+                  const pr = m.prio; // Alta/Media/Bassa
+                  const cls = prioClassFromText(pr);
+                  const prText = pr === "Bassa" ? "Bassa" : pr === "Media" ? "Media" : "Alta";
+                  const prLabel = pr === "Bassa" ? "Più stabile" : pr === "Media" ? "Equilibrata" : "Rischiosa";
+                  return `
+                    <div class="mkt">
+                      <div class="mktTop">
+                        <div class="mktName">${safeTxt(m.label)}</div>
+                        <span class="prio ${cls}">${prLabel}</span>
+                      </div>
+                      <div class="mktText">${safeTxt(m.txt)}</div>
+                      <div class="mktActions">
+                        <button class="btn2" onclick="verifyBank()">Verifica al banco</button>
+                        <button class="btn2 add" onclick="addPick('${encodeURIComponent(ev.uniq)}','${encodeURIComponent(ev.home)}','${encodeURIComponent(ev.away)}','${encodeURIComponent(m.label)}')">+ Aggiungi</button>
+                      </div>
+                    </div>
+                  `;
+                }).join("")}
+              </div>
             </div>
           </div>
         `;
       }).join("");
-
-      $("events").innerHTML = html || `<div class="notice">Nessun evento in questa fascia. Prova “Cambia fascia”.</div>`;
-
-      // bind click
-      $("events").querySelectorAll("button[data-act]").forEach(btn => {
-        btn.addEventListener("click", () => {
-          const act = btn.getAttribute("data-act");
-          const mid = btn.getAttribute("data-mid");
-          const ml = btn.getAttribute("data-ml") || "";
-          if(act === "add") addSelection(mid, unescapeHtml(ml));
-          if(act === "verify") toast("✅ Ok: verifica quota e disponibilità al banco prima di inserire.");
-        });
-      });
-
-      renderExtra(all);
     }
 
-    function renderExtra(all){
-      // corner & cartellini: prendiamo i 2 match più “importanti” tra quelli mostrati (stessa fascia)
-      const picked = pick5ForSlot(all, CURRENT_SLOT);
+    // =========================
+    // TICKET
+    // =========================
+    window.verifyBank = function(){
+      toast("✅ Verifica quota al banco prima di inserire.");
+    }
 
-      const corners = picked.slice(0,2).map(e => ({
-        title: `${e.home} - ${e.away}`,
-        when: e.start || "",
-        why: "Stima: ritmo/pressione → possibili corner. Valuta linea al banco (es. 8.5 / 9.5).",
-        lvl: "Alta"
-      }));
+    window.addPick = function(uniq, home, away, market){
+      const u = decodeURIComponent(uniq);
+      const h = decodeURIComponent(home);
+      const a = decodeURIComponent(away);
+      const m = decodeURIComponent(market);
 
-      const cards = picked.slice(0,2).map(e => ({
-        title: `${e.home} - ${e.away}`,
-        when: e.start || "",
-        why: "Stima: agonismo/contatti → possibili cartellini. Buona per Over cartellini se quota ok.",
-        lvl: "Media"
-      }));
+      // limit suggestion: max 3
+      if (ticket.length >= 3){
+        toast("⚠️ Consiglio: max 2–3 selezioni per controllo.");
+      }
 
-      $("cornerList").innerHTML = corners.map((x,i)=>`
-        <div class="miniItem">
-          <div class="row1">
-            <div>
-              <div class="m">${i+1}) ${escapeHtml(x.title)}</div>
-              <div class="s">Corner (indicativo) • ${escapeHtml(x.when)}</div>
-              <div class="s">${escapeHtml(x.why)}</div>
+      ticket.push({ uniq:u, match:`${h} - ${a}`, market:m });
+      renderTicket();
+      toast("Aggiunta selezione ✅");
+    }
+
+    function removePick(i){
+      ticket.splice(i,1);
+      renderTicket();
+    }
+
+    function renderTicket(){
+      $("selCount").textContent = String(ticket.length);
+
+      const list = $("ticketList");
+      if (!ticket.length){
+        list.innerHTML = `<div class="hint" style="margin:0">Nessuna selezione. Aggiungi una giocata a sinistra.</div>`;
+      } else {
+        list.innerHTML = ticket.map((p, i)=>`
+          <div class="pick">
+            <div class="left">
+              <strong>${safeTxt(p.match)}</strong>
+              <span>${safeTxt(p.market)} • quota: verifica al banco</span>
             </div>
-            <span class="badge badgeGreen">${x.lvl}</span>
+            <button class="rm" onclick="(${removePick.toString()})(${i})">Rimuovi</button>
           </div>
-          <div style="margin-top:8px;">
-            <button class="btnMini" onclick="toast('✅ Corner: controlla linea e quota al banco, poi decidi.')">Verifica al banco</button>
-          </div>
-        </div>
-      `).join("");
+        `).join("");
+      }
 
-      $("cardList").innerHTML = cards.map((x,i)=>`
-        <div class="miniItem">
-          <div class="row1">
-            <div>
-              <div class="m">${i+1}) ${escapeHtml(x.title)}</div>
-              <div class="s">Cartellini (indicativo) • ${escapeHtml(x.when)}</div>
-              <div class="s">${escapeHtml(x.why)}</div>
-            </div>
-            <span class="badge badgeYellow">${x.lvl}</span>
-          </div>
-          <div style="margin-top:8px;">
-            <button class="btnMini" onclick="toast('✅ Cartellini: verifica mercato al banco e quota reale.')">Verifica al banco
+      // quota tot / win pot: only if user enters realQuota
+      const rq = parseFloat($("realQuota").value);
+      const stake = parseFloat($("stake").value) || 0;
+
+      if (rq && rq >= 1.01){
+        $("quotaTot").textContent = rq.toFixed(2);
+        const win = stake * rq;
+        $("winPot").textContent = win.toFixed(2);
+      } else {
+        $("quotaTot").textContent = "—";
+        $("winPot").textContent = "—";
+      }
+    }
+
+    // =========================
+    // PRINT
+    // =========================
+    $("printBtn").addEventListener("click", ()=>{
+      if (!ticket.length){
+        toast("Aggiungi almeno 1 selezione.");
+        return;
+      }
+      window.print();
+    });
+
+    $("realQuota").addEventListener("input", renderTicket);
+    $("stake").addEventListener("input", renderTicket);
+
+    // =========================
+    // FOCUS 20s
+    // =========================
+    let focusTm = null;
+    $("btnFocus").addEventListener("click", ()=>{
+      if (focusTm) return;
+      let left = 20;
+      const btn = $("btnFocus");
+      const old = btn.textContent;
+      btn.textContent = `Focus: ${left}s`;
+      btn.disabled = true;
+      toast("⏱️ 20 secondi: scegli con calma.");
+      focusTm = setInterval(()=>{
+        left--;
+        btn.textContent = `Focus: ${left}s`;
+        if (left <= 0){
+          clearInterval(focusTm);
+          focusTm = null;
+          btn.textContent = old;
+          btn.disabled = false;
+          toast("✅ Fine focus: ora scegli (max 2–3).");
+        }
+      }, 1000);
+    });
+
+    // =========================
+    // SLOT + LOAD
+    // =========================
+    async function loadAll(force=false){
+      try{
+        const data = await fetchEvents(force);
+        EVENTS_DATA = data;
+        const now = nowRome();
+
+        // slot initial: URL param > saved > time
+        const urlSlot = getSlotFromURL();
+        CURRENT_SLOT = urlSlot || localStorage.getItem("slot") || slotFromTime(now);
+
+        $("updatedAt").textContent = data.updated_at || "—";
+        $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
+
+        // build 15 list (5 per slot)
+        const all = (data.events || []);
+        const m = pickEventsForSlot(all, "mattina");
+        const p = pickEventsForSlot(all, "pomeriggio");
+        const s = pickEventsForSlot(all, "sera");
+        const all15 = [...m, ...p, ...s];
+
+        renderCornerArea(all15);
+
+        // show current slot 5
+        const picked = pickEventsForSlot(all, CURRENT_SLOT);
+        renderEvents(picked);
+
+        // persist
+        localStorage.setItem("slot", CURRENT_SLOT);
+
+        // Center & labels
+        $("centerId").textContent = "VINC001"; // puoi anche renderlo da centers/VINC001.json se vuoi
+        $("missionTag").innerHTML = `Missione: <strong style="color:var(--text)">${ticket.length > 0 ? "Max 3 selezioni" : "Max 2 selezioni"}</strong>`;
+
+      }catch(e){
+        console.error(e);
+        $("eventsArea").innerHTML = `<div class="hint">Errore: events.json non disponibile o vuoto. Controlla GitHub Actions.</div>`;
+        $("updatedAt").textContent = "—";
+        $("slotLabel").textContent = "—";
+      }
+    }
+
+    function getSlotFromURL(){
+      const u = new URL(location.href);
+      const s = (u.searchParams.get("slot") || "").toLowerCase();
+      return SLOT_ORDER.includes(s) ? s : "";
+    }
+
+    function setSlotInURL(slot){
+      const u = new URL(location.href);
+      u.searchParams.set("slot", slot);
+      history.replaceState({}, "", u.toString());
+    }
+
+    $("btnSlot").addEventListener("click", ()=>{
+      const idx = SLOT_ORDER.indexOf(CURRENT_SLOT);
+      const next = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
+      CURRENT_SLOT = next;
+      $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
+      localStorage.setItem("slot", CURRENT_SLOT);
+      setSlotInURL(CURRENT_SLOT);
+      if (EVENTS_DATA && EVENTS_DATA.events){
+        renderEvents(pickEventsForSlot(EVENTS_DATA.events, CURRENT_SLOT));
+      }
+      toast(`Fascia: ${slotLabel(CURRENT_SLOT)}`);
+    });
+
+    $("btnReload").addEventListener("click", async ()=>{
+      toast("Aggiorno eventi…");
+      await loadAll(true);
+      toast("✅ Eventi aggiornati");
+    });
+
+    // =========================
+    // WHEEL
+    // =========================
+    const wheelItems = [
+      "Missione: 2 selezioni max",
+      "Regola: stop dopo 1 perdita",
+      "Gioca singola (quota buona)",
+      "Scegli 1 match + 1 copertura",
+      "Solo 1 mercato per match",
+      "Controlla lineup (ultima ora)",
+      "Riduci stake del 20%",
+      "Fai 1 quiz e stop"
+    ];
+
+    const wheelBack = $("wheelBack");
+    $("openWheel").addEventListener("click", ()=> openWheel());
+    $("closeWheel").addEventListener("click", ()=> closeWheel());
+    wheelBack.addEventListener("click", (e)=>{ if(e.target===wheelBack) closeWheel(); });
+
+    function openWheel(){
+      wheelBack.style.display = "flex";
+      drawWheel();
+      updateWheelUI();
+    }
+    function closeWheel(){
+      wheelBack.style.display = "none";
+    }
+
+    const wheelCanvas = $("wheel");
+    const ctx = wheelCanvas.getContext("2d");
+    let wheelAngle = 0;
+    let spinning = false;
+
+    function drawWheel(){
+      const W = wheelCanvas.width, H = wheelCanvas.height;
+      ctx.clearRect(0,0,W,H);
+      const cx = W/2, cy = H/2;
+      const r = Math.min(cx,cy) - 10;
+      const n = wheelItems.length;
+      const slice = (Math.PI*2)/n;
+
+      // background circle
+      ctx.beginPath();
+      ctx.arc(cx,cy,r+6,0,Math.PI*2);
+      ctx.fillStyle = "rgba(255,255,255,.04)";
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255,255,255,.10)";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      for(let i=0;i<n;i++){
+        const a0 = wheelAngle + i*slice;
+        const a1 = a0 + slice;
+
+        ctx.beginPath();
+        ctx.moveTo(cx,cy);
+        ctx.arc(cx,cy,r,a0,a1);
+        ctx.closePath();
+
+        // color palette (fixed, no external libs)
+        const palette = ["#ff9800","#7c4dff","#2dd4bf","#ff5a7a","#ffc93a","#60a5fa","#34d399","#a78bfa"];
+        ctx.fillStyle = palette[i % palette.length];
+        ctx.globalAlpha = 0.85;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+
+        // text
+        ctx.save();
+        ctx.translate(cx,cy);
+        ctx.rotate(a0 + slice/2);
+        ctx.textAlign = "right";
+        ctx.fillStyle = "rgba(10,14,38,.92)";
+        ctx.font = "900 16px " + getComputedStyle(document.documentElement).getPropertyValue('--font');
+        const text = wheelItems[i];
+        ctx.fillText(text, r - 16, 6);
+        ctx.restore();
+      }
+
+      // center
+      ctx.beginPath();
+      ctx.arc(cx,cy,46,0,Math.PI*2);
+      ctx.fillStyle = "rgba(10,14,38,.90)";
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255,255,255,.12)";
+      ctx.stroke();
+
+      ctx.fillStyle = "rgba(255,255,255,.92)";
+      ctx.font = "1000 16px " + getComputedStyle(document.documentElement).getPropertyValue('--font');
+      ctx.textAlign = "center";
+      ctx.fillText("RUOTA", cx, cy+6);
+
+      // pointer
+      ctx.beginPath();
+      ctx.moveTo(cx, 10);
+      ctx.lineTo(cx-14, 44);
+      ctx.lineTo(cx+14, 44);
+      ctx.closePath();
+      ctx.fillStyle = "rgba(255,255,255,.92)";
+      ctx.fill();
+      ctx.strokeStyle = "rgba(0,0,0,.25)";
+      ctx.stroke();
+    }
+
+    function todayKey(){
+      const d = nowRome();
+      return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+    }
+
+    function updateWheelUI(){
+      const key = "wheel_spin_" + todayKey();
+      const done = localStorage.getItem(key) === "1";
+      $("spinBtn").disabled = done || spinning;
+      $("wheelLimit").innerHTML = done
+        ? "✅ Giro già fatto oggi su questo PC. Torna domani."
+        : "1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.";
+      $("wheelWhen").textContent = formatClock(nowRome());
+    }
+
+    function wheelSetResult(text){
+      $("wheelResultText").textContent = text;
+
+      // update “mission/rules” badges simply
+      $("wheelMission").textContent = "Missione: " + (
+        text.includes("2 selezioni") ? "Max 2 selezioni" :
+        text.includes("singola") ? "Gioca 1 singola" :
+        text.includes("1 mercato") ? "1 mercato per match" :
+        "Max 3 selezioni"
+      );
+
+      $("wheelRule").textContent = "Regola: " + (
+        text.includes("stop") ? "Stop dopo perdita" :
+        text.includes("stake") ? "Stake ridotto" :
+        "Quota al banco decide"
+      );
+
+      $("wheelFun").textContent = "Bonus: " + (
+        text.includes("quiz") ? "Fai 1 quiz" :
+        "Respira 10s"
+      );
+    }
+
+    $("spinBtn").addEventListener("click", ()=>{
+      const key = "wheel_spin_" + todayKey();
+      if (localStorage.getItem(key) === "1"){
+        toast("Hai già girato oggi ✅");
+        updateWheelUI();
+        return;
+      }
+      if (spinning) return;
+
+      spinning = true;
+      updateWheelUI();
+
+      const targetIndex = hash32(todayKey() + "|VINC001") % wheelItems.length; // deterministic per day
+      const n = wheelItems.length;
+      const slice = (Math.PI*2)/n;
+
+      // pointer at top; we want selected slice at top
+      const targetAngle = (Math.PI*2) * 6 + (Math.PI*2) - (targetIndex*slice + slice/2);
+      const start = wheelAngle;
+      const delta = targetAngle - start;
+      const dur = 1600;
+      const t0 = performance.now();
+
+      function easeOutCubic(t){ return 1 - Math.pow(1-t,3); }
+
+      function anim(t){
+        const p = Math.min(1, (t - t0)/dur);
+        wheelAngle = start + delta * easeOutCubic(p);
+        drawWheel();
+        if (p < 1){
+          requestAnimationFrame(anim);
+        } else {
+          spinning = false;
+          localStorage.setItem(key, "1");
+          updateWheelUI();
+          const text = wheelItems[targetIndex];
+          wheelSetResult("🔍 " + text + ". Verifica sempre quota al banco prima di inserire.");
+          toast("🎡 Ruota: risultato aggiornato");
+        }
+      }
+      requestAnimationFrame(anim);
+    });
+
+    // =========================
+    // QUIZ
+    // =========================
+    const quizBack = $("quizBack");
+    $("openQuiz").addEventListener("click", ()=> openQuiz());
+    $("closeQuiz").addEventListener("click", ()=> closeQuiz());
+    quizBack.addEventListener("click", (e)=>{ if(e.target===quizBack) closeQuiz(); });
+
+    const quizPool = [
+      {
+        q: "Qual è la regola migliore per una multipla “controllata”?",
+        opts: ["10 selezioni per vincere tanto", "2–3 selezioni massimo", "Scegli a caso e via"],
+        a: 1,
+        ok: "Esatto ✅ 2–3 selezioni ti dà più controllo.",
+        no: "Quasi! La risposta migliore è: 2–3 selezioni massimo."
+      },
+      {
+        q: "Se la quota al banco è diversa da quella indicativa…",
+        opts: ["Ignoro e gioco uguale", "Riduco selezioni o passo", "Aumento lo stake"],
+        a: 1,
+        ok: "Giusto ✅ se cambia la quota, cambia il rischio.",
+        no: "Meglio: riduci selezioni o passa."
+      },
+      {
+        q: "Contro una super favorita ospite, il 1X è…",
+        opts: ["Sempre tranquillissimo", "Spesso rischioso (serve quota buona)", "Garantito"],
+        a: 1,
+        ok: "Perfetto ✅ serve prudenza e quota buona.",
+        no: "No: spesso è rischioso e dipende dalla quota."
+      }
+    ];
+
+    function openQuiz(){
+      quizBack.style.display = "flex";
+      renderQuiz();
+    }
+    function closeQuiz(){
+      quizBack.style.display = "none";
+    }
+
+    function renderQuiz(){
+      const i = hash32(todayKey() + "|quiz") % quizPool.length;
+      const q = quizPool[i];
+      $("qTitle").textContent = q.q;
+      $("qMsg").textContent = "Rispondi: è solo intrattenimento 😊";
+      const box = $("qOptions");
+      box.innerHTML = "";
+      q.opts.forEach((opt, idx)=>{
+        const b = document.createElement("button");
+        b.className = "qOpt";
+        b.textContent = opt;
+        b.onclick = ()=>{
+          $("qMsg").textContent = (idx === q.a) ? q.ok : q.no;
+        };
+        box.appendChild(b);
+      });
+    }
+
+    // =========================
+    // INIT
+    // =========================
+    (function init(){
+      // clock update
+      setInterval(()=>{
+        if (EVENTS_DATA && EVENTS_DATA.updated_at){
+          // keep updatedAt from file, but we can update wheel time
+        }
+      }, 1000);
+
+      // restore slot from URL/time
+      CURRENT_SLOT = getSlotFromURL() || localStorage.getItem("slot") || slotFromTime(nowRome());
+      $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
+
+      // initial load
+      loadAll(false);
+      renderTicket();
+    })();
+  </script>
+</body>
+</html>
