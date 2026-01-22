@@ -1,1122 +1,352 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vincitù • IA Portal</title>
-  <style>
-    :root{
-      --bg1:#2a0f5e;
-      --bg2:#0b244a;
-      --panel: rgba(20,24,52,.55);
-      --panel2: rgba(20,24,52,.35);
-      --stroke: rgba(255,255,255,.10);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.65);
-      --muted2: rgba(255,255,255,.45);
-      --orange:#ff9800;
-      --orange2:#ffb03a;
-      --green:#2ecc71;
-      --red:#ff3b3b;
-      --chip: rgba(255,255,255,.08);
-      --shadow: 0 18px 70px rgba(0,0,0,.55);
-      --radius: 18px;
-      --radius2: 14px;
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font-family:var(--font); color:var(--text);
-      background:
-        radial-gradient(1100px 800px at 20% 15%, rgba(132,70,255,.35), transparent 60%),
-        radial-gradient(900px 700px at 85% 35%, rgba(0,176,255,.18), transparent 55%),
-        linear-gradient(120deg, var(--bg1), var(--bg2));
-      min-height:100vh;
-      padding:28px 18px 40px;
-    }
-    .shell{
-      max-width:1120px; margin:0 auto;
-      background: rgba(12,14,40,.25);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius: 26px;
-      box-shadow: var(--shadow);
-      padding:18px;
-      backdrop-filter: blur(12px);
-    }
-    header{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:12px; padding:8px 8px 14px;
-    }
-    .brand{display:flex; align-items:center; gap:12px;}
-    .logo{
-      width:34px; height:34px; border-radius:10px;
-      display:grid; place-items:center;
-      background: rgba(255,255,255,.07);
-      border:1px solid rgba(255,255,255,.10);
-      overflow:hidden;
-    }
-    .logo span{
-      font-weight:900; letter-spacing:.5px; font-size:16px;
-      color: var(--red); /* SOLO ROSSA come mi hai chiesto */
-      text-shadow: 0 0 10px rgba(255,59,59,.20);
-    }
-    .brand h1{
-      margin:0; font-size:18px; font-weight:800;
-      letter-spacing:.2px;
-    }
-    .brand small{
-      display:block; color:var(--muted); font-weight:600; margin-top:2px; font-size:12px;
-    }
-    .topright{
-      display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end;
-    }
-    .pill{
-      display:flex; align-items:center; gap:8px;
-      padding:7px 10px; border-radius:999px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      color:var(--muted);
-      font-size:12px; font-weight:700;
-    }
-    .dot{width:8px;height:8px;border-radius:99px;background:var(--green);box-shadow:0 0 10px rgba(46,204,113,.35)}
-    .btn{
-      cursor:pointer; user-select:none;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.07);
-      color:var(--text);
-      padding:8px 12px;
-      border-radius: 12px;
-      font-weight:800; font-size:12px;
-      display:inline-flex; align-items:center; gap:8px;
-      transition: transform .08s ease, background .15s ease;
-    }
-    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.10); }
-    .btn.orange{
-      background: linear-gradient(135deg, rgba(255,152,0,.95), rgba(255,176,58,.95));
-      border-color: rgba(255,152,0,.25);
-      color:#1b0f05;
-    }
-    .btn.orange:hover{ background: linear-gradient(135deg, rgba(255,152,0,1), rgba(255,176,58,1)); }
-    .btn.ghost{ background: transparent; }
-    .grid{
-      display:grid; grid-template-columns: 1.25fr .75fr; gap:14px;
-      padding:8px;
-    }
-    @media (max-width: 980px){
-      .grid{ grid-template-columns:1fr; }
-    }
-    .panel{
-      background: var(--panel);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: var(--radius);
-      padding:14px;
-      backdrop-filter: blur(10px);
-    }
-    .panel h2{
-      margin:0 0 10px; font-size:14px; font-weight:900;
-      display:flex; align-items:center; gap:8px;
-    }
-    .subbar{
-      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
-      margin:10px 0 10px;
-    }
-    .chip{
-      background: var(--chip);
-      border:1px solid rgba(255,255,255,.10);
-      padding:6px 10px;
-      border-radius: 999px;
-      font-size:12px; font-weight:800;
-      color: var(--muted);
-      display:inline-flex; align-items:center; gap:8px;
-    }
-    .chip strong{ color: var(--text); }
-    .divider{ height:1px; background: rgba(255,255,255,.08); margin:12px 0; }
-    .eventsWrap{
-      display:flex; flex-direction:column; gap:12px;
-      max-height: 62vh;
-      overflow:auto;
-      padding-right:6px;
-    }
-    .eventsWrap::-webkit-scrollbar{ width:8px; }
-    .eventsWrap::-webkit-scrollbar-thumb{ background: rgba(255,255,255,.12); border-radius: 99px; }
-    .event{
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: var(--radius2);
-      padding:12px;
-    }
-    .evTop{
-      display:flex; justify-content:space-between; gap:10px; align-items:flex-start;
-      margin-bottom:10px;
-    }
-    .evMeta{
-      display:flex; flex-direction:column; gap:4px;
-      color:var(--muted); font-size:12px; font-weight:800;
-    }
-    .leagueLine{
-      display:flex; align-items:center; gap:8px; flex-wrap:wrap;
-    }
-    .tag{
-      font-size:11px; font-weight:900;
-      padding:4px 8px; border-radius:999px;
-      background: rgba(255,255,255,.07);
-      border:1px solid rgba(255,255,255,.10);
-      color: var(--muted);
-    }
-    .tag.slot{ color:#f5d27a; border-color: rgba(245,210,122,.22); background: rgba(245,210,122,.10); }
-    .evTitle{
-      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
-      font-size:15px; font-weight:950; color:var(--text);
-    }
-    .crest{
-      width:24px; height:24px; border-radius:8px;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.10);
-      overflow:hidden;
-      display:grid; place-items:center;
-      font-size:11px; font-weight:950; color:rgba(255,255,255,.85);
-    }
-    .crest img{ width:100%; height:100%; object-fit:cover; display:block; }
-    .evHint{
-      margin-top:6px;
-      color: var(--muted);
-      font-size:12px;
-      font-weight:700;
-      line-height:1.35;
-    }
-    .markets{
-      display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:10px;
-    }
-    @media (max-width: 740px){ .markets{ grid-template-columns:1fr; } }
-    .mkt{
-      background: rgba(0,0,0,.16);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 14px;
-      padding:10px;
-      display:flex; flex-direction:column; gap:8px;
-      min-height: 98px;
-    }
-    .mktHead{
-      display:flex; align-items:flex-start; justify-content:space-between; gap:8px;
-    }
-    .mktLabel{ font-weight:950; font-size:12px; }
-    .lvl{
-      font-size:11px; font-weight:950; padding:4px 8px;
-      border-radius:999px; border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-      color: var(--muted);
-      white-space:nowrap;
-    }
-    .lvl.high{ color:#d7ffe7; border-color: rgba(46,204,113,.25); background: rgba(46,204,113,.14); }
-    .lvl.med{ color:#fff4d7; border-color: rgba(255,176,58,.25); background: rgba(255,176,58,.14); }
-    .lvl.low{ color:#ffd7d7; border-color: rgba(255,59,59,.25); background: rgba(255,59,59,.12); }
-    .mktWhy{
-      color: var(--muted);
-      font-size:11.5px;
-      line-height:1.35;
-      font-weight:750;
-      min-height: 32px;
-    }
-    .mktBtns{
-      display:flex; gap:8px; align-items:center; margin-top:auto;
-    }
-    .mini{
-      font-size:11px; padding:7px 10px; border-radius: 12px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      color: var(--text);
-      font-weight:900;
-      cursor:pointer;
-    }
-    .mini:hover{ background: rgba(255,255,255,.10); }
-    .mini.orange{ background: rgba(255,152,0,.95); border-color: rgba(255,152,0,.25); color:#1b0f05; }
-    .mini.orange:hover{ background: rgba(255,152,0,1); }
-    .rightTop{
-      display:flex; align-items:center; justify-content:space-between;
-      margin-bottom:10px;
-    }
-    .formRow{
-      display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:10px;
-    }
-    .field{
-      background: rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 14px;
-      padding:10px;
-    }
-    .field label{
-      display:block; font-size:11px; color: var(--muted); font-weight:900; margin-bottom:6px;
-    }
-    input, select{
-      width:100%;
-      border:0;
-      outline:0;
-      background: transparent;
-      color: var(--text);
-      font-size:14px;
-      font-weight:900;
-    }
-    select option{ color:#111; }
-    .statsRow{
-      display:grid; grid-template-columns: repeat(3, 1fr); gap:10px;
-      margin-bottom:10px;
-    }
-    .kpi{
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 14px;
-      padding:10px;
-    }
-    .kpi span{ display:block; color:var(--muted); font-size:11px; font-weight:900; }
-    .kpi strong{ display:block; font-size:18px; font-weight:950; margin-top:2px; }
-    .ticket{
-      background: rgba(0,0,0,.16);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 14px;
-      padding:10px;
-      margin-bottom:12px;
-    }
-    .ticket .empty{ color:var(--muted2); font-weight:800; font-size:12px; }
-    .ticketList{ display:flex; flex-direction:column; gap:8px; }
-    .sel{
-      display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 12px;
-      padding:8px 10px;
-    }
-    .sel .left{ font-size:12px; font-weight:950; }
-    .sel .left small{ display:block; color:var(--muted); font-weight:800; margin-top:2px; }
-    .sel .rm{
-      cursor:pointer; font-weight:950; color:#ffd2d2;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,59,59,.12);
-      padding:6px 10px; border-radius: 12px;
-    }
-    .sel .rm:hover{ background: rgba(255,59,59,.18); }
-    .print{
-      width:100%;
-      padding:12px 14px;
-      border-radius: 14px;
-      border:1px solid rgba(255,152,0,.25);
-      background: linear-gradient(135deg, rgba(255,152,0,.95), rgba(255,176,58,.95));
-      color:#1b0f05;
-      font-weight:950; font-size:13px;
-      cursor:pointer;
-    }
-    .print:hover{ background: linear-gradient(135deg, rgba(255,152,0,1), rgba(255,176,58,1)); }
-    .note{
-      margin-top:8px;
-      color: var(--muted);
-      font-size:11.5px;
-      font-weight:800;
-      line-height:1.35;
-    }
-    .footnote{
-      margin-top:10px;
-      color: rgba(255,255,255,.40);
-      font-size:11px;
-      font-weight:800;
-      line-height:1.35;
-    }
+<meta charset="UTF-8">
+<title>Vincitù • IA Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    /* Corner/Cartellini box - NON invasivo */
-    details.toolbox{
-      margin-top:10px;
-      background: rgba(255,255,255,.04);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 16px;
-      padding:10px 12px;
-    }
-    details.toolbox summary{
-      cursor:pointer;
-      list-style:none;
-      display:flex; align-items:center; justify-content:space-between;
-      gap:10px;
-      font-weight:950;
-      font-size:12px;
-      color: var(--text);
-    }
-    details.toolbox summary::-webkit-details-marker{ display:none; }
-    .toolgrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
-      margin-top:10px;
-    }
-    @media (max-width: 740px){ .toolgrid{ grid-template-columns:1fr; } }
-    .toolboxCard{
-      background: rgba(0,0,0,.14);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 14px;
-      padding:10px;
-    }
-    .toolboxCard h3{
-      margin:0 0 8px; font-size:12px; font-weight:950; color: var(--text);
-      display:flex; align-items:center; gap:8px;
-    }
-    .toolItem{
-      display:flex; flex-direction:column; gap:3px;
-      padding:8px 10px;
-      border-radius: 12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      margin-bottom:8px;
-    }
-    .toolItem strong{ font-size:12px; font-weight:950; }
-    .toolItem small{ color: var(--muted); font-size:11.5px; font-weight:800; line-height:1.35; }
-    .badgeMini{
-      align-self:flex-start;
-      margin-top:6px;
-      font-size:11px; font-weight:950;
-      padding:4px 8px; border-radius:999px;
-      border:1px solid rgba(46,204,113,.25);
-      background: rgba(46,204,113,.14);
-      color:#d7ffe7;
-    }
+<style>
+body {
+  margin:0;
+  font-family: Inter, system-ui, Arial;
+  background: radial-gradient(circle at top left,#5b2cff,#0d1833);
+  color:#fff;
+}
 
-    /* Modal */
-    .modalBack{
-      position:fixed; inset:0;
-      background: rgba(0,0,0,.55);
-      display:none; align-items:center; justify-content:center;
-      padding:18px;
-      z-index: 50;
-    }
-    .modal{
-      width:min(820px, 96vw);
-      background: rgba(18,20,48,.92);
-      border:1px solid rgba(255,255,255,.12);
-      border-radius: 18px;
-      box-shadow: 0 30px 90px rgba(0,0,0,.70);
-      backdrop-filter: blur(14px);
-      overflow:hidden;
-    }
-    .modalHead{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:12px 14px;
-      border-bottom:1px solid rgba(255,255,255,.08);
-    }
-    .modalHead strong{ font-weight:950; font-size:13px; }
-    .close{
-      cursor:pointer;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      color: var(--text);
-      border-radius: 12px;
-      padding:8px 12px;
-      font-weight:950; font-size:12px;
-    }
-    .modalBody{ padding:14px; display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
-    @media (max-width: 820px){ .modalBody{ grid-template-columns: 1fr; } }
-    .wheelBox{
-      background: rgba(0,0,0,.16);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 16px;
-      padding:12px;
-      display:flex; flex-direction:column; gap:10px;
-      align-items:center;
-    }
-    canvas{ width: 100%; max-width: 320px; height:auto; }
-    .resultBox{
-      background: rgba(0,0,0,.16);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 16px;
-      padding:12px;
-    }
-    .resultBox h4{ margin:0 0 8px; font-size:12px; font-weight:950; color: var(--text); }
-    .resultText{
-      font-size:13px; font-weight:900;
-      padding:10px; border-radius: 14px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      line-height:1.35;
-    }
-    .tiny{ margin-top:8px; color: rgba(255,255,255,.45); font-size:11px; font-weight:800; }
-  </style>
+.wrapper {
+  max-width:1300px;
+  margin:40px auto;
+  padding:20px;
+}
+
+.panel {
+  background:rgba(18,20,55,.85);
+  border-radius:22px;
+  padding:24px;
+  box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.logo {
+  display:flex;
+  gap:10px;
+  align-items:center;
+  font-weight:800;
+  font-size:20px;
+}
+
+.logo span {
+  background:#d61e2f;
+  padding:6px 10px;
+  border-radius:10px;
+}
+
+.top-info {
+  display:flex;
+  gap:12px;
+}
+
+.badge {
+  background:rgba(255,255,255,.12);
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:13px;
+}
+
+.main {
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:20px;
+}
+
+.controls {
+  display:flex;
+  gap:10px;
+  margin-bottom:15px;
+}
+
+button {
+  background:#ff9d00;
+  border:none;
+  padding:10px 18px;
+  border-radius:12px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.secondary {
+  background:#2c3165;
+  color:white;
+}
+
+.event {
+  background:rgba(255,255,255,.06);
+  border-radius:16px;
+  padding:14px;
+  margin-bottom:12px;
+}
+
+.event h3 {
+  margin:0;
+  font-size:16px;
+}
+
+.meta {
+  opacity:.7;
+  font-size:13px;
+}
+
+.market-row {
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+
+.market {
+  background:#111739;
+  padding:10px;
+  border-radius:12px;
+  flex:1;
+}
+
+.tag {
+  display:inline-block;
+  background:#28c76f;
+  padding:3px 8px;
+  border-radius:999px;
+  font-size:11px;
+}
+
+.low { background:#ff4d4d; }
+.mid { background:#ffc107; }
+
+.ticket {
+  background:rgba(255,255,255,.07);
+  border-radius:20px;
+  padding:20px;
+}
+
+.ticket h2 {
+  margin-top:0;
+}
+
+footer-note {
+  font-size:12px;
+  opacity:.6;
+}
+
+/* RUOTA */
+#wheelBox {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  justify-content:center;
+  align-items:center;
+}
+
+.wheelPanel {
+  background:#10163a;
+  padding:30px;
+  border-radius:22px;
+  width:360px;
+  text-align:center;
+}
+</style>
 </head>
+
 <body>
-  <div class="shell">
-    <header>
-      <div class="brand">
-        <div class="logo" title="Vincitù"><span>v</span></div>
-        <div>
-          <h1>Vincitù • IA Portal</h1>
-          <small>Eventi reali • quote non mostrate: si inseriscono al banco</small>
-        </div>
-      </div>
 
-      <div class="topright">
-        <div class="pill"><span class="dot"></span> Centro: <strong id="centerLbl" style="color:var(--text)">VINC001</strong></div>
-        <div class="pill">Agg: <strong id="updatedLbl" style="color:var(--text)">—</strong></div>
-        <div class="pill">Fascia: <strong id="slotLbl" style="color:var(--text)">Mattina</strong></div>
-        <button class="btn ghost" id="wheelOpen">🎡 Ruota</button>
-      </div>
-    </header>
+<div class="wrapper">
 
-    <div class="grid">
-      <!-- LEFT -->
-      <section class="panel">
-        <h2>⚡ Eventi (IA)</h2>
+<div class="panel">
 
-        <div class="subbar">
-          <button class="btn orange" id="btnRefresh">🆕 Nuovi eventi</button>
-          <button class="btn" id="btnSlot">🕒 Cambia fascia</button>
-          <span class="chip">Quote: <strong>verifica al banco</strong></span>
-          <span class="chip">Eventi mostrati: <strong id="countLbl">0 / 0</strong></span>
-        </div>
-
-        <div id="errBox" class="event" style="display:none; border-color:rgba(255,59,59,.25); background:rgba(255,59,59,.10)">
-          <div style="font-weight:950; font-size:12px; color:#ffd7d7">Errore</div>
-          <div id="errText" style="margin-top:6px; color:rgba(255,255,255,.82); font-weight:800; font-size:12px; line-height:1.35"></div>
-        </div>
-
-        <!-- Piccolo box extra NON invasivo -->
-        <details class="toolbox" id="toolsBox">
-          <summary>
-            <span>📌 Angolo Extra: Corner & Cartellini (stima rapida)</span>
-            <span class="tag">Apri / Chiudi</span>
-          </summary>
-          <div class="toolgrid">
-            <div class="toolboxCard">
-              <h3>🚩 Corner “interessanti” (max 2)</h3>
-              <div id="cornerList"></div>
-              <div class="footnote">* Stima “ritmo/pressione” generica. Sempre verifica al banco.</div>
-            </div>
-            <div class="toolboxCard">
-              <h3>🟨 Cartellini “attenzione” (max 2)</h3>
-              <div id="cardsList"></div>
-              <div class="footnote">* Stima “equilibrio/agonismo” generica. Sempre verifica al banco.</div>
-            </div>
-          </div>
-        </details>
-
-        <div class="divider"></div>
-
-        <div class="eventsWrap" id="eventsWrap"></div>
-
-        <div class="footnote">
-          Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
-        </div>
-      </section>
-
-      <!-- RIGHT -->
-      <aside class="panel">
-        <div class="rightTop">
-          <h2 style="margin:0">🧾 Schedina</h2>
-          <span class="tag">Modalità cliente</span>
-        </div>
-
-        <div class="formRow">
-          <div class="field">
-            <label>Stake (€)</label>
-            <input id="stake" type="number" min="1" step="1" value="5">
-          </div>
-          <div class="field">
-            <label>Tipo</label>
-            <select id="type">
-              <option value="multipla">Multipla (tutte)</option>
-              <option value="singole">Singole</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="statsRow">
-          <div class="kpi">
-            <span>Selezioni</span>
-            <strong id="kSel">0</strong>
-          </div>
-          <div class="kpi">
-            <span>Quota totale</span>
-            <strong id="kOdd">—</strong>
-          </div>
-          <div class="kpi">
-            <span>Vincita pot.</span>
-            <strong id="kWin">—</strong>
-          </div>
-        </div>
-
-        <div class="ticket">
-          <div class="ticketList" id="ticketList">
-            <div class="empty">Nessuna selezione. Aggiungi una giocata a sinistra.</div>
-          </div>
-          <div class="note">Qui inserisci la quota reale <b>al banco</b> quando ti serve (facoltativo).</div>
-        </div>
-
-        <button class="print" id="printBtn">🖨️ Stampa schedina</button>
-
-        <div class="note" style="margin-top:10px">
-          Suggerimento: 2–3 selezioni massimo per mantenere controllo.
-        </div>
-      </aside>
-    </div>
+<header>
+  <div class="logo">
+    <span>V</span> Vincitù • IA Portal
   </div>
 
-  <!-- MODAL RUOTA -->
-  <div class="modalBack" id="modalBack">
-    <div class="modal">
-      <div class="modalHead">
-        <strong>🎡 Ruota della Fortuna (consigli & missioni)</strong>
-        <button class="close" id="modalClose">Chiudi ✕</button>
-      </div>
-      <div class="modalBody">
-        <div class="wheelBox">
-          <canvas id="wheel" width="360" height="360"></canvas>
-          <button class="btn orange" id="spinBtn">Gira la ruota</button>
-          <div class="tiny">1 giro “soft” per sessione (intrattenimento).</div>
-        </div>
-        <div class="resultBox">
-          <h4>🎁 Risultato</h4>
-          <div class="resultText" id="wheelResult">Premi “Gira la ruota” per ottenere un consiglio pratico.</div>
-          <div class="tiny" id="wheelMeta">Nota: sono consigli di gestione/approccio, non garanzie.</div>
-        </div>
-      </div>
-    </div>
+  <div class="top-info">
+    <div class="badge" id="fasciaLbl">Mattina</div>
+    <div class="badge" id="clock"></div>
+    <div class="badge">Centro: VINC001</div>
   </div>
+</header>
 
-  <script>
-    // ---------------------------
-    // STATE
-    // ---------------------------
-    const MAX_EVENTS = 5;
-    const SLOT_ORDER = ["mattina","pomeriggio","sera"];
-    let slotIdx = 0;
-    let ALL = null;
-    let currentEvents = [];
-    let ticket = []; // { id, match, market, why }
-
-    const $ = (id)=>document.getElementById(id);
-
-    // ---------------------------
-    // UTIL - stable hash
-    // ---------------------------
-    function stableInt(str){
-      let h = 2166136261;
-      for(let i=0;i<str.length;i++){
-        h ^= str.charCodeAt(i);
-        h = Math.imul(h, 16777619);
-      }
-      return (h >>> 0);
-    }
-    function clamp(x,a,b){ return Math.max(a, Math.min(b,x)); }
-
-    // Strength heuristic (NON “finta”: è una stima coerente e soprattutto NON assurda)
-    function matchupProfile(ev){
-      // usa id+nomi per dare coerenza
-      const key = `${ev.league_code||""}|${ev.home}|${ev.away}|${ev.id}`;
-      const x = stableInt(key);
-
-      // pseudo strength 0..1
-      let hs = ((x % 1000) / 1000);
-      let as = (((x/1000|0) % 1000) / 1000);
-
-      // piccola correzione: casa leggermente favorita
-      hs = clamp(hs + 0.06, 0, 1);
-
-      const diff = hs - as; // + = casa più forte
-      const absd = Math.abs(diff);
-
-      // equilibrio: più absd piccolo = match equilibrato
-      const balance = clamp(1 - absd*1.35, 0, 1);
-
-      // ritmo: leghe top un filo più “stabili”, ma non inventiamo numeri
-      let pace = 0.50 + (stableInt(key+"|pace")%1000)/1000 * 0.20; // 0.50..0.70
-      if(["PL","SA","PD","BL1","FL1"].includes(ev.league_code)) pace += 0.03;
-      if(["CL","EL"].includes(ev.league_code)) pace -= 0.02;
-      pace = clamp(pace, 0.45, 0.75);
-
-      return { hs, as, diff, absd, balance, pace };
-    }
-
-    function levelFromScore(score){
-      if(score >= 0.72) return { cls:"high", label:"Alta" };
-      if(score >= 0.52) return { cls:"med", label:"Media" };
-      return { cls:"low", label:"Bassa" };
-    }
-
-    function marketAdvice(ev, marketLabel){
-      const p = matchupProfile(ev);
-
-      // Score e motivazione “credibile” (non dice cose impossibili)
-      let score = 0.55;
-      let why = "Indicazione generale: verifica quota e scelta al banco.";
-
-      if(marketLabel === "Over 2.5"){
-        // over più probabile se ritmo alto e non squilibratissimo
-        score = clamp(0.50 + (p.pace-0.55)*0.9 + (p.balance-0.5)*0.35, 0.35, 0.85);
-
-        if(p.pace > 0.63 && p.balance > 0.50){
-          why = "Ritmo alto + match non troppo chiuso: l’Over può avere senso (sempre quota ok).";
-        } else if(p.pace <= 0.55){
-          why = "Ritmo stimato medio/basso: Over 2.5 più rischioso, valuta alternativa al banco.";
-        } else {
-          why = "Possibile Over, ma dipende molto dalla quota reale e da come si apre il match.";
-        }
-      }
-
-      if(marketLabel === "1X"){
-        // 1X ha senso se casa non è chiaramente sfavorita
-        // se away molto più forte, abbassiamo e motiviamo bene (non “tranquillo”)
-        score = clamp(0.62 + (p.diff*0.70), 0.30, 0.86);
-
-        if(p.diff >= 0.10){
-          why = "Casa leggermente favorita: 1X copre pareggio e riduce rischio rispetto al segno secco.";
-        } else if(p.diff > -0.10){
-          why = "Match equilibrato: 1X è una copertura prudente, ma quota e contesto contano molto.";
-        } else {
-          why = "Ospiti più forti: 1X NON è “tranquilla”. Se la giochi, fallo solo con quota davvero conveniente.";
-        }
-      }
-
-      if(marketLabel === "Goal/NoGoal Sì"){
-        // goal sì più sensato se equilibrio medio e ritmo medio/alto
-        score = clamp(0.50 + (p.balance-0.5)*0.55 + (p.pace-0.55)*0.45, 0.35, 0.82);
-
-        if(p.balance > 0.55 && p.pace > 0.58){
-          why = "Equilibrio + ritmo: scenario adatto a un gol per parte (sempre dipende dalla quota).";
-        } else if(p.balance < 0.45){
-          why = "Match squilibrato: Goal Sì può saltare se una squadra domina. Valuta al banco.";
-        } else {
-          why = "Possibile Goal Sì, ma non è una giocata “automatica”: controlla quota e matchup.";
-        }
-      }
-
-      const lvl = levelFromScore(score);
-      return { score, lvl, why };
-    }
-
-    function crestEl(url, fallbackText){
-      const box = document.createElement("div");
-      box.className = "crest";
-      if(url){
-        const img = document.createElement("img");
-        img.src = url;
-        img.alt = fallbackText;
-        img.onerror = ()=>{ box.textContent = fallbackText; };
-        box.appendChild(img);
-      }else{
-        box.textContent = fallbackText;
-      }
-      return box;
-    }
-
-    function initials(name){
-      const parts = String(name||"").split(" ").filter(Boolean);
-      const a = parts[0]?.[0] || "X";
-      const b = (parts[1]?.[0] || parts[0]?.[1] || "").toUpperCase();
-      return (a + b).toUpperCase();
-    }
-
-    // ---------------------------
-    // LOAD EVENTS
-    // ---------------------------
-    async function loadEvents(){
-      try{
-        $("errBox").style.display = "none";
-        const res = await fetch("./events.json?ts="+Date.now(), { cache:"no-store" });
-        const data = await res.json();
-        ALL = data;
-        $("updatedLbl").textContent = data.updated_at || "—";
-        render();
-      }catch(e){
-        $("errBox").style.display = "block";
-        $("errText").textContent = "Non riesco a leggere events.json. Controlla che esista e che abbia events non vuoto.";
-        console.error(e);
-      }
-    }
-
-    function getSlot(){
-      const s = SLOT_ORDER[slotIdx];
-      return s;
-    }
-
-    function humanSlot(s){
-      if(s==="mattina") return "Mattina";
-      if(s==="pomeriggio") return "Pomeriggio";
-      return "Sera";
-    }
-
-    function pickEvents(){
-      const s = getSlot();
-      $("slotLbl").textContent = humanSlot(s);
-
-      const all = (ALL && Array.isArray(ALL.events)) ? ALL.events : [];
-      const filtered = all.filter(ev => (ev.slot||"") === s);
-
-      // se fascia vuota, non facciamo caos: mostriamo messaggio semplice
-      currentEvents = filtered.slice(0, MAX_EVENTS);
-      $("countLbl").textContent = `${currentEvents.length} / ${Math.min(MAX_EVENTS, filtered.length || MAX_EVENTS)}`;
-      $("eventsWrap").innerHTML = "";
-
-      if(currentEvents.length === 0){
-        const d = document.createElement("div");
-        d.className = "event";
-        d.style.opacity = .95;
-        d.innerHTML = `
-          <div style="font-weight:950;font-size:12px;color:rgba(255,255,255,.85)">Nessun evento in questa fascia</div>
-          <div style="margin-top:6px;color:rgba(255,255,255,.60);font-weight:800;font-size:12px;line-height:1.35">
-            Prova a cambiare fascia (Mattina/Pomeriggio/Sera) oppure aggiorna gli eventi.
-          </div>
-        `;
-        $("eventsWrap").appendChild(d);
-      }
-    }
-
-    function renderEvents(){
-      const wrap = $("eventsWrap");
-      wrap.innerHTML = "";
-
-      for(const ev of currentEvents){
-        const e = document.createElement("div");
-        e.className = "event";
-
-        const slotTag = `<span class="tag slot">${humanSlot(ev.slot||"mattina")}</span>`;
-        const league = ev.league || "Calcio";
-        const start = ev.start || "";
-
-        const homeC = crestEl(ev.home_crest, initials(ev.home));
-        const awayC = crestEl(ev.away_crest, initials(ev.away));
-
-        const title = document.createElement("div");
-        title.className = "evTitle";
-        title.appendChild(homeC);
-        title.insertAdjacentHTML("beforeend", `<span>${ev.home} <span style="color:rgba(255,255,255,.55)">-</span> ${ev.away}</span>`);
-        title.appendChild(awayC);
-
-        const meta = document.createElement("div");
-        meta.className = "evMeta";
-        meta.innerHTML = `
-          <div class="leagueLine">
-            <span class="tag">${league}</span>
-            <span class="tag">${start}</span>
-            ${slotTag}
-          </div>
-        `;
-
-        const top = document.createElement("div");
-        top.className = "evTop";
-        top.appendChild(meta);
-        const right = document.createElement("div");
-        right.innerHTML = `<span class="tag">Evento</span>`;
-        top.appendChild(right);
-
-        e.appendChild(top);
-        e.appendChild(title);
-
-        // motivazione breve credibile “match-level”
-        const mp = matchupProfile(ev);
-        let matchHint = "Nota: quote non mostrate. Inserisci al banco e valuta con calma.";
-        if(mp.absd >= 0.22){
-          matchHint = "Match probabilmente squilibrato: evita di forzare, scegli coperture e quota buona.";
-        } else if(mp.balance >= 0.62){
-          matchHint = "Match equilibrato: occhio a quota e gestione stake, può essere “da gol” o “da ritmo”.";
-        } else if(mp.pace >= 0.66){
-          matchHint = "Ritmo stimato alto: buone occasioni su mercati gol/corner, sempre con quota ok.";
-        }
-        const hint = document.createElement("div");
-        hint.className = "evHint";
-        hint.textContent = matchHint;
-        e.appendChild(hint);
-
-        const mkts = document.createElement("div");
-        mkts.className = "markets";
-
-        const markets = (ev.markets && ev.markets.length) ? ev.markets : [
-          { label:"Over 2.5" }, { label:"1X" }, { label:"Goal/NoGoal Sì" }
-        ];
-
-        for(const m of markets.slice(0,3)){
-          const adv = marketAdvice(ev, m.label);
-          const box = document.createElement("div");
-          box.className = "mkt";
-          box.innerHTML = `
-            <div class="mktHead">
-              <div class="mktLabel">${m.label}</div>
-              <div class="lvl ${adv.lvl.cls}">${adv.lvl.label}</div>
-            </div>
-            <div class="mktWhy">${adv.why}</div>
-            <div class="mktBtns">
-              <button class="mini" data-act="verify">Verifica al banco</button>
-              <button class="mini orange" data-act="add">+ Aggiungi</button>
-            </div>
-          `;
-
-          box.querySelector('[data-act="verify"]').onclick = ()=>{
-            alert("✅ Ricorda: la quota reale va verificata e inserita al banco. (Qui non mostriamo quote)");
-          };
-
-          box.querySelector('[data-act="add"]').onclick = ()=>{
-            addToTicket(ev, m.label, adv.why);
-          };
-
-          mkts.appendChild(box);
-        }
-
-        e.appendChild(mkts);
-        wrap.appendChild(e);
-      }
-    }
-
-    // ---------------------------
-    // Ticket
-    // ---------------------------
-    function addToTicket(ev, market, why){
-      const item = {
-        id: `${ev.id}|${market}`,
-        match: `${ev.home} - ${ev.away}`,
-        market,
-        why
-      };
-      if(ticket.find(t=>t.id===item.id)) return; // evita doppioni
-      ticket.push(item);
-      renderTicket();
-    }
-
-    function renderTicket(){
-      const box = $("ticketList");
-      box.innerHTML = "";
-      $("kSel").textContent = ticket.length;
-
-      // quote non mostrate: KPI quota/vincita restano "—"
-      $("kOdd").textContent = "—";
-      $("kWin").textContent = "—";
-
-      if(ticket.length===0){
-        box.innerHTML = `<div class="empty">Nessuna selezione. Aggiungi una giocata a sinistra.</div>`;
-        return;
-      }
-
-      for(const t of ticket){
-        const row = document.createElement("div");
-        row.className = "sel";
-        row.innerHTML = `
-          <div class="left">
-            ${t.match}
-            <small>${t.market}</small>
-          </div>
-          <button class="rm">Rimuovi</button>
-        `;
-        row.querySelector(".rm").onclick = ()=>{
-          ticket = ticket.filter(x=>x.id!==t.id);
-          renderTicket();
-        };
-        box.appendChild(row);
-      }
-    }
-
-    $("printBtn").onclick = ()=>{
-      if(ticket.length===0){
-        alert("Aggiungi almeno una selezione prima di stampare.");
-        return;
-      }
-      window.print();
-    };
-
-    // ---------------------------
-    // Corner / Cartellini (mini, NON confuso)
-    // ---------------------------
-    function renderTools(){
-      const cBox = $("cornerList");
-      const aBox = $("cardsList");
-      cBox.innerHTML = "";
-      aBox.innerHTML = "";
-
-      const all = (ALL && Array.isArray(ALL.events)) ? ALL.events : [];
-      if(all.length===0) return;
-
-      // scegliamo 2 corner e 2 cartellini dalle prossime 24h (senza inventare: solo euristiche)
-      const now = Date.now();
-      const next = all
-        .map(ev => ({ ev, ts: Date.parse(ev.start_iso || ev.start || "") }))
-        .filter(x => Number.isFinite(x.ts) ? (x.ts - now) <= 36*3600*1000 : true)
-        .slice(0, 40)
-        .map(x=>x.ev);
-
-      // corner: ritmo alto + equilibrio medio
-      const cornerRank = next.map(ev=>{
-        const p = matchupProfile(ev);
-        const score = clamp((p.pace*0.65) + (p.balance*0.35), 0, 1);
-        return { ev, score };
-      }).sort((a,b)=>b.score-a.score).slice(0,2);
-
-      // cards: equilibrio + (poco squilibrio) => più “agonismo” plausibile
-      const cardsRank = next.map(ev=>{
-        const p = matchupProfile(ev);
-        const score = clamp((p.balance*0.75) + ((1 - p.absd)*0.25), 0, 1);
-        return { ev, score };
-      }).sort((a,b)=>b.score-a.score).slice(0,2);
-
-      if(cornerRank.length===0){
-        cBox.innerHTML = `<div class="toolItem"><strong>Nessun suggerimento</strong><small>Non ci sono abbastanza eventi per stimare corner.</small></div>`;
-      }else{
-        for(const r of cornerRank){
-          const ev = r.ev;
-          const txt = "Stima: ritmo alto e pressione possibile sulle fasce → corner da valutare.";
-          const item = document.createElement("div");
-          item.className = "toolItem";
-          item.innerHTML = `
-            <strong>${ev.home} - ${ev.away}</strong>
-            <small>${ev.league || "Calcio"} • ${ev.start || ""}</small>
-            <small>${txt}</small>
-            <span class="badgeMini">Verifica al banco</span>
-          `;
-          cBox.appendChild(item);
-        }
-      }
-
-      if(cardsRank.length===0){
-        aBox.innerHTML = `<div class="toolItem"><strong>Nessun suggerimento</strong><small>Non ci sono abbastanza eventi per stimare cartellini.</small></div>`;
-      }else{
-        for(const r of cardsRank){
-          const ev = r.ev;
-          const txt = "Stima: equilibrio e agonismo → possibili cartellini. Occhio alla quota reale.";
-          const item = document.createElement("div");
-          item.className = "toolItem";
-          item.innerHTML = `
-            <strong>${ev.home} - ${ev.away}</strong>
-            <small>${ev.league || "Calcio"} • ${ev.start || ""}</small>
-            <small>${txt}</small>
-            <span class="badgeMini">Verifica al banco</span>
-          `;
-          aBox.appendChild(item);
-        }
-      }
-    }
-
-    // ---------------------------
-    // WHEEL (risultato vero)
-    // ---------------------------
-    const wheelItems = [
-      "📌 Missione: scegli MAX 2 selezioni e fermati. Controllo prima di tutto.",
-      "🧠 Consiglio: se la quota al banco è cambiata troppo, NON inseguire: cambia giocata.",
-      "🎯 Focus: una sola giocata “Alta” oggi. Poco ma buono.",
-      "🧾 Regola: scrivi stake e motivazione prima di confermare. Ti evita errori.",
-      "⏱️ Calma: 20 secondi di pausa prima di premere “Conferma” al banco.",
-      "🛡️ Copertura: se match squilibrato, evita mercati rischiosi. Preferisci prudenza.",
-      "🔥 Ritmo: se vedi quota Over scesa molto, spesso il mercato è già “arrivato”. Valuta alternative."
-    ];
-
-    let wheelAngle = 0;
-    function drawWheel(){
-      const c = $("wheel");
-      const ctx = c.getContext("2d");
-      const n = wheelItems.length;
-      const cx = c.width/2, cy = c.height/2, r = 150;
-      ctx.clearRect(0,0,c.width,c.height);
-
-      // circle
-      for(let i=0;i<n;i++){
-        const a0 = (Math.PI*2/n)*i + wheelAngle;
-        const a1 = (Math.PI*2/n)*(i+1) + wheelAngle;
-        ctx.beginPath();
-        ctx.moveTo(cx,cy);
-        ctx.arc(cx,cy,r,a0,a1);
-        ctx.closePath();
-        ctx.fillStyle = `rgba(255,255,255,${0.06 + (i%2)*0.04})`;
-        ctx.fill();
-        ctx.strokeStyle = "rgba(255,255,255,.10)";
-        ctx.stroke();
-      }
-
-      // center
-      ctx.beginPath();
-      ctx.arc(cx,cy,34,0,Math.PI*2);
-      ctx.fillStyle = "rgba(0,0,0,.25)";
-      ctx.fill();
-      ctx.strokeStyle = "rgba(255,255,255,.10)";
-      ctx.stroke();
-
-      // text markers
-      ctx.save();
-      ctx.translate(cx,cy);
-      ctx.fillStyle = "rgba(255,255,255,.85)";
-      ctx.font = "900 12px ui-sans-serif, system-ui";
-      for(let i=0;i<n;i++){
-        const ang = (Math.PI*2/n)*i + (Math.PI*2/n)/2 + wheelAngle;
-        ctx.save();
-        ctx.rotate(ang);
-        ctx.textAlign = "right";
-        ctx.fillText("★", r-10, 4);
-        ctx.restore();
-      }
-      ctx.restore();
-
-      // pointer
-      ctx.beginPath();
-      ctx.moveTo(cx, cy - r - 10);
-      ctx.lineTo(cx - 12, cy - r + 14);
-      ctx.lineTo(cx + 12, cy - r + 14);
-      ctx.closePath();
-      ctx.fillStyle = "rgba(255,152,0,.95)";
-      ctx.fill();
-      ctx.strokeStyle = "rgba(255,152,0,.35)";
-      ctx.stroke();
-    }
-
-    function spinWheel(){
-      const n = wheelItems.length;
-      const spins = 6 + Math.random()*3; // giri
-      const target = Math.random()*Math.PI*2;
-
-      const start = wheelAngle;
-      const end = start + spins*Math.PI*2 + target;
-
-      const t0 = performance.now();
-      const dur = 1600;
-
-      function anim(t){
-        const p = clamp((t - t0)/dur, 0, 1);
-        const ease = 1 - Math.pow(1-p, 3);
-        wheelAngle = start + (end-start)*ease;
-        drawWheel();
-        if(p < 1) requestAnimationFrame(anim);
-        else{
-          // determina indice vincente: puntatore in alto = angolo -pi/2
-          const a = ( ( (Math.PI*2) - (wheelAngle % (Math.PI*2)) ) + (Math.PI/2) ) % (Math.PI*2);
-          const idx = Math.floor(a / (Math.PI*2/n)) % n;
-          $("wheelResult").textContent = wheelItems[idx];
-          $("wheelMeta").textContent = "✅ Usa questo come promemoria pratico mentre inserisci al banco.";
-        }
-      }
-      requestAnimationFrame(anim);
-    }
-
-    $("wheelOpen").onclick = ()=>{
-      $("modalBack").style.display = "flex";
-      drawWheel();
-    };
-    $("modalClose").onclick = ()=>{ $("modalBack").style.display = "none"; };
-    $("modalBack").onclick = (e)=>{ if(e.target === $("modalBack")) $("modalBack").style.display = "none"; };
-    $("spinBtn").onclick = spinWheel;
-
-    // ---------------------------
-    // MAIN render
-    // ---------------------------
-    function render(){
-      pickEvents();
-      renderEvents();
-      renderTools();
-
-      // top UI
-      const s = getSlot();
-      $("slotLbl").textContent = humanSlot(s);
-
-      // center static for now
-      $("centerLbl").textContent = "VINC001";
-    }
-
-    $("btnSlot").onclick = ()=>{
-      slotIdx = (slotIdx + 1) % SLOT_ORDER.length;
-      render();
-    };
-
-    $("btnRefresh").onclick = loadEvents;
-    $("btnRefresh").addEventListener("contextmenu", (e)=>e.preventDefault());
-
-    // start
-    loadEvents();
-    renderTicket();
-    drawWheel();
-  </script>
+<div class="main">
+
+<!-- SINISTRA -->
+<div>
+
+<div class="controls">
+  <button onclick="loadEvents()">Nuovi eventi</button>
+  <button class="secondary" onclick="changeSlot()">Cambia fascia</button>
+  <button class="secondary" onclick="openWheel()">Ruota</button>
+</div>
+
+<div id="eventsBox"></div>
+
+<p style="opacity:.5;font-size:12px">
+Quote non mostrate: verifica sempre al banco prima di inserire.<br>
+Supporto informativo / intrattenimento.
+</p>
+
+</div>
+
+<!-- DESTRA -->
+<div class="ticket">
+
+<h2>Scheda</h2>
+
+<p>Stake € <b>5</b></p>
+<p>Tipo: Multipla</p>
+
+<hr>
+
+<p>Selezioni: 0</p>
+<p>Quota totale: —</p>
+<p>Vincita pot.: —</p>
+
+<button style="width:100%;margin-top:10px">🖨️ Stampa schedina</button>
+
+<p style="font-size:12px;opacity:.6;margin-top:10px">
+Suggerimento: 2–3 selezioni massimo.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RUOTA -->
+<div id="wheelBox">
+  <div class="wheelPanel">
+    <h3>🎡 Ruota del Giorno</h3>
+    <p id="wheelResult">Gira per ricevere un consiglio cliente.</p>
+    <button onclick="spinWheel()">Gira</button>
+    <br><br>
+    <button class="secondary" onclick="closeWheel()">Chiudi</button>
+  </div>
+</div>
+
+<script>
+
+/* ==========================
+ ROTAZIONE FASCE
+========================== */
+
+const slots=["mattina","pomeriggio","sera"];
+let slotIndex=0;
+
+function changeSlot(){
+ slotIndex=(slotIndex+1)%3;
+ loadEvents();
+}
+
+/* ==========================
+ EVENTI DEMO (15 TOTALI)
+========================== */
+
+const ALL_EVENTS=[
+ {league:"Champions League",home:"Inter",away:"PSG",note:"Ritmo alto, squadre offensive."},
+ {league:"Champions League",home:"Barcellona",away:"Napoli",note:"Pressione costante sulle fasce."},
+ {league:"Serie A",home:"Milan",away:"Roma",note:"Big match equilibrato."},
+ {league:"Premier League",home:"Arsenal",away:"Brighton",note:"Arsenal aggressivo in casa."},
+ {league:"Bundesliga",home:"Bayern",away:"Leverkusen",note:"Entrambe segnano spesso."},
+
+ {league:"LaLiga",home:"Real Madrid",away:"Betis",note:"Ritmo alto lato destro."},
+ {league:"Serie A",home:"Atalanta",away:"Torino",note:"Atalanta molto offensiva."},
+ {league:"Premier League",home:"City",away:"Everton",note:"Possesso prolungato City."},
+ {league:"Ligue 1",home:"PSG",away:"Lens",note:"PSG dominante."},
+ {league:"Eredivisie",home:"Ajax",away:"Utrecht",note:"Gara aperta."},
+
+ {league:"Serie A",home:"Juventus",away:"Fiorentina",note:"Ritmo prudente iniziale."},
+ {league:"Premier League",home:"Liverpool",away:"Villa",note:"Liverpool spinge forte."},
+ {league:"Bundesliga",home:"Dortmund",away:"Mainz",note:"Corner probabili."},
+ {league:"LaLiga",home:"Valencia",away:"Villarreal",note:"Match intenso."},
+ {league:"Ligue 1",home:"Monaco",away:"Rennes",note:"Transizioni rapide."}
+];
+
+/* ==========================
+ LOAD
+========================== */
+
+function loadEvents(){
+
+ const box=document.getElementById("eventsBox");
+ box.innerHTML="";
+
+ const start=slotIndex*5;
+ const subset=ALL_EVENTS.slice(start,start+5);
+
+ document.getElementById("fasciaLbl").innerText=
+   slots[slotIndex].charAt(0).toUpperCase()+slots[slotIndex].slice(1);
+
+ subset.forEach(ev=>{
+
+  const d=document.createElement("div");
+  d.className="event";
+
+  d.innerHTML=`
+   <div class="meta">${ev.league}</div>
+   <h3>${ev.home} – ${ev.away}</h3>
+   <div class="meta">${ev.note}</div>
+
+   <div class="market-row">
+    <div class="market">Over 2.5 <span class="tag mid">Media</span></div>
+    <div class="market">1X <span class="tag">Alta</span></div>
+    <div class="market">Goal <span class="tag mid">Media</span></div>
+   </div>
+  `;
+
+  box.appendChild(d);
+ });
+
+}
+
+/* ==========================
+ ORA
+========================== */
+setInterval(()=>{
+ document.getElementById("clock").innerText=
+  new Date().toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit"});
+},1000);
+
+/* ==========================
+ RUOTA
+========================== */
+
+const wheelTexts=[
+ "Gioca pochi eventi ma buoni.",
+ "Verifica sempre quota reale.",
+ "Non inseguire le perdite.",
+ "Corner utili in gare offensive.",
+ "Cartellini nelle partite tese.",
+ "Stake fisso oggi.",
+ "Multipla corta = controllo."
+];
+
+function openWheel(){document.getElementById("wheelBox").style.display="flex";}
+function closeWheel(){document.getElementById("wheelBox").style.display="none";}
+
+function spinWheel(){
+ const r=wheelTexts[Math.floor(Math.random()*wheelTexts.length)];
+ document.getElementById("wheelResult").innerText="🎯 "+r;
+}
+
+/* INIT */
+loadEvents();
+
+</script>
+
 </body>
 </html>
