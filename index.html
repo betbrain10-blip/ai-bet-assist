@@ -7,1324 +7,1540 @@
 
   <style>
     :root{
-      --bg1:#2b1457;
-      --bg2:#0c2b36;
+      --bg1:#3b1d7a;
+      --bg2:#0b1a3f;
+      --panel: rgba(20, 23, 44, .72);
+      --panel2: rgba(30, 33, 62, .72);
       --stroke: rgba(255,255,255,.10);
+      --muted: rgba(255,255,255,.65);
       --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.68);
       --accent:#ff8a00;
-      --danger:#ff4a4a;
-      --ok:#4cff7a;
+      --green:#35d07f;
+      --yellow:#f3c24b;
+      --red:#ff4b5c;
+      --chip: rgba(255,255,255,.08);
+      --shadow: 0 12px 50px rgba(0,0,0,.35);
+      --r: 18px;
+      --r2: 14px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
     }
+
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
       min-height:100vh;
+      font-family: var(--font);
+      color: var(--text);
       background:
-        radial-gradient(1200px 700px at 20% 10%, rgba(140,70,255,.35), transparent 60%),
-        radial-gradient(900px 600px at 85% 25%, rgba(0,220,255,.18), transparent 65%),
-        linear-gradient(135deg, var(--bg1), var(--bg2));
+        radial-gradient(1200px 700px at 20% 15%, rgba(140,60,255,.35), transparent 55%),
+        radial-gradient(900px 600px at 85% 30%, rgba(0,195,255,.18), transparent 55%),
+        linear-gradient(115deg, var(--bg1), var(--bg2));
     }
 
-    .wrap{max-width:1150px;margin:36px auto;padding:0 16px;}
-    .shell{
-      border:1px solid var(--stroke);
-      border-radius:28px;
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      box-shadow: 0 40px 120px rgba(0,0,0,.45);
-      overflow:hidden;
-      position:relative;
-    }
-    .shell::before{
-      content:"";
-      position:absolute;inset:-40px;
-      background:
-        radial-gradient(520px 340px at 15% 10%, rgba(255,120,0,.16), transparent 60%),
-        radial-gradient(620px 420px at 90% 20%, rgba(255,0,140,.12), transparent 65%),
-        radial-gradient(520px 420px at 55% 95%, rgba(0,210,255,.12), transparent 60%);
-      filter: blur(10px);
-      pointer-events:none;
+    a{color:inherit}
+
+    .wrap{
+      width:min(1100px, 96vw);
+      margin: 26px auto 40px auto;
+      padding: 18px;
+      border-radius: 26px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
     }
 
     .topbar{
-      position:relative;
-      display:flex;align-items:center;justify-content:space-between;
-      padding:16px 18px;
-      background: rgba(10,12,18,.35);
-      border-bottom:1px solid var(--stroke);
-      backdrop-filter: blur(10px);
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      padding: 10px 10px 14px 10px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
       gap:12px;
+      min-width: 260px;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-weight: 800;
+      letter-spacing:.2px;
+    }
+    .logo-badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 6px 18px rgba(0,0,0,.25);
+    }
+    .logo-badge span{
+      font-weight: 900;
+      color: #ff2d2d; /* solo rossa come prima */
+      font-size: 18px;
+      transform: translateY(-.5px);
+    }
+    .logo-title{
+      display:flex;
+      flex-direction:column;
+      line-height:1.05;
+    }
+    .logo-title b{
+      font-size: 16px;
+    }
+    .logo-title small{
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    .statusRow{
+      display:flex;
       flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:flex-end;
     }
-    .brand{display:flex;align-items:center;gap:12px;min-width:260px;}
-    .logoBadge{
-      width:54px;height:38px;border-radius:10px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.45);
-      display:flex;align-items:center;justify-content:center;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
-      overflow:hidden;
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.10);
+      color: rgba(255,255,255,.86);
+      font-size: 12px;
+      font-weight: 700;
+      white-space:nowrap;
     }
-    /* LOGO ROSSO */
-    .logoText{
-      font-weight:1000;
-      letter-spacing:.3px;
-      font-size:14px;
-      color:#ff2a2a;
-      text-transform:lowercase;
+    .dot{
+      width: 9px;
+      height: 9px;
+      border-radius: 99px;
+      background: var(--green);
+      box-shadow: 0 0 0 4px rgba(53,208,127,.12);
     }
-    .brandTitle{display:flex;flex-direction:column;gap:2px;}
-    .brandTitle b{font-size:16px}
-    .brandTitle span{font-size:12px;color:var(--muted)}
-    .chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
-    .chip{
-      display:flex;gap:8px;align-items:center;
-      padding:8px 10px;border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.22);
-      color:var(--muted); font-size:12px;
+
+    .btn{
+      cursor:pointer;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.07);
+      color: rgba(255,255,255,.90);
+      padding: 9px 12px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 12px;
+      transition: transform .05s ease, background .15s ease;
+      user-select:none;
     }
-    .dot{width:8px;height:8px;border-radius:99px;background:#4cff7a;box-shadow:0 0 16px rgba(76,255,122,.35)}
-    .motto{
+    .btn:hover{ background: rgba(255,255,255,.10); }
+    .btn:active{ transform: translateY(1px); }
+
+    .btn-accent{
+      border: 1px solid rgba(255,140,0,.45);
+      background: rgba(255,138,0,.22);
+      color: rgba(255,255,255,.92);
+    }
+    .btn-accent:hover{ background: rgba(255,138,0,.28); }
+
+    .btn-big{
       width:100%;
-      margin-top:6px;
-      font-size:12px;
-      color:rgba(255,255,255,.80);
-      display:flex;align-items:center;gap:10px;flex-wrap:wrap;
-    }
-    .motto b{color:rgba(255,225,170,.95)}
-    .motto .tag{
-      padding:6px 10px;border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      color:rgba(255,255,255,.80);
-      font-weight:900;
+      padding: 12px 14px;
+      border-radius: 14px;
+      font-size: 13px;
+      font-weight: 900;
     }
 
     .grid{
-      position:relative;
       display:grid;
-      grid-template-columns: 1.35fr .9fr;
-      gap:16px;
-      padding:16px;
-    }
-    @media (max-width: 980px){
-      .grid{grid-template-columns:1fr}
-      .brand{min-width:auto}
+      grid-template-columns: 1.15fr .85fr;
+      gap: 14px;
+      padding: 4px 6px 10px 6px;
     }
 
     .card{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(10,12,18,.35);
-      border-radius:22px;
-      padding:14px;
-      backdrop-filter: blur(10px);
+      border-radius: var(--r);
+      background: var(--panel);
+      border: 1px solid var(--stroke);
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.22);
+      backdrop-filter: blur(8px);
     }
+
     .card h3{
-      margin:0 0 10px 0;
-      font-size:14px;
-      display:flex;align-items:center;justify-content:space-between;
-      color:rgba(255,255,255,.88);
+      margin: 0;
+      font-size: 13px;
+      letter-spacing:.2px;
+      color: rgba(255,255,255,.92);
+    }
+    .subnote{
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.25;
     }
 
     .toolbar{
-      display:flex;gap:10px;flex-wrap:wrap;align-items:center;
-      margin-bottom:12px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom: 12px;
     }
-    .btn{
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(0,0,0,.22);
-      color:rgba(255,255,255,.92);
-      padding:10px 12px;
-      border-radius:12px;
-      font-weight:900;
-      cursor:pointer;
-      display:inline-flex;align-items:center;gap:8px;
-    }
-    .btnPrimary{
-      background: linear-gradient(180deg, rgba(255,140,0,.95), rgba(255,105,0,.85));
-      border-color: rgba(255,180,0,.45);
-      color:#1b0f05;
-      box-shadow: 0 18px 45px rgba(255,120,0,.25);
-    }
-    .pill{
-      font-size:12px;color:var(--muted);
-      padding:6px 10px;border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      display:inline-flex;gap:8px;align-items:center;
+    .toolbar .left, .toolbar .right{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
     }
 
-    .special{
-      border:1px solid rgba(255,180,0,.20);
-      background: rgba(255,140,0,.08);
-      border-radius:18px;
-      padding:12px;
-      margin: 10px 0 14px 0;
-    }
-    .specialHead{
-      display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;
-      margin-bottom:10px;
-    }
-    .specialGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
-    }
-    @media (max-width: 700px){ .specialGrid{grid-template-columns:1fr} }
-    .spItem{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.14);
-      border-radius:16px;
-      padding:10px;
-    }
-    .spItem b{display:block;font-size:12px}
-    .spItem span{display:block;font-size:11px;color:rgba(255,255,255,.72);margin-top:6px;line-height:1.25}
-    .spTag{
+    .badge{
       display:inline-flex;
-      padding:6px 10px;border-radius:999px;
-      border:1px solid rgba(76,255,122,.35);
-      background: rgba(76,255,122,.10);
-      font-size:11px;font-weight:1000;
-      color:rgba(255,255,255,.90);
-      margin-top:8px;
-    }
-    .spTag.mid{border-color: rgba(255,180,0,.35); background: rgba(255,180,0,.10);}
-    .spTag.low{border-color: rgba(255,74,74,.28); background: rgba(255,74,74,.10);}
-
-    .event{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.16);
-      border-radius:18px;
-      padding:12px;
-      margin-bottom:12px;
-    }
-    .eventHead{
-      display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap;
-      margin-bottom:10px;
-    }
-    .leagueLine{
-      display:flex;align-items:center;gap:10px;color:var(--muted);font-size:12px;flex-wrap:wrap;
-    }
-    .flag{
-      width:22px;height:22px;border-radius:999px;
-      display:grid;place-items:center;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.10);
+      align-items:center;
+      gap:8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(0,0,0,.18);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.85);
+      font-size: 12px;
+      font-weight: 800;
     }
 
-    .teams{
-      display:flex;align-items:center;gap:10px;font-weight:1000;flex-wrap:wrap;
-      margin-top:8px;
-    }
-    .crest{
-      width:26px;height:26px;
-      object-fit:contain;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:10px;
-      padding:3px;
-    }
-    .teamBadge{
-      width:28px;height:28px;border-radius:10px;
-      display:grid;place-items:center;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.12);
-      font-weight:1000;
-      color: rgba(255,255,255,.92);
-      font-size:12px;
-    }
-    .meta{
-      font-size:12px;color:var(--muted);
-      display:flex;gap:10px;align-items:center;
-    }
-
-    .markets{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap:10px;
-    }
-    @media (max-width: 680px){
-      .markets{grid-template-columns:1fr}
-    }
-
-    .market{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.14);
-      border-radius:16px;
-      padding:10px;
+    /* LISTA EVENTI */
+    .events{
       display:flex;
       flex-direction:column;
-      gap:8px;
-    }
-    .mTop{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
-    .mLabel{font-weight:1000;font-size:12px}
-    .mHint{font-size:11px;color:var(--muted);line-height:1.25}
-    .badge{
-      padding:6px 10px;border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.18);
-      font-size:11px;font-weight:1000;
-      color:rgba(255,255,255,.85);
-      white-space:nowrap;
-    }
-    .badge.high{border-color: rgba(76,255,122,.35); box-shadow: 0 0 0 2px rgba(76,255,122,.08) inset;}
-    .badge.mid{border-color: rgba(255,180,0,.35); box-shadow: 0 0 0 2px rgba(255,180,0,.08) inset;}
-    .badge.low{border-color: rgba(255,74,74,.28); box-shadow: 0 0 0 2px rgba(255,74,74,.07) inset;}
-
-    .mRow{
-      display:flex;align-items:center;justify-content:space-between;gap:10px;
-    }
-    .oddBox{
-      width:108px;
-      text-align:center;
-      padding:10px 10px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.18);
-      font-weight:1000;
-      font-size:12px;
-      color:rgba(255,255,255,.88);
-    }
-    .addBtn{
-      flex:1;
-      padding:10px 10px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.92);
-      font-weight:1000;
-      cursor:pointer;
-      display:flex;align-items:center;justify-content:center;gap:8px;
-      white-space:nowrap;
-    }
-    .addBtn:hover{border-color: rgba(255,180,0,.40); box-shadow: 0 0 0 2px rgba(255,140,0,.10) inset;}
-
-    .row{display:flex;gap:10px;flex-wrap:wrap}
-    .input, select{
-      width:100%;
-      padding:12px 12px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.18);
-      color: rgba(255,255,255,.92);
-      outline:none;
-      font-weight:900;
+      gap:12px;
+      margin-top: 10px;
     }
 
-    .kpi{
-      display:grid;grid-template-columns: repeat(3, 1fr);
-      gap:10px;margin-top:10px;
+    .event{
+      border-radius: 16px;
+      background: var(--panel2);
+      border: 1px solid rgba(255,255,255,.10);
+      padding: 12px;
     }
-    .kpi .box{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.16);
-      border-radius:16px;
-      padding:10px;
-      color:var(--muted);
-      font-size:12px;
-    }
-    .kpi .box b{display:block;color:rgba(255,255,255,.92);font-size:14px;margin-top:6px}
 
-    .cart{
-      margin-top:12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.12);
-      border-radius:16px;
-      padding:10px;
-    }
-    .cartItem{
-      border:1px solid rgba(255,255,255,.08);
-      background: rgba(0,0,0,.12);
-      border-radius:14px;
-      padding:10px;
-      margin-bottom:10px;
+    .eventTop{
       display:flex;
       gap:10px;
       align-items:flex-start;
       justify-content:space-between;
     }
-    .cartItem:last-child{margin-bottom:0}
-    .cartLeft{flex:1;min-width:0}
-    .cartLeft b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .cartLeft span{display:block;font-size:11px;color:var(--muted);margin-top:4px;line-height:1.25}
-    .cartRight{display:flex;gap:8px;align-items:center}
-    .oddInput{
-      width:86px;
-      padding:10px 10px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.18);
-      color: rgba(255,255,255,.92);
-      font-weight:1000;
-      text-align:center;
-      outline:none;
+
+    .meta{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color: rgba(255,255,255,.80);
+      font-weight: 800;
+      font-size: 11px;
+      margin-bottom: 8px;
     }
-    .rmBtn{
-      padding:10px 10px;
-      border-radius:12px;
-      border:1px solid rgba(255,74,74,.28);
-      background: rgba(255,74,74,.10);
-      color: rgba(255,220,220,.92);
-      font-weight:1000;
-      cursor:pointer;
+    .meta .smallDot{
+      width:9px; height:9px; border-radius:99px;
+      background: rgba(0,195,255,.7);
+      box-shadow: 0 0 0 4px rgba(0,195,255,.14);
     }
 
-    .printBtn{
-      width:100%;
-      margin-top:12px;
-      padding:14px 14px;
-      border-radius:14px;
-      border:1px solid rgba(255,180,0,.45);
-      background: linear-gradient(180deg, rgba(255,160,0,.95), rgba(255,110,0,.85));
-      color:#1b0f05;
-      font-weight:1000;
-      cursor:pointer;
-      box-shadow: 0 18px 45px rgba(255,120,0,.25);
+    .teams{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size: 14px;
+      font-weight: 900;
     }
-    .note{margin-top:10px;font-size:11px;color:rgba(255,255,255,.60);line-height:1.35}
-    .err{
-      margin-top:10px;
-      padding:10px 12px;
-      border-radius:14px;
-      border:1px solid rgba(255,74,74,.28);
-      background: rgba(255,74,74,.10);
-      color: rgba(255,220,220,.92);
-      font-size:12px;
+    .teams .vs{ color: rgba(255,255,255,.45); font-weight: 900; }
+    .crest{
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      flex: 0 0 auto;
+    }
+    .crest img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display:block;
+      background: rgba(0,0,0,0);
+    }
+    .crestFallback{
+      font-size: 11px;
+      font-weight: 900;
+      color: rgba(255,255,255,.85);
+    }
+
+    .slotPill{
+      margin-left: 10px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 6px 9px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.07);
+      font-size: 11px;
+      font-weight: 900;
+      color: rgba(255,255,255,.86);
+      white-space:nowrap;
+    }
+
+    .eventCount{
+      color: rgba(255,255,255,.65);
+      font-size: 11px;
+      font-weight: 800;
+      white-space:nowrap;
+      margin-top: 2px;
+    }
+
+    .markets{
+      margin-top: 10px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .mkt{
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+      min-height: 110px;
+    }
+
+    .mkt .lbl{
+      font-weight: 900;
+      font-size: 12px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:8px;
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding: 5px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.10);
+      color: rgba(255,255,255,.86);
+      font-weight: 900;
+      font-size: 11px;
+      white-space:nowrap;
+    }
+    .tag.mid{ background: rgba(243,194,75,.10); border-color: rgba(243,194,75,.25); }
+    .tag.low{ background: rgba(255,75,92,.10); border-color: rgba(255,75,92,.25); }
+
+    .mHint{
+      color: rgba(255,255,255,.68);
+      font-size: 11px;
+      line-height: 1.25;
+      min-height: 30px;
+    }
+
+    .mActions{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      justify-content:space-between;
+      margin-top:auto;
+    }
+    .miniBtn{
+      cursor:pointer;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.07);
+      color: rgba(255,255,255,.90);
+      padding: 8px 10px;
+      border-radius: 12px;
+      font-weight: 900;
+      font-size: 12px;
+      flex: 1;
+      text-align:center;
+      user-select:none;
+    }
+    .miniBtn:hover{ background: rgba(255,255,255,.10); }
+    .miniBtn.ghost{
+      flex: .95;
+      background: rgba(0,0,0,.18);
+    }
+
+    /* ANGOLO SPECIALE - PULITO */
+    .special{
+      margin-top: 12px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.16);
+      padding: 12px;
+    }
+    .specialHead{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom: 10px;
+    }
+    .specialHead b{
+      font-size: 12px;
+      letter-spacing:.2px;
+    }
+    .specialHead small{
+      color: rgba(255,255,255,.65);
+      font-weight: 800;
+      font-size: 11px;
+    }
+    .specialGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .spItem{
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      padding: 10px;
+    }
+    .spItem b{
+      font-size: 12px;
+      display:block;
+      margin-bottom: 6px;
+    }
+    .spRow{
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+    .spRow .line1{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      justify-content:space-between;
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .spRow .line2{
+      margin-top: 6px;
+      font-size: 11px;
+      color: rgba(255,255,255,.78);
+      line-height: 1.25;
+    }
+    .spTags{
+      margin-top: 7px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      align-items:center;
+    }
+    .spTag{
+      display:inline-flex;
+      align-items:center;
+      padding: 5px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      font-size: 11px;
+      font-weight: 900;
+      color: rgba(255,255,255,.86);
+      white-space:nowrap;
+    }
+    .spTag.mid{ background: rgba(243,194,75,.10); border-color: rgba(243,194,75,.25); }
+    .spTag.low{ background: rgba(255,75,92,.10); border-color: rgba(255,75,92,.25); }
+
+    /* SCHEDINA */
+    .slipGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+    .field label{
+      font-size: 11px;
+      color: rgba(255,255,255,.70);
+      font-weight: 800;
+    }
+    input, select{
+      width:100%;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.20);
+      color: rgba(255,255,255,.92);
+      padding: 10px 10px;
+      font-weight: 900;
+      outline:none;
+    }
+    input::placeholder{ color: rgba(255,255,255,.40); }
+    .slipList{
+      margin-top: 12px;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+    .pick{
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.16);
+      padding: 10px;
+    }
+    .pickTop{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      font-weight: 900;
+      font-size: 12px;
+    }
+    .pickSub{
+      margin-top: 6px;
+      font-size: 11px;
+      color: rgba(255,255,255,.75);
+      line-height:1.2;
+    }
+    .pickRow{
+      margin-top: 10px;
+      display:flex;
+      gap:8px;
+      align-items:center;
+    }
+    .pickRow input{
+      padding: 9px 10px;
+      font-size: 12px;
+      border-radius: 12px;
+    }
+    .rm{
+      cursor:pointer;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,75,92,.10);
+      color: rgba(255,255,255,.92);
+      font-weight: 900;
+      padding: 9px 10px;
+      user-select:none;
+      white-space:nowrap;
+    }
+
+    .bigHint{
+      margin-top: 10px;
+      font-size: 11px;
+      color: rgba(255,255,255,.70);
+      line-height: 1.25;
     }
 
     /* MODAL */
-    .modal{
-      position:fixed; inset:0;
+    .modalBack{
+      position: fixed;
+      inset:0;
       background: rgba(0,0,0,.55);
       display:none;
       align-items:center;
       justify-content:center;
-      padding:16px;
-      z-index:9999;
-      backdrop-filter: blur(6px);
+      padding: 18px;
+      z-index: 50;
+      backdrop-filter: blur(4px);
     }
-    .modal.open{display:flex}
-    .modalCard{
-      width:min(920px, 100%);
-      border-radius:22px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(10,12,18,.85);
-      box-shadow: 0 40px 120px rgba(0,0,0,.55);
+    .modal{
+      width: min(900px, 96vw);
+      border-radius: 22px;
+      background: rgba(20,22,36,.92);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 22px 90px rgba(0,0,0,.55);
       overflow:hidden;
-      position:relative;
     }
-    .modalTop{
-      padding:12px 14px;
-      display:flex;align-items:center;justify-content:space-between;gap:10px;
-      border-bottom:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
+    .modalHead{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,.06);
+      border-bottom: 1px solid rgba(255,255,255,.10);
     }
-    .modalTop b{font-size:13px}
-    .xBtn{
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(0,0,0,.22);
-      color:rgba(255,255,255,.92);
-      border-radius:12px;
-      padding:10px 12px;
+    .modalHead b{ font-size: 13px; }
+    .close{
       cursor:pointer;
-      font-weight:1000;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      padding: 8px 10px;
+      font-weight: 900;
     }
     .modalBody{
+      padding: 16px;
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap:14px;
-      padding:14px;
+      gap: 14px;
     }
-    @media (max-width: 860px){
-      .modalBody{grid-template-columns:1fr}
+    .panel{
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.16);
+      padding: 14px;
+    }
+    .panel h4{
+      margin:0 0 10px 0;
+      font-size: 12px;
+      letter-spacing:.2px;
     }
 
-    /* RUOTA */
-    .wheelWrap{
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:18px;
-      background: rgba(0,0,0,.22);
-      padding:14px;
+    canvas{ width:100%; height:auto; display:block; }
+
+    .resultBox{
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      padding: 12px;
+    }
+    .resultBox b{ display:block; font-size: 12px; margin-bottom: 6px; }
+    .resultBox p{ margin:0; color: rgba(255,255,255,.85); font-weight: 900; }
+
+    /* QUIZ */
+    .q{
       display:flex;
       flex-direction:column;
-      align-items:center;
-      gap:12px;
-      position:relative;
-      overflow:hidden;
+      gap: 10px;
     }
-    .wheel{
-      width:320px;height:320px;
-      border-radius:50%;
-      border:10px solid rgba(255,255,255,.08);
-      background:
-        conic-gradient(
-          rgba(255,140,0,.85) 0 45deg,
-          rgba(0,210,255,.35) 45deg 90deg,
-          rgba(255,74,74,.35) 90deg 135deg,
-          rgba(76,255,122,.30) 135deg 180deg,
-          rgba(140,70,255,.35) 180deg 225deg,
-          rgba(255,200,120,.40) 225deg 270deg,
-          rgba(0,0,0,.18) 270deg 315deg,
-          rgba(255,255,255,.06) 315deg 360deg
-        );
-      box-shadow: 0 30px 80px rgba(0,0,0,.55);
-      transform: rotate(0deg);
-      transition: transform 2.9s cubic-bezier(.14,.9,.12,1);
-      position:relative;
-      overflow:hidden;
-    }
-    .wheel::after{
-      content:"";
-      position:absolute; inset:0;
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.18), transparent 60%);
-      pointer-events:none;
-    }
-    .pin{
-      width:0;height:0;
-      border-left:14px solid transparent;
-      border-right:14px solid transparent;
-      border-bottom:24px solid rgba(255,255,255,.92);
-      filter: drop-shadow(0 8px 12px rgba(0,0,0,.45));
-      margin-top:-6px;
-    }
-    .spinRow{display:flex;gap:10px;width:100%}
-    .spinBtn{
-      flex:1;
-      padding:12px 12px;
-      border-radius:14px;
-      border:1px solid rgba(255,180,0,.45);
-      background: linear-gradient(180deg, rgba(255,160,0,.95), rgba(255,110,0,.85));
-      color:#1b0f05;
-      font-weight:1000;
+    .q b{ font-size: 12px; }
+    .q .opt{
       cursor:pointer;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      padding: 10px;
+      font-weight: 900;
+      font-size: 12px;
+      user-select:none;
     }
-    .spinBtn.alt{
-      border-color: rgba(255,255,255,.16);
-      background: rgba(255,255,255,.08);
-      color: rgba(255,255,255,.92);
-    }
-    .resultBox{
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:18px;
-      background: rgba(0,0,0,.22);
-      padding:14px;
-    }
-    .resultBox h4{margin:0 0 8px 0;font-size:13px}
-    .result{
-      padding:12px 12px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      color:rgba(255,255,255,.88);
-      font-weight:1000;
-      line-height:1.25;
-      min-height:50px;
-      display:flex;align-items:center;
-      position:relative;
-      overflow:hidden;
-    }
-    .pop{
-      animation: pop .35s ease-out;
-    }
-    @keyframes pop{
-      0%{transform:scale(.96);opacity:.7}
-      100%{transform:scale(1);opacity:1}
-    }
-    .small{font-size:11px;color:rgba(255,255,255,.65);line-height:1.35;margin-top:10px}
+    .q .opt:hover{ background: rgba(255,255,255,.08); }
 
-    /* CONFETTI */
-    .confetti{
-      position:absolute;
-      width:10px;height:14px;
-      border-radius:3px;
-      opacity:.9;
-      top:-20px;
-      animation: fall 1.1s linear forwards;
-    }
-    @keyframes fall{
-      to{ transform: translateY(420px) rotate(240deg); opacity:0; }
-    }
-
-    @media print{
-      body{background:#fff;color:#000}
-      .wrap{margin:0;max-width:100%;padding:0}
-      .shell{box-shadow:none;border:none;border-radius:0}
-      .topbar,.left .toolbar,.special,.modal{display:none !important}
-      .grid{grid-template-columns:1fr;padding:0}
-      .left{display:none !important}
+    /* Responsive */
+    @media (max-width: 980px){
+      .grid{ grid-template-columns: 1fr; }
+      .specialGrid{ grid-template-columns: 1fr; }
+      .modalBody{ grid-template-columns: 1fr; }
+      .markets{ grid-template-columns: 1fr; }
     }
   </style>
 </head>
 
 <body>
   <div class="wrap">
-    <div class="shell">
-
-      <div class="topbar">
-        <div class="brand">
-          <div class="logoBadge"><div class="logoText">vincitù</div></div>
-          <div class="brandTitle">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">
+          <div class="logo-badge"><span>v</span></div>
+          <div class="logo-title">
             <b>Vincitù • IA Portal</b>
-            <span>Eventi reali • quote non mostrate: si inseriscono al banco</span>
+            <small>Eventi reali • quote non mostrate: si inseriscono al banco</small>
           </div>
-        </div>
-
-        <div class="chips">
-          <div class="chip"><span class="dot"></span> Centro: <b id="centerChip" style="color:rgba(255,255,255,.92)">VINC001</b></div>
-          <div class="chip">Agg.: <b id="updatedChip" style="color:rgba(255,255,255,.92)">—</b></div>
-          <div class="chip">Fascia: <b id="slotChip" style="color:rgba(255,255,255,.92)">Sera</b></div>
-          <button class="btn" id="btnWheel">🎡 Ruota</button>
-          <button class="btn" id="btnQuiz">🧠 Quiz</button>
-        </div>
-
-        <div class="motto">
-          <span class="tag">🧠 Modalità cliente</span>
-          <span id="mottoText">Carica la schedina: scegli, verifica al banco, stampa.</span>
-          <b id="mottoStrong">Pochi step, grande controllo.</b>
-          <span class="pill">Missione: <b id="missionText">Max 2 selezioni</b></span>
-          <span class="pill">Sfida: <b id="timerText">20s focus</b></span>
         </div>
       </div>
 
-      <div class="grid">
-        <div class="card left">
-          <h3>⚡ Eventi (IA) <span class="pill">Quote: <b>verifica al banco</b></span></h3>
+      <div class="statusRow">
+        <span class="pill"><span class="dot"></span>Centro: <span id="centerName" style="opacity:.92;margin-left:4px">VINC001</span></span>
+        <span class="pill">Agg: <span id="updatedAt" style="opacity:.92;margin-left:4px">—</span></span>
+        <span class="pill">Fascia: <span id="slotName" style="opacity:.92;margin-left:4px">—</span></span>
+        <button class="btn" id="btnWheel">🎡 Ruota</button>
+        <button class="btn" id="btnQuiz">🧠 Quiz</button>
+      </div>
+    </div>
 
-          <div class="toolbar">
-            <button class="btn btnPrimary" id="btnNew">🧠 Nuovi eventi</button>
+    <div class="grid">
+      <!-- SINISTRA -->
+      <div class="card">
+        <div class="toolbar">
+          <div class="left">
+            <button class="btn btn-accent" id="btnReload">⚡ Nuovi eventi</button>
             <button class="btn" id="btnSlot">🕒 Cambia fascia</button>
-            <button class="btn" id="btnTimer">⏱️ Start 20s</button>
-            <span class="pill">Eventi mostrati: <b id="count">0</b>/5</span>
           </div>
-
-          <!-- ANGLO SPECIALE -->
-          <div class="special">
-            <div class="specialHead">
-              <b>📌 Angolo Speciale • Corner & Ammonizioni (Alta probabilità)</b>
-              <span class="pill">Selezioni “di sala” • senza quote</span>
-            </div>
-            <div class="specialGrid">
-              <div class="spItem" id="spCorners">
-                <b>🚩 Corner consigliati</b>
-                <span>Carico…</span>
-              </div>
-              <div class="spItem" id="spCards">
-                <b>🟨 Ammonizioni consigliate</b>
-                <span>Carico…</span>
-              </div>
-            </div>
-            <div class="note" style="margin-top:10px">
-              Nota: sono indicazioni basate su “ritmo/agonismo” stimati. La quota reale va sempre verificata al banco.
-            </div>
-          </div>
-
-          <div id="events"></div>
-          <div id="err" class="err" style="display:none;"></div>
-
-          <div class="note">
-            Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+          <div class="right">
+            <span class="badge">Quote: verifica al banco</span>
+            <span class="badge" id="countShown">Eventi mostrati: —</span>
           </div>
         </div>
 
-        <div class="card right">
-          <h3>🧾 Schedina</h3>
-
-          <div class="row">
-            <div style="flex:1">
-              <label style="font-size:12px;color:var(--muted)">Stake (€)</label>
-              <input id="stake" class="input" type="number" value="5" min="1" step="1" />
+        <!-- ANGOLO SPECIALE (pulito) -->
+        <div class="special" id="specialBox" style="display:none">
+          <div class="specialHead">
+            <b>📌 Angolo Speciale • Corner & Cartellini (top 2)</b>
+            <small>Motivazione corta + 3 segnali</small>
+          </div>
+          <div class="specialGrid">
+            <div class="spItem" id="spCorners">
+              <b>🚩 Corner Top 2</b>
+              <span style="color:rgba(255,255,255,.75);font-size:11px;font-weight:800">Carico…</span>
             </div>
-            <div style="flex:1">
-              <label style="font-size:12px;color:var(--muted)">Tipo</label>
-              <select id="type">
-                <option value="multiple">Multipla (tutte)</option>
-              </select>
+            <div class="spItem" id="spCards">
+              <b>🟨 Cartellini Top 2</b>
+              <span style="color:rgba(255,255,255,.75);font-size:11px;font-weight:800">Carico…</span>
             </div>
           </div>
-
-          <div class="kpi">
-            <div class="box">Selezioni<b id="kSel">0</b></div>
-            <div class="box">Quota totale<b id="kOdd">—</b></div>
-            <div class="box">Vincita pot.<b id="kWin">—</b></div>
-          </div>
-
-          <div class="cart">
-            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px">
-              <div style="font-weight:1000;font-size:12px;color:rgba(255,255,255,.88)">✅ Selezioni</div>
-              <div class="pill" style="margin:0">✍️ Inserisci quota reale</div>
-            </div>
-            <div id="cartList" style="min-height:34px;color:rgba(255,255,255,.70);font-size:12px">
-              Nessuna selezione. Aggiungi una giocata a sinistra.
-            </div>
-          </div>
-
-          <button class="printBtn" id="btnPrint">🖨️ Stampa schedina</button>
-
-          <div class="note" id="rightNote">
-            Suggerimento: fai 2–3 selezioni massimo per mantenere controllo.
+          <div class="subnote" style="margin-top:10px">
+            Nota: sono indicazioni basate su segnali stimati (ritmo/equilibrio/fisicità). La quota reale va sempre verificata al banco.
           </div>
         </div>
+
+        <div id="errBox" class="subnote" style="display:none; padding:10px 12px;border-radius:14px;border:1px solid rgba(255,75,92,.25);background:rgba(255,75,92,.08)"></div>
+
+        <div class="events" id="events"></div>
+
+        <div class="subnote" style="margin-top: 12px">
+          Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+        </div>
+      </div>
+
+      <!-- DESTRA -->
+      <div class="card">
+        <h3>🧾 Schedina</h3>
+
+        <div class="slipGrid">
+          <div class="field">
+            <label>Stake (€)</label>
+            <input id="stake" type="number" min="0" step="0.5" value="5" />
+          </div>
+
+          <div class="field">
+            <label>Tipo</label>
+            <select id="type">
+              <option value="multipla">Multipla (tutte)</option>
+              <option value="singola">Singola</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label>Selezioni</label>
+            <input id="selCount" value="0" disabled />
+          </div>
+
+          <div class="field">
+            <label>Quota totale</label>
+            <input id="totalOdd" value="—" disabled />
+          </div>
+
+          <div class="field">
+            <label>Vincita pot.</label>
+            <input id="potWin" value="—" disabled />
+          </div>
+
+          <div class="field">
+            <label>Azioni</label>
+            <button class="btn btn-accent btn-big" id="btnPrint">🖨️ Stampa schedina</button>
+          </div>
+        </div>
+
+        <div class="bigHint" id="slipHint">
+          Nessuna selezione. Aggiungi una giocata a sinistra e poi inserisci la <b>quota reale</b> (dal banco) qui in schedina.
+        </div>
+
+        <div class="slipList" id="slipList"></div>
       </div>
     </div>
   </div>
 
   <!-- MODAL RUOTA -->
-  <div class="modal" id="wheelModal" aria-hidden="true">
-    <div class="modalCard">
-      <div class="modalTop">
+  <div class="modalBack" id="wheelBack">
+    <div class="modal">
+      <div class="modalHead">
         <b>🎡 Ruota della Fortuna (consigli & missioni)</b>
-        <button class="xBtn" id="btnCloseWheel">Chiudi ✖</button>
+        <div class="close" data-close="wheelBack">Chiudi ✕</div>
       </div>
       <div class="modalBody">
-        <div class="wheelWrap" id="wheelWrap">
-          <div class="pin"></div>
-          <div class="wheel" id="wheel"></div>
-
-          <div class="spinRow">
-            <button class="spinBtn" id="btnSpinDaily">Gira (oggi)</button>
-            <button class="spinBtn alt" id="btnSpinDemo">Gira demo</button>
+        <div class="panel">
+          <h4>Gira la ruota</h4>
+          <canvas id="wheelCanvas" width="520" height="520"></canvas>
+          <button class="btn btn-accent btn-big" id="spinBtn" style="margin-top:12px">Gira la ruota</button>
+          <div class="subnote" id="spinNote" style="margin-top:10px">
+            1 giro al giorno su questo PC. Solo intrattenimento, gioco responsabile.
           </div>
-
-          <div class="small" id="wheelInfo">1 giro ufficiale al giorno + demo illimitata (intrattenimento, gioco responsabile).</div>
         </div>
-
-        <div class="resultBox">
+        <div class="panel">
           <h4>🎁 Risultato</h4>
-          <div class="result" id="wheelResult">Premi un pulsante per ottenere un consiglio bonus.</div>
-          <div class="small">Suggerimento: usa la ruota per rendere l’esperienza più divertente per i clienti.</div>
+          <div class="resultBox">
+            <b id="wheelTitle">In attesa…</b>
+            <p id="wheelText">Gira la ruota per ricevere una missione semplice e utile.</p>
+          </div>
+          <div class="subnote" id="wheelMeta" style="margin-top:10px">
+            Suggerimento: poche selezioni = più controllo.
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- MODAL QUIZ -->
-  <div class="modal" id="quizModal" aria-hidden="true">
-    <div class="modalCard">
-      <div class="modalTop">
-        <b>🧠 Quiz rapido (in sala)</b>
-        <button class="xBtn" id="btnCloseQuiz">Chiudi ✖</button>
+  <div class="modalBack" id="quizBack">
+    <div class="modal">
+      <div class="modalHead">
+        <b>🧠 Quiz veloce (30 secondi)</b>
+        <div class="close" data-close="quizBack">Chiudi ✕</div>
       </div>
-      <div style="padding:14px">
-        <div class="result" id="quizQ" style="margin-bottom:12px">Domanda…</div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <button class="btn btnPrimary" id="quizA">A</button>
-          <button class="btn btnPrimary" id="quizB">B</button>
-          <button class="btn" id="quizNext">↻ Nuova domanda</button>
+      <div class="modalBody">
+        <div class="panel">
+          <h4>Domanda</h4>
+          <div class="q" id="quizBox"></div>
         </div>
-        <div class="note" id="quizHint" style="margin-top:12px">Gioco leggero: serve solo a intrattenere.</div>
+        <div class="panel">
+          <h4>🎯 Feedback</h4>
+          <div class="resultBox">
+            <b id="quizTitle">Pronto?</b>
+            <p id="quizText">Rispondi: l’obiettivo è giocare con controllo.</p>
+          </div>
+          <div class="subnote" style="margin-top:10px">
+            Mini-regola: se sei indeciso → abbassa stake o salta.
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-<script>
-  const qs = new URLSearchParams(location.search);
-  const center = (qs.get("c") || "VINC001").toUpperCase();
-  let slot = (qs.get("slot") || "evening").toLowerCase();
-  let seed = parseInt(qs.get("v") || (Date.now() % 100000), 10);
-
-  const slotLabel = (s)=> s==="morning" ? "Mattina" : s==="afternoon" ? "Pomeriggio" : "Sera";
-  const slotIT = (it)=> it==="mattina" ? "Mattina" : it==="pomeriggio" ? "Pomeriggio" : "Sera";
-
-  document.getElementById("centerChip").textContent = center;
-  document.getElementById("slotChip").textContent = slotLabel(slot);
-
-  const elEvents = document.getElementById("events");
-  const elErr = document.getElementById("err");
-
-  function mulberry32(a){
-    return function(){
-      let t = a += 0x6D2B79F5;
-      t = Math.imul(t ^ t >>> 15, t | 1);
-      t ^= t + Math.imul(t ^ t >>> 7, t | 61);
-      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  <script>
+    // =====================
+    // Utils
+    // =====================
+    function escapeHtml(s){
+      return String(s ?? "").replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+      }[m]));
     }
-  }
-  function hash(s){
-    let h = 2166136261;
-    for(let i=0;i<s.length;i++){
-      h ^= s.charCodeAt(i);
-      h = Math.imul(h, 16777619);
+    function euro(n){
+      const x = Number(n);
+      if(!isFinite(x)) return "—";
+      return x.toLocaleString("it-IT", {minimumFractionDigits:2, maximumFractionDigits:2});
     }
-    return (h>>>0);
-  }
-  function clamp(x,a,b){ return Math.max(a, Math.min(b, x)); }
+    function toNum(v){
+      const x = Number(String(v ?? "").replace(",", "."));
+      return isFinite(x) ? x : NaN;
+    }
+    function todayKey(){
+      const d = new Date();
+      return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+    }
 
-  // ===== MOTTO / MISSIONE =====
-  const MOTTO = [
-    { t:"Scegli, verifica al banco, stampa: semplice e pulito.", b:"Poche selezioni = più controllo." },
-    { t:"Se una cosa non ti convince… saltala.", b:"La miglior giocata è quella che capisci." },
-    { t:"Stake fisso: niente corse dietro alle perdite.", b:"Calma oggi, più continuità domani." },
-    { t:"Prima la quota reale, poi la schedina.", b:"Verifica sempre al banco." },
-    { t:"Una giocata fatta bene vale più di tre a caso.", b:"Qualità > quantità." }
-  ];
-  function bumpMotto(){
-    const r = Math.floor((Date.now()/1000) % MOTTO.length);
-    document.getElementById("mottoText").textContent = MOTTO[r].t;
-    document.getElementById("mottoStrong").textContent = MOTTO[r].b;
-  }
-  const MISSIONS = [
-    "Max 2 selezioni",
-    "Stake fisso (5€)",
-    "1 sola giocata “Alta”",
-    "Inserisci tutte le quote reali",
-    "Stampa solo se convinto"
-  ];
-  function missionOfDay(){
-    const d = new Date();
-    const key = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
-    const idx = (hash(key) % MISSIONS.length);
-    document.getElementById("missionText").textContent = MISSIONS[idx];
-  }
+    // =====================
+    // State
+    // =====================
+    const state = {
+      data: null,
+      slot: "sera",
+      center: "VINC001",
+      slip: [], // {key, match, market, tag, home, away, odd}
+    };
 
-  // ===== TIMER 20s =====
-  let timerInt = null;
-  function startTimer(){
-    if(timerInt) clearInterval(timerInt);
-    let left = 20;
-    document.getElementById("timerText").textContent = left + "s focus";
-    timerInt = setInterval(()=>{
-      left--;
-      document.getElementById("timerText").textContent = left + "s focus";
-      if(left<=0){
-        clearInterval(timerInt);
-        timerInt = null;
-        document.getElementById("timerText").textContent = "Bravo! ✅";
-        bumpMotto();
-      }
-    }, 1000);
-  }
-  document.getElementById("btnTimer").addEventListener("click", startTimer);
+    // =====================
+    // Slot handling
+    // =====================
+    const slotLabel = {
+      mattina: "Mattina",
+      pomeriggio: "Pomeriggio",
+      sera: "Sera",
+    };
 
-  // ===== SCHEDINA =====
-  let selected = [];
+    function inferSlotFromNow(){
+      const h = new Date().getHours();
+      if(h >= 6 && h < 12) return "mattina";
+      if(h >= 12 && h < 18) return "pomeriggio";
+      return "sera";
+    }
 
-  function escapeHtml(s){
-    return String(s || "").replace(/[&<>"']/g, (m)=>({
-      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
-    }[m]));
-  }
-  function badgeClass(tag){
-    const x = (tag||"").toLowerCase();
-    if(x.includes("alta")) return "high";
-    if(x.includes("media")) return "mid";
-    return "low";
-  }
-  function totalOdd(){
-    let acc = 1;
-    let okCount = 0;
-    for(const s of selected){
-      const o = Number(String(s.odd||"").replace(",", "."));
-      if(Number.isFinite(o) && o > 1){
-        acc *= o;
-        okCount++;
+    // =====================
+    // Fetch events.json
+    // =====================
+    async function loadEvents(){
+      const errBox = document.getElementById("errBox");
+      errBox.style.display = "none";
+      errBox.textContent = "";
+
+      try{
+        const bust = `v=${Date.now()}`;
+        const res = await fetch(`./events.json?${bust}`, {cache:"no-store"});
+        if(!res.ok) throw new Error("Impossibile caricare events.json");
+        const json = await res.json();
+        state.data = json;
+
+        document.getElementById("updatedAt").textContent = json.updated_at || "—";
+        document.getElementById("centerName").textContent = state.center;
+
+        const savedSlot = localStorage.getItem("vincitu_slot");
+        state.slot = savedSlot || inferSlotFromNow();
+        document.getElementById("slotName").textContent = slotLabel[state.slot] || state.slot;
+
+        renderAll();
+      }catch(e){
+        errBox.style.display = "block";
+        errBox.textContent = `Errore: events.json non caricato. Dettaglio: ${e.message || e}`;
+        document.getElementById("events").innerHTML = "";
+        document.getElementById("countShown").textContent = "Eventi mostrati: 0";
+        document.getElementById("updatedAt").textContent = "—";
       }
     }
-    return { acc, okCount };
-  }
-  function updateKPI(){
-    const stake = parseFloat(document.getElementById("stake").value || "0");
-    document.getElementById("kSel").textContent = String(selected.length);
-    const {acc, okCount} = totalOdd();
-    if(selected.length && okCount === selected.length){
-      document.getElementById("kOdd").textContent = acc.toFixed(2);
-      document.getElementById("kWin").textContent = (stake * acc).toFixed(2);
-    }else{
-      document.getElementById("kOdd").textContent = "—";
-      document.getElementById("kWin").textContent = "—";
+
+    // =====================
+    // Crests
+    // =====================
+    function crestHtml(url, fallback){
+      if(url){
+        return `<span class="crest"><img src="${escapeHtml(url)}" alt="" onerror="this.parentNode.innerHTML='<span class=\\'crestFallback\\'>${escapeHtml(fallback)}</span>'"></span>`;
+      }
+      return `<span class="crest"><span class="crestFallback">${escapeHtml(fallback)}</span></span>`;
     }
-  }
-  function renderCart(){
-    const box = document.getElementById("cartList");
-    if(!selected.length){
-      box.innerHTML = "Nessuna selezione. Aggiungi una giocata a sinistra.";
-      updateKPI();
-      return;
+
+    // =====================
+    // Tags (Alta/Media/Bassa)
+    // =====================
+    function tagCls(tag){
+      const t = (tag||"").toLowerCase();
+      if(t.includes("alta")) return "";
+      if(t.includes("media")) return "mid";
+      return "low";
     }
-    box.innerHTML = "";
-    selected.forEach((s, idx)=>{
-      const row = document.createElement("div");
-      row.className = "cartItem";
-      row.innerHTML = `
-        <div class="cartLeft">
-          <b>${idx+1}) ${escapeHtml(s.match)} • <span style="color:rgba(255,200,120,.95)">${escapeHtml(s.market)}</span></b>
-          <span>${escapeHtml(s.note || "Verifica quota reale al banco prima di confermare.")}</span>
-        </div>
-        <div class="cartRight">
-          <input class="oddInput" inputmode="decimal" placeholder="Quota" value="${s.odd ? String(s.odd) : ""}" />
-          <button class="rmBtn" title="Rimuovi">✖</button>
-        </div>
-      `;
-      row.querySelector(".oddInput").addEventListener("input", (e)=>{
-        const v = (e.target.value || "").replace(",", ".");
-        selected[idx].odd = v;
-        updateKPI();
-      });
-      row.querySelector(".rmBtn").addEventListener("click", ()=>{
-        selected.splice(idx,1);
-        renderCart();
-      });
-      box.appendChild(row);
-    });
-    updateKPI();
-  }
-  function addPick(ev, market){
-    const key = `${ev.id}__${market.label}`;
-    if(selected.some(x => x.id === key)) return;
-    selected.push({
-      id: key,
-      match: `${ev.home} - ${ev.away}`,
-      market: market.label || "Mercato",
-      note: market.note || ev.tip || "Verifica quota reale al banco e inseriscila qui.",
-      tag: market.tag || "Media",
-      odd: ""
-    });
-    renderCart();
-  }
 
-  function abbr(name, short){
-    const s = (short || "").trim();
-    if(s) return escapeHtml(s.slice(0,3).toUpperCase());
-    const n = String(name||"").replace(/[^A-Za-zÀ-ž ]/g,"").trim().split(/\s+/);
-    const a = (n[0]||"X")[0] || "X";
-    const b = (n.length>1 ? n[n.length-1][0] : ((n[0]||"Y")[1] || "Y"));
-    return escapeHtml((a+b).toUpperCase());
-  }
-  function crestOrBadge(url, short, name){
-    const safeUrl = (url || "").trim();
-    if(safeUrl){
-      const alt = (short || name || "Team");
-      return `
-        <img class="crest" src="${safeUrl}" alt="${escapeHtml(alt)}"
-             onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<span class=\\'teamBadge\\'>${abbr(name, short)}</span>')">
-      `;
+    // =====================
+    // Special (Corner / Cartellini) - pulito
+    // =====================
+    function spTag(label, cls=""){
+      return `<span class="spTag ${cls}">${escapeHtml(label)}</span>`;
     }
-    return `<span class="teamBadge">${abbr(name, short)}</span>`;
-  }
+    function lvlToCls(lvl){
+      const t = (lvl||"").toLowerCase();
+      if(t.includes("alta")) return "";
+      if(t.includes("media")) return "mid";
+      return "low";
+    }
 
-  const flagEmoji = (cc)=>{
-    const map = { IT:"🇮🇹", EN:"🏴", ES:"🇪🇸", FR:"🇫🇷", DE:"🇩🇪", NL:"🇳🇱", PT:"🇵🇹", SE:"🇸🇪", TR:"🇹🇷", PL:"🇵🇱", GR:"🇬🇷", CH:"🇨🇭" };
-    return map[cc] || "🌍";
-  };
+    function renderSpecial(allEvents){
+      const specialBox = document.getElementById("specialBox");
+      const cornersBox = document.getElementById("spCorners");
+      const cardsBox = document.getElementById("spCards");
 
-  function spTagClass(score){
-    if(score >= 0.74) return "";
-    if(score >= 0.54) return "mid";
-    return "low";
-  }
-  function spTagText(score){
-    if(score >= 0.74) return "Alta";
-    if(score >= 0.54) return "Media";
-    return "Bassa";
-  }
+      const scored = (allEvents||[])
+        .filter(e => e && e.context && e.context.signals)
+        .map(e => ({
+          e,
+          corners: Number(e.context.corners || 0),
+          cards: Number(e.context.cards || 0),
+          sig: e.context.signals,
+          rc: e.context.reason_corner || "Verifica al banco.",
+          ry: e.context.reason_cards || "Verifica al banco."
+        }));
 
-  // ===== Angolo Speciale: sceglie top match da tutti gli eventi =====
-  function renderSpecial(allEvents){
-    const cornersBox = document.getElementById("spCorners");
-    const cardsBox = document.getElementById("spCards");
+      if(!scored.length){
+        specialBox.style.display = "none";
+        return;
+      }
 
-    const scored = allEvents
-      .filter(e => e && e.context)
-      .map(e => ({
-        e,
-        c: Number(e.context.corners ?? 0),
-        y: Number(e.context.cards ?? 0),
-        fav: e.context.fav || "balanced"
-      }));
+      specialBox.style.display = "block";
 
-    // Top 3 corner
-    const topC = scored
-      .slice()
-      .sort((a,b)=> b.c - a.c)
-      .slice(0,3);
+      const topCorners = scored.slice().sort((a,b)=>b.corners-a.corners).slice(0,2);
+      const topCards   = scored.slice().sort((a,b)=>b.cards-a.cards).slice(0,2);
 
-    // Top 3 cards
-    const topY = scored
-      .slice()
-      .sort((a,b)=> b.y - a.y)
-      .slice(0,3);
+      function row(item, kind){
+        const e = item.e;
+        const s = item.sig;
 
-    function mkList(items, kind){
-      if(!items.length) return "<span>Nessun dato disponibile.</span>";
+        const ritmo = `Ritmo: ${s.ritmo}`;
+        const eq = s.equilibrio;
+        const fis = `Fisicità: ${s.fisicita}`;
 
-      return items.map(({e, c, y, fav}, i)=>{
-        const score = kind==="c" ? c : y;
-        const tag = spTagText(score);
-        const cls = spTagClass(score);
-
-        // Motivazioni realistiche
-        let note = "";
-        if(kind==="c"){
-          note = score>=0.74
-            ? "Ritmo alto + pressione: corner probabili. Preferisci linee “moderate” (es. 8.5/9.5) se la quota è giusta."
-            : score>=0.54
-              ? "Possibili corner: valuta se una squadra spinge molto. Verifica linea al banco."
-              : "Corner non garantiti: scegli solo se ti convince davvero.";
-        }else{
-          note = score>=0.74
-            ? "Gara fisica/agonistica: cartellini probabili. Buona per Over cartellini se quota ok."
-            : score>=0.54
-              ? "Qualche cartellino possibile: dipende da ritmo e pressione. Verifica linea al banco."
-              : "Cartellini non scontati: meglio evitare se sei indeciso.";
-        }
-
-        // Evita frasi “tranquille” se away favorita
-        if(kind==="c" && fav==="away" && score>=0.54){
-          note = "Ospiti favoriti: corner spesso da pressione della sfavorita. Valuta con prudenza e quota giusta.";
-        }
-
-        const marketLabel = (kind==="c") ? "Corner (indicativo)" : "Cartellini (indicativo)";
+        const clsR = lvlToCls(s.ritmo);
+        const clsF = lvlToCls(s.fisicita);
+        const reason = (kind==="c") ? item.rc : item.ry;
 
         return `
-          <div style="margin-top:10px;border-top:1px solid rgba(255,255,255,.10);padding-top:10px">
-            <b>${i+1}) ${escapeHtml(e.home)} - ${escapeHtml(e.away)}</b>
-            <span>${marketLabel} • ${escapeHtml(e.start || "")}</span>
-            <span>${note}</span>
-            <div class="spTag ${cls}">${tag} • verifica al banco</div>
+          <div class="spRow">
+            <div class="line1">
+              <span>${escapeHtml(e.home)} <span style="opacity:.5">-</span> ${escapeHtml(e.away)}</span>
+              <span style="opacity:.72;font-size:11px">${escapeHtml(e.start || "")}</span>
+            </div>
+            <div class="spTags">
+              ${spTag(ritmo, clsR)}
+              ${spTag(eq, "mid")}
+              ${spTag(fis, clsF)}
+            </div>
+            <div class="line2">${escapeHtml(reason)}</div>
+          </div>
+        `;
+      }
+
+      cornersBox.innerHTML =
+        `<b>🚩 Corner Top 2</b>` +
+        (topCorners.length ? topCorners.map(x => row(x, "c")).join("") : `<span style="color:rgba(255,255,255,.75);font-size:11px;font-weight:800">Nessun dato.</span>`);
+
+      cardsBox.innerHTML =
+        `<b>🟨 Cartellini Top 2</b>` +
+        (topCards.length ? topCards.map(x => row(x, "y")).join("") : `<span style="color:rgba(255,255,255,.75);font-size:11px;font-weight:800">Nessun dato.</span>`);
+    }
+
+    // =====================
+    // Render events list
+    // =====================
+    function renderAll(){
+      const data = state.data;
+      if(!data || !Array.isArray(data.events)){
+        document.getElementById("events").innerHTML = "";
+        document.getElementById("countShown").textContent = "Eventi mostrati: 0";
+        return;
+      }
+
+      document.getElementById("slotName").textContent = slotLabel[state.slot] || state.slot;
+
+      const evs = data.events.filter(e => (e.slot || "").toLowerCase() === state.slot);
+      document.getElementById("countShown").textContent = `Eventi mostrati: ${evs.length} / ${data.counts ? data.counts.total : data.events.length}`;
+
+      // Special uses ALL events (not only slot) to pick best corner/cards, but you can switch to evs if you prefer.
+      renderSpecial(data.events);
+
+      const box = document.getElementById("events");
+      if(!evs.length){
+        box.innerHTML = `
+          <div class="subnote" style="margin-top:10px">
+            Nessun evento in questa fascia. Prova a cambiare fascia.
+          </div>
+        `;
+        return;
+      }
+
+      box.innerHTML = evs.map((e, idx) => {
+        const comp = e.league || "Calcio";
+        const start = e.start || "";
+        const slot = slotLabel[e.slot] || e.slot || "";
+
+        const home = e.home || "Home";
+        const away = e.away || "Away";
+
+        const homeCrest = crestHtml(e.home_crest, (e.home_short || home).slice(0,2).toUpperCase());
+        const awayCrest = crestHtml(e.away_crest, (e.away_short || away).slice(0,2).toUpperCase());
+
+        const markets = Array.isArray(e.markets) ? e.markets : [];
+        const mHtml = markets.slice(0,3).map((m) => {
+          const label = m.label || "Mercato";
+          const tag = m.tag || "Media";
+          const cls = tagCls(tag);
+
+          const key = `${e.uniq || e.id}|${label}`;
+          return `
+            <div class="mkt">
+              <div class="lbl">
+                <span>${escapeHtml(label)}</span>
+                <span class="tag ${cls}">${escapeHtml(tag)}</span>
+              </div>
+              <div class="mHint">Valutazione indicativa • quota reale al banco</div>
+              <div class="mActions">
+                <div class="miniBtn ghost" onclick="verifyAtDesk()">
+                  Verifica al banco
+                </div>
+                <div class="miniBtn" onclick="addPick('${escapeHtml(key)}','${escapeHtml(home)}','${escapeHtml(away)}','${escapeHtml(comp)}','${escapeHtml(start)}','${escapeHtml(label)}','${escapeHtml(tag)}')">
+                  + Aggiungi
+                </div>
+              </div>
+            </div>
+          `;
+        }).join("");
+
+        return `
+          <div class="event">
+            <div class="eventTop">
+              <div style="flex:1">
+                <div class="meta">
+                  <span class="smallDot"></span>
+                  <span>${escapeHtml(comp)}</span>
+                  <span style="opacity:.55">•</span>
+                  <span>${escapeHtml(start)}</span>
+                  <span class="slotPill">${escapeHtml(slot)}</span>
+                </div>
+                <div class="teams">
+                  ${homeCrest}
+                  <span>${escapeHtml(home)}</span>
+                  <span class="vs">-</span>
+                  <span>${escapeHtml(away)}</span>
+                  ${awayCrest}
+                </div>
+              </div>
+              <div class="eventCount">Evento ${idx+1}/${evs.length}</div>
+            </div>
+
+            <div class="markets">
+              ${mHtml}
+            </div>
           </div>
         `;
       }).join("");
     }
 
-    cornersBox.innerHTML = `
-      <b>🚩 Corner consigliati</b>
-      ${mkList(topC, "c")}
-    `;
+    // =====================
+    // Slip
+    // =====================
+    function saveSlip(){
+      localStorage.setItem("vincitu_slip", JSON.stringify(state.slip));
+    }
+    function loadSlip(){
+      try{
+        const s = JSON.parse(localStorage.getItem("vincitu_slip") || "[]");
+        if(Array.isArray(s)) state.slip = s;
+      }catch(_){}
+    }
 
-    cardsBox.innerHTML = `
-      <b>🟨 Ammonizioni consigliate</b>
-      ${mkList(topY, "y")}
-    `;
-  }
+    function addPick(key, home, away, league, start, market, tag){
+      // evita duplicati
+      if(state.slip.some(p => p.key === key)) {
+        flashHint("Già aggiunta in schedina.");
+        return;
+      }
+      state.slip.push({
+        key,
+        home, away, league, start,
+        match: `${home} - ${away}`,
+        market,
+        tag,
+        odd: "" // da inserire
+      });
+      saveSlip();
+      renderSlip();
+      flashHint("Aggiunta! Ora inserisci la quota reale in schedina.");
+    }
 
-  function render(events, updatedAt){
-    document.getElementById("updatedChip").textContent = updatedAt || "—";
-    document.getElementById("count").textContent = String(events.length);
-    elEvents.innerHTML = "";
+    function removePick(key){
+      state.slip = state.slip.filter(p => p.key !== key);
+      saveSlip();
+      renderSlip();
+    }
 
-    events.forEach((ev, idx)=>{
-      const cc = (ev.country_code || "").toUpperCase();
-      const flag = flagEmoji(cc);
+    function updateOdd(key, val){
+      const p = state.slip.find(x => x.key === key);
+      if(!p) return;
+      p.odd = val;
+      saveSlip();
+      renderSlipTotals();
+    }
 
-      const node = document.createElement("div");
-      node.className = "event";
-      node.innerHTML = `
-        <div class="eventHead">
-          <div style="min-width:0">
-            <div class="leagueLine">
-              <span class="flag">${flag}</span>
-              <b>${escapeHtml(ev.league || "Campionato")}</b>
-              <span style="opacity:.8">•</span>
-              <span>${escapeHtml(ev.start || "")}</span>
-              <span style="opacity:.8">•</span>
-              <span style="color:rgba(255,200,120,.95);font-weight:1000">${slotIT(ev.slot || "")}</span>
+    function renderSlip(){
+      const list = document.getElementById("slipList");
+      document.getElementById("selCount").value = String(state.slip.length);
+
+      if(!state.slip.length){
+        list.innerHTML = "";
+        document.getElementById("slipHint").innerHTML =
+          `Nessuna selezione. Aggiungi una giocata a sinistra e poi inserisci la <b>quota reale</b> (dal banco) qui in schedina.`;
+      }else{
+        document.getElementById("slipHint").innerHTML =
+          `✅ Selezioni inserite: <b>${state.slip.length}</b>. Inserisci la quota reale per calcolare quota totale e vincita.`;
+      }
+
+      list.innerHTML = state.slip.map(p => {
+        return `
+          <div class="pick">
+            <div class="pickTop">
+              <span>${escapeHtml(p.match)}</span>
+              <span class="tag ${tagCls(p.tag)}">${escapeHtml(p.tag)}</span>
             </div>
-
-            <div class="teams">
-              ${crestOrBadge(ev.home_crest, ev.home_short, ev.home)}
-              <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:520px">
-                ${escapeHtml(ev.home)} - ${escapeHtml(ev.away)}
-              </span>
-              ${crestOrBadge(ev.away_crest, ev.away_short, ev.away)}
+            <div class="pickSub">${escapeHtml(p.market)} • ${escapeHtml(p.league)} • ${escapeHtml(p.start)}</div>
+            <div class="pickRow">
+              <input
+                type="text"
+                inputmode="decimal"
+                placeholder="Quota reale (es. 1.35)"
+                value="${escapeHtml(p.odd)}"
+                oninput="updateOdd('${escapeHtml(p.key)}', this.value)"
+              />
+              <div class="rm" onclick="removePick('${escapeHtml(p.key)}')">Rimuovi</div>
             </div>
-
-            ${ev.tip ? `<div style="margin-top:8px;font-size:11px;color:rgba(255,255,255,.70);line-height:1.25">💡 ${escapeHtml(ev.tip)}</div>` : ""}
-          </div>
-          <div class="meta">Evento ${idx+1}/5</div>
-        </div>
-
-        <div class="markets"></div>
-      `;
-
-      const mk = node.querySelector(".markets");
-      (ev.markets || []).slice(0,3).forEach(m=>{
-        const tag = (m.tag || "Media");
-        const bClass = badgeClass(tag);
-
-        const mNode = document.createElement("div");
-        mNode.className = "market";
-        mNode.innerHTML = `
-          <div class="mTop">
-            <div>
-              <div class="mLabel">${escapeHtml(m.label || "Mercato")}</div>
-              <div class="mHint">${escapeHtml(m.note || "Valutazione indicativa: verifica quota al banco.")}</div>
-            </div>
-            <div class="badge ${bClass}">${escapeHtml(tag)}</div>
-          </div>
-          <div class="mRow">
-            <div class="oddBox">Verifica<br>al banco</div>
-            <button class="addBtn">➕ Aggiungi</button>
           </div>
         `;
-        mNode.querySelector(".addBtn").addEventListener("click", ()=>{
-          addPick(ev, m);
-          bumpMotto();
-          document.getElementById("rightNote").textContent =
-            "✅ Inserisci la quota reale a destra: vedrai quota totale e vincita potenziale.";
-        });
-        mk.appendChild(mNode);
-      });
+      }).join("");
 
-      elEvents.appendChild(node);
+      renderSlipTotals();
+    }
+
+    function renderSlipTotals(){
+      const stake = toNum(document.getElementById("stake").value);
+      const type = document.getElementById("type").value;
+
+      // quota totale = prodotto delle quote inserite valide
+      let odds = state.slip.map(p => toNum(p.odd)).filter(x => isFinite(x) && x > 1.0);
+
+      let total = NaN;
+      if(type === "singola"){
+        // per singola: se 1 selezione prendi quella; se più selezioni, mostra —
+        total = (odds.length === 1 && state.slip.length === 1) ? odds[0] : NaN;
+      }else{
+        total = odds.length === state.slip.length && state.slip.length > 0
+          ? odds.reduce((a,b)=>a*b, 1)
+          : NaN;
+      }
+
+      document.getElementById("totalOdd").value = isFinite(total) ? total.toFixed(2) : "—";
+      const win = (isFinite(stake) && isFinite(total)) ? stake * total : NaN;
+      document.getElementById("potWin").value = isFinite(win) ? euro(win) : "—";
+    }
+
+    function flashHint(msg){
+      const el = document.getElementById("slipHint");
+      const old = el.innerHTML;
+      el.innerHTML = `${escapeHtml(msg)} <span style="opacity:.7">• quota reale al banco</span>`;
+      setTimeout(()=>{ el.innerHTML = old; }, 1600);
+    }
+
+    function verifyAtDesk(){
+      flashHint("Verifica la quota al banco prima di inserire.");
+    }
+
+    // Print (semplice)
+    function printSlip(){
+      const stake = document.getElementById("stake").value;
+      const type = document.getElementById("type").value;
+      const totalOdd = document.getElementById("totalOdd").value;
+      const potWin = document.getElementById("potWin").value;
+      const dt = state.data?.updated_at || "";
+
+      const rows = state.slip.map(p => `
+        <tr>
+          <td style="padding:8px;border-bottom:1px solid #ddd"><b>${escapeHtml(p.match)}</b><br><span style="color:#444">${escapeHtml(p.market)}</span></td>
+          <td style="padding:8px;border-bottom:1px solid #ddd;text-align:right">${escapeHtml(p.odd || "—")}</td>
+        </tr>
+      `).join("");
+
+      const html = `
+        <html><head><meta charset="utf-8">
+        <title>Schedina</title>
+        <style>
+          body{font-family:Arial,Helvetica,sans-serif;padding:18px}
+          h2{margin:0 0 6px 0}
+          .muted{color:#555;font-size:12px;margin-bottom:12px}
+          table{width:100%;border-collapse:collapse;margin-top:10px}
+          .box{border:1px solid #ddd;border-radius:10px;padding:12px;margin-top:12px}
+        </style>
+        </head><body>
+          <h2>Vincitù • Schedina</h2>
+          <div class="muted">Aggiornamento: ${escapeHtml(dt)} • Quote reali: verifica al banco</div>
+
+          <div class="box">
+            <b>Stake:</b> ${escapeHtml(stake)}€ &nbsp; | &nbsp;
+            <b>Tipo:</b> ${escapeHtml(type)} &nbsp; | &nbsp;
+            <b>Quota totale:</b> ${escapeHtml(totalOdd)} &nbsp; | &nbsp;
+            <b>Vincita pot.:</b> ${escapeHtml(potWin)}
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align:left;padding:8px;border-bottom:2px solid #000">Selezione</th>
+                <th style="text-align:right;padding:8px;border-bottom:2px solid #000">Quota</th>
+              </tr>
+            </thead>
+            <tbody>${rows || `<tr><td style="padding:8px">Nessuna selezione</td><td></td></tr>`}</tbody>
+          </table>
+
+          <div class="muted" style="margin-top:14px">
+            Supporto informativo/intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+          </div>
+        </body></html>
+      `;
+
+      const w = window.open("", "_blank");
+      w.document.open();
+      w.document.write(html);
+      w.document.close();
+      w.focus();
+      w.print();
+    }
+
+    // =====================
+    // Wheel (Ruota)
+    // =====================
+    const wheelItems = [
+      {t:"Missione: 1 sola selezione", d:"Oggi fai 1 singola con stake basso. Obiettivo: controllo e disciplina."},
+      {t:"Missione: 2 selezioni max", d:"Fai massimo 2 selezioni. Se non trovi quota buona al banco, salta."},
+      {t:"Regola d’oro", d:"Se sei indeciso → non giocare. Il miglior bet è quello evitato."},
+      {t:"Focus: verifica quota", d:"Prima di inserire: controlla quota al banco e conferma che è la stessa."},
+      {t:"Gestione stake", d:"Oggi stake fisso (piccolo). Niente rincorse, niente aumento dopo perdita."},
+      {t:"Pulizia schedina", d:"Togli una selezione: meno roba = più controllo. Qualità > quantità."},
+      {t:"Pausa intelligente", d:"Se hai già giocato: stop. Torna domani con calma."},
+      {t:"Mini-check", d:"Scrivi 1 motivo tecnico (ritmo/fisicità/equilibrio) prima di inserire."},
+    ];
+
+    let wheelAngle = 0;
+    let spinning = false;
+
+    function drawWheel(){
+      const c = document.getElementById("wheelCanvas");
+      const ctx = c.getContext("2d");
+      const W = c.width, H = c.height;
+      const cx = W/2, cy = H/2;
+      const r = Math.min(W,H)*0.42;
+
+      ctx.clearRect(0,0,W,H);
+
+      // base circle
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(wheelAngle);
+
+      const n = wheelItems.length;
+      for(let i=0;i<n;i++){
+        const a0 = (i/n) * Math.PI*2;
+        const a1 = ((i+1)/n) * Math.PI*2;
+
+        // colori a giro (semplici)
+        const cols = ["#ff8a00","#35d07f","#f3c24b","#6a5cff","#00c3ff","#ff4b5c","#9b7b5d","#2f2f2f"];
+        ctx.beginPath();
+        ctx.moveTo(0,0);
+        ctx.arc(0,0,r,a0,a1);
+        ctx.closePath();
+        ctx.fillStyle = cols[i % cols.length];
+        ctx.globalAlpha = 0.85;
+        ctx.fill();
+
+        // testo
+        ctx.save();
+        ctx.globalAlpha = 1;
+        ctx.rotate((a0+a1)/2);
+        ctx.fillStyle = "rgba(0,0,0,.85)";
+        ctx.font = "900 14px system-ui, -apple-system, Segoe UI";
+        ctx.textAlign = "right";
+        ctx.fillText("★", r*0.82, 5);
+        ctx.restore();
+      }
+
+      ctx.restore();
+
+      // outline + pointer
+      ctx.beginPath();
+      ctx.arc(cx,cy,r,0,Math.PI*2);
+      ctx.strokeStyle = "rgba(255,255,255,.22)";
+      ctx.lineWidth = 10;
+      ctx.stroke();
+
+      // pointer top
+      ctx.beginPath();
+      ctx.moveTo(cx, cy-r-18);
+      ctx.lineTo(cx-14, cy-r+14);
+      ctx.lineTo(cx+14, cy-r+14);
+      ctx.closePath();
+      ctx.fillStyle = "rgba(255,255,255,.92)";
+      ctx.fill();
+
+      // center
+      ctx.beginPath();
+      ctx.arc(cx,cy,18,0,Math.PI*2);
+      ctx.fillStyle = "rgba(20,22,36,.85)";
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255,255,255,.30)";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    function canSpinToday(){
+      const k = "vincitu_spin_" + todayKey();
+      return localStorage.getItem(k) !== "done";
+    }
+    function setSpunToday(){
+      const k = "vincitu_spin_" + todayKey();
+      localStorage.setItem(k, "done");
+    }
+
+    function spin(){
+      if(spinning) return;
+      if(!canSpinToday()){
+        document.getElementById("wheelTitle").textContent = "Hai già girato oggi.";
+        document.getElementById("wheelText").textContent = "Riprova domani su questo PC.";
+        return;
+      }
+
+      spinning = true;
+      const spinBtn = document.getElementById("spinBtn");
+      spinBtn.textContent = "Gira...";
+      spinBtn.disabled = true;
+
+      const targetIndex = Math.floor(Math.random() * wheelItems.length);
+      const n = wheelItems.length;
+      const slice = (Math.PI*2) / n;
+
+      // angolo per far uscire target sotto il puntatore (in alto)
+      const base = (Math.PI*2) * 4; // giri extra
+      const targetAngle = base + (Math.PI*2) - (targetIndex + 0.5) * slice;
+      const start = wheelAngle;
+      const end = targetAngle;
+
+      const dur = 2600;
+      const t0 = performance.now();
+
+      function easeOutCubic(t){ return 1 - Math.pow(1-t, 3); }
+
+      function anim(t){
+        const p = Math.min(1, (t - t0) / dur);
+        wheelAngle = start + (end - start) * easeOutCubic(p);
+        drawWheel();
+        if(p < 1){
+          requestAnimationFrame(anim);
+        }else{
+          spinning = false;
+          setSpunToday();
+          const it = wheelItems[targetIndex];
+          document.getElementById("wheelTitle").textContent = it.t;
+          document.getElementById("wheelText").textContent = it.d;
+          document.getElementById("wheelMeta").textContent = "Fatto! Domani puoi girare di nuovo su questo PC.";
+          spinBtn.textContent = "Giro fatto ✅";
+          spinBtn.disabled = true;
+        }
+      }
+      requestAnimationFrame(anim);
+    }
+
+    // =====================
+    // Quiz
+    // =====================
+    const quiz = [
+      {
+        q: "Per ridurre il rischio, cosa è meglio?",
+        opts: [
+          {t:"Aumentare le selezioni", ok:false, fb:"No: più selezioni = più variabili. Meglio poche."},
+          {t:"Fare poche selezioni", ok:true, fb:"Sì: poche selezioni = più controllo."},
+          {t:"Rincorrere dopo una perdita", ok:false, fb:"No: la rincorsa è pericolosa. Stop e calma."},
+        ]
+      },
+      {
+        q: "Quando devi inserire la quota?",
+        opts: [
+          {t:"Solo dopo aver verificato al banco", ok:true, fb:"Giusto: la quota reale si verifica al banco."},
+          {t:"Prima, basandoti su stime online", ok:false, fb:"No: qui usiamo stime. Quota reale solo al banco."},
+          {t:"Non serve controllare", ok:false, fb:"No: controllare è la base della disciplina."},
+        ]
+      },
+      {
+        q: "Se sei indeciso su una giocata…",
+        opts: [
+          {t:"La fai lo stesso", ok:false, fb:"No: indecisione = rischio. Meglio saltare."},
+          {t:"Abbassi stake o salti", ok:true, fb:"Sì: controllo prima di tutto."},
+          {t:"Aumenti stake per recuperare", ok:false, fb:"No: mai aumentare per recuperare."},
+        ]
+      }
+    ];
+    let quizIdx = 0;
+
+    function renderQuiz(){
+      const box = document.getElementById("quizBox");
+      const item = quiz[quizIdx];
+      box.innerHTML = `
+        <b>${escapeHtml(item.q)}</b>
+        ${item.opts.map((o,i)=>`<div class="opt" onclick="answerQuiz(${i})">${escapeHtml(o.t)}</div>`).join("")}
+        <div class="subnote" style="margin-top:10px">Domanda ${quizIdx+1}/${quiz.length}</div>
+      `;
+    }
+
+    function answerQuiz(i){
+      const item = quiz[quizIdx];
+      const o = item.opts[i];
+      document.getElementById("quizTitle").textContent = o.ok ? "✅ Corretto" : "⚠️ Attenzione";
+      document.getElementById("quizText").textContent = o.fb;
+
+      quizIdx = (quizIdx + 1) % quiz.length;
+      setTimeout(renderQuiz, 650);
+    }
+
+    // =====================
+    // Modal open/close
+    // =====================
+    function openModal(id){
+      document.getElementById(id).style.display = "flex";
+      if(id === "wheelBack"){
+        // reset UI spin button
+        drawWheel();
+        const btn = document.getElementById("spinBtn");
+        if(canSpinToday()){
+          btn.textContent = "Gira la ruota";
+          btn.disabled = false;
+          document.getElementById("wheelTitle").textContent = "In attesa…";
+          document.getElementById("wheelText").textContent = "Gira la ruota per ricevere una missione semplice e utile.";
+          document.getElementById("wheelMeta").textContent = "Suggerimento: poche selezioni = più controllo.";
+        }else{
+          btn.textContent = "Giro già fatto ✅";
+          btn.disabled = true;
+          document.getElementById("wheelTitle").textContent = "Hai già girato oggi.";
+          document.getElementById("wheelText").textContent = "Riprova domani su questo PC.";
+          document.getElementById("wheelMeta").textContent = "Tip: se oggi hai giocato, stop e calma.";
+        }
+      }
+      if(id === "quizBack"){
+        renderQuiz();
+        document.getElementById("quizTitle").textContent = "Pronto?";
+        document.getElementById("quizText").textContent = "Rispondi: l’obiettivo è giocare con controllo.";
+      }
+    }
+    function closeModal(id){
+      document.getElementById(id).style.display = "none";
+    }
+
+    // =====================
+    // Events
+    // =====================
+    document.getElementById("btnReload").addEventListener("click", loadEvents);
+    document.getElementById("btnSlot").addEventListener("click", () => {
+      const order = ["mattina","pomeriggio","sera"];
+      const idx = order.indexOf(state.slot);
+      state.slot = order[(idx+1) % order.length];
+      localStorage.setItem("vincitu_slot", state.slot);
+      renderAll();
     });
-  }
 
-  async function load(){
-    elErr.style.display = "none";
-    try{
-      const res = await fetch("events.json?ts=" + Date.now());
-      const txt = await res.text();
+    document.getElementById("stake").addEventListener("input", renderSlipTotals);
+    document.getElementById("type").addEventListener("change", renderSlipTotals);
+    document.getElementById("btnPrint").addEventListener("click", printSlip);
 
-      let data;
-      try{ data = JSON.parse(txt); }
-      catch(e){ throw new Error("events.json non è JSON valido."); }
+    // Modals
+    document.getElementById("btnWheel").addEventListener("click", () => openModal("wheelBack"));
+    document.getElementById("btnQuiz").addEventListener("click", () => openModal("quizBack"));
+    document.querySelectorAll(".close").forEach(x => {
+      x.addEventListener("click", () => closeModal(x.getAttribute("data-close")));
+    });
+    document.getElementById("wheelBack").addEventListener("click", (e) => {
+      if(e.target.id === "wheelBack") closeModal("wheelBack");
+    });
+    document.getElementById("quizBack").addEventListener("click", (e) => {
+      if(e.target.id === "quizBack") closeModal("quizBack");
+    });
 
-      const all = Array.isArray(data.events) ? data.events : [];
-      if(!all.length){
-        throw new Error("events.json è valido ma non contiene eventi (events=[]). Controlla GitHub Actions.");
-      }
+    document.getElementById("spinBtn").addEventListener("click", spin);
 
-      // aggiorna angolo speciale su tutti gli eventi
-      renderSpecial(all);
+    // =====================
+    // Boot
+    // =====================
+    window.addPick = addPick;
+    window.removePick = removePick;
+    window.updateOdd = updateOdd;
+    window.verifyAtDesk = verifyAtDesk;
+    window.answerQuiz = answerQuiz;
 
-      const want = slot==="morning" ? "mattina" : slot==="afternoon" ? "pomeriggio" : "sera";
-      const base = all.filter(x => (x.slot||"").toLowerCase() === want);
-      const pool = base.length ? base : all;
+    loadSlip();
+    renderSlip();
+    loadEvents();
 
-      const rnd = mulberry32(seed);
-      const idxs = pool.map((_,i)=>i);
-      for(let i=idxs.length-1;i>0;i--){
-        const j = Math.floor(rnd()*(i+1));
-        [idxs[i], idxs[j]] = [idxs[j], idxs[i]];
-      }
-
-      const used = new Set();
-      const out = [];
-      for(const i of idxs){
-        const ev = pool[i];
-        const key = `${ev.home}__${ev.away}__${ev.league}`;
-        if(used.has(key)) continue;
-        used.add(key);
-        out.push(ev);
-        if(out.length>=5) break;
-      }
-
-      render(out, data.updated_at);
-      bumpMotto();
-      missionOfDay();
-
-    }catch(err){
-      elEvents.innerHTML = "";
-      elErr.textContent = "Errore: " + (err?.message || String(err));
-      elErr.style.display = "block";
-    }
-  }
-
-  document.getElementById("btnNew").addEventListener("click", ()=>{
-    seed = (seed + 1337) % 1000000;
-    load();
-    bumpMotto();
-  });
-
-  document.getElementById("btnSlot").addEventListener("click", ()=>{
-    slot = slot==="morning" ? "afternoon" : slot==="afternoon" ? "evening" : "morning";
-    document.getElementById("slotChip").textContent = slotLabel(slot);
-    const u = new URL(location.href);
-    u.searchParams.set("slot", slot);
-    u.searchParams.set("v", String(seed));
-    history.replaceState({}, "", u.toString());
-    load();
-    bumpMotto();
-  });
-
-  document.getElementById("btnPrint").addEventListener("click", ()=>{
-    if(!selected.length){
-      alert("Aggiungi almeno una selezione prima di stampare.");
-      return;
-    }
-    const {okCount} = totalOdd();
-    if(okCount !== selected.length){
-      const go = confirm("Mancano alcune quote. Vuoi stampare lo stesso?");
-      if(!go) return;
-    }
-    window.print();
-  });
-
-  document.getElementById("stake").addEventListener("input", updateKPI);
-
-  // ===== RUOTA / DIVERTIMENTI =====
-  const wheelModal = document.getElementById("wheelModal");
-  const wheel = document.getElementById("wheel");
-  const wheelWrap = document.getElementById("wheelWrap");
-  const btnWheel = document.getElementById("btnWheel");
-  const btnCloseWheel = document.getElementById("btnCloseWheel");
-  const btnSpinDaily = document.getElementById("btnSpinDaily");
-  const btnSpinDemo = document.getElementById("btnSpinDemo");
-  const wheelResult = document.getElementById("wheelResult");
-  const wheelInfo = document.getElementById("wheelInfo");
-
-  const PRIZES = [
-    "🎯 Missione bonus: oggi massimo 2 selezioni.",
-    "🧠 Consiglio: se la quota è troppo bassa, non forzare la multipla.",
-    "⏸️ Pausa 10 secondi: respira e scegli una sola giocata.",
-    "✅ Regola d’oro: stake fisso, niente rincorse.",
-    "🔍 Verifica: controlla quota al banco prima di inserire.",
-    "🏅 Sfida: stampa solo se tutte le quote sono inserite.",
-    "🎲 Modalità safe: scegli 1 mercato “Alta” e stop.",
-    "💡 Tip: meglio saltare un match che inseguirlo."
-  ];
-
-  function todayKey(){
-    const d = new Date();
-    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
-  }
-
-  function playTick(){
-    try{
-      const ctx = new (window.AudioContext || window.webkitAudioContext)();
-      const o = ctx.createOscillator();
-      const g = ctx.createGain();
-      o.type = "square";
-      o.frequency.value = 720;
-      g.gain.value = 0.05;
-      o.connect(g); g.connect(ctx.destination);
-      o.start();
-      setTimeout(()=>{ o.stop(); ctx.close(); }, 90);
-    }catch(e){}
-  }
-
-  function confettiBurst(){
-    const colors = ["#ff8a00","#4cff7a","#00d2ff","#ff4a4a","#8c46ff","#ffd08a"];
-    for(let i=0;i<26;i++){
-      const c = document.createElement("div");
-      c.className = "confetti";
-      c.style.left = (Math.random()*100) + "%";
-      c.style.background = colors[Math.floor(Math.random()*colors.length)];
-      c.style.animationDuration = (0.9 + Math.random()*0.6) + "s";
-      wheelWrap.appendChild(c);
-      setTimeout(()=> c.remove(), 1400);
-    }
-  }
-
-  function openWheel(){
-    wheelModal.classList.add("open");
-    wheelModal.setAttribute("aria-hidden", "false");
-    const used = localStorage.getItem("bb_wheel_" + todayKey()) === "1";
-    btnSpinDaily.disabled = used;
-    wheelInfo.textContent = used
-      ? "Hai già fatto il giro ufficiale oggi. Puoi usare Gira demo (illimitato)."
-      : "1 giro ufficiale al giorno + demo illimitata (intrattenimento, gioco responsabile).";
-  }
-  function closeWheel(){
-    wheelModal.classList.remove("open");
-    wheelModal.setAttribute("aria-hidden", "true");
-  }
-  btnWheel.addEventListener("click", openWheel);
-  btnCloseWheel.addEventListener("click", closeWheel);
-  wheelModal.addEventListener("click", (e)=>{ if(e.target === wheelModal) closeWheel(); });
-
-  let spinning = false;
-  function spin(mode){
-    if(spinning) return;
-    spinning = true;
-
-    // scegli premio:
-    // daily = deterministico per non “barare”
-    // demo = casuale
-    let idx;
-    if(mode === "daily"){
-      idx = hash(todayKey() + "|" + center) % PRIZES.length;
-      localStorage.setItem("bb_wheel_" + todayKey(), "1");
-      btnSpinDaily.disabled = true;
-      wheelInfo.textContent = "Giro ufficiale fatto ✅ Ora puoi usare Gira demo (illimitato).";
-    }else{
-      idx = Math.floor(Math.random() * PRIZES.length);
-      wheelInfo.textContent = "Demo attiva: puoi rigirare quando vuoi.";
-    }
-
-    const sector = 360 / PRIZES.length;
-    const targetDeg = (idx * sector) + (sector/2);
-    const spins = 5*360 + Math.floor(Math.random()*360);
-    const finalDeg = spins + (360 - targetDeg);
-
-    playTick();
-    wheel.style.transform = `rotate(${finalDeg}deg)`;
-
-    setTimeout(()=>{
-      wheelResult.textContent = (mode==="daily" ? "🎁 (Oggi) " : "🎭 (Demo) ") + PRIZES[idx];
-      wheelResult.classList.remove("pop");
-      void wheelResult.offsetWidth;
-      wheelResult.classList.add("pop");
-      confettiBurst();
-      bumpMotto();
-      spinning = false;
-    }, 3000);
-  }
-
-  btnSpinDaily.addEventListener("click", ()=> spin("daily"));
-  btnSpinDemo.addEventListener("click", ()=> spin("demo"));
-
-  // ===== QUIZ =====
-  const quizModal = document.getElementById("quizModal");
-  const btnQuiz = document.getElementById("btnQuiz");
-  const btnCloseQuiz = document.getElementById("btnCloseQuiz");
-  const quizQ = document.getElementById("quizQ");
-  const quizA = document.getElementById("quizA");
-  const quizB = document.getElementById("quizB");
-  const quizNext = document.getElementById("quizNext");
-  const quizHint = document.getElementById("quizHint");
-
-  const QUIZ = [
-    {q:"Meglio fare 2 selezioni fatte bene o 6 a caso?", a:"2 fatte bene", b:"6 a caso", ok:"a", hint:"Controllo > quantità."},
-    {q:"Prima cosa da fare prima di stampare?", a:"Inserire quote reali", b:"Aggiungere altre selezioni", ok:"a", hint:"Verifica al banco, poi stampa."},
-    {q:"Se un match non ti convince?", a:"Lo salti", b:"Lo giochi lo stesso", ok:"a", hint:"Saltare è una scelta intelligente."},
-    {q:"Stake consigliato per controllo?", a:"Fisso", b:"Aumentare dopo perdita", ok:"a", hint:"Niente rincorse."},
-    {q:"Cosa conta di più in sala?", a:"Divertimento + controllo", b:"Solo rischio", ok:"a", hint:"Responsabile è meglio."},
-  ];
-
-  function openQuiz(){
-    quizModal.classList.add("open");
-    quizModal.setAttribute("aria-hidden","false");
-    newQuiz();
-  }
-  function closeQuiz(){
-    quizModal.classList.remove("open");
-    quizModal.setAttribute("aria-hidden","true");
-  }
-  btnQuiz.addEventListener("click", openQuiz);
-  btnCloseQuiz.addEventListener("click", closeQuiz);
-  quizModal.addEventListener("click", (e)=>{ if(e.target === quizModal) closeQuiz(); });
-
-  let cur = null;
-  function newQuiz(){
-    cur = QUIZ[Math.floor(Math.random()*QUIZ.length)];
-    quizQ.textContent = "❓ " + cur.q;
-    quizA.textContent = "A) " + cur.a;
-    quizB.textContent = "B) " + cur.b;
-    quizHint.textContent = "Scegli A o B (solo intrattenimento).";
-  }
-  function answer(which){
-    if(!cur) return;
-    playTick();
-    if(which === cur.ok){
-      quizHint.textContent = "✅ Giusto! " + cur.hint;
-      confettiBurst();
-    }else{
-      quizHint.textContent = "❌ Quasi. " + cur.hint;
-    }
-    bumpMotto();
-  }
-  quizA.addEventListener("click", ()=>answer("a"));
-  quizB.addEventListener("click", ()=>answer("b"));
-  quizNext.addEventListener("click", newQuiz);
-
-  // ===== BOTTONI PRINCIPALI =====
-  renderCart();
-  load();
-  bumpMotto();
-  missionOfDay();
-</script>
+    // Draw wheel once
+    drawWheel();
+  </script>
 </body>
 </html>
