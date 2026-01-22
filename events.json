@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-22 10:04",
+  "updated_at": "2026-01-22 11:00",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 0,
@@ -25,33 +25,38 @@
       "away_crest": "https://crests.football-data.org/524.png",
       "start_iso": "2026-01-23T20:00:00+01:00",
       "start": "Domani 20:00",
-      "tip": "Possibile gara bloccata: se non ti convince, salta.",
-      "context": {
-        "diff": -0.11,
-        "fav": "balanced",
-        "tempo": 0.62,
-        "goals": 0.38,
-        "grit": 0.28,
-        "corners": 0.66,
-        "cards": 0.56
-      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Media",
-          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
           "tag": "Bassa",
-          "note": "⚖️ Equilibrio: 1X discreta ma non “sicura”. Verifica quota."
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Media",
-          "note": "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
-      ]
+      ],
+      "context": {
+        "diff": -0.11,
+        "tempo": 0.62,
+        "goals": 0.38,
+        "grit": 0.28,
+        "corners": 0.66,
+        "cards": 0.56,
+        "signals": {
+          "ritmo": "Media",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
     },
     {
       "id": 540576,
@@ -70,33 +75,38 @@
       "away_crest": "https://crests.football-data.org/7.png",
       "start_iso": "2026-01-23T20:30:00+01:00",
       "start": "Domani 20:30",
-      "tip": "Favorita esterna: 1X rischiosa. Meglio prudenza.",
-      "context": {
-        "diff": -0.74,
-        "fav": "away",
-        "tempo": 0.49,
-        "goals": 0.96,
-        "grit": 0.22,
-        "corners": 0.64,
-        "cards": 0.53
-      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Alta",
-          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Stake controllato."
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
           "tag": "Bassa",
-          "note": "🚨 Ospiti favoriti: 1X rischiosa. Valutala solo con motivo chiaro."
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Alta",
-          "note": "⚡ Buone chance Goal Sì: potenziale da entrambe. Stake controllato."
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
-      ]
+      ],
+      "context": {
+        "diff": -0.74,
+        "tempo": 0.49,
+        "goals": 0.96,
+        "grit": 0.22,
+        "corners": 0.64,
+        "cards": 0.53,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
     },
     {
       "id": 537031,
@@ -115,33 +125,38 @@
       "away_crest": "https://crests.football-data.org/487.png",
       "start_iso": "2026-01-23T20:45:00+01:00",
       "start": "Domani 20:45",
-      "tip": "Favorita esterna: 1X rischiosa. Meglio prudenza.",
-      "context": {
-        "diff": -0.34,
-        "fav": "away",
-        "tempo": 0.33,
-        "goals": 0.19,
-        "grit": 0.14,
-        "corners": 0.43,
-        "cards": 0.55
-      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Bassa",
-          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
           "tag": "Bassa",
-          "note": "🚨 Ospiti favoriti: 1X rischiosa. Valutala solo con motivo chiaro."
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Bassa",
-          "note": "Entrambe possono segnare: meglio se vedi occasioni da entrambe."
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
-      ]
+      ],
+      "context": {
+        "diff": -0.34,
+        "tempo": 0.33,
+        "goals": 0.19,
+        "grit": 0.14,
+        "corners": 0.43,
+        "cards": 0.55,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
     },
     {
       "id": 544416,
@@ -160,33 +175,38 @@
       "away_crest": "https://crests.football-data.org/285.png",
       "start_iso": "2026-01-23T21:00:00+01:00",
       "start": "Domani 21:00",
-      "tip": "Match equilibrato: una sola giocata fatta bene vale di più.",
-      "context": {
-        "diff": -0.14,
-        "fav": "balanced",
-        "tempo": 0.16,
-        "goals": 0.74,
-        "grit": 0.05,
-        "corners": 0.44,
-        "cards": 0.37
-      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Media",
-          "note": "Ritmo e occasioni: se vedi squadre che spingono, può avere senso (quota al banco)."
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
           "tag": "Bassa",
-          "note": "⚖️ Equilibrio: 1X discreta ma non “sicura”. Verifica quota."
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Alta",
-          "note": "⚡ Buone chance Goal Sì: potenziale da entrambe. Stake controllato."
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
-      ]
+      ],
+      "context": {
+        "diff": -0.14,
+        "tempo": 0.16,
+        "goals": 0.74,
+        "grit": 0.05,
+        "corners": 0.44,
+        "cards": 0.37,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
     },
     {
       "id": 545862,
@@ -205,33 +225,38 @@
       "away_crest": "https://crests.football-data.org/10340.png",
       "start_iso": "2026-01-23T21:15:00+01:00",
       "start": "Domani 21:15",
-      "tip": "Match equilibrato: una sola giocata fatta bene vale di più.",
-      "context": {
-        "diff": 0.11,
-        "fav": "balanced",
-        "tempo": 0.38,
-        "goals": 0.92,
-        "grit": 0.69,
-        "corners": 0.62,
-        "cards": 0.68
-      },
       "markets": [
         {
           "label": "Over 2.5",
           "tag": "Alta",
-          "note": "🔥 Gara da gol probabile: ritmo alto e occasioni. Stake controllato."
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
           "tag": "Media",
-          "note": "⚖️ Equilibrio: 1X discreta ma non “sicura”. Verifica quota."
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
           "tag": "Alta",
-          "note": "⚡ Buone chance Goal Sì: potenziale da entrambe. Stake controllato."
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
-      ]
+      ],
+      "context": {
+        "diff": 0.11,
+        "tempo": 0.38,
+        "goals": 0.92,
+        "grit": 0.69,
+        "corners": 0.62,
+        "cards": 0.68,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Media"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
+      }
     }
   ]
 }
