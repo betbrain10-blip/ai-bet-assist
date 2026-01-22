@@ -1,294 +1,1191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-<meta charset="UTF-8" />
-<title>Vincitù • IA Portal</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vincitù • IA Portal</title>
 
-<style>
-body{
-margin:0;
-font-family:Inter,system-ui;
-background:linear-gradient(120deg,#4b2bd8,#07142b);
-color:white;
-}
+  <style>
+    :root{
+      --bg1:#4a20ff;
+      --bg2:#081a3f;
 
-.wrapper{
-max-width:1250px;
-margin:40px auto;
-background:rgba(10,18,40,.9);
-border-radius:18px;
-padding:25px;
-box-shadow:0 20px 80px rgba(0,0,0,.6);
-}
+      --panel: rgba(20, 24, 52, .62);
+      --panel2: rgba(20, 24, 52, .40);
+      --stroke: rgba(255,255,255,.10);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.65);
+      --muted2: rgba(255,255,255,.45);
 
-header{
-display:flex;
-align-items:center;
-justify-content:space-between;
-margin-bottom:20px;
-}
+      --orange:#ff9800;
+      --orange2:#ffb03a;
 
-.brand{
-display:flex;
-gap:12px;
-align-items:center;
-font-weight:900;
-font-size:22px;
-}
+      --green:#2ecc71;
+      --red:#ff3b3b;
+      --yellow:#f3c24b;
 
-.logo{
-width:44px;
-height:44px;
-border-radius:10px;
-background:#d91f26;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:900;
-}
+      --r1:18px;
+      --r2:14px;
 
-.controls{
-display:flex;
-gap:10px;
-}
+      --shadow: 0 14px 55px rgba(0,0,0,.45);
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
 
-button{
-background:#ff9800;
-border:none;
-padding:10px 15px;
-border-radius:12px;
-font-weight:700;
-cursor:pointer;
-}
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 15% 10%, rgba(255,180,60,.25), transparent 60%),
+        radial-gradient(1100px 700px at 80% 15%, rgba(120,80,255,.30), transparent 55%),
+        linear-gradient(120deg, var(--bg1), var(--bg2));
+      overflow-x:hidden;
+    }
 
-button.secondary{
-background:#243062;
-color:white;
-}
+    .wrap{
+      max-width: 1180px;
+      margin: 34px auto;
+      padding: 0 18px;
+    }
 
-.grid{
-display:grid;
-grid-template-columns:1fr 380px;
-gap:20px;
-}
+    .shell{
+      border:1px solid var(--stroke);
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(10,14,40,.78), rgba(10,14,40,.60));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
 
-.card{
-background:#111a3a;
-border-radius:16px;
-padding:16px;
-margin-bottom:14px;
-}
+    .topbar{
+      padding: 18px 20px 12px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 14px;
+      border-bottom:1px solid var(--stroke);
+      background: rgba(255,255,255,.02);
+    }
 
-.section-title{
-font-weight:800;
-margin-bottom:10px;
-}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+      min-width: 260px;
+    }
+    .brand img{
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: rgba(255,255,255,.06);
+      padding: 6px;
+      border: 1px solid var(--stroke);
+    }
+    .brand .t1{
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+    .brand .t2{
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
 
-.tag{
-display:inline-block;
-background:#25377b;
-padding:3px 8px;
-border-radius:9px;
-font-size:12px;
-margin-right:5px;
-}
+    .statusRow{
+      display:flex;
+      align-items:center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content:flex-end;
+    }
 
-.match{
-margin-top:10px;
-padding-top:10px;
-border-top:1px solid rgba(255,255,255,.08);
-}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--green);
+      box-shadow: 0 0 0 4px rgba(46,204,113,.12);
+    }
+    .pill .k{ color: var(--muted); }
+    .pill b{ font-weight: 800; }
 
-.market{
-display:flex;
-justify-content:space-between;
-margin-top:6px;
-background:#1a2554;
-padding:6px 10px;
-border-radius:10px;
-}
+    .subbar{
+      padding: 10px 20px 14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      border-bottom:1px solid var(--stroke);
+    }
 
-.market span{
-font-size:13px;
-opacity:.9;
-}
+    .modePills{
+      display:flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items:center;
+    }
 
-.verify{
-background:#2a356b;
-padding:5px 9px;
-border-radius:8px;
-font-size:12px;
-}
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size: 12px;
+    }
 
-.ticket{
-background:#0c1433;
-border-radius:16px;
-padding:18px;
-}
+    .chip strong{ color: var(--text); font-weight: 800; }
 
-.ticket h3{
-margin-top:0;
-}
+    .ctaRow{
+      display:flex;
+      gap: 10px;
+      align-items:center;
+      flex-wrap: wrap;
+      justify-content:flex-end;
+    }
 
-.bigbtn{
-width:100%;
-padding:15px;
-border-radius:14px;
-background:#ff9800;
-font-size:16px;
-font-weight:900;
-}
+    .btn{
+      border: 1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 12px;
+      cursor:pointer;
+      font-weight: 800;
+      letter-spacing: .2px;
+      transition: transform .08s ease, background .12s ease, border .12s ease;
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      user-select:none;
+    }
+    .btn:hover{ background: rgba(255,255,255,.06); }
+    .btn:active{ transform: translateY(1px); }
 
-.wheelOverlay{
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.6);
-display:none;
-align-items:center;
-justify-content:center;
-}
+    .btnPrimary{
+      background: linear-gradient(180deg, var(--orange2), var(--orange));
+      color: #1b1200;
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: 0 10px 25px rgba(255,152,0,.16);
+    }
+    .btnPrimary:hover{ filter: brightness(1.02); }
 
-.wheelBox{
-background:#0f1738;
-padding:25px;
-border-radius:20px;
-text-align:center;
-width:340px;
-}
+    .grid{
+      display:grid;
+      grid-template-columns: 1.7fr 1fr;
+      gap: 16px;
+      padding: 16px;
+    }
 
-canvas{
-margin-top:15px;
-}
-</style>
+    .panel{
+      border:1px solid var(--stroke);
+      border-radius: 18px;
+      background: var(--panel);
+      overflow:hidden;
+    }
+    .panelHeader{
+      padding: 12px 14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      border-bottom:1px solid var(--stroke);
+      background: rgba(255,255,255,.02);
+    }
+    .panelHeader h3{
+      margin:0;
+      font-size: 14px;
+      letter-spacing:.2px;
+      display:flex;
+      align-items:center;
+      gap: 8px;
+    }
+    .panelHeader .mini{
+      color: var(--muted);
+      font-size: 12px;
+      display:flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content:flex-end;
+      align-items:center;
+    }
+
+    .panelBody{
+      padding: 14px;
+    }
+
+    .notice{
+      border:1px dashed rgba(255,255,255,.18);
+      background: rgba(255,255,255,.03);
+      border-radius: 14px;
+      padding: 10px 12px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      margin-bottom: 12px;
+    }
+
+    .sectionTitle{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      margin: 6px 0 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .sectionTitle b{ color: var(--text); }
+
+    /* Angolo Extra */
+    .extraBox{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.16);
+      border-radius: 16px;
+      padding: 12px;
+      margin-bottom: 14px;
+    }
+    .extraTop{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .extraTop .t{
+      font-weight: 900;
+      letter-spacing:.2px;
+      font-size: 13px;
+      display:flex;
+      align-items:center;
+      gap: 8px;
+    }
+    .extraGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .miniCard{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      border-radius: 14px;
+      padding: 10px;
+      min-height: 116px;
+    }
+    .miniCard h4{
+      margin:0 0 8px;
+      font-size: 12px;
+      color: var(--text);
+      display:flex;
+      gap: 8px;
+      align-items:center;
+    }
+    .miniItem{
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.12);
+      border-radius: 12px;
+      padding: 9px 10px;
+      margin-bottom: 8px;
+    }
+    .miniItem:last-child{ margin-bottom:0; }
+    .miniItem .row1{
+      display:flex;
+      justify-content:space-between;
+      gap: 10px;
+      align-items:flex-start;
+    }
+    .miniItem .m{
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+    .miniItem .s{
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 3px;
+      line-height: 1.25;
+    }
+    .badge{
+      font-size: 11px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      white-space:nowrap;
+      display:inline-flex;
+      align-items:center;
+      gap: 6px;
+    }
+    .badgeGreen{ border-color: rgba(46,204,113,.28); background: rgba(46,204,113,.10); }
+    .badgeYellow{ border-color: rgba(243,194,75,.28); background: rgba(243,194,75,.10); }
+    .badgeRed{ border-color: rgba(255,59,59,.28); background: rgba(255,59,59,.10); }
+
+    /* Event cards */
+    .eventCard{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      border-radius: 18px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+    .eventCard:last-child{ margin-bottom:0; }
+
+    .eventTop{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 10px;
+    }
+    .meta{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .leaguePill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.12);
+      color: var(--text);
+      font-weight: 900;
+      font-size: 11px;
+    }
+    .slotPill{
+      padding: 6px 10px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .teams{
+      margin-top: 10px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+    }
+    .teamSide{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      min-width: 0;
+    }
+    .crest{
+      width: 26px; height: 26px;
+      border-radius: 10px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.18);
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      flex: 0 0 auto;
+    }
+    .crest img{ width:100%; height:100%; object-fit:contain; padding:4px; }
+    .tname{
+      font-weight: 950;
+      font-size: 14px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width: 240px;
+    }
+    .vs{
+      color: var(--muted);
+      font-weight: 900;
+      letter-spacing:.2px;
+      font-size: 12px;
+      flex:0 0 auto;
+    }
+
+    .markets{
+      margin-top: 12px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .market{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.14);
+      border-radius: 14px;
+      padding: 10px;
+      min-height: 110px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      gap: 8px;
+    }
+    .market .m1{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap: 8px;
+    }
+    .market .label{
+      font-weight: 950;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+    .market .why{
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.25;
+      margin-top: 6px;
+    }
+    .mActions{
+      display:flex;
+      gap: 8px;
+      align-items:center;
+      justify-content:space-between;
+      margin-top: 6px;
+    }
+    .btnMini{
+      padding: 9px 10px;
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      cursor:pointer;
+      font-weight: 900;
+      font-size: 12px;
+      width: 100%;
+      transition: transform .08s ease, background .12s ease;
+    }
+    .btnMini:hover{ background: rgba(255,255,255,.05); }
+    .btnMini:active{ transform: translateY(1px); }
+
+    .btnAdd{
+      background: linear-gradient(180deg, rgba(255,176,58,.96), rgba(255,152,0,.95));
+      color:#1b1200;
+      border:1px solid rgba(255,255,255,.10);
+    }
+
+    /* Right panel form */
+    .formRow{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .field{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      border-radius: 14px;
+      padding: 10px;
+    }
+    .field label{
+      display:block;
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-weight: 900;
+      letter-spacing:.2px;
+    }
+    .field input, .field select{
+      width:100%;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.12);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 10px 10px;
+      outline:none;
+      font-weight: 900;
+    }
+    .field input::placeholder{ color: rgba(255,255,255,.35); }
+
+    .statsRow{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .statBox{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      border-radius: 14px;
+      padding: 10px;
+    }
+    .statBox .k{
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+    .statBox .v{
+      font-size: 18px;
+      font-weight: 1000;
+      letter-spacing:.2px;
+    }
+
+    .selectionsBox{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.12);
+      border-radius: 14px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .selTitle{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .selItem{
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      border-radius: 12px;
+      padding: 8px 9px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .selItem:last-child{ margin-bottom:0; }
+    .selItem .l{
+      font-size: 12px;
+      font-weight: 950;
+      line-height: 1.25;
+      min-width:0;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+    .selItem .x{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.16);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 7px 9px;
+      cursor:pointer;
+      font-weight: 1000;
+    }
+
+    .printBtn{
+      width:100%;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, var(--orange2), var(--orange));
+      color:#1b1200;
+      cursor:pointer;
+      font-weight: 1000;
+      font-size: 14px;
+      letter-spacing:.2px;
+      box-shadow: 0 14px 30px rgba(255,152,0,.14);
+    }
+    .hint{
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 10px;
+      line-height: 1.35;
+    }
+
+    /* Modals */
+    .modalBack{
+      position:fixed;
+      inset:0;
+      background: rgba(0,0,0,.55);
+      backdrop-filter: blur(8px);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding: 18px;
+      z-index: 50;
+    }
+    .modal{
+      width: min(860px, 100%);
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(12,14,26,.92), rgba(12,14,26,.86));
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .modalHead{
+      padding: 14px 16px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 12px;
+    }
+    .modalHead .ttl{
+      font-weight: 1000;
+      letter-spacing:.2px;
+      display:flex;
+      align-items:center;
+      gap: 8px;
+    }
+    .modalBody{
+      padding: 16px;
+    }
+    .closeBtn{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      padding: 9px 12px;
+      border-radius: 12px;
+      cursor:pointer;
+      font-weight: 1000;
+    }
+
+    /* Wheel layout */
+    .wheelGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .wheelBox{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding: 12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height: 340px;
+    }
+    .wheelSide{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding: 12px;
+      min-height: 340px;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+    .wheelResult{
+      border:1px dashed rgba(255,255,255,.16);
+      background: rgba(0,0,0,.14);
+      border-radius: 14px;
+      padding: 10px;
+      color: var(--text);
+      font-weight: 950;
+      line-height: 1.35;
+    }
+    .wheelNote{
+      color: var(--muted);
+      font-size: 12px;
+      line-height:1.35;
+    }
+    .wheelBtn{
+      margin-top:auto;
+      width:100%;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, var(--orange2), var(--orange));
+      color:#1b1200;
+      cursor:pointer;
+      font-weight: 1000;
+      font-size: 14px;
+    }
+
+    /* Quiz */
+    .quizBox{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding: 14px;
+    }
+    .qTitle{
+      font-weight: 1000;
+      margin: 0 0 10px;
+      letter-spacing: .2px;
+    }
+    .qText{
+      color: var(--muted);
+      margin: 0 0 12px;
+      line-height: 1.35;
+    }
+    .qAns{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .qBtn{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.12);
+      color: var(--text);
+      padding: 11px 12px;
+      border-radius: 14px;
+      cursor:pointer;
+      font-weight: 950;
+    }
+    .qBtn:hover{ background: rgba(255,255,255,.04); }
+
+    @media (max-width: 980px){
+      .grid{ grid-template-columns: 1fr; }
+      .brand{ min-width: 0; }
+      .markets{ grid-template-columns: 1fr; }
+      .extraGrid{ grid-template-columns: 1fr; }
+      .wheelGrid{ grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="wrap">
+    <div class="shell">
 
-<div class="wrapper">
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <div class="brand">
+          <img src="vincitu-stemma.png" alt="Vincitù" />
+          <div>
+            <div class="t1">Vincitù • IA Portal</div>
+            <div class="t2">Eventi reali • quote non mostrate: si inseriscono al banco</div>
+          </div>
+        </div>
 
-<header>
-<div class="brand">
-<div class="logo">V</div>
-Vincitù • IA Portal
-</div>
+        <div class="statusRow">
+          <span class="pill"><span class="dot"></span> <span class="k">Centro:</span> <b id="centerId">VINCO01</b></span>
+          <span class="pill"><span class="k">Agg:</span> <b id="updatedAt">—</b></span>
+          <span class="pill"><span class="k">Fascia:</span> <b id="slotName">—</b></span>
+        </div>
+      </div>
 
-<div class="controls">
-<button id="newBtn">Nuovi eventi</button>
-<button class="secondary" id="wheelBtn">🎡 Ruota</button>
-</div>
-</header>
+      <!-- SUBBAR -->
+      <div class="subbar">
+        <div class="modePills">
+          <span class="chip">🎯 <strong>Modalità cliente</strong> • calma oggi, più continuità domani.</span>
+          <span class="chip">🎯 Missione: <strong id="missionTxt">Max 2 selezioni</strong></span>
+          <span class="chip">⏱ Sfida: <strong id="focusTxt">20s focus</strong></span>
+        </div>
 
-<div class="grid">
+        <div class="ctaRow">
+          <button class="btn btnPrimary" id="btnNew">⚡ Nuovi eventi</button>
+          <button class="btn" id="btnSlot">🕒 Cambia fascia</button>
+          <button class="btn" id="btnWheel">🎡 Ruota</button>
+          <button class="btn" id="btnQuiz">❓ Quiz</button>
+        </div>
+      </div>
 
-<div id="events"></div>
+      <!-- MAIN -->
+      <div class="grid">
+        <!-- LEFT -->
+        <div class="panel">
+          <div class="panelHeader">
+            <h3>⚡ Eventi (IA)</h3>
+            <div class="mini">
+              <span class="pill" style="padding:6px 10px;"><span class="k">Quote:</span> <b>verifica al banco</b></span>
+              <span class="pill" style="padding:6px 10px;"><span class="k">Eventi mostrati:</span> <b id="shownCount">0/5</b></span>
+            </div>
+          </div>
 
-<div class="ticket">
-<h3>Schedina</h3>
-<p>Quota reale solo al banco.</p>
-<button class="bigbtn">🖨️ Stampa schedina</button>
-</div>
+          <div class="panelBody">
+            <div class="notice">
+              🔎 Se vedi quote diverse al banco è normale: qui sono <b>indicazioni</b>.  
+              Consiglio: <b>2–3 selezioni massimo</b> per restare lucido e controllare lo stake.
+            </div>
 
-</div>
-</div>
+            <!-- EXTRA (Corner & Cartellini) -->
+            <div class="extraBox" id="extraBox">
+              <div class="extraTop">
+                <div class="t">📌 Angolo Extra: Corner & Cartellini (stima rapida)</div>
+                <span class="badge badgeGreen" title="Selezioni rapide senza quote">Max 2 + 2</span>
+              </div>
 
-<!-- ================= RUOTA ================= -->
+              <div class="extraGrid">
+                <div class="miniCard">
+                  <h4>🚩 Corner “interessanti” (max 2)</h4>
+                  <div id="cornerList"></div>
+                </div>
+                <div class="miniCard">
+                  <h4>🟨 Cartellini “attenzione” (max 2)</h4>
+                  <div id="cardList"></div>
+                </div>
+              </div>
 
-<div class="wheelOverlay" id="wheelBox">
-<div class="wheelBox">
-<h3>🎡 Ruota del Consiglio</h3>
-<canvas id="wheel" width="260" height="260"></canvas>
-<br>
-<button onclick="spinWheel()">Gira</button>
-<p id="wheelText"></p>
-<button onclick="closeWheel()">Chiudi</button>
-</div>
-</div>
+              <div style="margin-top:10px;color:var(--muted);font-size:12px;line-height:1.35">
+                *Stime basate su <b>ritmo</b>, <b>pressione</b> e <b>agonismo</b> (indicativo). Quota reale sempre al banco.
+              </div>
+            </div>
 
-<script>
+            <!-- EVENTS -->
+            <div id="events"></div>
 
-// ================== EVENTI FINTI REALISTICI ==================
+            <div style="margin-top:10px;color:var(--muted);font-size:12px;line-height:1.35">
+              Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+            </div>
+          </div>
+        </div>
 
-const sampleMatches=[
-"Juventus - Benfica","PSG - Dortmund","Atalanta - Bilbao","Inter - Porto",
-"Barcellona - Arsenal","Milan - Newcastle","Bayern - PSG","Napoli - Atletico",
-"Liverpool - Real Madrid","Roma - Leverkusen","Chelsea - Inter","Ajax - PSV",
-"Sevilla - Lazio","Tottenham - Napoli","Fiorentina - Marsiglia"
-];
+        <!-- RIGHT -->
+        <div class="panel">
+          <div class="panelHeader">
+            <h3>🧾 Schedina</h3>
+            <div class="mini">
+              <span class="pill" style="padding:6px 10px;"><span class="k">Modalità:</span> <b>multipla</b></span>
+            </div>
+          </div>
 
-function buildEvents(){
-let out="";
-sampleMatches.forEach(m=>{
-out+=`
-<div class="card">
-<div class="section-title">${m}</div>
+          <div class="panelBody">
+            <div class="formRow">
+              <div class="field">
+                <label>Stake (€)</label>
+                <input id="stake" type="number" min="1" step="1" value="5" />
+              </div>
+              <div class="field">
+                <label>Tipo</label>
+                <select id="type">
+                  <option value="multipla" selected>Multipla (tutte)</option>
+                  <option value="singola">Singola</option>
+                </select>
+              </div>
+            </div>
 
-<div class="market">
-<span>Over 2.5 – partita aperta</span>
-<span class="verify">Verifica al banco</span>
-</div>
+            <div class="statsRow">
+              <div class="statBox">
+                <div class="k">Selezioni</div>
+                <div class="v" id="selCount">0</div>
+              </div>
+              <div class="statBox">
+                <div class="k">Quota totale</div>
+                <div class="v" id="totalOdd">—</div>
+              </div>
+            </div>
 
-<div class="market">
-<span>1X – favorita in casa</span>
-<span class="verify">Verifica al banco</span>
-</div>
+            <div class="statBox" style="margin-bottom:10px;">
+              <div class="k">Vincita pot.</div>
+              <div class="v" id="winPot">—</div>
+            </div>
 
-<div class="market">
-<span>Goal Sì – attacchi forti</span>
-<span class="verify">Verifica al banco</span>
-</div>
+            <div class="selectionsBox">
+              <div class="selTitle">
+                <span>✅ Selezioni</span>
+                <span style="color:var(--muted2)">Inserisci quota reale</span>
+              </div>
+              <div id="selList" style="color:var(--muted);font-size:12px;line-height:1.35;">
+                Nessuna selezione. Aggiungi una giocata a sinistra.
+              </div>
+            </div>
 
-</div>`;
-});
-document.getElementById("events").innerHTML=out;
-}
+            <button class="printBtn" id="btnPrint">🖨️ Stampa schedina</button>
+            <div class="hint">
+              Suggerimento: fai <b>2–3 selezioni massimo</b> per mantenere controllo.  
+              Quote reali: <b>sempre al banco</b>.
+            </div>
+          </div>
+        </div>
+      </div>
 
-buildEvents();
+    </div>
+  </div>
 
-// ================== RUOTA ==================
+  <!-- WHEEL MODAL -->
+  <div class="modalBack" id="wheelBack">
+    <div class="modal">
+      <div class="modalHead">
+        <div class="ttl">🎡 Ruota della Fortuna (consigli & missioni)</div>
+        <button class="closeBtn" id="closeWheel">Chiudi ✕</button>
+      </div>
+      <div class="modalBody">
+        <div class="wheelGrid">
+          <div class="wheelBox">
+            <canvas id="wheel" width="320" height="320" style="max-width:100%;"></canvas>
+          </div>
+          <div class="wheelSide">
+            <div class="wheelResult" id="wheelResult">
+              Premi “Gira la ruota” per ricevere una missione/consiglio utile per oggi.
+            </div>
+            <div class="wheelNote" id="wheelNote">
+              1 giro al giorno su questo PC (intrattenimento). Gioco responsabile.
+            </div>
+            <button class="wheelBtn" id="spinBtn">Gira la ruota</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-const tips=[
-"Controlla quota al banco prima di giocare.",
-"Massimo 2-3 selezioni.",
-"Stake fisso oggi.",
-"Niente rincorse.",
-"Gioca solo partite chiare.",
-"Calma e disciplina.",
-"Salta se quota bassa."
-];
+  <!-- QUIZ MODAL -->
+  <div class="modalBack" id="quizBack">
+    <div class="modal">
+      <div class="modalHead">
+        <div class="ttl">❓ Quiz rapido (30s)</div>
+        <button class="closeBtn" id="closeQuiz">Chiudi ✕</button>
+      </div>
+      <div class="modalBody">
+        <div class="quizBox">
+          <h3 class="qTitle" id="qTitle">Domanda</h3>
+          <p class="qText" id="qText">—</p>
+          <div class="qAns" id="qAns"></div>
+          <div style="margin-top:10px;color:var(--muted);font-size:12px" id="qFeedback"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-const canvas=document.getElementById("wheel");
-const ctx=canvas.getContext("2d");
-const cx=130,cy=130;
-const r=120;
+  <script>
+    // =========================
+    // STATE
+    // =========================
+    const SLOT_ORDER = ["mattina","pomeriggio","sera"];
+    const SLOT_LABEL = { mattina:"Mattina", pomeriggio:"Pomeriggio", sera:"Sera" };
 
-function drawWheel(){
-const slice=2*Math.PI/tips.length;
-tips.forEach((t,i)=>{
-ctx.beginPath();
-ctx.moveTo(cx,cy);
-ctx.arc(cx,cy,r,i*slice,(i+1)*slice);
-ctx.fillStyle=`hsl(${i*45},70%,50%)`;
-ctx.fill();
-});
-}
+    let EVENTS_DATA = null;
+    let CURRENT_SLOT = null;
 
-drawWheel();
+    // Schedina
+    const selections = []; // {key, label, odd? (optional), matchId, marketLabel}
 
-function spinWheel(){
-const pick=Math.floor(Math.random()*tips.length);
-document.getElementById("wheelText").innerText="👉 "+tips[pick];
-}
+    // =========================
+    // UTILS
+    // =========================
+    function $(id){ return document.getElementById(id); }
 
-function closeWheel(){
-document.getElementById("wheelBox").style.display="none";
-}
+    function clamp(n,a,b){ return Math.max(a, Math.min(b,n)); }
 
-document.getElementById("wheelBtn").onclick=()=>{
-document.getElementById("wheelBox").style.display="flex";
-};
+    function nowRome(){
+      // Browser locale, assumiamo già Italy: ma usiamo offset locale senza librerie.
+      return new Date();
+    }
 
-</script>
+    function slotFromTime(d){
+      const h = d.getHours();
+      if(h>=6 && h<12) return "mattina";
+      if(h>=12 && h<18) return "pomeriggio";
+      return "sera";
+    }
 
-</body>
-</html>
+    function slotFromURL(){
+      const u = new URL(location.href);
+      const s = u.searchParams.get("slot");
+      if(!s) return null;
+      if(s==="morning") return "mattina";
+      if(s==="afternoon") return "pomeriggio";
+      if(s==="evening") return "sera";
+      if(SLOT_ORDER.includes(s)) return s;
+      return null;
+    }
+
+    function pick5ForSlot(allEvents, slot){
+      const arr = allEvents.filter(e => (e.slot||"") === slot);
+      return arr.slice(0,5);
+    }
+
+    function shortTeam(name){
+      if(!name) return "";
+      return name.length > 22 ? (name.slice(0,22)+"…") : name;
+    }
+
+    function crestHTML(url, fallback){
+      if(url){
+        return `<div class="crest"><img src="${url}" alt=""></div>`;
+      }
+      const initials = (fallback||"?").trim().split(/\s+/).slice(0,2).map(w=>w[0]?.toUpperCase()||"").join("");
+      return `<div class="crest"><span style="font-weight:1000;font-size:11px;color:rgba(255,255,255,.85)">${initials||"?"}</span></div>`;
+    }
+
+    function riskBadge(level){
+      // Alta/Media/Bassa
+      if(level==="Alta") return `<span class="badge badgeGreen">Alta</span>`;
+      if(level==="Media") return `<span class="badge badgeYellow">Media</span>`;
+      return `<span class="badge badgeRed">Bassa</span>`;
+    }
+
+    // Motivazioni più realistiche (NON assurde tipo Slavia 1X col Barca)
+    function buildMotivation(match, marketLabel){
+      // Heuristica semplice e “credibile”: usa differenza tra nomi/tla per creare testo neutro.
+      // Nota: senza dati reali, facciamo motivazioni conservative e “da banco”.
+      const home = match.home || "Casa";
+      const away = match.away || "Ospiti";
+      const league = match.league_code || "";
+
+      // se è una coppa europea, più prudenza
+      const isEurope = ["CL","EL","EC"].includes(league);
+      const basePrud = isEurope ? "Match europeo: spesso più tattico, meglio prudenza." : "Match di campionato: ritmo più prevedibile.";
+
+      if(marketLabel.includes("1X")){
+        // 1X lo proponiamo “alta/media” solo se sembra favorito casa (tla presente e “big” dal crest? non affidabile)
+        // quindi testo prudente:
+        return {
+          level: isEurope ? "Media" : "Media",
+          why: `Copertura “tranquilla”: 1X riduce rischio rispetto a 1 secco. ${basePrud} Verifica quota e value al banco.`
+        };
+      }
+
+      if(marketLabel.includes("Over 2.5")){
+        return {
+          level: isEurope ? "Media" : "Alta",
+          why: `Se vedi linee goal favorevoli al banco: partita potenzialmente “aperta”. ${isEurope ? "In Europa occhio ai primi 30’." : "In campionato ritmo spesso più alto."}`
+        };
+      }
+
+      // Goal Sì
+      return {
+        level: isEurope ? "Media" : "Alta",
+        why: `Se le due squadre attaccano e concedono: “Goal Sì” ha senso. ${isEurope ? "Attenzione alle rotazioni." : "Controlla forma e assenze."}`
+      };
+    }
+
+    function normalizeMarkets(match){
+      // Se nel JSON ci sono markets con quote, noi qui le mostriamo come “verifica al banco”
+      // ma manteniamo label.
+      const ms = Array.isArray(match.markets) ? match.markets : [];
+      const out = ms.map(m => {
+        const label = (m.label||"").trim() || "Giocata";
+        const mot = buildMotivation(match, label);
+        return { label, level: mot.level, why: mot.why };
+      });
+
+      // fallback se mancano
+      if(out.length === 0){
+        const fallback = ["Over 2.5","1X","Goal/NoGoal Sì"];
+        return fallback.map(lbl => {
+          const mot = buildMotivation(match, lbl);
+          return { label: lbl, level: mot.level, why: mot.why };
+        });
+      }
+      return out.slice(0,3);
+    }
+
+    function renderEvents(){
+      if(!EVENTS_DATA || !EVENTS_DATA.events){ return; }
+
+      const all = EVENTS_DATA.events || [];
+      const picked = pick5ForSlot(all, CURRENT_SLOT);
+
+      $("shownCount").textContent = `${picked.length}/5`;
+
+      const html = picked.map((e, idx) => {
+        const league = e.league || e.league_code || "Calcio";
+        const start = e.start || "";
+        const slot = SLOT_LABEL[e.slot] || "";
+        const markets = normalizeMarkets(e);
+
+        return `
+          <div class="eventCard" data-mid="${e.id}">
+            <div class="eventTop">
+              <div class="meta">
+                <span class="leaguePill">${league}</span>
+                <span class="slotPill">${start} • ${slot}</span>
+              </div>
+              <div style="color:var(--muted);font-size:12px;font-weight:900">Evento ${idx+1}/5</div>
+            </div>
+
+            <div class="teams">
+              <div class="teamSide">
+                ${crestHTML(e.home_crest, e.home)}
+                <div class="tname" title="${e.home||""}">${shortTeam(e.home||"")}</div>
+              </div>
+              <div class="vs">—</div>
+              <div class="teamSide" style="justify-content:flex-end;">
+                <div class="tname" style="text-align:right" title="${e.away||""}">${shortTeam(e.away||"")}</div>
+                ${crestHTML(e.away_crest, e.away)}
+              </div>
+            </div>
+
+            <div class="markets">
+              ${markets.map((m, mi) => `
+                <div class="market">
+                  <div>
+                    <div class="m1">
+                      <div class="label">${m.label}</div>
+                      ${riskBadge(m.level)}
+                    </div>
+                    <div class="why">${m.why}</div>
+                  </div>
+                  <div class="mActions">
+                    <button class="btnMini" data-act="verify" data-mid="${e.id}" data-ml="${escapeHtml(m.label)}">Verifica al banco</button>
+                    <button class="btnMini btnAdd" data-act="add" data-mid="${e.id}" data-ml="${escapeHtml(m.label)}">+ Aggiungi</button>
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      $("events").innerHTML = html || `<div class="notice">Nessun evento in questa fascia. Prova “Cambia fascia”.</div>`;
+
+      // bind click
+      $("events").querySelectorAll("button[data-act]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const act = btn.getAttribute("data-act");
+          const mid = btn.getAttribute("data-mid");
+          const ml = btn.getAttribute("data-ml") || "";
+          if(act === "add") addSelection(mid, unescapeHtml(ml));
+          if(act === "verify") toast("✅ Ok: verifica quota e disponibilità al banco prima di inserire.");
+        });
+      });
+
+      renderExtra(all);
+    }
+
+    function renderExtra(all){
+      // corner & cartellini: prendiamo i 2 match più “importanti” tra quelli mostrati (stessa fascia)
+      const picked = pick5ForSlot(all, CURRENT_SLOT);
+
+      const corners = picked.slice(0,2).map(e => ({
+        title: `${e.home} - ${e.away}`,
+        when: e.start || "",
+        why: "Stima: ritmo/pressione → possibili corner. Valuta linea al banco (es. 8.5 / 9.5).",
+        lvl: "Alta"
+      }));
+
+      const cards = picked.slice(0,2).map(e => ({
+        title: `${e.home} - ${e.away}`,
+        when: e.start || "",
+        why: "Stima: agonismo/contatti → possibili cartellini. Buona per Over cartellini se quota ok.",
+        lvl: "Media"
+      }));
+
+      $("cornerList").innerHTML = corners.map((x,i)=>`
+        <div class="miniItem">
+          <div class="row1">
+            <div>
+              <div class="m">${i+1}) ${escapeHtml(x.title)}</div>
+              <div class="s">Corner (indicativo) • ${escapeHtml(x.when)}</div>
+              <div class="s">${escapeHtml(x.why)}</div>
+            </div>
+            <span class="badge badgeGreen">${x.lvl}</span>
+          </div>
+          <div style="margin-top:8px;">
+            <button class="btnMini" onclick="toast('✅ Corner: controlla linea e quota al banco, poi decidi.')">Verifica al banco</button>
+          </div>
+        </div>
+      `).join("");
+
+      $("cardList").innerHTML = cards.map((x,i)=>`
+        <div class="miniItem">
+          <div class="row1">
+            <div>
+              <div class="m">${i+1}) ${escapeHtml(x.title)}</div>
+              <div class="s">Cartellini (indicativo) • ${escapeHtml(x.when)}</div>
+              <div class="s">${escapeHtml(x.why)}</div>
+            </div>
+            <span class="badge badgeYellow">${x.lvl}</span>
+          </div>
+          <div style="margin-top:8px;">
+            <button class="btnMini" onclick="toast('✅ Cartellini: verifica mercato al banco e quota reale.')">Verifica al banco
