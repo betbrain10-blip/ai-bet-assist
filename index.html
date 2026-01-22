@@ -1,352 +1,1217 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vincitù • IA Portal</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-  margin:0;
-  font-family: Inter, system-ui, Arial;
-  background: radial-gradient(circle at top left,#5b2cff,#0d1833);
-  color:#fff;
-}
+  :root{
+    --bg1:#5b2cff;
+    --bg2:#0d1833;
+    --panel:rgba(18,20,55,.86);
+    --card:rgba(255,255,255,.07);
+    --card2:#111739;
+    --text:#ffffff;
+    --muted:rgba(255,255,255,.68);
+    --muted2:rgba(255,255,255,.52);
+    --orange:#ff9d00;
+    --orange2:#f2a81f;
+    --green:#28c76f;
+    --red:#ff4d4d;
+    --yellow:#ffc107;
+    --chip:rgba(255,255,255,.12);
+    --line:rgba(255,255,255,.10);
+  }
 
-.wrapper {
-  max-width:1300px;
-  margin:40px auto;
-  padding:20px;
-}
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    background: radial-gradient(circle at top left,var(--bg1),var(--bg2));
+    color:var(--text);
+  }
+  .wrapper{ max-width:1320px; margin:40px auto; padding:20px; }
+  .panel{
+    background:var(--panel);
+    border-radius:24px;
+    padding:22px;
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+    border:1px solid rgba(255,255,255,.08);
+  }
 
-.panel {
-  background:rgba(18,20,55,.85);
-  border-radius:22px;
-  padding:24px;
-  box-shadow:0 20px 60px rgba(0,0,0,.45);
-}
+  header{
+    display:flex; justify-content:space-between; align-items:center;
+    gap:14px; margin-bottom:16px;
+  }
+  .brand{ display:flex; align-items:center; gap:10px; font-weight:900; font-size:20px; }
+  .brand .v{
+    background:#d61e2f; /* ROSSO come richiesto */
+    color:#fff;
+    padding:6px 10px;
+    border-radius:10px;
+    font-weight:900;
+    box-shadow:0 10px 30px rgba(214,30,47,.22);
+  }
+  .brand .name{ letter-spacing:.2px; }
+  .brand small{ display:block; font-weight:600; font-size:12px; color:var(--muted2); margin-top:2px; }
 
-header {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:20px;
-}
+  .top-info{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+  .badge{
+    background:var(--chip);
+    padding:7px 12px;
+    border-radius:999px;
+    font-size:13px;
+    border:1px solid rgba(255,255,255,.08);
+    display:flex; align-items:center; gap:8px;
+  }
+  .dot{ width:8px; height:8px; border-radius:99px; background:var(--green); display:inline-block; }
 
-.logo {
-  display:flex;
-  gap:10px;
-  align-items:center;
-  font-weight:800;
-  font-size:20px;
-}
+  .main{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:18px;
+  }
 
-.logo span {
-  background:#d61e2f;
-  padding:6px 10px;
-  border-radius:10px;
-}
+  /* Controls */
+  .controls{ display:flex; gap:10px; flex-wrap:wrap; margin:8px 0 14px; }
+  button{
+    border:none; cursor:pointer;
+    border-radius:12px;
+    padding:10px 16px;
+    font-weight:800;
+    background:var(--orange);
+    color:#1d1606;
+  }
+  button.secondary{
+    background:#2c3165;
+    color:#fff;
+    font-weight:800;
+    border:1px solid rgba(255,255,255,.10);
+  }
+  button.ghost{
+    background:transparent;
+    color:#fff;
+    border:1px solid rgba(255,255,255,.18);
+  }
+  button:active{ transform:translateY(1px); }
 
-.top-info {
-  display:flex;
-  gap:12px;
-}
+  .row{
+    display:flex; gap:12px; flex-wrap:wrap; align-items:center;
+  }
 
-.badge {
-  background:rgba(255,255,255,.12);
-  padding:6px 12px;
-  border-radius:999px;
-  font-size:13px;
-}
+  /* Sections */
+  .section{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:14px;
+    margin-bottom:14px;
+  }
+  .section-title{
+    display:flex; justify-content:space-between; align-items:center;
+    gap:10px; margin-bottom:10px;
+  }
+  .section-title h2{ margin:0; font-size:15px; }
+  .section-title .mini{ font-size:12px; color:var(--muted2); }
 
-.main {
-  display:grid;
-  grid-template-columns:2fr 1fr;
-  gap:20px;
-}
+  /* Event list */
+  .event{
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:16px;
+    padding:14px;
+    margin-bottom:12px;
+  }
+  .event-head{
+    display:flex; justify-content:space-between; align-items:flex-start; gap:12px;
+  }
+  .meta{ font-size:12px; color:var(--muted2); }
+  .teams{
+    display:flex; align-items:center; gap:10px; margin-top:6px;
+    font-weight:900;
+  }
+  .team{
+    display:flex; align-items:center; gap:8px;
+  }
+  .crest{
+    width:22px; height:22px; border-radius:6px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.10);
+    object-fit:contain;
+  }
+  .vs{ color:var(--muted2); font-weight:800; }
 
-.controls {
-  display:flex;
-  gap:10px;
-  margin-bottom:15px;
-}
+  .tags{ display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
+  .chip{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:4px 10px; border-radius:999px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.08);
+    font-size:11px; color:#fff;
+    white-space:nowrap;
+  }
+  .chip.green{ background:rgba(40,199,111,.18); border-color:rgba(40,199,111,.25); }
+  .chip.yellow{ background:rgba(255,193,7,.18); border-color:rgba(255,193,7,.25); }
+  .chip.red{ background:rgba(255,77,77,.18); border-color:rgba(255,77,77,.25); }
 
-button {
-  background:#ff9d00;
-  border:none;
-  padding:10px 18px;
-  border-radius:12px;
-  font-weight:700;
-  cursor:pointer;
-}
+  .hint{
+    margin-top:10px;
+    font-size:12px;
+    color:var(--muted);
+    line-height:1.35;
+  }
 
-.secondary {
-  background:#2c3165;
-  color:white;
-}
+  .market-row{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+    margin-top:12px;
+  }
+  .market{
+    background:var(--card2);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:14px;
+    padding:10px;
+  }
+  .market-top{
+    display:flex; justify-content:space-between; align-items:center; gap:8px;
+    margin-bottom:8px;
+  }
+  .m-label{ font-weight:900; font-size:13px; }
+  .pill{
+    font-size:11px; font-weight:900;
+    padding:3px 8px; border-radius:999px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.10);
+  }
+  .pill.high{ background:rgba(40,199,111,.18); border-color:rgba(40,199,111,.25); }
+  .pill.mid{ background:rgba(255,193,7,.18); border-color:rgba(255,193,7,.25); }
+  .pill.low{ background:rgba(255,77,77,.18); border-color:rgba(255,77,77,.25); }
 
-.event {
-  background:rgba(255,255,255,.06);
-  border-radius:16px;
-  padding:14px;
-  margin-bottom:12px;
-}
+  .m-actions{
+    display:flex; gap:8px; margin-top:8px;
+  }
+  .mini-btn{
+    flex:1;
+    background:transparent;
+    border:1px solid rgba(255,255,255,.18);
+    color:#fff;
+    padding:8px 10px;
+    border-radius:12px;
+    font-weight:900;
+    cursor:pointer;
+    font-size:12px;
+  }
+  .mini-btn.add{
+    background:rgba(255,157,0,.16);
+    border-color:rgba(255,157,0,.25);
+  }
 
-.event h3 {
-  margin:0;
-  font-size:16px;
-}
+  /* Ticket */
+  .ticket{
+    background:rgba(255,255,255,.06);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.08);
+    padding:16px;
+  }
+  .ticket h2{ margin:0 0 12px 0; font-size:16px; }
+  .t-row{ display:flex; gap:10px; }
+  .field{
+    width:100%;
+    background:rgba(0,0,0,.18);
+    border:1px solid rgba(255,255,255,.10);
+    color:#fff;
+    border-radius:12px;
+    padding:10px;
+    font-weight:800;
+  }
+  .field.small{ width:110px; }
+  .ticket-list{ margin-top:12px; display:flex; flex-direction:column; gap:10px; }
+  .sel{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    padding:10px;
+  }
+  .sel-head{
+    display:flex; justify-content:space-between; align-items:flex-start; gap:10px;
+  }
+  .sel b{ font-size:13px; }
+  .sel small{ display:block; color:var(--muted2); margin-top:2px; }
+  .sel-controls{
+    display:flex; gap:8px; align-items:center; margin-top:8px;
+  }
+  .odd{
+    width:100px;
+    background:rgba(0,0,0,.18);
+    border:1px solid rgba(255,255,255,.12);
+    color:#fff;
+    border-radius:10px;
+    padding:8px 10px;
+    font-weight:900;
+  }
+  .xbtn{
+    background:rgba(255,77,77,.16);
+    border:1px solid rgba(255,77,77,.26);
+    color:#fff;
+    padding:8px 10px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:900;
+  }
 
-.meta {
-  opacity:.7;
-  font-size:13px;
-}
+  .summary{
+    margin-top:12px;
+    border-top:1px solid var(--line);
+    padding-top:12px;
+    font-size:13px;
+    color:var(--muted);
+    line-height:1.5;
+  }
+  .big{
+    font-size:16px;
+    font-weight:900;
+    color:#fff;
+  }
 
-.market-row {
-  display:flex;
-  gap:10px;
-  margin-top:10px;
-}
+  .printBtn{
+    width:100%;
+    margin-top:12px;
+    background:var(--orange);
+    color:#1d1606;
+    font-weight:900;
+    border-radius:14px;
+    padding:12px 16px;
+  }
 
-.market {
-  background:#111739;
-  padding:10px;
-  border-radius:12px;
-  flex:1;
-}
+  /* Wheel modal */
+  #wheelBox, #quizBox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.62);
+    justify-content:center;
+    align-items:center;
+    padding:18px;
+  }
+  .modal{
+    width:min(880px, 96vw);
+    background:#10163a;
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:22px;
+    padding:18px;
+    box-shadow:0 30px 80px rgba(0,0,0,.55);
+  }
+  .modal-head{
+    display:flex; justify-content:space-between; align-items:center; gap:10px;
+    margin-bottom:12px;
+  }
+  .modal-head h3{ margin:0; font-size:15px; }
+  .close{
+    background:transparent;
+    border:1px solid rgba(255,255,255,.18);
+    color:#fff;
+    padding:8px 12px;
+    border-radius:12px;
+    font-weight:900;
+    cursor:pointer;
+  }
+  .wheel-grid{
+    display:grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap:14px;
+  }
+  .wheel-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:18px;
+    padding:14px;
+  }
+  .wheelCanvasWrap{
+    display:flex; justify-content:center; align-items:center;
+    padding:10px 0 14px;
+  }
+  canvas{ max-width:100%; }
+  .wheelResult{
+    font-size:14px; font-weight:900;
+    padding:12px;
+    background:rgba(0,0,0,.18);
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:14px;
+    line-height:1.35;
+  }
+  .smallnote{ font-size:12px; color:var(--muted2); margin-top:10px; }
 
-.tag {
-  display:inline-block;
-  background:#28c76f;
-  padding:3px 8px;
-  border-radius:999px;
-  font-size:11px;
-}
-
-.low { background:#ff4d4d; }
-.mid { background:#ffc107; }
-
-.ticket {
-  background:rgba(255,255,255,.07);
-  border-radius:20px;
-  padding:20px;
-}
-
-.ticket h2 {
-  margin-top:0;
-}
-
-footer-note {
-  font-size:12px;
-  opacity:.6;
-}
-
-/* RUOTA */
-#wheelBox {
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.6);
-  justify-content:center;
-  align-items:center;
-}
-
-.wheelPanel {
-  background:#10163a;
-  padding:30px;
-  border-radius:22px;
-  width:360px;
-  text-align:center;
-}
+  /* Responsive */
+  @media (max-width: 980px){
+    .main{ grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 
 <body>
+  <div class="wrapper">
+    <div class="panel">
+      <header>
+        <div class="brand">
+          <div class="v">V</div>
+          <div>
+            <div class="name">Vincitù • IA Portal</div>
+            <small>Eventi reali • quote non mostrate: si inseriscono al banco</small>
+          </div>
+        </div>
 
-<div class="wrapper">
+        <div class="top-info">
+          <div class="badge"><span class="dot"></span> Centro: <b>VINC001</b></div>
+          <div class="badge">Agg: <b id="updatedAt">—</b></div>
+          <div class="badge">Fascia: <b id="fasciaLbl">—</b></div>
+          <div class="badge" id="clock">—</div>
+        </div>
+      </header>
 
-<div class="panel">
+      <div class="main">
 
-<header>
-  <div class="logo">
-    <span>V</span> Vincitù • IA Portal
+        <!-- LEFT -->
+        <div>
+
+          <div class="controls">
+            <button onclick="loadEvents(true)">Nuovi eventi</button>
+            <button class="secondary" onclick="changeSlot()">Cambia fascia</button>
+            <button class="ghost" onclick="openWheel()">🎡 Ruota</button>
+            <button class="ghost" onclick="openQuiz()">❓ Quiz</button>
+          </div>
+
+          <!-- TOP 3 -->
+          <div class="section" id="top3Section">
+            <div class="section-title">
+              <h2>⭐ Top 3 del giorno (chiari)</h2>
+              <div class="mini">Solo “indicazioni” → quota sempre al banco</div>
+            </div>
+            <div id="top3Box"></div>
+          </div>
+
+          <!-- CORNER / CARTELLINI (snello, non confuso) -->
+          <div class="section" id="specialSection">
+            <div class="section-title">
+              <h2>🎯 Angolo Speciale: Corner & Cartellini</h2>
+              <div class="mini">Max 2 + 2 (pulito)</div>
+            </div>
+            <div class="row" style="align-items:stretch;">
+              <div style="flex:1; min-width:260px;">
+                <div class="meta" style="margin-bottom:8px;">Corner (indicazioni)</div>
+                <div id="cornerBox"></div>
+              </div>
+              <div style="flex:1; min-width:260px;">
+                <div class="meta" style="margin-bottom:8px;">Cartellini (indicazioni)</div>
+                <div id="cardsBox"></div>
+              </div>
+            </div>
+            <div class="smallnote">Nota: sono stime “ritmo/pressione/agonismo”. Verifica sempre quota al banco.</div>
+          </div>
+
+          <!-- EVENTS -->
+          <div id="eventsBox"></div>
+
+          <div class="smallnote">
+            Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="ticket">
+
+          <h2>🧾 Schedina</h2>
+
+          <div class="t-row">
+            <input id="stake" class="field small" type="number" min="1" step="1" value="5" />
+            <select id="ticketType" class="field">
+              <option value="multipla">Multipla (tutte)</option>
+              <option value="singole">Singole (separate)</option>
+            </select>
+          </div>
+
+          <div class="summary" style="margin-top:10px;">
+            <div>Selezioni: <b id="selCount">0</b></div>
+            <div>Quota totale: <b id="totalOdd">—</b></div>
+            <div class="big">Vincita pot.: <span id="winPot">—</span></div>
+            <div style="margin-top:8px;color:var(--muted2);font-size:12px;">
+              Inserisci la <b>quota reale</b> qui sotto (presa al banco).  
+              Consiglio: 2–3 selezioni massimo per controllo.
+            </div>
+          </div>
+
+          <div class="ticket-list" id="ticketList"></div>
+
+          <button class="printBtn" onclick="printTicket()">🖨️ Stampa schedina</button>
+
+        </div>
+
+      </div>
+    </div>
   </div>
 
-  <div class="top-info">
-    <div class="badge" id="fasciaLbl">Mattina</div>
-    <div class="badge" id="clock"></div>
-    <div class="badge">Centro: VINC001</div>
+  <!-- WHEEL MODAL -->
+  <div id="wheelBox">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>🎡 Ruota del Giorno (1 giro / giorno)</h3>
+        <button class="close" onclick="closeWheel()">Chiudi ✕</button>
+      </div>
+
+      <div class="wheel-grid">
+        <div class="wheel-card">
+          <div class="meta">Gira per ottenere una “missione” semplice per oggi.</div>
+          <div class="wheelCanvasWrap">
+            <canvas id="wheel" width="360" height="360"></canvas>
+          </div>
+          <button style="width:100%;" onclick="spinWheel()">Gira la ruota</button>
+          <div class="smallnote" id="wheelNote"></div>
+        </div>
+
+        <div class="wheel-card">
+          <div class="meta">Risultato</div>
+          <div class="wheelResult" id="wheelResult">Gira la ruota per vedere la missione di oggi.</div>
+          <div class="smallnote">
+            Esempio: “Max 2 selezioni oggi” / “Stake fisso” / “Solo singola” / “Verifica quota al banco”…
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</header>
 
-<div class="main">
-
-<!-- SINISTRA -->
-<div>
-
-<div class="controls">
-  <button onclick="loadEvents()">Nuovi eventi</button>
-  <button class="secondary" onclick="changeSlot()">Cambia fascia</button>
-  <button class="secondary" onclick="openWheel()">Ruota</button>
-</div>
-
-<div id="eventsBox"></div>
-
-<p style="opacity:.5;font-size:12px">
-Quote non mostrate: verifica sempre al banco prima di inserire.<br>
-Supporto informativo / intrattenimento.
-</p>
-
-</div>
-
-<!-- DESTRA -->
-<div class="ticket">
-
-<h2>Scheda</h2>
-
-<p>Stake € <b>5</b></p>
-<p>Tipo: Multipla</p>
-
-<hr>
-
-<p>Selezioni: 0</p>
-<p>Quota totale: —</p>
-<p>Vincita pot.: —</p>
-
-<button style="width:100%;margin-top:10px">🖨️ Stampa schedina</button>
-
-<p style="font-size:12px;opacity:.6;margin-top:10px">
-Suggerimento: 2–3 selezioni massimo.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- RUOTA -->
-<div id="wheelBox">
-  <div class="wheelPanel">
-    <h3>🎡 Ruota del Giorno</h3>
-    <p id="wheelResult">Gira per ricevere un consiglio cliente.</p>
-    <button onclick="spinWheel()">Gira</button>
-    <br><br>
-    <button class="secondary" onclick="closeWheel()">Chiudi</button>
+  <!-- QUIZ MODAL -->
+  <div id="quizBox">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>❓ Mini Quiz Cliente (30 secondi)</h3>
+        <button class="close" onclick="closeQuiz()">Chiudi ✕</button>
+      </div>
+      <div class="wheel-card">
+        <div class="meta">Rispondi e ottieni un consiglio “di controllo”.</div>
+        <div id="quizQ" class="wheelResult" style="margin-top:10px;">—</div>
+        <div class="row" style="margin-top:12px;">
+          <button class="secondary" onclick="quizAnswer('A')">A</button>
+          <button class="secondary" onclick="quizAnswer('B')">B</button>
+          <button class="secondary" onclick="quizAnswer('C')">C</button>
+        </div>
+        <div class="smallnote" id="quizR"></div>
+      </div>
+    </div>
   </div>
-</div>
 
 <script>
+/* =========================
+  DATA LOADING: events.json
+========================= */
 
-/* ==========================
- ROTAZIONE FASCE
-========================== */
+let EVENTS_DATA = null;
+let CURRENT_SLOT = "mattina"; // default
 
-const slots=["mattina","pomeriggio","sera"];
-let slotIndex=0;
+const SLOT_ORDER = ["mattina","pomeriggio","sera"];
+
+function nowRome(){
+  // Il browser è già in Italia: ok. (Se vuoi precisione timezone server, va bene così.)
+  return new Date();
+}
+
+function slotFromTime(d){
+  const h = d.getHours();
+  if (h >= 6 && h < 12) return "mattina";
+  if (h >= 12 && h < 18) return "pomeriggio";
+  return "sera";
+}
+
+function setSlot(slot){
+  CURRENT_SLOT = slot;
+  document.getElementById("fasciaLbl").innerText = slot.charAt(0).toUpperCase()+slot.slice(1);
+  // aggiorna URL senza ricaricare
+  const u = new URL(window.location.href);
+  u.searchParams.set("slot", slot);
+  history.replaceState({}, "", u.toString());
+}
+
+function getSlotFromURL(){
+  const u = new URL(window.location.href);
+  const s = (u.searchParams.get("slot") || "").toLowerCase();
+  if (SLOT_ORDER.includes(s)) return s;
+  return null;
+}
+
+function todayKey(){
+  const d = nowRome();
+  // YYYY-MM-DD
+  const yy = d.getFullYear();
+  const mm = String(d.getMonth()+1).padStart(2,"0");
+  const dd = String(d.getDate()).padStart(2,"0");
+  return `${yy}-${mm}-${dd}`;
+}
+
+/* seed semplice e stabile */
+function hashStr(s){
+  let h = 2166136261;
+  for(let i=0;i<s.length;i++){
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return (h>>>0);
+}
+
+/* shuffle stabile con seed */
+function seededShuffle(arr, seed){
+  const a = arr.slice();
+  let x = seed >>> 0;
+  function rnd(){
+    // xorshift32
+    x ^= x << 13; x >>>= 0;
+    x ^= x >> 17; x >>>= 0;
+    x ^= x << 5;  x >>>= 0;
+    return (x >>> 0) / 4294967296;
+  }
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(rnd() * (i+1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+async function fetchEvents(){
+  try{
+    const res = await fetch("./events.json", { cache: "no-store" });
+    if(!res.ok) throw new Error("events.json non trovato");
+    EVENTS_DATA = await res.json();
+
+    const upd = EVENTS_DATA.updated_at || "—";
+    document.getElementById("updatedAt").innerText = upd;
+
+    return EVENTS_DATA;
+  }catch(e){
+    EVENTS_DATA = { events: [] };
+    document.getElementById("updatedAt").innerText = "—";
+    console.warn(e);
+    return EVENTS_DATA;
+  }
+}
+
+/* =========================
+  MOTIVAZIONI (più realistiche)
+  Regole semplici e “credibili” senza inventare cose assurde:
+  - Se big vs small -> 1X “controllo” per big (solo se big in casa)
+  - Over2.5: “ritmo/pressione” solo quando match non troppo sbilanciato
+  - Goal: preferibile in match equilibrati
+========================= */
+
+const BIG_TEAMS = [
+  "Real Madrid","Barcelona","Bayern","Manchester City","Liverpool","Arsenal",
+  "Inter","Milan","Juventus","PSG","Atalanta","Dortmund","Chelsea","Napoli"
+];
+
+function isBig(name){
+  const n = (name||"").toLowerCase();
+  return BIG_TEAMS.some(t => n.includes(t.toLowerCase()));
+}
+
+function ratingPills(type, ev){
+  // produce pill: Alta/Media/Bassa in modo credibile
+  const homeBig = isBig(ev.home);
+  const awayBig = isBig(ev.away);
+  const bigDiff = (homeBig && !awayBig) || (!homeBig && awayBig);
+
+  if(type==="1X"){
+    // 1X “Alta” solo se home big o match equilibrato
+    if(homeBig && !awayBig) return {txt:"Alta", cls:"high"};
+    if(!bigDiff) return {txt:"Media", cls:"mid"};
+    // se away big e home small -> 1X è rischiosa
+    return {txt:"Bassa", cls:"low"};
+  }
+
+  if(type==="OVER25"){
+    // Over2.5 alta solo in match medio-equilibrati o leghe offensive
+    const league = (ev.league_code||"").toUpperCase();
+    const offensiveLeagues = ["PL","BL1","DED","PPL"];
+    if(!bigDiff && offensiveLeagues.includes(league)) return {txt:"Alta", cls:"high"};
+    if(!bigDiff) return {txt:"Media", cls:"mid"};
+    return {txt:"Media", cls:"mid"}; // non “alta” se troppo sbilanciata
+  }
+
+  if(type==="GOAL"){
+    // Goal sì meglio quando non troppo sbilanciato
+    if(!bigDiff) return {txt:"Media", cls:"mid"};
+    return {txt:"Bassa", cls:"low"};
+  }
+
+  return {txt:"Media", cls:"mid"};
+}
+
+function motivation(type, ev){
+  const homeBig = isBig(ev.home);
+  const awayBig = isBig(ev.away);
+  const bigDiff = (homeBig && !awayBig) || (!homeBig && awayBig);
+
+  if(type==="1X"){
+    if(homeBig && !awayBig) return "Casa favorita: 1X utile per giocare “coperti”.";
+    if(!bigDiff) return "Match equilibrato: 1X prudente se vuoi controllo.";
+    return "Ospiti forti: 1X rischiosa, valuta solo se quota molto conveniente.";
+  }
+
+  if(type==="OVER25"){
+    if(!bigDiff) return "Possibile partita aperta: ritmo e transizioni possono alzare i gol.";
+    return "Match sbilanciato: Over 2.5 dipende da quanto spinge la favorita.";
+  }
+
+  if(type==="GOAL"){
+    if(!bigDiff) return "Equilibrio e occasioni da entrambe: Goal sì da valutare.";
+    return "Scenario sbilanciato: Goal sì più difficile per l’outsider.";
+  }
+
+  return "Valuta sempre quota reale al banco.";
+}
+
+/* =========================
+  PICK 15 AL GIORNO A ROTAZIONE (5 per fascia)
+  Anche se i match si ripetono, cambia ordine (seed: data + fascia)
+========================= */
+
+function eventsForSlot(allEvents, slot){
+  const slotEvents = allEvents.filter(e => (e.slot||"").toLowerCase() === slot);
+  // fallback: se non ci sono slot, prendi tutto
+  const base = slotEvents.length ? slotEvents : allEvents.slice();
+
+  // prendiamo 5
+  const seed = hashStr(`${todayKey()}|${slot}`);
+  const shuf = seededShuffle(base, seed);
+  return shuf.slice(0, 5);
+}
+
+function pickTop3(allEvents){
+  // top3 = prendiamo 3 da "sera" se esiste, altrimenti dai primi 3 del giorno (shuffle stabile)
+  const all = allEvents.slice();
+  const seed = hashStr(`${todayKey()}|TOP3`);
+  const shuf = seededShuffle(all, seed);
+  return shuf.slice(0, 3);
+}
+
+function pickCornerCards(allEvents){
+  // snello: 2 corner + 2 cartellini (solo indicazioni)
+  const seedC = hashStr(`${todayKey()}|CORNER`);
+  const seedA = hashStr(`${todayKey()}|CARDS`);
+  const shuf = seededShuffle(allEvents, seedC);
+  const shuf2 = seededShuffle(allEvents, seedA);
+
+  return {
+    corner: shuf.slice(0,2),
+    cards: shuf2.slice(2,4)
+  };
+}
+
+/* =========================
+  UI RENDER
+========================= */
+
+function crestImg(url){
+  if(!url) return `<div class="crest" title="—"></div>`;
+  return `<img class="crest" src="${url}" alt="" onerror="this.style.display='none'">`;
+}
+
+function renderTop3(list){
+  const box = document.getElementById("top3Box");
+  box.innerHTML = "";
+  list.forEach((ev, i) => {
+    const homeC = ev.home_crest || "";
+    const awayC = ev.away_crest || "";
+    const pill1x = ratingPills("1X", ev);
+
+    const d = document.createElement("div");
+    d.className = "event";
+    d.innerHTML = `
+      <div class="event-head">
+        <div>
+          <div class="meta">${ev.league || "Calcio"} • ${ev.start || ""}</div>
+          <div class="teams">
+            <div class="team">${crestImg(homeC)} <span>${ev.home}</span></div>
+            <span class="vs">—</span>
+            <div class="team">${crestImg(awayC)} <span>${ev.away}</span></div>
+          </div>
+          <div class="hint">
+            <b>Indicazione chiara:</b> ${motivation("1X", ev)}<br>
+            <span style="opacity:.85">Cliente mode: scelta prudente → <b>verifica quota al banco</b>.</span>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="chip ${pill1x.cls==='high'?'green':(pill1x.cls==='low'?'red':'yellow')}">Top ${i+1}</span>
+          <span class="chip">${pill1x.txt} (1X)</span>
+        </div>
+      </div>
+    `;
+    box.appendChild(d);
+  });
+}
+
+function renderCornerCards(data){
+  const cBox = document.getElementById("cornerBox");
+  const aBox = document.getElementById("cardsBox");
+  cBox.innerHTML = "";
+  aBox.innerHTML = "";
+
+  data.corner.forEach(ev=>{
+    const d = document.createElement("div");
+    d.className="event";
+    d.style.padding="12px";
+    d.innerHTML = `
+      <div class="meta">${ev.league || "Calcio"} • ${ev.start || ""}</div>
+      <div class="teams" style="margin-top:6px;">
+        <div class="team">${crestImg(ev.home_crest||"")} <span>${ev.home}</span></div>
+        <span class="vs">—</span>
+        <div class="team">${crestImg(ev.away_crest||"")} <span>${ev.away}</span></div>
+      </div>
+      <div class="hint"><b>Corner:</b> pressione e gioco sulle fasce → “da valutare”.<br><span style="opacity:.85">Quota reale sempre al banco.</span></div>
+    `;
+    cBox.appendChild(d);
+  });
+
+  data.cards.forEach(ev=>{
+    const d = document.createElement("div");
+    d.className="event";
+    d.style.padding="12px";
+    d.innerHTML = `
+      <div class="meta">${ev.league || "Calcio"} • ${ev.start || ""}</div>
+      <div class="teams" style="margin-top:6px;">
+        <div class="team">${crestImg(ev.home_crest||"")} <span>${ev.home}</span></div>
+        <span class="vs">—</span>
+        <div class="team">${crestImg(ev.away_crest||"")} <span>${ev.away}</span></div>
+      </div>
+      <div class="hint"><b>Cartellini:</b> match “teso” o fisico → possibili falli e proteste.<br><span style="opacity:.85">Quota reale sempre al banco.</span></div>
+    `;
+    aBox.appendChild(d);
+  });
+}
+
+function renderEvents(list){
+  const box = document.getElementById("eventsBox");
+  box.innerHTML = "";
+
+  list.forEach(ev=>{
+    const d = document.createElement("div");
+    d.className = "event";
+
+    const homeC = ev.home_crest || "";
+    const awayC = ev.away_crest || "";
+
+    const pOver = ratingPills("OVER25", ev);
+    const p1x  = ratingPills("1X", ev);
+    const pGoal = ratingPills("GOAL", ev);
+
+    d.innerHTML = `
+      <div class="event-head">
+        <div>
+          <div class="meta">${ev.league || "Calcio"} • ${ev.start || ""}</div>
+          <div class="teams">
+            <div class="team">${crestImg(homeC)} <span>${ev.home}</span></div>
+            <span class="vs">—</span>
+            <div class="team">${crestImg(awayC)} <span>${ev.away}</span></div>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="chip">${(ev.slot||"").toUpperCase()}</span>
+          <span class="chip">Quote: al banco</span>
+        </div>
+      </div>
+
+      <div class="market-row">
+        <div class="market">
+          <div class="market-top">
+            <div class="m-label">Over 2.5</div>
+            <div class="pill ${pOver.cls}">${pOver.txt}</div>
+          </div>
+          <div class="meta">${motivation("OVER25", ev)}</div>
+          <div class="m-actions">
+            <button class="mini-btn" onclick="alert('Verifica quota reale al banco (Over 2.5).')">Verifica</button>
+            <button class="mini-btn add" onclick="addToTicket('${escapeHtml(ev.home)}','${escapeHtml(ev.away)}','Over 2.5','${escapeHtml(ev.league||'Calcio')}','${escapeHtml(ev.start||'')}')">+ Aggiungi</button>
+          </div>
+        </div>
+
+        <div class="market">
+          <div class="market-top">
+            <div class="m-label">1X</div>
+            <div class="pill ${p1x.cls}">${p1x.txt}</div>
+          </div>
+          <div class="meta">${motivation("1X", ev)}</div>
+          <div class="m-actions">
+            <button class="mini-btn" onclick="alert('Verifica quota reale al banco (1X).')">Verifica</button>
+            <button class="mini-btn add" onclick="addToTicket('${escapeHtml(ev.home)}','${escapeHtml(ev.away)}','1X','${escapeHtml(ev.league||'Calcio')}','${escapeHtml(ev.start||'')}')">+ Aggiungi</button>
+          </div>
+        </div>
+
+        <div class="market">
+          <div class="market-top">
+            <div class="m-label">Goal Sì</div>
+            <div class="pill ${pGoal.cls}">${pGoal.txt}</div>
+          </div>
+          <div class="meta">${motivation("GOAL", ev)}</div>
+          <div class="m-actions">
+            <button class="mini-btn" onclick="alert('Verifica quota reale al banco (Goal Sì).')">Verifica</button>
+            <button class="mini-btn add" onclick="addToTicket('${escapeHtml(ev.home)}','${escapeHtml(ev.away)}','Goal Sì','${escapeHtml(ev.league||'Calcio')}','${escapeHtml(ev.start||'')}')">+ Aggiungi</button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    box.appendChild(d);
+  });
+}
+
+/* =========================
+  TICKET LOGIC
+========================= */
+
+let TICKET = [];
+
+function escapeHtml(s){
+  return String(s || "")
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+}
+
+function addToTicket(home, away, market, league, start){
+  const key = `${home}|${away}|${market}|${start}`;
+  if(TICKET.some(x => x.key === key)){
+    // già presente
+    return;
+  }
+  TICKET.push({
+    key,
+    home, away, market, league, start,
+    odd: "" // l’utente inserisce la quota reale
+  });
+  renderTicket();
+}
+
+function removeFromTicket(key){
+  TICKET = TICKET.filter(x => x.key !== key);
+  renderTicket();
+}
+
+function updateOdd(key, val){
+  const v = String(val || "").replace(",",".");
+  const num = parseFloat(v);
+  const item = TICKET.find(x => x.key === key);
+  if(!item) return;
+  if(!isNaN(num) && num > 1.0 && num < 100){
+    item.odd = num;
+  }else{
+    item.odd = "";
+  }
+  renderTicketSummary();
+}
+
+function renderTicket(){
+  const list = document.getElementById("ticketList");
+  list.innerHTML = "";
+
+  TICKET.forEach(item=>{
+    const d = document.createElement("div");
+    d.className="sel";
+    d.innerHTML = `
+      <div class="sel-head">
+        <div>
+          <b>${item.home} – ${item.away} • ${item.market}</b>
+          <small>${item.league} • ${item.start}</small>
+        </div>
+        <button class="xbtn" onclick="removeFromTicket('${escapeHtml(item.key)}')">✕</button>
+      </div>
+
+      <div class="sel-controls">
+        <input class="odd" placeholder="Quota reale" value="${item.odd || ""}"
+               oninput="updateOdd('${escapeHtml(item.key)}', this.value)" />
+        <div class="meta" style="flex:1;">
+          Inserisci quota dal banco
+        </div>
+      </div>
+    `;
+    list.appendChild(d);
+  });
+
+  renderTicketSummary();
+}
+
+function renderTicketSummary(){
+  document.getElementById("selCount").innerText = String(TICKET.length);
+
+  const stake = parseFloat(document.getElementById("stake").value || "0") || 0;
+  const type = document.getElementById("ticketType").value;
+
+  // calcolo quota totale SOLO se tutte le quote sono inserite
+  const odds = TICKET.map(x => x.odd).filter(x => x !== "");
+  const allFilled = odds.length === TICKET.length && TICKET.length > 0;
+
+  let totalOdd = null;
+
+  if(allFilled){
+    if(type === "multipla"){
+      totalOdd = odds.reduce((a,b)=>a*b, 1);
+    }else{
+      // singole: mostriamo somma vincite potenziali come stima
+      // (semplice per cliente)
+      totalOdd = null;
+    }
+  }
+
+  if(type==="multipla"){
+    document.getElementById("totalOdd").innerText = allFilled ? totalOdd.toFixed(2) : "—";
+    document.getElementById("winPot").innerText = allFilled ? (stake * totalOdd).toFixed(2)+"€" : "—";
+  }else{
+    // singole: totaleOdd non ha senso unico
+    document.getElementById("totalOdd").innerText = "Singole";
+    if(allFilled){
+      const sum = odds.reduce((a,b)=>a + (stake*b), 0);
+      document.getElementById("winPot").innerText = sum.toFixed(2)+"€ (somma)";
+    }else{
+      document.getElementById("winPot").innerText = "—";
+    }
+  }
+}
+
+function printTicket(){
+  const stake = parseFloat(document.getElementById("stake").value || "0") || 0;
+  const type = document.getElementById("ticketType").value;
+
+  const htmlLines = TICKET.map(x=>{
+    const odd = x.odd ? x.odd : "—";
+    return `<li><b>${x.home} – ${x.away}</b> • ${x.market} • quota: <b>${odd}</b><br><small>${x.league} • ${x.start}</small></li>`;
+  }).join("");
+
+  const w = window.open("", "_blank");
+  w.document.write(`
+    <html><head><title>Schedina</title>
+    <style>
+      body{font-family:Arial;padding:20px;}
+      h1{margin:0 0 10px 0;}
+      small{color:#555;}
+      li{margin:10px 0;}
+      .box{border:1px solid #ddd;padding:12px;border-radius:10px;}
+    </style>
+    </head><body>
+      <h1>Schedina • Vincitù IA</h1>
+      <div class="box">
+        <p><b>Tipo:</b> ${type}</p>
+        <p><b>Stake:</b> ${stake.toFixed(2)}€</p>
+        <p><small>Quote inserite dal banco.</small></p>
+        <ol>${htmlLines || "<li>Nessuna selezione</li>"}</ol>
+      </div>
+      <script>window.print();</script>
+    </body></html>
+  `);
+  w.document.close();
+}
+
+/* =========================
+  SLOT / LOAD EVENTS
+========================= */
 
 function changeSlot(){
- slotIndex=(slotIndex+1)%3;
- loadEvents();
+  const idx = SLOT_ORDER.indexOf(CURRENT_SLOT);
+  const next = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
+  setSlot(next);
+  loadEvents(true);
 }
 
-/* ==========================
- EVENTI DEMO (15 TOTALI)
-========================== */
+async function loadEvents(forceFetch=false){
+  if(!EVENTS_DATA || forceFetch){
+    await fetchEvents();
+  }
 
-const ALL_EVENTS=[
- {league:"Champions League",home:"Inter",away:"PSG",note:"Ritmo alto, squadre offensive."},
- {league:"Champions League",home:"Barcellona",away:"Napoli",note:"Pressione costante sulle fasce."},
- {league:"Serie A",home:"Milan",away:"Roma",note:"Big match equilibrato."},
- {league:"Premier League",home:"Arsenal",away:"Brighton",note:"Arsenal aggressivo in casa."},
- {league:"Bundesliga",home:"Bayern",away:"Leverkusen",note:"Entrambe segnano spesso."},
+  const all = (EVENTS_DATA && EVENTS_DATA.events) ? EVENTS_DATA.events : [];
 
- {league:"LaLiga",home:"Real Madrid",away:"Betis",note:"Ritmo alto lato destro."},
- {league:"Serie A",home:"Atalanta",away:"Torino",note:"Atalanta molto offensiva."},
- {league:"Premier League",home:"City",away:"Everton",note:"Possesso prolungato City."},
- {league:"Ligue 1",home:"PSG",away:"Lens",note:"PSG dominante."},
- {league:"Eredivisie",home:"Ajax",away:"Utrecht",note:"Gara aperta."},
+  // slot iniziale: URL > orario attuale
+  const uSlot = getSlotFromURL();
+  if(uSlot) setSlot(uSlot);
+  else setSlot(slotFromTime(nowRome()));
 
- {league:"Serie A",home:"Juventus",away:"Fiorentina",note:"Ritmo prudente iniziale."},
- {league:"Premier League",home:"Liverpool",away:"Villa",note:"Liverpool spinge forte."},
- {league:"Bundesliga",home:"Dortmund",away:"Mainz",note:"Corner probabili."},
- {league:"LaLiga",home:"Valencia",away:"Villarreal",note:"Match intenso."},
- {league:"Ligue 1",home:"Monaco",away:"Rennes",note:"Transizioni rapide."}
-];
+  const picked = eventsForSlot(all, CURRENT_SLOT);
+  renderEvents(picked);
 
-/* ==========================
- LOAD
-========================== */
-
-function loadEvents(){
-
- const box=document.getElementById("eventsBox");
- box.innerHTML="";
-
- const start=slotIndex*5;
- const subset=ALL_EVENTS.slice(start,start+5);
-
- document.getElementById("fasciaLbl").innerText=
-   slots[slotIndex].charAt(0).toUpperCase()+slots[slotIndex].slice(1);
-
- subset.forEach(ev=>{
-
-  const d=document.createElement("div");
-  d.className="event";
-
-  d.innerHTML=`
-   <div class="meta">${ev.league}</div>
-   <h3>${ev.home} – ${ev.away}</h3>
-   <div class="meta">${ev.note}</div>
-
-   <div class="market-row">
-    <div class="market">Over 2.5 <span class="tag mid">Media</span></div>
-    <div class="market">1X <span class="tag">Alta</span></div>
-    <div class="market">Goal <span class="tag mid">Media</span></div>
-   </div>
-  `;
-
-  box.appendChild(d);
- });
-
+  // TOP3 + Corner/Cards dal totale eventi
+  renderTop3(pickTop3(all));
+  renderCornerCards(pickCornerCards(all));
 }
 
-/* ==========================
- ORA
-========================== */
+/* =========================
+  CLOCK
+========================= */
 setInterval(()=>{
- document.getElementById("clock").innerText=
-  new Date().toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit"});
-},1000);
+  const d = nowRome();
+  const hh = String(d.getHours()).padStart(2,"0");
+  const mm = String(d.getMinutes()).padStart(2,"0");
+  document.getElementById("clock").innerText = `${hh}:${mm}`;
+}, 1000);
 
-/* ==========================
- RUOTA
-========================== */
+/* =========================
+  WHEEL (1 giro al giorno)
+========================= */
 
-const wheelTexts=[
- "Gioca pochi eventi ma buoni.",
- "Verifica sempre quota reale.",
- "Non inseguire le perdite.",
- "Corner utili in gare offensive.",
- "Cartellini nelle partite tese.",
- "Stake fisso oggi.",
- "Multipla corta = controllo."
+const wheelItems = [
+  "Missione: Max 2 selezioni oggi (controllo).",
+  "Missione: Stake fisso (non inseguire).",
+  "Missione: Solo 1 singola oggi (test).",
+  "Missione: Prima quota al banco, poi scegli.",
+  "Missione: Evita match troppo sbilanciati.",
+  "Missione: Se perdi, stop. Riparti domani.",
+  "Missione: 2–3 selezioni massimo, sempre."
 ];
 
-function openWheel(){document.getElementById("wheelBox").style.display="flex";}
-function closeWheel(){document.getElementById("wheelBox").style.display="none";}
+function storageKeyWheel(){
+  return "wheel_"+todayKey();
+}
+
+function openWheel(){
+  document.getElementById("wheelBox").style.display="flex";
+  const saved = localStorage.getItem(storageKeyWheel());
+  const note = document.getElementById("wheelNote");
+  if(saved){
+    note.innerText = "Giro già fatto oggi su questo PC.";
+    document.getElementById("wheelResult").innerText = saved;
+  }else{
+    note.innerText = "1 giro al giorno su questo PC.";
+  }
+  drawWheel();
+}
+
+function closeWheel(){
+  document.getElementById("wheelBox").style.display="none";
+}
+
+function drawWheel(){
+  const canvas = document.getElementById("wheel");
+  const ctx = canvas.getContext("2d");
+  const cx = canvas.width/2;
+  const cy = canvas.height/2;
+  const r = 160;
+  const n = wheelItems.length;
+  const slice = (Math.PI*2)/n;
+
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  for(let i=0;i<n;i++){
+    const a0 = i*slice;
+    const a1 = a0 + slice;
+
+    // colori alternati coerenti (non casinò)
+    const colors = ["#ff9d00","#2c3165","#28c76f","#6c5ce7","#ff4d4d","#3a86ff","#ffc107"];
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.arc(cx,cy,r,a0,a1);
+    ctx.closePath();
+    ctx.fillStyle = colors[i % colors.length];
+    ctx.fill();
+
+    // testo
+    ctx.save();
+    ctx.translate(cx,cy);
+    ctx.rotate(a0 + slice/2);
+    ctx.fillStyle = "rgba(0,0,0,.75)";
+    ctx.font = "bold 12px Arial";
+    ctx.textAlign = "right";
+    ctx.fillText("MISSIONE", r-12, 4);
+    ctx.restore();
+  }
+
+  // centro
+  ctx.beginPath();
+  ctx.arc(cx,cy,46,0,Math.PI*2);
+  ctx.fillStyle="rgba(0,0,0,.25)";
+  ctx.fill();
+  ctx.strokeStyle="rgba(255,255,255,.25)";
+  ctx.stroke();
+
+  // freccia
+  ctx.beginPath();
+  ctx.moveTo(cx,cy-r-6);
+  ctx.lineTo(cx-10,cy-r+16);
+  ctx.lineTo(cx+10,cy-r+16);
+  ctx.closePath();
+  ctx.fillStyle="#ffffff";
+  ctx.fill();
+}
 
 function spinWheel(){
- const r=wheelTexts[Math.floor(Math.random()*wheelTexts.length)];
- document.getElementById("wheelResult").innerText="🎯 "+r;
+  const saved = localStorage.getItem(storageKeyWheel());
+  if(saved){
+    document.getElementById("wheelResult").innerText = saved;
+    document.getElementById("wheelNote").innerText = "Già fatto oggi su questo PC.";
+    return;
+  }
+  const seed = hashStr(todayKey()+"|WHEEL");
+  const idx = seed % wheelItems.length;
+  const result = "🎯 " + wheelItems[idx];
+  localStorage.setItem(storageKeyWheel(), result);
+  document.getElementById("wheelResult").innerText = result;
+  document.getElementById("wheelNote").innerText = "Salvato per oggi. Domani cambia.";
 }
 
-/* INIT */
-loadEvents();
+/* =========================
+  QUIZ (semplice e utile)
+========================= */
 
+const QUIZ = [
+  {
+    q: "Qual è la scelta più “controllata” in una giornata difficile?",
+    A:"A) Aumentare stake per recuperare",
+    B:"B) Ridurre selezioni e stake fisso",
+    C:"C) Fare una multipla lunga",
+    ok:"B",
+    tip:"Controllo = poche selezioni + stake fisso. Niente inseguimento perdite."
+  },
+  {
+    q: "Quando è più importante verificare la quota al banco?",
+    A:"A) Sempre",
+    B:"B) Solo quando si vince",
+    C:"C) Mai",
+    ok:"A",
+    tip:"Quote reali cambiano: controlla sempre prima di inserire."
+  },
+  {
+    q: "Cosa aiuta di più a mantenere disciplina?",
+    A:"A) 2–3 selezioni massimo",
+    B:"B) 9 selezioni per alzare vincita",
+    C:"C) Cambiare strategia ogni ora",
+    ok:"A",
+    tip:"Poche scelte = più controllo e meno caos."
+  }
+];
+
+let currentQuiz = null;
+
+function openQuiz(){
+  document.getElementById("quizBox").style.display="flex";
+  const seed = hashStr(todayKey()+"|QUIZ");
+  currentQuiz = QUIZ[seed % QUIZ.length];
+  document.getElementById("quizQ").innerText =
+    `Q: ${currentQuiz.q}\n\nA) ${currentQuiz.A}\nB) ${currentQuiz.B}\nC) ${currentQuiz.C}`;
+  document.getElementById("quizR").innerText = "";
+}
+function closeQuiz(){
+  document.getElementById("quizBox").style.display="none";
+}
+function quizAnswer(ans){
+  if(!currentQuiz) return;
+  if(ans === currentQuiz.ok){
+    document.getElementById("quizR").innerText = "✅ Giusto! " + currentQuiz.tip;
+  }else{
+    document.getElementById("quizR").innerText = "❌ Non proprio. " + currentQuiz.tip;
+  }
+}
+
+/* =========================
+  INIT
+========================= */
+document.getElementById("stake").addEventListener("input", renderTicketSummary);
+document.getElementById("ticketType").addEventListener("change", renderTicketSummary);
+
+loadEvents(true);
 </script>
-
 </body>
 </html>
