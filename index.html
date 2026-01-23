@@ -7,677 +7,496 @@
 
   <style>
     :root{
-      --bg1:#2a0f55;
+      --bg1:#2a0f5e;
       --bg2:#0b244a;
-
-      --panel: rgba(18, 24, 52, .66);
-      --panel2: rgba(18, 24, 52, .46);
-      --stroke: rgba(255,255,255,.10);
+      --panel: rgba(20, 23, 44, .72);
+      --panel2: rgba(30, 33, 62, .72);
+      --stroke: rgba(255,255,255,.12);
       --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.66);
-      --muted2: rgba(255,255,255,.46);
-
+      --muted: rgba(255,255,255,.68);
+      --muted2: rgba(255,255,255,.48);
       --accent:#ff9800;
-      --accent2:#ffb74d;
+      --accent2:#ffb03a;
+      --ok:#2ecc71;
+      --warn:#f1c40f;
+      --bad:#ff5b5b;
 
-      --ok:#27d17f;
-      --warn:#ffc93a;
-      --bad:#ff5a7a;
-
-      --shadow: 0 18px 60px rgba(0,0,0,.42);
-      --r1: 18px;
-      --r2: 14px;
-
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --r: 18px;
+      --shadow: 0 14px 50px rgba(0,0,0,.35);
+      --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
     }
 
-    *{box-sizing:border-box}
+    *{ box-sizing:border-box; }
     body{
       margin:0;
-      min-height:100vh;
-      color:var(--text);
       font-family:var(--font);
+      color:var(--text);
+      min-height:100vh;
       background:
-        radial-gradient(1200px 700px at 20% 10%, rgba(255,152,0,.22), transparent 60%),
-        radial-gradient(900px 600px at 80% 30%, rgba(120,80,255,.18), transparent 55%),
-        linear-gradient(135deg, var(--bg1), var(--bg2));
-      overflow-x:hidden;
+        radial-gradient(1200px 700px at 20% 10%, rgba(140,70,255,.38), transparent 60%),
+        radial-gradient(900px 700px at 80% 0%, rgba(0,180,255,.18), transparent 55%),
+        linear-gradient(120deg, var(--bg1), var(--bg2));
     }
 
-    .wrap{ max-width:1220px; margin:34px auto; padding:0 16px; }
+    .wrap{
+      max-width: 1240px;
+      margin: 28px auto;
+      padding: 0 18px 40px;
+    }
 
     .shell{
-      background: linear-gradient(180deg, rgba(18,24,52,.72), rgba(18,24,52,.58));
       border:1px solid var(--stroke);
-      border-radius:24px;
-      box-shadow:var(--shadow);
-      padding:18px;
-      position:relative;
+      border-radius: 26px;
+      background: rgba(12, 14, 32, .45);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
       overflow:hidden;
-    }
-
-    .shell:before{
-      content:"";
-      position:absolute; inset:-2px;
-      background:
-        radial-gradient(800px 240px at 30% 0%, rgba(255,152,0,.18), transparent 60%),
-        radial-gradient(680px 240px at 70% 0%, rgba(120,80,255,.14), transparent 55%);
-      pointer-events:none;
     }
 
     .topbar{
-      position:relative;
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:12px;
-      padding:10px 10px 14px;
+      padding: 18px 18px 14px;
+      border-bottom:1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), transparent);
+      gap: 14px;
     }
 
     .brand{
-      display:flex; align-items:center; gap:10px;
-      min-width:260px;
+      display:flex; gap:12px; align-items:center;
+      min-width: 280px;
     }
 
-    /* LOGO rosso Vincitù (pulito, coerente) */
-    .logo{
-      width:36px; height:36px;
-      border-radius:11px;
-      background:#d8292f;
+    /* Logo "V" rosso come prima */
+    .vlogo{
+      width:34px; height:34px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #ff3b3b, #b70000);
       display:grid; place-items:center;
-      box-shadow: 0 10px 30px rgba(216,41,47,.22);
-      border:1px solid rgba(255,255,255,.12);
-      flex:0 0 auto;
-      position:relative;
-      overflow:hidden;
+      box-shadow: 0 10px 24px rgba(255,0,0,.18);
+      border: 1px solid rgba(255,255,255,.18);
+      flex: 0 0 auto;
     }
-    .logo:before{
-      content:"";
-      position:absolute; inset:-40%;
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.18), transparent 60%);
-      transform: rotate(25deg);
+    .vlogo span{
+      font-weight: 900;
+      letter-spacing:.5px;
     }
-    .logo span{ font-weight:1000; font-size:16px; color:#fff; transform:translateY(-.5px); position:relative; }
-    .brand h1{ margin:0; font-size:16px; font-weight:900; letter-spacing:.2px; }
-    .brand small{ display:block; margin-top:2px; color:var(--muted); font-size:12px; }
 
-    .status{
-      display:flex; align-items:center; gap:8px;
-      flex-wrap:wrap; justify-content:flex-end;
+    .brand h1{
+      margin:0;
+      font-size: 16px;
+      line-height: 1.1;
+      font-weight: 800;
     }
+    .brand p{
+      margin:4px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .meta{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:flex-end;
+      flex-wrap:wrap;
+    }
+
     .pill{
-      display:inline-flex; align-items:center; gap:8px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
       padding:7px 10px;
       border:1px solid var(--stroke);
-      background:rgba(255,255,255,.06);
-      border-radius:999px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
       font-size:12px;
-      color:var(--muted);
       white-space:nowrap;
     }
-    .dot{ width:8px;height:8px;border-radius:999px; background:var(--ok); box-shadow:0 0 0 3px rgba(39,209,127,.12); }
-    .pill strong{ color:var(--text); font-weight:900; }
-    .pill .mini{ color:var(--muted2); font-weight:800; }
+    .dot{
+      width:8px;height:8px;border-radius:50%;
+      background: var(--ok);
+      box-shadow: 0 0 0 4px rgba(46, 204, 113, .12);
+    }
 
-    .row{
-      position:relative;
+    .content{
       display:grid;
       grid-template-columns: 1.15fr .85fr;
-      gap:14px;
-      align-items:start;
-      padding:0 10px 10px;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    @media (max-width: 1060px){
+      .content{ grid-template-columns: 1fr; }
+      .brand{ min-width: unset; }
     }
 
     .panel{
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
       border:1px solid var(--stroke);
-      border-radius:var(--r1);
-      padding:14px;
-    }
-
-    .panelHeader{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:10px; margin-bottom:10px; flex-wrap:wrap;
-    }
-    .panelHeader .title{
-      display:flex; align-items:center; gap:8px;
-      font-weight:1000; font-size:13px; color:var(--text);
-    }
-
-    .btnRow{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
-
-    .btn{
-      appearance:none;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.06);
-      color:var(--text);
-      padding:9px 12px;
-      border-radius:12px;
-      font-weight:900;
-      font-size:12px;
-      cursor:pointer;
-      transition: transform .08s ease, background .15s ease, border-color .15s ease;
-      user-select:none;
-    }
-    .btn:hover{ background: rgba(255,255,255,.09); }
-    .btn:active{ transform: translateY(1px); }
-
-    .btn.primary{
-      border-color: rgba(255,152,0,.35);
-      background: linear-gradient(180deg, rgba(255,152,0,.95), rgba(255,152,0,.72));
-      color:#1c1208;
-      box-shadow: 0 18px 40px rgba(255,152,0,.12);
-    }
-    .btn.primary:hover{
-      background: linear-gradient(180deg, rgba(255,169,40,.98), rgba(255,152,0,.78));
-    }
-    .btn.small{ padding:7px 10px; border-radius:10px; font-weight:1000; }
-
-    .subline{
-      display:flex; align-items:center; gap:10px;
-      flex-wrap:wrap; margin:8px 0 10px;
-      color:var(--muted); font-size:12px;
-    }
-    .tag{
-      padding:6px 10px; border-radius:999px;
-      background: rgba(255,255,255,.06);
-      border:1px solid var(--stroke);
-      font-weight:900; color:var(--muted);
-    }
-
-    /* ANGOLI SPECIALI */
-    .callout{
-      margin-top:10px;
-      background: rgba(255,255,255,.045);
-      border:1px solid rgba(255,255,255,.09);
-      border-radius:14px;
-      padding:12px;
-    }
-    .calloutHead{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:10px; margin-bottom:8px;
-    }
-    .calloutHead .left{
-      display:flex; align-items:center; gap:8px;
-      font-weight:1000; font-size:12.5px;
-    }
-    .calloutHead .right{
-      display:flex; align-items:center; gap:8px;
-      color:var(--muted); font-size:12px; font-weight:900;
-    }
-
-    .calloutGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
-      margin-top:8px;
-    }
-    @media (max-width: 980px){
-      .row{ grid-template-columns: 1fr; }
-      .calloutGrid{ grid-template-columns: 1fr; }
-      .status{ justify-content:flex-start; }
-    }
-
-    .miniCard{
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(10, 14, 38, .34);
-      padding:10px;
-    }
-
-    .miniTop{
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-      font-weight:1000; font-size:12px;
-      margin-bottom:8px;
-    }
-    .miniTop .meta{ color:var(--muted); font-weight:900; font-size:11.5px; white-space:nowrap; }
-
-    .miniItem{
-      padding:10px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      margin-top:10px;
-    }
-    .miniItem:first-child{ margin-top:0; }
-
-    .badges{ display:flex; gap:6px; flex-wrap:wrap; margin:8px 0 6px; }
-    .badge{
-      padding:5px 8px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      font-size:11px;
-      font-weight:1000;
-      color:var(--muted);
-    }
-    .badge.ok{ background: rgba(39,209,127,.14); border-color: rgba(39,209,127,.22); color: rgba(230,255,242,.92); }
-    .badge.warn{ background: rgba(255,201,58,.14); border-color: rgba(255,201,58,.24); color: rgba(255,245,210,.95); }
-    .badge.bad{ background: rgba(255,90,122,.14); border-color: rgba(255,90,122,.22); color: rgba(255,230,236,.95); }
-
-    .miniText{
-      color:var(--muted);
-      font-size:12px;
-      line-height:1.35;
-    }
-    .miniCTA{
-      margin-top:10px;
-      display:flex; align-items:center; justify-content:space-between; gap:8px;
-    }
-    .miniCTA .btnMini{
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color:var(--text);
-      padding:8px 10px;
-      font-weight:1000;
-      cursor:pointer;
-      width:100%;
-    }
-    .miniCTA .btnMini:hover{ background: rgba(255,255,255,.09); }
-
-    /* EVENTI */
-    .eventCard{
-      margin-top:12px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.035);
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
       overflow:hidden;
     }
-    .eventHead{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:10px; padding:12px;
-      background: rgba(0,0,0,.12);
-      border-bottom:1px solid rgba(255,255,255,.08);
-    }
-    .eventLeft{ display:flex; align-items:center; gap:10px; min-width:0; }
-    .leagueDot{
-      width:10px;height:10px;border-radius:999px;
-      background: rgba(0,255,180,.7);
-      box-shadow:0 0 0 3px rgba(0,255,180,.12);
-      flex:0 0 auto;
-    }
-    .eventTitle{ min-width:0; }
-    .eventTitle .meta{
-      display:flex; gap:8px; flex-wrap:wrap;
-      align-items:center;
-      color:var(--muted);
-      font-size:11.5px;
-      font-weight:900;
-      margin-bottom:3px;
-    }
-    .chip{
-      padding:4px 8px; border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      color:var(--muted);
-      font-weight:1000;
-      font-size:11px;
-      white-space:nowrap;
-    }
-    .matchLine{
-      display:flex; align-items:center; gap:10px;
-      font-weight:1000; font-size:13px;
-      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-    }
-    .team{ display:flex; align-items:center; gap:8px; min-width:0; }
-
-    .crest{
-      width:18px; height:18px; border-radius:6px;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.10);
-      display:grid; place-items:center;
-      overflow:hidden;
-      flex:0 0 auto;
-    }
-    .crest img{ width:100%; height:100%; object-fit:contain; display:block; }
-    .crest .ini{ font-size:10px; font-weight:1000; color:rgba(255,255,255,.82); }
-
-    .eventRight{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
-    .eventBody{ padding:12px; }
-
-    /* Motivazioni: realistiche e corte */
-    .reasonBox{
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(10,14,38,.24);
-      padding:10px;
-      margin-bottom:10px;
-    }
-    .reasonBox .r1{ font-weight:1000; font-size:12.5px; margin-bottom:6px; }
-    .reasonBox .r2{ color:var(--muted); font-size:12px; line-height:1.35; }
-    .reasonBox .r3{ margin-top:8px; color:rgba(255,255,255,.78); font-size:12px; font-weight:900; }
-
-    .markets{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:10px;
-    }
-    @media (max-width: 980px){ .markets{ grid-template-columns: 1fr; } }
-
-    .mkt{
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(10, 14, 38, .32);
-      padding:10px;
-      display:flex;
-      flex-direction:column;
-      gap:8px;
-      min-height:110px;
-    }
-    .mktTop{
-      display:flex; align-items:center; justify-content:space-between; gap:8px;
-    }
-    .mktName{ font-weight:1000; font-size:12.5px; display:flex; align-items:center; gap:8px; }
-
-    .prio{
-      padding:5px 8px; border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      font-size:11px;
-      font-weight:1000;
-      color:var(--muted);
-      background: rgba(255,255,255,.06);
-      white-space:nowrap;
-    }
-    .prio.ok{ background: rgba(39,209,127,.14); border-color: rgba(39,209,127,.22); color: rgba(230,255,242,.92); }
-    .prio.warn{ background: rgba(255,201,58,.14); border-color: rgba(255,201,58,.24); color: rgba(255,245,210,.95); }
-    .prio.bad{ background: rgba(255,90,122,.14); border-color: rgba(255,90,122,.22); color: rgba(255,230,236,.95); }
-
-    .mktText{ color:var(--muted); font-size:12px; line-height:1.35; min-height:40px; }
-    .mktActions{ display:flex; gap:8px; align-items:center; margin-top:auto; }
-
-    .btn2{
-      flex:1;
-      border-radius:12px;
-      padding:9px 10px;
-      font-size:12px;
-      font-weight:1000;
-      cursor:pointer;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color:var(--text);
-      transition: transform .08s ease, background .15s ease;
-    }
-    .btn2:hover{ background: rgba(255,255,255,.09); }
-    .btn2:active{ transform: translateY(1px); }
-    .btn2.add{
-      border-color: rgba(255,152,0,.35);
-      background: linear-gradient(180deg, rgba(255,152,0,.92), rgba(255,152,0,.70));
-      color:#1c1208;
-    }
-    .btn2.add:hover{
-      background: linear-gradient(180deg, rgba(255,169,40,.96), rgba(255,152,0,.76));
-    }
-
-    /* RIGHT */
-    .rightPanel h3{
-      margin:0 0 10px;
-      font-size:13px;
-      font-weight:1000;
-      display:flex; align-items:center; gap:8px;
-    }
-    .formGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
-      margin-bottom:10px;
-    }
-    .field{
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(10, 14, 38, .28);
-      padding:10px;
-    }
-    .field label{
-      display:block;
-      font-size:11px;
-      color:var(--muted);
-      font-weight:900;
-      margin-bottom:7px;
-    }
-    .field input, .field select{
-      width:100%;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color:var(--text);
-      padding:9px 10px;
-      border-radius:12px;
-      outline:none;
-      font-weight:1000;
-    }
-
-    .sumRow{
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap:10px;
-      margin:10px 0 12px;
-    }
-    .sumBox{
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      padding:10px;
-    }
-    .sumBox .k{ color:var(--muted); font-size:11px; font-weight:900; }
-    .sumBox .v{ margin-top:6px; font-size:14px; font-weight:1000; }
-
-    .ticket{
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(10, 14, 38, .26);
-      padding:12px;
-      margin-top:10px;
-    }
-    .ticketHead{
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-      color:var(--muted);
-      font-size:12px;
-      font-weight:900;
-      margin-bottom:8px;
-    }
-    .ticketList{ display:flex; flex-direction:column; gap:8px; margin:8px 0 10px; }
-    .pick{
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      padding:10px;
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-    }
-    .pick .left{ min-width:0; }
-    .pick .left strong{
-      display:block;
-      font-weight:1000;
-      font-size:12.5px;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-    }
-    .pick .left span{
-      display:block;
-      color:var(--muted);
-      font-size:11.5px;
-      font-weight:900;
-      margin-top:2px;
-    }
-    .pick .rm{
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color:var(--text);
-      padding:8px 10px;
-      font-weight:1000;
-      cursor:pointer;
-    }
-
-    .bigPrint{
-      width:100%;
-      border-radius:16px;
-      padding:12px 14px;
-      border:1px solid rgba(255,152,0,.35);
-      background: linear-gradient(180deg, rgba(255,152,0,.95), rgba(255,152,0,.70));
-      color:#1c1208;
-      font-weight:1000;
-      font-size:13px;
-      cursor:pointer;
-      box-shadow: 0 18px 40px rgba(255,152,0,.12);
-    }
-    .bigPrint:active{ transform: translateY(1px); }
-
-    .hint{
-      margin-top:10px;
-      color:var(--muted);
-      font-size:12px;
-      line-height:1.35;
-    }
-
-    .toast{
-      position: fixed;
-      bottom: 18px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(10, 14, 38, .92);
-      border:1px solid rgba(255,255,255,.12);
-      color:var(--text);
-      padding:10px 12px;
-      border-radius:14px;
-      box-shadow: 0 18px 60px rgba(0,0,0,.45);
-      font-weight:900;
-      font-size:12.5px;
-      display:none;
-      z-index:9999;
-      max-width: 92vw;
-    }
-
-    /* MODALS */
-    .modalBack{
-      position:fixed; inset:0;
-      background: rgba(0,0,0,.55);
-      backdrop-filter: blur(6px);
-      display:none;
-      align-items:center;
-      justify-content:center;
-      z-index:9998;
-      padding:16px;
-    }
-    .modal{
-      width:min(940px, 96vw);
-      border-radius:18px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(10, 14, 38, .92);
-      box-shadow: 0 20px 70px rgba(0,0,0,.55);
-      overflow:hidden;
-    }
-    .modalHead{
+    .panelHead{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      padding:12px 14px;
-      border-bottom:1px solid rgba(255,255,255,.10);
+      padding: 12px 12px 10px;
+      border-bottom:1px solid var(--stroke);
     }
-    .modalHead strong{ font-size:13px; font-weight:1000; }
-    .modalHead button{
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color:var(--text);
-      padding:8px 10px;
-      font-weight:1000;
+    .panelHead .title{
+      display:flex; align-items:center; gap:10px;
+      font-weight:800;
+      font-size: 13px;
+    }
+
+    .btns{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+    .btn{
       cursor:pointer;
+      border:1px solid var(--stroke);
+      color: var(--text);
+      background: rgba(255,255,255,.05);
+      padding: 9px 12px;
+      border-radius: 12px;
+      font-weight: 750;
+      font-size: 12px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      transition: transform .08s ease, background .15s ease;
+      user-select:none;
     }
-    .modalBody{ padding:14px; }
-
-    .wheelGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:12px;
+    .btn:hover{ background: rgba(255,255,255,.08); }
+    .btn:active{ transform: scale(.98); }
+    .btn.primary{
+      background: linear-gradient(180deg, var(--accent2), var(--accent));
+      border-color: rgba(0,0,0,.1);
+      color: #1b1b1b;
     }
-    @media (max-width: 860px){ .wheelGrid{ grid-template-columns: 1fr; } }
 
-    .wheelBox{
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      padding:12px;
-      position:relative;
+    .subline{
+      padding: 10px 12px;
+      color: var(--muted);
+      font-size: 12px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .subtag{
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+    }
+
+    /* Cards eventi */
+    .events{
+      padding: 10px 12px 14px;
+      display:flex;
+      flex-direction:column;
+      gap: 12px;
+    }
+
+    .eventCard{
+      border:1px solid var(--stroke);
+      background: rgba(10, 12, 26, .35);
+      border-radius: 18px;
       overflow:hidden;
     }
-    .wheelBox:before{
-      content:"";
-      position:absolute; inset:-40%;
-      background: radial-gradient(circle at 30% 30%, rgba(255,152,0,.14), transparent 60%);
-      transform: rotate(18deg);
-      pointer-events:none;
+
+    .eventTop{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 12px 12px 10px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      gap: 10px;
     }
 
-    canvas{ width:100%; height:auto; display:block; position:relative; }
-
-    .wheelBtn{
-      width:100%;
-      margin-top:10px;
-      border-radius:16px;
-      padding:12px 14px;
-      border:1px solid rgba(255,152,0,.35);
-      background: linear-gradient(180deg, rgba(255,152,0,.95), rgba(255,152,0,.72));
-      color:#1c1208;
-      font-weight:1000;
-      cursor:pointer;
-      position:relative;
-    }
-    .wheelBtn:disabled{ opacity:.55; cursor:not-allowed; }
-
-    .wheelNote{
-      margin-top:10px;
-      color:var(--muted);
-      font-size:12px;
-      line-height:1.35;
-      position:relative;
+    .leagueLine{
+      display:flex; align-items:center; gap:10px;
+      font-size: 12px;
+      color: var(--muted);
+      flex-wrap:wrap;
     }
 
-    .miniStatRow{
-      display:flex; gap:8px; flex-wrap:wrap;
-      margin-top:10px;
-      position:relative;
-    }
-    .miniStat{
-      padding:6px 10px;
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 6px 10px;
       border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      font-size:11px;
-      font-weight:1000;
-      color:var(--muted);
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+      font-size: 12px;
+      color: var(--muted);
     }
-    .miniStat strong{ color:var(--text); }
 
-    .quizBox{
-      border-radius:16px;
+    .teams{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 12px 12px;
+    }
+    .crest{
+      width:26px;height:26px;border-radius:50%;
+      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      overflow:hidden;
+      display:grid; place-items:center;
+      flex:0 0 auto;
+    }
+    .crest img{ width:100%; height:100%; object-fit:contain; }
+    .teams .name{
+      font-weight:900;
+      letter-spacing:.2px;
+      font-size: 14px;
+    }
+    .teams .vs{
+      color: var(--muted2);
+      font-weight: 800;
+      margin: 0 6px;
+    }
+
+    .iaBox{
+      padding: 0 12px 12px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .iaRow{
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      border-radius: 14px;
+      padding: 10px 10px;
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+    }
+
+    .iaHeader{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      flex-wrap:wrap;
+    }
+    .iaHeader .h{
+      font-weight: 900;
+      font-size: 13px;
+    }
+    .chips{
+      display:flex;
+      gap: 8px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .chip{
+      font-size: 11px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .chip.ok{ border-color: rgba(46,204,113,.35); color: rgba(210,255,230,.92); background: rgba(46,204,113,.10); }
+    .chip.warn{ border-color: rgba(241,196,15,.35); color: rgba(255,248,210,.95); background: rgba(241,196,15,.10); }
+    .chip.bad{ border-color: rgba(255,91,91,.35); color: rgba(255,220,220,.95); background: rgba(255,91,91,.10); }
+
+    .iaText{
+      font-size: 12px;
+      line-height: 1.35;
+      color: var(--muted);
+    }
+
+    .iaList{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 2px;
+    }
+    @media (max-width: 620px){
+      .iaList{ grid-template-columns: 1fr; }
+    }
+
+    .pick{
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.12);
+      border-radius: 14px;
+      padding: 9px 10px;
+      display:flex;
+      flex-direction:column;
+      gap: 6px;
+    }
+    .pickTop{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+    }
+    .pickTop .pname{
+      font-weight: 900;
+      font-size: 12px;
+    }
+    .pickTop .ptag{
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 999px;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.04);
-      padding:12px;
+      color: var(--muted);
+      white-space: nowrap;
     }
-    .qTitle{ font-weight:1000; margin:0 0 10px; font-size:13px; }
-    .qOpt{
-      width:100%;
-      text-align:left;
-      margin-top:8px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      color:var(--text);
-      padding:10px 12px;
-      font-weight:950;
-      cursor:pointer;
-    }
-    .qOpt:hover{ background: rgba(255,255,255,.08); }
-    .qMsg{ margin-top:10px; color:var(--muted); font-size:12px; font-weight:900; }
+    .ptag.ok{ border-color: rgba(46,204,113,.35); background: rgba(46,204,113,.10); color: rgba(220,255,235,.92); }
+    .ptag.warn{ border-color: rgba(241,196,15,.35); background: rgba(241,196,15,.10); color: rgba(255,250,210,.92); }
+    .ptag.bad{ border-color: rgba(255,91,91,.35); background: rgba(255,91,91,.10); color: rgba(255,225,225,.95); }
 
-    @media print{
-      body{ background:white; color:#111; }
-      .wrap{ margin:0; padding:0; }
-      .shell{ box-shadow:none; border:none; background:white; }
-      .panel, .rightPanel{ border:1px solid #ddd; background:white; }
-      .btn, .btn2, .bigPrint, .pill { display:none !important; }
-      .modalBack, .toast { display:none !important; }
+    .pickNote{
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.32;
+    }
+
+    .footNote{
+      padding: 0 12px 12px;
+      font-size: 11px;
+      color: var(--muted2);
+    }
+
+    /* Panel destro: divertimenti leggeri */
+    .side{
+      padding: 12px;
+      display:flex;
+      flex-direction:column;
+      gap: 12px;
+    }
+
+    .box{
+      border:1px solid var(--stroke);
+      border-radius: 18px;
+      background: rgba(255,255,255,.03);
+      padding: 12px;
+    }
+    .box h3{
+      margin: 0 0 8px 0;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .box p{
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .bigBtn{
+      width:100%;
+      border: none;
+      cursor:pointer;
+      border-radius: 14px;
+      padding: 12px 12px;
+      font-weight: 900;
+      background: linear-gradient(180deg, var(--accent2), var(--accent));
+      color:#1b1b1b;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      box-shadow: 0 10px 24px rgba(255,152,0,.18);
+    }
+    .bigBtn:active{ transform: scale(.99); }
+
+    .miniRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 10px;
+    }
+    .miniPill{
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Modal ruota */
+    .modalBack{
+      position:fixed; inset:0;
+      background: rgba(0,0,0,.55);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding: 18px;
+      z-index: 1000;
+    }
+    .modal{
+      width:min(900px, 100%);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius: 22px;
+      background: rgba(14,16,34,.92);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .modalHead{
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+    }
+    .modalHead .t{
+      font-weight: 900;
+      font-size: 13px;
+      display:flex; gap:8px; align-items:center;
+    }
+    .close{
+      cursor:pointer;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 8px 10px;
+      font-weight: 900;
+      font-size: 12px;
+    }
+    .modalBody{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 12px;
+    }
+    @media (max-width: 880px){
+      .modalBody{ grid-template-columns: 1fr; }
+    }
+    canvas{ width:100%; height:auto; }
+    .result{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      border-radius: 18px;
+      padding: 12px;
+      min-height: 180px;
+    }
+    .result h4{
+      margin: 0 0 8px 0;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .result .msg{
+      font-size: 14px;
+      font-weight: 900;
+      margin-top: 6px;
+    }
+    .result .sub{
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.35;
     }
   </style>
 </head>
@@ -687,201 +506,113 @@
     <div class="shell">
       <div class="topbar">
         <div class="brand">
-          <div class="logo" title="Vincitù"><span>V</span></div>
+          <div class="vlogo" title="Vincitù"><span>V</span></div>
           <div>
             <h1>Vincitù • IA Portal</h1>
-            <small>Eventi reali • quote non mostrate: si inseriscono al banco</small>
+            <p>Eventi reali • pronostici IA “scheda partita” • quota sempre al banco</p>
           </div>
         </div>
 
-        <div class="status">
-          <div class="pill"><span class="dot"></span> Centro: <strong id="centerId">VINC001</strong></div>
-          <div class="pill">Agg: <strong id="updatedAt">—</strong></div>
-          <div class="pill">Fascia: <strong id="slotLabel">—</strong></div>
-          <button class="btn small" id="openWheel">🎡 Ruota</button>
-          <button class="btn small" id="openQuiz">❓ Quiz</button>
+        <div class="meta">
+          <span class="pill"><span class="dot"></span> Centro: <b id="center">VINC001</b></span>
+          <span class="pill">Agg: <b id="updated">—</b></span>
+          <span class="pill">Fascia: <b id="slotLabel">Sera</b></span>
         </div>
       </div>
 
-      <div class="row">
+      <div class="content">
         <!-- LEFT -->
         <div class="panel">
-          <div class="panelHeader">
+          <div class="panelHead">
             <div class="title">⚡ Eventi (IA)</div>
-            <div class="btnRow">
-              <button class="btn primary" id="btnReload">Nuovi eventi</button>
-              <button class="btn" id="btnSlot">Cambia fascia</button>
-              <button class="btn" id="btnFocus">Start 20s</button>
-              <span class="chip" id="eventsCount">Eventi mostrati: —</span>
+            <div class="btns">
+              <div class="btn primary" id="btnNew">🟠 Nuovi eventi</div>
+              <div class="btn" id="btnSlot">🕒 Cambia fascia</div>
+              <div class="btn" id="btnWheel">🎡 Ruota</div>
             </div>
           </div>
 
           <div class="subline">
-            <span class="tag">Quote: <strong style="color:var(--text)">verifica al banco</strong></span>
-            <span class="tag">Modalità cliente: <strong style="color:var(--text)">chiaro & veloce</strong></span>
-            <span class="tag" id="missionTag">Missione: <strong style="color:var(--text)">Max 2 selezioni</strong></span>
+            <span class="subtag">Quote: <b>verifica al banco</b></span>
+            <span class="subtag" id="counts">Eventi mostrati: —</span>
+            <span class="subtag">Modalità: <b>chiara & informativa</b></span>
           </div>
 
-          <!-- Corner & Cartellini: motivazioni REALI dal tuo JSON -->
-          <div class="callout" id="cornerArea">
-            <div class="calloutHead">
-              <div class="left">📌 Angolo Speciale • Corner & Cartellini (alta probabilità)</div>
-              <div class="right"><span class="chip" id="cornerHint">Max 2 + 2 (pulito)</span></div>
-            </div>
+          <div class="events" id="events"></div>
 
-            <div class="calloutGrid">
-              <div class="miniCard">
-                <div class="miniTop">
-                  <span>🚩 Corner consigliati (max 2)</span>
-                  <span class="meta">solo indicazioni</span>
-                </div>
-                <div id="cornerList"></div>
-              </div>
-
-              <div class="miniCard">
-                <div class="miniTop">
-                  <span>🟨 Cartellini consigliati (max 2)</span>
-                  <span class="meta">solo indicazioni</span>
-                </div>
-                <div id="cardsList"></div>
-              </div>
-            </div>
-
-            <div class="wheelNote" style="margin-top:10px">
-              Nota: sono stime basate su segnali (ritmo / equilibrio / fisicità). La quota reale va sempre verificata al banco.
-            </div>
-          </div>
-
-          <div id="eventsArea"></div>
-
-          <div class="hint">
+          <div class="footNote">
             Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
           </div>
         </div>
 
         <!-- RIGHT -->
-        <div class="panel rightPanel">
-          <h3>🧾 Schedina</h3>
-
-          <div class="formGrid">
-            <div class="field">
-              <label>Stake (€)</label>
-              <input id="stake" type="number" min="1" step="1" value="5" />
-            </div>
-
-            <div class="field">
-              <label>Tipo</label>
-              <select id="type">
-                <option value="multipla">Multipla (tutte)</option>
-                <option value="singole">Singole (una alla volta)</option>
-              </select>
-            </div>
+        <div class="panel">
+          <div class="panelHead">
+            <div class="title">🧾 Scheda</div>
+            <div class="badge">Modalità cliente</div>
           </div>
 
-          <div class="sumRow">
-            <div class="sumBox">
-              <div class="k">Selezioni</div>
-              <div class="v" id="selCount">0</div>
-            </div>
-            <div class="sumBox">
-              <div class="k">Quota totale</div>
-              <div class="v" id="quotaTot">—</div>
-            </div>
-            <div class="sumBox">
-              <div class="k">Vincita pot.</div>
-              <div class="v" id="winPot">—</div>
-            </div>
-          </div>
-
-          <div class="ticket">
-            <div class="ticketHead">
-              <span>✅ Selezioni</span>
-              <span class="chip">Qui inserisci la quota reale al banco quando serve</span>
+          <div class="side">
+            <div class="box">
+              <h3>🎯 Come usarlo (semplice)</h3>
+              <p>
+                Scegli 1–2 match, leggi la scheda IA e poi <b>controlla quota reale al banco</b>.
+                Qui trovi idee + motivazioni (non quote).
+              </p>
+              <div class="miniRow">
+                <span class="miniPill">✅ 1–2 scelte max</span>
+                <span class="miniPill">✅ quota sempre al banco</span>
+                <span class="miniPill">✅ più controllo</span>
+              </div>
             </div>
 
-            <div class="ticketList" id="ticketList">
-              <div class="hint" style="margin:0">Nessuna selezione. Aggiungi una giocata a sinistra.</div>
+            <div class="box">
+              <h3>🔥 Suggerimento IA del momento</h3>
+              <p id="tipLine">Carico i dati…</p>
             </div>
 
-            <div class="field" style="margin-top:10px">
-              <label>Quota reale totale (facoltativo)</label>
-              <input id="realQuota" type="number" min="1" step="0.01" placeholder="es. 3.25" />
-            </div>
+            <button class="bigBtn" onclick="window.print()">
+              🖨️ Stampa scheda
+            </button>
 
-            <button class="bigPrint" id="printBtn">🖨️ Stampa schedina</button>
-
-            <div class="hint">
-              Suggerimento: 2–3 selezioni massimo per mantenere controllo.
+            <div class="box">
+              <h3>🎲 Mini-divertimento</h3>
+              <p>
+                La ruota dà <b>consigli di gestione</b> (non pronostici).
+                Ti aiuta a mantenere disciplina e divertirti senza inseguire.
+              </p>
+              <div class="miniRow">
+                <span class="miniPill">1 giro al giorno</span>
+                <span class="miniPill">consigli rapidi</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </div><!-- content -->
+    </div><!-- shell -->
+  </div><!-- wrap -->
 
-  <div class="toast" id="toast"></div>
-
-  <!-- WHEEL MODAL -->
-  <div class="modalBack" id="wheelBack">
+  <!-- Modal RUOTA -->
+  <div class="modalBack" id="modalBack">
     <div class="modal">
       <div class="modalHead">
-        <strong>🎡 Ruota della Fortuna (consigli “da banco”)</strong>
-        <button id="closeWheel">Chiudi ✕</button>
+        <div class="t">🎡 Ruota della Fortuna (consigli & disciplina)</div>
+        <button class="close" id="btnClose">Chiudi ✕</button>
       </div>
       <div class="modalBody">
-        <div class="wheelGrid">
-          <div class="wheelBox">
-            <canvas id="wheel" width="520" height="520"></canvas>
-            <button class="wheelBtn" id="spinBtn">Gira la ruota</button>
-
-            <div class="miniStatRow">
-              <div class="miniStat">Streak: <strong id="streak">0</strong> giorni</div>
-              <div class="miniStat">Oggi: <strong id="todaySpin">NO</strong></div>
-              <div class="miniStat">Ultimo: <strong id="lastSpin">—</strong></div>
-            </div>
-
-            <div class="wheelNote" id="wheelLimit">
-              1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.
-            </div>
-          </div>
-
-          <div class="wheelBox">
-            <div class="miniTop" style="margin-bottom:10px;">
-              <span>🎁 Risultato</span>
-              <span class="meta" id="wheelWhen">—</span>
-            </div>
-
-            <div class="miniText" id="wheelResultText" style="font-size:13px; color:rgba(255,255,255,.90); font-weight:950">
-              Gira la ruota: ti dà una regola semplice per non esagerare e scegliere meglio.
-            </div>
-
-            <div class="badges" style="margin-top:12px">
-              <span class="badge ok" id="wheelMission">Missione: Max 2 selezioni</span>
-              <span class="badge warn" id="wheelRule">Regola: quota al banco</span>
-              <span class="badge" id="wheelBonus">Bonus: quiz 1 domanda</span>
-            </div>
-
-            <div class="wheelNote" style="margin-top:12px">
-              Tip serio: se la quota al banco è diversa, <strong>riduci selezioni</strong> o passa.
-            </div>
+        <div class="box" style="margin:0;">
+          <canvas id="wheel" width="520" height="520"></canvas>
+          <div class="btn primary" id="btnSpin" style="margin-top:10px; justify-content:center;">Gira la ruota</div>
+          <div style="margin-top:8px; font-size:11px; color:var(--muted2);">
+            1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- QUIZ MODAL -->
-  <div class="modalBack" id="quizBack">
-    <div class="modal">
-      <div class="modalHead">
-        <strong>❓ Quiz veloce (30s)</strong>
-        <button id="closeQuiz">Chiudi ✕</button>
-      </div>
-      <div class="modalBody">
-        <div class="quizBox">
-          <p class="qTitle" id="qTitle">—</p>
-          <div id="qOptions"></div>
-          <div class="qMsg" id="qMsg">Rispondi: è solo intrattenimento 😊</div>
+        <div class="result">
+          <h4>🎁 Risultato</h4>
+          <div class="msg" id="wheelMsg">Premi “Gira la ruota”.</div>
+          <div class="sub" id="wheelSub">
+            Consiglio pratico, breve e applicabile subito.
+          </div>
         </div>
       </div>
     </div>
@@ -895,814 +626,487 @@
     let CURRENT_SLOT = "sera";
     let EVENTS_DATA = null;
 
-    const ticket = [];
-    const $ = (id)=>document.getElementById(id);
+    const slotNice = (s) => s === "mattina" ? "Mattina" : s === "pomeriggio" ? "Pomeriggio" : "Sera";
 
-    function toast(msg){
-      const t = $("toast");
-      t.textContent = msg;
-      t.style.display = "block";
-      clearTimeout(toast._tm);
-      toast._tm = setTimeout(()=> t.style.display="none", 2200);
+    function clamp01(x){ return Math.max(0, Math.min(1, x)); }
+
+    function tagToClass(tag){
+      const t = (tag||"").toLowerCase();
+      if (t.includes("alta") || t.includes("stabile")) return "ok";
+      if (t.includes("media") || t.includes("prudenza")) return "warn";
+      if (t.includes("bassa") || t.includes("risch")) return "bad";
+      return "";
     }
 
-    function nowRome(){
-      return new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Rome" }));
+    // =========================
+    // FETCH EVENTS
+    // =========================
+    async function fetchEvents(){
+      const res = await fetch("./events.json?v=" + Date.now(), {cache:"no-store"});
+      if(!res.ok) throw new Error("Impossibile caricare events.json");
+      return await res.json();
     }
 
-    function slotFromTime(d){
+    function getSlotFromURL(){
+      const p = new URLSearchParams(location.search);
+      const s = p.get("slot");
+      if (SLOT_ORDER.includes(s)) return s;
+      return null;
+    }
+
+    function setSlot(s){
+      CURRENT_SLOT = s;
+      document.getElementById("slotLabel").textContent = slotNice(s);
+      const url = new URL(location.href);
+      url.searchParams.set("slot", s);
+      history.replaceState({}, "", url.toString());
+    }
+
+    function slotFromTimeRome(d=new Date()){
+      // fallback: scegli slot in base all'ora locale
       const h = d.getHours();
-      if (h >= 6 && h < 12) return "mattina";
-      if (h >= 12 && h < 18) return "pomeriggio";
+      if (h>=6 && h<12) return "mattina";
+      if (h>=12 && h<18) return "pomeriggio";
       return "sera";
     }
 
-    function slotLabel(s){
-      return s === "mattina" ? "Mattina" : s === "pomeriggio" ? "Pomeriggio" : "Sera";
+    function eventsForSlot(all, slot){
+      const evs = (all.events||[]).filter(e => (e.slot||"") === slot);
+      // se vuoto, fallback: prendiamo i primi 5 e mostriamo comunque (capita quando API ha solo sera)
+      if (evs.length) return evs;
+      return (all.events||[]).slice(0,5);
     }
 
-    function formatClock(d){
-      const y = d.getFullYear();
-      const m = String(d.getMonth()+1).padStart(2,"0");
-      const dd = String(d.getDate()).padStart(2,"0");
-      const hh = String(d.getHours()).padStart(2,"0");
-      const mm = String(d.getMinutes()).padStart(2,"0");
-      return `${y}-${m}-${dd} ${hh}:${mm}`;
-    }
-
-    function safeTxt(s){ return (s || "").replaceAll("<","&lt;").replaceAll(">","&gt;"); }
-
-    // Stable hash
-    function hash32(str){
-      let h = 2166136261;
-      for (let i=0;i<str.length;i++){
-        h ^= str.charCodeAt(i);
-        h = Math.imul(h, 16777619);
+    function pickN(evs, n=5){
+      // shuffle leggero deterministico per "Nuovi eventi"
+      const a = evs.slice();
+      for(let i=a.length-1;i>0;i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [a[i],a[j]] = [a[j],a[i]];
       }
-      return (h >>> 0);
-    }
-
-    function todayKey(){
-      const d = nowRome();
-      return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+      return a.slice(0, n);
     }
 
     // =========================
-    // ROTAZIONE "NUOVI EVENTI"
-    // - anche se hai sempre gli stessi match, ruotiamo:
-    //   1) ordine
-    //   2) 2 mercati evidenziati su 3 (varia ad ogni click)
+    // IA LOGIC (CREDIBILE)
+    // usa SOLO i campi che hai in events.json
     // =========================
-    function slotOffsetKey(slot){ return `slot_offset_${slot}_${todayKey()}`; }
-    function getSlotOffset(slot){ return parseInt(localStorage.getItem(slotOffsetKey(slot)) || "0", 10) || 0; }
-    function bumpSlotOffset(slot){
-      const n = getSlotOffset(slot) + 1;
-      localStorage.setItem(slotOffsetKey(slot), String(n));
-      return n;
+    function buildReadableProfile(ctx){
+      // ctx: tempo/goals/grit/corners/cards + signals
+      const tempo = ctx?.signals?.ritmo || (ctx?.tempo>=0.62 ? "Alta" : ctx?.tempo>=0.42 ? "Media" : "Bassa");
+      const eq = ctx?.signals?.equilibrio || "Equilibrio";
+      const fis = ctx?.signals?.fisicita || (ctx?.grit>=0.62 ? "Alta" : ctx?.grit>=0.38 ? "Media" : "Bassa");
+
+      // Frasi realistiche: niente “1X tranquillo col Barca”
+      const tempoLine =
+        tempo === "Alta" ? "Ritmo alto: probabili fasi offensive e pressione costante."
+        : tempo === "Media" ? "Ritmo medio: partita a fasi, può accendersi a tratti."
+        : "Ritmo basso: gara più tattica, serve selezione prudente.";
+
+      const eqLine =
+        eq.includes("Favorita casa") ? "Favorita in casa: attenzione a quote molto basse."
+        : eq.includes("Favorita ospite") ? "Favorita ospite: occhio a gestione e coperture."
+        : "Match equilibrato: maggiore variabilità, meglio 1–2 scelte massimo.";
+
+      const fisLine =
+        fis === "Alta" ? "Fisicità alta: contatti e duelli, più rischio cartellini."
+        : fis === "Media" ? "Fisicità media: qualche cartellino possibile."
+        : "Fisicità bassa: cartellini meno “automatici”.";
+
+      return { tempo, eq, fis, tempoLine, eqLine, fisLine };
     }
 
-    function uniqueBy(list, keyFn){
-      const seen = new Set();
-      const out = [];
-      for (const x of list){
-        const k = keyFn(x);
-        if (seen.has(k)) continue;
-        seen.add(k);
-        out.push(x);
-      }
-      return out;
-    }
+    function suggestPicks(e){
+      const ctx = e.context || {};
+      const prof = buildReadableProfile(ctx);
 
-    // seleziona max 5 (per fascia); se fascia vuota -> usa tutto
-    function pick5ForSlot(allEvents, slot){
-      const poolRaw = allEvents.filter(e => (e.slot || "").toLowerCase() === slot);
-      const pool = uniqueBy(poolRaw.length ? poolRaw : allEvents, e => e.uniq || `${e.home}|${e.away}|${e.start_iso||e.start||""}`);
-      const k = 5;
-      if (pool.length <= k) return pool.slice(0,k);
+      const corners = clamp01(ctx.corners ?? 0.5);
+      const cards = clamp01(ctx.cards ?? 0.5);
+      const goals = clamp01(ctx.goals ?? 0.5);
 
-      const offset = getSlotOffset(slot);
-      const seed = hash32(`${todayKey()}|${slot}|${offset}|VINC001`);
-
-      const sorted = [...pool].sort((a,b)=>{
-        const ha = hash32((a.uniq||"") + "|" + seed);
-        const hb = hash32((b.uniq||"") + "|" + seed);
-        return ha - hb;
-      });
-
-      return sorted.slice(0,k);
-    }
-
-    // per rendere i 5 match "nuovi", ruotiamo anche i mercati evidenziati
-    // esempio: ad ogni reload scegliamo 2 mercati su 3 per ogni match (ordine variabile)
-    function pickMarketOrder(ev){
-      const mk = (ev.markets || []).map(m=>m.label);
-      if (!mk.length) return ["Over 2.5","1X","Goal/NoGoal Sì"];
-      // genera rotazione stabile per match + offset
-      const off = getSlotOffset(CURRENT_SLOT);
-      const seed = hash32((ev.uniq||"") + "|" + off + "|" + todayKey());
-      const a = seed % mk.length;
-      const b = (a + 1 + (seed % 2)) % mk.length;
-      const c = mk.find(x => x !== mk[a] && x !== mk[b]) || mk[(b+1)%mk.length];
-      // primi 2 = "in evidenza", terzo resta ma in coda (per non confondere)
-      return [mk[a], mk[b], c];
-    }
-
-    // =========================
-    // FETCH (events.json)
-    // =========================
-    async function fetchEvents(force=false){
-      const url = force ? `events.json?v=${Date.now()}` : "events.json";
-      const r = await fetch(url, { cache: "no-store" });
-      if(!r.ok) throw new Error("Impossibile caricare events.json");
-      return await r.json();
-    }
-
-    // =========================
-    // CREST
-    // =========================
-    function crestHTML(url, name){
-      if (url){
-        return `<span class="crest"><img src="${url}" alt="" referrerpolicy="no-referrer"
-          onerror="this.parentElement.innerHTML='<span class=\\'ini\\'>${(name||'?').slice(0,2).toUpperCase()}</span>';"></span>`;
-      }
-      return `<span class="crest"><span class="ini">${(name||'?').slice(0,2).toUpperCase()}</span></span>`;
-    }
-
-    // =========================
-    // TAG -> PRIORITÀ UI
-    // =========================
-    function tagToRisk(tag){
-      // nel tuo JSON: Bassa / Media / Alta
-      const t = (tag||"").toLowerCase();
-      if (t.includes("bassa")) return "Bassa";
-      if (t.includes("media")) return "Media";
-      if (t.includes("alta")) return "Alta";
-      return "Media";
-    }
-    function prioClass(r){
-      if (r === "Bassa") return "ok";
-      if (r === "Media") return "warn";
-      return "bad";
-    }
-    function prioLabel(r){
-      if (r === "Bassa") return "Più stabile";
-      if (r === "Media") return "Equilibrata";
-      return "Rischiosa";
-    }
-
-    // =========================
-    // MOTIVAZIONI REALISTICHE (dal tuo context)
-    // =========================
-    function ctxLine(ev){
-      const c = ev.context || {};
-      const s = c.signals || {};
-      const eq = s.equilibrio || "Equilibrio";
-      const ritmo = s.ritmo || "—";
-      const fis = s.fisicita || "—";
-
-      // “da banco” corto e sensato
-      const diff = typeof c.diff === "number" ? c.diff : null;
-      let fav = "Match equilibrato";
-      if (diff !== null){
-        if (diff <= -0.45) fav = "Favorita ospite (gap evidente)";
-        else if (diff <= -0.15) fav = "Ospite leggermente avanti";
-        else if (diff >= 0.45) fav = "Favorita casa (gap evidente)";
-        else if (diff >= 0.15) fav = "Casa leggermente avanti";
-        else fav = "Molto equilibrata";
-      }
-
-      return {
-        r1: `🎯 ${fav} • ${eq}`,
-        r2: `📌 Segnali: ritmo ${ritmo} • fisicità ${fis}.`,
-        r3: `💬 Regola: 2 selezioni max, quota sempre al banco.`
+      // Tags credibili (non “sicuro”): Stabile / Prudenza / Rischiosa
+      const tagFrom = (x, bias=0) => {
+        const v = x + bias;
+        if (v >= 0.70) return {t:"Più stabile", c:"ok"};
+        if (v >= 0.50) return {t:"Prudenza", c:"warn"};
+        return {t:"Rischiosa", c:"bad"};
       };
+
+      // 1X2: se segnala favorita casa/ospite -> 1X o X2
+      let pick1X2 = null;
+      if ((ctx.signals?.equilibrio||"").includes("Favorita casa")){
+        pick1X2 = {
+          name: "1X (copertura casa)",
+          tag: tagFrom(0.66, +0.06),
+          note: "Se la favorita è in casa, 1X è spesso più “controllabile” del segno 1 secco. Verifica quota al banco."
+        };
+      } else if ((ctx.signals?.equilibrio||"").includes("Favorita ospite")){
+        pick1X2 = {
+          name: "X2 (copertura ospite)",
+          tag: tagFrom(0.66, +0.04),
+          note: "Se la favorita è ospite, X2 può ridurre il rischio rispetto al 2 secco. Verifica quota al banco."
+        };
+      } else {
+        pick1X2 = {
+          name: "Doppia chance (valuta 1X o X2)",
+          tag: tagFrom(0.52, -0.02),
+          note: "Match equilibrato: scegli la doppia chance solo se la quota al banco è davvero conveniente."
+        };
+      }
+
+      // Over/Goal: dipende da goals + tempo
+      const overTag = tagFrom((goals*0.65 + (ctx.tempo??0.5)*0.35));
+      const bttsTag = tagFrom((goals*0.75 + (Math.abs(ctx.diff??0)*-0.10)));
+      const cornerTag = tagFrom(corners*0.8 + (ctx.tempo??0.5)*0.2);
+      const cardTag = tagFrom(cards*0.75 + (ctx.grit??0.5)*0.25);
+
+      const picks = [
+        {
+          name: "Over 2.5 (valuta quota)",
+          tag: overTag,
+          note: prof.tempo === "Alta"
+            ? "Ritmo alto: aumenta la probabilità di occasioni. Gioca solo se la quota al banco è in linea."
+            : prof.tempo === "Media"
+              ? "Ritmo medio: Over possibile ma dipende dalla qualità delle occasioni. Quota decisiva."
+              : "Ritmo basso: Over 2.5 più rischioso; valuta alternative (Over 1.5 / live)."
+        },
+        {
+          name: "Goal (Entrambe segnano)",
+          tag: bttsTag,
+          note: goals >= 0.70
+            ? "Segnali goal alti: utile se entrambe creano. Verifica formazione/approccio al banco."
+            : "Goal non automatico: serve pericolosità da entrambe. Quota e match-up contano molto."
+        },
+        {
+          name: "Corner (es. Over 8.5/9.5)",
+          tag: cornerTag,
+          note: corners >= 0.65
+            ? "Pressione e cross: corner più probabili. Ottimo mercato “da sala” se quota giusta."
+            : "Corner non garantiti: dipende da ritmo e spinta sulle fasce. Valuta prudenza."
+        },
+        {
+          name: "Cartellini (es. Over 4.5)",
+          tag: cardTag,
+          note: (cards >= 0.62 || prof.fis === "Alta")
+            ? "Fisicità/agonismo: più duelli → più rischio ammonizioni. Occhio arbitro se disponibile."
+            : "Cartellini meno leggibili: senza dati arbitro meglio non esagerare con questo mercato."
+        },
+        pick1X2
+      ];
+
+      // Ordina: più “stabile” sopra
+      const score = (p) => p.tag.c === "ok" ? 3 : p.tag.c === "warn" ? 2 : 1;
+      picks.sort((a,b)=> score(b)-score(a));
+
+      // 5 pronostici “seri” per match
+      return picks.slice(0,5);
     }
 
-    function bankTipFromCtx(ev){
-      const c = ev.context || {};
-      const tempo = typeof c.tempo === "number" ? c.tempo : null;
-      const goals = typeof c.goals === "number" ? c.goals : null;
+    function buildHeaderSentence(e){
+      const ctx = e.context || {};
+      const prof = buildReadableProfile(ctx);
 
-      // testo breve “realistico”
-      if (tempo !== null && tempo < 0.30) return "Tip banco: ritmo basso → evita multipla lunga, meglio singola.";
-      if (goals !== null && goals > 0.80) return "Tip banco: partita da occasioni → ok Over/GG solo con quota giusta.";
-      return "Tip banco: se quota non convince, riduci selezioni o passa.";
+      // headline credibile
+      let headline = "Match da leggere con calma.";
+      if ((ctx.signals?.equilibrio||"").includes("Favorita ospite")) headline = "Favorita ospite (gap evidente): occhio gestione.";
+      if ((ctx.signals?.equilibrio||"").includes("Favorita casa")) headline = "Favorita in casa: quota spesso bassa, valuta coperture.";
+      if ((ctx.signals?.equilibrio||"") === "Equilibrio") headline = "Match equilibrato: 1–2 scelte massimo.";
+
+      // micro-regola
+      const rule = "Regola: 1–2 selezioni max, quota sempre al banco.";
+
+      // arbitro: solo se esiste
+      let refLine = "";
+      if (e.referee && e.referee.name){
+        refLine = `Arbitro: ${e.referee.name}`;
+      }
+
+      const line2 = `Segnali: ritmo ${prof.tempo} • ${prof.eq.toLowerCase()} • fisicità ${prof.fis}.`;
+      const tip = "Tip banco: se quota non convince, riduci selezioni o passa.";
+
+      return { headline, line2, tip, rule, refLine };
     }
 
     // =========================
-    // CORNER & CARTELLINI (usa reason_corner/reason_cards del tuo JSON)
+    // RENDER
     // =========================
-    function scoreForCorner(ev){
-      const c = ev.context || {};
-      const v = typeof c.corners === "number" ? c.corners : 0.5;
-      return v;
-    }
-    function scoreForCards(ev){
-      const c = ev.context || {};
-      const v = typeof c.cards === "number" ? c.cards : 0.5;
-      return v;
+    function crestImg(url){
+      if(!url) return "";
+      return `<img src="${url}" alt="" loading="lazy" referrerpolicy="no-referrer" />`;
     }
 
-    function levelFromScore(x){
-      if (x >= 0.70) return { label:"Alta", cls:"ok" };
-      if (x >= 0.55) return { label:"Media", cls:"warn" };
-      return { label:"Bassa", cls:"bad" };
-    }
+    function renderEvent(e, idx, total){
+      const h = buildHeaderSentence(e);
+      const picks = suggestPicks(e);
+      const league = e.league || e.league_code || "Calcio";
+      const when = e.start || "";
 
-    function renderMiniPick(ev, type){
-      const c = ev.context || {};
-      const s = c.signals || {};
-      const lev = (type==="corner") ? levelFromScore(scoreForCorner(ev)) : levelFromScore(scoreForCards(ev));
+      const leagueBadge = `
+        <span class="badge">${league}</span>
+        <span class="badge">${when}</span>
+        <span class="badge">Evento ${idx+1}/${total}</span>
+      `;
 
-      const reason = (type==="corner")
-        ? (c.reason_corner || "Corner: indicazione generica. Verifica quota al banco.")
-        : (c.reason_cards || "Cartellini: indicazione generica. Verifica quota al banco.");
+      const chips = [];
+      const ctx = e.context || {};
+      const prof = buildReadableProfile(ctx);
+      chips.push(`<span class="chip">${prof.tempoLine}</span>`);
+      chips.push(`<span class="chip">${prof.eqLine}</span>`);
+      chips.push(`<span class="chip">${prof.fisLine}</span>`);
+
+      const pickHtml = picks.map(p => `
+        <div class="pick">
+          <div class="pickTop">
+            <div class="pname">${p.name}</div>
+            <div class="ptag ${p.tag.c}">${p.tag.t}</div>
+          </div>
+          <div class="pickNote">${p.note}</div>
+        </div>
+      `).join("");
 
       return `
-        <div class="miniItem">
-          <div class="miniTop">
-            <span>${safeTxt(ev.home)} - ${safeTxt(ev.away)}</span>
-            <span class="meta">${safeTxt(ev.start || "")}</span>
+        <div class="eventCard">
+          <div class="eventTop">
+            <div class="leagueLine">${leagueBadge}</div>
+            <div class="badge">Quote: <b>verifica al banco</b></div>
           </div>
-          <div class="badges">
-            <span class="badge ${lev.cls}">${type==="corner" ? "Corner" : "Cartellini"}: ${lev.label}</span>
-            <span class="badge">Ritmo: ${safeTxt(s.ritmo || "—")}</span>
-            <span class="badge">Fisicità: ${safeTxt(s.fisicita || "—")}</span>
+
+          <div class="teams">
+            <div class="crest">${crestImg(e.home_crest)}</div>
+            <div class="name">${e.home}</div>
+            <div class="vs">—</div>
+            <div class="crest">${crestImg(e.away_crest)}</div>
+            <div class="name">${e.away}</div>
           </div>
-          <div class="miniText">${safeTxt(reason)}</div>
-          <div class="miniCTA">
-            <button class="btnMini" onclick="verifyBank()">Verifica al banco</button>
+
+          <div class="iaBox">
+            <div class="iaRow">
+              <div class="iaHeader">
+                <div class="h">🧠 Scheda IA: ${h.headline}</div>
+                <div class="chips">
+                  <span class="chip ok">Consigli: 5</span>
+                  <span class="chip warn">1–2 scelte max</span>
+                  <span class="chip">Quota al banco</span>
+                </div>
+              </div>
+
+              <div class="iaText">
+                ${h.line2}<br>
+                ${h.refLine ? `<b>${h.refLine}</b><br>` : ``}
+                ${h.tip}<br>
+                <b>${h.rule}</b>
+              </div>
+
+              <div class="iaList">
+                ${pickHtml}
+              </div>
+            </div>
+          </div>
+
+          <div class="footNote">
+            Nota: sono indicazioni basate su segnali stimati (ritmo/equilibrio/fisicità + corner/cartellini). Quota reale sempre al banco.
           </div>
         </div>
       `;
     }
 
-    function renderCornerArea(allEvents){
-      const list = uniqueBy(allEvents, e => e.uniq || `${e.home}|${e.away}|${e.start||""}`);
-      if (!list.length){
-        $("cornerList").innerHTML = `<div class="hint" style="margin:0">Nessun dato.</div>`;
-        $("cardsList").innerHTML = `<div class="hint" style="margin:0">Nessun dato.</div>`;
-        return;
-      }
+    function render(all){
+      document.getElementById("updated").textContent = all.updated_at || "—";
 
-      // ordina per "probabilità" (score) e poi ruota con offset così cambia col tasto
-      const off = getSlotOffset(CURRENT_SLOT);
-      const seed = hash32(`${todayKey()}|${CURRENT_SLOT}|special|${off}`);
+      const slot = CURRENT_SLOT;
+      const evs = eventsForSlot(all, slot);
+      const chosen = pickN(evs, 5);
 
-      const forCorner = [...list].sort((a,b)=>{
-        const da = scoreForCorner(b) - scoreForCorner(a);
-        if (Math.abs(da) > 1e-9) return da;
-        return (hash32((a.uniq||"")+seed) - hash32((b.uniq||"")+seed));
-      });
+      document.getElementById("counts").textContent = `Eventi mostrati: ${chosen.length} / ${evs.length || 0}`;
 
-      const corners = forCorner.slice(0,2);
-      const used = new Set(corners.map(x => x.uniq));
+      const host = document.getElementById("events");
+      host.innerHTML = chosen.map((e,i)=> renderEvent(e,i,chosen.length)).join("");
 
-      const forCards = [...list].filter(x => !used.has(x.uniq)).sort((a,b)=>{
-        const da = scoreForCards(b) - scoreForCards(a);
-        if (Math.abs(da) > 1e-9) return da;
-        return (hash32((a.uniq||"")+seed) - hash32((b.uniq||"")+seed));
-      });
-
-      const cards = forCards.slice(0,2);
-
-      $("cornerList").innerHTML = corners.map(ev=>renderMiniPick(ev,"corner")).join("");
-      $("cardsList").innerHTML = cards.map(ev=>renderMiniPick(ev,"cards")).join("");
+      // Tip dinamico credibile
+      const tip = buildGlobalTip(all);
+      document.getElementById("tipLine").textContent = tip;
     }
 
-    // =========================
-    // EVENTS RENDER (usa mercati del tuo JSON)
-    // =========================
-    function marketByLabel(ev, label){
-      return (ev.markets || []).find(m => (m.label||"") === label) || null;
-    }
-
-    function renderEvents(picked){
-      const area = $("eventsArea");
-      if (!picked.length){
-        area.innerHTML = `<div class="hint">Nessun evento in questa fascia. Prova a cambiare fascia.</div>`;
-        $("eventsCount").textContent = "Eventi mostrati: 0/5";
-        return;
-      }
-      $("eventsCount").textContent = `Eventi mostrati: ${picked.length}/5`;
-
-      area.innerHTML = picked.map((ev, idx)=>{
-        const league = safeTxt(ev.league || ev.league_code || "Calcio");
-        const when = safeTxt(ev.start || "");
-        const homeC = crestHTML(ev.home_crest, ev.home);
-        const awayC = crestHTML(ev.away_crest, ev.away);
-
-        const lines = ctxLine(ev);
-        const tip = bankTipFromCtx(ev);
-
-        // ordine mercati “rotante”
-        const labels = pickMarketOrder(ev);
-        const mk = labels.map(l => marketByLabel(ev, l)).filter(Boolean);
-
-        // se manca qualcosa, fallback semplice
-        const fallback = (ev.markets && ev.markets.length) ? ev.markets : [
-          { label:"Over 2.5", tag:"Media", note:"Indicativo. Verifica al banco." },
-          { label:"1X", tag:"Media", note:"Indicativo. Verifica al banco." },
-          { label:"Goal/NoGoal Sì", tag:"Media", note:"Indicativo. Verifica al banco." }
-        ];
-
-        const markets = (mk.length ? mk : fallback).slice(0,3);
-
-        return `
-          <div class="eventCard">
-            <div class="eventHead">
-              <div class="eventLeft">
-                <div class="leagueDot"></div>
-                <div class="eventTitle">
-                  <div class="meta">
-                    <span class="chip">${league}</span>
-                    <span class="chip">${when}</span>
-                    <span class="chip">${slotLabel(CURRENT_SLOT)}</span>
-                  </div>
-                  <div class="matchLine">
-                    <span class="team">${homeC}<span>${safeTxt(ev.home)}</span></span>
-                    <span style="color:var(--muted);font-weight:1000">-</span>
-                    <span class="team">${awayC}<span>${safeTxt(ev.away)}</span></span>
-                  </div>
-                </div>
-              </div>
-              <div class="eventRight">
-                <span class="chip">Evento ${idx+1}/5</span>
-              </div>
-            </div>
-
-            <div class="eventBody">
-              <div class="reasonBox">
-                <div class="r1">${safeTxt(lines.r1)}</div>
-                <div class="r2">${safeTxt(lines.r2)} ${safeTxt(tip)}</div>
-                <div class="r3">${safeTxt(lines.r3)}</div>
-              </div>
-
-              <div class="markets">
-                ${markets.map(m=>{
-                  const risk = tagToRisk(m.tag);
-                  const cls = prioClass(risk);
-                  const note = (m.note || "Indicativo: verifica al banco.").trim();
-
-                  return `
-                    <div class="mkt">
-                      <div class="mktTop">
-                        <div class="mktName">${safeTxt(m.label)}</div>
-                        <span class="prio ${cls}">${prioLabel(risk)}</span>
-                      </div>
-                      <div class="mktText">${safeTxt(note)}</div>
-                      <div class="mktActions">
-                        <button class="btn2" onclick="verifyBank()">Verifica al banco</button>
-                        <button class="btn2 add" onclick="addPick('${encodeURIComponent(ev.uniq||"")}', '${encodeURIComponent(ev.home||"")}', '${encodeURIComponent(ev.away||"")}', '${encodeURIComponent(m.label)}')">+ Aggiungi</button>
-                      </div>
-                    </div>
-                  `;
-                }).join("")}
-              </div>
-            </div>
-          </div>
-        `;
-      }).join("");
-    }
-
-    // =========================
-    // TICKET
-    // =========================
-    window.verifyBank = function(){
-      toast("✅ Verifica quota al banco prima di inserire.");
-    }
-
-    window.addPick = function(uniq, home, away, market){
-      const u = decodeURIComponent(uniq||"");
-      const h = decodeURIComponent(home||"");
-      const a = decodeURIComponent(away||"");
-      const m = decodeURIComponent(market||"");
-
-      if (ticket.length >= 3){
-        toast("⚠️ Consiglio: max 2–3 selezioni per controllo.");
-      }
-
-      ticket.push({ uniq:u, match:`${h} - ${a}`, market:m });
-      renderTicket();
-      toast("Aggiunta selezione ✅");
-    }
-
-    function removePick(i){
-      ticket.splice(i,1);
-      renderTicket();
-    }
-
-    function renderTicket(){
-      $("selCount").textContent = String(ticket.length);
-
-      const list = $("ticketList");
-      if (!ticket.length){
-        list.innerHTML = `<div class="hint" style="margin:0">Nessuna selezione. Aggiungi una giocata a sinistra.</div>`;
-      } else {
-        list.innerHTML = ticket.map((p, i)=>`
-          <div class="pick">
-            <div class="left">
-              <strong>${safeTxt(p.match)}</strong>
-              <span>${safeTxt(p.market)} • quota: verifica al banco</span>
-            </div>
-            <button class="rm" onclick="(${removePick.toString()})(${i})">Rimuovi</button>
-          </div>
-        `).join("");
-      }
-
-      const rq = parseFloat($("realQuota").value);
-      const stake = parseFloat($("stake").value) || 0;
-
-      if (rq && rq >= 1.01){
-        $("quotaTot").textContent = rq.toFixed(2);
-        $("winPot").textContent = (stake * rq).toFixed(2);
-      } else {
-        $("quotaTot").textContent = "—";
-        $("winPot").textContent = "—";
-      }
-
-      $("missionTag").innerHTML = `Missione: <strong style="color:var(--text)">${ticket.length > 1 ? "Max 3 selezioni" : "Max 2 selezioni"}</strong>`;
-    }
-
-    $("printBtn").addEventListener("click", ()=>{
-      if (!ticket.length){ toast("Aggiungi almeno 1 selezione."); return; }
-      window.print();
-    });
-
-    $("realQuota").addEventListener("input", renderTicket);
-    $("stake").addEventListener("input", renderTicket);
-
-    // =========================
-    // FOCUS 20s
-    // =========================
-    let focusTm = null;
-    $("btnFocus").addEventListener("click", ()=>{
-      if (focusTm) return;
-      let left = 20;
-      const btn = $("btnFocus");
-      const old = btn.textContent;
-      btn.textContent = `Focus: ${left}s`;
-      btn.disabled = true;
-      toast("⏱️ 20 secondi: scegli con calma.");
-      focusTm = setInterval(()=>{
-        left--;
-        btn.textContent = `Focus: ${left}s`;
-        if (left <= 0){
-          clearInterval(focusTm);
-          focusTm = null;
-          btn.textContent = old;
-          btn.disabled = false;
-          toast("✅ Fine focus: ora scegli (max 2–3).");
+    function buildGlobalTip(all){
+      const evs = eventsForSlot(all, CURRENT_SLOT);
+      if(!evs.length) return "Nessun evento in questa fascia. Prova “Cambia fascia”.";
+      // calcola media di corner/cards
+      let c=0, k=0, n=0;
+      for(const e of evs){
+        if(e.context){
+          if(typeof e.context.cards==="number"){ c += e.context.cards; }
+          if(typeof e.context.corners==="number"){ k += e.context.corners; }
+          n++;
         }
-      }, 1000);
-    });
-
-    // =========================
-    // SLOT + LOAD
-    // =========================
-    function getSlotFromURL(){
-      const u = new URL(location.href);
-      const s = (u.searchParams.get("slot") || "").toLowerCase();
-      return SLOT_ORDER.includes(s) ? s : "";
-    }
-    function setSlotInURL(slot){
-      const u = new URL(location.href);
-      u.searchParams.set("slot", slot);
-      history.replaceState({}, "", u.toString());
-    }
-
-    async function loadAll(force=false){
-      try{
-        const data = await fetchEvents(force);
-        EVENTS_DATA = data;
-
-        const now = nowRome();
-        const urlSlot = getSlotFromURL();
-        CURRENT_SLOT = urlSlot || localStorage.getItem("slot") || slotFromTime(now);
-
-        $("updatedAt").textContent = data.updated_at || "—";
-        $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
-        $("centerId").textContent = "VINC001";
-
-        // il tuo JSON usa "events"
-        const all = (data.events || []).map(e=>{
-          if (!e.uniq) e.uniq = `${e.home||""}|${e.away||""}|${e.start_iso||e.start||""}`;
-          return e;
-        });
-
-        // pool per fascia (se vuoto -> tutto)
-        const slotPool = all.filter(e => (e.slot || "").toLowerCase() === CURRENT_SLOT);
-        renderCornerArea(slotPool.length ? slotPool : all);
-
-        // 5 eventi
-        const picked = pick5ForSlot(all, CURRENT_SLOT);
-        renderEvents(picked);
-
-      }catch(e){
-        $("eventsArea").innerHTML = `<div class="hint">Errore: events.json non disponibile o vuoto. Controlla GitHub Actions.</div>`;
-        $("updatedAt").textContent = "—";
-        $("slotLabel").textContent = "—";
       }
+      if(!n) return "Suggerimento: 1–2 selezioni max. Quota sempre al banco.";
+      const cards = c/n, corners=k/n;
+
+      if(corners > 0.65 && cards > 0.62) return "Oggi segnali “mercati da sala”: corner e cartellini interessanti. Scegli 1 match e controlla la quota al banco.";
+      if(corners > 0.65) return "Segnale corner sopra media: valuta Over 8.5/9.5 corner, ma solo con quota al banco giusta.";
+      if(cards > 0.62) return "Segnale fisicità/cartellini: valuta Over 4.5 cartellini (se disponibile anche info arbitro).";
+      return "Giornata più “tattica”: meglio doppia chance o mercati prudenti. 1–2 scelte massimo.";
     }
 
-    $("btnSlot").addEventListener("click", ()=>{
+    // =========================
+    // UI EVENTS
+    // =========================
+    async function load(force=false){
+      if(!EVENTS_DATA || force){
+        EVENTS_DATA = await fetchEvents();
+      }
+      render(EVENTS_DATA);
+    }
+
+    function cycleSlot(){
       const idx = SLOT_ORDER.indexOf(CURRENT_SLOT);
       const next = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
-      CURRENT_SLOT = next;
-      $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
-      localStorage.setItem("slot", CURRENT_SLOT);
-      setSlotInURL(CURRENT_SLOT);
+      setSlot(next);
+      render(EVENTS_DATA);
+    }
 
-      if (EVENTS_DATA && EVENTS_DATA.events){
-        const all = EVENTS_DATA.events.map(e=>{
-          if (!e.uniq) e.uniq = `${e.home||""}|${e.away||""}|${e.start_iso||e.start||""}`;
-          return e;
-        });
-        const slotPool = all.filter(e => (e.slot || "").toLowerCase() === CURRENT_SLOT);
-        renderCornerArea(slotPool.length ? slotPool : all);
-        renderEvents(pick5ForSlot(all, CURRENT_SLOT));
-      }
-      toast(`Fascia: ${slotLabel(CURRENT_SLOT)}`);
-    });
-
-    $("btnReload").addEventListener("click", async ()=>{
-      bumpSlotOffset(CURRENT_SLOT);
-
-      if (EVENTS_DATA && EVENTS_DATA.events){
-        const all = EVENTS_DATA.events.map(e=>{
-          if (!e.uniq) e.uniq = `${e.home||""}|${e.away||""}|${e.start_iso||e.start||""}`;
-          return e;
-        });
-        const slotPool = all.filter(e => (e.slot || "").toLowerCase() === CURRENT_SLOT);
-        renderCornerArea(slotPool.length ? slotPool : all);
-        renderEvents(pick5ForSlot(all, CURRENT_SLOT));
-        toast("✅ Nuovi eventi caricati");
-        return;
-      }
-
-      toast("Aggiorno eventi…");
-      await loadAll(true);
-      toast("✅ Eventi aggiornati");
-    });
+    document.getElementById("btnNew").addEventListener("click", ()=> load(true));
+    document.getElementById("btnSlot").addEventListener("click", ()=> cycleSlot());
+    document.getElementById("btnWheel").addEventListener("click", ()=> openWheel());
 
     // =========================
-    // WHEEL (MIGLIORATA, MA SOBRIA)
+    // WHEEL (consigli veri, non “vuoti”)
     // =========================
-    const WHEEL_TIPS = [
-      { t:"Missione: 2 selezioni max", m:"Oggi gioca 2 scelte massimo. Più controllo, meno caos.", b:"Bonus: fai 1 quiz" },
-      { t:"Regola: stop dopo 1 perdita", m:"Se va male una, stop. Domani si riparte più lucidi.", b:"Bonus: focus 20s" },
-      { t:"Solo 1 mercato per match", m:"Non mettere 2 mercati sullo stesso match. Scegli il migliore.", b:"Bonus: riduci stake" },
-      { t:"Gioca singola (quota giusta)", m:"Se la quota al banco non è quella che ti aspettavi: fai singola leggera.", b:"Bonus: 1 sola partita" },
-      { t:"Quota al banco decide", m:"Se la quota cambia: riduci selezioni o passa. La quota comanda.", b:"Bonus: niente inseguimento" },
-      { t:"Stake -20% oggi", m:"Oggi riduci lo stake. Ti aiuta a restare in controllo.", b:"Bonus: 2 selezioni max" },
-      { t:"Scegli il match più chiaro", m:"Tra i 5 eventi, scegline 1 “pulito”. Non forzare multipla.", b:"Bonus: 1 quiz" },
-      { t:"Evita multipla lunga", m:"Se ti viene voglia di 4–5 scelte: taglia e resta su 2–3.", b:"Bonus: focus 20s" },
-      { t:"Controlla assenze/turnover", m:"Se noti turnover: evita mercati goal. Meglio coperture prudenti.", b:"Bonus: singola" },
-      { t:"Non rincorrere la quota", m:"Quota bassa? Non aggiungere eventi a caso. Meglio passare.", b:"Bonus: stop se perdi" },
-      { t:"2 scelte, stessa lega", m:"Per non confonderti: 2 scelte ma nella stessa competizione.", b:"Bonus: 1 quiz" },
-      { t:"Fai pausa 60 secondi", m:"Prima di stampare: 60s di pausa. Se non ti convince, non giocare.", b:"Bonus: stake -20%" }
+    const wheelItems = [
+      { t: "Solo 1 selezione oggi", s: "Fai una singola, quota verificata. Più controllo, meno ansia." },
+      { t: "2 selezioni massimo", s: "Se fai multipla, fermati a 2 eventi. Meglio qualità che quantità." },
+      { t: "Passa se quota è bassa", s: "Se la quota al banco è troppo bassa, non forzare: cambia match." },
+      { t: "Corner: scegli match con ritmo", s: "Corner migliori con pressione e ritmo. Se ritmo basso, prudenza." },
+      { t: "Cartellini: occhio fisicità", s: "Cartellini più probabili con fisicità alta. Senza arbitro, non esagerare." },
+      { t: "Gestione stake: fisso", s: "Metti stake fisso (es. 5€) e non inseguire. Disciplina = lungo periodo." },
+      { t: "Check 30 secondi", s: "Prima di giocare: 1) quota 2) mercato 3) numero selezioni. Stop." },
+      { t: "Divertimento smart", s: "Scegli un match e leggilo: oggi l’obiettivo è capire, non “sparare”." },
     ];
 
-    const wheelBack = $("wheelBack");
-    $("openWheel").addEventListener("click", ()=> openWheel());
-    $("closeWheel").addEventListener("click", ()=> closeWheel());
-    wheelBack.addEventListener("click", (e)=>{ if(e.target===wheelBack) closeWheel(); });
+    const modalBack = document.getElementById("modalBack");
+    const btnClose = document.getElementById("btnClose");
+    const btnSpin = document.getElementById("btnSpin");
+
+    btnClose.addEventListener("click", ()=> closeWheel());
+    modalBack.addEventListener("click", (e)=> { if(e.target === modalBack) closeWheel(); });
 
     function openWheel(){
-      wheelBack.style.display = "flex";
+      modalBack.style.display = "flex";
       drawWheel();
-      updateWheelUI();
+      // mostra ultimo risultato se esiste
+      const saved = localStorage.getItem("wheelSaved");
+      if(saved){
+        const obj = JSON.parse(saved);
+        document.getElementById("wheelMsg").textContent = obj.t;
+        document.getElementById("wheelSub").textContent = obj.s;
+      }
     }
-    function closeWheel(){ wheelBack.style.display = "none"; }
+    function closeWheel(){ modalBack.style.display = "none"; }
 
-    const wheelCanvas = $("wheel");
-    const ctx = wheelCanvas.getContext("2d");
-    let wheelAngle = 0;
-    let spinning = false;
+    function canSpinToday(){
+      const key = "wheelDate";
+      const today = new Date().toISOString().slice(0,10);
+      return localStorage.getItem(key) !== today;
+    }
+    function setSpunToday(){
+      const key = "wheelDate";
+      const today = new Date().toISOString().slice(0,10);
+      localStorage.setItem(key, today);
+    }
 
-    function palette(i){
-      const p = ["#ff9800","#7c4dff","#2dd4bf","#ff5a7a","#ffc93a","#60a5fa","#34d399","#a78bfa","#fb7185","#fbbf24","#22c55e","#818cf8"];
-      return p[i % p.length];
+    btnSpin.addEventListener("click", ()=> spinWheel());
+
+    function spinWheel(){
+      if(!canSpinToday()){
+        document.getElementById("wheelMsg").textContent = "Hai già girato oggi ✅";
+        document.getElementById("wheelSub").textContent = "Riprova domani su questo PC.";
+        return;
+      }
+      const pick = wheelItems[Math.floor(Math.random()*wheelItems.length)];
+      setSpunToday();
+      localStorage.setItem("wheelSaved", JSON.stringify(pick));
+      document.getElementById("wheelMsg").textContent = pick.t;
+      document.getElementById("wheelSub").textContent = pick.s;
+
+      // animazione: rotazione canvas finta
+      const canvas = document.getElementById("wheel");
+      canvas.style.transition = "transform 1.1s cubic-bezier(.2,.9,.2,1)";
+      const deg = 720 + Math.floor(Math.random()*360);
+      canvas.style.transform = `rotate(${deg}deg)`;
+      setTimeout(()=>{ canvas.style.transition=""; }, 1300);
     }
 
     function drawWheel(){
-      const W = wheelCanvas.width, H = wheelCanvas.height;
-      ctx.clearRect(0,0,W,H);
+      const canvas = document.getElementById("wheel");
+      const ctx = canvas.getContext("2d");
+      const W = canvas.width, H = canvas.height;
       const cx = W/2, cy = H/2;
-      const r = Math.min(cx,cy) - 10;
-      const n = WHEEL_TIPS.length;
+      const r = Math.min(W,H)*0.42;
+
+      ctx.clearRect(0,0,W,H);
+
+      const colors = ["#ff9800","#2ecc71","#3498db","#9b59b6","#e67e22","#1abc9c","#e74c3c","#f1c40f"];
+      const n = wheelItems.length;
       const slice = (Math.PI*2)/n;
 
-      ctx.beginPath();
-      ctx.arc(cx,cy,r+6,0,Math.PI*2);
-      ctx.fillStyle = "rgba(255,255,255,.04)";
-      ctx.fill();
-      ctx.strokeStyle = "rgba(255,255,255,.10)";
-      ctx.lineWidth = 2;
-      ctx.stroke();
-
       for(let i=0;i<n;i++){
-        const a0 = wheelAngle + i*slice;
+        const a0 = i*slice - Math.PI/2;
         const a1 = a0 + slice;
 
         ctx.beginPath();
         ctx.moveTo(cx,cy);
         ctx.arc(cx,cy,r,a0,a1);
         ctx.closePath();
-
-        ctx.fillStyle = palette(i);
+        ctx.fillStyle = colors[i%colors.length];
         ctx.globalAlpha = 0.85;
         ctx.fill();
-        ctx.globalAlpha = 1;
 
+        // testo
         ctx.save();
         ctx.translate(cx,cy);
         ctx.rotate(a0 + slice/2);
         ctx.textAlign = "right";
-        ctx.fillStyle = "rgba(10,14,38,.92)";
-        ctx.font = "900 15px " + getComputedStyle(document.documentElement).getPropertyValue('--font');
-        ctx.fillText(WHEEL_TIPS[i].t, r - 16, 6);
+        ctx.fillStyle = "rgba(0,0,0,.85)";
+        ctx.font = "bold 14px ui-sans-serif, system-ui";
+        ctx.fillText(wheelItems[i].t, r-12, 6);
         ctx.restore();
       }
 
+      // cerchio interno
+      ctx.globalAlpha = 1;
       ctx.beginPath();
-      ctx.arc(cx,cy,52,0,Math.PI*2);
-      ctx.fillStyle = "rgba(10,14,38,.90)";
+      ctx.arc(cx,cy,r*0.12,0,Math.PI*2);
+      ctx.fillStyle = "rgba(15,18,38,.9)";
       ctx.fill();
-      ctx.strokeStyle = "rgba(255,255,255,.12)";
+      ctx.lineWidth = 3;
+      ctx.strokeStyle = "rgba(255,255,255,.18)";
       ctx.stroke();
 
-      ctx.fillStyle = "rgba(255,255,255,.92)";
-      ctx.font = "1000 16px " + getComputedStyle(document.documentElement).getPropertyValue('--font');
-      ctx.textAlign = "center";
-      ctx.fillText("VINCITÙ", cx, cy+6);
-
+      // puntatore
       ctx.beginPath();
-      ctx.moveTo(cx, 10);
-      ctx.lineTo(cx-14, 44);
-      ctx.lineTo(cx+14, 44);
+      ctx.moveTo(cx, cy-r-20);
+      ctx.lineTo(cx-16, cy-r+10);
+      ctx.lineTo(cx+16, cy-r+10);
       ctx.closePath();
-      ctx.fillStyle = "rgba(255,255,255,.92)";
+      ctx.fillStyle = "rgba(255,255,255,.9)";
       ctx.fill();
-      ctx.strokeStyle = "rgba(0,0,0,.25)";
-      ctx.stroke();
-    }
-
-    function streakKey(){ return "wheel_streak"; }
-    function lastDayKey(){ return "wheel_last_day"; }
-    function lastResKey(){ return "wheel_last_res"; }
-
-    function computeStreak(){
-      const today = todayKey();
-      const last = localStorage.getItem(lastDayKey());
-      let streak = parseInt(localStorage.getItem(streakKey()) || "0", 10) || 0;
-
-      // se ultimo giorno != ieri e != oggi, non resetto a 0 (non è un gioco), ma lo lascio com'è.
-      // lo aggiorno solo quando gira oggi.
-      $("streak").textContent = String(streak);
-      $("todaySpin").textContent = (localStorage.getItem("wheel_spin_"+today) === "1") ? "SÌ" : "NO";
-      $("lastSpin").textContent = localStorage.getItem(lastResKey()) || "—";
-    }
-
-    function updateWheelUI(){
-      const today = todayKey();
-      const done = localStorage.getItem("wheel_spin_" + today) === "1";
-      $("spinBtn").disabled = done || spinning;
-      $("wheelLimit").innerHTML = done
-        ? "✅ Giro già fatto oggi su questo PC. Torna domani."
-        : "1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.";
-      $("wheelWhen").textContent = formatClock(nowRome());
-      computeStreak();
-    }
-
-    function wheelSetResult(obj){
-      $("wheelResultText").textContent = "🔍 " + obj.m + " (quota sempre al banco).";
-      $("wheelMission").textContent = "Missione: " + (obj.t.includes("2 selezioni") ? "Max 2 selezioni" : "Max 3 selezioni");
-      $("wheelRule").textContent = "Regola: " + (obj.t.includes("stop") ? "Stop dopo perdita" : "Quota al banco decide");
-      $("wheelBonus").textContent = obj.b || "Bonus: quiz 1 domanda";
-      localStorage.setItem(lastResKey(), obj.t.replace("Missione: ",""));
-      computeStreak();
-    }
-
-    $("spinBtn").addEventListener("click", ()=>{
-      const today = todayKey();
-      const key = "wheel_spin_" + today;
-      if (localStorage.getItem(key) === "1"){
-        toast("Hai già girato oggi ✅");
-        updateWheelUI();
-        return;
-      }
-      if (spinning) return;
-
-      spinning = true;
-      updateWheelUI();
-
-      // scelta "random stabile" (non manipolabile dal refresh continuo)
-      const seed = hash32(today + "|VINC001|" + navigator.userAgent);
-      const targetIndex = seed % WHEEL_TIPS.length;
-
-      const n = WHEEL_TIPS.length;
-      const slice = (Math.PI*2)/n;
-
-      const targetAngle = (Math.PI*2) * 6 + (Math.PI*2) - (targetIndex*slice + slice/2);
-      const start = wheelAngle;
-      const delta = targetAngle - start;
-      const dur = 1600;
-      const t0 = performance.now();
-
-      function easeOutCubic(t){ return 1 - Math.pow(1-t,3); }
-
-      function anim(t){
-        const p = Math.min(1, (t - t0)/dur);
-        wheelAngle = start + delta * easeOutCubic(p);
-        drawWheel();
-        if (p < 1){
-          requestAnimationFrame(anim);
-        } else {
-          spinning = false;
-
-          localStorage.setItem(key, "1");
-
-          // streak: incrementa se oggi gira
-          const streak = parseInt(localStorage.getItem(streakKey()) || "0", 10) || 0;
-          localStorage.setItem(streakKey(), String(streak + 1));
-          localStorage.setItem(lastDayKey(), today);
-
-          updateWheelUI();
-          wheelSetResult(WHEEL_TIPS[targetIndex]);
-          toast("🎡 Ruota: risultato aggiornato");
-        }
-      }
-      requestAnimationFrame(anim);
-    });
-
-    // =========================
-    // QUIZ
-    // =========================
-    const quizBack = $("quizBack");
-    $("openQuiz").addEventListener("click", ()=> openQuiz());
-    $("closeQuiz").addEventListener("click", ()=> closeQuiz());
-    quizBack.addEventListener("click", (e)=>{ if(e.target===quizBack) closeQuiz(); });
-
-    const quizPool = [
-      {
-        q: "Qual è la regola migliore per una multipla “controllata”?",
-        opts: ["10 selezioni per vincere tanto", "2–3 selezioni massimo", "Scegli a caso e via"],
-        a: 1,
-        ok: "Esatto ✅ 2–3 selezioni ti dà più controllo.",
-        no: "Quasi! La risposta migliore è: 2–3 selezioni massimo."
-      },
-      {
-        q: "Se la quota al banco è diversa da quella indicativa…",
-        opts: ["Ignoro e gioco uguale", "Riduco selezioni o passo", "Aumento lo stake"],
-        a: 1,
-        ok: "Giusto ✅ se cambia la quota, cambia il rischio.",
-        no: "Meglio: riduci selezioni o passa."
-      },
-      {
-        q: "Per non confondersi in sala, è meglio…",
-        opts: ["Cambiare 20 mercati", "Scegliere 1–2 mercati chiari", "Fare 4 schedine insieme"],
-        a: 1,
-        ok: "Perfetto ✅ pochi mercati chiari = più controllo.",
-        no: "No: meglio 1–2 mercati chiari."
-      }
-    ];
-
-    function openQuiz(){
-      quizBack.style.display = "flex";
-      renderQuiz();
-    }
-    function closeQuiz(){ quizBack.style.display = "none"; }
-
-    function renderQuiz(){
-      const i = hash32(todayKey() + "|quiz|VINC001") % quizPool.length;
-      const q = quizPool[i];
-      $("qTitle").textContent = q.q;
-      $("qMsg").textContent = "Rispondi: è solo intrattenimento 😊";
-      const box = $("qOptions");
-      box.innerHTML = "";
-      q.opts.forEach((opt, idx)=>{
-        const b = document.createElement("button");
-        b.className = "qOpt";
-        b.textContent = opt;
-        b.onclick = ()=>{ $("qMsg").textContent = (idx === q.a) ? q.ok : q.no; };
-        box.appendChild(b);
-      });
     }
 
     // =========================
     // INIT
     // =========================
-    (function init(){
-      CURRENT_SLOT = getSlotFromURL() || localStorage.getItem("slot") || slotFromTime(nowRome());
-      $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
-      localStorage.setItem("slot", CURRENT_SLOT);
-      setSlotInURL(CURRENT_SLOT);
-
-      loadAll(false);
-      renderTicket();
-      updateWheelUI();
-      drawWheel();
+    (async function init(){
+      const urlSlot = getSlotFromURL();
+      setSlot(urlSlot || slotFromTimeRome(new Date()));
+      try{
+        await load(true);
+      }catch(err){
+        document.getElementById("events").innerHTML =
+          `<div class="eventCard" style="padding:12px;">
+             <b>Errore:</b> non riesco a leggere <code>events.json</code>.<br>
+             <span style="color:var(--muted)">${String(err)}</span>
+           </div>`;
+      }
     })();
   </script>
 </body>
