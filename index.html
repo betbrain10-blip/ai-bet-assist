@@ -1,231 +1,220 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<title>VINCITÙ · IA Portal</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>VINCITU – IA Portal</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #2b1055, #000);
-  color: #eaeaea;
+:root{
+  --bg1:#190a3d;
+  --bg2:#040821;
+  --panel:rgba(25,30,70,.55);
+  --accent:#ff9f0a;
+  --red:#ff2b2b;
+  --green:#30ff9c;
+  --text:#fff;
 }
 
-/* HEADER */
-header {
-  display: flex;
-  align-items: center;
-  padding: 16px 20px;
-  background: #000;
-  border-bottom: 2px solid #b00000;
+*{box-sizing:border-box;font-family:system-ui}
+
+body{
+  margin:0;
+  background:radial-gradient(circle at top,var(--bg1),var(--bg2));
+  color:white;
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: 900;
-  color: #b00000;
-  letter-spacing: 2px;
+.wrap{
+  max-width:1350px;
+  margin:auto;
+  padding:22px;
 }
 
-/* IA LIVE BAR */
-.ia-live {
-  margin: 14px 20px;
-  padding: 12px 16px;
-  background: linear-gradient(90deg, #111, #1a1a1a);
-  border-left: 4px solid #ff2a2a;
-  border-radius: 10px;
-  animation: glow 2s infinite alternate;
+/* LOGO */
+.logo-box{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:#000;
+  padding:14px 26px;
+  border-radius:14px;
+  width:max-content;
+  box-shadow:0 0 25px rgba(255,0,0,.35);
+}
+.logo-box span{
+  font-size:34px;
+  font-weight:900;
+  color:var(--red);
+  letter-spacing:3px;
+}
+.logo-sub{font-size:12px;opacity:.7}
+
+/* GRID */
+.grid{
+  margin-top:25px;
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:22px;
 }
 
-@keyframes glow {
-  from { box-shadow: 0 0 6px #ff2a2a; }
-  to   { box-shadow: 0 0 16px #ff2a2a; }
+/* PANEL */
+.panel{
+  background:linear-gradient(180deg,rgba(50,60,130,.35),rgba(20,25,70,.5));
+  border-radius:22px;
+  padding:22px;
+  box-shadow:0 0 40px rgba(0,0,0,.5);
 }
 
-/* CONTAINER */
-.container {
-  padding: 20px;
-  max-width: 1100px;
-  margin: auto;
+.panel h2{margin-top:0}
+
+/* EVENT */
+.event{
+  border:1px solid rgba(255,255,255,.08);
+  padding:18px;
+  border-radius:18px;
+  margin-bottom:18px;
+  background:rgba(0,0,0,.25);
 }
 
-/* EVENTI */
-.event {
-  background: rgba(255,255,255,0.06);
-  border-radius: 14px;
-  padding: 16px;
-  margin-bottom: 16px;
-  border-left: 5px solid #ff2a2a;
+.event strong{font-size:18px}
+
+.badge{
+  display:inline-block;
+  padding:5px 11px;
+  border-radius:20px;
+  font-size:12px;
+  background:rgba(255,255,255,.12)
 }
 
-.event h3 {
-  margin: 0 0 6px 0;
-  color: #fff;
+.bar{
+  height:8px;
+  background:rgba(255,255,255,.12);
+  border-radius:10px;
+  overflow:hidden;
+  margin:6px 0
+}
+.fill{
+  height:100%;
+  background:linear-gradient(90deg,#00ffcc,#4aa3ff)
 }
 
-.badge {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-  background: #ff2a2a;
-  margin-bottom: 8px;
+/* RADAR */
+.radar{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-top:10px
+}
+.radar div{
+  background:rgba(255,255,255,.08);
+  padding:10px;
+  border-radius:10px;
+  text-align:center;
+  font-size:13px
 }
 
-.progress {
-  background: #222;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-top: 8px;
+/* BUTTON */
+.btn{
+  background:linear-gradient(90deg,#ffb300,#ff7a00);
+  border:none;
+  padding:14px;
+  border-radius:14px;
+  width:100%;
+  font-weight:700;
+  cursor:pointer;
 }
 
-.progress div {
-  height: 10px;
-  background: linear-gradient(90deg,#ff2a2a,#ff7a7a);
-}
+/* SIDE */
+.sidebox{margin-bottom:18px}
+.sidebox h3{margin-top:0}
 
-/* SIDE BOX */
-.side {
-  background: rgba(255,255,255,0.05);
-  padding: 16px;
-  border-radius: 14px;
-  margin-top: 20px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 14px;
-  font-size: 13px;
-  opacity: 0.7;
-}
 </style>
 </head>
-
 <body>
 
-<header>
-  <div class="logo">VINCITÙ</div>
-</header>
+<div class="wrap">
 
-<div class="ia-live" id="iaStatus">
-  🧠 IA LIVE attiva · Analisi in corso…
+<!-- HEADER -->
+<div class="logo-box">
+  <span>VINCITU</span>
+  <div class="logo-sub">IA PORTAL — Sistema predittivo LIVE</div>
 </div>
 
-<div class="container">
+<div class="grid">
 
-  <div class="side">
-    📊 Eventi analizzati oggi: <strong id="analizzati">0</strong><br>
-    ⏱️ Prossimo aggiornamento automatico: <strong id="nextUpdate">--</strong>
-  </div>
-
-  <h2 style="margin-top:20px;">⭐ TOP IA del momento</h2>
-
-  <div id="eventi"></div>
-
-  <div class="side">
-    🎯 Regole da sala:
-    <ul>
-      <li>1–2 selezioni massimo</li>
-      <li>Quota sempre da verificare al banco</li>
-      <li>Se non convince → passa</li>
-    </ul>
-    💬 <em>Gioca con testa, non inseguire.</em>
-  </div>
-
+<!-- EVENTI -->
+<div class="panel">
+<h2>⭐ TOP IA DEL MOMENTO</h2>
+<div id="events"></div>
 </div>
 
-<footer>
-  VINCITÙ · Sistema IA dimostrativo · Quote reali sempre al banco
-</footer>
+<!-- SIDEBAR -->
+<div>
+
+<div class="panel sidebox">
+<h3>📋 Regole d’oro (sala)</h3>
+<ul>
+<li>1–2 selezioni massimo</li>
+<li>Quota sempre al banco</li>
+<li>Se non convince → passa</li>
+</ul>
+</div>
+
+<div class="panel sidebox">
+<h3>⚡ Modalità Sala LIVE</h3>
+Aggiornamento automatico mattina / pomeriggio / sera.<br>
+Eventi reali multi-campionato.
+<button class="btn">🖨️ Stampa scheda</button>
+</div>
+
+<div class="panel sidebox">
+<h3>🧠 Radar IA Sistema</h3>
+<ul>
+<li>Pressione squadre</li>
+<li>Corner attesi</li>
+<li>Disciplina arbitrale</li>
+<li>Ritmo previsto</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
 
 <script>
-// ===================
-// CONFIG ROTAZIONE
-// ===================
-const fasce = {
-  mattina: [
-    {
-      match: "Inter – Pisa",
-      tag: "Favorita casa",
-      mercato: "Under 3.5 (gestione prudente)",
-      motivo: "Differenza tecnica evidente, ritmo controllato.",
-      fiducia: 76
-    },
-    {
-      match: "MCI – WOL",
-      tag: "Attacchi forti",
-      mercato: "Over 2.5 (valuta quota)",
-      motivo: "Ritmo alto e occasioni costanti.",
-      fiducia: 74
-    }
-  ],
-  pomeriggio: [
-    {
-      match: "Bayern – Augsburg",
-      tag: "Pressione offensiva",
-      mercato: "Corner Over 8.5",
-      motivo: "Spinta costante sulle fasce.",
-      fiducia: 79
-    },
-    {
-      match: "Ajax – Utrecht",
-      tag: "Ritmo alto",
-      mercato: "Over 2.5",
-      motivo: "Fasi offensive continue.",
-      fiducia: 72
-    }
-  ],
-  sera: [
-    {
-      match: "Auxerre – PSG",
-      tag: "PSG favorito netto",
-      mercato: "Corner Over 8.5",
-      motivo: "Pressione costante PSG, Auxerre difensivo.",
-      fiducia: 82
-    },
-    {
-      match: "Roma – Torino",
-      tag: "Match tattico",
-      mercato: "Under 3.5",
-      motivo: "Possibile gestione risultato.",
-      fiducia: 70
-    }
-  ]
-};
+const qs=new URLSearchParams(location.search);
+const slot=qs.get("slot")||"sera";
 
-// ===================
-const params = new URLSearchParams(window.location.search);
-const slot = params.get("slot") || "sera";
+fetch("events.json")
+.then(r=>r.json())
+.then(d=>{
+  const box=document.getElementById("events");
+  d.events.filter(e=>e.slot===slot).forEach(ev=>{
 
-const eventiBox = document.getElementById("eventi");
-const eventi = fasce[slot] || fasce.sera;
+    const trust=Math.floor(70+Math.random()*20);
 
-eventi.forEach(ev => {
-  const div = document.createElement("div");
-  div.className = "event";
-  div.innerHTML = `
-    <span class="badge">${ev.tag}</span>
-    <h3>${ev.match}</h3>
-    <strong>Mercato suggerito:</strong> ${ev.mercato}<br>
-    <small>${ev.motivo}</small>
-    <div class="progress"><div style="width:${ev.fiducia}%"></div></div>
-    <small>Affidabilità IA: ${ev.fiducia}%</small>
-  `;
-  eventiBox.appendChild(div);
+    const div=document.createElement("div");
+    div.className="event";
+    div.innerHTML=`
+      <strong>${ev.home} — ${ev.away}</strong>
+      <div class="badge">${ev.league}</div><br><br>
+
+      🎯 Mercato IA: <b>${ev.markets[0].label}</b><br>
+      Motivo: ${ev.context.reason_corner || ev.markets[0].note}
+
+      <div class="bar"><div class="fill" style="width:${trust}%"></div></div>
+      Affidabilità IA: ${trust}%
+
+      <div class="radar">
+        <div>Pressione<br>${ev.context.signals.ritmo}</div>
+        <div>Equilibrio<br>${ev.context.signals.equilibrio}</div>
+        <div>Corner<br>${Math.round(ev.context.corners*10)}/10</div>
+        <div>Cartellini<br>${Math.round(ev.context.cards*10)}/10</div>
+      </div>
+    `;
+    box.appendChild(div);
+  });
 });
-
-// contatori
-document.getElementById("analizzati").innerText =
-  Math.floor(Math.random()*15)+20;
-
-document.getElementById("nextUpdate").innerText =
-  new Date(Date.now()+10*60000).toLocaleTimeString();
-
-document.getElementById("iaStatus").innerText =
-  "🧠 IA LIVE · Fascia " + slot + " · Sistema operativo";
 </script>
 
 </body>
