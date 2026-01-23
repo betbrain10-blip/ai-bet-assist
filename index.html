@@ -1,1353 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vincitù · IA Portal</title>
-  <style>
-    :root{
-      --bg1:#2b0f57;
-      --bg2:#0b1a3f;
-      --panel: rgba(20, 23, 44, .72);
-      --panel2: rgba(30, 33, 62, .72);
-      --stroke: rgba(255,255,255,.10);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.68);
-      --muted2: rgba(255,255,255,.45);
-      --accent:#ff9800;
-      --accent2:#ffb03a;
-      --ok:#2ecc71;
-      --warn:#f39c12;
-      --bad:#ff3b3b;
-      --chip: rgba(255,255,255,.08);
-      --shadow: 0 14px 60px rgba(0,0,0,.45);
-      --r: 18px;
-      --r2: 14px;
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:var(--font);
-      color:var(--text);
-      min-height:100vh;
-      background:
-        radial-gradient(1200px 700px at 20% 10%, rgba(140,70,255,.38), transparent 60%),
-        radial-gradient(900px 600px at 85% 20%, rgba(0,200,255,.18), transparent 60%),
-        linear-gradient(120deg, var(--bg1), var(--bg2));
-    }
-    a{color:inherit}
-    .wrap{
-      max-width: 1180px;
-      margin: 34px auto;
-      padding: 0 16px;
-    }
-    .shell{
-      border: 1px solid var(--stroke);
-      border-radius: 28px;
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .topbar{
-      display:flex;
-      justify-content:space-between;
-      gap:16px;
-      padding: 18px 18px 14px;
-      background: linear-gradient(180deg, rgba(0,0,0,.22), transparent);
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      align-items:center;
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width: 280px;
-    }
-    .brandLogo{
-      display:flex; align-items:center; gap:10px;
-      padding: 8px 10px;
-      border-radius: 14px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.08);
-    }
-    .vBadge{
-      width: 30px; height: 30px;
-      border-radius: 10px;
-      background: linear-gradient(180deg, #ff2b2b, #b10000);
-      display:grid; place-items:center;
-      border: 1px solid rgba(255,255,255,.20);
-      box-shadow: 0 10px 22px rgba(0,0,0,.35);
-      flex: 0 0 auto;
-    }
-    .vBadge span{
-      font-weight:900;
-      font-size: 17px;
-      letter-spacing:.3px;
-      transform: translateY(-.5px);
-    }
-    .brandTitle{line-height:1.1}
-    .brandTitle .name{font-weight:800}
-    .brandTitle .sub{font-size:12px; color:var(--muted)}
-    .pills{
-      display:flex; flex-wrap:wrap;
-      gap:8px;
-      justify-content:flex-end;
-      align-items:center;
-    }
-    .pill{
-      display:flex; align-items:center; gap:8px;
-      padding: 7px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.10);
-      font-size: 12px;
-      color: var(--muted);
-      white-space:nowrap;
-    }
-    .dot{
-      width:9px; height:9px; border-radius:99px;
-      background: var(--ok);
-      box-shadow: 0 0 0 4px rgba(46,204,113,.14);
-    }
-    .btn{
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color: var(--text);
-      padding: 8px 12px;
-      border-radius: 12px;
-      cursor:pointer;
-      font-weight:700;
-      transition: transform .08s ease, background .2s ease;
-      user-select:none;
-    }
-    .btn:hover{ background: rgba(255,255,255,.09) }
-    .btn:active{ transform: translateY(1px) }
-    .btn.primary{
-      background: linear-gradient(180deg, var(--accent2), var(--accent));
-      border: none;
-      color: #111827;
-      font-weight:900;
-      box-shadow: 0 14px 30px rgba(255,152,0,.18);
-    }
-    .btn.mini{ padding: 6px 10px; border-radius: 10px; font-size:12px; font-weight:800 }
-    .grid{
-      display:grid;
-      grid-template-columns: 1.35fr .95fr;
-      gap: 14px;
-      padding: 14px;
-    }
-    .panel{
-      background: var(--panel);
-      border: 1px solid rgba(255,255,255,.10);
-      border-radius: 20px;
-      overflow:hidden;
-    }
-    .panelHeader{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      padding: 12px 12px 10px;
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      background: rgba(0,0,0,.12);
-    }
-    .panelHeader .title{
-      display:flex; align-items:center; gap:8px;
-      font-weight:900;
-    }
-    .panelBody{ padding: 12px; }
-    .row{ display:flex; gap:10px; flex-wrap:wrap; align-items:center }
-    .muted{ color: var(--muted); }
-    .small{ font-size:12px; }
-    .divider{ height:1px; background: rgba(255,255,255,.08); margin: 10px 0; }
+<meta charset="UTF-8">
+<title>Vincitù · IA Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    /* TOP IA */
-    .topGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
-      margin-top: 10px;
-    }
-    .topCard{
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      border-radius: 16px;
-      padding: 10px;
-      display:flex;
-      flex-direction:column;
-      gap:8px;
-      min-height: 78px;
-    }
-    .topCard .h{
-      display:flex; justify-content:space-between; gap:8px;
-      font-weight:900;
-      font-size:12px;
-      color: rgba(255,255,255,.92);
-    }
-    .tag{
-      display:inline-flex; align-items:center; gap:6px;
-      padding: 4px 8px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      font-size: 11px;
-      color: var(--muted);
-      white-space:nowrap;
-      font-weight:800;
-    }
-    .tag.ok{ color: rgba(46,204,113,.95); border-color: rgba(46,204,113,.25); background: rgba(46,204,113,.08); }
-    .tag.warn{ color: rgba(243,156,18,.95); border-color: rgba(243,156,18,.25); background: rgba(243,156,18,.08); }
-    .tag.bad{ color: rgba(255,59,59,.95); border-color: rgba(255,59,59,.25); background: rgba(255,59,59,.08); }
-    .topCard .p{ font-size:12px; color: var(--muted); line-height:1.25 }
+<style>
+:root{
+  --bg1:#2a0f4d;
+  --bg2:#0b163f;
+  --card:#141a3a;
+  --accent:#ffb020;
+  --ai:#7cf3ff;
+  --ok:#3ddc97;
+  --warn:#ff9f43;
+  --risk:#ff6b6b;
+  --text:#eaeaf0;
+}
 
-    /* EVENT CARD */
-    .event{
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      border-radius: 18px;
-      padding: 12px;
-      margin-top: 10px;
-    }
-    .eventHead{
-      display:flex;
-      justify-content:space-between;
-      gap:10px;
-      align-items:center;
-    }
-    .leftHead{
-      display:flex; flex-direction:column; gap:6px;
-      min-width: 0;
-    }
-    .chipsLine{
-      display:flex; flex-wrap:wrap; gap:6px; align-items:center;
-      color: var(--muted);
-      font-size:12px;
-    }
-    .chip{
-      display:inline-flex;
-      gap:6px;
-      align-items:center;
-      padding: 5px 8px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.10);
-      border-radius: 999px;
-      font-size: 11px;
-      color: var(--muted);
-      white-space:nowrap;
-      font-weight:800;
-    }
-    .teamLine{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-weight:900;
-      overflow:hidden;
-    }
-    .teamLine .t{
-      overflow:hidden;
-      text-overflow:ellipsis;
-      white-space:nowrap;
-    }
-    .crest{
-      width: 18px; height: 18px; border-radius: 6px;
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.10);
-      object-fit:contain;
-    }
-    .aiBox{
-      margin-top: 10px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.12);
-      padding: 10px;
-    }
-    .aiTitle{
-      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
-      align-items:center;
-      font-weight:900;
-      font-size: 12.5px;
-    }
-    .aiTitle .note{ color: var(--muted); font-weight:800; }
-    .aiText{
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 12.2px;
-      line-height: 1.35;
-    }
-    .marketGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
-      margin-top: 10px;
-    }
-    .market{
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      border-radius: 14px;
-      padding: 10px;
-    }
-    .market .mHead{
-      display:flex; justify-content:space-between; align-items:center; gap:8px;
-      font-weight:900;
-      font-size: 12px;
-    }
-    .market .mText{
-      margin-top: 6px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height:1.25;
-    }
+*{box-sizing:border-box;font-family:Inter,system-ui,-apple-system}
+body{
+  margin:0;
+  background:linear-gradient(135deg,var(--bg1),var(--bg2));
+  color:var(--text);
+}
 
-    /* RIGHT */
-    .rules{
-      display:flex; flex-direction:column; gap:10px;
-    }
-    .rules .box{
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      border-radius: 16px;
-      padding: 12px;
-    }
-    .box h3{ margin:0 0 8px; font-size: 13px }
-    .box ol{ margin: 0; padding-left: 18px; color: var(--muted); font-size: 12px; line-height:1.35 }
-    .hint{
-      display:flex; gap:8px; flex-wrap:wrap; margin-top: 8px;
-    }
-    .printBtn{ width:100%; padding: 12px 14px; border-radius: 14px; font-size: 13px; font-weight: 900; }
-    .wheelLine{
-      display:flex; gap:8px; flex-wrap:wrap; align-items:center;
-    }
+/* ===== HEADER / LOGO ===== */
+header{
+  padding:18px 22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.logo-badge{
+  width:42px;height:42px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#ff4d4d,#ffb020);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  color:#fff;
+  box-shadow:0 0 25px rgba(255,176,32,.7);
+  animation:pulse 3s infinite;
+}
+.logo-text{
+  font-size:20px;
+  font-weight:800;
+  text-shadow:0 0 14px rgba(124,243,255,.6);
+}
+.logo-sub{
+  font-size:12px;
+  color:#9fdcff;
+}
 
-    /* MODALS */
-    .modalOverlay{
-      position:fixed; inset:0;
-      background: rgba(0,0,0,.55);
-      display:none;
-      align-items:center;
-      justify-content:center;
-      padding: 18px;
-      z-index:999;
-    }
-    .modal{
-      width:min(920px, 96vw);
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(12, 14, 30, .92);
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .modalHead{
-      display:flex; justify-content:space-between; align-items:center; gap:10px;
-      padding: 12px 14px;
-      background: rgba(255,255,255,.05);
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
-    .modalHead .mhTitle{ font-weight: 900; }
-    .modalBody{ padding: 14px; }
-    .twoCols{
-      display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 14px;
-      align-items:start;
-    }
-    .wheelBox{
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      border-radius: 18px;
-      padding: 12px;
-    }
-    canvas{ width:100%; height:auto; display:block; }
-    .resultBox{
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      border-radius: 18px;
-      padding: 12px;
-      min-height: 160px;
-    }
-    .resultBox .big{
-      font-weight: 900;
-      font-size: 14px;
-      margin-bottom: 6px;
-    }
-    .resultBox .mini{ color: var(--muted); font-size: 12px; line-height:1.35 }
+@keyframes pulse{
+  0%{box-shadow:0 0 15px rgba(255,176,32,.6)}
+  50%{box-shadow:0 0 35px rgba(124,243,255,.9)}
+  100%{box-shadow:0 0 15px rgba(255,176,32,.6)}
+}
 
-    .quizQ{
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      border-radius: 16px;
-      padding: 10px;
-      margin-top: 10px;
-    }
-    .quizQ .q{ font-weight: 900; font-size: 13px; }
-    .quizQ label{ display:block; margin-top: 6px; color: var(--muted); font-size: 12.5px; cursor:pointer }
-    .footerNote{
-      padding: 10px 14px 14px;
-      color: var(--muted2);
-      font-size: 12px;
-    }
+/* ===== LAYOUT ===== */
+.container{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:18px;
+  padding:0 22px 30px;
+}
+.card{
+  background:linear-gradient(180deg,#181f4a,#0f1430);
+  border-radius:16px;
+  padding:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+h2,h3{margin:0 0 10px}
 
-    @media (max-width: 980px){
-      .grid{ grid-template-columns: 1fr; }
-      .brand{ min-width: 0; }
-      .twoCols{ grid-template-columns: 1fr; }
-      .topGrid{ grid-template-columns: 1fr; }
-      .marketGrid{ grid-template-columns: 1fr; }
-    }
-  </style>
+/* ===== EVENT CARD ===== */
+.event{
+  margin-bottom:14px;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:14px;
+  padding:14px;
+}
+.match{
+  font-weight:700;
+  margin-bottom:6px;
+}
+.badge{
+  display:inline-block;
+  padding:4px 8px;
+  border-radius:8px;
+  font-size:12px;
+  font-weight:700;
+}
+.stable{background:rgba(61,220,151,.15);color:var(--ok)}
+.prudence{background:rgba(255,159,67,.15);color:var(--warn)}
+.risky{background:rgba(255,107,107,.15);color:var(--risk)}
+
+.market{
+  margin-top:8px;
+  font-size:14px;
+}
+.note{
+  font-size:12px;
+  opacity:.85;
+  margin-top:6px;
+}
+
+/* ===== AI CONFIDENCE ===== */
+.confidence{
+  margin-top:10px;
+}
+.conf-row{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  margin-bottom:4px;
+}
+.bar{
+  height:8px;
+  background:#1a204a;
+  border-radius:6px;
+  overflow:hidden;
+}
+.fill{
+  height:100%;
+  background:linear-gradient(90deg,#3ddc97,#7cf3ff);
+}
+
+/* ===== SIDE ===== */
+.side .card{margin-bottom:14px}
+.button{
+  background:var(--accent);
+  color:#000;
+  font-weight:800;
+  border:none;
+  border-radius:12px;
+  padding:14px;
+  width:100%;
+  cursor:pointer;
+}
+
+/* ===== FOOT NOTE ===== */
+.small{
+  font-size:11px;
+  opacity:.7;
+  margin-top:8px;
+}
+</style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="shell">
-      <div class="topbar">
-        <div class="brand">
-          <div class="brandLogo" title="Vincitù">
-            <div class="vBadge"><span>V</span></div>
-            <div class="brandTitle">
-              <div class="name">Vincitù · IA Portal</div>
-              <div class="sub">Eventi reali · quote non mostrate: si verificano al banco</div>
-            </div>
-          </div>
-        </div>
-        <div class="pills">
-          <div class="pill"><span class="dot"></span> Centro: <b id="centerId" style="color:var(--text)">VINC001</b></div>
-          <div class="pill">Agg: <b id="updatedAt" style="color:var(--text)">—</b></div>
-          <div class="pill">Fascia: <b id="slotPill" style="color:var(--text)">—</b></div>
-          <button class="btn mini" id="btnWheel">🎡 Ruota</button>
-          <button class="btn mini" id="btnQuiz">❓ Quiz</button>
-        </div>
-      </div>
 
-      <div class="grid">
-        <!-- LEFT -->
-        <div class="panel">
-          <div class="panelHeader">
-            <div class="title">⚡ Eventi (IA)</div>
-            <div class="row">
-              <button class="btn mini primary" id="btnNew">Nuovi eventi</button>
-              <button class="btn mini" id="btnSlot">Cambia fascia</button>
-              <span class="pill" style="padding:6px 10px">Quote: <b style="color:var(--text)">verifica al banco</b></span>
-              <span class="pill" style="padding:6px 10px">Eventi mostrati: <b id="shownCount" style="color:var(--text)">0</b>/3</span>
-            </div>
-          </div>
-
-          <div class="panelBody">
-            <!-- TOP IA -->
-            <div class="panel" style="background:rgba(0,0,0,.08)">
-              <div class="panelHeader">
-                <div class="title">⭐ TOP IA del momento <span class="small muted">(6 idee “da sala”)</span></div>
-                <div class="pill">Solo “indicazioni” → quota sempre al banco</div>
-              </div>
-              <div class="panelBody">
-                <div class="topGrid" id="topGrid"></div>
-              </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div id="events"></div>
-
-            <div class="footerNote">
-              Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT -->
-        <div class="panel">
-          <div class="panelHeader">
-            <div class="title">🧾 Regole & stampa</div>
-            <span class="pill">Modalità sala: <b style="color:var(--text)">chiaro e veloce</b></span>
-          </div>
-          <div class="panelBody">
-            <div class="rules">
-              <div class="box">
-                <h3>Regole d’oro (in sala)</h3>
-                <ol>
-                  <li>Scegli <b>1–2 selezioni</b> massimo.</li>
-                  <li>Leggi la scheda IA (ritmo / goal / corner / cartellini).</li>
-                  <li>Se la quota al banco non convince: <b>passa</b>.</li>
-                </ol>
-                <div class="hint">
-                  <span class="tag ok">✅ 1–2 scelte max</span>
-                  <span class="tag ok">✅ niente inseguimento</span>
-                  <span class="tag ok">✅ quota al banco</span>
-                </div>
-              </div>
-
-              <div class="box">
-                <h3>🔥 Suggerimento IA rapido</h3>
-                <div class="small muted" id="quickHint">Carico eventi…</div>
-              </div>
-
-              <button class="btn primary printBtn" id="btnPrint">🖨️ Stampa scheda</button>
-
-              <div class="box">
-                <h3>🎡 Ruota disciplina (divertimento utile)</h3>
-                <div class="small muted">Non dà pronostici: dà <b>consigli pratici</b> di gestione. Perfetta da far vedere in sala.</div>
-                <div class="wheelLine" style="margin-top:10px">
-                  <span class="pill">1 giro al giorno</span>
-                  <button class="btn mini" id="btnWheel2">Gira ora</button>
-                </div>
-              </div>
-
-              <div class="box">
-                <h3>❓ Quiz lampo (30 sec)</h3>
-                <div class="small muted">Mini quiz “disciplina da sala”. Se fai punteggio alto → sei pronto a giocare con testa.</div>
-                <button class="btn mini" id="btnQuiz2" style="margin-top:10px">Apri quiz</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- grid -->
-    </div><!-- shell -->
-  </div><!-- wrap -->
-
-  <!-- WHEEL MODAL -->
-  <div class="modalOverlay" id="wheelOverlay" role="dialog" aria-modal="true">
-    <div class="modal">
-      <div class="modalHead">
-        <div class="mhTitle">🎡 Ruota disciplina (consigli utili da sala)</div>
-        <button class="btn mini" id="wheelClose">Chiudi ✕</button>
-      </div>
-      <div class="modalBody">
-        <div class="twoCols">
-          <div class="wheelBox">
-            <canvas id="wheelCanvas" width="520" height="520"></canvas>
-            <button class="btn primary" id="wheelSpin" style="width:100%; margin-top:10px">Gira la ruota</button>
-            <div class="small muted" style="margin-top:8px">1 giro al giorno per questo dispositivo. Solo intrattenimento + disciplina.</div>
-          </div>
-          <div class="resultBox">
-            <div class="big">🎯 Risultato</div>
-            <div class="mini" id="wheelResult">Premi “Gira la ruota”.</div>
-            <div class="divider"></div>
-            <div class="mini" id="wheelExtra"></div>
-          </div>
-        </div>
-      </div>
-      <div class="footerNote">Tip: fai girare la ruota al cliente prima di stampare la scheda 🙂</div>
+<header>
+  <div class="logo">
+    <div class="logo-badge">V</div>
+    <div>
+      <div class="logo-text">Vincitù · IA Portal</div>
+      <div class="logo-sub">Sistema predittivo attivo · AI LIVE</div>
     </div>
   </div>
+</header>
 
-  <!-- QUIZ MODAL -->
-  <div class="modalOverlay" id="quizOverlay" role="dialog" aria-modal="true">
-    <div class="modal">
-      <div class="modalHead">
-        <div class="mhTitle">❓ Quiz lampo — Disciplina da sala</div>
-        <button class="btn mini" id="quizClose">Chiudi ✕</button>
-      </div>
-      <div class="modalBody">
-        <div class="small muted">Rispondi veloce. Alla fine ti dice se stai ragionando “da sala” o stai inseguendo.</div>
-        <div id="quizWrap"></div>
-        <button class="btn primary" id="quizCheck" style="margin-top:12px">Vedi risultato</button>
-        <div class="divider"></div>
-        <div class="resultBox" style="min-height:auto">
-          <div class="big">📌 Esito</div>
-          <div class="mini" id="quizResult">Compila e premi “Vedi risultato”.</div>
-        </div>
-      </div>
-      <div class="footerNote">Solo intrattenimento. Gioca responsabile.</div>
+<div class="container">
+
+<!-- ===== LEFT ===== -->
+<div>
+
+<div class="card">
+<h2>⭐ TOP IA del momento</h2>
+
+<div class="event">
+  <div class="match">AJ Auxerre — Paris Saint-Germain</div>
+  <span class="badge prudence">PSG favorito netto</span>
+
+  <div class="market"><b>Mercato suggerito:</b> Corner Over 8.5</div>
+
+  <div class="confidence">
+    <div class="conf-row">
+      <span>Fiducia IA</span><span>82%</span>
     </div>
+    <div class="bar"><div class="fill" style="width:82%"></div></div>
   </div>
 
-  <script>
-    /* =========================
-       CONFIG
-    ========================= */
-    const CENTER_ID = "VINC001";
-    const MAX_PER_SLOT = 3;                 // 3 mattina + 3 pomeriggio + 3 sera (9 al giorno)
-    const TOP_IDEAS = 6;                    // Top IA del momento
-    const EVENTS_URL = "./events.json";     // aggiornato da GitHub Actions
-    const TZ = "Europe/Rome";
+  <div class="note">
+    Motivo IA: pressione costante PSG, volume offensivo elevato, Auxerre difensivo.
+  </div>
+</div>
+
+<div class="event">
+  <div class="match">Inter — Pisa</div>
+  <span class="badge stable">Favorita casa</span>
+
+  <div class="market"><b>Mercato suggerito:</b> Under 3.5 / gestione prudente</div>
+
+  <div class="confidence">
+    <div class="conf-row">
+      <span>Fiducia IA</span><span>76%</span>
+    </div>
+    <div class="bar"><div class="fill" style="width:76%"></div></div>
+  </div>
+
+  <div class="note">
+    Motivo IA: differenza tecnica alta, ritmo controllato, possibile gestione risultato.
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<!-- ===== RIGHT ===== -->
+<div class="side">
+
+<div class="card">
+<h3>📋 Regole d’oro (sala)</h3>
+<ul class="small">
+<li>1–2 selezioni massimo</li>
+<li>Quota sempre da verificare al banco</li>
+<li>Se non convince → passa</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🤖 Suggerimento IA rapido</h3>
+<p class="small">
+Approccio da sala: poche scelte, mercati controllabili, niente inseguimenti.
+</p>
+<button class="button">🖨️ Stampa scheda</button>
+</div>
+
+<div class="card">
+<h3>🔮 Stato sistema</h3>
+<p class="small">
+Modello IA v3.2 · Aggiornamento automatico attivo<br>
+Eventi ruotati mattina / pomeriggio / sera
+</p>
+</div>
+
+</div>
+</div>
 
-    // “Top club” per evitare classificazioni imbarazzanti (es. PSG definito equilibrato).
-    // È una euristica “da sala” (non perfetta) ma evita errori grossi.
-    const BIG_CLUBS = new Set([
-      "PSG","PARIS","BAR","BARCELONA","RMA","REAL","BAY","BAYERN","MCI","CITY","LIV","LIVERPOOL",
-      "JUV","JUVENTUS","INT","INTER","MIL","MILAN","ATM","ATLETICO","CHE","CHELSEA","ARS","ARSENAL",
-      "MUN","UNITED","DOR","DORTMUND","NAP","NAPOLI","ROM","ROMA","LAZ","LAZIO"
-    ]);
-
-    /* =========================
-       STATE
-    ========================= */
-    let EVENTS_DATA = null;
-    let CURRENT_SLOT = null;
-    let CURRENT_LIST = [];
-
-    /* =========================
-       HELPERS
-    ========================= */
-    function nowRome(){
-      // convert to Europe/Rome without external libs: use locale string
-      const s = new Date().toLocaleString("sv-SE",{ timeZone: TZ });
-      // sv-SE -> "YYYY-MM-DD HH:mm:ss"
-      return new Date(s.replace(" ","T"));
-    }
-    function slotFromTime(d){
-      const h = d.getHours();
-      if(h < 12) return "mattina";
-      if(h < 18) return "pomeriggio";
-      return "sera";
-    }
-    function getSlotFromURL(){
-      const p = new URLSearchParams(location.search);
-      const s = (p.get("slot")||"").toLowerCase();
-      if(["mattina","pomeriggio","sera"].includes(s)) return s;
-      return null;
-    }
-    function fmtTime(dISO){
-      try{
-        const d = new Date(dISO);
-        return d.toLocaleTimeString("it-IT",{ hour:"2-digit", minute:"2-digit", timeZone: TZ });
-      }catch{ return ""; }
-    }
-    function hashStr(str){
-      let h = 2166136261;
-      for (let i=0;i<str.length;i++){
-        h ^= str.charCodeAt(i);
-        h = Math.imul(h, 16777619);
-      }
-      return (h>>>0);
-    }
-    function seededRand(seed){
-      // xorshift32
-      let x = seed || 123456789;
-      return ()=> {
-        x ^= x<<13; x ^= x>>>17; x ^= x<<5;
-        return ((x>>>0) / 4294967296);
-      };
-    }
-    function pickRotated(list, slot){
-      // ruota ordine ogni giorno: seed = date + slot
-      const d = nowRome();
-      const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}|${slot}`;
-      const r = seededRand(hashStr(key));
-      const arr = [...list];
-      // shuffle seeded
-      for(let i=arr.length-1;i>0;i--){
-        const j = Math.floor(r()*(i+1));
-        [arr[i],arr[j]] = [arr[j],arr[i]];
-      }
-      return arr;
-    }
-    function safeText(x){ return (x ?? "").toString(); }
-
-    function clubKey(name, short){
-      const n = (name||"").toUpperCase();
-      const s = (short||"").toUpperCase();
-      const parts = [s,n];
-      // prova match su token principali
-      for(const k of BIG_CLUBS){
-        if(parts.some(p=>p.includes(k))) return k;
-      }
-      return null;
-    }
-
-    function confidenceTag(level){
-      // level: "Prudenza" | "Interessante" | "Più stabile" | "Rischiosa"
-      const l = level.toLowerCase();
-      if(l.includes("stabile")) return `<span class="tag ok">Più stabile</span>`;
-      if(l.includes("interess")) return `<span class="tag warn">Interessante</span>`;
-      if(l.includes("prud")) return `<span class="tag warn">Prudenza</span>`;
-      return `<span class="tag bad">Rischiosa</span>`;
-    }
-
-    function scoreToLevel(x){
-      // x: 0..1
-      if(x >= 0.72) return "Più stabile";
-      if(x >= 0.56) return "Interessante";
-      if(x >= 0.42) return "Prudenza";
-      return "Rischiosa";
-    }
-
-    function clamp01(v){ return Math.max(0, Math.min(1, v)); }
-
-    /* =========================
-       PROFESSIONAL IA TEXT (NO “CERTEZZE” INVENTATE)
-    ========================= */
-    function buildProfile(ev){
-      const c = ev.context || {};
-      const tempo = clamp01(c.tempo ?? 0.5);
-      const goals = clamp01(c.goals ?? 0.5);
-      const corners = clamp01(c.corners ?? 0.5);
-      const cards = clamp01(c.cards ?? 0.5);
-      const grit = clamp01(c.grit ?? 0.5);
-      const diff = Number.isFinite(c.diff) ? c.diff : 0;
-
-      // big club heuristic
-      const awayBig = !!clubKey(ev.away, ev.away_short);
-      const homeBig = !!clubKey(ev.home, ev.home_short);
-
-      let frame = "Match da leggere con calma: poche scelte, quota al banco.";
-      let matchup = "Non forzare: 1–2 selezioni massimo.";
-      let sideLean = "equilibrio";
-      let riskNote = "Gestione > fantasia.";
-
-      // side lean: se big club in campo, aggiusta
-      if(awayBig && !homeBig){
-        sideLean = "favorita ospite";
-        frame = "Ospite favorita “sulla carta”: partita da gestione (quota decisiva).";
-        matchup = "Se giochi, meglio mercati di copertura / prudenza e quota ok.";
-        riskNote = "Evita multiple pesanti: 1–2 scelte e stop.";
-      } else if(homeBig && !awayBig){
-        sideLean = "favorita casa";
-        frame = "Casa favorita “sulla carta”: occhio solo alla quota al banco.";
-        matchup = "Mercati “da controllo” se quota è corretta.";
-        riskNote = "Se quota è troppo bassa, non inseguire: passa.";
-      } else {
-        const ad = Math.abs(diff);
-        if(ad >= 0.45){
-          sideLean = diff < 0 ? "favorita ospite" : "favorita casa";
-          frame = "Gap potenziale: favorita probabile. Partita da controllo.";
-          matchup = "Scegli mercati semplici (copertura / linee prudenti).";
-        } else if(ad <= 0.18){
-          sideLean = "equilibrio";
-          frame = "Match più aperto: meglio mercati “ritmo/occasioni” e quota ok.";
-          matchup = "Non serve indovinare: serve scegliere bene e poco.";
-        } else {
-          sideLean = "leggero vantaggio";
-          frame = "Leggero vantaggio da un lato: quota al banco fa la differenza.";
-          matchup = "Se quota non ti torna, riduci o passa.";
-        }
-      }
-
-      // quick “tempo/goals”
-      const tempoTxt = tempo >= 0.62 ? "ritmo alto" : (tempo <= 0.38 ? "ritmo basso" : "ritmo medio");
-      const goalTxt  = goals >= 0.66 ? "occasioni attese" : (goals <= 0.40 ? "gara più chiusa" : "gol possibili");
-      const cornerTxt= corners >= 0.66 ? "spinta laterale/cross → corner più probabili" : (corners <= 0.40 ? "corner meno affidabili" : "corner possibili");
-      const cardTxt  = cards >= 0.66 ? "contatti/agonismo → cartellini possibili" : (cards <= 0.40 ? "cartellini meno leggibili senza info arbitro" : "cartellini possibili");
-      const gritTxt  = grit >= 0.66 ? "agonismo alto" : (grit <= 0.35 ? "agonismo basso" : "agonismo medio");
-
-      return {
-        frame, matchup, riskNote, sideLean,
-        tempo, goals, corners, cards, grit,
-        tempoTxt, goalTxt, cornerTxt, cardTxt, gritTxt
-      };
-    }
-
-    function buildMarkets(ev){
-      // Produci 5 mercati “seri” senza sparare certezze.
-      const p = buildProfile(ev);
-
-      // punteggi (0..1)
-      const sOver  = clamp01(0.35*p.tempo + 0.55*p.goals + 0.10*(1-Math.abs(0.5 - p.tempo)));
-      const sBTTS  = clamp01(0.25*p.tempo + 0.60*p.goals + 0.15*(1-Math.abs(0.5 - p.goals)));
-      const sCorner= clamp01(0.60*p.corners + 0.25*p.tempo + 0.15*(1-Math.abs(0.5 - p.corners)));
-      const sCards = clamp01(0.55*p.cards + 0.35*p.grit + 0.10*(1-Math.abs(0.5 - p.cards)));
-
-      // 1X2 / Doppia chance: se favorita “sulla carta” -> copertura, se equilibrio -> doppia chance solo quota ok
-      let pick12 = "Doppia chance (1X o X2)";
-      let note12 = "Usala solo se la quota al banco è davvero conveniente (non forzare).";
-      if(p.sideLean === "favorita ospite"){
-        pick12 = "X2 (copertura ospite)";
-        note12 = "Se l’ospite è favorita sulla carta, X2 riduce rischio. Quota al banco decisiva.";
-      } else if(p.sideLean === "favorita casa"){
-        pick12 = "1X (copertura casa)";
-        note12 = "Se la casa è favorita sulla carta, 1X è più “da controllo”. Quota al banco decisiva.";
-      } else if(p.sideLean === "equilibrio"){
-        pick12 = "Doppia chance (1X o X2)";
-        note12 = "Match aperto: doppia chance solo se quota ok. Altrimenti meglio mercati ritmo/corner.";
-      } else {
-        pick12 = "Doppia chance (lato più “logico”)";
-        note12 = "Leggero vantaggio: copertura se quota ok, altrimenti passa.";
-      }
-
-      const overLabel = sOver >= 0.62 ? "Over 2.5 (valuta quota)" : "Under 3.5 / Over 1.5 (valuta quota)";
-      const overNote  = sOver >= 0.62
-        ? `Buona spinta per gol: ${p.tempoTxt}, ${p.goalTxt}. Se quota è “strana”, non inseguire.`
-        : `Gara più “da prudenza”: ${p.tempoTxt}, ${p.goalTxt}. Meglio linee più sicure (1.5/3.5).`;
-
-      const bttsLabel = sBTTS >= 0.62 ? "Goal (entrambe segnano)" : "NoGoal / Goal con prudenza";
-      const bttsNote  = sBTTS >= 0.62
-        ? `Serve pericolosità da entrambe: ${p.goalTxt}. Occhio a formazioni/approccio (se li sai).`
-        : `Non automatico: senza info squadre meglio non esagerare. ${p.goalTxt}.`;
-
-      // corner: linee suggerite
-      const cornerLine = p.corners >= 0.68 ? "Over 8.5 corner (quota ok)" : (p.corners >= 0.52 ? "Over 7.5 corner (quota ok)" : "Corner: prudenza (linee basse)");
-      const cornerNote = `${p.cornerTxt}. Corner dipendono molto da “spinta” e fasi: gioca solo con quota sensata.`;
-
-      // cards: over 4.5 come esempio ma con disclaimer arbitro
-      const cardsLine = p.cards >= 0.66 ? "Over 4.5 cartellini (se quota ok)" : (p.cards >= 0.52 ? "Over 3.5 cartellini (se quota ok)" : "Cartellini: prudenza");
-      const cardsNote = `${p.cardTxt}. Nota: senza dato arbitro non dare certezze → valuta contesto/derby/pressione.`;
-
-      return [
-        { label: pick12, level: scoreToLevel(0.62), note: note12 },
-        { label: overLabel, level: scoreToLevel(sOver), note: overNote },
-        { label: bttsLabel, level: scoreToLevel(sBTTS), note: bttsNote },
-        { label: cornerLine, level: scoreToLevel(sCorner), note: cornerNote },
-        { label: cardsLine, level: scoreToLevel(sCards), note: cardsNote },
-      ];
-    }
-
-    function topIdeaFromEvent(ev){
-      // crea “idee” diverse: corner / cartellini / gol
-      const p = buildProfile(ev);
-      const mk = buildMarkets(ev);
-
-      // scegli 1 idea più “da sala” tra corner, cards, over
-      const candidates = [
-        { key:"corner", label: mk[3].label, level: mk[3].level, note: mk[3].note },
-        { key:"cards",  label: mk[4].label, level: mk[4].level, note: mk[4].note },
-        { key:"goals",  label: mk[1].label, level: mk[1].level, note: mk[1].note },
-      ];
-
-      // preferisci corner/carte se più solidi
-      const weight = (x)=>{
-        const l = x.level.toLowerCase();
-        if(l.includes("stabile")) return 3;
-        if(l.includes("interess")) return 2;
-        if(l.includes("prud")) return 1.3;
-        return 1;
-      };
-      candidates.sort((a,b)=>weight(b)-weight(a));
-      const best = candidates[0];
-
-      // title corto tipo “AJA - PSG”
-      const short = `${(ev.home_short||"HOME")} - ${(ev.away_short||"AWAY")}`;
-      return {
-        short,
-        market: best.label,
-        level: best.level,
-        note: best.note
-      };
-    }
-
-    /* =========================
-       RENDER
-    ========================= */
-    function renderTopIdeas(allEvents){
-      const grid = document.getElementById("topGrid");
-      grid.innerHTML = "";
-
-      // prendi eventi da tutti gli slot per “Top”
-      const pool = pickRotated(allEvents, "top");
-      const ideas = [];
-      for(const ev of pool){
-        if(ideas.length >= TOP_IDEAS) break;
-        const idea = topIdeaFromEvent(ev);
-        ideas.push(idea);
-      }
-
-      for(const it of ideas){
-        const cls = it.level.toLowerCase().includes("stabile") ? "ok" :
-                    it.level.toLowerCase().includes("risch") ? "bad" : "warn";
-        const levelTag = cls==="ok" ? `<span class="tag ok">Più stabile</span>` :
-                         cls==="bad" ? `<span class="tag bad">Rischiosa</span>` :
-                                      `<span class="tag warn">${it.level}</span>`;
-        const el = document.createElement("div");
-        el.className = "topCard";
-        el.innerHTML = `
-          <div class="h">
-            <span>${it.short}</span>
-            ${levelTag}
-          </div>
-          <div class="p"><b style="color:rgba(255,255,255,.92)">${it.market}</b></div>
-          <div class="p">${it.note}</div>
-        `;
-        grid.appendChild(el);
-      }
-    }
-
-    function renderEvents(list){
-      const box = document.getElementById("events");
-      box.innerHTML = "";
-
-      document.getElementById("shownCount").textContent = String(list.length);
-
-      if(!list.length){
-        box.innerHTML = `<div class="small muted">Nessun evento in questa fascia. Premi “Cambia fascia” o “Nuovi eventi”.</div>`;
-        return;
-      }
-
-      for(let i=0;i<list.length;i++){
-        const ev = list[i];
-        const league = safeText(ev.league);
-        const start = safeText(ev.start || (ev.start_iso ? ("Oggi " + fmtTime(ev.start_iso)) : ""));
-        const slot = safeText(ev.slot || CURRENT_SLOT || "");
-        const idxLabel = `Evento ${i+1}/${list.length}`;
-
-        const p = buildProfile(ev);
-        const mk = buildMarkets(ev);
-
-        const headline = p.frame;
-        const bullets = `
-          <div class="chipsLine">
-            <span class="chip">🧠 Lettura: <b style="color:var(--text)">${p.tempoTxt}</b> · <b style="color:var(--text)">${p.goalTxt}</b></span>
-            <span class="chip">📌 Corner: <b style="color:var(--text)">${p.corners >= 0.6 ? "buoni" : (p.corners <= 0.42 ? "incerti" : "possibili")}</b></span>
-            <span class="chip">🟨 Cartellini: <b style="color:var(--text)">${p.cards >= 0.6 ? "possibili" : (p.cards <= 0.42 ? "poco leggibili" : "da valutare")}</b></span>
-            <span class="chip">🎯 Regola: <b style="color:var(--text)">1–2 scelte max</b></span>
-          </div>
-        `;
-
-        const marketHTML = mk.map(m=>`
-          <div class="market">
-            <div class="mHead">
-              <span>${m.label}</span>
-              ${confidenceTag(m.level)}
-            </div>
-            <div class="mText">${m.note}</div>
-          </div>
-        `).join("");
-
-        const el = document.createElement("div");
-        el.className = "event";
-        el.innerHTML = `
-          <div class="eventHead">
-            <div class="leftHead">
-              <div class="chipsLine">
-                <span class="chip">${league || "—"}</span>
-                <span class="chip">${start || "—"}</span>
-                <span class="chip">${slot}</span>
-                <span class="chip">${idxLabel}</span>
-                <span class="pill" style="padding:6px 10px">Quote: <b style="color:var(--text)">verifica al banco</b></span>
-              </div>
-              <div class="teamLine">
-                <img class="crest" alt="" src="${safeText(ev.home_crest)}" onerror="this.style.display='none'">
-                <span class="t">${safeText(ev.home)}</span>
-                <span class="muted">—</span>
-                <img class="crest" alt="" src="${safeText(ev.away_crest)}" onerror="this.style.display='none'">
-                <span class="t">${safeText(ev.away)}</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="aiBox">
-            <div class="aiTitle">
-              <span>🧾 Scheda IA: <b>${headline}</b></span>
-              <span class="note">Consiglio: <b>stampa</b> e fai verificare la quota al banco</span>
-            </div>
-            <div class="aiText">
-              ${p.matchup} <span class="muted2">(${p.riskNote})</span>
-            </div>
-            <div style="margin-top:8px">${bullets}</div>
-            <div class="marketGrid">${marketHTML}</div>
-            <div class="small muted2" style="margin-top:10px">
-              Nota: queste sono indicazioni basate su segnali stimati (ritmo/goal/corner/cartellini). Senza dato arbitro/formazioni non dare certezze.
-            </div>
-          </div>
-        `;
-        box.appendChild(el);
-      }
-    }
-
-    function updateQuickHint(allEvents){
-      // un hint “sensato”: guarda media dei segnali del giorno/slot
-      const hint = document.getElementById("quickHint");
-      if(!allEvents || !allEvents.length){
-        hint.textContent = "Nessun dato: aggiorna eventi.";
-        return;
-      }
-      const slotEvents = allEvents.filter(e => (e.slot||"") === CURRENT_SLOT);
-      const list = slotEvents.length ? slotEvents : allEvents;
-
-      let g=0,t=0,c=0,ca=0,n=0;
-      for(const ev of list){
-        const ctx = ev.context || {};
-        g += (ctx.goals ?? 0.5);
-        t += (ctx.tempo ?? 0.5);
-        c += (ctx.corners ?? 0.5);
-        ca+= (ctx.cards ?? 0.5);
-        n++;
-      }
-      g/=n; t/=n; c/=n; ca/=n;
-
-      const tempoTxt = t>=0.62 ? "Ritmo alto" : (t<=0.38 ? "Ritmo basso" : "Ritmo medio");
-      const goalTxt  = g>=0.66 ? "gol possibili" : (g<=0.40 ? "gare più chiuse" : "gol da valutare");
-      const cornerTxt= c>=0.66 ? "corner buoni" : (c<=0.40 ? "corner incerti" : "corner da valutare");
-      const cardsTxt = ca>=0.66 ? "cartellini possibili" : (ca<=0.40 ? "cartellini poco leggibili" : "cartellini da valutare");
-
-      hint.innerHTML = `
-        <b>${tempoTxt}</b> in questa fascia. Approccio “da sala”: poche scelte, quota al banco.
-        Lettura generale: ${goalTxt}, ${cornerTxt}, ${cardsTxt}.
-      `;
-    }
-
-    /* =========================
-       FETCH EVENTS
-    ========================= */
-    async function fetchEvents(){
-      const url = EVENTS_URL + "?v=" + Date.now();
-      const res = await fetch(url, { cache: "no-store" });
-      if(!res.ok) throw new Error("Errore fetch events.json");
-      const data = await res.json();
-      return data;
-    }
-
-    function buildDailySlots(all){
-      // ritorna oggetti: mattina/pomeriggio/sera con max 3 ciascuno
-      const out = { mattina:[], pomeriggio:[], sera:[] };
-      for(const s of ["mattina","pomeriggio","sera"]){
-        const list = all.filter(e => (e.slot||"") === s);
-        const rotated = pickRotated(list, s);
-        out[s] = rotated.slice(0, MAX_PER_SLOT);
-      }
-      return out;
-    }
-
-    function setSlot(slot){
-      CURRENT_SLOT = slot;
-      document.getElementById("slotPill").textContent = slot;
-      const url = new URL(location.href);
-      url.searchParams.set("slot", slot);
-      history.replaceState(null,"",url.toString());
-      refreshRender();
-    }
-
-    function refreshRender(){
-      const all = (EVENTS_DATA && EVENTS_DATA.events) ? EVENTS_DATA.events : [];
-      const daily = buildDailySlots(all);
-      CURRENT_LIST = daily[CURRENT_SLOT] || [];
-
-      // TOP: usa tutti gli eventi disponibili
-      renderTopIdeas(all);
-
-      // render lista fascia
-      renderEvents(CURRENT_LIST);
-
-      // hint a destra
-      updateQuickHint(all);
-
-      // updatedAt
-      const upd = safeText(EVENTS_DATA?.updated_at || "—");
-      document.getElementById("updatedAt").textContent = upd;
-      document.getElementById("centerId").textContent = CENTER_ID;
-    }
-
-    /* =========================
-       PRINT
-    ========================= */
-    function printPage(){
-      const title = `Vincitù · IA Portal — ${CURRENT_SLOT}`;
-      const html = `
-        <html><head><meta charset="utf-8">
-        <title>${title}</title>
-        <style>
-          body{font-family: Arial, sans-serif; padding:18px; color:#111}
-          h1{margin:0 0 8px}
-          .muted{color:#555; font-size:12px}
-          .card{border:1px solid #ddd; border-radius:10px; padding:12px; margin:10px 0}
-          .head{font-weight:700; margin-bottom:6px}
-          .grid{display:grid; grid-template-columns:1fr 1fr; gap:8px}
-          .m{border:1px solid #eee; border-radius:10px; padding:10px}
-          .m b{display:block; margin-bottom:4px}
-          .tag{font-size:12px; font-weight:700; color:#333}
-          @media print{ .muted{page-break-after:avoid} }
-        </style></head><body>
-          <h1>${title}</h1>
-          <div class="muted">Quote non mostrate: verificare al banco. Indicazioni informative / intrattenimento. Gioca responsabilmente.</div>
-          ${CURRENT_LIST.map(ev=>{
-            const mk = buildMarkets(ev);
-            return `
-              <div class="card">
-                <div class="head">${safeText(ev.league)} — ${safeText(ev.start)} — ${safeText(ev.home)} vs ${safeText(ev.away)}</div>
-                <div class="grid">
-                  ${mk.map(m=>`
-                    <div class="m">
-                      <b>${m.label}</b>
-                      <div class="tag">${m.level}</div>
-                      <div class="muted">${m.note}</div>
-                    </div>
-                  `).join("")}
-                </div>
-              </div>
-            `;
-          }).join("")}
-        </body></html>
-      `;
-      const w = window.open("", "_blank");
-      w.document.open();
-      w.document.write(html);
-      w.document.close();
-      w.focus();
-      w.print();
-    }
-
-    /* =========================
-       WHEEL
-    ========================= */
-    const wheelItems = [
-      { title:"Stop dopo 2 errori", text:"Se oggi sbagli 2 volte, chiudi. Domani è un altro giorno." },
-      { title:"1–2 scelte max", text:"In sala vince la disciplina: poche selezioni, quota al banco." },
-      { title:"Se quota non torna: passa", text:"Non inseguire. Se la quota è “strana”, cambia mercato o non giocare." },
-      { title:"Stake fisso", text:"Scegli una cifra e mantienila. Non alzare dopo una perdita." },
-      { title:"Evita multiple pesanti", text:"Se vuoi divertirti, fallo con controllo. Meglio singola/doppia." },
-      { title:"Cerca valore, non emozione", text:"Partita famosa ≠ giocata buona. La quota decide." },
-      { title:"Pausa 60 secondi", text:"Prima di stampare: respira 60 sec. Se vuoi ancora, allora ok." },
-      { title:"Solo “quota ok”", text:"Regola d’acciaio: gioca solo se la quota al banco ti convince davvero." },
-    ];
-
-    const wheelOverlay = document.getElementById("wheelOverlay");
-    const wheelCanvas = document.getElementById("wheelCanvas");
-    const wheelCtx = wheelCanvas.getContext("2d");
-    let wheelAngle = 0;
-    let wheelSpinning = false;
-
-    function wheelKeyToday(){
-      const d = nowRome();
-      return `wheel:${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
-    }
-
-    function drawWheel(){
-      const W = wheelCanvas.width, H = wheelCanvas.height;
-      const cx = W/2, cy = H/2;
-      const r = Math.min(W,H)/2 - 10;
-
-      wheelCtx.clearRect(0,0,W,H);
-
-      // base
-      wheelCtx.save();
-      wheelCtx.translate(cx,cy);
-      wheelCtx.rotate(wheelAngle);
-
-      const n = wheelItems.length;
-      const slice = (Math.PI*2)/n;
-
-      for(let i=0;i<n;i++){
-        const a0 = i*slice;
-        const a1 = a0 + slice;
-
-        wheelCtx.beginPath();
-        wheelCtx.moveTo(0,0);
-        wheelCtx.arc(0,0,r,a0,a1);
-        wheelCtx.closePath();
-
-        // alterna colori "puliti"
-        wheelCtx.fillStyle = (i%2===0) ? "rgba(255,152,0,.75)" : "rgba(140,70,255,.55)";
-        wheelCtx.fill();
-
-        wheelCtx.strokeStyle = "rgba(255,255,255,.16)";
-        wheelCtx.lineWidth = 2;
-        wheelCtx.stroke();
-
-        // testo
-        wheelCtx.save();
-        wheelCtx.rotate(a0 + slice/2);
-        wheelCtx.textAlign = "right";
-        wheelCtx.fillStyle = "rgba(255,255,255,.92)";
-        wheelCtx.font = "800 16px system-ui";
-        const t = wheelItems[i].title;
-        wheelCtx.fillText(t, r-14, 6);
-        wheelCtx.restore();
-      }
-
-      wheelCtx.restore();
-
-      // pointer
-      wheelCtx.beginPath();
-      wheelCtx.moveTo(cx, 16);
-      wheelCtx.lineTo(cx-14, 46);
-      wheelCtx.lineTo(cx+14, 46);
-      wheelCtx.closePath();
-      wheelCtx.fillStyle = "rgba(255,255,255,.92)";
-      wheelCtx.fill();
-      wheelCtx.strokeStyle = "rgba(0,0,0,.25)";
-      wheelCtx.stroke();
-    }
-
-    function wheelResultFromAngle(angle){
-      const n = wheelItems.length;
-      const slice = (Math.PI*2)/n;
-      // pointer top = -pi/2 in canvas coords; we used pointer at top while wheel rotates
-      // Convert: index = floor(((-angle + pi/2) mod 2pi) / slice)
-      let a = (-angle + Math.PI/2) % (Math.PI*2);
-      if(a<0) a += Math.PI*2;
-      const idx = Math.floor(a / slice);
-      return wheelItems[idx];
-    }
-
-    function openWheel(){
-      wheelOverlay.style.display = "flex";
-      drawWheel();
-      const saved = localStorage.getItem(wheelKeyToday());
-      if(saved){
-        const obj = JSON.parse(saved);
-        document.getElementById("wheelResult").textContent = `✅ Già fatto oggi: ${obj.title}`;
-        document.getElementById("wheelExtra").textContent = obj.text;
-      }else{
-        document.getElementById("wheelResult").textContent = "Premi “Gira la ruota”.";
-        document.getElementById("wheelExtra").textContent = "";
-      }
-    }
-    function closeWheel(){ wheelOverlay.style.display = "none"; }
-
-    async function spinWheel(){
-      const key = wheelKeyToday();
-      const saved = localStorage.getItem(key);
-      if(saved){
-        const obj = JSON.parse(saved);
-        document.getElementById("wheelResult").textContent = `✅ Già fatto oggi: ${obj.title}`;
-        document.getElementById("wheelExtra").textContent = obj.text;
-        return;
-      }
-      if(wheelSpinning) return;
-      wheelSpinning = true;
-
-      // random spin
-      const base = Math.random()*Math.PI*2;
-      const extraTurns = 6 + Math.random()*4;
-      const target = wheelAngle + extraTurns*(Math.PI*2) + base;
-
-      const start = performance.now();
-      const dur = 1900;
-
-      function easeOutCubic(t){ return 1 - Math.pow(1-t,3); }
-
-      function step(now){
-        const t = Math.min(1, (now-start)/dur);
-        const e = easeOutCubic(t);
-        wheelAngle = wheelAngle + (target - wheelAngle) * e; // smooth
-        drawWheel();
-        if(t<1){
-          requestAnimationFrame(step);
-        }else{
-          // final normalize
-          wheelAngle = target % (Math.PI*2);
-          drawWheel();
-          const res = wheelResultFromAngle(wheelAngle);
-          document.getElementById("wheelResult").textContent = `🎯 ${res.title}`;
-          document.getElementById("wheelExtra").textContent = res.text;
-          localStorage.setItem(key, JSON.stringify(res));
-          wheelSpinning = false;
-        }
-      }
-      requestAnimationFrame(step);
-    }
-
-    /* =========================
-       QUIZ
-    ========================= */
-    const quizOverlay = document.getElementById("quizOverlay");
-    const quizData = [
-      {
-        q:"In sala qual è la regola #1?",
-        a:["Mettere più selezioni per alzare vincita","Fare 1–2 selezioni massimo","Raddoppiare dopo una perdita"],
-        correct:1
-      },
-      {
-        q:"Se la quota al banco è diversa e non ti convince…",
-        a:["Giochi lo stesso","Cambi mercato o passi","Aumenti stake per compensare"],
-        correct:1
-      },
-      {
-        q:"Quale approccio è più “da sala”?",
-        a:["Inseguire le perdite","Stake fisso e stop","Giocare solo partite famose"],
-        correct:1
-      },
-      {
-        q:"Corner e cartellini dipendono molto da…",
-        a:["Nome delle squadre","Ritmo/agonismo e fasi di gioco","Il tuo intuito"],
-        correct:1
-      },
-      {
-        q:"Dopo 2 giocate sbagliate nella giornata…",
-        a:["Raddoppio per recuperare","Stop e domani si riparte","Cambio sport e continuo"],
-        correct:1
-      },
-    ];
-
-    function openQuiz(){
-      quizOverlay.style.display = "flex";
-      const wrap = document.getElementById("quizWrap");
-      wrap.innerHTML = "";
-      quizData.forEach((it,idx)=>{
-        const div = document.createElement("div");
-        div.className = "quizQ";
-        div.innerHTML = `
-          <div class="q">${idx+1}) ${it.q}</div>
-          ${it.a.map((opt,i)=>`
-            <label><input type="radio" name="q${idx}" value="${i}"> ${opt}</label>
-          `).join("")}
-        `;
-        wrap.appendChild(div);
-      });
-      document.getElementById("quizResult").textContent = "Compila e premi “Vedi risultato”.";
-    }
-    function closeQuiz(){ quizOverlay.style.display = "none"; }
-
-    function checkQuiz(){
-      let score = 0;
-      for(let i=0;i<quizData.length;i++){
-        const sel = document.querySelector(`input[name="q${i}"]:checked`);
-        if(sel && Number(sel.value) === quizData[i].correct) score++;
-      }
-      const pct = Math.round((score/quizData.length)*100);
-      let msg = `Punteggio: ${score}/${quizData.length} (${pct}%). `;
-      if(pct >= 80) msg += "✅ Mentalità da sala: disciplina alta. Ora poche scelte e quota al banco.";
-      else if(pct >= 60) msg += "🟡 Buono, ma evita l’istinto: riduci selezioni e usa stake fisso.";
-      else msg += "🔴 Attenzione: rischio inseguimento. Prima la disciplina, poi il gioco.";
-      document.getElementById("quizResult").textContent = msg;
-    }
-
-    /* =========================
-       EVENTS LOAD + INIT
-    ========================= */
-    async function init(){
-      // slot
-      const slotURL = getSlotFromURL();
-      CURRENT_SLOT = slotURL || slotFromTime(nowRome());
-      document.getElementById("slotPill").textContent = CURRENT_SLOT;
-
-      // load
-      try{
-        EVENTS_DATA = await fetchEvents();
-      }catch(e){
-        EVENTS_DATA = { updated_at:"—", events:[] };
-      }
-
-      refreshRender();
-
-      // clock / refresh updated time display (no fetch)
-      setInterval(()=> {
-        // keep slot label consistent if user didn't force slot via url
-        if(!getSlotFromURL()){
-          const s = slotFromTime(nowRome());
-          if(s !== CURRENT_SLOT){
-            CURRENT_SLOT = s;
-            document.getElementById("slotPill").textContent = s;
-            refreshRender();
-          }
-        }
-      }, 30_000);
-    }
-
-    /* =========================
-       UI BINDINGS
-    ========================= */
-    document.getElementById("btnNew").addEventListener("click", async ()=>{
-      // refetch events.json
-      try{
-        EVENTS_DATA = await fetchEvents();
-      }catch{}
-      refreshRender();
-    });
-
-    document.getElementById("btnSlot").addEventListener("click", ()=>{
-      const order = ["mattina","pomeriggio","sera"];
-      const i = order.indexOf(CURRENT_SLOT);
-      const next = order[(i+1)%order.length];
-      setSlot(next);
-    });
-
-    document.getElementById("btnPrint").addEventListener("click", printPage);
-
-    // wheel
-    document.getElementById("btnWheel").addEventListener("click", openWheel);
-    document.getElementById("btnWheel2").addEventListener("click", openWheel);
-    document.getElementById("wheelClose").addEventListener("click", closeWheel);
-    document.getElementById("wheelSpin").addEventListener("click", spinWheel);
-    wheelOverlay.addEventListener("click", (e)=>{ if(e.target === wheelOverlay) closeWheel(); });
-
-    // quiz
-    document.getElementById("btnQuiz").addEventListener("click", openQuiz);
-    document.getElementById("btnQuiz2").addEventListener("click", openQuiz);
-    document.getElementById("quizClose").addEventListener("click", closeQuiz);
-    document.getElementById("quizCheck").addEventListener("click", checkQuiz);
-    quizOverlay.addEventListener("click", (e)=>{ if(e.target === quizOverlay) closeQuiz(); });
-
-    // first draw wheel
-    drawWheel();
-    init();
-  </script>
 </body>
 </html>
