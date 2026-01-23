@@ -3,1785 +3,1351 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vincitù • IA Portal</title>
+  <title>Vincitù · IA Portal</title>
   <style>
     :root{
-      --bg1:#351b68;
+      --bg1:#2b0f57;
       --bg2:#0b1a3f;
       --panel: rgba(20, 23, 44, .72);
       --panel2: rgba(30, 33, 62, .72);
       --stroke: rgba(255,255,255,.10);
       --text: rgba(255,255,255,.92);
       --muted: rgba(255,255,255,.68);
-
-      --orange:#ff9800;
-      --orange2:#ffb03a;
-
+      --muted2: rgba(255,255,255,.45);
+      --accent:#ff9800;
+      --accent2:#ffb03a;
       --ok:#2ecc71;
-      --warn:#f1c40f;
-      --bad:#ff4d5c;
-
-      --shadow: 0 12px 50px rgba(0,0,0,.38);
+      --warn:#f39c12;
+      --bad:#ff3b3b;
+      --chip: rgba(255,255,255,.08);
+      --shadow: 0 14px 60px rgba(0,0,0,.45);
       --r: 18px;
       --r2: 14px;
-
-      --chip: rgba(255,255,255,.10);
-      --chip2: rgba(255,255,255,.08);
-
-      --maxw: 1180px;
-      --gap: 14px;
-
-      --salaScale: 1;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
     }
-
     *{box-sizing:border-box}
     body{
       margin:0;
-      min-height:100vh;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font-family:var(--font);
       color:var(--text);
+      min-height:100vh;
       background:
-        radial-gradient(1200px 700px at 20% 10%, rgba(140,70,255,.35), transparent 60%),
-        radial-gradient(900px 600px at 90% 40%, rgba(0,170,255,.20), transparent 55%),
-        linear-gradient(135deg, var(--bg1), var(--bg2));
-      display:flex;
-      justify-content:center;
-      padding:28px 14px;
+        radial-gradient(1200px 700px at 20% 10%, rgba(140,70,255,.38), transparent 60%),
+        radial-gradient(900px 600px at 85% 20%, rgba(0,200,255,.18), transparent 60%),
+        linear-gradient(120deg, var(--bg1), var(--bg2));
     }
-
     a{color:inherit}
     .wrap{
-      width:min(var(--maxw), 100%);
+      max-width: 1180px;
+      margin: 34px auto;
+      padding: 0 16px;
+    }
+    .shell{
+      border: 1px solid var(--stroke);
       border-radius: 28px;
-      background: rgba(10, 12, 25, .35);
-      border: 1px solid rgba(255,255,255,.08);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
       box-shadow: var(--shadow);
       overflow:hidden;
-      backdrop-filter: blur(10px);
     }
-
-    /* HEADER */
     .topbar{
       display:flex;
-      align-items:center;
       justify-content:space-between;
-      gap:12px;
-      padding:16px 18px;
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      border-bottom:1px solid rgba(255,255,255,.06);
+      gap:16px;
+      padding: 18px 18px 14px;
+      background: linear-gradient(180deg, rgba(0,0,0,.22), transparent);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      align-items:center;
     }
     .brand{
       display:flex;
-      gap:12px;
       align-items:center;
+      gap:12px;
       min-width: 280px;
     }
-    .vbadge{
-      width:34px;height:34px;border-radius:10px;
-      background: #e62020;
-      display:grid;place-items:center;
-      box-shadow: 0 10px 30px rgba(230,32,32,.22);
-      border:1px solid rgba(255,255,255,.20);
+    .brandLogo{
+      display:flex; align-items:center; gap:10px;
+      padding: 8px 10px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .vBadge{
+      width: 30px; height: 30px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #ff2b2b, #b10000);
+      display:grid; place-items:center;
+      border: 1px solid rgba(255,255,255,.20);
+      box-shadow: 0 10px 22px rgba(0,0,0,.35);
+      flex: 0 0 auto;
+    }
+    .vBadge span{
       font-weight:900;
-      letter-spacing:.5px;
+      font-size: 17px;
+      letter-spacing:.3px;
+      transform: translateY(-.5px);
     }
-    .btxt{
-      display:flex; flex-direction:column; line-height:1.1;
-    }
-    .btitle{
-      font-weight:900;
-      font-size: 16px;
-      letter-spacing:.2px;
-    }
-    .bsub{
-      font-size:12px; color:var(--muted);
-      margin-top:4px;
-    }
-
-    .status{
+    .brandTitle{line-height:1.1}
+    .brandTitle .name{font-weight:800}
+    .brandTitle .sub{font-size:12px; color:var(--muted)}
+    .pills{
       display:flex; flex-wrap:wrap;
       gap:8px;
+      justify-content:flex-end;
       align-items:center;
-      justify-content:center;
-      flex:1;
     }
     .pill{
-      display:inline-flex; gap:8px;
-      align-items:center;
-      padding:8px 10px;
+      display:flex; align-items:center; gap:8px;
+      padding: 7px 10px;
       border-radius: 999px;
       background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.08);
-      color:rgba(255,255,255,.86);
-      font-size:12px;
+      border: 1px solid rgba(255,255,255,.10);
+      font-size: 12px;
+      color: var(--muted);
       white-space:nowrap;
     }
     .dot{
-      width:8px;height:8px;border-radius:99px;
+      width:9px; height:9px; border-radius:99px;
       background: var(--ok);
-      box-shadow:0 0 0 3px rgba(46,204,113,.15);
+      box-shadow: 0 0 0 4px rgba(46,204,113,.14);
     }
-
-    .actions{
-      display:flex; gap:10px; align-items:center;
-    }
-
     .btn{
-      cursor:pointer;
-      user-select:none;
-      border:none;
-      border-radius: 12px;
-      padding:10px 12px;
-      font-weight:800;
-      font-size:12px;
-      letter-spacing:.2px;
+      border: 1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.06);
-      color:rgba(255,255,255,.9);
-      border:1px solid rgba(255,255,255,.10);
-      transition:.18s;
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 12px;
+      cursor:pointer;
+      font-weight:700;
+      transition: transform .08s ease, background .2s ease;
+      user-select:none;
     }
-    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.09)}
-    .btn.orange{
-      background: linear-gradient(180deg, var(--orange2), var(--orange));
-      color:#1a1207;
-      border:1px solid rgba(255,255,255,.12);
+    .btn:hover{ background: rgba(255,255,255,.09) }
+    .btn:active{ transform: translateY(1px) }
+    .btn.primary{
+      background: linear-gradient(180deg, var(--accent2), var(--accent));
+      border: none;
+      color: #111827;
+      font-weight:900;
+      box-shadow: 0 14px 30px rgba(255,152,0,.18);
     }
-    .btn.orange:hover{filter:brightness(1.03)}
-    .btn.small{padding:8px 10px; border-radius: 12px}
-
-    /* MAIN GRID */
-    .main{
+    .btn.mini{ padding: 6px 10px; border-radius: 10px; font-size:12px; font-weight:800 }
+    .grid{
       display:grid;
-      grid-template-columns: 1.5fr 1fr;
-      gap:var(--gap);
-      padding: 16px 18px 18px;
-      align-items:start;
+      grid-template-columns: 1.35fr .95fr;
+      gap: 14px;
+      padding: 14px;
     }
-
     .panel{
       background: var(--panel);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius: 22px;
-      padding: 14px;
-      box-shadow: 0 10px 35px rgba(0,0,0,.25);
-    }
-    .panel h3{
-      margin:0;
-      font-size:13px;
-      letter-spacing:.2px;
-      font-weight:900;
-      display:flex; align-items:center; gap:8px;
-    }
-    .muted{color:var(--muted)}
-    .row{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:10px; flex-wrap:wrap;
-    }
-    .row.tight{gap:8px}
-    .chips{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
-    .chip{
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      padding:6px 9px;
-      border-radius: 999px;
-      background: var(--chip);
-      border:1px solid rgba(255,255,255,.08);
-      font-size:11px;
-      color:rgba(255,255,255,.85);
-      white-space:nowrap;
-    }
-    .chip.dim{background: var(--chip2); color:rgba(255,255,255,.78)}
-    .chip.ok{background: rgba(46,204,113,.12); border-color: rgba(46,204,113,.18)}
-    .chip.warn{background: rgba(241,196,15,.12); border-color: rgba(241,196,15,.20)}
-    .chip.bad{background: rgba(255,77,92,.12); border-color: rgba(255,77,92,.20)}
-
-    /* sections */
-    .section{
-      margin-top:12px;
-      border-radius: 18px;
-      background: rgba(255,255,255,.04);
-      border:1px solid rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 20px;
       overflow:hidden;
     }
-    .sectionHead{
-      padding:10px 12px;
+    .panelHeader{
       display:flex;
       align-items:center;
       justify-content:space-between;
       gap:10px;
-      background: rgba(255,255,255,.03);
-      border-bottom:1px solid rgba(255,255,255,.06);
+      padding: 12px 12px 10px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      background: rgba(0,0,0,.12);
     }
-    .sectionHead .title{
+    .panelHeader .title{
+      display:flex; align-items:center; gap:8px;
+      font-weight:900;
+    }
+    .panelBody{ padding: 12px; }
+    .row{ display:flex; gap:10px; flex-wrap:wrap; align-items:center }
+    .muted{ color: var(--muted); }
+    .small{ font-size:12px; }
+    .divider{ height:1px; background: rgba(255,255,255,.08); margin: 10px 0; }
+
+    /* TOP IA */
+    .topGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top: 10px;
+    }
+    .topCard{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      border-radius: 16px;
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      min-height: 78px;
+    }
+    .topCard .h{
+      display:flex; justify-content:space-between; gap:8px;
       font-weight:900;
       font-size:12px;
-      display:flex; gap:8px; align-items:center;
+      color: rgba(255,255,255,.92);
     }
-    .sectionBody{
-      padding: 10px 12px 12px;
-    }
-
-    /* SCORE LISTS (C) */
-    .hotGrid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:10px;
-    }
-    .hotBox{
-      border-radius: 16px;
-      padding:10px;
-      background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.06);
-    }
-    .hotBox h4{
-      margin:0 0 8px 0;
-      font-size:11px;
-      color:rgba(255,255,255,.88);
-      letter-spacing:.2px;
-      font-weight:900;
-      display:flex; align-items:center; gap:6px;
-    }
-    .hotItem{
-      display:flex; gap:8px;
-      align-items:center;
-      padding:7px 0;
-      border-bottom:1px solid rgba(255,255,255,.06);
-    }
-    .hotItem:last-child{border-bottom:none}
-    .tinyCrest{
-      width:18px;height:18px;border-radius:6px;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.10);
-      object-fit:contain;
-    }
-    .hotText{
-      display:flex; flex-direction:column; line-height:1.1;
-      min-width:0;
-    }
-    .hotText .m1{
-      font-size:11px; font-weight:900;
-      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-    }
-    .hotText .m2{
-      font-size:10px; color:var(--muted);
-      margin-top:2px;
-    }
-    .scoreTag{
-      margin-left:auto;
-      font-size:11px;
-      font-weight:900;
-      padding:6px 8px;
+    .tag{
+      display:inline-flex; align-items:center; gap:6px;
+      padding: 4px 8px;
       border-radius: 999px;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.10);
-      min-width:54px;
-      text-align:center;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+      font-size: 11px;
+      color: var(--muted);
+      white-space:nowrap;
+      font-weight:800;
     }
+    .tag.ok{ color: rgba(46,204,113,.95); border-color: rgba(46,204,113,.25); background: rgba(46,204,113,.08); }
+    .tag.warn{ color: rgba(243,156,18,.95); border-color: rgba(243,156,18,.25); background: rgba(243,156,18,.08); }
+    .tag.bad{ color: rgba(255,59,59,.95); border-color: rgba(255,59,59,.25); background: rgba(255,59,59,.08); }
+    .topCard .p{ font-size:12px; color: var(--muted); line-height:1.25 }
 
-    /* Angolo Speciale */
-    .specialGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
-    }
-    .specialCard{
-      border-radius: 16px;
-      background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.06);
-      padding:10px;
-      min-height: 120px;
-    }
-    .specialCard .head{
-      display:flex; align-items:center; justify-content:space-between; gap:8px;
-      margin-bottom:8px;
-    }
-    .specialCard .head .k{
-      font-size:11px; font-weight:900;
-      display:flex; align-items:center; gap:6px;
-    }
-    .specialCard .mini{
-      font-size:10px; color:var(--muted);
-      margin-top:6px;
-      line-height:1.35;
-    }
-    .specialList{
-      display:flex; flex-direction:column; gap:8px;
-    }
-    .specialItem{
-      padding:10px;
-      border-radius: 14px;
-      background: rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.06);
-      cursor:pointer;
-      transition:.14s;
-    }
-    .specialItem:hover{transform: translateY(-1px); background: rgba(0,0,0,.22)}
-    .sTop{
-      display:flex; align-items:center; justify-content:space-between; gap:8px;
-    }
-    .sMatch{
-      display:flex; align-items:center; gap:8px; min-width:0;
-      font-weight:900; font-size:11px;
-      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
-    }
-    .sBadges{display:flex; gap:6px; flex-wrap:wrap}
-    .sNote{font-size:10px; color:var(--muted); margin-top:6px; line-height:1.35}
-
-    /* EVENTS LIST */
-    .events{
-      display:flex; flex-direction:column;
-      gap:12px;
-      margin-top: 12px;
-    }
-    .eventCard{
+    /* EVENT CARD */
+    .event{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
       border-radius: 18px;
-      background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.06);
       padding: 12px;
-      cursor:pointer;
-      transition:.14s;
-      position:relative;
+      margin-top: 10px;
+    }
+    .eventHead{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      align-items:center;
+    }
+    .leftHead{
+      display:flex; flex-direction:column; gap:6px;
+      min-width: 0;
+    }
+    .chipsLine{
+      display:flex; flex-wrap:wrap; gap:6px; align-items:center;
+      color: var(--muted);
+      font-size:12px;
+    }
+    .chip{
+      display:inline-flex;
+      gap:6px;
+      align-items:center;
+      padding: 5px 8px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 999px;
+      font-size: 11px;
+      color: var(--muted);
+      white-space:nowrap;
+      font-weight:800;
+    }
+    .teamLine{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:900;
       overflow:hidden;
     }
-    .eventCard:hover{transform: translateY(-1px); background: rgba(255,255,255,.04)}
-    .eventMeta{
-      display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;
-      margin-bottom:8px;
-    }
-    .leaguePill{
-      font-size:10px;
-      padding:6px 8px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.08);
-      color:rgba(255,255,255,.85);
-      display:inline-flex; gap:6px; align-items:center;
-    }
-    .leaguePill img{
-      width:14px;height:14px;border-radius:6px;
-      object-fit:contain;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.10);
-    }
-    .evtNo{
-      font-size:10px;
-      padding:6px 8px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.08);
-      color:rgba(255,255,255,.78);
-    }
-
-    .matchLine{
-      display:flex; align-items:center; gap:10px;
-      font-weight:900;
-      font-size:13px;
-      margin-bottom:10px;
-      min-width:0;
+    .teamLine .t{
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
     }
     .crest{
-      width:18px;height:18px;border-radius:6px;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.10);
+      width: 18px; height: 18px; border-radius: 6px;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.10);
       object-fit:contain;
     }
-    .vs{color:rgba(255,255,255,.75); font-weight:900}
-    .timeTag{
-      margin-left:auto;
-      font-size:11px;
-      padding:6px 8px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.08);
-      color:rgba(255,255,255,.84);
-      white-space:nowrap;
-    }
-
-    .iaBox{
+    .aiBox{
+      margin-top: 10px;
       border-radius: 16px;
-      background: rgba(0,0,0,.16);
-      border:1px solid rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.12);
       padding: 10px;
-      margin-bottom:10px;
     }
-    .iaTitle{
+    .aiTitle{
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      align-items:center;
       font-weight:900;
-      font-size:11px;
-      display:flex; align-items:center; gap:8px;
-      margin-bottom:6px;
+      font-size: 12.5px;
     }
-    .iaLine{
-      font-size:10px;
-      color:rgba(255,255,255,.80);
-      line-height:1.35;
+    .aiTitle .note{ color: var(--muted); font-weight:800; }
+    .aiText{
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12.2px;
+      line-height: 1.35;
     }
-
     .marketGrid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:10px;
-    }
-    .mCard{
-      border-radius: 14px;
-      background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.06);
-      padding:10px;
-      min-height: 98px;
-    }
-    .mTop{
-      display:flex; align-items:center; justify-content:space-between; gap:8px;
-      margin-bottom:6px;
-    }
-    .mName{
-      font-weight:900;
-      font-size:11px;
-    }
-    .mBadge{
-      font-size:10px;
-      padding:5px 8px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.07);
-      border:1px solid rgba(255,255,255,.10);
-      color:rgba(255,255,255,.88);
-      white-space:nowrap;
-    }
-    .mBadge.ok{background: rgba(46,204,113,.12); border-color: rgba(46,204,113,.18)}
-    .mBadge.warn{background: rgba(241,196,15,.12); border-color: rgba(241,196,15,.20)}
-    .mBadge.bad{background: rgba(255,77,92,.12); border-color: rgba(255,77,92,.20)}
-    .mNote{
-      font-size:10px;
-      color:var(--muted);
-      line-height:1.35;
-    }
-
-    /* RIGHT PANEL (schedina) */
-    .schedinaTop{
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-      margin-bottom:10px;
-    }
-    .formGrid{
       display:grid;
       grid-template-columns: 1fr 1fr;
       gap:10px;
+      margin-top: 10px;
     }
-    .field{
+    .market{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
       border-radius: 14px;
-      background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.06);
-      padding:10px;
+      padding: 10px;
     }
-    .field label{
-      font-size:10px;
-      color:rgba(255,255,255,.72);
-      display:block;
-      margin-bottom:6px;
-      font-weight:800;
-      letter-spacing:.2px;
+    .market .mHead{
+      display:flex; justify-content:space-between; align-items:center; gap:8px;
+      font-weight:900;
+      font-size: 12px;
     }
-    .field input, .field select{
-      width:100%;
-      border:none;
-      outline:none;
-      background: rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.08);
-      color:rgba(255,255,255,.92);
-      padding:10px 10px;
-      border-radius: 12px;
-      font-weight:800;
+    .market .mText{
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height:1.25;
     }
 
-    .bigBtn{
-      width:100%;
-      margin-top:10px;
-      padding:13px 14px;
-      border-radius: 14px;
-      background: linear-gradient(180deg, var(--orange2), var(--orange));
-      border:1px solid rgba(255,255,255,.12);
-      color:#1a1207;
-      font-weight:900;
-      cursor:pointer;
-      transition:.14s;
-      display:flex; gap:10px; align-items:center; justify-content:center;
+    /* RIGHT */
+    .rules{
+      display:flex; flex-direction:column; gap:10px;
     }
-    .bigBtn:hover{filter:brightness(1.03); transform: translateY(-1px)}
-    .helpLine{
-      margin-top:10px;
-      font-size:11px;
-      color:rgba(255,255,255,.72);
-      line-height:1.35;
+    .rules .box{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      border-radius: 16px;
+      padding: 12px;
+    }
+    .box h3{ margin:0 0 8px; font-size: 13px }
+    .box ol{ margin: 0; padding-left: 18px; color: var(--muted); font-size: 12px; line-height:1.35 }
+    .hint{
+      display:flex; gap:8px; flex-wrap:wrap; margin-top: 8px;
+    }
+    .printBtn{ width:100%; padding: 12px 14px; border-radius: 14px; font-size: 13px; font-weight: 900; }
+    .wheelLine{
+      display:flex; gap:8px; flex-wrap:wrap; align-items:center;
     }
 
     /* MODALS */
-    .modal{
-      position:fixed;
-      inset:0;
+    .modalOverlay{
+      position:fixed; inset:0;
+      background: rgba(0,0,0,.55);
       display:none;
       align-items:center;
       justify-content:center;
-      padding:18px;
-      background: rgba(0,0,0,.55);
-      backdrop-filter: blur(8px);
-      z-index: 999;
+      padding: 18px;
+      z-index:999;
     }
-    .modal.show{display:flex}
-    .modalBox{
-      width:min(980px, 100%);
-      border-radius: 22px;
-      background: rgba(10, 12, 25, .92);
-      border:1px solid rgba(255,255,255,.10);
-      box-shadow: 0 18px 80px rgba(0,0,0,.55);
+    .modal{
+      width:min(920px, 96vw);
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(12, 14, 30, .92);
+      box-shadow: var(--shadow);
       overflow:hidden;
     }
     .modalHead{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
+      display:flex; justify-content:space-between; align-items:center; gap:10px;
       padding: 12px 14px;
-      background: rgba(255,255,255,.04);
-      border-bottom:1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.05);
+      border-bottom: 1px solid rgba(255,255,255,.08);
     }
-    .modalHead .t{
-      font-weight:900;
-      font-size:13px;
-      display:flex; align-items:center; gap:8px;
-    }
-    .close{
-      cursor:pointer;
-      border:none;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      color:rgba(255,255,255,.92);
-      padding:8px 10px;
-      border-radius: 12px;
-      font-weight:900;
-    }
-    .modalBody{
-      padding: 14px;
-    }
-
-    /* PRO PANEL (B) */
-    .proGrid{
+    .modalHead .mhTitle{ font-weight: 900; }
+    .modalBody{ padding: 14px; }
+    .twoCols{
       display:grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap:12px;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 14px;
       align-items:start;
     }
-    .proTop{
-      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
-      margin-bottom:10px;
-    }
-    .proMatch{
-      display:flex; gap:10px; align-items:center; min-width:0;
-      font-size:14px; font-weight:900;
-    }
-    .proMeta{
-      font-size:11px; color:var(--muted);
-    }
-    .bars{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:10px;
-      margin-top:10px;
-    }
-    .bar{
-      border-radius: 14px;
-      background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.06);
-      padding:10px;
-    }
-    .bar .k{
-      font-size:10px; color:rgba(255,255,255,.76);
-      font-weight:900; letter-spacing:.2px;
-      display:flex; justify-content:space-between; align-items:center;
-      margin-bottom:8px;
-    }
-    .track{
-      height:10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.08);
-      overflow:hidden;
-    }
-    .fill{
-      height:100%;
-      width:50%;
-      border-radius: 999px;
-      background: linear-gradient(90deg, rgba(255,176,58,.95), rgba(255,152,0,.95));
-    }
-    .proNotes{
-      margin-top:10px;
-      border-radius: 14px;
-      background: rgba(0,0,0,.16);
-      border:1px solid rgba(255,255,255,.06);
-      padding:10px;
-      font-size:11px;
-      color:rgba(255,255,255,.80);
-      line-height:1.4;
-    }
-
-    /* WHEEL */
-    .wheelGrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:12px;
-      align-items:center;
-    }
-    canvas{max-width:100%; display:block}
     .wheelBox{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
       border-radius: 18px;
-      background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.06);
-      padding:12px;
+      padding: 12px;
     }
-    .wheelBtn{
-      width:100%;
-      margin-top:10px;
-      padding:12px 12px;
-      border-radius: 14px;
-      border:none;
-      background: linear-gradient(180deg, var(--orange2), var(--orange));
-      color:#1a1207;
-      font-weight:900;
-      cursor:pointer;
-      transition:.14s;
-    }
-    .wheelBtn:hover{filter:brightness(1.03); transform: translateY(-1px)}
-    .wheelResult{
-      border-radius: 14px;
-      background: rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.06);
-      padding:10px;
-      min-height: 88px;
-      font-size:12px;
-      line-height:1.35;
-      color:rgba(255,255,255,.88);
-    }
-
-    /* QUIZ */
-    .qBox{
+    canvas{ width:100%; height:auto; display:block; }
+    .resultBox{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
       border-radius: 18px;
-      background: rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.06);
-      padding:12px;
+      padding: 12px;
+      min-height: 160px;
     }
-    .qTitle{
-      font-weight:900;
-      font-size:13px;
-      margin:0 0 10px 0;
+    .resultBox .big{
+      font-weight: 900;
+      font-size: 14px;
+      margin-bottom: 6px;
     }
-    .qItem{
-      border-radius: 14px;
-      background: rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.06);
-      padding:10px;
-      margin-bottom:10px;
-    }
-    .qQ{
-      font-size:12px; font-weight:900;
-      margin-bottom:8px;
-    }
-    .qAns{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:8px;
-    }
-    .qAns button{
-      border:none;
-      cursor:pointer;
-      padding:10px;
-      border-radius: 12px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.08);
-      color:rgba(255,255,255,.9);
-      font-weight:800;
-      font-size:12px;
-      transition:.12s;
-    }
-    .qAns button:hover{transform: translateY(-1px); background: rgba(255,255,255,.09)}
-    .qFooter{
-      display:flex; justify-content:space-between; gap:10px; align-items:center; flex-wrap:wrap;
-      font-size:12px; color:rgba(255,255,255,.80);
-      margin-top:10px;
-    }
+    .resultBox .mini{ color: var(--muted); font-size: 12px; line-height:1.35 }
 
-    /* SALA MODE */
-    body.sala{
+    .quizQ{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      border-radius: 16px;
       padding: 10px;
-      --maxw: 1400px;
-      --salaScale: 1.06;
+      margin-top: 10px;
     }
-    body.sala .wrap{
-      border-radius: 26px;
-    }
-    body.sala .bsub{display:none}
-    body.sala .hotGrid{grid-template-columns: 1fr 1fr 1fr}
-    body.sala .helpLine{font-size:12px}
-    body.sala .eventCard{padding: 14px}
-    body.sala .main{gap: 16px}
-    body.sala .btn{font-size:12px}
-    body.sala .marketGrid{grid-template-columns: repeat(3, 1fr)}
-    body.sala .salaHint{
-      display:block;
-    }
-
-    .salaHint{
-      display:none;
-      padding:10px 12px;
-      margin-top:10px;
-      border-radius: 14px;
-      background: rgba(46,204,113,.10);
-      border:1px solid rgba(46,204,113,.18);
-      color:rgba(255,255,255,.92);
-      font-weight:900;
-      font-size:12px;
+    .quizQ .q{ font-weight: 900; font-size: 13px; }
+    .quizQ label{ display:block; margin-top: 6px; color: var(--muted); font-size: 12.5px; cursor:pointer }
+    .footerNote{
+      padding: 10px 14px 14px;
+      color: var(--muted2);
+      font-size: 12px;
     }
 
     @media (max-width: 980px){
-      .main{grid-template-columns: 1fr}
-      .hotGrid{grid-template-columns: 1fr}
-      .specialGrid{grid-template-columns: 1fr}
-      .marketGrid{grid-template-columns: 1fr}
-      .proGrid{grid-template-columns: 1fr}
-      .wheelGrid{grid-template-columns: 1fr}
+      .grid{ grid-template-columns: 1fr; }
+      .brand{ min-width: 0; }
+      .twoCols{ grid-template-columns: 1fr; }
+      .topGrid{ grid-template-columns: 1fr; }
+      .marketGrid{ grid-template-columns: 1fr; }
     }
   </style>
 </head>
-
 <body>
   <div class="wrap">
-    <div class="topbar">
-      <div class="brand">
-        <div class="vbadge">V</div>
-        <div class="btxt">
-          <div class="btitle">Vincitù • IA Portal</div>
-          <div class="bsub">Eventi reali • quote non mostrate: si inseriscono al banco</div>
-        </div>
-      </div>
-
-      <div class="status">
-        <div class="pill"><span class="dot"></span>Centro: <b id="centerName">VINC001</b></div>
-        <div class="pill">Agg: <b id="updatedAt">—</b></div>
-        <div class="pill">Fascia: <b id="slotName">—</b></div>
-        <div class="pill">Vetrina: <b id="vetrinaInfo">3/3</b></div>
-      </div>
-
-      <div class="actions">
-        <button class="btn orange" id="btnSala">🚀 Modalità Sala</button>
-        <button class="btn small" id="btnWheel">🎡 Ruota</button>
-        <button class="btn small" id="btnQuiz">❓ Quiz</button>
-      </div>
-    </div>
-
-    <div class="main">
-      <!-- LEFT -->
-      <div class="panel">
-        <div class="row tight">
-          <div class="chips">
-            <span class="chip">⚡ Eventi (IA)</span>
-            <span class="chip dim">Quote: <b>verifica al banco</b></span>
-            <span class="chip dim" id="modeChip">Modalità cliente: <b>chiara & veloce</b></span>
-            <span class="chip dim" id="missionChip">Missione: <b>Max 2 selezioni</b></span>
-          </div>
-
-          <div class="chips">
-            <button class="btn orange" id="btnNew">Nuovi eventi</button>
-            <button class="btn" id="btnSlot">Cambia fascia</button>
-            <button class="btn" id="btnStart20">Start 20s</button>
-          </div>
-        </div>
-
-        <div class="salaHint" id="salaHint">🚀 Modalità Sala attiva: rotazione automatica + fullscreen consigliato (F11).</div>
-
-        <!-- (C) HOT RANKINGS -->
-        <div class="section" id="hotSection">
-          <div class="sectionHead">
-            <div class="title">⭐ Caldo del giorno (Top 3 per mercato)</div>
-            <div class="chips">
-              <span class="chip dim">Solo indicatori: niente quote</span>
+    <div class="shell">
+      <div class="topbar">
+        <div class="brand">
+          <div class="brandLogo" title="Vincitù">
+            <div class="vBadge"><span>V</span></div>
+            <div class="brandTitle">
+              <div class="name">Vincitù · IA Portal</div>
+              <div class="sub">Eventi reali · quote non mostrate: si verificano al banco</div>
             </div>
           </div>
-          <div class="sectionBody">
-            <div class="hotGrid">
-              <div class="hotBox" id="hotGoals">
-                <h4>⚽ Goal (BTTS/Over) • Top 3</h4>
-                <div class="muted" style="font-size:11px">Caricamento…</div>
+        </div>
+        <div class="pills">
+          <div class="pill"><span class="dot"></span> Centro: <b id="centerId" style="color:var(--text)">VINC001</b></div>
+          <div class="pill">Agg: <b id="updatedAt" style="color:var(--text)">—</b></div>
+          <div class="pill">Fascia: <b id="slotPill" style="color:var(--text)">—</b></div>
+          <button class="btn mini" id="btnWheel">🎡 Ruota</button>
+          <button class="btn mini" id="btnQuiz">❓ Quiz</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- LEFT -->
+        <div class="panel">
+          <div class="panelHeader">
+            <div class="title">⚡ Eventi (IA)</div>
+            <div class="row">
+              <button class="btn mini primary" id="btnNew">Nuovi eventi</button>
+              <button class="btn mini" id="btnSlot">Cambia fascia</button>
+              <span class="pill" style="padding:6px 10px">Quote: <b style="color:var(--text)">verifica al banco</b></span>
+              <span class="pill" style="padding:6px 10px">Eventi mostrati: <b id="shownCount" style="color:var(--text)">0</b>/3</span>
+            </div>
+          </div>
+
+          <div class="panelBody">
+            <!-- TOP IA -->
+            <div class="panel" style="background:rgba(0,0,0,.08)">
+              <div class="panelHeader">
+                <div class="title">⭐ TOP IA del momento <span class="small muted">(6 idee “da sala”)</span></div>
+                <div class="pill">Solo “indicazioni” → quota sempre al banco</div>
               </div>
-              <div class="hotBox" id="hotCorners">
-                <h4>🚩 Corner • Top 3</h4>
-                <div class="muted" style="font-size:11px">Caricamento…</div>
+              <div class="panelBody">
+                <div class="topGrid" id="topGrid"></div>
               </div>
-              <div class="hotBox" id="hotCards">
-                <h4>🟨 Cartellini • Top 3</h4>
-                <div class="muted" style="font-size:11px">Caricamento…</div>
-              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="events"></div>
+
+            <div class="footerNote">
+              Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
             </div>
           </div>
         </div>
 
-        <!-- ANGLO SPECIALE -->
-        <div class="section" id="specialSection">
-          <div class="sectionHead">
-            <div class="title">📌 Angolo Speciale: Corner & Cartellini (rapido)</div>
-            <div class="chips">
-              <span class="chip dim">Max 2 + 2 (pulito)</span>
-            </div>
+        <!-- RIGHT -->
+        <div class="panel">
+          <div class="panelHeader">
+            <div class="title">🧾 Regole & stampa</div>
+            <span class="pill">Modalità sala: <b style="color:var(--text)">chiaro e veloce</b></span>
           </div>
-          <div class="sectionBody">
-            <div class="specialGrid">
-              <div class="specialCard">
-                <div class="head">
-                  <div class="k">🚩 Corner consigliati</div>
-                  <span class="chip dim">Top 2</span>
+          <div class="panelBody">
+            <div class="rules">
+              <div class="box">
+                <h3>Regole d’oro (in sala)</h3>
+                <ol>
+                  <li>Scegli <b>1–2 selezioni</b> massimo.</li>
+                  <li>Leggi la scheda IA (ritmo / goal / corner / cartellini).</li>
+                  <li>Se la quota al banco non convince: <b>passa</b>.</li>
+                </ol>
+                <div class="hint">
+                  <span class="tag ok">✅ 1–2 scelte max</span>
+                  <span class="tag ok">✅ niente inseguimento</span>
+                  <span class="tag ok">✅ quota al banco</span>
                 </div>
-                <div class="specialList" id="cornerList"></div>
               </div>
 
-              <div class="specialCard">
-                <div class="head">
-                  <div class="k">🟨 Cartellini consigliati</div>
-                  <span class="chip dim">Top 2</span>
+              <div class="box">
+                <h3>🔥 Suggerimento IA rapido</h3>
+                <div class="small muted" id="quickHint">Carico eventi…</div>
+              </div>
+
+              <button class="btn primary printBtn" id="btnPrint">🖨️ Stampa scheda</button>
+
+              <div class="box">
+                <h3>🎡 Ruota disciplina (divertimento utile)</h3>
+                <div class="small muted">Non dà pronostici: dà <b>consigli pratici</b> di gestione. Perfetta da far vedere in sala.</div>
+                <div class="wheelLine" style="margin-top:10px">
+                  <span class="pill">1 giro al giorno</span>
+                  <button class="btn mini" id="btnWheel2">Gira ora</button>
                 </div>
-                <div class="specialList" id="cardList"></div>
+              </div>
+
+              <div class="box">
+                <h3>❓ Quiz lampo (30 sec)</h3>
+                <div class="small muted">Mini quiz “disciplina da sala”. Se fai punteggio alto → sei pronto a giocare con testa.</div>
+                <button class="btn mini" id="btnQuiz2" style="margin-top:10px">Apri quiz</button>
               </div>
             </div>
-            <div class="muted" style="font-size:11px; margin-top:10px; line-height:1.35;">
-              Nota: suggerimenti basati su segnali (goal/corner/cartellini/ritmo/fisicità). <b>Quota sempre al banco</b>. Nessuna garanzia.
-            </div>
           </div>
         </div>
-
-        <!-- EVENTS -->
-        <div class="events" id="events"></div>
-      </div>
-
-      <!-- RIGHT -->
-      <div class="panel">
-        <div class="schedinaTop">
-          <h3>🧾 Schedina</h3>
-          <span class="chip dim">Quote reali solo al banco</span>
-        </div>
-
-        <div class="formGrid">
-          <div class="field">
-            <label>Stake (€)</label>
-            <input id="stake" type="number" min="1" step="1" value="5" />
-          </div>
-          <div class="field">
-            <label>Tipo</label>
-            <select id="tipo">
-              <option value="multipla">Multipla (tutte)</option>
-              <option value="singola">Singola (consigliata)</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Selezioni</label>
-            <input id="selCount" type="text" value="0" disabled />
-          </div>
-          <div class="field">
-            <label>Quota totale (facoltativo)</label>
-            <input id="quotaTot" type="text" placeholder="es. 3.25 (inserisci dal banco)" />
-          </div>
-        </div>
-
-        <button class="bigBtn" id="btnPrint">🖨️ Stampa schedina</button>
-
-        <div class="helpLine">
-          Suggerimento: <b>2–3 selezioni massimo</b> per mantenere controllo.  
-          Se un’indicazione non ti convince al banco, <b>passa</b> o riduci.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- (B) PRO MODAL -->
-  <div class="modal" id="proModal" aria-hidden="true">
-    <div class="modalBox">
-      <div class="modalHead">
-        <div class="t">📊 Scheda Partita PRO</div>
-        <button class="close" onclick="closePro()">Chiudi ✕</button>
-      </div>
-      <div class="modalBody">
-        <div class="proGrid">
-          <div class="panel" style="padding:12px; border-radius:18px;">
-            <div class="proTop">
-              <div class="proMatch" id="proTitle">—</div>
-              <div class="proMeta" id="proMeta">—</div>
-              <div class="chips" id="proChips"></div>
-            </div>
-
-            <div class="bars" id="proBars"></div>
-
-            <div class="proNotes" id="proNotes">
-              —
-            </div>
-          </div>
-
-          <div class="panel" style="padding:12px; border-radius:18px;">
-            <h3 style="margin-bottom:10px;">🎯 Idee mercati (senza quote)</h3>
-            <div id="proMarkets"></div>
-            <div class="muted" style="font-size:11px; margin-top:10px; line-height:1.35;">
-              ⚠️ Arbitro: se al banco vedi info arbitro “tendente ai cartellini”, allora l’over cartellini può diventare più interessante. Se non c’è info, <b>non forzare</b>.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      </div><!-- grid -->
+    </div><!-- shell -->
+  </div><!-- wrap -->
 
   <!-- WHEEL MODAL -->
-  <div class="modal" id="wheelModal" aria-hidden="true">
-    <div class="modalBox">
+  <div class="modalOverlay" id="wheelOverlay" role="dialog" aria-modal="true">
+    <div class="modal">
       <div class="modalHead">
-        <div class="t">🎡 Ruota della Fortuna (premi & missioni)</div>
-        <button class="close" onclick="closeWheel()">Chiudi ✕</button>
+        <div class="mhTitle">🎡 Ruota disciplina (consigli utili da sala)</div>
+        <button class="btn mini" id="wheelClose">Chiudi ✕</button>
       </div>
       <div class="modalBody">
-        <div class="wheelGrid">
+        <div class="twoCols">
           <div class="wheelBox">
-            <div style="display:flex; justify-content:center; align-items:center;">
-              <canvas id="wheelCanvas" width="420" height="420"></canvas>
-            </div>
-            <button class="wheelBtn" id="spinBtn" onclick="spinWheel()">Gira la ruota</button>
-            <div class="muted" style="font-size:11px; margin-top:8px; line-height:1.35;">
-              1 giro al giorno su questo dispositivo (solo intrattenimento). Gioca responsabile.
-            </div>
+            <canvas id="wheelCanvas" width="520" height="520"></canvas>
+            <button class="btn primary" id="wheelSpin" style="width:100%; margin-top:10px">Gira la ruota</button>
+            <div class="small muted" style="margin-top:8px">1 giro al giorno per questo dispositivo. Solo intrattenimento + disciplina.</div>
           </div>
-          <div class="wheelBox">
-            <div class="wheelResult" id="wheelResult">
-              Premi “Gira” per ottenere una missione simpatica e un consiglio di controllo.
-            </div>
-            <div class="muted" style="font-size:11px; margin-top:10px; line-height:1.35;">
-              Tip sala: la ruota serve per <b>divertire</b> e ricordare regole semplici: quota al banco, max 2–3 selezioni, niente inseguimenti.
-            </div>
+          <div class="resultBox">
+            <div class="big">🎯 Risultato</div>
+            <div class="mini" id="wheelResult">Premi “Gira la ruota”.</div>
+            <div class="divider"></div>
+            <div class="mini" id="wheelExtra"></div>
           </div>
         </div>
       </div>
+      <div class="footerNote">Tip: fai girare la ruota al cliente prima di stampare la scheda 🙂</div>
     </div>
   </div>
 
   <!-- QUIZ MODAL -->
-  <div class="modal" id="quizModal" aria-hidden="true">
-    <div class="modalBox">
+  <div class="modalOverlay" id="quizOverlay" role="dialog" aria-modal="true">
+    <div class="modal">
       <div class="modalHead">
-        <div class="t">❓ Quiz veloce (30 secondi)</div>
-        <button class="close" onclick="closeQuiz()">Chiudi ✕</button>
+        <div class="mhTitle">❓ Quiz lampo — Disciplina da sala</div>
+        <button class="btn mini" id="quizClose">Chiudi ✕</button>
       </div>
       <div class="modalBody">
-        <div class="qBox" id="quizBox">
-          <h3 class="qTitle">Rispondi rapido: obiettivo 5/5 👑</h3>
-          <div id="quizItems"></div>
-          <div class="qFooter">
-            <div>Score: <b id="quizScore">0</b>/5 • Best: <b id="quizBest">0</b>/5</div>
-            <button class="btn orange" onclick="resetQuiz()">Ricomincia</button>
-          </div>
+        <div class="small muted">Rispondi veloce. Alla fine ti dice se stai ragionando “da sala” o stai inseguendo.</div>
+        <div id="quizWrap"></div>
+        <button class="btn primary" id="quizCheck" style="margin-top:12px">Vedi risultato</button>
+        <div class="divider"></div>
+        <div class="resultBox" style="min-height:auto">
+          <div class="big">📌 Esito</div>
+          <div class="mini" id="quizResult">Compila e premi “Vedi risultato”.</div>
         </div>
       </div>
+      <div class="footerNote">Solo intrattenimento. Gioca responsabile.</div>
     </div>
   </div>
 
-<script>
-/* =========================================================
-   DATA + ROTAZIONE AUTOMATICA (3 mattina / 3 pomeriggio / 3 sera)
-   ========================================================= */
-const EVENTS_URL = "./events.json";
-const SLOT_ORDER = ["mattina","pomeriggio","sera"];
-const PER_SLOT = 3; // come richiesto
+  <script>
+    /* =========================
+       CONFIG
+    ========================= */
+    const CENTER_ID = "VINC001";
+    const MAX_PER_SLOT = 3;                 // 3 mattina + 3 pomeriggio + 3 sera (9 al giorno)
+    const TOP_IDEAS = 6;                    // Top IA del momento
+    const EVENTS_URL = "./events.json";     // aggiornato da GitHub Actions
+    const TZ = "Europe/Rome";
 
-let EVENTS_DATA = null;
-let CURRENT_SLOT = "sera";
-let ROT = { mattina:0, pomeriggio:0, sera:0 };
+    // “Top club” per evitare classificazioni imbarazzanti (es. PSG definito equilibrato).
+    // È una euristica “da sala” (non perfetta) ma evita errori grossi.
+    const BIG_CLUBS = new Set([
+      "PSG","PARIS","BAR","BARCELONA","RMA","REAL","BAY","BAYERN","MCI","CITY","LIV","LIVERPOOL",
+      "JUV","JUVENTUS","INT","INTER","MIL","MILAN","ATM","ATLETICO","CHE","CHELSEA","ARS","ARSENAL",
+      "MUN","UNITED","DOR","DORTMUND","NAP","NAPOLI","ROM","ROMA","LAZ","LAZIO"
+    ]);
 
-const AUTO = {
-  rotateEvery: 45_000,
-  refreshEvery: 5 * 60_000,
-  autoSlotByClock: true,
-  cycleSlotsWhenRotating: true
-};
+    /* =========================
+       STATE
+    ========================= */
+    let EVENTS_DATA = null;
+    let CURRENT_SLOT = null;
+    let CURRENT_LIST = [];
 
-let _rotateTimer=null, _refreshTimer=null, _clockTimer=null;
-
-function $(id){return document.getElementById(id);}
-
-function clamp01(x){return Math.max(0, Math.min(1, x));}
-function pct(x){return Math.round(clamp01(x) * 100);}
-
-function slotFromTime(d){
-  const h = d.getHours();
-  if(h>=6 && h<13) return "mattina";
-  if(h>=13 && h<19) return "pomeriggio";
-  return "sera";
-}
-
-function setSlot(slot){
-  CURRENT_SLOT = slot;
-  localStorage.setItem("slot", slot);
-  $("slotName").textContent = slot.charAt(0).toUpperCase()+slot.slice(1);
-}
-
-function getRot(slot){
-  const key = "rot_"+slot;
-  const v = localStorage.getItem(key);
-  return v ? parseInt(v,10) : (ROT[slot]||0);
-}
-function setRot(slot, v){
-  ROT[slot] = v;
-  localStorage.setItem("rot_"+slot, String(v));
-}
-function incRot(slot){
-  setRot(slot, getRot(slot)+1);
-}
-
-function qs(name){
-  const u = new URL(location.href);
-  return u.searchParams.get(name);
-}
-
-function applyClockSlot(){
-  if(!AUTO.autoSlotByClock) return;
-  const now = new Date();
-  const s = slotFromTime(now);
-  if (s !== CURRENT_SLOT){
-    setSlot(s);
-    render(EVENTS_DATA);
-  }
-}
-
-async function fetchEvents(){
-  const bust = Date.now();
-  const res = await fetch(EVENTS_URL + "?v=" + bust, {cache:"no-store"});
-  if(!res.ok) throw new Error("events.json non disponibile");
-  const data = await res.json();
-  return data;
-}
-
-async function load(force=false){
-  if(!EVENTS_DATA || force){
-    EVENTS_DATA = await fetchEvents();
-  }
-  // header info
-  $("updatedAt").textContent = (EVENTS_DATA.updated_at || "—");
-  $("centerName").textContent = "VINC001";
-
-  // default slot
-  const urlSlot = qs("slot");
-  const saved = localStorage.getItem("slot");
-  if(urlSlot && SLOT_ORDER.includes(urlSlot)) setSlot(urlSlot);
-  else if(saved && SLOT_ORDER.includes(saved)) setSlot(saved);
-  else setSlot(slotFromTime(new Date()));
-
-  render(EVENTS_DATA);
-}
-
-async function refreshData(){
-  try{
-    await load(true);
-  }catch(e){
-    console.warn("refreshData error:", e);
-  }
-}
-
-function rotateStep(){
-  incRot(CURRENT_SLOT);
-
-  if(AUTO.cycleSlotsWhenRotating && EVENTS_DATA){
-    const pool = getSlotPool(EVENTS_DATA, CURRENT_SLOT);
-    const n = pool.length || 0;
-    const r = getRot(CURRENT_SLOT);
-    if(n && ((r * PER_SLOT) % n) === 0){
-      const idx = SLOT_ORDER.indexOf(CURRENT_SLOT);
-      const next = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
-      setSlot(next);
+    /* =========================
+       HELPERS
+    ========================= */
+    function nowRome(){
+      // convert to Europe/Rome without external libs: use locale string
+      const s = new Date().toLocaleString("sv-SE",{ timeZone: TZ });
+      // sv-SE -> "YYYY-MM-DD HH:mm:ss"
+      return new Date(s.replace(" ","T"));
     }
-  }
-  render(EVENTS_DATA);
-}
+    function slotFromTime(d){
+      const h = d.getHours();
+      if(h < 12) return "mattina";
+      if(h < 18) return "pomeriggio";
+      return "sera";
+    }
+    function getSlotFromURL(){
+      const p = new URLSearchParams(location.search);
+      const s = (p.get("slot")||"").toLowerCase();
+      if(["mattina","pomeriggio","sera"].includes(s)) return s;
+      return null;
+    }
+    function fmtTime(dISO){
+      try{
+        const d = new Date(dISO);
+        return d.toLocaleTimeString("it-IT",{ hour:"2-digit", minute:"2-digit", timeZone: TZ });
+      }catch{ return ""; }
+    }
+    function hashStr(str){
+      let h = 2166136261;
+      for (let i=0;i<str.length;i++){
+        h ^= str.charCodeAt(i);
+        h = Math.imul(h, 16777619);
+      }
+      return (h>>>0);
+    }
+    function seededRand(seed){
+      // xorshift32
+      let x = seed || 123456789;
+      return ()=> {
+        x ^= x<<13; x ^= x>>>17; x ^= x<<5;
+        return ((x>>>0) / 4294967296);
+      };
+    }
+    function pickRotated(list, slot){
+      // ruota ordine ogni giorno: seed = date + slot
+      const d = nowRome();
+      const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}|${slot}`;
+      const r = seededRand(hashStr(key));
+      const arr = [...list];
+      // shuffle seeded
+      for(let i=arr.length-1;i>0;i--){
+        const j = Math.floor(r()*(i+1));
+        [arr[i],arr[j]] = [arr[j],arr[i]];
+      }
+      return arr;
+    }
+    function safeText(x){ return (x ?? "").toString(); }
 
-function startAuto(){
-  stopAuto();
-  applyClockSlot();
+    function clubKey(name, short){
+      const n = (name||"").toUpperCase();
+      const s = (short||"").toUpperCase();
+      const parts = [s,n];
+      // prova match su token principali
+      for(const k of BIG_CLUBS){
+        if(parts.some(p=>p.includes(k))) return k;
+      }
+      return null;
+    }
 
-  _rotateTimer = setInterval(()=>{
-    if(document.hidden) return;
-    rotateStep();
-  }, AUTO.rotateEvery);
+    function confidenceTag(level){
+      // level: "Prudenza" | "Interessante" | "Più stabile" | "Rischiosa"
+      const l = level.toLowerCase();
+      if(l.includes("stabile")) return `<span class="tag ok">Più stabile</span>`;
+      if(l.includes("interess")) return `<span class="tag warn">Interessante</span>`;
+      if(l.includes("prud")) return `<span class="tag warn">Prudenza</span>`;
+      return `<span class="tag bad">Rischiosa</span>`;
+    }
 
-  _refreshTimer = setInterval(()=>{
-    if(document.hidden) return;
-    refreshData();
-  }, AUTO.refreshEvery);
+    function scoreToLevel(x){
+      // x: 0..1
+      if(x >= 0.72) return "Più stabile";
+      if(x >= 0.56) return "Interessante";
+      if(x >= 0.42) return "Prudenza";
+      return "Rischiosa";
+    }
 
-  _clockTimer = setInterval(()=>{
-    if(document.hidden) return;
-    applyClockSlot();
-  }, 60_000);
-}
+    function clamp01(v){ return Math.max(0, Math.min(1, v)); }
 
-function stopAuto(){
-  if(_rotateTimer) clearInterval(_rotateTimer);
-  if(_refreshTimer) clearInterval(_refreshTimer);
-  if(_clockTimer) clearInterval(_clockTimer);
-  _rotateTimer=_refreshTimer=_clockTimer=null;
-}
+    /* =========================
+       PROFESSIONAL IA TEXT (NO “CERTEZZE” INVENTATE)
+    ========================= */
+    function buildProfile(ev){
+      const c = ev.context || {};
+      const tempo = clamp01(c.tempo ?? 0.5);
+      const goals = clamp01(c.goals ?? 0.5);
+      const corners = clamp01(c.corners ?? 0.5);
+      const cards = clamp01(c.cards ?? 0.5);
+      const grit = clamp01(c.grit ?? 0.5);
+      const diff = Number.isFinite(c.diff) ? c.diff : 0;
 
-/* =========================================================
-   SCORING (credibile, NO frasi tipo “favorita Pisa” inventate)
-   ========================================================= */
-function num(x, d=0){
-  const v = Number(x);
-  return Number.isFinite(v) ? v : d;
-}
-function getCtx(ev){
-  const c = ev.context || {};
-  return {
-    goals: clamp01(num(c.goals, 0.5)),
-    corners: clamp01(num(c.corners, 0.5)),
-    cards: clamp01(num(c.cards, 0.5)),
-    tempo: clamp01(num(c.tempo, 0.5)),
-    grit: clamp01(num(c.grit, 0.5)),
-    diff: num(c.diff, 0),
-    signals: c.signals || {}
-  };
-}
+      // big club heuristic
+      const awayBig = !!clubKey(ev.away, ev.away_short);
+      const homeBig = !!clubKey(ev.home, ev.home_short);
 
-function labelLevel(x){
-  if(x >= 0.72) return {t:"Alta", cls:"ok"};
-  if(x >= 0.52) return {t:"Media", cls:"warn"};
-  return {t:"Bassa", cls:"bad"};
-}
+      let frame = "Match da leggere con calma: poche scelte, quota al banco.";
+      let matchup = "Non forzare: 1–2 selezioni massimo.";
+      let sideLean = "equilibrio";
+      let riskNote = "Gestione > fantasia.";
 
-function marketPack(ev){
-  const c = getCtx(ev);
-  // stabilità/attenzione (non promette)
-  const overScore = clamp01((c.goals*0.60 + c.tempo*0.40));
-  const bttsScore = clamp01((c.goals*0.70 + (1 - Math.abs(c.diff))*0.30));
-  const cornerScore = clamp01((c.corners*0.70 + c.tempo*0.30));
-  const cardScore = clamp01((c.cards*0.60 + c.grit*0.40));
-  const dcScore = clamp01((1 - Math.abs(c.diff))*0.60 + (1 - c.tempo)*0.10 + 0.30); // prudente
-  const oneXtwoScore = clamp01(Math.abs(c.diff)); // quanto “sbilanciata” sembra (se bassa → equilibrata)
+      // side lean: se big club in campo, aggiusta
+      if(awayBig && !homeBig){
+        sideLean = "favorita ospite";
+        frame = "Ospite favorita “sulla carta”: partita da gestione (quota decisiva).";
+        matchup = "Se giochi, meglio mercati di copertura / prudenza e quota ok.";
+        riskNote = "Evita multiple pesanti: 1–2 scelte e stop.";
+      } else if(homeBig && !awayBig){
+        sideLean = "favorita casa";
+        frame = "Casa favorita “sulla carta”: occhio solo alla quota al banco.";
+        matchup = "Mercati “da controllo” se quota è corretta.";
+        riskNote = "Se quota è troppo bassa, non inseguire: passa.";
+      } else {
+        const ad = Math.abs(diff);
+        if(ad >= 0.45){
+          sideLean = diff < 0 ? "favorita ospite" : "favorita casa";
+          frame = "Gap potenziale: favorita probabile. Partita da controllo.";
+          matchup = "Scegli mercati semplici (copertura / linee prudenti).";
+        } else if(ad <= 0.18){
+          sideLean = "equilibrio";
+          frame = "Match più aperto: meglio mercati “ritmo/occasioni” e quota ok.";
+          matchup = "Non serve indovinare: serve scegliere bene e poco.";
+        } else {
+          sideLean = "leggero vantaggio";
+          frame = "Leggero vantaggio da un lato: quota al banco fa la differenza.";
+          matchup = "Se quota non ti torna, riduci o passa.";
+        }
+      }
 
-  return [
-    {
-      name:"Over 2.5 (valuta quota)",
-      score: overScore,
-      note: overScore>=0.65
-        ? "Segnali goal discreti: valutabile se la quota al banco è davvero conveniente."
-        : "Segnali goal non forti: meglio prudenza o alternative (Over 1.5 / live)."
-    },
-    {
-      name:"Goal (Entrambe segnano)",
-      score: bttsScore,
-      note: bttsScore>=0.65
-        ? "Più interessante se entrambe creano occasioni: controlla forma/approccio al banco."
-        : "Dipende molto dal match-up: se una squadra è troppo chiusa, può saltare."
-    },
-    {
-      name:"Corner (es. Over 8.5/9.5)",
-      score: cornerScore,
-      note: cornerScore>=0.65
-        ? "Buon potenziale corner se c’è spinta sulle fasce: verifica line e quota al banco."
-        : "Corner meno leggibili: meglio non forzare senza quota giusta."
-    },
-    {
-      name:"Cartellini (es. Over 4.5)",
-      score: cardScore,
-      note: cardScore>=0.65
-        ? "Fisicità/contatti: può avere senso. Se al banco vedi arbitro severo, aumenta interesse."
-        : "Cartellini poco leggibili senza info arbitro: entra solo con quota buona."
-    },
-    {
-      name:"Doppia chance (1X o X2)",
-      score: dcScore,
-      note: "Mercato di controllo: utile se vuoi ridurre rischio. Sempre max 2–3 selezioni."
-    },
-    {
-      name:"1X2 (solo se chiaro al banco)",
-      score: oneXtwoScore,
-      note: oneXtwoScore>=0.65
-        ? "Sembra più sbilanciata: se al banco conferma la lettura, scegli con disciplina."
-        : "Match equilibrato: 1X2 è più “rumoroso”. Meglio mercati goal/corner se quota ok."
-    },
-  ];
-}
+      // quick “tempo/goals”
+      const tempoTxt = tempo >= 0.62 ? "ritmo alto" : (tempo <= 0.38 ? "ritmo basso" : "ritmo medio");
+      const goalTxt  = goals >= 0.66 ? "occasioni attese" : (goals <= 0.40 ? "gara più chiusa" : "gol possibili");
+      const cornerTxt= corners >= 0.66 ? "spinta laterale/cross → corner più probabili" : (corners <= 0.40 ? "corner meno affidabili" : "corner possibili");
+      const cardTxt  = cards >= 0.66 ? "contatti/agonismo → cartellini possibili" : (cards <= 0.40 ? "cartellini meno leggibili senza info arbitro" : "cartellini possibili");
+      const gritTxt  = grit >= 0.66 ? "agonismo alto" : (grit <= 0.35 ? "agonismo basso" : "agonismo medio");
 
-function badgeFromScore(score){
-  const l = labelLevel(score);
-  return {text:l.t, cls:l.cls};
-}
+      return {
+        frame, matchup, riskNote, sideLean,
+        tempo, goals, corners, cards, grit,
+        tempoTxt, goalTxt, cornerTxt, cardTxt, gritTxt
+      };
+    }
 
-/* =========================================================
-   RENDER (C + Angolo + eventi fascia)
-   ========================================================= */
-function byScoreKey(key){
-  return (a,b) => num(getCtx(b)[key],0) - num(getCtx(a)[key],0);
-}
+    function buildMarkets(ev){
+      // Produci 5 mercati “seri” senza sparare certezze.
+      const p = buildProfile(ev);
 
-function getAllEvents(data){
-  return (data && data.events) ? data.events.slice() : [];
-}
+      // punteggi (0..1)
+      const sOver  = clamp01(0.35*p.tempo + 0.55*p.goals + 0.10*(1-Math.abs(0.5 - p.tempo)));
+      const sBTTS  = clamp01(0.25*p.tempo + 0.60*p.goals + 0.15*(1-Math.abs(0.5 - p.goals)));
+      const sCorner= clamp01(0.60*p.corners + 0.25*p.tempo + 0.15*(1-Math.abs(0.5 - p.corners)));
+      const sCards = clamp01(0.55*p.cards + 0.35*p.grit + 0.10*(1-Math.abs(0.5 - p.cards)));
 
-function getSlotPool(data, slot){
-  const all = getAllEvents(data);
-  return all.filter(e => (e.slot || "sera") === slot);
-}
+      // 1X2 / Doppia chance: se favorita “sulla carta” -> copertura, se equilibrio -> doppia chance solo quota ok
+      let pick12 = "Doppia chance (1X o X2)";
+      let note12 = "Usala solo se la quota al banco è davvero conveniente (non forzare).";
+      if(p.sideLean === "favorita ospite"){
+        pick12 = "X2 (copertura ospite)";
+        note12 = "Se l’ospite è favorita sulla carta, X2 riduce rischio. Quota al banco decisiva.";
+      } else if(p.sideLean === "favorita casa"){
+        pick12 = "1X (copertura casa)";
+        note12 = "Se la casa è favorita sulla carta, 1X è più “da controllo”. Quota al banco decisiva.";
+      } else if(p.sideLean === "equilibrio"){
+        pick12 = "Doppia chance (1X o X2)";
+        note12 = "Match aperto: doppia chance solo se quota ok. Altrimenti meglio mercati ritmo/corner.";
+      } else {
+        pick12 = "Doppia chance (lato più “logico”)";
+        note12 = "Leggero vantaggio: copertura se quota ok, altrimenti passa.";
+      }
 
-function pickForSlot(pool, slot){
-  if(!pool.length) return [];
-  const r = getRot(slot) || 0;
-  const start = (r * PER_SLOT) % pool.length;
-  const out = [];
-  for(let i=0;i<PER_SLOT;i++){
-    out.push(pool[(start+i) % pool.length]);
-  }
-  return out;
-}
+      const overLabel = sOver >= 0.62 ? "Over 2.5 (valuta quota)" : "Under 3.5 / Over 1.5 (valuta quota)";
+      const overNote  = sOver >= 0.62
+        ? `Buona spinta per gol: ${p.tempoTxt}, ${p.goalTxt}. Se quota è “strana”, non inseguire.`
+        : `Gara più “da prudenza”: ${p.tempoTxt}, ${p.goalTxt}. Meglio linee più sicure (1.5/3.5).`;
 
-function renderHotBox(el, items, key, icon){
-  const top = items.slice(0,3);
-  if(!top.length){
-    el.innerHTML = `<div class="muted" style="font-size:11px">Nessun evento disponibile.</div>`;
-    return;
-  }
-  el.innerHTML = top.map(ev=>{
-    const c = getCtx(ev);
-    const s = pct(c[key]);
-    return `
-      <div class="hotItem" onclick='openProById(${ev.id})'>
-        <img class="tinyCrest" src="${ev.home_crest||""}" onerror="this.style.display='none'"/>
-        <div class="hotText">
-          <div class="m1">${ev.home_short||ev.home} - ${ev.away_short||ev.away}</div>
-          <div class="m2">${ev.league || ""} • ${ev.start || ""}</div>
-        </div>
-        <div class="scoreTag">${s}</div>
-      </div>
-    `;
-  }).join("");
-}
+      const bttsLabel = sBTTS >= 0.62 ? "Goal (entrambe segnano)" : "NoGoal / Goal con prudenza";
+      const bttsNote  = sBTTS >= 0.62
+        ? `Serve pericolosità da entrambe: ${p.goalTxt}. Occhio a formazioni/approccio (se li sai).`
+        : `Non automatico: senza info squadre meglio non esagerare. ${p.goalTxt}.`;
 
-function renderSpecialList(listEl, items, type){
-  // type: "corners" or "cards"
-  const top2 = items.slice(0,2);
-  if(!top2.length){
-    listEl.innerHTML = `<div class="muted" style="font-size:11px">Nessun evento disponibile.</div>`;
-    return;
-  }
-  listEl.innerHTML = top2.map(ev=>{
-    const c = getCtx(ev);
-    const score = type === "corners" ? c.corners : c.cards;
-    const lvl = labelLevel(score);
-    const note = type==="corners"
-      ? (ev.context?.reason_corner || "Indicazione corner: verifica al banco (linea/forma).")
-      : (ev.context?.reason_cards || "Indicazione cartellini: verifica al banco (arbitro/ritmo).");
-    return `
-      <div class="specialItem" onclick='openProById(${ev.id})'>
-        <div class="sTop">
-          <div class="sMatch">
-            <img class="tinyCrest" src="${ev.home_crest||""}" onerror="this.style.display='none'"/>
-            ${ev.home_short||ev.home} - ${ev.away_short||ev.away}
+      // corner: linee suggerite
+      const cornerLine = p.corners >= 0.68 ? "Over 8.5 corner (quota ok)" : (p.corners >= 0.52 ? "Over 7.5 corner (quota ok)" : "Corner: prudenza (linee basse)");
+      const cornerNote = `${p.cornerTxt}. Corner dipendono molto da “spinta” e fasi: gioca solo con quota sensata.`;
+
+      // cards: over 4.5 come esempio ma con disclaimer arbitro
+      const cardsLine = p.cards >= 0.66 ? "Over 4.5 cartellini (se quota ok)" : (p.cards >= 0.52 ? "Over 3.5 cartellini (se quota ok)" : "Cartellini: prudenza");
+      const cardsNote = `${p.cardTxt}. Nota: senza dato arbitro non dare certezze → valuta contesto/derby/pressione.`;
+
+      return [
+        { label: pick12, level: scoreToLevel(0.62), note: note12 },
+        { label: overLabel, level: scoreToLevel(sOver), note: overNote },
+        { label: bttsLabel, level: scoreToLevel(sBTTS), note: bttsNote },
+        { label: cornerLine, level: scoreToLevel(sCorner), note: cornerNote },
+        { label: cardsLine, level: scoreToLevel(sCards), note: cardsNote },
+      ];
+    }
+
+    function topIdeaFromEvent(ev){
+      // crea “idee” diverse: corner / cartellini / gol
+      const p = buildProfile(ev);
+      const mk = buildMarkets(ev);
+
+      // scegli 1 idea più “da sala” tra corner, cards, over
+      const candidates = [
+        { key:"corner", label: mk[3].label, level: mk[3].level, note: mk[3].note },
+        { key:"cards",  label: mk[4].label, level: mk[4].level, note: mk[4].note },
+        { key:"goals",  label: mk[1].label, level: mk[1].level, note: mk[1].note },
+      ];
+
+      // preferisci corner/carte se più solidi
+      const weight = (x)=>{
+        const l = x.level.toLowerCase();
+        if(l.includes("stabile")) return 3;
+        if(l.includes("interess")) return 2;
+        if(l.includes("prud")) return 1.3;
+        return 1;
+      };
+      candidates.sort((a,b)=>weight(b)-weight(a));
+      const best = candidates[0];
+
+      // title corto tipo “AJA - PSG”
+      const short = `${(ev.home_short||"HOME")} - ${(ev.away_short||"AWAY")}`;
+      return {
+        short,
+        market: best.label,
+        level: best.level,
+        note: best.note
+      };
+    }
+
+    /* =========================
+       RENDER
+    ========================= */
+    function renderTopIdeas(allEvents){
+      const grid = document.getElementById("topGrid");
+      grid.innerHTML = "";
+
+      // prendi eventi da tutti gli slot per “Top”
+      const pool = pickRotated(allEvents, "top");
+      const ideas = [];
+      for(const ev of pool){
+        if(ideas.length >= TOP_IDEAS) break;
+        const idea = topIdeaFromEvent(ev);
+        ideas.push(idea);
+      }
+
+      for(const it of ideas){
+        const cls = it.level.toLowerCase().includes("stabile") ? "ok" :
+                    it.level.toLowerCase().includes("risch") ? "bad" : "warn";
+        const levelTag = cls==="ok" ? `<span class="tag ok">Più stabile</span>` :
+                         cls==="bad" ? `<span class="tag bad">Rischiosa</span>` :
+                                      `<span class="tag warn">${it.level}</span>`;
+        const el = document.createElement("div");
+        el.className = "topCard";
+        el.innerHTML = `
+          <div class="h">
+            <span>${it.short}</span>
+            ${levelTag}
           </div>
-          <div class="sBadges">
-            <span class="chip ${lvl.cls}">${lvl.t}</span>
-            <span class="chip dim">${ev.start||""}</span>
+          <div class="p"><b style="color:rgba(255,255,255,.92)">${it.market}</b></div>
+          <div class="p">${it.note}</div>
+        `;
+        grid.appendChild(el);
+      }
+    }
+
+    function renderEvents(list){
+      const box = document.getElementById("events");
+      box.innerHTML = "";
+
+      document.getElementById("shownCount").textContent = String(list.length);
+
+      if(!list.length){
+        box.innerHTML = `<div class="small muted">Nessun evento in questa fascia. Premi “Cambia fascia” o “Nuovi eventi”.</div>`;
+        return;
+      }
+
+      for(let i=0;i<list.length;i++){
+        const ev = list[i];
+        const league = safeText(ev.league);
+        const start = safeText(ev.start || (ev.start_iso ? ("Oggi " + fmtTime(ev.start_iso)) : ""));
+        const slot = safeText(ev.slot || CURRENT_SLOT || "");
+        const idxLabel = `Evento ${i+1}/${list.length}`;
+
+        const p = buildProfile(ev);
+        const mk = buildMarkets(ev);
+
+        const headline = p.frame;
+        const bullets = `
+          <div class="chipsLine">
+            <span class="chip">🧠 Lettura: <b style="color:var(--text)">${p.tempoTxt}</b> · <b style="color:var(--text)">${p.goalTxt}</b></span>
+            <span class="chip">📌 Corner: <b style="color:var(--text)">${p.corners >= 0.6 ? "buoni" : (p.corners <= 0.42 ? "incerti" : "possibili")}</b></span>
+            <span class="chip">🟨 Cartellini: <b style="color:var(--text)">${p.cards >= 0.6 ? "possibili" : (p.cards <= 0.42 ? "poco leggibili" : "da valutare")}</b></span>
+            <span class="chip">🎯 Regola: <b style="color:var(--text)">1–2 scelte max</b></span>
           </div>
-        </div>
-        <div class="sNote">${note}</div>
-      </div>
-    `;
-  }).join("");
-}
+        `;
 
-function renderEventsList(el, picked, allSlotCount){
-  el.innerHTML = "";
-  $("vetrinaInfo").textContent = `${picked.length}/${PER_SLOT}`;
-
-  if(!picked.length){
-    el.innerHTML = `<div class="muted" style="font-size:12px; padding:10px 6px;">
-      Nessun evento in questa fascia. Prova “Cambia fascia”.
-    </div>`;
-    return;
-  }
-
-  picked.forEach((ev, idx)=>{
-    const c = getCtx(ev);
-    const markets = marketPack(ev);
-
-    // “Scheda IA” credibile (no favorita inventata)
-    const eq = (Math.abs(c.diff) < 0.25) ? "Match abbastanza equilibrato" : "Possibile sbilanciamento (verifica al banco)";
-    const rhythm = (c.tempo>=0.65) ? "Ritmo alto" : (c.tempo>=0.45 ? "Ritmo medio" : "Ritmo basso");
-    const line1 = `• ${eq}. • ${rhythm}.`;
-    const line2 = `• Goal: ${pct(c.goals)} • Corner: ${pct(c.corners)} • Cartellini: ${pct(c.cards)}.`;
-    const rule = `Regola: 2 selezioni max, quota sempre al banco.`;
-
-    const marketHtml = markets.slice(0,6).map(m=>{
-      const b = badgeFromScore(m.score);
-      return `
-        <div class="mCard" onclick="event.stopPropagation(); openProById(${ev.id});">
-          <div class="mTop">
-            <div class="mName">${m.name}</div>
-            <div class="mBadge ${b.cls}">${b.text}</div>
+        const marketHTML = mk.map(m=>`
+          <div class="market">
+            <div class="mHead">
+              <span>${m.label}</span>
+              ${confidenceTag(m.level)}
+            </div>
+            <div class="mText">${m.note}</div>
           </div>
-          <div class="mNote">${m.note}</div>
-        </div>
+        `).join("");
+
+        const el = document.createElement("div");
+        el.className = "event";
+        el.innerHTML = `
+          <div class="eventHead">
+            <div class="leftHead">
+              <div class="chipsLine">
+                <span class="chip">${league || "—"}</span>
+                <span class="chip">${start || "—"}</span>
+                <span class="chip">${slot}</span>
+                <span class="chip">${idxLabel}</span>
+                <span class="pill" style="padding:6px 10px">Quote: <b style="color:var(--text)">verifica al banco</b></span>
+              </div>
+              <div class="teamLine">
+                <img class="crest" alt="" src="${safeText(ev.home_crest)}" onerror="this.style.display='none'">
+                <span class="t">${safeText(ev.home)}</span>
+                <span class="muted">—</span>
+                <img class="crest" alt="" src="${safeText(ev.away_crest)}" onerror="this.style.display='none'">
+                <span class="t">${safeText(ev.away)}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="aiBox">
+            <div class="aiTitle">
+              <span>🧾 Scheda IA: <b>${headline}</b></span>
+              <span class="note">Consiglio: <b>stampa</b> e fai verificare la quota al banco</span>
+            </div>
+            <div class="aiText">
+              ${p.matchup} <span class="muted2">(${p.riskNote})</span>
+            </div>
+            <div style="margin-top:8px">${bullets}</div>
+            <div class="marketGrid">${marketHTML}</div>
+            <div class="small muted2" style="margin-top:10px">
+              Nota: queste sono indicazioni basate su segnali stimati (ritmo/goal/corner/cartellini). Senza dato arbitro/formazioni non dare certezze.
+            </div>
+          </div>
+        `;
+        box.appendChild(el);
+      }
+    }
+
+    function updateQuickHint(allEvents){
+      // un hint “sensato”: guarda media dei segnali del giorno/slot
+      const hint = document.getElementById("quickHint");
+      if(!allEvents || !allEvents.length){
+        hint.textContent = "Nessun dato: aggiorna eventi.";
+        return;
+      }
+      const slotEvents = allEvents.filter(e => (e.slot||"") === CURRENT_SLOT);
+      const list = slotEvents.length ? slotEvents : allEvents;
+
+      let g=0,t=0,c=0,ca=0,n=0;
+      for(const ev of list){
+        const ctx = ev.context || {};
+        g += (ctx.goals ?? 0.5);
+        t += (ctx.tempo ?? 0.5);
+        c += (ctx.corners ?? 0.5);
+        ca+= (ctx.cards ?? 0.5);
+        n++;
+      }
+      g/=n; t/=n; c/=n; ca/=n;
+
+      const tempoTxt = t>=0.62 ? "Ritmo alto" : (t<=0.38 ? "Ritmo basso" : "Ritmo medio");
+      const goalTxt  = g>=0.66 ? "gol possibili" : (g<=0.40 ? "gare più chiuse" : "gol da valutare");
+      const cornerTxt= c>=0.66 ? "corner buoni" : (c<=0.40 ? "corner incerti" : "corner da valutare");
+      const cardsTxt = ca>=0.66 ? "cartellini possibili" : (ca<=0.40 ? "cartellini poco leggibili" : "cartellini da valutare");
+
+      hint.innerHTML = `
+        <b>${tempoTxt}</b> in questa fascia. Approccio “da sala”: poche scelte, quota al banco.
+        Lettura generale: ${goalTxt}, ${cornerTxt}, ${cardsTxt}.
       `;
-    }).join("");
-
-    const card = document.createElement("div");
-    card.className = "eventCard";
-    card.onclick = ()=> openPro(ev);
-
-    card.innerHTML = `
-      <div class="eventMeta">
-        <div class="leaguePill">
-          <img src="${ev.competition_emblem||""}" onerror="this.style.display='none'"/>
-          <b>${ev.league||"Calcio"}</b>
-        </div>
-        <div class="chips">
-          <span class="chip dim">${ev.slot ? ev.slot.toUpperCase() : ""}</span>
-          <span class="evtNo">Evento ${idx+1}/${picked.length} • pool ${allSlotCount}</span>
-        </div>
-      </div>
-
-      <div class="matchLine">
-        <img class="crest" src="${ev.home_crest||""}" onerror="this.style.display='none'"/>
-        <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;">
-          ${ev.home} <span class="vs">—</span> ${ev.away}
-        </span>
-        <span class="timeTag">${ev.start||""}</span>
-        <img class="crest" src="${ev.away_crest||""}" onerror="this.style.display='none'"/>
-      </div>
-
-      <div class="iaBox">
-        <div class="iaTitle">🧠 Scheda IA: <span class="muted">lettura rapida (no quote)</span></div>
-        <div class="iaLine">${line1}</div>
-        <div class="iaLine">${line2}</div>
-        <div class="iaLine" style="margin-top:6px;"><b>${rule}</b></div>
-      </div>
-
-      <div class="marketGrid">
-        ${marketHtml}
-      </div>
-    `;
-
-    el.appendChild(card);
-  });
-}
-
-function render(data){
-  if(!data){ return; }
-
-  // HOT (C)
-  const all = getAllEvents(data);
-  const goalsTop = all.slice().sort(byScoreKey("goals"));
-  const cornersTop = all.slice().sort(byScoreKey("corners"));
-  const cardsTop = all.slice().sort(byScoreKey("cards"));
-
-  renderHotBox($("hotGoals"), goalsTop, "goals");
-  renderHotBox($("hotCorners"), cornersTop, "corners");
-  renderHotBox($("hotCards"), cardsTop, "cards");
-
-  // Angolo Speciale
-  renderSpecialList($("cornerList"), cornersTop, "corners");
-  renderSpecialList($("cardList"), cardsTop, "cards");
-
-  // Slot events
-  const pool = getSlotPool(data, CURRENT_SLOT);
-  const picked = pickForSlot(pool, CURRENT_SLOT);
-  renderEventsList($("events"), picked, pool.length);
-}
-
-/* =========================================================
-   (B) PRO MODAL
-   ========================================================= */
-function openProById(id){
-  const ev = getAllEvents(EVENTS_DATA).find(e=>e.id===id);
-  if(ev) openPro(ev);
-}
-
-function openPro(ev){
-  $("proModal").classList.add("show");
-  $("proModal").setAttribute("aria-hidden","false");
-
-  const c = getCtx(ev);
-
-  $("proTitle").innerHTML = `
-    <img class="crest" src="${ev.home_crest||""}" onerror="this.style.display='none'"/>
-    ${ev.home} <span class="vs">—</span> ${ev.away}
-    <img class="crest" src="${ev.away_crest||""}" onerror="this.style.display='none'"/>
-  `;
-  $("proMeta").textContent = `${ev.league||"Calcio"} • ${ev.start||""} • Fascia: ${(ev.slot||"").toUpperCase()}`;
-
-  const chips = [];
-  chips.push(`<span class="chip dim">Quote: verifica al banco</span>`);
-  const eqTxt = (Math.abs(c.diff) < 0.25) ? "Equilibrio: medio" : "Equilibrio: incerto";
-  chips.push(`<span class="chip dim">${eqTxt}</span>`);
-  const r = labelLevel(c.tempo); chips.push(`<span class="chip ${r.cls}">Ritmo: ${r.t}</span>`);
-  const g = labelLevel(c.goals); chips.push(`<span class="chip ${g.cls}">Goal: ${g.t}</span>`);
-  const co = labelLevel(c.corners); chips.push(`<span class="chip ${co.cls}">Corner: ${co.t}</span>`);
-  const ca = labelLevel(c.cards); chips.push(`<span class="chip ${ca.cls}">Cartellini: ${ca.t}</span>`);
-  $("proChips").innerHTML = chips.join("");
-
-  // Bars
-  const bars = [
-    {k:"Goal", v:c.goals},
-    {k:"Corner", v:c.corners},
-    {k:"Cartellini", v:c.cards},
-    {k:"Ritmo", v:c.tempo},
-    {k:"Fisicità", v:c.grit},
-    {k:"Equilibrio (stima)", v: clamp01(1 - Math.abs(c.diff))}
-  ];
-  $("proBars").innerHTML = bars.map(b=>{
-    return `
-      <div class="bar">
-        <div class="k">
-          <span>${b.k}</span>
-          <span>${pct(b.v)}</span>
-        </div>
-        <div class="track"><div class="fill" style="width:${pct(b.v)}%"></div></div>
-      </div>
-    `;
-  }).join("");
-
-  const reasonCorner = ev.context?.reason_corner || "Corner: valutare ritmo e spinta sulle fasce (linea/forma al banco).";
-  const reasonCards  = ev.context?.reason_cards  || "Cartellini: senza info arbitro è meglio prudenza (entra solo con quota buona).";
-
-  $("proNotes").innerHTML = `
-    <b>Corner:</b> ${reasonCorner}<br/>
-    <b>Cartellini:</b> ${reasonCards}<br/><br/>
-    <b>Regola sala:</b> max 2–3 selezioni, quota sempre al banco. Se non torna, passa.
-  `;
-
-  // Markets detailed
-  const markets = marketPack(ev);
-  $("proMarkets").innerHTML = markets.map(m=>{
-    const b = badgeFromScore(m.score);
-    return `
-      <div class="mCard" style="margin-bottom:10px;">
-        <div class="mTop">
-          <div class="mName">${m.name}</div>
-          <div class="mBadge ${b.cls}">${b.text}</div>
-        </div>
-        <div class="mNote">${m.note}</div>
-      </div>
-    `;
-  }).join("");
-}
-
-function closePro(){
-  $("proModal").classList.remove("show");
-  $("proModal").setAttribute("aria-hidden","true");
-}
-
-/* =========================================================
-   (A) MODALITÀ SALA
-   ========================================================= */
-async function toggleSala(){
-  const on = document.body.classList.toggle("sala");
-  $("salaHint").style.display = on ? "block" : "none";
-
-  // cambia ritmo rotazione in sala
-  AUTO.rotateEvery = on ? 30_000 : 45_000;
-  AUTO.refreshEvery = on ? 3 * 60_000 : 5 * 60_000;
-
-  // fullscreen se possibile
-  if(on){
-    try{
-      if(!document.fullscreenElement) await document.documentElement.requestFullscreen();
-    }catch(e){ /* ok */ }
-  }else{
-    try{
-      if(document.fullscreenElement) await document.exitFullscreen();
-    }catch(e){ /* ok */ }
-  }
-  startAuto();
-}
-
-/* =========================================================
-   WHEEL (migliorata + 1/giorno)
-   ========================================================= */
-const WHEEL_ITEMS = [
-  {title:"Missione: 1 sola giocata", text:"Scegli 1 mercato soltanto (singola). Disciplina prima di tutto."},
-  {title:"Missione: max 2 selezioni", text:"Fai massimo 2 selezioni: più controllo, meno caos."},
-  {title:"Missione: solo Corner", text:"Oggi se giochi, scegli un mercato Corner e basta (quota al banco)."},
-  {title:"Missione: solo Cartellini", text:"Valuta cartellini solo se al banco trovi info arbitro. Altrimenti passa."},
-  {title:"Missione: NO inseguimenti", text:"Se perdi, stop. Domani si riparte. La sala vince con la disciplina."},
-  {title:"Missione: quota giusta o niente", text:"Se la quota al banco è diversa/peggiore, non forzare. Passa."},
-  {title:"Bonus: 20s focus", text:"Prima di giocare: respira 20s e scegli solo se sei convinto."},
-  {title:"Bonus: stake fisso", text:"Oggi stake fisso (es. 5€) e non aumentare mai dopo una perdita."}
-];
-
-let wheelAngle = 0;
-let wheelSpinning = false;
-
-function openWheel(){
-  $("wheelModal").classList.add("show");
-  drawWheel();
-  showWheelStatus();
-}
-function closeWheel(){
-  $("wheelModal").classList.remove("show");
-}
-function todayKey(){
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-}
-function wheelStorageKey(){ return "wheel_"+todayKey(); }
-
-function showWheelStatus(){
-  const saved = localStorage.getItem(wheelStorageKey());
-  if(saved){
-    const obj = JSON.parse(saved);
-    $("wheelResult").innerHTML = `<b>Risultato di oggi:</b><br/>${obj.title}<br/><span class="muted">${obj.text}</span><br/><br/><span class="muted">Torna domani per un nuovo giro.</span>`;
-    $("spinBtn").disabled = true;
-    $("spinBtn").textContent = "Già girata oggi ✅";
-    $("spinBtn").style.opacity = ".7";
-    return;
-  }
-  $("spinBtn").disabled = false;
-  $("spinBtn").textContent = "Gira la ruota";
-  $("spinBtn").style.opacity = "1";
-}
-
-function drawWheel(){
-  const canvas = $("wheelCanvas");
-  const ctx = canvas.getContext("2d");
-  const n = WHEEL_ITEMS.length;
-  const cx = canvas.width/2, cy = canvas.height/2;
-  const r = canvas.width*0.44;
-  const slice = (Math.PI*2)/n;
-
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-
-  // shadow ring
-  ctx.beginPath();
-  ctx.arc(cx,cy,r+8,0,Math.PI*2);
-  ctx.fillStyle = "rgba(0,0,0,.25)";
-  ctx.fill();
-
-  for(let i=0;i<n;i++){
-    const a0 = wheelAngle + i*slice;
-    const a1 = a0 + slice;
-
-    // segment colors (manual, no libs)
-    const palette = ["#ff9800","#19c37d","#5b7cfa","#f1c40f","#ff4d5c","#8e44ad","#00bcd4","#2ecc71"];
-    ctx.beginPath();
-    ctx.moveTo(cx,cy);
-    ctx.arc(cx,cy,r,a0,a1);
-    ctx.closePath();
-    ctx.fillStyle = palette[i % palette.length];
-    ctx.globalAlpha = 0.92;
-    ctx.fill();
-    ctx.globalAlpha = 1;
-
-    // text
-    ctx.save();
-    ctx.translate(cx,cy);
-    ctx.rotate(a0 + slice/2);
-    ctx.textAlign = "right";
-    ctx.fillStyle = "rgba(20,12,7,.92)";
-    ctx.font = "bold 14px ui-sans-serif, system-ui";
-    const label = WHEEL_ITEMS[i].title.replace("Missione: ","").replace("Bonus: ","");
-    ctx.fillText(label, r-12, 5);
-    ctx.restore();
-  }
-
-  // center
-  ctx.beginPath();
-  ctx.arc(cx,cy,56,0,Math.PI*2);
-  ctx.fillStyle = "rgba(10,12,25,.92)";
-  ctx.fill();
-  ctx.strokeStyle = "rgba(255,255,255,.18)";
-  ctx.lineWidth = 2;
-  ctx.stroke();
-
-  ctx.fillStyle = "rgba(255,255,255,.92)";
-  ctx.font = "900 14px ui-sans-serif, system-ui";
-  ctx.textAlign = "center";
-  ctx.fillText("Vincitù", cx, cy-4);
-  ctx.font = "800 12px ui-sans-serif, system-ui";
-  ctx.fillStyle = "rgba(255,255,255,.75)";
-  ctx.fillText("Ruota", cx, cy+14);
-
-  // pointer
-  ctx.beginPath();
-  ctx.moveTo(cx, cy - r - 18);
-  ctx.lineTo(cx - 12, cy - r + 4);
-  ctx.lineTo(cx + 12, cy - r + 4);
-  ctx.closePath();
-  ctx.fillStyle = "rgba(255,255,255,.9)";
-  ctx.fill();
-}
-
-function spinWheel(){
-  if(wheelSpinning) return;
-  const saved = localStorage.getItem(wheelStorageKey());
-  if(saved) return;
-
-  wheelSpinning = true;
-  $("spinBtn").disabled = true;
-
-  const n = WHEEL_ITEMS.length;
-  const slice = (Math.PI*2)/n;
-
-  // random target
-  const targetIndex = Math.floor(Math.random() * n);
-  // rotate to land the pointer at target
-  const extraTurns = 6 + Math.floor(Math.random()*3);
-  const targetAngle = (Math.PI*2*extraTurns) + (Math.PI*1.5) - (targetIndex*slice + slice/2);
-
-  const start = performance.now();
-  const duration = 2200;
-
-  function easeOutCubic(t){ return 1 - Math.pow(1-t,3); }
-
-  function anim(now){
-    const t = Math.min(1, (now-start)/duration);
-    const e = easeOutCubic(t);
-    wheelAngle = targetAngle * e;
-    drawWheel();
-    if(t<1) requestAnimationFrame(anim);
-    else{
-      wheelSpinning = false;
-      const prize = WHEEL_ITEMS[targetIndex];
-      localStorage.setItem(wheelStorageKey(), JSON.stringify(prize));
-      $("wheelResult").innerHTML = `<b>${prize.title}</b><br/><span class="muted">${prize.text}</span><br/><br/><span class="muted">Fatto! Domani nuova missione.</span>`;
-      showWheelStatus();
     }
-  }
-  requestAnimationFrame(anim);
-}
 
-/* =========================================================
-   QUIZ (migliorato)
-   ========================================================= */
-const QUIZ = [
-  {q:"Se la quota al banco è diversa da quella indicata, cosa fai?", a:["Passo/ricontrollo","Forzo lo stesso"], correct:0},
-  {q:"Quante selezioni è meglio fare per controllo?", a:["2–3 massimo","6–8 per forza"], correct:0},
-  {q:"A cosa serve la “Scheda PRO”?", a:["Capire mercati e segnali","Garantire vincita"], correct:0},
-  {q:"Cartellini senza info arbitro:", a:["Prudenza: solo quota buona","Sempre over"], correct:0},
-  {q:"Dopo una perdita:", a:["Stop e si riparte domani","Aumento stake per recuperare"], correct:0},
-];
+    /* =========================
+       FETCH EVENTS
+    ========================= */
+    async function fetchEvents(){
+      const url = EVENTS_URL + "?v=" + Date.now();
+      const res = await fetch(url, { cache: "no-store" });
+      if(!res.ok) throw new Error("Errore fetch events.json");
+      const data = await res.json();
+      return data;
+    }
 
-let quizState = {score:0, done:new Set()};
+    function buildDailySlots(all){
+      // ritorna oggetti: mattina/pomeriggio/sera con max 3 ciascuno
+      const out = { mattina:[], pomeriggio:[], sera:[] };
+      for(const s of ["mattina","pomeriggio","sera"]){
+        const list = all.filter(e => (e.slot||"") === s);
+        const rotated = pickRotated(list, s);
+        out[s] = rotated.slice(0, MAX_PER_SLOT);
+      }
+      return out;
+    }
 
-function bestKey(){return "quizBest";}
-function getBest(){return parseInt(localStorage.getItem(bestKey())||"0",10);}
-function setBest(v){localStorage.setItem(bestKey(), String(v));}
+    function setSlot(slot){
+      CURRENT_SLOT = slot;
+      document.getElementById("slotPill").textContent = slot;
+      const url = new URL(location.href);
+      url.searchParams.set("slot", slot);
+      history.replaceState(null,"",url.toString());
+      refreshRender();
+    }
 
-function renderQuiz(){
-  $("quizBest").textContent = getBest();
-  $("quizScore").textContent = quizState.score;
+    function refreshRender(){
+      const all = (EVENTS_DATA && EVENTS_DATA.events) ? EVENTS_DATA.events : [];
+      const daily = buildDailySlots(all);
+      CURRENT_LIST = daily[CURRENT_SLOT] || [];
 
-  $("quizItems").innerHTML = QUIZ.map((it, i)=>{
-    const done = quizState.done.has(i);
-    return `
-      <div class="qItem">
-        <div class="qQ">${i+1}) ${it.q}</div>
-        <div class="qAns">
-          ${it.a.map((ans, k)=>`
-            <button ${done?'disabled style="opacity:.65;cursor:not-allowed"':''}
-              onclick="answerQuiz(${i},${k})">${ans}</button>
+      // TOP: usa tutti gli eventi disponibili
+      renderTopIdeas(all);
+
+      // render lista fascia
+      renderEvents(CURRENT_LIST);
+
+      // hint a destra
+      updateQuickHint(all);
+
+      // updatedAt
+      const upd = safeText(EVENTS_DATA?.updated_at || "—");
+      document.getElementById("updatedAt").textContent = upd;
+      document.getElementById("centerId").textContent = CENTER_ID;
+    }
+
+    /* =========================
+       PRINT
+    ========================= */
+    function printPage(){
+      const title = `Vincitù · IA Portal — ${CURRENT_SLOT}`;
+      const html = `
+        <html><head><meta charset="utf-8">
+        <title>${title}</title>
+        <style>
+          body{font-family: Arial, sans-serif; padding:18px; color:#111}
+          h1{margin:0 0 8px}
+          .muted{color:#555; font-size:12px}
+          .card{border:1px solid #ddd; border-radius:10px; padding:12px; margin:10px 0}
+          .head{font-weight:700; margin-bottom:6px}
+          .grid{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+          .m{border:1px solid #eee; border-radius:10px; padding:10px}
+          .m b{display:block; margin-bottom:4px}
+          .tag{font-size:12px; font-weight:700; color:#333}
+          @media print{ .muted{page-break-after:avoid} }
+        </style></head><body>
+          <h1>${title}</h1>
+          <div class="muted">Quote non mostrate: verificare al banco. Indicazioni informative / intrattenimento. Gioca responsabilmente.</div>
+          ${CURRENT_LIST.map(ev=>{
+            const mk = buildMarkets(ev);
+            return `
+              <div class="card">
+                <div class="head">${safeText(ev.league)} — ${safeText(ev.start)} — ${safeText(ev.home)} vs ${safeText(ev.away)}</div>
+                <div class="grid">
+                  ${mk.map(m=>`
+                    <div class="m">
+                      <b>${m.label}</b>
+                      <div class="tag">${m.level}</div>
+                      <div class="muted">${m.note}</div>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+            `;
+          }).join("")}
+        </body></html>
+      `;
+      const w = window.open("", "_blank");
+      w.document.open();
+      w.document.write(html);
+      w.document.close();
+      w.focus();
+      w.print();
+    }
+
+    /* =========================
+       WHEEL
+    ========================= */
+    const wheelItems = [
+      { title:"Stop dopo 2 errori", text:"Se oggi sbagli 2 volte, chiudi. Domani è un altro giorno." },
+      { title:"1–2 scelte max", text:"In sala vince la disciplina: poche selezioni, quota al banco." },
+      { title:"Se quota non torna: passa", text:"Non inseguire. Se la quota è “strana”, cambia mercato o non giocare." },
+      { title:"Stake fisso", text:"Scegli una cifra e mantienila. Non alzare dopo una perdita." },
+      { title:"Evita multiple pesanti", text:"Se vuoi divertirti, fallo con controllo. Meglio singola/doppia." },
+      { title:"Cerca valore, non emozione", text:"Partita famosa ≠ giocata buona. La quota decide." },
+      { title:"Pausa 60 secondi", text:"Prima di stampare: respira 60 sec. Se vuoi ancora, allora ok." },
+      { title:"Solo “quota ok”", text:"Regola d’acciaio: gioca solo se la quota al banco ti convince davvero." },
+    ];
+
+    const wheelOverlay = document.getElementById("wheelOverlay");
+    const wheelCanvas = document.getElementById("wheelCanvas");
+    const wheelCtx = wheelCanvas.getContext("2d");
+    let wheelAngle = 0;
+    let wheelSpinning = false;
+
+    function wheelKeyToday(){
+      const d = nowRome();
+      return `wheel:${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+    }
+
+    function drawWheel(){
+      const W = wheelCanvas.width, H = wheelCanvas.height;
+      const cx = W/2, cy = H/2;
+      const r = Math.min(W,H)/2 - 10;
+
+      wheelCtx.clearRect(0,0,W,H);
+
+      // base
+      wheelCtx.save();
+      wheelCtx.translate(cx,cy);
+      wheelCtx.rotate(wheelAngle);
+
+      const n = wheelItems.length;
+      const slice = (Math.PI*2)/n;
+
+      for(let i=0;i<n;i++){
+        const a0 = i*slice;
+        const a1 = a0 + slice;
+
+        wheelCtx.beginPath();
+        wheelCtx.moveTo(0,0);
+        wheelCtx.arc(0,0,r,a0,a1);
+        wheelCtx.closePath();
+
+        // alterna colori "puliti"
+        wheelCtx.fillStyle = (i%2===0) ? "rgba(255,152,0,.75)" : "rgba(140,70,255,.55)";
+        wheelCtx.fill();
+
+        wheelCtx.strokeStyle = "rgba(255,255,255,.16)";
+        wheelCtx.lineWidth = 2;
+        wheelCtx.stroke();
+
+        // testo
+        wheelCtx.save();
+        wheelCtx.rotate(a0 + slice/2);
+        wheelCtx.textAlign = "right";
+        wheelCtx.fillStyle = "rgba(255,255,255,.92)";
+        wheelCtx.font = "800 16px system-ui";
+        const t = wheelItems[i].title;
+        wheelCtx.fillText(t, r-14, 6);
+        wheelCtx.restore();
+      }
+
+      wheelCtx.restore();
+
+      // pointer
+      wheelCtx.beginPath();
+      wheelCtx.moveTo(cx, 16);
+      wheelCtx.lineTo(cx-14, 46);
+      wheelCtx.lineTo(cx+14, 46);
+      wheelCtx.closePath();
+      wheelCtx.fillStyle = "rgba(255,255,255,.92)";
+      wheelCtx.fill();
+      wheelCtx.strokeStyle = "rgba(0,0,0,.25)";
+      wheelCtx.stroke();
+    }
+
+    function wheelResultFromAngle(angle){
+      const n = wheelItems.length;
+      const slice = (Math.PI*2)/n;
+      // pointer top = -pi/2 in canvas coords; we used pointer at top while wheel rotates
+      // Convert: index = floor(((-angle + pi/2) mod 2pi) / slice)
+      let a = (-angle + Math.PI/2) % (Math.PI*2);
+      if(a<0) a += Math.PI*2;
+      const idx = Math.floor(a / slice);
+      return wheelItems[idx];
+    }
+
+    function openWheel(){
+      wheelOverlay.style.display = "flex";
+      drawWheel();
+      const saved = localStorage.getItem(wheelKeyToday());
+      if(saved){
+        const obj = JSON.parse(saved);
+        document.getElementById("wheelResult").textContent = `✅ Già fatto oggi: ${obj.title}`;
+        document.getElementById("wheelExtra").textContent = obj.text;
+      }else{
+        document.getElementById("wheelResult").textContent = "Premi “Gira la ruota”.";
+        document.getElementById("wheelExtra").textContent = "";
+      }
+    }
+    function closeWheel(){ wheelOverlay.style.display = "none"; }
+
+    async function spinWheel(){
+      const key = wheelKeyToday();
+      const saved = localStorage.getItem(key);
+      if(saved){
+        const obj = JSON.parse(saved);
+        document.getElementById("wheelResult").textContent = `✅ Già fatto oggi: ${obj.title}`;
+        document.getElementById("wheelExtra").textContent = obj.text;
+        return;
+      }
+      if(wheelSpinning) return;
+      wheelSpinning = true;
+
+      // random spin
+      const base = Math.random()*Math.PI*2;
+      const extraTurns = 6 + Math.random()*4;
+      const target = wheelAngle + extraTurns*(Math.PI*2) + base;
+
+      const start = performance.now();
+      const dur = 1900;
+
+      function easeOutCubic(t){ return 1 - Math.pow(1-t,3); }
+
+      function step(now){
+        const t = Math.min(1, (now-start)/dur);
+        const e = easeOutCubic(t);
+        wheelAngle = wheelAngle + (target - wheelAngle) * e; // smooth
+        drawWheel();
+        if(t<1){
+          requestAnimationFrame(step);
+        }else{
+          // final normalize
+          wheelAngle = target % (Math.PI*2);
+          drawWheel();
+          const res = wheelResultFromAngle(wheelAngle);
+          document.getElementById("wheelResult").textContent = `🎯 ${res.title}`;
+          document.getElementById("wheelExtra").textContent = res.text;
+          localStorage.setItem(key, JSON.stringify(res));
+          wheelSpinning = false;
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    /* =========================
+       QUIZ
+    ========================= */
+    const quizOverlay = document.getElementById("quizOverlay");
+    const quizData = [
+      {
+        q:"In sala qual è la regola #1?",
+        a:["Mettere più selezioni per alzare vincita","Fare 1–2 selezioni massimo","Raddoppiare dopo una perdita"],
+        correct:1
+      },
+      {
+        q:"Se la quota al banco è diversa e non ti convince…",
+        a:["Giochi lo stesso","Cambi mercato o passi","Aumenti stake per compensare"],
+        correct:1
+      },
+      {
+        q:"Quale approccio è più “da sala”?",
+        a:["Inseguire le perdite","Stake fisso e stop","Giocare solo partite famose"],
+        correct:1
+      },
+      {
+        q:"Corner e cartellini dipendono molto da…",
+        a:["Nome delle squadre","Ritmo/agonismo e fasi di gioco","Il tuo intuito"],
+        correct:1
+      },
+      {
+        q:"Dopo 2 giocate sbagliate nella giornata…",
+        a:["Raddoppio per recuperare","Stop e domani si riparte","Cambio sport e continuo"],
+        correct:1
+      },
+    ];
+
+    function openQuiz(){
+      quizOverlay.style.display = "flex";
+      const wrap = document.getElementById("quizWrap");
+      wrap.innerHTML = "";
+      quizData.forEach((it,idx)=>{
+        const div = document.createElement("div");
+        div.className = "quizQ";
+        div.innerHTML = `
+          <div class="q">${idx+1}) ${it.q}</div>
+          ${it.a.map((opt,i)=>`
+            <label><input type="radio" name="q${idx}" value="${i}"> ${opt}</label>
           `).join("")}
-        </div>
-      </div>
-    `;
-  }).join("");
-}
-
-function answerQuiz(i,k){
-  if(quizState.done.has(i)) return;
-  quizState.done.add(i);
-  if(k === QUIZ[i].correct) quizState.score++;
-
-  $("quizScore").textContent = quizState.score;
-
-  if(quizState.done.size === QUIZ.length){
-    const b = getBest();
-    if(quizState.score > b){ setBest(quizState.score); }
-    renderQuiz();
-    alert(`Quiz finito! Score ${quizState.score}/5. Best ${getBest()}/5`);
-  }else{
-    renderQuiz();
-  }
-}
-
-function openQuiz(){
-  $("quizModal").classList.add("show");
-  renderQuiz();
-}
-function closeQuiz(){
-  $("quizModal").classList.remove("show");
-}
-function resetQuiz(){
-  quizState = {score:0, done:new Set()};
-  renderQuiz();
-}
-
-/* =========================================================
-   UI actions
-   ========================================================= */
-$("btnSala").onclick = toggleSala;
-
-$("btnWheel").onclick = openWheel;
-$("btnQuiz").onclick = openQuiz;
-
-$("btnNew").onclick = async ()=>{
-  setRot("mattina",0); setRot("pomeriggio",0); setRot("sera",0);
-  await refreshData();
-};
-
-$("btnSlot").onclick = ()=>{
-  const idx = SLOT_ORDER.indexOf(CURRENT_SLOT);
-  const next = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
-  setSlot(next);
-  render(EVENTS_DATA);
-};
-
-$("btnStart20").onclick = ()=>{
-  // mini focus: per sala è “divertente” e utile
-  let t = 20;
-  const old = $("btnStart20").textContent;
-  $("btnStart20").disabled = true;
-  const timer = setInterval(()=>{
-    $("btnStart20").textContent = `Focus ${t}s`;
-    t--;
-    if(t<0){
-      clearInterval(timer);
-      $("btnStart20").textContent = old;
-      $("btnStart20").disabled = false;
+        `;
+        wrap.appendChild(div);
+      });
+      document.getElementById("quizResult").textContent = "Compila e premi “Vedi risultato”.";
     }
-  }, 1000);
-};
+    function closeQuiz(){ quizOverlay.style.display = "none"; }
 
-$("btnPrint").onclick = ()=>{
-  // stampa semplice (la sala può stampare screenshot o usare stampante)
-  window.print();
-};
+    function checkQuiz(){
+      let score = 0;
+      for(let i=0;i<quizData.length;i++){
+        const sel = document.querySelector(`input[name="q${i}"]:checked`);
+        if(sel && Number(sel.value) === quizData[i].correct) score++;
+      }
+      const pct = Math.round((score/quizData.length)*100);
+      let msg = `Punteggio: ${score}/${quizData.length} (${pct}%). `;
+      if(pct >= 80) msg += "✅ Mentalità da sala: disciplina alta. Ora poche scelte e quota al banco.";
+      else if(pct >= 60) msg += "🟡 Buono, ma evita l’istinto: riduci selezioni e usa stake fisso.";
+      else msg += "🔴 Attenzione: rischio inseguimento. Prima la disciplina, poi il gioco.";
+      document.getElementById("quizResult").textContent = msg;
+    }
 
-document.addEventListener("keydown",(e)=>{
-  if(e.key==="Escape"){
-    closePro(); closeWheel(); closeQuiz();
-  }
-});
+    /* =========================
+       EVENTS LOAD + INIT
+    ========================= */
+    async function init(){
+      // slot
+      const slotURL = getSlotFromURL();
+      CURRENT_SLOT = slotURL || slotFromTime(nowRome());
+      document.getElementById("slotPill").textContent = CURRENT_SLOT;
 
-/* Start */
-document.addEventListener("visibilitychange", ()=>{
-  if(document.hidden) return;
-  applyClockSlot();
-  render(EVENTS_DATA);
-});
+      // load
+      try{
+        EVENTS_DATA = await fetchEvents();
+      }catch(e){
+        EVENTS_DATA = { updated_at:"—", events:[] };
+      }
 
-(async function init(){
-  try{
-    await load(false);
-    startAuto();
-  }catch(e){
-    console.error(e);
-    $("events").innerHTML = `<div class="muted" style="padding:12px;">
-      Errore: non riesco a leggere <b>events.json</b>. Verifica che sia pubblicato nella stessa cartella di index.html.
-    </div>`;
-  }
-})();
-</script>
+      refreshRender();
+
+      // clock / refresh updated time display (no fetch)
+      setInterval(()=> {
+        // keep slot label consistent if user didn't force slot via url
+        if(!getSlotFromURL()){
+          const s = slotFromTime(nowRome());
+          if(s !== CURRENT_SLOT){
+            CURRENT_SLOT = s;
+            document.getElementById("slotPill").textContent = s;
+            refreshRender();
+          }
+        }
+      }, 30_000);
+    }
+
+    /* =========================
+       UI BINDINGS
+    ========================= */
+    document.getElementById("btnNew").addEventListener("click", async ()=>{
+      // refetch events.json
+      try{
+        EVENTS_DATA = await fetchEvents();
+      }catch{}
+      refreshRender();
+    });
+
+    document.getElementById("btnSlot").addEventListener("click", ()=>{
+      const order = ["mattina","pomeriggio","sera"];
+      const i = order.indexOf(CURRENT_SLOT);
+      const next = order[(i+1)%order.length];
+      setSlot(next);
+    });
+
+    document.getElementById("btnPrint").addEventListener("click", printPage);
+
+    // wheel
+    document.getElementById("btnWheel").addEventListener("click", openWheel);
+    document.getElementById("btnWheel2").addEventListener("click", openWheel);
+    document.getElementById("wheelClose").addEventListener("click", closeWheel);
+    document.getElementById("wheelSpin").addEventListener("click", spinWheel);
+    wheelOverlay.addEventListener("click", (e)=>{ if(e.target === wheelOverlay) closeWheel(); });
+
+    // quiz
+    document.getElementById("btnQuiz").addEventListener("click", openQuiz);
+    document.getElementById("btnQuiz2").addEventListener("click", openQuiz);
+    document.getElementById("quizClose").addEventListener("click", closeQuiz);
+    document.getElementById("quizCheck").addEventListener("click", checkQuiz);
+    quizOverlay.addEventListener("click", (e)=>{ if(e.target === quizOverlay) closeQuiz(); });
+
+    // first draw wheel
+    drawWheel();
+    init();
+  </script>
 </body>
 </html>
