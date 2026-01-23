@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-23 22:39",
+  "updated_at": "2026-01-23 23:42",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -159,31 +159,31 @@
       }
     },
     {
-      "id": 538011,
-      "uniq": "538011|2026-01-24T15:00:00Z|Fulham FC|Brighton & Hove Albion FC",
+      "id": 538009,
+      "uniq": "538009|2026-01-24T15:00:00Z|Burnley FC|Tottenham Hotspur FC",
       "slot": "mattina",
       "league": "Premier League",
       "league_code": "PL",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Fulham FC",
-      "away": "Brighton & Hove Albion FC",
-      "home_short": "FUL",
-      "away_short": "BHA",
-      "home_crest": "https://crests.football-data.org/63.png",
-      "away_crest": "https://crests.football-data.org/397.png",
+      "home": "Burnley FC",
+      "away": "Tottenham Hotspur FC",
+      "home_short": "BUR",
+      "away_short": "TOT",
+      "home_crest": "https://crests.football-data.org/328.png",
+      "away_crest": "https://crests.football-data.org/73.png",
       "start_iso": "2026-01-24T16:00:00+01:00",
       "start": "Domani 16:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Alta",
+          "tag": "Bassa",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
-          "tag": "Bassa",
+          "tag": "Alta",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
@@ -193,19 +193,19 @@
         }
       ],
       "context": {
-        "diff": -0.25,
-        "tempo": 1.0,
-        "goals": 0.33,
-        "grit": 1.0,
-        "corners": 0.88,
-        "cards": 0.98,
+        "diff": 0.42,
+        "tempo": 0.14,
+        "goals": 0.39,
+        "grit": 0.04,
+        "corners": 0.34,
+        "cards": 0.48,
         "signals": {
-          "ritmo": "Alta",
-          "equilibrio": "Equilibrio",
-          "fisicita": "Alta"
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita casa",
+          "fisicita": "Bassa"
         },
-        "reason_corner": "Ritmo alto e match vivo → corner più probabili.",
-        "reason_cards": "Gara fisica ed equilibrata → più contrasti, cartellini più probabili."
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
       }
     },
     {
@@ -559,56 +559,6 @@
       }
     },
     {
-      "id": 538005,
-      "uniq": "538005|2026-01-24T17:30:00Z|AFC Bournemouth|Liverpool FC",
-      "slot": "sera",
-      "league": "Premier League",
-      "league_code": "PL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "AFC Bournemouth",
-      "away": "Liverpool FC",
-      "home_short": "BOU",
-      "away_short": "LIV",
-      "home_crest": "https://crests.football-data.org/bournemouth.png",
-      "away_crest": "https://crests.football-data.org/64.png",
-      "start_iso": "2026-01-24T18:30:00+01:00",
-      "start": "Domani 18:30",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Bassa",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.2,
-        "tempo": 0.26,
-        "goals": 0.14,
-        "grit": 0.1,
-        "corners": 0.39,
-        "cards": 0.52,
-        "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Equilibrio",
-          "fisicita": "Bassa"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
-      }
-    },
-    {
       "id": 540568,
       "uniq": "540568|2026-01-24T17:30:00Z|1. FC Union Berlin|Borussia Dortmund",
       "slot": "sera",
@@ -706,6 +656,56 @@
         },
         "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
         "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
+      }
+    },
+    {
+      "id": 538005,
+      "uniq": "538005|2026-01-24T17:30:00Z|AFC Bournemouth|Liverpool FC",
+      "slot": "sera",
+      "league": "Premier League",
+      "league_code": "PL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/PL.png",
+      "home": "AFC Bournemouth",
+      "away": "Liverpool FC",
+      "home_short": "BOU",
+      "away_short": "LIV",
+      "home_crest": "https://crests.football-data.org/bournemouth.png",
+      "away_crest": "https://crests.football-data.org/64.png",
+      "start_iso": "2026-01-24T18:30:00+01:00",
+      "start": "Domani 18:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Bassa",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.2,
+        "tempo": 0.26,
+        "goals": 0.14,
+        "grit": 0.1,
+        "corners": 0.39,
+        "cards": 0.52,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
       }
     },
     {
