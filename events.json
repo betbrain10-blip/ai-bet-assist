@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-23 20:02",
+  "updated_at": "2026-01-23 20:46",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -8,6 +8,56 @@
     "total": 15
   },
   "events": [
+    {
+      "id": 540572,
+      "uniq": "540572|2026-01-24T14:30:00Z|1. FSV Mainz 05|VfL Wolfsburg",
+      "slot": "mattina",
+      "league": "Bundesliga",
+      "league_code": "BL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/BL1.png",
+      "home": "1. FSV Mainz 05",
+      "away": "VfL Wolfsburg",
+      "home_short": "M05",
+      "away_short": "WOB",
+      "home_crest": "https://crests.football-data.org/15.png",
+      "away_crest": "https://crests.football-data.org/11.png",
+      "start_iso": "2026-01-24T15:30:00+01:00",
+      "start": "Domani 15:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Media",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.49,
+        "tempo": 0.34,
+        "goals": 0.53,
+        "grit": 0.64,
+        "corners": 0.48,
+        "cards": 0.8,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Media"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
+      }
+    },
     {
       "id": 540574,
       "uniq": "540574|2026-01-24T14:30:00Z|Eintracht Frankfurt|TSG 1899 Hoffenheim",
@@ -59,20 +109,20 @@
       }
     },
     {
-      "id": 540570,
-      "uniq": "540570|2026-01-24T14:30:00Z|Bayer 04 Leverkusen|SV Werder Bremen",
+      "id": 540569,
+      "uniq": "540569|2026-01-24T14:30:00Z|1. FC Heidenheim 1846|RB Leipzig",
       "slot": "mattina",
       "league": "Bundesliga",
       "league_code": "BL1",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/BL1.png",
-      "home": "Bayer 04 Leverkusen",
-      "away": "SV Werder Bremen",
-      "home_short": "B04",
-      "away_short": "SVW",
-      "home_crest": "https://crests.football-data.org/3.png",
-      "away_crest": "https://crests.football-data.org/12.png",
+      "home": "1. FC Heidenheim 1846",
+      "away": "RB Leipzig",
+      "home_short": "HEI",
+      "away_short": "RBL",
+      "home_crest": "https://crests.football-data.org/44.png",
+      "away_crest": "https://crests.football-data.org/721.png",
       "start_iso": "2026-01-24T15:30:00+01:00",
       "start": "Domani 15:30",
       "markets": [
@@ -83,57 +133,57 @@
         },
         {
           "label": "1X",
-          "tag": "Alta",
+          "tag": "Bassa",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Media",
+          "tag": "Alta",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": 0.39,
-        "tempo": 0.73,
-        "goals": 0.46,
-        "grit": 0.34,
-        "corners": 0.72,
-        "cards": 0.63,
+        "diff": -0.85,
+        "tempo": 0.48,
+        "goals": 0.96,
+        "grit": 0.72,
+        "corners": 0.62,
+        "cards": 0.83,
         "signals": {
-          "ritmo": "Media",
-          "equilibrio": "Favorita casa",
-          "fisicita": "Bassa"
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Media"
         },
-        "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
       }
     },
     {
-      "id": 540573,
-      "uniq": "540573|2026-01-24T14:30:00Z|FC Bayern München|FC Augsburg",
+      "id": 538011,
+      "uniq": "538011|2026-01-24T15:00:00Z|Fulham FC|Brighton & Hove Albion FC",
       "slot": "mattina",
-      "league": "Bundesliga",
-      "league_code": "BL1",
+      "league": "Premier League",
+      "league_code": "PL",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/BL1.png",
-      "home": "FC Bayern München",
-      "away": "FC Augsburg",
-      "home_short": "FCB",
-      "away_short": "FCA",
-      "home_crest": "https://crests.football-data.org/5.png",
-      "away_crest": "https://crests.football-data.org/16.png",
-      "start_iso": "2026-01-24T15:30:00+01:00",
-      "start": "Domani 15:30",
+      "competition_emblem": "https://crests.football-data.org/PL.png",
+      "home": "Fulham FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_short": "FUL",
+      "away_short": "BHA",
+      "home_crest": "https://crests.football-data.org/63.png",
+      "away_crest": "https://crests.football-data.org/397.png",
+      "start_iso": "2026-01-24T16:00:00+01:00",
+      "start": "Domani 16:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Media",
+          "tag": "Alta",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
-          "tag": "Media",
+          "tag": "Bassa",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
@@ -143,19 +193,19 @@
         }
       ],
       "context": {
-        "diff": 0.14,
-        "tempo": 0.93,
-        "goals": 0.26,
-        "grit": 0.44,
-        "corners": 0.83,
-        "cards": 0.67,
+        "diff": -0.25,
+        "tempo": 1.0,
+        "goals": 0.33,
+        "grit": 1.0,
+        "corners": 0.88,
+        "cards": 0.98,
         "signals": {
           "ritmo": "Alta",
           "equilibrio": "Equilibrio",
-          "fisicita": "Bassa"
+          "fisicita": "Alta"
         },
         "reason_corner": "Ritmo alto e match vivo → corner più probabili.",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+        "reason_cards": "Gara fisica ed equilibrata → più contrasti, cartellini più probabili."
       }
     },
     {
@@ -202,56 +252,6 @@
         "signals": {
           "ritmo": "Bassa",
           "equilibrio": "Favorita casa",
-          "fisicita": "Bassa"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
-      }
-    },
-    {
-      "id": 538012,
-      "uniq": "538012|2026-01-24T15:00:00Z|Manchester City FC|Wolverhampton Wanderers FC",
-      "slot": "mattina",
-      "league": "Premier League",
-      "league_code": "PL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Manchester City FC",
-      "away": "Wolverhampton Wanderers FC",
-      "home_short": "MCI",
-      "away_short": "WOL",
-      "home_crest": "https://crests.football-data.org/65.png",
-      "away_crest": "https://crests.football-data.org/76.png",
-      "start_iso": "2026-01-24T16:00:00+01:00",
-      "start": "Domani 16:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Media",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": 0.07,
-        "tempo": 0.45,
-        "goals": 0.93,
-        "grit": 0.2,
-        "corners": 0.66,
-        "cards": 0.41,
-        "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Equilibrio",
           "fisicita": "Bassa"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
@@ -409,20 +409,20 @@
       }
     },
     {
-      "id": 540569,
-      "uniq": "540569|2026-01-24T14:30:00Z|1. FC Heidenheim 1846|RB Leipzig",
+      "id": 540570,
+      "uniq": "540570|2026-01-24T14:30:00Z|Bayer 04 Leverkusen|SV Werder Bremen",
       "slot": "pomeriggio",
       "league": "Bundesliga",
       "league_code": "BL1",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/BL1.png",
-      "home": "1. FC Heidenheim 1846",
-      "away": "RB Leipzig",
-      "home_short": "HEI",
-      "away_short": "RBL",
-      "home_crest": "https://crests.football-data.org/44.png",
-      "away_crest": "https://crests.football-data.org/721.png",
+      "home": "Bayer 04 Leverkusen",
+      "away": "SV Werder Bremen",
+      "home_short": "B04",
+      "away_short": "SVW",
+      "home_crest": "https://crests.football-data.org/3.png",
+      "away_crest": "https://crests.football-data.org/12.png",
       "start_iso": "2026-01-24T15:30:00+01:00",
       "start": "Domani 15:30",
       "markets": [
@@ -433,57 +433,7 @@
         },
         {
           "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
           "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.85,
-        "tempo": 0.48,
-        "goals": 0.96,
-        "grit": 0.72,
-        "corners": 0.62,
-        "cards": 0.83,
-        "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Media"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità media → qualche cartellino possibile."
-      }
-    },
-    {
-      "id": 540572,
-      "uniq": "540572|2026-01-24T14:30:00Z|1. FSV Mainz 05|VfL Wolfsburg",
-      "slot": "pomeriggio",
-      "league": "Bundesliga",
-      "league_code": "BL1",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/BL1.png",
-      "home": "1. FSV Mainz 05",
-      "away": "VfL Wolfsburg",
-      "home_short": "M05",
-      "away_short": "WOB",
-      "home_crest": "https://crests.football-data.org/15.png",
-      "away_crest": "https://crests.football-data.org/11.png",
-      "start_iso": "2026-01-24T15:30:00+01:00",
-      "start": "Domani 15:30",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Media",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
@@ -493,65 +443,15 @@
         }
       ],
       "context": {
-        "diff": -0.49,
-        "tempo": 0.34,
-        "goals": 0.53,
-        "grit": 0.64,
-        "corners": 0.48,
-        "cards": 0.8,
-        "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Media"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità media → qualche cartellino possibile."
-      }
-    },
-    {
-      "id": 542569,
-      "uniq": "542569|2026-01-23T19:00:00Z|AJ Auxerre|Paris Saint-Germain FC",
-      "slot": "sera",
-      "league": "Ligue 1",
-      "league_code": "FL1",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/FL1.png",
-      "home": "AJ Auxerre",
-      "away": "Paris Saint-Germain FC",
-      "home_short": "AJA",
-      "away_short": "PSG",
-      "home_crest": "https://crests.football-data.org/519.png",
-      "away_crest": "https://crests.football-data.org/524.png",
-      "start_iso": "2026-01-23T20:00:00+01:00",
-      "start": "Oggi 20:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Media",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Media",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.11,
-        "tempo": 0.62,
-        "goals": 0.38,
-        "grit": 0.28,
-        "corners": 0.66,
-        "cards": 0.56,
+        "diff": 0.39,
+        "tempo": 0.73,
+        "goals": 0.46,
+        "grit": 0.34,
+        "corners": 0.72,
+        "cards": 0.63,
         "signals": {
           "ritmo": "Media",
-          "equilibrio": "Equilibrio",
+          "equilibrio": "Favorita casa",
           "fisicita": "Bassa"
         },
         "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
@@ -559,52 +459,52 @@
       }
     },
     {
-      "id": 540576,
-      "uniq": "540576|2026-01-23T19:30:00Z|FC St. Pauli 1910|Hamburger SV",
-      "slot": "sera",
+      "id": 540573,
+      "uniq": "540573|2026-01-24T14:30:00Z|FC Bayern München|FC Augsburg",
+      "slot": "pomeriggio",
       "league": "Bundesliga",
       "league_code": "BL1",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/BL1.png",
-      "home": "FC St. Pauli 1910",
-      "away": "Hamburger SV",
-      "home_short": "STP",
-      "away_short": "HSV",
-      "home_crest": "https://crests.football-data.org/20.png",
-      "away_crest": "https://crests.football-data.org/7.png",
-      "start_iso": "2026-01-23T20:30:00+01:00",
-      "start": "Oggi 20:30",
+      "home": "FC Bayern München",
+      "away": "FC Augsburg",
+      "home_short": "FCB",
+      "away_short": "FCA",
+      "home_crest": "https://crests.football-data.org/5.png",
+      "away_crest": "https://crests.football-data.org/16.png",
+      "start_iso": "2026-01-24T15:30:00+01:00",
+      "start": "Domani 15:30",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Alta",
+          "tag": "Media",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
-          "tag": "Bassa",
+          "tag": "Media",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
+          "tag": "Media",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": -0.74,
-        "tempo": 0.49,
-        "goals": 0.96,
-        "grit": 0.22,
-        "corners": 0.64,
-        "cards": 0.53,
+        "diff": 0.14,
+        "tempo": 0.93,
+        "goals": 0.26,
+        "grit": 0.44,
+        "corners": 0.83,
+        "cards": 0.67,
         "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Favorita ospite",
+          "ritmo": "Alta",
+          "equilibrio": "Equilibrio",
           "fisicita": "Bassa"
         },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_corner": "Ritmo alto e match vivo → corner più probabili.",
         "reason_cards": "Fisicità bassa → cartellini meno affidabili."
       }
     },
@@ -752,6 +652,106 @@
         "signals": {
           "ritmo": "Bassa",
           "equilibrio": "Equilibrio",
+          "fisicita": "Media"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
+      }
+    },
+    {
+      "id": 537025,
+      "uniq": "537025|2026-01-24T17:00:00Z|ACF Fiorentina|Cagliari Calcio",
+      "slot": "sera",
+      "league": "Serie A",
+      "league_code": "SA",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/c111.png",
+      "home": "ACF Fiorentina",
+      "away": "Cagliari Calcio",
+      "home_short": "FIO",
+      "away_short": "CAG",
+      "home_crest": "https://crests.football-data.org/99.png",
+      "away_crest": "https://crests.football-data.org/104.png",
+      "start_iso": "2026-01-24T18:00:00+01:00",
+      "start": "Domani 18:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Media",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.06,
+        "tempo": 0.28,
+        "goals": 0.16,
+        "grit": 0.12,
+        "corners": 0.42,
+        "cards": 0.5,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
+    },
+    {
+      "id": 540568,
+      "uniq": "540568|2026-01-24T17:30:00Z|1. FC Union Berlin|Borussia Dortmund",
+      "slot": "sera",
+      "league": "Bundesliga",
+      "league_code": "BL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/BL1.png",
+      "home": "1. FC Union Berlin",
+      "away": "Borussia Dortmund",
+      "home_short": "UNB",
+      "away_short": "BVB",
+      "home_crest": "https://crests.football-data.org/28.png",
+      "away_crest": "https://crests.football-data.org/4.png",
+      "start_iso": "2026-01-24T18:30:00+01:00",
+      "start": "Domani 18:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Media",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.38,
+        "tempo": 0.47,
+        "goals": 0.28,
+        "grit": 0.71,
+        "corners": 0.53,
+        "cards": 0.86,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita ospite",
           "fisicita": "Media"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
