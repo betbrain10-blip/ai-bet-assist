@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-23 08:51",
+  "updated_at": "2026-01-23 10:00",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -159,31 +159,31 @@
       }
     },
     {
-      "id": 538009,
-      "uniq": "538009|2026-01-24T15:00:00Z|Burnley FC|Tottenham Hotspur FC",
+      "id": 538011,
+      "uniq": "538011|2026-01-24T15:00:00Z|Fulham FC|Brighton & Hove Albion FC",
       "slot": "mattina",
       "league": "Premier League",
       "league_code": "PL",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Burnley FC",
-      "away": "Tottenham Hotspur FC",
-      "home_short": "BUR",
-      "away_short": "TOT",
-      "home_crest": "https://crests.football-data.org/328.png",
-      "away_crest": "https://crests.football-data.org/73.png",
+      "home": "Fulham FC",
+      "away": "Brighton & Hove Albion FC",
+      "home_short": "FUL",
+      "away_short": "BHA",
+      "home_crest": "https://crests.football-data.org/63.png",
+      "away_crest": "https://crests.football-data.org/397.png",
       "start_iso": "2026-01-24T16:00:00+01:00",
       "start": "Domani 16:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Bassa",
+          "tag": "Alta",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
-          "tag": "Alta",
+          "tag": "Bassa",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
@@ -193,19 +193,19 @@
         }
       ],
       "context": {
-        "diff": 0.42,
-        "tempo": 0.14,
-        "goals": 0.39,
-        "grit": 0.04,
-        "corners": 0.34,
-        "cards": 0.48,
+        "diff": -0.25,
+        "tempo": 1.0,
+        "goals": 0.33,
+        "grit": 1.0,
+        "corners": 0.88,
+        "cards": 0.98,
         "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Favorita casa",
-          "fisicita": "Bassa"
+          "ritmo": "Alta",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Alta"
         },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+        "reason_corner": "Ritmo alto e match vivo → corner più probabili.",
+        "reason_cards": "Gara fisica ed equilibrata → più contrasti, cartellini più probabili."
       }
     },
     {
@@ -409,56 +409,6 @@
       }
     },
     {
-      "id": 540570,
-      "uniq": "540570|2026-01-24T14:30:00Z|Bayer 04 Leverkusen|SV Werder Bremen",
-      "slot": "pomeriggio",
-      "league": "Bundesliga",
-      "league_code": "BL1",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/BL1.png",
-      "home": "Bayer 04 Leverkusen",
-      "away": "SV Werder Bremen",
-      "home_short": "B04",
-      "away_short": "SVW",
-      "home_crest": "https://crests.football-data.org/3.png",
-      "away_crest": "https://crests.football-data.org/12.png",
-      "start_iso": "2026-01-24T15:30:00+01:00",
-      "start": "Domani 15:30",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Alta",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Media",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": 0.39,
-        "tempo": 0.73,
-        "goals": 0.46,
-        "grit": 0.34,
-        "corners": 0.72,
-        "cards": 0.63,
-        "signals": {
-          "ritmo": "Media",
-          "equilibrio": "Favorita casa",
-          "fisicita": "Bassa"
-        },
-        "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
-      }
-    },
-    {
       "id": 540573,
       "uniq": "540573|2026-01-24T14:30:00Z|FC Bayern München|FC Augsburg",
       "slot": "pomeriggio",
@@ -505,6 +455,56 @@
           "fisicita": "Bassa"
         },
         "reason_corner": "Ritmo alto e match vivo → corner più probabili.",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
+    },
+    {
+      "id": 540570,
+      "uniq": "540570|2026-01-24T14:30:00Z|Bayer 04 Leverkusen|SV Werder Bremen",
+      "slot": "pomeriggio",
+      "league": "Bundesliga",
+      "league_code": "BL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/BL1.png",
+      "home": "Bayer 04 Leverkusen",
+      "away": "SV Werder Bremen",
+      "home_short": "B04",
+      "away_short": "SVW",
+      "home_crest": "https://crests.football-data.org/3.png",
+      "away_crest": "https://crests.football-data.org/12.png",
+      "start_iso": "2026-01-24T15:30:00+01:00",
+      "start": "Domani 15:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Alta",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": 0.39,
+        "tempo": 0.73,
+        "goals": 0.46,
+        "grit": 0.34,
+        "corners": 0.72,
+        "cards": 0.63,
+        "signals": {
+          "ritmo": "Media",
+          "equilibrio": "Favorita casa",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
         "reason_cards": "Fisicità bassa → cartellini meno affidabili."
       }
     },
