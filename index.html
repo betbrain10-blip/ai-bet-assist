@@ -2,155 +2,104 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Vincitù · IA Portal</title>
+<title>VINCITÙ · IA Portal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-:root{
-  --bg1:#2a0f4d;
-  --bg2:#0b163f;
-  --card:#141a3a;
-  --accent:#ffb020;
-  --ai:#7cf3ff;
-  --ok:#3ddc97;
-  --warn:#ff9f43;
-  --risk:#ff6b6b;
-  --text:#eaeaf0;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #2b1055, #000);
+  color: #eaeaea;
 }
 
-*{box-sizing:border-box;font-family:Inter,system-ui,-apple-system}
-body{
-  margin:0;
-  background:linear-gradient(135deg,var(--bg1),var(--bg2));
-  color:var(--text);
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  background: #000;
+  border-bottom: 2px solid #b00000;
 }
 
-/* ===== HEADER / LOGO ===== */
-header{
-  padding:18px 22px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.logo{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-.logo-badge{
-  width:42px;height:42px;
-  border-radius:12px;
-  background:linear-gradient(135deg,#ff4d4d,#ffb020);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:900;
-  color:#fff;
-  box-shadow:0 0 25px rgba(255,176,32,.7);
-  animation:pulse 3s infinite;
-}
-.logo-text{
-  font-size:20px;
-  font-weight:800;
-  text-shadow:0 0 14px rgba(124,243,255,.6);
-}
-.logo-sub{
-  font-size:12px;
-  color:#9fdcff;
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  color: #b00000;
+  letter-spacing: 2px;
 }
 
-@keyframes pulse{
-  0%{box-shadow:0 0 15px rgba(255,176,32,.6)}
-  50%{box-shadow:0 0 35px rgba(124,243,255,.9)}
-  100%{box-shadow:0 0 15px rgba(255,176,32,.6)}
+/* IA LIVE BAR */
+.ia-live {
+  margin: 14px 20px;
+  padding: 12px 16px;
+  background: linear-gradient(90deg, #111, #1a1a1a);
+  border-left: 4px solid #ff2a2a;
+  border-radius: 10px;
+  animation: glow 2s infinite alternate;
 }
 
-/* ===== LAYOUT ===== */
-.container{
-  display:grid;
-  grid-template-columns:2fr 1fr;
-  gap:18px;
-  padding:0 22px 30px;
-}
-.card{
-  background:linear-gradient(180deg,#181f4a,#0f1430);
-  border-radius:16px;
-  padding:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,.35);
-}
-h2,h3{margin:0 0 10px}
-
-/* ===== EVENT CARD ===== */
-.event{
-  margin-bottom:14px;
-  border:1px solid rgba(255,255,255,.06);
-  border-radius:14px;
-  padding:14px;
-}
-.match{
-  font-weight:700;
-  margin-bottom:6px;
-}
-.badge{
-  display:inline-block;
-  padding:4px 8px;
-  border-radius:8px;
-  font-size:12px;
-  font-weight:700;
-}
-.stable{background:rgba(61,220,151,.15);color:var(--ok)}
-.prudence{background:rgba(255,159,67,.15);color:var(--warn)}
-.risky{background:rgba(255,107,107,.15);color:var(--risk)}
-
-.market{
-  margin-top:8px;
-  font-size:14px;
-}
-.note{
-  font-size:12px;
-  opacity:.85;
-  margin-top:6px;
+@keyframes glow {
+  from { box-shadow: 0 0 6px #ff2a2a; }
+  to   { box-shadow: 0 0 16px #ff2a2a; }
 }
 
-/* ===== AI CONFIDENCE ===== */
-.confidence{
-  margin-top:10px;
-}
-.conf-row{
-  display:flex;
-  justify-content:space-between;
-  font-size:12px;
-  margin-bottom:4px;
-}
-.bar{
-  height:8px;
-  background:#1a204a;
-  border-radius:6px;
-  overflow:hidden;
-}
-.fill{
-  height:100%;
-  background:linear-gradient(90deg,#3ddc97,#7cf3ff);
+/* CONTAINER */
+.container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-/* ===== SIDE ===== */
-.side .card{margin-bottom:14px}
-.button{
-  background:var(--accent);
-  color:#000;
-  font-weight:800;
-  border:none;
-  border-radius:12px;
-  padding:14px;
-  width:100%;
-  cursor:pointer;
+/* EVENTI */
+.event {
+  background: rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-left: 5px solid #ff2a2a;
 }
 
-/* ===== FOOT NOTE ===== */
-.small{
-  font-size:11px;
-  opacity:.7;
-  margin-top:8px;
+.event h3 {
+  margin: 0 0 6px 0;
+  color: #fff;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  background: #ff2a2a;
+  margin-bottom: 8px;
+}
+
+.progress {
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress div {
+  height: 10px;
+  background: linear-gradient(90deg,#ff2a2a,#ff7a7a);
+}
+
+/* SIDE BOX */
+.side {
+  background: rgba(255,255,255,0.05);
+  padding: 16px;
+  border-radius: 14px;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 14px;
+  font-size: 13px;
+  opacity: 0.7;
 }
 </style>
 </head>
@@ -158,93 +107,126 @@ h2,h3{margin:0 0 10px}
 <body>
 
 <header>
-  <div class="logo">
-    <div class="logo-badge">V</div>
-    <div>
-      <div class="logo-text">Vincitù · IA Portal</div>
-      <div class="logo-sub">Sistema predittivo attivo · AI LIVE</div>
-    </div>
-  </div>
+  <div class="logo">VINCITÙ</div>
 </header>
+
+<div class="ia-live" id="iaStatus">
+  🧠 IA LIVE attiva · Analisi in corso…
+</div>
 
 <div class="container">
 
-<!-- ===== LEFT ===== -->
-<div>
-
-<div class="card">
-<h2>⭐ TOP IA del momento</h2>
-
-<div class="event">
-  <div class="match">AJ Auxerre — Paris Saint-Germain</div>
-  <span class="badge prudence">PSG favorito netto</span>
-
-  <div class="market"><b>Mercato suggerito:</b> Corner Over 8.5</div>
-
-  <div class="confidence">
-    <div class="conf-row">
-      <span>Fiducia IA</span><span>82%</span>
-    </div>
-    <div class="bar"><div class="fill" style="width:82%"></div></div>
+  <div class="side">
+    📊 Eventi analizzati oggi: <strong id="analizzati">0</strong><br>
+    ⏱️ Prossimo aggiornamento automatico: <strong id="nextUpdate">--</strong>
   </div>
 
-  <div class="note">
-    Motivo IA: pressione costante PSG, volume offensivo elevato, Auxerre difensivo.
-  </div>
-</div>
+  <h2 style="margin-top:20px;">⭐ TOP IA del momento</h2>
 
-<div class="event">
-  <div class="match">Inter — Pisa</div>
-  <span class="badge stable">Favorita casa</span>
+  <div id="eventi"></div>
 
-  <div class="market"><b>Mercato suggerito:</b> Under 3.5 / gestione prudente</div>
-
-  <div class="confidence">
-    <div class="conf-row">
-      <span>Fiducia IA</span><span>76%</span>
-    </div>
-    <div class="bar"><div class="fill" style="width:76%"></div></div>
+  <div class="side">
+    🎯 Regole da sala:
+    <ul>
+      <li>1–2 selezioni massimo</li>
+      <li>Quota sempre da verificare al banco</li>
+      <li>Se non convince → passa</li>
+    </ul>
+    💬 <em>Gioca con testa, non inseguire.</em>
   </div>
 
-  <div class="note">
-    Motivo IA: differenza tecnica alta, ritmo controllato, possibile gestione risultato.
-  </div>
 </div>
 
-</div>
+<footer>
+  VINCITÙ · Sistema IA dimostrativo · Quote reali sempre al banco
+</footer>
 
-</div>
+<script>
+// ===================
+// CONFIG ROTAZIONE
+// ===================
+const fasce = {
+  mattina: [
+    {
+      match: "Inter – Pisa",
+      tag: "Favorita casa",
+      mercato: "Under 3.5 (gestione prudente)",
+      motivo: "Differenza tecnica evidente, ritmo controllato.",
+      fiducia: 76
+    },
+    {
+      match: "MCI – WOL",
+      tag: "Attacchi forti",
+      mercato: "Over 2.5 (valuta quota)",
+      motivo: "Ritmo alto e occasioni costanti.",
+      fiducia: 74
+    }
+  ],
+  pomeriggio: [
+    {
+      match: "Bayern – Augsburg",
+      tag: "Pressione offensiva",
+      mercato: "Corner Over 8.5",
+      motivo: "Spinta costante sulle fasce.",
+      fiducia: 79
+    },
+    {
+      match: "Ajax – Utrecht",
+      tag: "Ritmo alto",
+      mercato: "Over 2.5",
+      motivo: "Fasi offensive continue.",
+      fiducia: 72
+    }
+  ],
+  sera: [
+    {
+      match: "Auxerre – PSG",
+      tag: "PSG favorito netto",
+      mercato: "Corner Over 8.5",
+      motivo: "Pressione costante PSG, Auxerre difensivo.",
+      fiducia: 82
+    },
+    {
+      match: "Roma – Torino",
+      tag: "Match tattico",
+      mercato: "Under 3.5",
+      motivo: "Possibile gestione risultato.",
+      fiducia: 70
+    }
+  ]
+};
 
-<!-- ===== RIGHT ===== -->
-<div class="side">
+// ===================
+const params = new URLSearchParams(window.location.search);
+const slot = params.get("slot") || "sera";
 
-<div class="card">
-<h3>📋 Regole d’oro (sala)</h3>
-<ul class="small">
-<li>1–2 selezioni massimo</li>
-<li>Quota sempre da verificare al banco</li>
-<li>Se non convince → passa</li>
-</ul>
-</div>
+const eventiBox = document.getElementById("eventi");
+const eventi = fasce[slot] || fasce.sera;
 
-<div class="card">
-<h3>🤖 Suggerimento IA rapido</h3>
-<p class="small">
-Approccio da sala: poche scelte, mercati controllabili, niente inseguimenti.
-</p>
-<button class="button">🖨️ Stampa scheda</button>
-</div>
+eventi.forEach(ev => {
+  const div = document.createElement("div");
+  div.className = "event";
+  div.innerHTML = `
+    <span class="badge">${ev.tag}</span>
+    <h3>${ev.match}</h3>
+    <strong>Mercato suggerito:</strong> ${ev.mercato}<br>
+    <small>${ev.motivo}</small>
+    <div class="progress"><div style="width:${ev.fiducia}%"></div></div>
+    <small>Affidabilità IA: ${ev.fiducia}%</small>
+  `;
+  eventiBox.appendChild(div);
+});
 
-<div class="card">
-<h3>🔮 Stato sistema</h3>
-<p class="small">
-Modello IA v3.2 · Aggiornamento automatico attivo<br>
-Eventi ruotati mattina / pomeriggio / sera
-</p>
-</div>
+// contatori
+document.getElementById("analizzati").innerText =
+  Math.floor(Math.random()*15)+20;
 
-</div>
-</div>
+document.getElementById("nextUpdate").innerText =
+  new Date(Date.now()+10*60000).toLocaleTimeString();
+
+document.getElementById("iaStatus").innerText =
+  "🧠 IA LIVE · Fascia " + slot + " · Sistema operativo";
+</script>
 
 </body>
 </html>
