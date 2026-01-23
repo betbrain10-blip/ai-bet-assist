@@ -79,18 +79,25 @@
       min-width:260px;
     }
 
-    /* LOGO rosso come prima */
+    /* LOGO rosso Vincitù (pulito, coerente) */
     .logo{
-      width:34px; height:34px;
-      border-radius:10px;
+      width:36px; height:36px;
+      border-radius:11px;
       background:#d8292f;
       display:grid; place-items:center;
       box-shadow: 0 10px 30px rgba(216,41,47,.22);
       border:1px solid rgba(255,255,255,.12);
       flex:0 0 auto;
+      position:relative;
+      overflow:hidden;
     }
-    .logo span{ font-weight:1000; font-size:16px; color:#fff; transform:translateY(-.5px); }
-
+    .logo:before{
+      content:"";
+      position:absolute; inset:-40%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.18), transparent 60%);
+      transform: rotate(25deg);
+    }
+    .logo span{ font-weight:1000; font-size:16px; color:#fff; transform:translateY(-.5px); position:relative; }
     .brand h1{ margin:0; font-size:16px; font-weight:900; letter-spacing:.2px; }
     .brand small{ display:block; margin-top:2px; color:var(--muted); font-size:12px; }
 
@@ -178,7 +185,7 @@
       font-weight:900; color:var(--muted);
     }
 
-    /* ANGOLI SPECIALI più puliti */
+    /* ANGOLI SPECIALI */
     .callout{
       margin-top:10px;
       background: rgba(255,255,255,.045);
@@ -329,7 +336,7 @@
     .eventRight{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
     .eventBody{ padding:12px; }
 
-    /* Motivazioni più chiare: 3 righe massimo */
+    /* Motivazioni: realistiche e corte */
     .reasonBox{
       border-radius:14px;
       border:1px solid rgba(255,255,255,.10);
@@ -553,7 +560,7 @@
       padding:16px;
     }
     .modal{
-      width:min(920px, 96vw);
+      width:min(940px, 96vw);
       border-radius:18px;
       border:1px solid rgba(255,255,255,.12);
       background: rgba(10, 14, 38, .92);
@@ -585,13 +592,24 @@
       gap:12px;
     }
     @media (max-width: 860px){ .wheelGrid{ grid-template-columns: 1fr; } }
+
     .wheelBox{
       border-radius:16px;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.04);
       padding:12px;
+      position:relative;
+      overflow:hidden;
     }
-    canvas{ width:100%; height:auto; display:block; }
+    .wheelBox:before{
+      content:"";
+      position:absolute; inset:-40%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,152,0,.14), transparent 60%);
+      transform: rotate(18deg);
+      pointer-events:none;
+    }
+
+    canvas{ width:100%; height:auto; display:block; position:relative; }
 
     .wheelBtn{
       width:100%;
@@ -602,15 +620,34 @@
       background: linear-gradient(180deg, rgba(255,152,0,.95), rgba(255,152,0,.72));
       color:#1c1208;
       font-weight:1000;
-
       cursor:pointer;
+      position:relative;
     }
+    .wheelBtn:disabled{ opacity:.55; cursor:not-allowed; }
+
     .wheelNote{
       margin-top:10px;
       color:var(--muted);
       font-size:12px;
       line-height:1.35;
+      position:relative;
     }
+
+    .miniStatRow{
+      display:flex; gap:8px; flex-wrap:wrap;
+      margin-top:10px;
+      position:relative;
+    }
+    .miniStat{
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      font-size:11px;
+      font-weight:1000;
+      color:var(--muted);
+    }
+    .miniStat strong{ color:var(--text); }
 
     .quizBox{
       border-radius:16px;
@@ -685,17 +722,17 @@
             <span class="tag" id="missionTag">Missione: <strong style="color:var(--text)">Max 2 selezioni</strong></span>
           </div>
 
-          <!-- Corner & Cards puliti (NO duplicati) -->
+          <!-- Corner & Cartellini: motivazioni REALI dal tuo JSON -->
           <div class="callout" id="cornerArea">
             <div class="calloutHead">
-              <div class="left">📌 Angolo Speciale • Corner & Cartellini (rapido)</div>
+              <div class="left">📌 Angolo Speciale • Corner & Cartellini (alta probabilità)</div>
               <div class="right"><span class="chip" id="cornerHint">Max 2 + 2 (pulito)</span></div>
             </div>
 
             <div class="calloutGrid">
               <div class="miniCard">
                 <div class="miniTop">
-                  <span>🚩 Corner “interessanti” (max 2)</span>
+                  <span>🚩 Corner consigliati (max 2)</span>
                   <span class="meta">solo indicazioni</span>
                 </div>
                 <div id="cornerList"></div>
@@ -703,7 +740,7 @@
 
               <div class="miniCard">
                 <div class="miniTop">
-                  <span>🟨 Cartellini “attenzione” (max 2)</span>
+                  <span>🟨 Cartellini consigliati (max 2)</span>
                   <span class="meta">solo indicazioni</span>
                 </div>
                 <div id="cardsList"></div>
@@ -711,7 +748,7 @@
             </div>
 
             <div class="wheelNote" style="margin-top:10px">
-              Nota: sono stime “ritmo / pressione / agonismo” (senza quote). La quota reale va sempre verificata al banco.
+              Nota: sono stime basate su segnali (ritmo / equilibrio / fisicità). La quota reale va sempre verificata al banco.
             </div>
           </div>
 
@@ -788,7 +825,7 @@
   <div class="modalBack" id="wheelBack">
     <div class="modal">
       <div class="modalHead">
-        <strong>🎡 Ruota della Fortuna (consigli & missioni)</strong>
+        <strong>🎡 Ruota della Fortuna (consigli “da banco”)</strong>
         <button id="closeWheel">Chiudi ✕</button>
       </div>
       <div class="modalBody">
@@ -796,27 +833,36 @@
           <div class="wheelBox">
             <canvas id="wheel" width="520" height="520"></canvas>
             <button class="wheelBtn" id="spinBtn">Gira la ruota</button>
+
+            <div class="miniStatRow">
+              <div class="miniStat">Streak: <strong id="streak">0</strong> giorni</div>
+              <div class="miniStat">Oggi: <strong id="todaySpin">NO</strong></div>
+              <div class="miniStat">Ultimo: <strong id="lastSpin">—</strong></div>
+            </div>
+
             <div class="wheelNote" id="wheelLimit">
               1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.
             </div>
           </div>
+
           <div class="wheelBox">
             <div class="miniTop" style="margin-bottom:10px;">
               <span>🎁 Risultato</span>
               <span class="meta" id="wheelWhen">—</span>
             </div>
-            <div class="miniText" id="wheelResultText" style="font-size:13px; color:rgba(255,255,255,.88); font-weight:900">
-              Gira la ruota: ti dà un consiglio “da banco” semplice e utile.
+
+            <div class="miniText" id="wheelResultText" style="font-size:13px; color:rgba(255,255,255,.90); font-weight:950">
+              Gira la ruota: ti dà una regola semplice per non esagerare e scegliere meglio.
             </div>
 
             <div class="badges" style="margin-top:12px">
               <span class="badge ok" id="wheelMission">Missione: Max 2 selezioni</span>
-              <span class="badge warn" id="wheelRule">Regola: stop se perdi</span>
-              <span class="badge" id="wheelFun">Bonus: quiz 1 domanda</span>
+              <span class="badge warn" id="wheelRule">Regola: quota al banco</span>
+              <span class="badge" id="wheelBonus">Bonus: quiz 1 domanda</span>
             </div>
 
             <div class="wheelNote" style="margin-top:12px">
-              Tip serio: se la quota al banco è diversa, <strong>riduci selezioni</strong> o fai singola.
+              Tip serio: se la quota al banco è diversa, <strong>riduci selezioni</strong> o passa.
             </div>
           </div>
         </div>
@@ -884,6 +930,8 @@
       return `${y}-${m}-${dd} ${hh}:${mm}`;
     }
 
+    function safeTxt(s){ return (s || "").replaceAll("<","&lt;").replaceAll(">","&gt;"); }
+
     // Stable hash
     function hash32(str){
       let h = 2166136261;
@@ -900,7 +948,10 @@
     }
 
     // =========================
-    // "NUOVI EVENTI" veri: rotazione
+    // ROTAZIONE "NUOVI EVENTI"
+    // - anche se hai sempre gli stessi match, ruotiamo:
+    //   1) ordine
+    //   2) 2 mercati evidenziati su 3 (varia ad ogni click)
     // =========================
     function slotOffsetKey(slot){ return `slot_offset_${slot}_${todayKey()}`; }
     function getSlotOffset(slot){ return parseInt(localStorage.getItem(slotOffsetKey(slot)) || "0", 10) || 0; }
@@ -922,29 +973,42 @@
       return out;
     }
 
-    // prende 5 eventi dalla fascia, ma ruota l'elenco in modo deterministico
+    // seleziona max 5 (per fascia); se fascia vuota -> usa tutto
     function pick5ForSlot(allEvents, slot){
       const poolRaw = allEvents.filter(e => (e.slot || "").toLowerCase() === slot);
       const pool = uniqueBy(poolRaw.length ? poolRaw : allEvents, e => e.uniq || `${e.home}|${e.away}|${e.start_iso||e.start||""}`);
-
       const k = 5;
       if (pool.length <= k) return pool.slice(0,k);
 
       const offset = getSlotOffset(slot);
       const seed = hash32(`${todayKey()}|${slot}|${offset}|VINC001`);
 
-      // "shuffle" stabile: ordina per hash
       const sorted = [...pool].sort((a,b)=>{
-        const ha = hash32((a.uniq||"")+seed);
-        const hb = hash32((b.uniq||"")+seed);
+        const ha = hash32((a.uniq||"") + "|" + seed);
+        const hb = hash32((b.uniq||"") + "|" + seed);
         return ha - hb;
       });
 
       return sorted.slice(0,k);
     }
 
+    // per rendere i 5 match "nuovi", ruotiamo anche i mercati evidenziati
+    // esempio: ad ogni reload scegliamo 2 mercati su 3 per ogni match (ordine variabile)
+    function pickMarketOrder(ev){
+      const mk = (ev.markets || []).map(m=>m.label);
+      if (!mk.length) return ["Over 2.5","1X","Goal/NoGoal Sì"];
+      // genera rotazione stabile per match + offset
+      const off = getSlotOffset(CURRENT_SLOT);
+      const seed = hash32((ev.uniq||"") + "|" + off + "|" + todayKey());
+      const a = seed % mk.length;
+      const b = (a + 1 + (seed % 2)) % mk.length;
+      const c = mk.find(x => x !== mk[a] && x !== mk[b]) || mk[(b+1)%mk.length];
+      // primi 2 = "in evidenza", terzo resta ma in coda (per non confondere)
+      return [mk[a], mk[b], c];
+    }
+
     // =========================
-    // FETCH
+    // FETCH (events.json)
     // =========================
     async function fetchEvents(force=false){
       const url = force ? `events.json?v=${Date.now()}` : "events.json";
@@ -954,7 +1018,7 @@
     }
 
     // =========================
-    // STEMMI (se non arrivano da events.json)
+    // CREST
     // =========================
     function crestHTML(url, name){
       if (url){
@@ -964,23 +1028,16 @@
       return `<span class="crest"><span class="ini">${(name||'?').slice(0,2).toUpperCase()}</span></span>`;
     }
 
-    function safeTxt(s){ return (s || "").replaceAll("<","&lt;").replaceAll(">","&gt;"); }
-
     // =========================
-    // MOTIVAZIONI più credibili e chiare
+    // TAG -> PRIORITÀ UI
     // =========================
-    function favoriteSide(ev){
-      const key = `${ev.league_code||""}|${ev.home||""}|${ev.away||""}|${ev.start_iso||ev.start||""}`;
-      const x = hash32(key) % 1000;
-      const fav = (x < 520) ? "home" : "away";
-      const gap = Math.abs(500 - x); // 0..500
-      return { fav, gap };
-    }
-
-    function riskFromGap(gap){
-      if (gap > 260) return "Bassa";
-      if (gap > 140) return "Media";
-      return "Alta";
+    function tagToRisk(tag){
+      // nel tuo JSON: Bassa / Media / Alta
+      const t = (tag||"").toLowerCase();
+      if (t.includes("bassa")) return "Bassa";
+      if (t.includes("media")) return "Media";
+      if (t.includes("alta")) return "Alta";
+      return "Media";
     }
     function prioClass(r){
       if (r === "Bassa") return "ok";
@@ -993,87 +1050,73 @@
       return "Rischiosa";
     }
 
-    function scenarioLine(ev){
-      const { fav, gap } = favoriteSide(ev);
-      const r = riskFromGap(gap);
+    // =========================
+    // MOTIVAZIONI REALISTICHE (dal tuo context)
+    // =========================
+    function ctxLine(ev){
+      const c = ev.context || {};
+      const s = c.signals || {};
+      const eq = s.equilibrio || "Equilibrio";
+      const ritmo = s.ritmo || "—";
+      const fis = s.fisicita || "—";
 
-      if (r === "Bassa"){
-        return fav === "home"
-          ? "Scenario: favorita in casa → ritmo spesso alto e pressione continua."
-          : "Scenario: favorita ospite → può comandare, ma attenzione all’effetto trasferta.";
+      // “da banco” corto e sensato
+      const diff = typeof c.diff === "number" ? c.diff : null;
+      let fav = "Match equilibrato";
+      if (diff !== null){
+        if (diff <= -0.45) fav = "Favorita ospite (gap evidente)";
+        else if (diff <= -0.15) fav = "Ospite leggermente avanti";
+        else if (diff >= 0.45) fav = "Favorita casa (gap evidente)";
+        else if (diff >= 0.15) fav = "Casa leggermente avanti";
+        else fav = "Molto equilibrata";
       }
-      if (r === "Media") return "Scenario: equilibrio medio → partita aperta ma con fasi di controllo.";
-      return "Scenario: match molto equilibrato → può cambiare con un episodio (prudenza).";
+
+      return {
+        r1: `🎯 ${fav} • ${eq}`,
+        r2: `📌 Segnali: ritmo ${ritmo} • fisicità ${fis}.`,
+        r3: `💬 Regola: 2 selezioni max, quota sempre al banco.`
+      };
     }
 
-    function bankTip(ev){
-      const { gap } = favoriteSide(ev);
-      if (gap > 260) return "Tip banco: se quota scende troppo, evita la multipla lunga.";
-      if (gap > 140) return "Tip banco: meglio 1–2 selezioni, quota reale fa la differenza.";
-      return "Tip banco: se quota non convince, passa o gioca singola leggera.";
-    }
+    function bankTipFromCtx(ev){
+      const c = ev.context || {};
+      const tempo = typeof c.tempo === "number" ? c.tempo : null;
+      const goals = typeof c.goals === "number" ? c.goals : null;
 
-    function overReason(ev){
-      const { gap } = favoriteSide(ev);
-      if (gap > 260) return "Over 2.5: può arrivare per pressione costante (controlla lineup).";
-      if (gap > 140) return "Over 2.5: buono se ritmo non è troppo tattico (verifica quota).";
-      return "Over 2.5: più variabile in match equilibrato → stake basso.";
-    }
-
-    function oneXReason(ev){
-      const { fav, gap } = favoriteSide(ev);
-      if (gap > 260){
-        if (fav === "home") return "1X: copertura sensata se la casa è favorita (quota decide).";
-        return "1X: attenzione: se l’ospite è molto favorito, non è “tranquillo”.";
-      }
-      if (gap > 140) return "1X: ok come copertura solo con quota reale conveniente.";
-      return "1X: match equilibrato → non è sicuro, valuta alternative o singola.";
-    }
-
-    function ggReason(ev){
-      const { gap } = favoriteSide(ev);
-      if (gap > 260) return "Goal Sì: utile solo se anche lo sfavorito crea (occhio assenze).";
-      if (gap > 140) return "Goal Sì: interessante se entrambe attaccano (quota al banco).";
-      return "Goal Sì: spesso ci sta, ma varia tanto → non forzare multipla.";
-    }
-
-    function prioForMarket(ev, kind){
-      const { fav, gap } = favoriteSide(ev);
-      let r = riskFromGap(gap);
-      if (kind === "1x" && fav === "away" && gap > 260) r = "Alta";
-      if (kind === "gg" && gap > 260) r = "Media";
-      return r;
+      // testo breve “realistico”
+      if (tempo !== null && tempo < 0.30) return "Tip banco: ritmo basso → evita multipla lunga, meglio singola.";
+      if (goals !== null && goals > 0.80) return "Tip banco: partita da occasioni → ok Over/GG solo con quota giusta.";
+      return "Tip banco: se quota non convince, riduci selezioni o passa.";
     }
 
     // =========================
-    // CORNER & CARTELLINI "puliti" (NO duplicati)
+    // CORNER & CARTELLINI (usa reason_corner/reason_cards del tuo JSON)
     // =========================
-    function cornerCardSignals(ev, type){
-      const k = `${type}|${ev.league_code||""}|${ev.home||""}|${ev.away||""}|${ev.start_iso||ev.start||""}`;
-      const x = hash32(k) % 100;
-      const pressure = (x > 70) ? "Alta" : (x > 40) ? "Media" : "Media";
-      const balance = (x > 65) ? "Equilibrio" : (x > 35) ? "Leggera favorita" : "Favorita netta";
-      const physical = (x > 60) ? "Alto" : "Medio";
+    function scoreForCorner(ev){
+      const c = ev.context || {};
+      const v = typeof c.corners === "number" ? c.corners : 0.5;
+      return v;
+    }
+    function scoreForCards(ev){
+      const c = ev.context || {};
+      const v = typeof c.cards === "number" ? c.cards : 0.5;
+      return v;
+    }
 
-      const reasonCorner =
-        (balance === "Favorita netta")
-          ? "Corner: probabili se la favorita spinge a lungo (pressione costante)."
-          : (balance === "Equilibrio")
-            ? "Corner: possibili su ribaltamenti e fasce, valuta quota reale."
-            : "Corner: discreti, ma non forzare multipla lunga.";
-
-      const reasonCards =
-        (physical === "Alto")
-          ? "Cartellini: gara fisica → contatti/proteste possibili (quota al banco)."
-          : "Cartellini: possibili, ma dipende molto dall’arbitro (prudenza).";
-
-      return { pressure, balance, physical, reason: type==="corner"?reasonCorner:reasonCards };
+    function levelFromScore(x){
+      if (x >= 0.70) return { label:"Alta", cls:"ok" };
+      if (x >= 0.55) return { label:"Media", cls:"warn" };
+      return { label:"Bassa", cls:"bad" };
     }
 
     function renderMiniPick(ev, type){
-      const sig = cornerCardSignals(ev, type);
-      const lvl = (type==="corner") ? sig.pressure : sig.physical;
-      const lvlClass = (lvl==="Alta" || lvl==="Alto") ? "ok" : "warn";
+      const c = ev.context || {};
+      const s = c.signals || {};
+      const lev = (type==="corner") ? levelFromScore(scoreForCorner(ev)) : levelFromScore(scoreForCards(ev));
+
+      const reason = (type==="corner")
+        ? (c.reason_corner || "Corner: indicazione generica. Verifica quota al banco.")
+        : (c.reason_cards || "Cartellini: indicazione generica. Verifica quota al banco.");
 
       return `
         <div class="miniItem">
@@ -1082,11 +1125,11 @@
             <span class="meta">${safeTxt(ev.start || "")}</span>
           </div>
           <div class="badges">
-            <span class="badge ${lvlClass}">${type==="corner" ? "Pressione" : "Agonismo"}: ${lvl}</span>
-            <span class="badge">${sig.balance}</span>
-            <span class="badge ok">Verifica al banco</span>
+            <span class="badge ${lev.cls}">${type==="corner" ? "Corner" : "Cartellini"}: ${lev.label}</span>
+            <span class="badge">Ritmo: ${safeTxt(s.ritmo || "—")}</span>
+            <span class="badge">Fisicità: ${safeTxt(s.fisicita || "—")}</span>
           </div>
-          <div class="miniText">${safeTxt(sig.reason)}</div>
+          <div class="miniText">${safeTxt(reason)}</div>
           <div class="miniCTA">
             <button class="btnMini" onclick="verifyBank()">Verifica al banco</button>
           </div>
@@ -1102,21 +1145,38 @@
         return;
       }
 
-      // scegli 2 + 2 ma garantendo match diversi
-      const seed = hash32(`${todayKey()}|${CURRENT_SLOT}|corner`);
-      const sorted = [...list].sort((a,b)=> (hash32((a.uniq||"")+seed) - hash32((b.uniq||"")+seed)));
+      // ordina per "probabilità" (score) e poi ruota con offset così cambia col tasto
+      const off = getSlotOffset(CURRENT_SLOT);
+      const seed = hash32(`${todayKey()}|${CURRENT_SLOT}|special|${off}`);
 
-      const corners = sorted.slice(0,2);
-      const used = new Set(corners.map(x => x.uniq || `${x.home}|${x.away}|${x.start||""}`));
-      const cards = sorted.filter(x => !used.has(x.uniq || `${x.home}|${x.away}|${x.start||""}`)).slice(0,2);
+      const forCorner = [...list].sort((a,b)=>{
+        const da = scoreForCorner(b) - scoreForCorner(a);
+        if (Math.abs(da) > 1e-9) return da;
+        return (hash32((a.uniq||"")+seed) - hash32((b.uniq||"")+seed));
+      });
+
+      const corners = forCorner.slice(0,2);
+      const used = new Set(corners.map(x => x.uniq));
+
+      const forCards = [...list].filter(x => !used.has(x.uniq)).sort((a,b)=>{
+        const da = scoreForCards(b) - scoreForCards(a);
+        if (Math.abs(da) > 1e-9) return da;
+        return (hash32((a.uniq||"")+seed) - hash32((b.uniq||"")+seed));
+      });
+
+      const cards = forCards.slice(0,2);
 
       $("cornerList").innerHTML = corners.map(ev=>renderMiniPick(ev,"corner")).join("");
       $("cardsList").innerHTML = cards.map(ev=>renderMiniPick(ev,"cards")).join("");
     }
 
     // =========================
-    // EVENTS RENDER
+    // EVENTS RENDER (usa mercati del tuo JSON)
     // =========================
+    function marketByLabel(ev, label){
+      return (ev.markets || []).find(m => (m.label||"") === label) || null;
+    }
+
     function renderEvents(picked){
       const area = $("eventsArea");
       if (!picked.length){
@@ -1132,11 +1192,21 @@
         const homeC = crestHTML(ev.home_crest, ev.home);
         const awayC = crestHTML(ev.away_crest, ev.away);
 
-        const markets = [
-          { label:"Over 2.5", kind:"over", txt: overReason(ev), pr: prioForMarket(ev,"over") },
-          { label:"1X", kind:"1x", txt: oneXReason(ev), pr: prioForMarket(ev,"1x") },
-          { label:"Goal/NoGoal Sì", kind:"gg", txt: ggReason(ev), pr: prioForMarket(ev,"gg") }
+        const lines = ctxLine(ev);
+        const tip = bankTipFromCtx(ev);
+
+        // ordine mercati “rotante”
+        const labels = pickMarketOrder(ev);
+        const mk = labels.map(l => marketByLabel(ev, l)).filter(Boolean);
+
+        // se manca qualcosa, fallback semplice
+        const fallback = (ev.markets && ev.markets.length) ? ev.markets : [
+          { label:"Over 2.5", tag:"Media", note:"Indicativo. Verifica al banco." },
+          { label:"1X", tag:"Media", note:"Indicativo. Verifica al banco." },
+          { label:"Goal/NoGoal Sì", tag:"Media", note:"Indicativo. Verifica al banco." }
         ];
+
+        const markets = (mk.length ? mk : fallback).slice(0,3);
 
         return `
           <div class="eventCard">
@@ -1163,21 +1233,24 @@
 
             <div class="eventBody">
               <div class="reasonBox">
-                <div class="r1">🎯 ${safeTxt(scenarioLine(ev))}</div>
-                <div class="r2">📌 ${safeTxt(bankTip(ev))}</div>
-                <div class="r3">💬 “Poche scelte, più controllo.”</div>
+                <div class="r1">${safeTxt(lines.r1)}</div>
+                <div class="r2">${safeTxt(lines.r2)} ${safeTxt(tip)}</div>
+                <div class="r3">${safeTxt(lines.r3)}</div>
               </div>
 
               <div class="markets">
                 ${markets.map(m=>{
-                  const cls = prioClass(m.pr);
+                  const risk = tagToRisk(m.tag);
+                  const cls = prioClass(risk);
+                  const note = (m.note || "Indicativo: verifica al banco.").trim();
+
                   return `
                     <div class="mkt">
                       <div class="mktTop">
                         <div class="mktName">${safeTxt(m.label)}</div>
-                        <span class="prio ${cls}">${prioLabel(m.pr)}</span>
+                        <span class="prio ${cls}">${prioLabel(risk)}</span>
                       </div>
-                      <div class="mktText">${safeTxt(m.txt)}</div>
+                      <div class="mktText">${safeTxt(note)}</div>
                       <div class="mktActions">
                         <button class="btn2" onclick="verifyBank()">Verifica al banco</button>
                         <button class="btn2 add" onclick="addPick('${encodeURIComponent(ev.uniq||"")}', '${encodeURIComponent(ev.home||"")}', '${encodeURIComponent(ev.away||"")}', '${encodeURIComponent(m.label)}')">+ Aggiungi</button>
@@ -1311,21 +1384,21 @@
         $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
         $("centerId").textContent = "VINC001";
 
+        // il tuo JSON usa "events"
         const all = (data.events || []).map(e=>{
           if (!e.uniq) e.uniq = `${e.home||""}|${e.away||""}|${e.start_iso||e.start||""}`;
           return e;
         });
 
-        // Corner & Cartellini: usa TUTTO il pool della fascia (non solo i 5 mostrati), così è più vario
+        // pool per fascia (se vuoto -> tutto)
         const slotPool = all.filter(e => (e.slot || "").toLowerCase() === CURRENT_SLOT);
         renderCornerArea(slotPool.length ? slotPool : all);
 
-        // Eventi mostrati: 5 ruotabili
+        // 5 eventi
         const picked = pick5ForSlot(all, CURRENT_SLOT);
         renderEvents(picked);
 
       }catch(e){
-        console.error(e);
         $("eventsArea").innerHTML = `<div class="hint">Errore: events.json non disponibile o vuoto. Controlla GitHub Actions.</div>`;
         $("updatedAt").textContent = "—";
         $("slotLabel").textContent = "—";
@@ -1339,7 +1412,7 @@
       $("slotLabel").textContent = slotLabel(CURRENT_SLOT);
       localStorage.setItem("slot", CURRENT_SLOT);
       setSlotInURL(CURRENT_SLOT);
-      // reset offset per fascia? NO: lasciamo la rotazione (più “nuovi”)
+
       if (EVENTS_DATA && EVENTS_DATA.events){
         const all = EVENTS_DATA.events.map(e=>{
           if (!e.uniq) e.uniq = `${e.home||""}|${e.away||""}|${e.start_iso||e.start||""}`;
@@ -1352,9 +1425,9 @@
       toast(`Fascia: ${slotLabel(CURRENT_SLOT)}`);
     });
 
-    // "Nuovi eventi" adesso cambia davvero 5 eventi (offset)
     $("btnReload").addEventListener("click", async ()=>{
       bumpSlotOffset(CURRENT_SLOT);
+
       if (EVENTS_DATA && EVENTS_DATA.events){
         const all = EVENTS_DATA.events.map(e=>{
           if (!e.uniq) e.uniq = `${e.home||""}|${e.away||""}|${e.start_iso||e.start||""}`;
@@ -1366,24 +1439,28 @@
         toast("✅ Nuovi eventi caricati");
         return;
       }
-      // fallback: refetch
+
       toast("Aggiorno eventi…");
       await loadAll(true);
       toast("✅ Eventi aggiornati");
     });
 
     // =========================
-    // WHEEL
+    // WHEEL (MIGLIORATA, MA SOBRIA)
     // =========================
-    const wheelItems = [
-      "Missione: 2 selezioni max",
-      "Regola: stop dopo 1 perdita",
-      "Gioca singola (quota buona)",
-      "1 match + 1 copertura (non 3 match)",
-      "Solo 1 mercato per match",
-      "Controlla lineup (ultima ora)",
-      "Riduci stake del 20%",
-      "Fai 1 quiz e stop"
+    const WHEEL_TIPS = [
+      { t:"Missione: 2 selezioni max", m:"Oggi gioca 2 scelte massimo. Più controllo, meno caos.", b:"Bonus: fai 1 quiz" },
+      { t:"Regola: stop dopo 1 perdita", m:"Se va male una, stop. Domani si riparte più lucidi.", b:"Bonus: focus 20s" },
+      { t:"Solo 1 mercato per match", m:"Non mettere 2 mercati sullo stesso match. Scegli il migliore.", b:"Bonus: riduci stake" },
+      { t:"Gioca singola (quota giusta)", m:"Se la quota al banco non è quella che ti aspettavi: fai singola leggera.", b:"Bonus: 1 sola partita" },
+      { t:"Quota al banco decide", m:"Se la quota cambia: riduci selezioni o passa. La quota comanda.", b:"Bonus: niente inseguimento" },
+      { t:"Stake -20% oggi", m:"Oggi riduci lo stake. Ti aiuta a restare in controllo.", b:"Bonus: 2 selezioni max" },
+      { t:"Scegli il match più chiaro", m:"Tra i 5 eventi, scegline 1 “pulito”. Non forzare multipla.", b:"Bonus: 1 quiz" },
+      { t:"Evita multipla lunga", m:"Se ti viene voglia di 4–5 scelte: taglia e resta su 2–3.", b:"Bonus: focus 20s" },
+      { t:"Controlla assenze/turnover", m:"Se noti turnover: evita mercati goal. Meglio coperture prudenti.", b:"Bonus: singola" },
+      { t:"Non rincorrere la quota", m:"Quota bassa? Non aggiungere eventi a caso. Meglio passare.", b:"Bonus: stop se perdi" },
+      { t:"2 scelte, stessa lega", m:"Per non confonderti: 2 scelte ma nella stessa competizione.", b:"Bonus: 1 quiz" },
+      { t:"Fai pausa 60 secondi", m:"Prima di stampare: 60s di pausa. Se non ti convince, non giocare.", b:"Bonus: stake -20%" }
     ];
 
     const wheelBack = $("wheelBack");
@@ -1403,12 +1480,17 @@
     let wheelAngle = 0;
     let spinning = false;
 
+    function palette(i){
+      const p = ["#ff9800","#7c4dff","#2dd4bf","#ff5a7a","#ffc93a","#60a5fa","#34d399","#a78bfa","#fb7185","#fbbf24","#22c55e","#818cf8"];
+      return p[i % p.length];
+    }
+
     function drawWheel(){
       const W = wheelCanvas.width, H = wheelCanvas.height;
       ctx.clearRect(0,0,W,H);
       const cx = W/2, cy = H/2;
       const r = Math.min(cx,cy) - 10;
-      const n = wheelItems.length;
+      const n = WHEEL_TIPS.length;
       const slice = (Math.PI*2)/n;
 
       ctx.beginPath();
@@ -1428,8 +1510,7 @@
         ctx.arc(cx,cy,r,a0,a1);
         ctx.closePath();
 
-        const palette = ["#ff9800","#7c4dff","#2dd4bf","#ff5a7a","#ffc93a","#60a5fa","#34d399","#a78bfa"];
-        ctx.fillStyle = palette[i % palette.length];
+        ctx.fillStyle = palette(i);
         ctx.globalAlpha = 0.85;
         ctx.fill();
         ctx.globalAlpha = 1;
@@ -1439,13 +1520,13 @@
         ctx.rotate(a0 + slice/2);
         ctx.textAlign = "right";
         ctx.fillStyle = "rgba(10,14,38,.92)";
-        ctx.font = "900 16px " + getComputedStyle(document.documentElement).getPropertyValue('--font');
-        ctx.fillText(wheelItems[i], r - 16, 6);
+        ctx.font = "900 15px " + getComputedStyle(document.documentElement).getPropertyValue('--font');
+        ctx.fillText(WHEEL_TIPS[i].t, r - 16, 6);
         ctx.restore();
       }
 
       ctx.beginPath();
-      ctx.arc(cx,cy,46,0,Math.PI*2);
+      ctx.arc(cx,cy,52,0,Math.PI*2);
       ctx.fillStyle = "rgba(10,14,38,.90)";
       ctx.fill();
       ctx.strokeStyle = "rgba(255,255,255,.12)";
@@ -1454,7 +1535,7 @@
       ctx.fillStyle = "rgba(255,255,255,.92)";
       ctx.font = "1000 16px " + getComputedStyle(document.documentElement).getPropertyValue('--font');
       ctx.textAlign = "center";
-      ctx.fillText("RUOTA", cx, cy+6);
+      ctx.fillText("VINCITÙ", cx, cy+6);
 
       ctx.beginPath();
       ctx.moveTo(cx, 10);
@@ -1467,37 +1548,45 @@
       ctx.stroke();
     }
 
+    function streakKey(){ return "wheel_streak"; }
+    function lastDayKey(){ return "wheel_last_day"; }
+    function lastResKey(){ return "wheel_last_res"; }
+
+    function computeStreak(){
+      const today = todayKey();
+      const last = localStorage.getItem(lastDayKey());
+      let streak = parseInt(localStorage.getItem(streakKey()) || "0", 10) || 0;
+
+      // se ultimo giorno != ieri e != oggi, non resetto a 0 (non è un gioco), ma lo lascio com'è.
+      // lo aggiorno solo quando gira oggi.
+      $("streak").textContent = String(streak);
+      $("todaySpin").textContent = (localStorage.getItem("wheel_spin_"+today) === "1") ? "SÌ" : "NO";
+      $("lastSpin").textContent = localStorage.getItem(lastResKey()) || "—";
+    }
+
     function updateWheelUI(){
-      const key = "wheel_spin_" + todayKey();
-      const done = localStorage.getItem(key) === "1";
+      const today = todayKey();
+      const done = localStorage.getItem("wheel_spin_" + today) === "1";
       $("spinBtn").disabled = done || spinning;
       $("wheelLimit").innerHTML = done
         ? "✅ Giro già fatto oggi su questo PC. Torna domani."
         : "1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.";
       $("wheelWhen").textContent = formatClock(nowRome());
+      computeStreak();
     }
 
-    function wheelSetResult(text){
-      $("wheelResultText").textContent = "🔍 " + text + ". Verifica sempre quota al banco prima di inserire.";
-
-      $("wheelMission").textContent = "Missione: " + (
-        text.includes("2 selezioni") ? "Max 2 selezioni" :
-        text.includes("singola") ? "Gioca 1 singola" :
-        text.includes("1 mercato") ? "1 mercato per match" :
-        "Max 3 selezioni"
-      );
-
-      $("wheelRule").textContent = "Regola: " + (
-        text.includes("stop") ? "Stop dopo perdita" :
-        text.includes("stake") ? "Stake ridotto" :
-        "Quota al banco decide"
-      );
-
-      $("wheelFun").textContent = "Bonus: " + (text.includes("quiz") ? "Fai 1 quiz" : "Respira 10s");
+    function wheelSetResult(obj){
+      $("wheelResultText").textContent = "🔍 " + obj.m + " (quota sempre al banco).";
+      $("wheelMission").textContent = "Missione: " + (obj.t.includes("2 selezioni") ? "Max 2 selezioni" : "Max 3 selezioni");
+      $("wheelRule").textContent = "Regola: " + (obj.t.includes("stop") ? "Stop dopo perdita" : "Quota al banco decide");
+      $("wheelBonus").textContent = obj.b || "Bonus: quiz 1 domanda";
+      localStorage.setItem(lastResKey(), obj.t.replace("Missione: ",""));
+      computeStreak();
     }
 
     $("spinBtn").addEventListener("click", ()=>{
-      const key = "wheel_spin_" + todayKey();
+      const today = todayKey();
+      const key = "wheel_spin_" + today;
       if (localStorage.getItem(key) === "1"){
         toast("Hai già girato oggi ✅");
         updateWheelUI();
@@ -1508,8 +1597,11 @@
       spinning = true;
       updateWheelUI();
 
-      const targetIndex = hash32(todayKey() + "|VINC001") % wheelItems.length;
-      const n = wheelItems.length;
+      // scelta "random stabile" (non manipolabile dal refresh continuo)
+      const seed = hash32(today + "|VINC001|" + navigator.userAgent);
+      const targetIndex = seed % WHEEL_TIPS.length;
+
+      const n = WHEEL_TIPS.length;
       const slice = (Math.PI*2)/n;
 
       const targetAngle = (Math.PI*2) * 6 + (Math.PI*2) - (targetIndex*slice + slice/2);
@@ -1528,9 +1620,16 @@
           requestAnimationFrame(anim);
         } else {
           spinning = false;
+
           localStorage.setItem(key, "1");
+
+          // streak: incrementa se oggi gira
+          const streak = parseInt(localStorage.getItem(streakKey()) || "0", 10) || 0;
+          localStorage.setItem(streakKey(), String(streak + 1));
+          localStorage.setItem(lastDayKey(), today);
+
           updateWheelUI();
-          wheelSetResult(wheelItems[targetIndex]);
+          wheelSetResult(WHEEL_TIPS[targetIndex]);
           toast("🎡 Ruota: risultato aggiornato");
         }
       }
@@ -1561,11 +1660,11 @@
         no: "Meglio: riduci selezioni o passa."
       },
       {
-        q: "Contro una super favorita ospite, il 1X è…",
-        opts: ["Sempre tranquillissimo", "Spesso rischioso (serve quota buona)", "Garantito"],
+        q: "Per non confondersi in sala, è meglio…",
+        opts: ["Cambiare 20 mercati", "Scegliere 1–2 mercati chiari", "Fare 4 schedine insieme"],
         a: 1,
-        ok: "Perfetto ✅ serve prudenza e quota buona.",
-        no: "No: spesso è rischioso e dipende dalla quota."
+        ok: "Perfetto ✅ pochi mercati chiari = più controllo.",
+        no: "No: meglio 1–2 mercati chiari."
       }
     ];
 
@@ -1576,7 +1675,7 @@
     function closeQuiz(){ quizBack.style.display = "none"; }
 
     function renderQuiz(){
-      const i = hash32(todayKey() + "|quiz") % quizPool.length;
+      const i = hash32(todayKey() + "|quiz|VINC001") % quizPool.length;
       const q = quizPool[i];
       $("qTitle").textContent = q.q;
       $("qMsg").textContent = "Rispondi: è solo intrattenimento 😊";
@@ -1602,6 +1701,8 @@
 
       loadAll(false);
       renderTicket();
+      updateWheelUI();
+      drawWheel();
     })();
   </script>
 </body>
