@@ -4,1070 +4,1784 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vincitù • IA Portal</title>
-
   <style>
     :root{
-      --bg1:#2a0f5e;
-      --bg2:#071a3a;
-
-      --panel: rgba(18, 20, 44, .70);
-      --panel2: rgba(26, 30, 62, .72);
-      --stroke: rgba(255,255,255,.12);
-
+      --bg1:#351b68;
+      --bg2:#0b1a3f;
+      --panel: rgba(20, 23, 44, .72);
+      --panel2: rgba(30, 33, 62, .72);
+      --stroke: rgba(255,255,255,.10);
       --text: rgba(255,255,255,.92);
       --muted: rgba(255,255,255,.68);
-      --muted2: rgba(255,255,255,.48);
 
-      --accent:#ff9800;
-      --accent2:#ffb84a;
+      --orange:#ff9800;
+      --orange2:#ffb03a;
 
       --ok:#2ecc71;
       --warn:#f1c40f;
-      --bad:#ff5b5b;
+      --bad:#ff4d5c;
 
+      --shadow: 0 12px 50px rgba(0,0,0,.38);
       --r: 18px;
-      --shadow: 0 16px 60px rgba(0,0,0,.38);
-      --shadow2: 0 12px 30px rgba(255,152,0,.12);
+      --r2: 14px;
 
-      --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --chip: rgba(255,255,255,.10);
+      --chip2: rgba(255,255,255,.08);
+
+      --maxw: 1180px;
+      --gap: 14px;
+
+      --salaScale: 1;
     }
 
-    *{ box-sizing:border-box; }
+    *{box-sizing:border-box}
     body{
       margin:0;
-      font-family:var(--font);
-      color:var(--text);
       min-height:100vh;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
       background:
-        radial-gradient(1200px 700px at 15% 10%, rgba(140,70,255,.40), transparent 60%),
-        radial-gradient(900px 700px at 85% 0%, rgba(0,180,255,.20), transparent 55%),
-        radial-gradient(1000px 900px at 60% 85%, rgba(255,152,0,.10), transparent 55%),
-        linear-gradient(120deg, var(--bg1), var(--bg2));
+        radial-gradient(1200px 700px at 20% 10%, rgba(140,70,255,.35), transparent 60%),
+        radial-gradient(900px 600px at 90% 40%, rgba(0,170,255,.20), transparent 55%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
+      display:flex;
+      justify-content:center;
+      padding:28px 14px;
     }
 
-    .wrap{ max-width: 1280px; margin: 26px auto; padding: 0 18px 40px; }
-    .shell{
-      border:1px solid var(--stroke);
+    a{color:inherit}
+    .wrap{
+      width:min(var(--maxw), 100%);
       border-radius: 28px;
-      background: rgba(12, 14, 32, .48);
-      backdrop-filter: blur(10px);
+      background: rgba(10, 12, 25, .35);
+      border: 1px solid rgba(255,255,255,.08);
       box-shadow: var(--shadow);
       overflow:hidden;
+      backdrop-filter: blur(10px);
     }
 
+    /* HEADER */
     .topbar{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      padding: 18px 18px 14px;
-      border-bottom:1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.07), transparent);
-      gap: 14px;
+      gap:12px;
+      padding:16px 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      min-width: 280px;
+    }
+    .vbadge{
+      width:34px;height:34px;border-radius:10px;
+      background: #e62020;
+      display:grid;place-items:center;
+      box-shadow: 0 10px 30px rgba(230,32,32,.22);
+      border:1px solid rgba(255,255,255,.20);
+      font-weight:900;
+      letter-spacing:.5px;
+    }
+    .btxt{
+      display:flex; flex-direction:column; line-height:1.1;
+    }
+    .btitle{
+      font-weight:900;
+      font-size: 16px;
+      letter-spacing:.2px;
+    }
+    .bsub{
+      font-size:12px; color:var(--muted);
+      margin-top:4px;
     }
 
-    .brand{ display:flex; gap:12px; align-items:center; min-width: 280px; }
-
-    /* Logo rosso come prima */
-    .vlogo{
-      width:36px; height:36px;
-      border-radius: 12px;
-      background: linear-gradient(180deg, #ff3b3b, #b70000);
-      display:grid; place-items:center;
-      box-shadow: 0 14px 28px rgba(255,0,0,.18);
-      border: 1px solid rgba(255,255,255,.18);
-      position: relative;
-      overflow:hidden;
-      flex: 0 0 auto;
-    }
-    .vlogo::after{
-      content:"";
-      position:absolute; inset:-40%;
-      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), transparent 55%);
-      transform: rotate(25deg);
-      opacity:.35;
-    }
-    .vlogo span{ font-weight: 950; letter-spacing:.6px; z-index:1; }
-
-    .brand h1{ margin:0; font-size: 16px; line-height: 1.1; font-weight: 900; letter-spacing:.2px; }
-    .brand p{ margin:4px 0 0; font-size: 12px; color: var(--muted); }
-
-    .meta{
-      display:flex; gap:10px; align-items:center; justify-content:flex-end;
-      flex-wrap:wrap;
+    .status{
+      display:flex; flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+      justify-content:center;
+      flex:1;
     }
     .pill{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:7px 10px;
-      border:1px solid rgba(255,255,255,.12);
+      display:inline-flex; gap:8px;
+      align-items:center;
+      padding:8px 10px;
       border-radius: 999px;
-      background: rgba(255,255,255,.04);
-      color: var(--muted);
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color:rgba(255,255,255,.86);
       font-size:12px;
       white-space:nowrap;
     }
-    .dot{ width:8px;height:8px;border-radius:50%; background: var(--ok); box-shadow: 0 0 0 4px rgba(46, 204, 113, .12); }
-
-    .content{
-      display:grid;
-      grid-template-columns: 1.20fr .80fr;
-      gap: 16px;
-      padding: 16px;
+    .dot{
+      width:8px;height:8px;border-radius:99px;
+      background: var(--ok);
+      box-shadow:0 0 0 3px rgba(46,204,113,.15);
     }
-    @media (max-width: 1060px){ .content{ grid-template-columns: 1fr; } .brand{ min-width: unset; } }
 
-    .panel{
-      border:1px solid rgba(255,255,255,.12);
-      border-radius: 22px;
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      overflow:hidden;
+    .actions{
+      display:flex; gap:10px; align-items:center;
     }
-    .panelHead{
-      display:flex; align-items:center; justify-content:space-between;
-      padding: 12px 12px 10px;
-      border-bottom:1px solid rgba(255,255,255,.10);
-    }
-    .panelHead .title{ display:flex; align-items:center; gap:10px; font-weight:900; font-size: 13px; letter-spacing:.2px; }
 
-    .btns{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
     .btn{
       cursor:pointer;
-      border:1px solid rgba(255,255,255,.14);
-      color: var(--text);
-      background: rgba(255,255,255,.05);
-      padding: 9px 12px;
-      border-radius: 14px;
-      font-weight: 850;
-      font-size: 12px;
+      user-select:none;
+      border:none;
+      border-radius: 12px;
+      padding:10px 12px;
+      font-weight:800;
+      font-size:12px;
+      letter-spacing:.2px;
+      background: rgba(255,255,255,.06);
+      color:rgba(255,255,255,.9);
+      border:1px solid rgba(255,255,255,.10);
+      transition:.18s;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.09)}
+    .btn.orange{
+      background: linear-gradient(180deg, var(--orange2), var(--orange));
+      color:#1a1207;
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .btn.orange:hover{filter:brightness(1.03)}
+    .btn.small{padding:8px 10px; border-radius: 12px}
+
+    /* MAIN GRID */
+    .main{
+      display:grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap:var(--gap);
+      padding: 16px 18px 18px;
+      align-items:start;
+    }
+
+    .panel{
+      background: var(--panel);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 10px 35px rgba(0,0,0,.25);
+    }
+    .panel h3{
+      margin:0;
+      font-size:13px;
+      letter-spacing:.2px;
+      font-weight:900;
+      display:flex; align-items:center; gap:8px;
+    }
+    .muted{color:var(--muted)}
+    .row{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:10px; flex-wrap:wrap;
+    }
+    .row.tight{gap:8px}
+    .chips{display:flex; gap:8px; flex-wrap:wrap; align-items:center}
+    .chip{
       display:inline-flex;
       align-items:center;
-      gap:8px;
-      transition: transform .08s ease, background .15s ease, box-shadow .15s ease;
-      user-select:none;
-    }
-    .btn:hover{ background: rgba(255,255,255,.09); }
-    .btn:active{ transform: scale(.98); }
-    .btn.primary{
-      background: linear-gradient(180deg, var(--accent2), var(--accent));
-      border-color: rgba(0,0,0,.12);
-      color: #171717;
-      box-shadow: var(--shadow2);
-    }
-
-    .subline{
-      padding: 10px 12px;
-      color: var(--muted);
-      font-size: 12px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-    .subtag{
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-      padding: 6px 10px;
+      gap:6px;
+      padding:6px 9px;
       border-radius: 999px;
-      font-size: 12px;
+      background: var(--chip);
+      border:1px solid rgba(255,255,255,.08);
+      font-size:11px;
+      color:rgba(255,255,255,.85);
+      white-space:nowrap;
     }
+    .chip.dim{background: var(--chip2); color:rgba(255,255,255,.78)}
+    .chip.ok{background: rgba(46,204,113,.12); border-color: rgba(46,204,113,.18)}
+    .chip.warn{background: rgba(241,196,15,.12); border-color: rgba(241,196,15,.20)}
+    .chip.bad{background: rgba(255,77,92,.12); border-color: rgba(255,77,92,.20)}
 
-    .topIa{
-      margin: 10px 12px 0;
-      border: 1px solid rgba(255,255,255,.10);
-      border-radius: 20px;
-      background: rgba(0,0,0,.14);
+    /* sections */
+    .section{
+      margin-top:12px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.06);
       overflow:hidden;
     }
-    .topIaHead{
-      padding: 10px 12px;
-      border-bottom:1px solid rgba(255,255,255,.08);
-      display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;
+    .sectionHead{
+      padding:10px 12px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      background: rgba(255,255,255,.03);
+      border-bottom:1px solid rgba(255,255,255,.06);
     }
-    .topIaHead b{ letter-spacing:.2px; }
-    .topIaList{
+    .sectionHead .title{
+      font-weight:900;
+      font-size:12px;
+      display:flex; gap:8px; align-items:center;
+    }
+    .sectionBody{
       padding: 10px 12px 12px;
+    }
+
+    /* SCORE LISTS (C) */
+    .hotGrid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+    }
+    .hotBox{
+      border-radius: 16px;
+      padding:10px;
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+    }
+    .hotBox h4{
+      margin:0 0 8px 0;
+      font-size:11px;
+      color:rgba(255,255,255,.88);
+      letter-spacing:.2px;
+      font-weight:900;
+      display:flex; align-items:center; gap:6px;
+    }
+    .hotItem{
+      display:flex; gap:8px;
+      align-items:center;
+      padding:7px 0;
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .hotItem:last-child{border-bottom:none}
+    .tinyCrest{
+      width:18px;height:18px;border-radius:6px;
+      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.10);
+      object-fit:contain;
+    }
+    .hotText{
+      display:flex; flex-direction:column; line-height:1.1;
+      min-width:0;
+    }
+    .hotText .m1{
+      font-size:11px; font-weight:900;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+    .hotText .m2{
+      font-size:10px; color:var(--muted);
+      margin-top:2px;
+    }
+    .scoreTag{
+      margin-left:auto;
+      font-size:11px;
+      font-weight:900;
+      padding:6px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.10);
+      min-width:54px;
+      text-align:center;
+    }
+
+    /* Angolo Speciale */
+    .specialGrid{
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-    @media (max-width: 720px){ .topIaList{ grid-template-columns: 1fr; } }
-    .topPick{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      border-radius: 16px;
-      padding: 10px 10px;
-      display:flex; flex-direction:column; gap:6px;
-    }
-    .topPick .row1{ display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; font-weight: 900; font-size: 12px; }
-    .topPick .row2{ color: var(--muted); font-size: 12px; line-height: 1.32; }
-
-    .events{
-      padding: 10px 12px 14px;
-      display:flex;
-      flex-direction:column;
-      gap: 12px;
-    }
-
-    .eventCard{
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(10, 12, 26, .35);
-      border-radius: 20px;
-      overflow:hidden;
-    }
-    .eventTop{
-      display:flex; align-items:center; justify-content:space-between;
-      padding: 12px 12px 10px;
-      border-bottom:1px solid rgba(255,255,255,.08);
-      gap: 10px;
-    }
-    .leagueLine{ display:flex; align-items:center; gap:10px; font-size: 12px; color: var(--muted); flex-wrap:wrap; }
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding: 6px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    .teams{
-      display:flex; align-items:center; gap:10px;
-      padding: 10px 12px 12px;
-      flex-wrap:wrap;
-    }
-    .crest{
-      width:26px;height:26px;border-radius:50%;
-      background: rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.12);
-      overflow:hidden;
-      display:grid; place-items:center;
-      flex:0 0 auto;
-    }
-    .crest img{ width:100%; height:100%; object-fit:contain; }
-    .teams .name{ font-weight: 950; letter-spacing:.2px; font-size: 14px; }
-    .teams .vs{ color: var(--muted2); font-weight: 900; margin: 0 6px; }
-
-    .iaBox{ padding: 0 12px 12px; display:grid; grid-template-columns: 1fr; gap: 10px; }
-    .iaRow{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      border-radius: 16px;
-      padding: 10px 10px;
-      display:flex;
-      flex-direction:column;
-      gap: 8px;
-    }
-    .iaHeader{
-      display:flex; align-items:center; justify-content:space-between;
-      gap: 10px;
-      flex-wrap:wrap;
-    }
-    .iaHeader .h{ font-weight: 950; font-size: 13px; }
-    .chips{ display:flex; gap: 8px; flex-wrap:wrap; align-items:center; }
-    .chip{
-      font-size: 11px;
-      padding: 5px 9px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      color: var(--muted);
-      white-space: nowrap;
-    }
-    .chip.ok{ border-color: rgba(46,204,113,.35); color: rgba(220,255,235,.92); background: rgba(46,204,113,.10); }
-    .chip.warn{ border-color: rgba(241,196,15,.35); color: rgba(255,250,210,.95); background: rgba(241,196,15,.10); }
-
-    .iaText{ font-size: 12px; line-height: 1.35; color: var(--muted); }
-
-    .iaList{ display:grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 2px; }
-    @media (max-width: 620px){ .iaList{ grid-template-columns: 1fr; } }
-
-    .pick{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.12);
-      border-radius: 16px;
-      padding: 9px 10px;
-      display:flex;
-      flex-direction:column;
-      gap: 6px;
-    }
-    .pickTop{
-      display:flex; align-items:center; justify-content:space-between;
       gap:10px;
     }
-    .pickTop .pname{ font-weight: 950; font-size: 12px; }
-    .pickTop .ptag{
-      font-size: 11px;
-      padding: 4px 8px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      color: var(--muted);
-      white-space: nowrap;
-    }
-    .ptag.ok{ border-color: rgba(46,204,113,.35); background: rgba(46,204,113,.10); color: rgba(220,255,235,.92); }
-    .ptag.warn{ border-color: rgba(241,196,15,.35); background: rgba(241,196,15,.10); color: rgba(255,250,210,.92); }
-    .ptag.bad{ border-color: rgba(255,91,91,.35); background: rgba(255,91,91,.10); color: rgba(255,225,225,.95); }
-
-    .pickNote{ font-size: 12px; color: var(--muted); line-height: 1.32; }
-    .footNote{ padding: 0 12px 12px; font-size: 11px; color: var(--muted2); }
-
-    .side{ padding: 12px; display:flex; flex-direction:column; gap: 12px; }
-    .box{
-      border:1px solid rgba(255,255,255,.12);
-      border-radius: 20px;
+    .specialCard{
+      border-radius: 16px;
       background: rgba(255,255,255,.03);
-      padding: 12px;
+      border:1px solid rgba(255,255,255,.06);
+      padding:10px;
+      min-height: 120px;
     }
-    .box h3{ margin: 0 0 8px 0; font-size: 13px; font-weight: 950; }
-    .box p{ margin: 0; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    .specialCard .head{
+      display:flex; align-items:center; justify-content:space-between; gap:8px;
+      margin-bottom:8px;
+    }
+    .specialCard .head .k{
+      font-size:11px; font-weight:900;
+      display:flex; align-items:center; gap:6px;
+    }
+    .specialCard .mini{
+      font-size:10px; color:var(--muted);
+      margin-top:6px;
+      line-height:1.35;
+    }
+    .specialList{
+      display:flex; flex-direction:column; gap:8px;
+    }
+    .specialItem{
+      padding:10px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.06);
+      cursor:pointer;
+      transition:.14s;
+    }
+    .specialItem:hover{transform: translateY(-1px); background: rgba(0,0,0,.22)}
+    .sTop{
+      display:flex; align-items:center; justify-content:space-between; gap:8px;
+    }
+    .sMatch{
+      display:flex; align-items:center; gap:8px; min-width:0;
+      font-weight:900; font-size:11px;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+    .sBadges{display:flex; gap:6px; flex-wrap:wrap}
+    .sNote{font-size:10px; color:var(--muted); margin-top:6px; line-height:1.35}
+
+    /* EVENTS LIST */
+    .events{
+      display:flex; flex-direction:column;
+      gap:12px;
+      margin-top: 12px;
+    }
+    .eventCard{
+      border-radius: 18px;
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      padding: 12px;
+      cursor:pointer;
+      transition:.14s;
+      position:relative;
+      overflow:hidden;
+    }
+    .eventCard:hover{transform: translateY(-1px); background: rgba(255,255,255,.04)}
+    .eventMeta{
+      display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap;
+      margin-bottom:8px;
+    }
+    .leaguePill{
+      font-size:10px;
+      padding:6px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color:rgba(255,255,255,.85);
+      display:inline-flex; gap:6px; align-items:center;
+    }
+    .leaguePill img{
+      width:14px;height:14px;border-radius:6px;
+      object-fit:contain;
+      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .evtNo{
+      font-size:10px;
+      padding:6px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color:rgba(255,255,255,.78);
+    }
+
+    .matchLine{
+      display:flex; align-items:center; gap:10px;
+      font-weight:900;
+      font-size:13px;
+      margin-bottom:10px;
+      min-width:0;
+    }
+    .crest{
+      width:18px;height:18px;border-radius:6px;
+      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.10);
+      object-fit:contain;
+    }
+    .vs{color:rgba(255,255,255,.75); font-weight:900}
+    .timeTag{
+      margin-left:auto;
+      font-size:11px;
+      padding:6px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color:rgba(255,255,255,.84);
+      white-space:nowrap;
+    }
+
+    .iaBox{
+      border-radius: 16px;
+      background: rgba(0,0,0,.16);
+      border:1px solid rgba(255,255,255,.06);
+      padding: 10px;
+      margin-bottom:10px;
+    }
+    .iaTitle{
+      font-weight:900;
+      font-size:11px;
+      display:flex; align-items:center; gap:8px;
+      margin-bottom:6px;
+    }
+    .iaLine{
+      font-size:10px;
+      color:rgba(255,255,255,.80);
+      line-height:1.35;
+    }
+
+    .marketGrid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+    }
+    .mCard{
+      border-radius: 14px;
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      padding:10px;
+      min-height: 98px;
+    }
+    .mTop{
+      display:flex; align-items:center; justify-content:space-between; gap:8px;
+      margin-bottom:6px;
+    }
+    .mName{
+      font-weight:900;
+      font-size:11px;
+    }
+    .mBadge{
+      font-size:10px;
+      padding:5px 8px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.10);
+      color:rgba(255,255,255,.88);
+      white-space:nowrap;
+    }
+    .mBadge.ok{background: rgba(46,204,113,.12); border-color: rgba(46,204,113,.18)}
+    .mBadge.warn{background: rgba(241,196,15,.12); border-color: rgba(241,196,15,.20)}
+    .mBadge.bad{background: rgba(255,77,92,.12); border-color: rgba(255,77,92,.20)}
+    .mNote{
+      font-size:10px;
+      color:var(--muted);
+      line-height:1.35;
+    }
+
+    /* RIGHT PANEL (schedina) */
+    .schedinaTop{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      margin-bottom:10px;
+    }
+    .formGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    .field{
+      border-radius: 14px;
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      padding:10px;
+    }
+    .field label{
+      font-size:10px;
+      color:rgba(255,255,255,.72);
+      display:block;
+      margin-bottom:6px;
+      font-weight:800;
+      letter-spacing:.2px;
+    }
+    .field input, .field select{
+      width:100%;
+      border:none;
+      outline:none;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.08);
+      color:rgba(255,255,255,.92);
+      padding:10px 10px;
+      border-radius: 12px;
+      font-weight:800;
+    }
 
     .bigBtn{
       width:100%;
-      border: none;
-      cursor:pointer;
-      border-radius: 16px;
-      padding: 12px 12px;
-      font-weight: 950;
-      background: linear-gradient(180deg, var(--accent2), var(--accent));
-      color:#151515;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      box-shadow: var(--shadow2);
-    }
-    .bigBtn:active{ transform: scale(.99); }
-    .miniRow{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 10px; }
-    .miniPill{
+      margin-top:10px;
+      padding:13px 14px;
+      border-radius: 14px;
+      background: linear-gradient(180deg, var(--orange2), var(--orange));
       border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 12px;
-      color: var(--muted);
+      color:#1a1207;
+      font-weight:900;
+      cursor:pointer;
+      transition:.14s;
+      display:flex; gap:10px; align-items:center; justify-content:center;
+    }
+    .bigBtn:hover{filter:brightness(1.03); transform: translateY(-1px)}
+    .helpLine{
+      margin-top:10px;
+      font-size:11px;
+      color:rgba(255,255,255,.72);
+      line-height:1.35;
     }
 
-    /* Modal ruota */
-    .modalBack{
-      position:fixed; inset:0;
-      background: rgba(0,0,0,.55);
+    /* MODALS */
+    .modal{
+      position:fixed;
+      inset:0;
       display:none;
       align-items:center;
       justify-content:center;
-      padding: 18px;
-      z-index: 1000;
+      padding:18px;
+      background: rgba(0,0,0,.55);
+      backdrop-filter: blur(8px);
+      z-index: 999;
     }
-    .modal{
-      width:min(900px, 100%);
-      border:1px solid rgba(255,255,255,.14);
-      border-radius: 24px;
-      background: rgba(14,16,34,.92);
-      box-shadow: var(--shadow);
+    .modal.show{display:flex}
+    .modalBox{
+      width:min(980px, 100%);
+      border-radius: 22px;
+      background: rgba(10, 12, 25, .92);
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow: 0 18px 80px rgba(0,0,0,.55);
       overflow:hidden;
     }
     .modalHead{
-      display:flex; align-items:center; justify-content:space-between;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
       padding: 12px 14px;
-      border-bottom: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      border-bottom:1px solid rgba(255,255,255,.08);
     }
-    .modalHead .t{ font-weight: 950; font-size: 13px; display:flex; gap:8px; align-items:center; }
+    .modalHead .t{
+      font-weight:900;
+      font-size:13px;
+      display:flex; align-items:center; gap:8px;
+    }
     .close{
       cursor:pointer;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.04);
-      color: var(--text);
+      border:none;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      color:rgba(255,255,255,.92);
+      padding:8px 10px;
       border-radius: 12px;
-      padding: 8px 10px;
-      font-weight: 950;
-      font-size: 12px;
+      font-weight:900;
     }
     .modalBody{
+      padding: 14px;
+    }
+
+    /* PRO PANEL (B) */
+    .proGrid{
+      display:grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap:12px;
+      align-items:start;
+    }
+    .proTop{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+    .proMatch{
+      display:flex; gap:10px; align-items:center; min-width:0;
+      font-size:14px; font-weight:900;
+    }
+    .proMeta{
+      font-size:11px; color:var(--muted);
+    }
+    .bars{
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      padding: 12px;
+      gap:10px;
+      margin-top:10px;
     }
-    @media (max-width: 880px){ .modalBody{ grid-template-columns: 1fr; } }
-    canvas{ width:100%; height:auto; }
-    .result{
-      border:1px solid rgba(255,255,255,.10);
+    .bar{
+      border-radius: 14px;
       background: rgba(255,255,255,.03);
-      border-radius: 18px;
-      padding: 12px;
-      min-height: 180px;
+      border:1px solid rgba(255,255,255,.06);
+      padding:10px;
     }
-    .result h4{ margin: 0 0 8px 0; font-size: 13px; font-weight: 950; }
-    .result .msg{ font-size: 14px; font-weight: 950; margin-top: 6px; }
-    .result .sub{ margin-top: 8px; font-size: 12px; color: var(--muted); line-height: 1.35; }
+    .bar .k{
+      font-size:10px; color:rgba(255,255,255,.76);
+      font-weight:900; letter-spacing:.2px;
+      display:flex; justify-content:space-between; align-items:center;
+      margin-bottom:8px;
+    }
+    .track{
+      height:10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.08);
+      overflow:hidden;
+    }
+    .fill{
+      height:100%;
+      width:50%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(255,176,58,.95), rgba(255,152,0,.95));
+    }
+    .proNotes{
+      margin-top:10px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.16);
+      border:1px solid rgba(255,255,255,.06);
+      padding:10px;
+      font-size:11px;
+      color:rgba(255,255,255,.80);
+      line-height:1.4;
+    }
+
+    /* WHEEL */
+    .wheelGrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:12px;
+      align-items:center;
+    }
+    canvas{max-width:100%; display:block}
+    .wheelBox{
+      border-radius: 18px;
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      padding:12px;
+    }
+    .wheelBtn{
+      width:100%;
+      margin-top:10px;
+      padding:12px 12px;
+      border-radius: 14px;
+      border:none;
+      background: linear-gradient(180deg, var(--orange2), var(--orange));
+      color:#1a1207;
+      font-weight:900;
+      cursor:pointer;
+      transition:.14s;
+    }
+    .wheelBtn:hover{filter:brightness(1.03); transform: translateY(-1px)}
+    .wheelResult{
+      border-radius: 14px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.06);
+      padding:10px;
+      min-height: 88px;
+      font-size:12px;
+      line-height:1.35;
+      color:rgba(255,255,255,.88);
+    }
+
+    /* QUIZ */
+    .qBox{
+      border-radius: 18px;
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.06);
+      padding:12px;
+    }
+    .qTitle{
+      font-weight:900;
+      font-size:13px;
+      margin:0 0 10px 0;
+    }
+    .qItem{
+      border-radius: 14px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.06);
+      padding:10px;
+      margin-bottom:10px;
+    }
+    .qQ{
+      font-size:12px; font-weight:900;
+      margin-bottom:8px;
+    }
+    .qAns{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:8px;
+    }
+    .qAns button{
+      border:none;
+      cursor:pointer;
+      padding:10px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+      color:rgba(255,255,255,.9);
+      font-weight:800;
+      font-size:12px;
+      transition:.12s;
+    }
+    .qAns button:hover{transform: translateY(-1px); background: rgba(255,255,255,.09)}
+    .qFooter{
+      display:flex; justify-content:space-between; gap:10px; align-items:center; flex-wrap:wrap;
+      font-size:12px; color:rgba(255,255,255,.80);
+      margin-top:10px;
+    }
+
+    /* SALA MODE */
+    body.sala{
+      padding: 10px;
+      --maxw: 1400px;
+      --salaScale: 1.06;
+    }
+    body.sala .wrap{
+      border-radius: 26px;
+    }
+    body.sala .bsub{display:none}
+    body.sala .hotGrid{grid-template-columns: 1fr 1fr 1fr}
+    body.sala .helpLine{font-size:12px}
+    body.sala .eventCard{padding: 14px}
+    body.sala .main{gap: 16px}
+    body.sala .btn{font-size:12px}
+    body.sala .marketGrid{grid-template-columns: repeat(3, 1fr)}
+    body.sala .salaHint{
+      display:block;
+    }
+
+    .salaHint{
+      display:none;
+      padding:10px 12px;
+      margin-top:10px;
+      border-radius: 14px;
+      background: rgba(46,204,113,.10);
+      border:1px solid rgba(46,204,113,.18);
+      color:rgba(255,255,255,.92);
+      font-weight:900;
+      font-size:12px;
+    }
+
+    @media (max-width: 980px){
+      .main{grid-template-columns: 1fr}
+      .hotGrid{grid-template-columns: 1fr}
+      .specialGrid{grid-template-columns: 1fr}
+      .marketGrid{grid-template-columns: 1fr}
+      .proGrid{grid-template-columns: 1fr}
+      .wheelGrid{grid-template-columns: 1fr}
+    }
   </style>
 </head>
 
 <body>
   <div class="wrap">
-    <div class="shell">
-      <div class="topbar">
-        <div class="brand">
-          <div class="vlogo" title="Vincitù"><span>V</span></div>
-          <div>
-            <h1>Vincitù • IA Portal</h1>
-            <p>QR da sala • schede partita IA • quote sempre al banco</p>
-          </div>
-        </div>
-
-        <div class="meta">
-          <span class="pill"><span class="dot"></span> Centro: <b id="center">VINC001</b></span>
-          <span class="pill">Agg: <b id="updated">—</b></span>
-          <span class="pill">Fascia: <b id="slotLabel">Sera</b></span>
+    <div class="topbar">
+      <div class="brand">
+        <div class="vbadge">V</div>
+        <div class="btxt">
+          <div class="btitle">Vincitù • IA Portal</div>
+          <div class="bsub">Eventi reali • quote non mostrate: si inseriscono al banco</div>
         </div>
       </div>
 
-      <div class="content">
-        <!-- LEFT -->
-        <div class="panel">
-          <div class="panelHead">
-            <div class="title">⚡ Pronostici IA (scheda partita)</div>
-            <div class="btns">
-              <div class="btn primary" id="btnNew">🟠 Nuovi match</div>
-              <div class="btn" id="btnSlot">🕒 Cambia fascia</div>
-              <div class="btn" id="btnWheel">🎡 Ruota</div>
-            </div>
+      <div class="status">
+        <div class="pill"><span class="dot"></span>Centro: <b id="centerName">VINC001</b></div>
+        <div class="pill">Agg: <b id="updatedAt">—</b></div>
+        <div class="pill">Fascia: <b id="slotName">—</b></div>
+        <div class="pill">Vetrina: <b id="vetrinaInfo">3/3</b></div>
+      </div>
+
+      <div class="actions">
+        <button class="btn orange" id="btnSala">🚀 Modalità Sala</button>
+        <button class="btn small" id="btnWheel">🎡 Ruota</button>
+        <button class="btn small" id="btnQuiz">❓ Quiz</button>
+      </div>
+    </div>
+
+    <div class="main">
+      <!-- LEFT -->
+      <div class="panel">
+        <div class="row tight">
+          <div class="chips">
+            <span class="chip">⚡ Eventi (IA)</span>
+            <span class="chip dim">Quote: <b>verifica al banco</b></span>
+            <span class="chip dim" id="modeChip">Modalità cliente: <b>chiara & veloce</b></span>
+            <span class="chip dim" id="missionChip">Missione: <b>Max 2 selezioni</b></span>
           </div>
 
-          <div class="subline">
-            <span class="subtag">Quote: <b>verifica al banco</b></span>
-            <span class="subtag" id="counts">Match mostrati: —</span>
-            <span class="subtag">Rotazione: <b>3 per fascia</b> (9 al giorno)</span>
-          </div>
-
-          <div class="topIa">
-            <div class="topIaHead">
-              <div>⭐ <b>TOP IA del momento</b> (6 idee “da sala”)</div>
-              <div class="badge">Solo indicazioni • quota al banco</div>
-            </div>
-            <div class="topIaList" id="topIaList"></div>
-          </div>
-
-          <div class="events" id="events"></div>
-
-          <div class="footNote">
-            Supporto informativo / intrattenimento. Nessuna garanzia. Gioca responsabilmente.
+          <div class="chips">
+            <button class="btn orange" id="btnNew">Nuovi eventi</button>
+            <button class="btn" id="btnSlot">Cambia fascia</button>
+            <button class="btn" id="btnStart20">Start 20s</button>
           </div>
         </div>
 
-        <!-- RIGHT -->
-        <div class="panel">
-          <div class="panelHead">
-            <div class="title">🧾 Modalità cliente</div>
-            <div class="badge">QR Sala</div>
+        <div class="salaHint" id="salaHint">🚀 Modalità Sala attiva: rotazione automatica + fullscreen consigliato (F11).</div>
+
+        <!-- (C) HOT RANKINGS -->
+        <div class="section" id="hotSection">
+          <div class="sectionHead">
+            <div class="title">⭐ Caldo del giorno (Top 3 per mercato)</div>
+            <div class="chips">
+              <span class="chip dim">Solo indicatori: niente quote</span>
+            </div>
           </div>
-
-          <div class="side">
-            <div class="box">
-              <h3>🎯 Regole d’oro (stile sala PRO)</h3>
-              <p>
-                1) Scegli <b>1–2 selezioni</b> massimo.<br>
-                2) Leggi la scheda IA (ritmo/fisicità).<br>
-                3) <b>Quota sempre al banco</b>: se non convince, passa.
-              </p>
-              <div class="miniRow">
-                <span class="miniPill">✅ 1–2 scelte max</span>
-                <span class="miniPill">✅ niente inseguimento</span>
-                <span class="miniPill">✅ quota al banco</span>
+          <div class="sectionBody">
+            <div class="hotGrid">
+              <div class="hotBox" id="hotGoals">
+                <h4>⚽ Goal (BTTS/Over) • Top 3</h4>
+                <div class="muted" style="font-size:11px">Caricamento…</div>
               </div>
-            </div>
-
-            <div class="box">
-              <h3>🔥 Suggerimento IA rapido</h3>
-              <p id="tipLine">Carico i dati…</p>
-            </div>
-
-            <button class="bigBtn" onclick="window.print()">
-              🖨️ Stampa scheda
-            </button>
-
-            <div class="box">
-              <h3>🎡 Ruota disciplina (divertimento utile)</h3>
-              <p>
-                Non dà pronostici: dà <b>consigli di gestione</b>.
-                Serve per far scena in sala e tenere controllo.
-              </p>
-              <div class="miniRow">
-                <span class="miniPill">1 giro al giorno</span>
-                <span class="miniPill">consigli pratici</span>
+              <div class="hotBox" id="hotCorners">
+                <h4>🚩 Corner • Top 3</h4>
+                <div class="muted" style="font-size:11px">Caricamento…</div>
+              </div>
+              <div class="hotBox" id="hotCards">
+                <h4>🟨 Cartellini • Top 3</h4>
+                <div class="muted" style="font-size:11px">Caricamento…</div>
               </div>
             </div>
           </div>
         </div>
-      </div><!-- content -->
-    </div><!-- shell -->
-  </div><!-- wrap -->
 
-  <!-- Modal RUOTA -->
-  <div class="modalBack" id="modalBack">
-    <div class="modal">
-      <div class="modalHead">
-        <div class="t">🎡 Ruota (disciplina & controllo)</div>
-        <button class="close" id="btnClose">Chiudi ✕</button>
-      </div>
-      <div class="modalBody">
-        <div class="box" style="margin:0;">
-          <canvas id="wheel" width="520" height="520"></canvas>
-          <div class="btn primary" id="btnSpin" style="margin-top:10px; justify-content:center;">Gira la ruota</div>
-          <div style="margin-top:8px; font-size:11px; color:var(--muted2);">
-            1 giro al giorno per questo PC. Solo intrattenimento, gioco responsabile.
+        <!-- ANGLO SPECIALE -->
+        <div class="section" id="specialSection">
+          <div class="sectionHead">
+            <div class="title">📌 Angolo Speciale: Corner & Cartellini (rapido)</div>
+            <div class="chips">
+              <span class="chip dim">Max 2 + 2 (pulito)</span>
+            </div>
+          </div>
+          <div class="sectionBody">
+            <div class="specialGrid">
+              <div class="specialCard">
+                <div class="head">
+                  <div class="k">🚩 Corner consigliati</div>
+                  <span class="chip dim">Top 2</span>
+                </div>
+                <div class="specialList" id="cornerList"></div>
+              </div>
+
+              <div class="specialCard">
+                <div class="head">
+                  <div class="k">🟨 Cartellini consigliati</div>
+                  <span class="chip dim">Top 2</span>
+                </div>
+                <div class="specialList" id="cardList"></div>
+              </div>
+            </div>
+            <div class="muted" style="font-size:11px; margin-top:10px; line-height:1.35;">
+              Nota: suggerimenti basati su segnali (goal/corner/cartellini/ritmo/fisicità). <b>Quota sempre al banco</b>. Nessuna garanzia.
+            </div>
           </div>
         </div>
-        <div class="result">
-          <h4>🎁 Risultato</h4>
-          <div class="msg" id="wheelMsg">Premi “Gira la ruota”.</div>
-          <div class="sub" id="wheelSub">Consiglio breve, concreto, applicabile subito.</div>
+
+        <!-- EVENTS -->
+        <div class="events" id="events"></div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="panel">
+        <div class="schedinaTop">
+          <h3>🧾 Schedina</h3>
+          <span class="chip dim">Quote reali solo al banco</span>
+        </div>
+
+        <div class="formGrid">
+          <div class="field">
+            <label>Stake (€)</label>
+            <input id="stake" type="number" min="1" step="1" value="5" />
+          </div>
+          <div class="field">
+            <label>Tipo</label>
+            <select id="tipo">
+              <option value="multipla">Multipla (tutte)</option>
+              <option value="singola">Singola (consigliata)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Selezioni</label>
+            <input id="selCount" type="text" value="0" disabled />
+          </div>
+          <div class="field">
+            <label>Quota totale (facoltativo)</label>
+            <input id="quotaTot" type="text" placeholder="es. 3.25 (inserisci dal banco)" />
+          </div>
+        </div>
+
+        <button class="bigBtn" id="btnPrint">🖨️ Stampa schedina</button>
+
+        <div class="helpLine">
+          Suggerimento: <b>2–3 selezioni massimo</b> per mantenere controllo.  
+          Se un’indicazione non ti convince al banco, <b>passa</b> o riduci.
         </div>
       </div>
     </div>
   </div>
 
-  <script>
-    // =========================
-    // STATE
-    // =========================
-    const SLOT_ORDER = ["mattina","pomeriggio","sera"];
-    const PER_SLOT = 3; // <<< 3 per fascia
-    let CURRENT_SLOT = "sera";
-    let EVENTS_DATA = null;
+  <!-- (B) PRO MODAL -->
+  <div class="modal" id="proModal" aria-hidden="true">
+    <div class="modalBox">
+      <div class="modalHead">
+        <div class="t">📊 Scheda Partita PRO</div>
+        <button class="close" onclick="closePro()">Chiudi ✕</button>
+      </div>
+      <div class="modalBody">
+        <div class="proGrid">
+          <div class="panel" style="padding:12px; border-radius:18px;">
+            <div class="proTop">
+              <div class="proMatch" id="proTitle">—</div>
+              <div class="proMeta" id="proMeta">—</div>
+              <div class="chips" id="proChips"></div>
+            </div>
 
-    const slotNice = (s) => s === "mattina" ? "Mattina" : s === "pomeriggio" ? "Pomeriggio" : "Sera";
-    const clamp01 = (x) => Math.max(0, Math.min(1, x ?? 0.5));
+            <div class="bars" id="proBars"></div>
 
-    function scoreTag(x){
-      if (x >= 0.72) return {t:"Più stabile", c:"ok"};
-      if (x >= 0.52) return {t:"Prudenza", c:"warn"};
-      return {t:"Rischiosa", c:"bad"};
-    }
-
-    function crestImg(url){
-      if(!url) return "";
-      return `<img src="${url}" alt="" loading="lazy" referrerpolicy="no-referrer" />`;
-    }
-
-    // =========================
-    // ROTAZIONE (non random confuso)
-    // - ogni click "Nuovi match" fa avanzare di 3
-    // - stabile per fascia e giorno
-    // =========================
-    function todayKey(){
-      return new Date().toISOString().slice(0,10);
-    }
-    function rotKey(slot){
-      return `rot_${slot}_${todayKey()}`;
-    }
-    function getRot(slot){
-      const v = Number(localStorage.getItem(rotKey(slot)) || "0");
-      return Number.isFinite(v) ? v : 0;
-    }
-    function incRot(slot){
-      const v = getRot(slot) + 1;
-      localStorage.setItem(rotKey(slot), String(v));
-      return v;
-    }
-
-    // =========================
-    // PARTIZIONE EVENTI SE MATTINA/POMERIGGIO SONO VUOTE
-    // (così hai sempre 3+3+3 anche se l'API mette solo "sera")
-    // =========================
-    function hashStr(s){
-      let h = 2166136261;
-      for(let i=0;i<s.length;i++){
-        h ^= s.charCodeAt(i);
-        h = Math.imul(h, 16777619);
-      }
-      return (h >>> 0);
-    }
-
-    function partitionSlot(e){
-      // assegna ogni evento ad una fascia in modo stabile (giorno + uniq)
-      const base = (e.uniq || `${e.id}|${e.start_iso}|${e.home}|${e.away}`) + "|" + todayKey();
-      const h = hashStr(base) % 3;
-      return SLOT_ORDER[h];
-    }
-
-    function getSlotPool(all, slot){
-      const allE = (all.events||[]);
-      const native = allE.filter(e => (e.slot||"") === slot);
-      if(native.length >= PER_SLOT) return native;
-
-      // fallback: ripartisce tutto il pool
-      const pool = allE.filter(e => partitionSlot(e) === slot);
-      // se ancora vuoto, usa tutto
-      return pool.length ? pool : allE;
-    }
-
-    function sliceRotate(pool, slot){
-      const n = pool.length;
-      if(!n) return [];
-      const r = getRot(slot);
-      const start = (r * PER_SLOT) % n;
-      const out = [];
-      for(let i=0;i<PER_SLOT;i++){
-        out.push(pool[(start + i) % n]);
-      }
-      // evita duplicati se n < PER_SLOT
-      const uniq = [];
-      const seen = new Set();
-      for(const e of out){
-        const k = e.uniq || String(e.id);
-        if(!seen.has(k)){
-          seen.add(k);
-          uniq.push(e);
-        }
-      }
-      return uniq;
-    }
-
-    // =========================
-    // SERIETÀ: niente favorita sparata
-    // =========================
-    function balanceLabel(diff){
-      if (diff === null || diff === undefined || Number.isNaN(diff)) {
-        return { label:"Equilibrio da verificare", level:"warn" };
-      }
-      const a = Math.abs(diff);
-      if (a < 0.20) return { label:"Match equilibrato", level:"warn" };
-      if (a < 0.45) return { label:"Leggero sbilanciamento", level:"warn" };
-      return { label:"Match sbilanciato", level:"ok" };
-    }
-
-    function profileFromContext(ctx){
-      const tempo = ctx?.signals?.ritmo || (ctx?.tempo>=0.62 ? "Alta" : ctx?.tempo>=0.42 ? "Media" : "Bassa");
-      const fis = ctx?.signals?.fisicita || (ctx?.grit>=0.62 ? "Alta" : ctx?.grit>=0.38 ? "Media" : "Bassa");
-
-      const tempoLine =
-        tempo === "Alta" ? "Ritmo alto: più pressione → più corner/occasioni possibili."
-        : tempo === "Media" ? "Ritmo medio: gara a fasi, può cambiare inerzia."
-        : "Ritmo basso: partita tattica, mercati Over più delicati.";
-
-      const fisLine =
-        fis === "Alta" ? "Fisicità alta: più contrasti → attenzione cartellini."
-        : fis === "Media" ? "Fisicità media: cartellini possibili ma non automatici."
-        : "Fisicità bassa: cartellini meno leggibili senza info arbitro.";
-
-      return { tempo, fis, tempoLine, fisLine };
-    }
-
-    function buildPicks(e){
-      const ctx = e.context || {};
-      const tempo = clamp01(ctx.tempo);
-      const goals = clamp01(ctx.goals);
-      const grit  = clamp01(ctx.grit);
-      const corners = clamp01(ctx.corners);
-      const cards = clamp01(ctx.cards);
-
-      const sOver = scoreTag(goals*0.60 + tempo*0.40);
-      const sGoal = scoreTag(goals*0.75 + tempo*0.25);
-      const sCorner = scoreTag(corners*0.75 + tempo*0.25);
-      const sCards  = scoreTag(cards*0.65 + grit*0.35);
-
-      const bal = balanceLabel(ctx.diff);
-      const sDC = bal.label === "Match sbilanciato" ? scoreTag(0.72) : scoreTag(0.55);
-
-      const picks = [
-        {
-          name: "Over 2.5 (valuta quota)",
-          tag: sOver,
-          note: tempo < 0.40
-            ? "Ritmo basso: Over 2.5 più rischioso. Se quota non premia, meglio evitare."
-            : "Se il ritmo regge e le occasioni arrivano, Over 2.5 può avere senso. Quota decisiva."
-        },
-        {
-          name: "Goal (Entrambe segnano)",
-          tag: sGoal,
-          note: goals >= 0.70
-            ? "Segnale goal alto: utile se entrambe creano. Controlla come entrano in partita."
-            : "Non automatico: serve pericolosità da entrambe. Quota e match-up contano molto."
-        },
-        {
-          name: "Corner (es. Over 8.5/9.5)",
-          tag: sCorner,
-          note: corners >= 0.65
-            ? "Pressione e cross: corner più probabili. Ottimo mercato “da sala” se quota ok."
-            : "Corner meno garantiti: dipende da ritmo e spinta sulle fasce. Prudenza."
-        },
-        {
-          name: "Cartellini (es. Over 4.5)",
-          tag: sCards,
-          note: (cards >= 0.62 || grit >= 0.62)
-            ? "Duelli e contatti: aumenta rischio ammonizioni. Se hai info arbitro, ancora meglio."
-            : "Senza arbitro/contesto, cartellini meno leggibili: non esagerare."
-        },
-        {
-          name: "Doppia chance (1X o X2) — solo se quota ok",
-          tag: sDC,
-          note: bal.label === "Match sbilanciato"
-            ? "Match sbilanciato: la doppia chance può dare più controllo del segno secco."
-            : "Match non chiarissimo: doppia chance solo se la quota al banco è davvero conveniente."
-        }
-      ];
-
-      const rank = (p) => p.tag.c === "ok" ? 3 : p.tag.c === "warn" ? 2 : 1;
-      picks.sort((a,b)=> rank(b)-rank(a));
-      return picks.slice(0,5);
-    }
-
-    function buildHeader(e){
-      const ctx = e.context || {};
-      const prof = profileFromContext(ctx);
-      const bal = balanceLabel(ctx.diff);
-
-      const headline =
-        bal.label === "Match equilibrato"
-          ? "Scheda IA: match equilibrato → selezione prudente."
-          : bal.label === "Leggero sbilanciamento"
-            ? "Scheda IA: lieve sbilanciamento → quota decisiva."
-            : bal.label === "Match sbilanciato"
-              ? "Scheda IA: match sbilanciato → evita quote troppo basse."
-              : "Scheda IA: dati da verificare → quota decisiva.";
-
-      const line1 = `Lettura: ${bal.label} • ${prof.tempoLine}`;
-      const line2 = `${prof.fisLine} Regola: 1–2 selezioni max, quota sempre al banco.`;
-
-      return { headline, line1, line2 };
-    }
-
-    function bestPickForMatch(e){
-      const picks = buildPicks(e);
-      const rank = (p) => p.tag.c === "ok" ? 3 : p.tag.c === "warn" ? 2 : 1;
-      picks.sort((a,b)=> rank(b)-rank(a));
-      const best = picks[0] || null;
-      if(!best) return null;
-      return {
-        match: `${e.home_short || e.home} - ${e.away_short || e.away}`,
-        pick: best.name,
-        tag: best.tag,
-        note: best.note
-      };
-    }
-
-    function renderTopIA(all){
-      const allE = (all.events||[]);
-      const chosen = allE.slice().sort(()=>Math.random()-0.5).slice(0, 8);
-      const list = [];
-      for(const e of chosen){
-        const b = bestPickForMatch(e);
-        if(b) list.push(b);
-      }
-      const out = list.slice(0,6);
-      const host = document.getElementById("topIaList");
-      if(!out.length){
-        host.innerHTML = `<div class="topPick"><div class="row1">Nessun dato</div><div class="row2">Carica events.json per vedere i TOP.</div></div>`;
-        return;
-      }
-      host.innerHTML = out.map(x => `
-        <div class="topPick">
-          <div class="row1">
-            <div>${x.match}</div>
-            <div class="ptag ${x.tag.c}">${x.tag.t}</div>
-          </div>
-          <div class="row2"><b>${x.pick}</b> — ${x.note}</div>
-        </div>
-      `).join("");
-    }
-
-    function renderEvent(e, idx, total){
-      const league = e.league || e.league_code || "Calcio";
-      const when = e.start || "";
-      const header = buildHeader(e);
-      const picks = buildPicks(e);
-
-      const leagueBadge = `
-        <span class="badge">${league}</span>
-        <span class="badge">${when}</span>
-        <span class="badge">Evento ${idx+1}/${total}</span>
-      `;
-
-      const pickHtml = picks.map(p => `
-        <div class="pick">
-          <div class="pickTop">
-            <div class="pname">${p.name}</div>
-            <div class="ptag ${p.tag.c}">${p.tag.t}</div>
-          </div>
-          <div class="pickNote">${p.note}</div>
-        </div>
-      `).join("");
-
-      return `
-        <div class="eventCard">
-          <div class="eventTop">
-            <div class="leagueLine">${leagueBadge}</div>
-            <div class="badge">Quote: <b>verifica al banco</b></div>
-          </div>
-
-          <div class="teams">
-            <div class="crest">${crestImg(e.home_crest)}</div>
-            <div class="name">${e.home}</div>
-            <div class="vs">—</div>
-            <div class="crest">${crestImg(e.away_crest)}</div>
-            <div class="name">${e.away}</div>
-          </div>
-
-          <div class="iaBox">
-            <div class="iaRow">
-              <div class="iaHeader">
-                <div class="h">🧠 ${header.headline}</div>
-                <div class="chips">
-                  <span class="chip ok">Consigli: 5</span>
-                  <span class="chip warn">1–2 scelte max</span>
-                  <span class="chip">Quota al banco</span>
-                </div>
-              </div>
-
-              <div class="iaText">
-                ${header.line1}<br>
-                ${header.line2}
-              </div>
-
-              <div class="iaList">
-                ${pickHtml}
-              </div>
+            <div class="proNotes" id="proNotes">
+              —
             </div>
           </div>
 
-          <div class="footNote">
-            Nota: indicazioni basate su segnali stimati (ritmo/fisicità + goal/corner/cartellini). Quota reale sempre al banco.
+          <div class="panel" style="padding:12px; border-radius:18px;">
+            <h3 style="margin-bottom:10px;">🎯 Idee mercati (senza quote)</h3>
+            <div id="proMarkets"></div>
+            <div class="muted" style="font-size:11px; margin-top:10px; line-height:1.35;">
+              ⚠️ Arbitro: se al banco vedi info arbitro “tendente ai cartellini”, allora l’over cartellini può diventare più interessante. Se non c’è info, <b>non forzare</b>.
+            </div>
           </div>
         </div>
-      `;
-    }
+      </div>
+    </div>
+  </div>
 
-    function buildGlobalTip(all){
-      const pool = getSlotPool(all, CURRENT_SLOT);
-      if(!pool.length) return "Nessun evento disponibile. Riprova più tardi.";
-      let c=0, k=0, t=0, n=0;
-      for(const e of pool){
-        const ctx = e.context;
-        if(ctx){
-          if(typeof ctx.cards==="number") c += ctx.cards;
-          if(typeof ctx.corners==="number") k += ctx.corners;
-          if(typeof ctx.tempo==="number") t += ctx.tempo;
-          n++;
-        }
-      }
-      if(!n) return "Regola: 1–2 selezioni max. Quota sempre al banco.";
-      const cards = c/n, corners=k/n, tempo=t/n;
+  <!-- WHEEL MODAL -->
+  <div class="modal" id="wheelModal" aria-hidden="true">
+    <div class="modalBox">
+      <div class="modalHead">
+        <div class="t">🎡 Ruota della Fortuna (premi & missioni)</div>
+        <button class="close" onclick="closeWheel()">Chiudi ✕</button>
+      </div>
+      <div class="modalBody">
+        <div class="wheelGrid">
+          <div class="wheelBox">
+            <div style="display:flex; justify-content:center; align-items:center;">
+              <canvas id="wheelCanvas" width="420" height="420"></canvas>
+            </div>
+            <button class="wheelBtn" id="spinBtn" onclick="spinWheel()">Gira la ruota</button>
+            <div class="muted" style="font-size:11px; margin-top:8px; line-height:1.35;">
+              1 giro al giorno su questo dispositivo (solo intrattenimento). Gioca responsabile.
+            </div>
+          </div>
+          <div class="wheelBox">
+            <div class="wheelResult" id="wheelResult">
+              Premi “Gira” per ottenere una missione simpatica e un consiglio di controllo.
+            </div>
+            <div class="muted" style="font-size:11px; margin-top:10px; line-height:1.35;">
+              Tip sala: la ruota serve per <b>divertire</b> e ricordare regole semplici: quota al banco, max 2–3 selezioni, niente inseguimenti.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      if(corners > 0.65 && tempo > 0.55) return "Segnali favorevoli ai corner: scegli 1 match e valuta Over 8.5/9.5 solo con quota giusta al banco.";
-      if(cards > 0.62) return "Giornata più fisica: cartellini possibili, ma senza info arbitro meglio prudenza e stake fisso.";
-      if(tempo < 0.40) return "Ritmo medio-basso: evita Over aggressivi. Meglio mercati prudenti e poche selezioni.";
-      return "Giornata equilibrata: 1 match, 1–2 scelte massimo e quota al banco decisiva.";
-    }
+  <!-- QUIZ MODAL -->
+  <div class="modal" id="quizModal" aria-hidden="true">
+    <div class="modalBox">
+      <div class="modalHead">
+        <div class="t">❓ Quiz veloce (30 secondi)</div>
+        <button class="close" onclick="closeQuiz()">Chiudi ✕</button>
+      </div>
+      <div class="modalBody">
+        <div class="qBox" id="quizBox">
+          <h3 class="qTitle">Rispondi rapido: obiettivo 5/5 👑</h3>
+          <div id="quizItems"></div>
+          <div class="qFooter">
+            <div>Score: <b id="quizScore">0</b>/5 • Best: <b id="quizBest">0</b>/5</div>
+            <button class="btn orange" onclick="resetQuiz()">Ricomincia</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    // =========================
-    // FETCH
-    // =========================
-    async function fetchEvents(){
-      const res = await fetch("./events.json?v=" + Date.now(), {cache:"no-store"});
-      if(!res.ok) throw new Error("Impossibile caricare events.json");
-      return await res.json();
-    }
+<script>
+/* =========================================================
+   DATA + ROTAZIONE AUTOMATICA (3 mattina / 3 pomeriggio / 3 sera)
+   ========================================================= */
+const EVENTS_URL = "./events.json";
+const SLOT_ORDER = ["mattina","pomeriggio","sera"];
+const PER_SLOT = 3; // come richiesto
 
-    function getSlotFromURL(){
-      const p = new URLSearchParams(location.search);
-      const s = p.get("slot");
-      if (SLOT_ORDER.includes(s)) return s;
-      return null;
-    }
+let EVENTS_DATA = null;
+let CURRENT_SLOT = "sera";
+let ROT = { mattina:0, pomeriggio:0, sera:0 };
 
-    function setSlot(s){
-      CURRENT_SLOT = s;
-      document.getElementById("slotLabel").textContent = slotNice(s);
-      const url = new URL(location.href);
-      url.searchParams.set("slot", s);
-      history.replaceState({}, "", url.toString());
-    }
+const AUTO = {
+  rotateEvery: 45_000,
+  refreshEvery: 5 * 60_000,
+  autoSlotByClock: true,
+  cycleSlotsWhenRotating: true
+};
 
-    function slotFromTime(d=new Date()){
-      const h = d.getHours();
-      if (h>=6 && h<12) return "mattina";
-      if (h>=12 && h<18) return "pomeriggio";
-      return "sera";
-    }
+let _rotateTimer=null, _refreshTimer=null, _clockTimer=null;
 
-    function cycleSlot(){
+function $(id){return document.getElementById(id);}
+
+function clamp01(x){return Math.max(0, Math.min(1, x));}
+function pct(x){return Math.round(clamp01(x) * 100);}
+
+function slotFromTime(d){
+  const h = d.getHours();
+  if(h>=6 && h<13) return "mattina";
+  if(h>=13 && h<19) return "pomeriggio";
+  return "sera";
+}
+
+function setSlot(slot){
+  CURRENT_SLOT = slot;
+  localStorage.setItem("slot", slot);
+  $("slotName").textContent = slot.charAt(0).toUpperCase()+slot.slice(1);
+}
+
+function getRot(slot){
+  const key = "rot_"+slot;
+  const v = localStorage.getItem(key);
+  return v ? parseInt(v,10) : (ROT[slot]||0);
+}
+function setRot(slot, v){
+  ROT[slot] = v;
+  localStorage.setItem("rot_"+slot, String(v));
+}
+function incRot(slot){
+  setRot(slot, getRot(slot)+1);
+}
+
+function qs(name){
+  const u = new URL(location.href);
+  return u.searchParams.get(name);
+}
+
+function applyClockSlot(){
+  if(!AUTO.autoSlotByClock) return;
+  const now = new Date();
+  const s = slotFromTime(now);
+  if (s !== CURRENT_SLOT){
+    setSlot(s);
+    render(EVENTS_DATA);
+  }
+}
+
+async function fetchEvents(){
+  const bust = Date.now();
+  const res = await fetch(EVENTS_URL + "?v=" + bust, {cache:"no-store"});
+  if(!res.ok) throw new Error("events.json non disponibile");
+  const data = await res.json();
+  return data;
+}
+
+async function load(force=false){
+  if(!EVENTS_DATA || force){
+    EVENTS_DATA = await fetchEvents();
+  }
+  // header info
+  $("updatedAt").textContent = (EVENTS_DATA.updated_at || "—");
+  $("centerName").textContent = "VINC001";
+
+  // default slot
+  const urlSlot = qs("slot");
+  const saved = localStorage.getItem("slot");
+  if(urlSlot && SLOT_ORDER.includes(urlSlot)) setSlot(urlSlot);
+  else if(saved && SLOT_ORDER.includes(saved)) setSlot(saved);
+  else setSlot(slotFromTime(new Date()));
+
+  render(EVENTS_DATA);
+}
+
+async function refreshData(){
+  try{
+    await load(true);
+  }catch(e){
+    console.warn("refreshData error:", e);
+  }
+}
+
+function rotateStep(){
+  incRot(CURRENT_SLOT);
+
+  if(AUTO.cycleSlotsWhenRotating && EVENTS_DATA){
+    const pool = getSlotPool(EVENTS_DATA, CURRENT_SLOT);
+    const n = pool.length || 0;
+    const r = getRot(CURRENT_SLOT);
+    if(n && ((r * PER_SLOT) % n) === 0){
       const idx = SLOT_ORDER.indexOf(CURRENT_SLOT);
       const next = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
       setSlot(next);
-      render(EVENTS_DATA);
     }
+  }
+  render(EVENTS_DATA);
+}
 
-    function render(all){
-      document.getElementById("updated").textContent = all.updated_at || "—";
+function startAuto(){
+  stopAuto();
+  applyClockSlot();
 
-      const pool = getSlotPool(all, CURRENT_SLOT);
-      const shown = sliceRotate(pool, CURRENT_SLOT);
+  _rotateTimer = setInterval(()=>{
+    if(document.hidden) return;
+    rotateStep();
+  }, AUTO.rotateEvery);
 
-      document.getElementById("counts").textContent =
-        `Fascia: ${slotNice(CURRENT_SLOT)} • Mostrati: ${shown.length}/${Math.max(pool.length, shown.length)}`;
+  _refreshTimer = setInterval(()=>{
+    if(document.hidden) return;
+    refreshData();
+  }, AUTO.refreshEvery);
 
-      document.getElementById("tipLine").textContent = buildGlobalTip(all);
+  _clockTimer = setInterval(()=>{
+    if(document.hidden) return;
+    applyClockSlot();
+  }, 60_000);
+}
 
-      renderTopIA(all);
+function stopAuto(){
+  if(_rotateTimer) clearInterval(_rotateTimer);
+  if(_refreshTimer) clearInterval(_refreshTimer);
+  if(_clockTimer) clearInterval(_clockTimer);
+  _rotateTimer=_refreshTimer=_clockTimer=null;
+}
 
-      const host = document.getElementById("events");
-      host.innerHTML = shown.map((e,i)=> renderEvent(e,i,shown.length)).join("");
+/* =========================================================
+   SCORING (credibile, NO frasi tipo “favorita Pisa” inventate)
+   ========================================================= */
+function num(x, d=0){
+  const v = Number(x);
+  return Number.isFinite(v) ? v : d;
+}
+function getCtx(ev){
+  const c = ev.context || {};
+  return {
+    goals: clamp01(num(c.goals, 0.5)),
+    corners: clamp01(num(c.corners, 0.5)),
+    cards: clamp01(num(c.cards, 0.5)),
+    tempo: clamp01(num(c.tempo, 0.5)),
+    grit: clamp01(num(c.grit, 0.5)),
+    diff: num(c.diff, 0),
+    signals: c.signals || {}
+  };
+}
+
+function labelLevel(x){
+  if(x >= 0.72) return {t:"Alta", cls:"ok"};
+  if(x >= 0.52) return {t:"Media", cls:"warn"};
+  return {t:"Bassa", cls:"bad"};
+}
+
+function marketPack(ev){
+  const c = getCtx(ev);
+  // stabilità/attenzione (non promette)
+  const overScore = clamp01((c.goals*0.60 + c.tempo*0.40));
+  const bttsScore = clamp01((c.goals*0.70 + (1 - Math.abs(c.diff))*0.30));
+  const cornerScore = clamp01((c.corners*0.70 + c.tempo*0.30));
+  const cardScore = clamp01((c.cards*0.60 + c.grit*0.40));
+  const dcScore = clamp01((1 - Math.abs(c.diff))*0.60 + (1 - c.tempo)*0.10 + 0.30); // prudente
+  const oneXtwoScore = clamp01(Math.abs(c.diff)); // quanto “sbilanciata” sembra (se bassa → equilibrata)
+
+  return [
+    {
+      name:"Over 2.5 (valuta quota)",
+      score: overScore,
+      note: overScore>=0.65
+        ? "Segnali goal discreti: valutabile se la quota al banco è davvero conveniente."
+        : "Segnali goal non forti: meglio prudenza o alternative (Over 1.5 / live)."
+    },
+    {
+      name:"Goal (Entrambe segnano)",
+      score: bttsScore,
+      note: bttsScore>=0.65
+        ? "Più interessante se entrambe creano occasioni: controlla forma/approccio al banco."
+        : "Dipende molto dal match-up: se una squadra è troppo chiusa, può saltare."
+    },
+    {
+      name:"Corner (es. Over 8.5/9.5)",
+      score: cornerScore,
+      note: cornerScore>=0.65
+        ? "Buon potenziale corner se c’è spinta sulle fasce: verifica line e quota al banco."
+        : "Corner meno leggibili: meglio non forzare senza quota giusta."
+    },
+    {
+      name:"Cartellini (es. Over 4.5)",
+      score: cardScore,
+      note: cardScore>=0.65
+        ? "Fisicità/contatti: può avere senso. Se al banco vedi arbitro severo, aumenta interesse."
+        : "Cartellini poco leggibili senza info arbitro: entra solo con quota buona."
+    },
+    {
+      name:"Doppia chance (1X o X2)",
+      score: dcScore,
+      note: "Mercato di controllo: utile se vuoi ridurre rischio. Sempre max 2–3 selezioni."
+    },
+    {
+      name:"1X2 (solo se chiaro al banco)",
+      score: oneXtwoScore,
+      note: oneXtwoScore>=0.65
+        ? "Sembra più sbilanciata: se al banco conferma la lettura, scegli con disciplina."
+        : "Match equilibrato: 1X2 è più “rumoroso”. Meglio mercati goal/corner se quota ok."
+    },
+  ];
+}
+
+function badgeFromScore(score){
+  const l = labelLevel(score);
+  return {text:l.t, cls:l.cls};
+}
+
+/* =========================================================
+   RENDER (C + Angolo + eventi fascia)
+   ========================================================= */
+function byScoreKey(key){
+  return (a,b) => num(getCtx(b)[key],0) - num(getCtx(a)[key],0);
+}
+
+function getAllEvents(data){
+  return (data && data.events) ? data.events.slice() : [];
+}
+
+function getSlotPool(data, slot){
+  const all = getAllEvents(data);
+  return all.filter(e => (e.slot || "sera") === slot);
+}
+
+function pickForSlot(pool, slot){
+  if(!pool.length) return [];
+  const r = getRot(slot) || 0;
+  const start = (r * PER_SLOT) % pool.length;
+  const out = [];
+  for(let i=0;i<PER_SLOT;i++){
+    out.push(pool[(start+i) % pool.length]);
+  }
+  return out;
+}
+
+function renderHotBox(el, items, key, icon){
+  const top = items.slice(0,3);
+  if(!top.length){
+    el.innerHTML = `<div class="muted" style="font-size:11px">Nessun evento disponibile.</div>`;
+    return;
+  }
+  el.innerHTML = top.map(ev=>{
+    const c = getCtx(ev);
+    const s = pct(c[key]);
+    return `
+      <div class="hotItem" onclick='openProById(${ev.id})'>
+        <img class="tinyCrest" src="${ev.home_crest||""}" onerror="this.style.display='none'"/>
+        <div class="hotText">
+          <div class="m1">${ev.home_short||ev.home} - ${ev.away_short||ev.away}</div>
+          <div class="m2">${ev.league || ""} • ${ev.start || ""}</div>
+        </div>
+        <div class="scoreTag">${s}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+function renderSpecialList(listEl, items, type){
+  // type: "corners" or "cards"
+  const top2 = items.slice(0,2);
+  if(!top2.length){
+    listEl.innerHTML = `<div class="muted" style="font-size:11px">Nessun evento disponibile.</div>`;
+    return;
+  }
+  listEl.innerHTML = top2.map(ev=>{
+    const c = getCtx(ev);
+    const score = type === "corners" ? c.corners : c.cards;
+    const lvl = labelLevel(score);
+    const note = type==="corners"
+      ? (ev.context?.reason_corner || "Indicazione corner: verifica al banco (linea/forma).")
+      : (ev.context?.reason_cards || "Indicazione cartellini: verifica al banco (arbitro/ritmo).");
+    return `
+      <div class="specialItem" onclick='openProById(${ev.id})'>
+        <div class="sTop">
+          <div class="sMatch">
+            <img class="tinyCrest" src="${ev.home_crest||""}" onerror="this.style.display='none'"/>
+            ${ev.home_short||ev.home} - ${ev.away_short||ev.away}
+          </div>
+          <div class="sBadges">
+            <span class="chip ${lvl.cls}">${lvl.t}</span>
+            <span class="chip dim">${ev.start||""}</span>
+          </div>
+        </div>
+        <div class="sNote">${note}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+function renderEventsList(el, picked, allSlotCount){
+  el.innerHTML = "";
+  $("vetrinaInfo").textContent = `${picked.length}/${PER_SLOT}`;
+
+  if(!picked.length){
+    el.innerHTML = `<div class="muted" style="font-size:12px; padding:10px 6px;">
+      Nessun evento in questa fascia. Prova “Cambia fascia”.
+    </div>`;
+    return;
+  }
+
+  picked.forEach((ev, idx)=>{
+    const c = getCtx(ev);
+    const markets = marketPack(ev);
+
+    // “Scheda IA” credibile (no favorita inventata)
+    const eq = (Math.abs(c.diff) < 0.25) ? "Match abbastanza equilibrato" : "Possibile sbilanciamento (verifica al banco)";
+    const rhythm = (c.tempo>=0.65) ? "Ritmo alto" : (c.tempo>=0.45 ? "Ritmo medio" : "Ritmo basso");
+    const line1 = `• ${eq}. • ${rhythm}.`;
+    const line2 = `• Goal: ${pct(c.goals)} • Corner: ${pct(c.corners)} • Cartellini: ${pct(c.cards)}.`;
+    const rule = `Regola: 2 selezioni max, quota sempre al banco.`;
+
+    const marketHtml = markets.slice(0,6).map(m=>{
+      const b = badgeFromScore(m.score);
+      return `
+        <div class="mCard" onclick="event.stopPropagation(); openProById(${ev.id});">
+          <div class="mTop">
+            <div class="mName">${m.name}</div>
+            <div class="mBadge ${b.cls}">${b.text}</div>
+          </div>
+          <div class="mNote">${m.note}</div>
+        </div>
+      `;
+    }).join("");
+
+    const card = document.createElement("div");
+    card.className = "eventCard";
+    card.onclick = ()=> openPro(ev);
+
+    card.innerHTML = `
+      <div class="eventMeta">
+        <div class="leaguePill">
+          <img src="${ev.competition_emblem||""}" onerror="this.style.display='none'"/>
+          <b>${ev.league||"Calcio"}</b>
+        </div>
+        <div class="chips">
+          <span class="chip dim">${ev.slot ? ev.slot.toUpperCase() : ""}</span>
+          <span class="evtNo">Evento ${idx+1}/${picked.length} • pool ${allSlotCount}</span>
+        </div>
+      </div>
+
+      <div class="matchLine">
+        <img class="crest" src="${ev.home_crest||""}" onerror="this.style.display='none'"/>
+        <span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;">
+          ${ev.home} <span class="vs">—</span> ${ev.away}
+        </span>
+        <span class="timeTag">${ev.start||""}</span>
+        <img class="crest" src="${ev.away_crest||""}" onerror="this.style.display='none'"/>
+      </div>
+
+      <div class="iaBox">
+        <div class="iaTitle">🧠 Scheda IA: <span class="muted">lettura rapida (no quote)</span></div>
+        <div class="iaLine">${line1}</div>
+        <div class="iaLine">${line2}</div>
+        <div class="iaLine" style="margin-top:6px;"><b>${rule}</b></div>
+      </div>
+
+      <div class="marketGrid">
+        ${marketHtml}
+      </div>
+    `;
+
+    el.appendChild(card);
+  });
+}
+
+function render(data){
+  if(!data){ return; }
+
+  // HOT (C)
+  const all = getAllEvents(data);
+  const goalsTop = all.slice().sort(byScoreKey("goals"));
+  const cornersTop = all.slice().sort(byScoreKey("corners"));
+  const cardsTop = all.slice().sort(byScoreKey("cards"));
+
+  renderHotBox($("hotGoals"), goalsTop, "goals");
+  renderHotBox($("hotCorners"), cornersTop, "corners");
+  renderHotBox($("hotCards"), cardsTop, "cards");
+
+  // Angolo Speciale
+  renderSpecialList($("cornerList"), cornersTop, "corners");
+  renderSpecialList($("cardList"), cardsTop, "cards");
+
+  // Slot events
+  const pool = getSlotPool(data, CURRENT_SLOT);
+  const picked = pickForSlot(pool, CURRENT_SLOT);
+  renderEventsList($("events"), picked, pool.length);
+}
+
+/* =========================================================
+   (B) PRO MODAL
+   ========================================================= */
+function openProById(id){
+  const ev = getAllEvents(EVENTS_DATA).find(e=>e.id===id);
+  if(ev) openPro(ev);
+}
+
+function openPro(ev){
+  $("proModal").classList.add("show");
+  $("proModal").setAttribute("aria-hidden","false");
+
+  const c = getCtx(ev);
+
+  $("proTitle").innerHTML = `
+    <img class="crest" src="${ev.home_crest||""}" onerror="this.style.display='none'"/>
+    ${ev.home} <span class="vs">—</span> ${ev.away}
+    <img class="crest" src="${ev.away_crest||""}" onerror="this.style.display='none'"/>
+  `;
+  $("proMeta").textContent = `${ev.league||"Calcio"} • ${ev.start||""} • Fascia: ${(ev.slot||"").toUpperCase()}`;
+
+  const chips = [];
+  chips.push(`<span class="chip dim">Quote: verifica al banco</span>`);
+  const eqTxt = (Math.abs(c.diff) < 0.25) ? "Equilibrio: medio" : "Equilibrio: incerto";
+  chips.push(`<span class="chip dim">${eqTxt}</span>`);
+  const r = labelLevel(c.tempo); chips.push(`<span class="chip ${r.cls}">Ritmo: ${r.t}</span>`);
+  const g = labelLevel(c.goals); chips.push(`<span class="chip ${g.cls}">Goal: ${g.t}</span>`);
+  const co = labelLevel(c.corners); chips.push(`<span class="chip ${co.cls}">Corner: ${co.t}</span>`);
+  const ca = labelLevel(c.cards); chips.push(`<span class="chip ${ca.cls}">Cartellini: ${ca.t}</span>`);
+  $("proChips").innerHTML = chips.join("");
+
+  // Bars
+  const bars = [
+    {k:"Goal", v:c.goals},
+    {k:"Corner", v:c.corners},
+    {k:"Cartellini", v:c.cards},
+    {k:"Ritmo", v:c.tempo},
+    {k:"Fisicità", v:c.grit},
+    {k:"Equilibrio (stima)", v: clamp01(1 - Math.abs(c.diff))}
+  ];
+  $("proBars").innerHTML = bars.map(b=>{
+    return `
+      <div class="bar">
+        <div class="k">
+          <span>${b.k}</span>
+          <span>${pct(b.v)}</span>
+        </div>
+        <div class="track"><div class="fill" style="width:${pct(b.v)}%"></div></div>
+      </div>
+    `;
+  }).join("");
+
+  const reasonCorner = ev.context?.reason_corner || "Corner: valutare ritmo e spinta sulle fasce (linea/forma al banco).";
+  const reasonCards  = ev.context?.reason_cards  || "Cartellini: senza info arbitro è meglio prudenza (entra solo con quota buona).";
+
+  $("proNotes").innerHTML = `
+    <b>Corner:</b> ${reasonCorner}<br/>
+    <b>Cartellini:</b> ${reasonCards}<br/><br/>
+    <b>Regola sala:</b> max 2–3 selezioni, quota sempre al banco. Se non torna, passa.
+  `;
+
+  // Markets detailed
+  const markets = marketPack(ev);
+  $("proMarkets").innerHTML = markets.map(m=>{
+    const b = badgeFromScore(m.score);
+    return `
+      <div class="mCard" style="margin-bottom:10px;">
+        <div class="mTop">
+          <div class="mName">${m.name}</div>
+          <div class="mBadge ${b.cls}">${b.text}</div>
+        </div>
+        <div class="mNote">${m.note}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+function closePro(){
+  $("proModal").classList.remove("show");
+  $("proModal").setAttribute("aria-hidden","true");
+}
+
+/* =========================================================
+   (A) MODALITÀ SALA
+   ========================================================= */
+async function toggleSala(){
+  const on = document.body.classList.toggle("sala");
+  $("salaHint").style.display = on ? "block" : "none";
+
+  // cambia ritmo rotazione in sala
+  AUTO.rotateEvery = on ? 30_000 : 45_000;
+  AUTO.refreshEvery = on ? 3 * 60_000 : 5 * 60_000;
+
+  // fullscreen se possibile
+  if(on){
+    try{
+      if(!document.fullscreenElement) await document.documentElement.requestFullscreen();
+    }catch(e){ /* ok */ }
+  }else{
+    try{
+      if(document.fullscreenElement) await document.exitFullscreen();
+    }catch(e){ /* ok */ }
+  }
+  startAuto();
+}
+
+/* =========================================================
+   WHEEL (migliorata + 1/giorno)
+   ========================================================= */
+const WHEEL_ITEMS = [
+  {title:"Missione: 1 sola giocata", text:"Scegli 1 mercato soltanto (singola). Disciplina prima di tutto."},
+  {title:"Missione: max 2 selezioni", text:"Fai massimo 2 selezioni: più controllo, meno caos."},
+  {title:"Missione: solo Corner", text:"Oggi se giochi, scegli un mercato Corner e basta (quota al banco)."},
+  {title:"Missione: solo Cartellini", text:"Valuta cartellini solo se al banco trovi info arbitro. Altrimenti passa."},
+  {title:"Missione: NO inseguimenti", text:"Se perdi, stop. Domani si riparte. La sala vince con la disciplina."},
+  {title:"Missione: quota giusta o niente", text:"Se la quota al banco è diversa/peggiore, non forzare. Passa."},
+  {title:"Bonus: 20s focus", text:"Prima di giocare: respira 20s e scegli solo se sei convinto."},
+  {title:"Bonus: stake fisso", text:"Oggi stake fisso (es. 5€) e non aumentare mai dopo una perdita."}
+];
+
+let wheelAngle = 0;
+let wheelSpinning = false;
+
+function openWheel(){
+  $("wheelModal").classList.add("show");
+  drawWheel();
+  showWheelStatus();
+}
+function closeWheel(){
+  $("wheelModal").classList.remove("show");
+}
+function todayKey(){
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function wheelStorageKey(){ return "wheel_"+todayKey(); }
+
+function showWheelStatus(){
+  const saved = localStorage.getItem(wheelStorageKey());
+  if(saved){
+    const obj = JSON.parse(saved);
+    $("wheelResult").innerHTML = `<b>Risultato di oggi:</b><br/>${obj.title}<br/><span class="muted">${obj.text}</span><br/><br/><span class="muted">Torna domani per un nuovo giro.</span>`;
+    $("spinBtn").disabled = true;
+    $("spinBtn").textContent = "Già girata oggi ✅";
+    $("spinBtn").style.opacity = ".7";
+    return;
+  }
+  $("spinBtn").disabled = false;
+  $("spinBtn").textContent = "Gira la ruota";
+  $("spinBtn").style.opacity = "1";
+}
+
+function drawWheel(){
+  const canvas = $("wheelCanvas");
+  const ctx = canvas.getContext("2d");
+  const n = WHEEL_ITEMS.length;
+  const cx = canvas.width/2, cy = canvas.height/2;
+  const r = canvas.width*0.44;
+  const slice = (Math.PI*2)/n;
+
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  // shadow ring
+  ctx.beginPath();
+  ctx.arc(cx,cy,r+8,0,Math.PI*2);
+  ctx.fillStyle = "rgba(0,0,0,.25)";
+  ctx.fill();
+
+  for(let i=0;i<n;i++){
+    const a0 = wheelAngle + i*slice;
+    const a1 = a0 + slice;
+
+    // segment colors (manual, no libs)
+    const palette = ["#ff9800","#19c37d","#5b7cfa","#f1c40f","#ff4d5c","#8e44ad","#00bcd4","#2ecc71"];
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.arc(cx,cy,r,a0,a1);
+    ctx.closePath();
+    ctx.fillStyle = palette[i % palette.length];
+    ctx.globalAlpha = 0.92;
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // text
+    ctx.save();
+    ctx.translate(cx,cy);
+    ctx.rotate(a0 + slice/2);
+    ctx.textAlign = "right";
+    ctx.fillStyle = "rgba(20,12,7,.92)";
+    ctx.font = "bold 14px ui-sans-serif, system-ui";
+    const label = WHEEL_ITEMS[i].title.replace("Missione: ","").replace("Bonus: ","");
+    ctx.fillText(label, r-12, 5);
+    ctx.restore();
+  }
+
+  // center
+  ctx.beginPath();
+  ctx.arc(cx,cy,56,0,Math.PI*2);
+  ctx.fillStyle = "rgba(10,12,25,.92)";
+  ctx.fill();
+  ctx.strokeStyle = "rgba(255,255,255,.18)";
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  ctx.fillStyle = "rgba(255,255,255,.92)";
+  ctx.font = "900 14px ui-sans-serif, system-ui";
+  ctx.textAlign = "center";
+  ctx.fillText("Vincitù", cx, cy-4);
+  ctx.font = "800 12px ui-sans-serif, system-ui";
+  ctx.fillStyle = "rgba(255,255,255,.75)";
+  ctx.fillText("Ruota", cx, cy+14);
+
+  // pointer
+  ctx.beginPath();
+  ctx.moveTo(cx, cy - r - 18);
+  ctx.lineTo(cx - 12, cy - r + 4);
+  ctx.lineTo(cx + 12, cy - r + 4);
+  ctx.closePath();
+  ctx.fillStyle = "rgba(255,255,255,.9)";
+  ctx.fill();
+}
+
+function spinWheel(){
+  if(wheelSpinning) return;
+  const saved = localStorage.getItem(wheelStorageKey());
+  if(saved) return;
+
+  wheelSpinning = true;
+  $("spinBtn").disabled = true;
+
+  const n = WHEEL_ITEMS.length;
+  const slice = (Math.PI*2)/n;
+
+  // random target
+  const targetIndex = Math.floor(Math.random() * n);
+  // rotate to land the pointer at target
+  const extraTurns = 6 + Math.floor(Math.random()*3);
+  const targetAngle = (Math.PI*2*extraTurns) + (Math.PI*1.5) - (targetIndex*slice + slice/2);
+
+  const start = performance.now();
+  const duration = 2200;
+
+  function easeOutCubic(t){ return 1 - Math.pow(1-t,3); }
+
+  function anim(now){
+    const t = Math.min(1, (now-start)/duration);
+    const e = easeOutCubic(t);
+    wheelAngle = targetAngle * e;
+    drawWheel();
+    if(t<1) requestAnimationFrame(anim);
+    else{
+      wheelSpinning = false;
+      const prize = WHEEL_ITEMS[targetIndex];
+      localStorage.setItem(wheelStorageKey(), JSON.stringify(prize));
+      $("wheelResult").innerHTML = `<b>${prize.title}</b><br/><span class="muted">${prize.text}</span><br/><br/><span class="muted">Fatto! Domani nuova missione.</span>`;
+      showWheelStatus();
     }
+  }
+  requestAnimationFrame(anim);
+}
 
-    async function load(force=false){
-      if(!EVENTS_DATA || force){
-        EVENTS_DATA = await fetchEvents();
-      }
-      render(EVENTS_DATA);
+/* =========================================================
+   QUIZ (migliorato)
+   ========================================================= */
+const QUIZ = [
+  {q:"Se la quota al banco è diversa da quella indicata, cosa fai?", a:["Passo/ricontrollo","Forzo lo stesso"], correct:0},
+  {q:"Quante selezioni è meglio fare per controllo?", a:["2–3 massimo","6–8 per forza"], correct:0},
+  {q:"A cosa serve la “Scheda PRO”?", a:["Capire mercati e segnali","Garantire vincita"], correct:0},
+  {q:"Cartellini senza info arbitro:", a:["Prudenza: solo quota buona","Sempre over"], correct:0},
+  {q:"Dopo una perdita:", a:["Stop e si riparte domani","Aumento stake per recuperare"], correct:0},
+];
+
+let quizState = {score:0, done:new Set()};
+
+function bestKey(){return "quizBest";}
+function getBest(){return parseInt(localStorage.getItem(bestKey())||"0",10);}
+function setBest(v){localStorage.setItem(bestKey(), String(v));}
+
+function renderQuiz(){
+  $("quizBest").textContent = getBest();
+  $("quizScore").textContent = quizState.score;
+
+  $("quizItems").innerHTML = QUIZ.map((it, i)=>{
+    const done = quizState.done.has(i);
+    return `
+      <div class="qItem">
+        <div class="qQ">${i+1}) ${it.q}</div>
+        <div class="qAns">
+          ${it.a.map((ans, k)=>`
+            <button ${done?'disabled style="opacity:.65;cursor:not-allowed"':''}
+              onclick="answerQuiz(${i},${k})">${ans}</button>
+          `).join("")}
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+function answerQuiz(i,k){
+  if(quizState.done.has(i)) return;
+  quizState.done.add(i);
+  if(k === QUIZ[i].correct) quizState.score++;
+
+  $("quizScore").textContent = quizState.score;
+
+  if(quizState.done.size === QUIZ.length){
+    const b = getBest();
+    if(quizState.score > b){ setBest(quizState.score); }
+    renderQuiz();
+    alert(`Quiz finito! Score ${quizState.score}/5. Best ${getBest()}/5`);
+  }else{
+    renderQuiz();
+  }
+}
+
+function openQuiz(){
+  $("quizModal").classList.add("show");
+  renderQuiz();
+}
+function closeQuiz(){
+  $("quizModal").classList.remove("show");
+}
+function resetQuiz(){
+  quizState = {score:0, done:new Set()};
+  renderQuiz();
+}
+
+/* =========================================================
+   UI actions
+   ========================================================= */
+$("btnSala").onclick = toggleSala;
+
+$("btnWheel").onclick = openWheel;
+$("btnQuiz").onclick = openQuiz;
+
+$("btnNew").onclick = async ()=>{
+  setRot("mattina",0); setRot("pomeriggio",0); setRot("sera",0);
+  await refreshData();
+};
+
+$("btnSlot").onclick = ()=>{
+  const idx = SLOT_ORDER.indexOf(CURRENT_SLOT);
+  const next = SLOT_ORDER[(idx+1) % SLOT_ORDER.length];
+  setSlot(next);
+  render(EVENTS_DATA);
+};
+
+$("btnStart20").onclick = ()=>{
+  // mini focus: per sala è “divertente” e utile
+  let t = 20;
+  const old = $("btnStart20").textContent;
+  $("btnStart20").disabled = true;
+  const timer = setInterval(()=>{
+    $("btnStart20").textContent = `Focus ${t}s`;
+    t--;
+    if(t<0){
+      clearInterval(timer);
+      $("btnStart20").textContent = old;
+      $("btnStart20").disabled = false;
     }
+  }, 1000);
+};
 
-    // =========================
-    // BUTTONS
-    // =========================
-    document.getElementById("btnNew").addEventListener("click", async ()=>{
-      // rotazione avanti di 3 per la fascia corrente
-      incRot(CURRENT_SLOT);
-      await load(false);
-    });
+$("btnPrint").onclick = ()=>{
+  // stampa semplice (la sala può stampare screenshot o usare stampante)
+  window.print();
+};
 
-    document.getElementById("btnSlot").addEventListener("click", ()=> cycleSlot());
+document.addEventListener("keydown",(e)=>{
+  if(e.key==="Escape"){
+    closePro(); closeWheel(); closeQuiz();
+  }
+});
 
-    // =========================
-    // WHEEL (consigli disciplina)
-    // =========================
-    const wheelItems = [
-      { t: "Solo 1 selezione oggi", s: "Fai una singola con quota verificata. Più controllo, meno ansia." },
-      { t: "2 selezioni massimo", s: "Se fai multipla, fermati a 2 eventi. Qualità > quantità." },
-      { t: "Passa se quota è bassa", s: "Se la quota al banco è troppo bassa, non forzare: cambia match." },
-      { t: "Corner: servono ritmo e spinta", s: "Corner migliori con pressione e cross. Se ritmo basso, prudenza." },
-      { t: "Cartellini: senza arbitro prudenza", s: "Fisicità aiuta, ma senza info arbitro non esagerare con Over cartellini." },
-      { t: "Stake fisso", s: "Decidi uno stake (es. 5€) e non inseguire. Disciplina = lungo periodo." },
-      { t: "Check 30 secondi", s: "Prima di giocare: 1) quota 2) mercato 3) numero selezioni. Stop." },
-      { t: "Oggi obiettivo: capire", s: "Scegli 1 match e leggilo bene. Oggi vinci se non fai errori." }
-    ];
+/* Start */
+document.addEventListener("visibilitychange", ()=>{
+  if(document.hidden) return;
+  applyClockSlot();
+  render(EVENTS_DATA);
+});
 
-    const modalBack = document.getElementById("modalBack");
-    const btnClose = document.getElementById("btnClose");
-    const btnSpin = document.getElementById("btnSpin");
-    const btnWheel = document.getElementById("btnWheel");
-
-    btnWheel.addEventListener("click", ()=> openWheel());
-    btnClose.addEventListener("click", ()=> closeWheel());
-    modalBack.addEventListener("click", (e)=> { if(e.target === modalBack) closeWheel(); });
-
-    function openWheel(){
-      modalBack.style.display = "flex";
-      drawWheel();
-      const saved = localStorage.getItem("wheelSaved");
-      if(saved){
-        const obj = JSON.parse(saved);
-        document.getElementById("wheelMsg").textContent = obj.t;
-        document.getElementById("wheelSub").textContent = obj.s;
-      }
-    }
-    function closeWheel(){ modalBack.style.display = "none"; }
-
-    function canSpinToday(){
-      const key = "wheelDate";
-      const today = new Date().toISOString().slice(0,10);
-      return localStorage.getItem(key) !== today;
-    }
-    function setSpunToday(){
-      const key = "wheelDate";
-      const today = new Date().toISOString().slice(0,10);
-      localStorage.setItem(key, today);
-    }
-
-    btnSpin.addEventListener("click", ()=> spinWheel());
-
-    function spinWheel(){
-      if(!canSpinToday()){
-        document.getElementById("wheelMsg").textContent = "Hai già girato oggi ✅";
-        document.getElementById("wheelSub").textContent = "Riprova domani su questo PC.";
-        return;
-      }
-      const pick = wheelItems[Math.floor(Math.random()*wheelItems.length)];
-      setSpunToday();
-      localStorage.setItem("wheelSaved", JSON.stringify(pick));
-      document.getElementById("wheelMsg").textContent = pick.t;
-      document.getElementById("wheelSub").textContent = pick.s;
-
-      const canvas = document.getElementById("wheel");
-      canvas.style.transition = "transform 1.1s cubic-bezier(.2,.9,.2,1)";
-      const deg = 720 + Math.floor(Math.random()*360);
-      canvas.style.transform = `rotate(${deg}deg)`;
-      setTimeout(()=>{ canvas.style.transition=""; }, 1300);
-    }
-
-    function drawWheel(){
-      const canvas = document.getElementById("wheel");
-      const ctx = canvas.getContext("2d");
-      const W = canvas.width, H = canvas.height;
-      const cx = W/2, cy = H/2;
-      const r = Math.min(W,H)*0.42;
-
-      ctx.clearRect(0,0,W,H);
-
-      const colors = ["#ff9800","#2ecc71","#3498db","#9b59b6","#e67e22","#1abc9c","#e74c3c","#f1c40f"];
-      const n = wheelItems.length;
-      const slice = (Math.PI*2)/n;
-
-      for(let i=0;i<n;i++){
-        const a0 = i*slice - Math.PI/2;
-        const a1 = a0 + slice;
-
-        ctx.beginPath();
-        ctx.moveTo(cx,cy);
-        ctx.arc(cx,cy,r,a0,a1);
-        ctx.closePath();
-        ctx.fillStyle = colors[i%colors.length];
-        ctx.globalAlpha = 0.86;
-        ctx.fill();
-
-        ctx.save();
-        ctx.translate(cx,cy);
-        ctx.rotate(a0 + slice/2);
-        ctx.textAlign = "right";
-        ctx.fillStyle = "rgba(0,0,0,.86)";
-        ctx.font = "900 14px ui-sans-serif, system-ui";
-        ctx.fillText(wheelItems[i].t, r-12, 6);
-        ctx.restore();
-      }
-
-      ctx.globalAlpha = 1;
-      ctx.beginPath();
-      ctx.arc(cx,cy,r*0.12,0,Math.PI*2);
-      ctx.fillStyle = "rgba(15,18,38,.9)";
-      ctx.fill();
-      ctx.lineWidth = 3;
-      ctx.strokeStyle = "rgba(255,255,255,.18)";
-      ctx.stroke();
-
-      ctx.beginPath();
-      ctx.moveTo(cx, cy-r-20);
-      ctx.lineTo(cx-16, cy-r+10);
-      ctx.lineTo(cx+16, cy-r+10);
-      ctx.closePath();
-      ctx.fillStyle = "rgba(255,255,255,.92)";
-      ctx.fill();
-    }
-
-    // =========================
-    // INIT
-    // =========================
-    (async function init(){
-      const urlSlot = getSlotFromURL();
-      setSlot(urlSlot || slotFromTime(new Date()));
-      try{
-        await load(true);
-      }catch(err){
-        document.getElementById("events").innerHTML =
-          `<div class="eventCard" style="padding:12px;">
-             <b>Errore:</b> non riesco a leggere <code>events.json</code>.<br>
-             <span style="color:var(--muted)">${String(err)}</span>
-           </div>`;
-      }
-    })();
-  </script>
+(async function init(){
+  try{
+    await load(false);
+    startAuto();
+  }catch(e){
+    console.error(e);
+    $("events").innerHTML = `<div class="muted" style="padding:12px;">
+      Errore: non riesco a leggere <b>events.json</b>. Verifica che sia pubblicato nella stessa cartella di index.html.
+    </div>`;
+  }
+})();
+</script>
 </body>
 </html>
