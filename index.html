@@ -27,9 +27,8 @@ linear-gradient(135deg,var(--bg1),var(--bg2));
 color:white;
 }
 
-.wrap{max-width:1400px;margin:auto;padding:24px}
+.wrap{max-width:1450px;margin:auto;padding:24px}
 
-/* HEADER */
 .header{
 display:flex;
 align-items:center;
@@ -39,25 +38,28 @@ margin-bottom:22px
 
 .logo{
 background:black;
-padding:18px 36px;
-border-radius:18px;
-box-shadow:0 0 30px rgba(255,0,0,.45);
+padding:18px 40px;
+border-radius:20px;
+box-shadow:0 0 35px rgba(255,0,0,.55);
 }
 
 .logo span{
-font-size:38px;
+font-size:40px;
 font-weight:900;
 letter-spacing:4px;
 color:var(--red);
 }
 
-.sub{
-font-size:12px;
-opacity:.7;
-margin-top:4px
+.sub{font-size:12px;opacity:.7;margin-top:4px}
+
+.slot{
+background:rgba(255,170,0,.15);
+border:1px solid rgba(255,170,0,.6);
+padding:6px 14px;
+border-radius:999px;
+font-size:12px
 }
 
-/* GRID */
 .grid{
 display:grid;
 grid-template-columns:2fr 1fr;
@@ -65,40 +67,34 @@ gap:24px
 }
 
 .panel{
-background:linear-gradient(180deg,rgba(40,50,120,.35),rgba(10,15,40,.6));
+background:linear-gradient(180deg,rgba(40,50,120,.35),rgba(10,15,40,.65));
 border:1px solid var(--stroke);
-border-radius:24px;
+border-radius:26px;
 padding:22px;
 box-shadow:0 0 60px rgba(0,0,0,.6)
 }
 
-/* EVENT */
-.event{
+.section{
+margin-bottom:26px
+}
+
+.section h2{
+margin:0 0 14px;
+font-size:22px
+}
+
+.match{
 border:1px solid var(--stroke);
 border-radius:20px;
 padding:18px;
-margin-bottom:18px;
+margin-bottom:14px;
 background:rgba(0,0,0,.28)
 }
 
-.event h3{margin:0}
-
-.badges span{
-display:inline-block;
-background:rgba(255,255,255,.12);
-padding:5px 12px;
-border-radius:20px;
-font-size:12px;
-margin-right:6px
-}
-
-.trust{
-margin-top:8px
-}
 .bar{
 height:8px;
 border-radius:10px;
-background:rgba(255,255,255,.12);
+background:rgba(255,255,255,.15);
 overflow:hidden
 }
 .fill{
@@ -106,7 +102,6 @@ height:100%;
 background:linear-gradient(90deg,#00ffc8,#4aa3ff)
 }
 
-/* RADAR */
 .radar{
 display:grid;
 grid-template-columns:repeat(5,1fr);
@@ -114,36 +109,21 @@ gap:10px;
 margin-top:12px
 }
 .radar div{
-background:rgba(255,255,255,.08);
+background:rgba(255,255,255,.1);
 border-radius:12px;
-padding:10px;
+padding:8px;
 font-size:12px;
 text-align:center
 }
 
-/* PICKS */
-.picks{
-margin-top:12px
-}
 .pick{
+margin-top:8px;
 background:rgba(255,255,255,.06);
 padding:8px 12px;
-border-radius:10px;
-margin:5px 0
+border-radius:10px
 }
 
-/* SIDE */
 .sidebox{margin-bottom:18px}
-.sidebox h3{margin-top:0}
-
-/* SLOT */
-.slot{
-background:rgba(255,170,0,.15);
-border:1px solid rgba(255,170,0,.45);
-padding:8px 14px;
-border-radius:999px;
-font-size:12px
-}
 </style>
 </head>
 
@@ -152,22 +132,21 @@ font-size:12px
 <div class="wrap">
 
 <div class="header">
-  <div class="logo">
-    <span>VINCITU</span>
-    <div class="sub">IA CONTROL ROOM • SISTEMA ANALISI MATCH</div>
-  </div>
-  <div class="slot" id="slotBox">SERA</div>
+<div class="logo">
+<span>VINCITU</span>
+<div class="sub">IA CONTROL ROOM – SISTEMA ANALISI MATCH</div>
+</div>
+<div class="slot" id="slotBox">SERA</div>
 </div>
 
 <div class="grid">
 
-<!-- EVENTI -->
 <div class="panel">
-<h2>🧠 CENTRO CONTROLLO IA</h2>
-<div id="events"></div>
+
+<div id="content"></div>
+
 </div>
 
-<!-- SIDEBAR -->
 <div>
 
 <div class="panel sidebox">
@@ -179,17 +158,18 @@ Analisi IA multi-mercato.
 
 <div class="panel sidebox">
 <h3>📊 Come leggere</h3>
-Affidabilità = solidità statistica.<br>
-Radar = ritmo / corner / falli / gol.<br>
-Pronostici multipli → scegli tu.
+Radar = pressione / corner / falli / gol.<br>
+Non seguire tutto: scegli 1–2 mercati.
 </div>
 
 </div>
 
 </div>
+
 </div>
 
 <script>
+
 const qs=new URLSearchParams(location.search);
 const slot=(qs.get("slot")||"sera").toLowerCase();
 document.getElementById("slotBox").textContent=slot.toUpperCase();
@@ -197,29 +177,35 @@ document.getElementById("slotBox").textContent=slot.toUpperCase();
 fetch("events.json?ts="+Date.now())
 .then(r=>r.json())
 .then(d=>{
-const box=document.getElementById("events");
 
-const list=d.events.filter(e=>e.slot===slot);
+const box=document.getElementById("content");
 
-list.forEach(ev=>{
+const data=d.events.filter(e=>e.slot===slot);
 
-const trust=Math.floor(72+Math.random()*18);
+const sections=[
+{title:"🟡 Pressione & Corner", key:"corners"},
+{title:"🔴 Falli & Cartellini", key:"cards"},
+{title:"🔵 Esito & Gol", key:"goals"}
+];
 
-const el=document.createElement("div");
-el.className="event";
+sections.forEach(sec=>{
 
-el.innerHTML=`
+const secDiv=document.createElement("div");
+secDiv.className="section";
+secDiv.innerHTML=`<h2>${sec.title}</h2>`;
+
+data.slice(0,3).forEach(ev=>{
+
+const score=Math.round(ev.context[sec.key]*10);
+const trust=70+score;
+
+secDiv.innerHTML+=`
+
+<div class="match">
 <h3>${ev.home} – ${ev.away}</h3>
 
-<div class="badges">
-<span>${ev.league}</span>
-<span>${ev.start}</span>
-</div>
-
-<div class="trust">
 Affidabilità IA: ${trust}%
 <div class="bar"><div class="fill" style="width:${trust}%"></div></div>
-</div>
 
 <div class="radar">
 <div>Ritmo<br>${ev.context.signals.ritmo}</div>
@@ -229,14 +215,22 @@ Affidabilità IA: ${trust}%
 <div>Gol<br>${Math.round(ev.context.goals*10)}/10</div>
 </div>
 
-<div class="picks">
-<b>🎯 Mercati IA consigliati</b>
-${ev.markets.map(m=>`<div class="pick">${m.label} — livello ${m.tag}</div>`).join("")}
+<div class="pick">
+<b>🎯 Lettura IA</b><br>
+${sec.key==="corners" ? "Pressione laterale e ritmo: possibile linea over corner se quota congrua." :
+sec.key==="cards" ? "Fisicità e duelli frequenti: arbitro determinante → over cartellini valutabile." :
+"Differenza tecnica / ritmo gara: esito e gol dipendono dal controllo del match."}
+</div>
+
 </div>
 `;
 
-box.appendChild(el);
 });
+
+box.appendChild(secDiv);
+
+});
+
 });
 </script>
 
