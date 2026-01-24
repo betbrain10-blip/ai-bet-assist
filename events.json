@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-24 20:29",
+  "updated_at": "2026-01-24 20:43",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -9,20 +9,20 @@
   },
   "events": [
     {
-      "id": 538008,
-      "uniq": "538008|2026-01-25T14:00:00Z|Brentford FC|Nottingham Forest FC",
+      "id": 542571,
+      "uniq": "542571|2026-01-25T14:00:00Z|FC Nantes|OGC Nice",
       "slot": "mattina",
-      "league": "Premier League",
-      "league_code": "PL",
+      "league": "Ligue 1",
+      "league_code": "FL1",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Brentford FC",
-      "away": "Nottingham Forest FC",
-      "home_short": "BRE",
-      "away_short": "NOT",
-      "home_crest": "https://crests.football-data.org/402.png",
-      "away_crest": "https://crests.football-data.org/351.png",
+      "competition_emblem": "https://crests.football-data.org/FL1.png",
+      "home": "FC Nantes",
+      "away": "OGC Nice",
+      "home_short": "NAN",
+      "away_short": "NIC",
+      "home_crest": "https://crests.football-data.org/543.png",
+      "away_crest": "https://crests.football-data.org/522.png",
       "start_iso": "2026-01-25T15:00:00+01:00",
       "start": "Domani 15:00",
       "markets": [
@@ -33,29 +33,29 @@
         },
         {
           "label": "1X",
-          "tag": "Alta",
+          "tag": "Bassa",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
+          "tag": "Media",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": 0.37,
-        "tempo": 0.22,
-        "goals": 0.78,
-        "grit": 0.59,
-        "corners": 0.47,
-        "cards": 0.7,
+        "diff": -0.3,
+        "tempo": 0.94,
+        "goals": 0.26,
+        "grit": 0.94,
+        "corners": 0.82,
+        "cards": 0.98,
         "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Favorita casa",
-          "fisicita": "Media"
+          "ritmo": "Alta",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Alta"
         },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità media → qualche cartellino possibile."
+        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
+        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
       }
     },
     {
@@ -159,56 +159,6 @@
       }
     },
     {
-      "id": 537027,
-      "uniq": "537027|2026-01-25T14:00:00Z|Atalanta BC|Parma Calcio 1913",
-      "slot": "mattina",
-      "league": "Serie A",
-      "league_code": "SA",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/c111.png",
-      "home": "Atalanta BC",
-      "away": "Parma Calcio 1913",
-      "home_short": "ATA",
-      "away_short": "PAR",
-      "home_crest": "https://crests.football-data.org/102.png",
-      "away_crest": "https://crests.football-data.org/112.png",
-      "start_iso": "2026-01-25T15:00:00+01:00",
-      "start": "Domani 15:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.19,
-        "tempo": 0.51,
-        "goals": 0.97,
-        "grit": 0.73,
-        "corners": 0.69,
-        "cards": 0.71,
-        "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Equilibrio",
-          "fisicita": "Media"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità media → qualche cartellino possibile."
-      }
-    },
-    {
       "id": 538013,
       "uniq": "538013|2026-01-25T14:00:00Z|Newcastle United FC|Aston Villa FC",
       "slot": "mattina",
@@ -252,6 +202,56 @@
         "signals": {
           "ritmo": "Bassa",
           "equilibrio": "Favorita ospite",
+          "fisicita": "Media"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
+      }
+    },
+    {
+      "id": 537027,
+      "uniq": "537027|2026-01-25T14:00:00Z|Atalanta BC|Parma Calcio 1913",
+      "slot": "mattina",
+      "league": "Serie A",
+      "league_code": "SA",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/c111.png",
+      "home": "Atalanta BC",
+      "away": "Parma Calcio 1913",
+      "home_short": "ATA",
+      "away_short": "PAR",
+      "home_crest": "https://crests.football-data.org/102.png",
+      "away_crest": "https://crests.football-data.org/112.png",
+      "start_iso": "2026-01-25T15:00:00+01:00",
+      "start": "Domani 15:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.19,
+        "tempo": 0.51,
+        "goals": 0.97,
+        "grit": 0.73,
+        "corners": 0.69,
+        "cards": 0.71,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Equilibrio",
           "fisicita": "Media"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
@@ -459,20 +459,20 @@
       }
     },
     {
-      "id": 542571,
-      "uniq": "542571|2026-01-25T14:00:00Z|FC Nantes|OGC Nice",
+      "id": 538008,
+      "uniq": "538008|2026-01-25T14:00:00Z|Brentford FC|Nottingham Forest FC",
       "slot": "pomeriggio",
-      "league": "Ligue 1",
-      "league_code": "FL1",
+      "league": "Premier League",
+      "league_code": "PL",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/FL1.png",
-      "home": "FC Nantes",
-      "away": "OGC Nice",
-      "home_short": "NAN",
-      "away_short": "NIC",
-      "home_crest": "https://crests.football-data.org/543.png",
-      "away_crest": "https://crests.football-data.org/522.png",
+      "competition_emblem": "https://crests.football-data.org/PL.png",
+      "home": "Brentford FC",
+      "away": "Nottingham Forest FC",
+      "home_short": "BRE",
+      "away_short": "NOT",
+      "home_crest": "https://crests.football-data.org/402.png",
+      "away_crest": "https://crests.football-data.org/351.png",
       "start_iso": "2026-01-25T15:00:00+01:00",
       "start": "Domani 15:00",
       "markets": [
@@ -483,29 +483,29 @@
         },
         {
           "label": "1X",
-          "tag": "Bassa",
+          "tag": "Alta",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Media",
+          "tag": "Alta",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": -0.3,
-        "tempo": 0.94,
-        "goals": 0.26,
-        "grit": 0.94,
-        "corners": 0.82,
-        "cards": 0.98,
+        "diff": 0.37,
+        "tempo": 0.22,
+        "goals": 0.78,
+        "grit": 0.59,
+        "corners": 0.47,
+        "cards": 0.7,
         "signals": {
-          "ritmo": "Alta",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Alta"
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita casa",
+          "fisicita": "Media"
         },
-        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
-        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
       }
     },
     {
