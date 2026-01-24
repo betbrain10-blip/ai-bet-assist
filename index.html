@@ -1,150 +1,169 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>VINCITU – IA Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VINCITU – IA CONTROL ROOM</title>
 
 <style>
 :root{
-  --bg1:#190a3d;
-  --bg2:#040821;
-  --panel:rgba(25,30,70,.55);
-  --accent:#ff9f0a;
-  --red:#ff2b2b;
-  --green:#30ff9c;
-  --text:#fff;
+--bg1:#0a0622;
+--bg2:#02030e;
+--red:#ff2424;
+--accent:#ffaa00;
+--green:#00ffc8;
+--panel:rgba(20,25,60,.55);
+--stroke:rgba(255,255,255,.12);
 }
 
 *{box-sizing:border-box;font-family:system-ui}
 
 body{
-  margin:0;
-  background:radial-gradient(circle at top,var(--bg1),var(--bg2));
-  color:white;
+margin:0;
+background:
+radial-gradient(circle at 15% 5%,#27146a,transparent 40%),
+radial-gradient(circle at 90% 15%,#0a3a52,transparent 45%),
+linear-gradient(135deg,var(--bg1),var(--bg2));
+color:white;
 }
 
-.wrap{
-  max-width:1350px;
-  margin:auto;
-  padding:22px;
+.wrap{max-width:1400px;margin:auto;padding:24px}
+
+/* HEADER */
+.header{
+display:flex;
+align-items:center;
+gap:20px;
+margin-bottom:22px
 }
 
-/* LOGO */
-.logo-box{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  background:#000;
-  padding:14px 26px;
-  border-radius:14px;
-  width:max-content;
-  box-shadow:0 0 25px rgba(255,0,0,.35);
+.logo{
+background:black;
+padding:18px 36px;
+border-radius:18px;
+box-shadow:0 0 30px rgba(255,0,0,.45);
 }
-.logo-box span{
-  font-size:34px;
-  font-weight:900;
-  color:var(--red);
-  letter-spacing:3px;
+
+.logo span{
+font-size:38px;
+font-weight:900;
+letter-spacing:4px;
+color:var(--red);
 }
-.logo-sub{font-size:12px;opacity:.7}
+
+.sub{
+font-size:12px;
+opacity:.7;
+margin-top:4px
+}
 
 /* GRID */
 .grid{
-  margin-top:25px;
-  display:grid;
-  grid-template-columns:2fr 1fr;
-  gap:22px;
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:24px
 }
 
-/* PANEL */
 .panel{
-  background:linear-gradient(180deg,rgba(50,60,130,.35),rgba(20,25,70,.5));
-  border-radius:22px;
-  padding:22px;
-  box-shadow:0 0 40px rgba(0,0,0,.5);
+background:linear-gradient(180deg,rgba(40,50,120,.35),rgba(10,15,40,.6));
+border:1px solid var(--stroke);
+border-radius:24px;
+padding:22px;
+box-shadow:0 0 60px rgba(0,0,0,.6)
 }
-
-.panel h2{margin-top:0}
 
 /* EVENT */
 .event{
-  border:1px solid rgba(255,255,255,.08);
-  padding:18px;
-  border-radius:18px;
-  margin-bottom:18px;
-  background:rgba(0,0,0,.25);
+border:1px solid var(--stroke);
+border-radius:20px;
+padding:18px;
+margin-bottom:18px;
+background:rgba(0,0,0,.28)
 }
 
-.event strong{font-size:18px}
+.event h3{margin:0}
 
-.badge{
-  display:inline-block;
-  padding:5px 11px;
-  border-radius:20px;
-  font-size:12px;
-  background:rgba(255,255,255,.12)
+.badges span{
+display:inline-block;
+background:rgba(255,255,255,.12);
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+margin-right:6px
 }
 
+.trust{
+margin-top:8px
+}
 .bar{
-  height:8px;
-  background:rgba(255,255,255,.12);
-  border-radius:10px;
-  overflow:hidden;
-  margin:6px 0
+height:8px;
+border-radius:10px;
+background:rgba(255,255,255,.12);
+overflow:hidden
 }
 .fill{
-  height:100%;
-  background:linear-gradient(90deg,#00ffcc,#4aa3ff)
+height:100%;
+background:linear-gradient(90deg,#00ffc8,#4aa3ff)
 }
 
 /* RADAR */
 .radar{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:10px;
-  margin-top:10px
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:10px;
+margin-top:12px
 }
 .radar div{
-  background:rgba(255,255,255,.08);
-  padding:10px;
-  border-radius:10px;
-  text-align:center;
-  font-size:13px
+background:rgba(255,255,255,.08);
+border-radius:12px;
+padding:10px;
+font-size:12px;
+text-align:center
 }
 
-/* BUTTON */
-.btn{
-  background:linear-gradient(90deg,#ffb300,#ff7a00);
-  border:none;
-  padding:14px;
-  border-radius:14px;
-  width:100%;
-  font-weight:700;
-  cursor:pointer;
+/* PICKS */
+.picks{
+margin-top:12px
+}
+.pick{
+background:rgba(255,255,255,.06);
+padding:8px 12px;
+border-radius:10px;
+margin:5px 0
 }
 
 /* SIDE */
 .sidebox{margin-bottom:18px}
 .sidebox h3{margin-top:0}
 
+/* SLOT */
+.slot{
+background:rgba(255,170,0,.15);
+border:1px solid rgba(255,170,0,.45);
+padding:8px 14px;
+border-radius:999px;
+font-size:12px
+}
 </style>
 </head>
+
 <body>
 
 <div class="wrap">
 
-<!-- HEADER -->
-<div class="logo-box">
-  <span>VINCITU</span>
-  <div class="logo-sub">IA PORTAL — Sistema predittivo LIVE</div>
+<div class="header">
+  <div class="logo">
+    <span>VINCITU</span>
+    <div class="sub">IA CONTROL ROOM • SISTEMA ANALISI MATCH</div>
+  </div>
+  <div class="slot" id="slotBox">SERA</div>
 </div>
 
 <div class="grid">
 
 <!-- EVENTI -->
 <div class="panel">
-<h2>⭐ TOP IA DEL MOMENTO</h2>
+<h2>🧠 CENTRO CONTROLLO IA</h2>
 <div id="events"></div>
 </div>
 
@@ -152,68 +171,72 @@ body{
 <div>
 
 <div class="panel sidebox">
-<h3>📋 Regole d’oro (sala)</h3>
-<ul>
-<li>1–2 selezioni massimo</li>
-<li>Quota sempre al banco</li>
-<li>Se non convince → passa</li>
-</ul>
+<h3>⚡ Modalità Sala</h3>
+Aggiornamento automatico 3x giorno.<br>
+Solo match reali.<br>
+Analisi IA multi-mercato.
 </div>
 
 <div class="panel sidebox">
-<h3>⚡ Modalità Sala LIVE</h3>
-Aggiornamento automatico mattina / pomeriggio / sera.<br>
-Eventi reali multi-campionato.
-<button class="btn">🖨️ Stampa scheda</button>
-</div>
-
-<div class="panel sidebox">
-<h3>🧠 Radar IA Sistema</h3>
-<ul>
-<li>Pressione squadre</li>
-<li>Corner attesi</li>
-<li>Disciplina arbitrale</li>
-<li>Ritmo previsto</li>
-</ul>
+<h3>📊 Come leggere</h3>
+Affidabilità = solidità statistica.<br>
+Radar = ritmo / corner / falli / gol.<br>
+Pronostici multipli → scegli tu.
 </div>
 
 </div>
+
 </div>
 </div>
 
 <script>
 const qs=new URLSearchParams(location.search);
-const slot=qs.get("slot")||"sera";
+const slot=(qs.get("slot")||"sera").toLowerCase();
+document.getElementById("slotBox").textContent=slot.toUpperCase();
 
-fetch("events.json")
+fetch("events.json?ts="+Date.now())
 .then(r=>r.json())
 .then(d=>{
-  const box=document.getElementById("events");
-  d.events.filter(e=>e.slot===slot).forEach(ev=>{
+const box=document.getElementById("events");
 
-    const trust=Math.floor(70+Math.random()*20);
+const list=d.events.filter(e=>e.slot===slot);
 
-    const div=document.createElement("div");
-    div.className="event";
-    div.innerHTML=`
-      <strong>${ev.home} — ${ev.away}</strong>
-      <div class="badge">${ev.league}</div><br><br>
+list.forEach(ev=>{
 
-      🎯 Mercato IA: <b>${ev.markets[0].label}</b><br>
-      Motivo: ${ev.context.reason_corner || ev.markets[0].note}
+const trust=Math.floor(72+Math.random()*18);
 
-      <div class="bar"><div class="fill" style="width:${trust}%"></div></div>
-      Affidabilità IA: ${trust}%
+const el=document.createElement("div");
+el.className="event";
 
-      <div class="radar">
-        <div>Pressione<br>${ev.context.signals.ritmo}</div>
-        <div>Equilibrio<br>${ev.context.signals.equilibrio}</div>
-        <div>Corner<br>${Math.round(ev.context.corners*10)}/10</div>
-        <div>Cartellini<br>${Math.round(ev.context.cards*10)}/10</div>
-      </div>
-    `;
-    box.appendChild(div);
-  });
+el.innerHTML=`
+<h3>${ev.home} – ${ev.away}</h3>
+
+<div class="badges">
+<span>${ev.league}</span>
+<span>${ev.start}</span>
+</div>
+
+<div class="trust">
+Affidabilità IA: ${trust}%
+<div class="bar"><div class="fill" style="width:${trust}%"></div></div>
+</div>
+
+<div class="radar">
+<div>Ritmo<br>${ev.context.signals.ritmo}</div>
+<div>Equilibrio<br>${ev.context.signals.equilibrio}</div>
+<div>Corner<br>${Math.round(ev.context.corners*10)}/10</div>
+<div>Cartellini<br>${Math.round(ev.context.cards*10)}/10</div>
+<div>Gol<br>${Math.round(ev.context.goals*10)}/10</div>
+</div>
+
+<div class="picks">
+<b>🎯 Mercati IA consigliati</b>
+${ev.markets.map(m=>`<div class="pick">${m.label} — livello ${m.tag}</div>`).join("")}
+</div>
+`;
+
+box.appendChild(el);
+});
 });
 </script>
 
