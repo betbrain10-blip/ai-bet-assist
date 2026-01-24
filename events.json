@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-24 19:55",
+  "updated_at": "2026-01-24 20:29",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -9,81 +9,31 @@
   },
   "events": [
     {
-      "id": 545867,
-      "uniq": "545867|2026-01-24T20:30:00Z|GD Estoril Praia|Vitória SC",
+      "id": 538008,
+      "uniq": "538008|2026-01-25T14:00:00Z|Brentford FC|Nottingham Forest FC",
       "slot": "mattina",
-      "league": "Primeira Liga",
-      "league_code": "PPL",
+      "league": "Premier League",
+      "league_code": "PL",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PPL.png",
-      "home": "GD Estoril Praia",
-      "away": "Vitória SC",
-      "home_short": "EST",
-      "away_short": "GUI",
-      "home_crest": "https://crests.football-data.org/582.png",
-      "away_crest": "https://crests.football-data.org/5543.png",
-      "start_iso": "2026-01-24T21:30:00+01:00",
-      "start": "Oggi 21:30",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.26,
-        "tempo": 0.34,
-        "goals": 0.9,
-        "grit": 0.17,
-        "corners": 0.57,
-        "cards": 0.43,
-        "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Equilibrio",
-          "fisicita": "Bassa"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
-      }
-    },
-    {
-      "id": 537027,
-      "uniq": "537027|2026-01-25T14:00:00Z|Atalanta BC|Parma Calcio 1913",
-      "slot": "mattina",
-      "league": "Serie A",
-      "league_code": "SA",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/c111.png",
-      "home": "Atalanta BC",
-      "away": "Parma Calcio 1913",
-      "home_short": "ATA",
-      "away_short": "PAR",
-      "home_crest": "https://crests.football-data.org/102.png",
-      "away_crest": "https://crests.football-data.org/112.png",
+      "competition_emblem": "https://crests.football-data.org/PL.png",
+      "home": "Brentford FC",
+      "away": "Nottingham Forest FC",
+      "home_short": "BRE",
+      "away_short": "NOT",
+      "home_crest": "https://crests.football-data.org/402.png",
+      "away_crest": "https://crests.football-data.org/351.png",
       "start_iso": "2026-01-25T15:00:00+01:00",
       "start": "Domani 15:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Alta",
+          "tag": "Media",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
-          "tag": "Bassa",
+          "tag": "Alta",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
@@ -93,15 +43,15 @@
         }
       ],
       "context": {
-        "diff": -0.19,
-        "tempo": 0.51,
-        "goals": 0.97,
-        "grit": 0.73,
-        "corners": 0.69,
-        "cards": 0.71,
+        "diff": 0.37,
+        "tempo": 0.22,
+        "goals": 0.78,
+        "grit": 0.59,
+        "corners": 0.47,
+        "cards": 0.7,
         "signals": {
           "ritmo": "Bassa",
-          "equilibrio": "Equilibrio",
+          "equilibrio": "Favorita casa",
           "fisicita": "Media"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
@@ -109,53 +59,53 @@
       }
     },
     {
-      "id": 542571,
-      "uniq": "542571|2026-01-25T14:00:00Z|FC Nantes|OGC Nice",
+      "id": 537028,
+      "uniq": "537028|2026-01-25T14:00:00Z|Genoa CFC|Bologna FC 1909",
       "slot": "mattina",
-      "league": "Ligue 1",
-      "league_code": "FL1",
+      "league": "Serie A",
+      "league_code": "SA",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/FL1.png",
-      "home": "FC Nantes",
-      "away": "OGC Nice",
-      "home_short": "NAN",
-      "away_short": "NIC",
-      "home_crest": "https://crests.football-data.org/543.png",
-      "away_crest": "https://crests.football-data.org/522.png",
+      "competition_emblem": "https://crests.football-data.org/c111.png",
+      "home": "Genoa CFC",
+      "away": "Bologna FC 1909",
+      "home_short": "GEN",
+      "away_short": "BOL",
+      "home_crest": "https://crests.football-data.org/107.png",
+      "away_crest": "https://crests.football-data.org/103.png",
       "start_iso": "2026-01-25T15:00:00+01:00",
       "start": "Domani 15:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Media",
+          "tag": "Bassa",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
-          "tag": "Bassa",
+          "tag": "Alta",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Media",
+          "tag": "Bassa",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": -0.3,
-        "tempo": 0.94,
-        "goals": 0.26,
-        "grit": 0.94,
-        "corners": 0.82,
-        "cards": 0.98,
+        "diff": 0.4,
+        "tempo": 0.28,
+        "goals": 0.15,
+        "grit": 0.11,
+        "corners": 0.39,
+        "cards": 0.56,
         "signals": {
-          "ritmo": "Alta",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Alta"
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita casa",
+          "fisicita": "Bassa"
         },
-        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
-        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
       }
     },
     {
@@ -209,20 +159,70 @@
       }
     },
     {
-      "id": 538008,
-      "uniq": "538008|2026-01-25T14:00:00Z|Brentford FC|Nottingham Forest FC",
+      "id": 537027,
+      "uniq": "537027|2026-01-25T14:00:00Z|Atalanta BC|Parma Calcio 1913",
+      "slot": "mattina",
+      "league": "Serie A",
+      "league_code": "SA",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/c111.png",
+      "home": "Atalanta BC",
+      "away": "Parma Calcio 1913",
+      "home_short": "ATA",
+      "away_short": "PAR",
+      "home_crest": "https://crests.football-data.org/102.png",
+      "away_crest": "https://crests.football-data.org/112.png",
+      "start_iso": "2026-01-25T15:00:00+01:00",
+      "start": "Domani 15:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.19,
+        "tempo": 0.51,
+        "goals": 0.97,
+        "grit": 0.73,
+        "corners": 0.69,
+        "cards": 0.71,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Media"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
+      }
+    },
+    {
+      "id": 538013,
+      "uniq": "538013|2026-01-25T14:00:00Z|Newcastle United FC|Aston Villa FC",
       "slot": "mattina",
       "league": "Premier League",
       "league_code": "PL",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Brentford FC",
-      "away": "Nottingham Forest FC",
-      "home_short": "BRE",
-      "away_short": "NOT",
-      "home_crest": "https://crests.football-data.org/402.png",
-      "away_crest": "https://crests.football-data.org/351.png",
+      "home": "Newcastle United FC",
+      "away": "Aston Villa FC",
+      "home_short": "NEW",
+      "away_short": "AVL",
+      "home_crest": "https://crests.football-data.org/67.png",
+      "away_crest": "https://crests.football-data.org/58.png",
       "start_iso": "2026-01-25T15:00:00+01:00",
       "start": "Domani 15:00",
       "markets": [
@@ -233,25 +233,25 @@
         },
         {
           "label": "1X",
-          "tag": "Alta",
+          "tag": "Bassa",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
+          "tag": "Bassa",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": 0.37,
-        "tempo": 0.22,
-        "goals": 0.78,
-        "grit": 0.59,
-        "corners": 0.47,
-        "cards": 0.7,
+        "diff": -0.72,
+        "tempo": 0.46,
+        "goals": 0.27,
+        "grit": 0.71,
+        "corners": 0.5,
+        "cards": 0.92,
         "signals": {
           "ritmo": "Bassa",
-          "equilibrio": "Favorita casa",
+          "equilibrio": "Favorita ospite",
           "fisicita": "Media"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
@@ -459,20 +459,20 @@
       }
     },
     {
-      "id": 538013,
-      "uniq": "538013|2026-01-25T14:00:00Z|Newcastle United FC|Aston Villa FC",
+      "id": 542571,
+      "uniq": "542571|2026-01-25T14:00:00Z|FC Nantes|OGC Nice",
       "slot": "pomeriggio",
-      "league": "Premier League",
-      "league_code": "PL",
+      "league": "Ligue 1",
+      "league_code": "FL1",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Newcastle United FC",
-      "away": "Aston Villa FC",
-      "home_short": "NEW",
-      "away_short": "AVL",
-      "home_crest": "https://crests.football-data.org/67.png",
-      "away_crest": "https://crests.football-data.org/58.png",
+      "competition_emblem": "https://crests.football-data.org/FL1.png",
+      "home": "FC Nantes",
+      "away": "OGC Nice",
+      "home_short": "NAN",
+      "away_short": "NIC",
+      "home_crest": "https://crests.football-data.org/543.png",
+      "away_crest": "https://crests.football-data.org/522.png",
       "start_iso": "2026-01-25T15:00:00+01:00",
       "start": "Domani 15:00",
       "markets": [
@@ -488,74 +488,24 @@
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Bassa",
+          "tag": "Media",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": -0.72,
-        "tempo": 0.46,
-        "goals": 0.27,
-        "grit": 0.71,
-        "corners": 0.5,
-        "cards": 0.92,
+        "diff": -0.3,
+        "tempo": 0.94,
+        "goals": 0.26,
+        "grit": 0.94,
+        "corners": 0.82,
+        "cards": 0.98,
         "signals": {
-          "ritmo": "Bassa",
+          "ritmo": "Alta",
           "equilibrio": "Favorita ospite",
-          "fisicita": "Media"
+          "fisicita": "Alta"
         },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità media → qualche cartellino possibile."
-      }
-    },
-    {
-      "id": 537618,
-      "uniq": "537618|2026-01-24T19:00:00Z|PSV|NAC Breda",
-      "slot": "sera",
-      "league": "Eredivisie",
-      "league_code": "DED",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/ED.png",
-      "home": "PSV",
-      "away": "NAC Breda",
-      "home_short": "PSV",
-      "away_short": "NAC",
-      "home_crest": "https://crests.football-data.org/674.png",
-      "away_crest": "https://crests.football-data.org/681.png",
-      "start_iso": "2026-01-24T20:00:00+01:00",
-      "start": "Oggi 20:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Alta",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": 0.49,
-        "tempo": 0.71,
-        "goals": 0.81,
-        "grit": 0.35,
-        "corners": 0.77,
-        "cards": 0.59,
-        "signals": {
-          "ritmo": "Media",
-          "equilibrio": "Favorita casa",
-          "fisicita": "Bassa"
-        },
-        "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
+        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
       }
     },
     {
@@ -605,6 +555,56 @@
           "fisicita": "Alta"
         },
         "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
+        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
+      }
+    },
+    {
+      "id": 537620,
+      "uniq": "537620|2026-01-24T20:00:00Z|FC Twente '65|SBV Excelsior",
+      "slot": "sera",
+      "league": "Eredivisie",
+      "league_code": "DED",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/ED.png",
+      "home": "FC Twente '65",
+      "away": "SBV Excelsior",
+      "home_short": "TWE",
+      "away_short": "EXC",
+      "home_crest": "https://crests.football-data.org/666.png",
+      "away_crest": "https://crests.football-data.org/670.png",
+      "start_iso": "2026-01-24T21:00:00+01:00",
+      "start": "Oggi 21:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.32,
+        "tempo": 0.77,
+        "goals": 0.51,
+        "grit": 0.88,
+        "corners": 0.76,
+        "cards": 0.9,
+        "signals": {
+          "ritmo": "Alta",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Alta"
+        },
+        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
         "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
       }
     },
@@ -659,56 +659,6 @@
       }
     },
     {
-      "id": 537620,
-      "uniq": "537620|2026-01-24T20:00:00Z|FC Twente '65|SBV Excelsior",
-      "slot": "sera",
-      "league": "Eredivisie",
-      "league_code": "DED",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/ED.png",
-      "home": "FC Twente '65",
-      "away": "SBV Excelsior",
-      "home_short": "TWE",
-      "away_short": "EXC",
-      "home_crest": "https://crests.football-data.org/666.png",
-      "away_crest": "https://crests.football-data.org/670.png",
-      "start_iso": "2026-01-24T21:00:00+01:00",
-      "start": "Oggi 21:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Media",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.32,
-        "tempo": 0.77,
-        "goals": 0.51,
-        "grit": 0.88,
-        "corners": 0.76,
-        "cards": 0.9,
-        "signals": {
-          "ritmo": "Alta",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Alta"
-        },
-        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
-        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
-      }
-    },
-    {
       "id": 542573,
       "uniq": "542573|2026-01-24T20:05:00Z|Olympique de Marseille|Racing Club de Lens",
       "slot": "sera",
@@ -752,6 +702,56 @@
         "signals": {
           "ritmo": "Bassa",
           "equilibrio": "Favorita casa",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
+    },
+    {
+      "id": 545867,
+      "uniq": "545867|2026-01-24T20:30:00Z|GD Estoril Praia|Vitória SC",
+      "slot": "sera",
+      "league": "Primeira Liga",
+      "league_code": "PPL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/PPL.png",
+      "home": "GD Estoril Praia",
+      "away": "Vitória SC",
+      "home_short": "EST",
+      "away_short": "GUI",
+      "home_crest": "https://crests.football-data.org/582.png",
+      "away_crest": "https://crests.football-data.org/5543.png",
+      "start_iso": "2026-01-24T21:30:00+01:00",
+      "start": "Oggi 21:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.26,
+        "tempo": 0.34,
+        "goals": 0.9,
+        "grit": 0.17,
+        "corners": 0.57,
+        "cards": 0.43,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Equilibrio",
           "fisicita": "Bassa"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
