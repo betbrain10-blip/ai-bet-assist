@@ -1,41 +1,55 @@
-import json
-from datetime import datetime
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>VINCITU AI – Pronostici</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+async function loadData() {
+  const res = await fetch("data.json?"+Date.now());
+  const data = await res.json();
 
-OUT="data.json"
+  function render(section,id){
+    const box=document.getElementById(id);
+    box.innerHTML="";
+    section.forEach(ev=>{
+      const d=document.createElement("div");
+      d.className="card";
+      d.innerHTML=`
+        <b>${ev.match}</b>
+        <div>${ev.league}</div>
+        <div>${ev.pick}</div>
+        <div class="prob">${ev.info}</div>
+      `;
+      box.appendChild(d);
+    });
+  }
 
-def main():
+  render(data.corner,"corner");
+  render(data.value,"value");
+  render(data.top,"top");
+}
 
-    feed={
-        "corner":[
-            {
-                "match":"Inter - Roma",
-                "league":"Serie A",
-                "pick":"Over 9.5 Corner",
-                "info":"Prob 63%"
-            }
-        ],
-        "value":[
-            {
-                "match":"Lione - Lille",
-                "league":"Ligue 1",
-                "pick":"DNB Casa",
-                "info":"Quota ≥ 1.78"
-            }
-        ],
-        "top":[
-            {
-                "match":"Barça - Betis",
-                "league":"LaLiga",
-                "pick":"Over 2.5",
-                "info":"Top giornata"
-            }
-        ]
-    }
+setInterval(loadData,60000);
+window.onload=loadData;
+</script>
+</head>
 
-    with open(OUT,"w",encoding="utf-8") as f:
-        json.dump(feed,f,indent=2,ensure_ascii=False)
+<body>
 
-    print("QR aggiornato",datetime.now())
+<div class="logo">VINCITU</div>
 
-if __name__=="__main__":
-    main()
+<h2>🔥 CORNER AI</h2>
+<div id="corner" class="grid"></div>
+
+<h2>💎 VALUE BET</h2>
+<div id="value" class="grid"></div>
+
+<h2>⭐ TOP MATCH</h2>
+<div id="top" class="grid"></div>
+
+<footer>Powered by BetBrain AI</footer>
+
+</body>
+</html>
