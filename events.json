@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-24 06:44",
+  "updated_at": "2026-01-24 07:57",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -209,49 +209,49 @@
       }
     },
     {
-      "id": 538009,
-      "uniq": "538009|2026-01-24T15:00:00Z|Burnley FC|Tottenham Hotspur FC",
+      "id": 538012,
+      "uniq": "538012|2026-01-24T15:00:00Z|Manchester City FC|Wolverhampton Wanderers FC",
       "slot": "mattina",
       "league": "Premier League",
       "league_code": "PL",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Burnley FC",
-      "away": "Tottenham Hotspur FC",
-      "home_short": "BUR",
-      "away_short": "TOT",
-      "home_crest": "https://crests.football-data.org/328.png",
-      "away_crest": "https://crests.football-data.org/73.png",
+      "home": "Manchester City FC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_short": "MCI",
+      "away_short": "WOL",
+      "home_crest": "https://crests.football-data.org/65.png",
+      "away_crest": "https://crests.football-data.org/76.png",
       "start_iso": "2026-01-24T16:00:00+01:00",
       "start": "Oggi 16:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Bassa",
+          "tag": "Alta",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
-          "tag": "Alta",
+          "tag": "Media",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Media",
+          "tag": "Alta",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": 0.42,
-        "tempo": 0.14,
-        "goals": 0.39,
-        "grit": 0.04,
-        "corners": 0.34,
-        "cards": 0.48,
+        "diff": 0.07,
+        "tempo": 0.45,
+        "goals": 0.93,
+        "grit": 0.2,
+        "corners": 0.66,
+        "cards": 0.41,
         "signals": {
           "ritmo": "Bassa",
-          "equilibrio": "Favorita casa",
+          "equilibrio": "Equilibrio",
           "fisicita": "Bassa"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
@@ -559,56 +559,6 @@
       }
     },
     {
-      "id": 544414,
-      "uniq": "544414|2026-01-24T17:30:00Z|Sevilla FC|Athletic Club",
-      "slot": "sera",
-      "league": "Primera Division",
-      "league_code": "PD",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/laliga.png",
-      "home": "Sevilla FC",
-      "away": "Athletic Club",
-      "home_short": "SEV",
-      "away_short": "ATH",
-      "home_crest": "https://crests.football-data.org/559.png",
-      "away_crest": "https://crests.football-data.org/77.png",
-      "start_iso": "2026-01-24T18:30:00+01:00",
-      "start": "Oggi 18:30",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.33,
-        "tempo": 0.93,
-        "goals": 0.58,
-        "grit": 0.94,
-        "corners": 0.87,
-        "cards": 0.92,
-        "signals": {
-          "ritmo": "Alta",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Alta"
-        },
-        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
-        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
-      }
-    },
-    {
       "id": 540568,
       "uniq": "540568|2026-01-24T17:30:00Z|1. FC Union Berlin|Borussia Dortmund",
       "slot": "sera",
@@ -656,6 +606,56 @@
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
         "reason_cards": "Fisicità media → qualche cartellino possibile."
+      }
+    },
+    {
+      "id": 544414,
+      "uniq": "544414|2026-01-24T17:30:00Z|Sevilla FC|Athletic Club",
+      "slot": "sera",
+      "league": "Primera Division",
+      "league_code": "PD",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/laliga.png",
+      "home": "Sevilla FC",
+      "away": "Athletic Club",
+      "home_short": "SEV",
+      "away_short": "ATH",
+      "home_crest": "https://crests.football-data.org/559.png",
+      "away_crest": "https://crests.football-data.org/77.png",
+      "start_iso": "2026-01-24T18:30:00+01:00",
+      "start": "Oggi 18:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.33,
+        "tempo": 0.93,
+        "goals": 0.58,
+        "grit": 0.94,
+        "corners": 0.87,
+        "cards": 0.92,
+        "signals": {
+          "ritmo": "Alta",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Alta"
+        },
+        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
+        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
       }
     },
     {
