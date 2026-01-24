@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-24 10:38",
+  "updated_at": "2026-01-24 11:44",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -559,56 +559,6 @@
       }
     },
     {
-      "id": 544414,
-      "uniq": "544414|2026-01-24T17:30:00Z|Sevilla FC|Athletic Club",
-      "slot": "sera",
-      "league": "Primera Division",
-      "league_code": "PD",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/laliga.png",
-      "home": "Sevilla FC",
-      "away": "Athletic Club",
-      "home_short": "SEV",
-      "away_short": "ATH",
-      "home_crest": "https://crests.football-data.org/559.png",
-      "away_crest": "https://crests.football-data.org/77.png",
-      "start_iso": "2026-01-24T18:30:00+01:00",
-      "start": "Oggi 18:30",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.33,
-        "tempo": 0.93,
-        "goals": 0.58,
-        "grit": 0.94,
-        "corners": 0.87,
-        "cards": 0.92,
-        "signals": {
-          "ritmo": "Alta",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Alta"
-        },
-        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
-        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
-      }
-    },
-    {
       "id": 538005,
       "uniq": "538005|2026-01-24T17:30:00Z|AFC Bournemouth|Liverpool FC",
       "slot": "sera",
@@ -656,6 +606,56 @@
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
         "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
+    },
+    {
+      "id": 544414,
+      "uniq": "544414|2026-01-24T17:30:00Z|Sevilla FC|Athletic Club",
+      "slot": "sera",
+      "league": "Primera Division",
+      "league_code": "PD",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/laliga.png",
+      "home": "Sevilla FC",
+      "away": "Athletic Club",
+      "home_short": "SEV",
+      "away_short": "ATH",
+      "home_crest": "https://crests.football-data.org/559.png",
+      "away_crest": "https://crests.football-data.org/77.png",
+      "start_iso": "2026-01-24T18:30:00+01:00",
+      "start": "Oggi 18:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.33,
+        "tempo": 0.93,
+        "goals": 0.58,
+        "grit": 0.94,
+        "corners": 0.87,
+        "cards": 0.92,
+        "signals": {
+          "ritmo": "Alta",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Alta"
+        },
+        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
+        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
       }
     },
     {
