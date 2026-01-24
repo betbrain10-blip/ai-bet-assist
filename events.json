@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-24 08:35",
+  "updated_at": "2026-01-24 09:52",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -559,26 +559,26 @@
       }
     },
     {
-      "id": 540568,
-      "uniq": "540568|2026-01-24T17:30:00Z|1. FC Union Berlin|Borussia Dortmund",
+      "id": 538005,
+      "uniq": "538005|2026-01-24T17:30:00Z|AFC Bournemouth|Liverpool FC",
       "slot": "sera",
-      "league": "Bundesliga",
-      "league_code": "BL1",
+      "league": "Premier League",
+      "league_code": "PL",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/BL1.png",
-      "home": "1. FC Union Berlin",
-      "away": "Borussia Dortmund",
-      "home_short": "UNB",
-      "away_short": "BVB",
-      "home_crest": "https://crests.football-data.org/28.png",
-      "away_crest": "https://crests.football-data.org/4.png",
+      "competition_emblem": "https://crests.football-data.org/PL.png",
+      "home": "AFC Bournemouth",
+      "away": "Liverpool FC",
+      "home_short": "BOU",
+      "away_short": "LIV",
+      "home_crest": "https://crests.football-data.org/bournemouth.png",
+      "away_crest": "https://crests.football-data.org/64.png",
       "start_iso": "2026-01-24T18:30:00+01:00",
       "start": "Oggi 18:30",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Media",
+          "tag": "Bassa",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
@@ -588,24 +588,24 @@
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Media",
+          "tag": "Bassa",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": -0.38,
-        "tempo": 0.47,
-        "goals": 0.28,
-        "grit": 0.71,
-        "corners": 0.53,
-        "cards": 0.86,
+        "diff": -0.2,
+        "tempo": 0.26,
+        "goals": 0.14,
+        "grit": 0.1,
+        "corners": 0.39,
+        "cards": 0.52,
         "signals": {
           "ritmo": "Bassa",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Media"
+          "equilibrio": "Equilibrio",
+          "fisicita": "Bassa"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità media → qualche cartellino possibile."
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
       }
     },
     {
@@ -659,26 +659,26 @@
       }
     },
     {
-      "id": 538005,
-      "uniq": "538005|2026-01-24T17:30:00Z|AFC Bournemouth|Liverpool FC",
+      "id": 540568,
+      "uniq": "540568|2026-01-24T17:30:00Z|1. FC Union Berlin|Borussia Dortmund",
       "slot": "sera",
-      "league": "Premier League",
-      "league_code": "PL",
+      "league": "Bundesliga",
+      "league_code": "BL1",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "AFC Bournemouth",
-      "away": "Liverpool FC",
-      "home_short": "BOU",
-      "away_short": "LIV",
-      "home_crest": "https://crests.football-data.org/bournemouth.png",
-      "away_crest": "https://crests.football-data.org/64.png",
+      "competition_emblem": "https://crests.football-data.org/BL1.png",
+      "home": "1. FC Union Berlin",
+      "away": "Borussia Dortmund",
+      "home_short": "UNB",
+      "away_short": "BVB",
+      "home_crest": "https://crests.football-data.org/28.png",
+      "away_crest": "https://crests.football-data.org/4.png",
       "start_iso": "2026-01-24T18:30:00+01:00",
       "start": "Oggi 18:30",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Bassa",
+          "tag": "Media",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
@@ -688,24 +688,24 @@
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Bassa",
+          "tag": "Media",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": -0.2,
-        "tempo": 0.26,
-        "goals": 0.14,
-        "grit": 0.1,
-        "corners": 0.39,
-        "cards": 0.52,
+        "diff": -0.38,
+        "tempo": 0.47,
+        "goals": 0.28,
+        "grit": 0.71,
+        "corners": 0.53,
+        "cards": 0.86,
         "signals": {
           "ritmo": "Bassa",
-          "equilibrio": "Equilibrio",
-          "fisicita": "Bassa"
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Media"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
       }
     },
     {
