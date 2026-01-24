@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-24 15:41",
+  "updated_at": "2026-01-24 16:37",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -8,106 +8,6 @@
     "total": 15
   },
   "events": [
-    {
-      "id": 545865,
-      "uniq": "545865|2026-01-24T15:30:00Z|Moreirense FC|CD Santa Clara",
-      "slot": "mattina",
-      "league": "Primeira Liga",
-      "league_code": "PPL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PPL.png",
-      "home": "Moreirense FC",
-      "away": "CD Santa Clara",
-      "home_short": "MOR",
-      "away_short": "CD ",
-      "home_crest": "https://crests.football-data.org/583.png",
-      "away_crest": "https://crests.football-data.org/5530.png",
-      "start_iso": "2026-01-24T16:30:00+01:00",
-      "start": "Oggi 16:30",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.17,
-        "tempo": 0.46,
-        "goals": 0.97,
-        "grit": 0.23,
-        "corners": 0.66,
-        "cards": 0.43,
-        "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Equilibrio",
-          "fisicita": "Bassa"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
-      }
-    },
-    {
-      "id": 542576,
-      "uniq": "542576|2026-01-24T16:00:00Z|Stade Rennais FC 1901|FC Lorient",
-      "slot": "mattina",
-      "league": "Ligue 1",
-      "league_code": "FL1",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/FL1.png",
-      "home": "Stade Rennais FC 1901",
-      "away": "FC Lorient",
-      "home_short": "REN",
-      "away_short": "FCL",
-      "home_crest": "https://crests.football-data.org/529.png",
-      "away_crest": "https://crests.football-data.org/525.png",
-      "start_iso": "2026-01-24T17:00:00+01:00",
-      "start": "Oggi 17:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Bassa",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.51,
-        "tempo": 0.41,
-        "goals": 0.24,
-        "grit": 0.18,
-        "corners": 0.48,
-        "cards": 0.6,
-        "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Bassa"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
-      }
-    },
     {
       "id": 542568,
       "uniq": "542568|2026-01-24T18:00:00Z|Le Havre AC|AS Monaco FC",
@@ -259,26 +159,26 @@
       }
     },
     {
-      "id": 538009,
-      "uniq": "538009|2026-01-24T15:00:00Z|Burnley FC|Tottenham Hotspur FC",
-      "slot": "pomeriggio",
-      "league": "Premier League",
-      "league_code": "PL",
+      "id": 537034,
+      "uniq": "537034|2026-01-24T19:45:00Z|US Lecce|SS Lazio",
+      "slot": "mattina",
+      "league": "Serie A",
+      "league_code": "SA",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Burnley FC",
-      "away": "Tottenham Hotspur FC",
-      "home_short": "BUR",
-      "away_short": "TOT",
-      "home_crest": "https://crests.football-data.org/328.png",
-      "away_crest": "https://crests.football-data.org/73.png",
-      "start_iso": "2026-01-24T16:00:00+01:00",
-      "start": "Oggi 16:00",
+      "competition_emblem": "https://crests.football-data.org/c111.png",
+      "home": "US Lecce",
+      "away": "SS Lazio",
+      "home_short": "USL",
+      "away_short": "LAZ",
+      "home_crest": "https://crests.football-data.org/5890.png",
+      "away_crest": "https://crests.football-data.org/110.png",
+      "start_iso": "2026-01-24T20:45:00+01:00",
+      "start": "Oggi 20:45",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Bassa",
+          "tag": "Alta",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
@@ -288,147 +188,97 @@
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Media",
+          "tag": "Alta",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": 0.42,
-        "tempo": 0.14,
-        "goals": 0.39,
-        "grit": 0.04,
-        "corners": 0.34,
-        "cards": 0.48,
+        "diff": 0.44,
+        "tempo": 0.61,
+        "goals": 0.71,
+        "grit": 0.78,
+        "corners": 0.69,
+        "cards": 0.83,
         "signals": {
-          "ritmo": "Bassa",
+          "ritmo": "Media",
           "equilibrio": "Favorita casa",
-          "fisicita": "Bassa"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
-      }
-    },
-    {
-      "id": 538012,
-      "uniq": "538012|2026-01-24T15:00:00Z|Manchester City FC|Wolverhampton Wanderers FC",
-      "slot": "pomeriggio",
-      "league": "Premier League",
-      "league_code": "PL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Manchester City FC",
-      "away": "Wolverhampton Wanderers FC",
-      "home_short": "MCI",
-      "away_short": "WOL",
-      "home_crest": "https://crests.football-data.org/65.png",
-      "away_crest": "https://crests.football-data.org/76.png",
-      "start_iso": "2026-01-24T16:00:00+01:00",
-      "start": "Oggi 16:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Media",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": 0.07,
-        "tempo": 0.45,
-        "goals": 0.93,
-        "grit": 0.2,
-        "corners": 0.66,
-        "cards": 0.41,
-        "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Equilibrio",
-          "fisicita": "Bassa"
-        },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
-      }
-    },
-    {
-      "id": 538011,
-      "uniq": "538011|2026-01-24T15:00:00Z|Fulham FC|Brighton & Hove Albion FC",
-      "slot": "pomeriggio",
-      "league": "Premier League",
-      "league_code": "PL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Fulham FC",
-      "away": "Brighton & Hove Albion FC",
-      "home_short": "FUL",
-      "away_short": "BHA",
-      "home_crest": "https://crests.football-data.org/63.png",
-      "away_crest": "https://crests.football-data.org/397.png",
-      "start_iso": "2026-01-24T16:00:00+01:00",
-      "start": "Oggi 16:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Bassa",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Media",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": -0.25,
-        "tempo": 1.0,
-        "goals": 0.33,
-        "grit": 1.0,
-        "corners": 0.88,
-        "cards": 0.98,
-        "signals": {
-          "ritmo": "Alta",
-          "equilibrio": "Equilibrio",
           "fisicita": "Alta"
         },
-        "reason_corner": "Ritmo alto e match vivo → corner più probabili.",
-        "reason_cards": "Gara fisica ed equilibrata → più contrasti, cartellini più probabili."
+        "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
+        "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
       }
     },
     {
-      "id": 544417,
-      "uniq": "544417|2026-01-24T15:15:00Z|Valencia CF|RCD Espanyol de Barcelona",
-      "slot": "pomeriggio",
+      "id": 544420,
+      "uniq": "544420|2026-01-24T20:00:00Z|Villarreal CF|Real Madrid CF",
+      "slot": "mattina",
       "league": "Primera Division",
       "league_code": "PD",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/laliga.png",
-      "home": "Valencia CF",
-      "away": "RCD Espanyol de Barcelona",
-      "home_short": "VAL",
-      "away_short": "ESP",
-      "home_crest": "https://crests.football-data.org/95.png",
-      "away_crest": "https://crests.football-data.org/80.png",
-      "start_iso": "2026-01-24T16:15:00+01:00",
-      "start": "Oggi 16:15",
+      "home": "Villarreal CF",
+      "away": "Real Madrid CF",
+      "home_short": "VIL",
+      "away_short": "RMA",
+      "home_crest": "https://crests.football-data.org/94.png",
+      "away_crest": "https://crests.football-data.org/86.png",
+      "start_iso": "2026-01-24T21:00:00+01:00",
+      "start": "Oggi 21:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Media",
+          "tag": "Alta",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.45,
+        "tempo": 0.3,
+        "goals": 0.84,
+        "grit": 0.13,
+        "corners": 0.52,
+        "cards": 0.45,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
+    },
+    {
+      "id": 542576,
+      "uniq": "542576|2026-01-24T16:00:00Z|Stade Rennais FC 1901|FC Lorient",
+      "slot": "pomeriggio",
+      "league": "Ligue 1",
+      "league_code": "FL1",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/FL1.png",
+      "home": "Stade Rennais FC 1901",
+      "away": "FC Lorient",
+      "home_short": "REN",
+      "away_short": "FCL",
+      "home_crest": "https://crests.football-data.org/529.png",
+      "away_crest": "https://crests.football-data.org/525.png",
+      "start_iso": "2026-01-24T17:00:00+01:00",
+      "start": "Oggi 17:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Bassa",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
@@ -443,38 +293,38 @@
         }
       ],
       "context": {
-        "diff": -0.42,
-        "tempo": 0.83,
-        "goals": 0.18,
-        "grit": 0.39,
-        "corners": 0.73,
-        "cards": 0.71,
+        "diff": -0.51,
+        "tempo": 0.41,
+        "goals": 0.24,
+        "grit": 0.18,
+        "corners": 0.48,
+        "cards": 0.6,
         "signals": {
-          "ritmo": "Alta",
+          "ritmo": "Bassa",
           "equilibrio": "Favorita ospite",
           "fisicita": "Bassa"
         },
-        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
         "reason_cards": "Fisicità bassa → cartellini meno affidabili."
       }
     },
     {
-      "id": 537612,
-      "uniq": "537612|2026-01-24T15:30:00Z|AFC Ajax|FC Volendam",
+      "id": 537619,
+      "uniq": "537619|2026-01-25T11:15:00Z|Telstar 1963|AZ",
       "slot": "pomeriggio",
       "league": "Eredivisie",
       "league_code": "DED",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/ED.png",
-      "home": "AFC Ajax",
-      "away": "FC Volendam",
-      "home_short": "AJA",
-      "away_short": "VOL",
-      "home_crest": "https://crests.football-data.org/678.png",
-      "away_crest": "https://crests.football-data.org/1919.png",
-      "start_iso": "2026-01-24T16:30:00+01:00",
-      "start": "Oggi 16:30",
+      "home": "Telstar 1963",
+      "away": "AZ",
+      "home_short": "TEL",
+      "away_short": "AZ",
+      "home_crest": "https://crests.football-data.org/1912.png",
+      "away_crest": "https://crests.football-data.org/682.png",
+      "start_iso": "2026-01-25T12:15:00+01:00",
+      "start": "Domani 12:15",
       "markets": [
         {
           "label": "Over 2.5",
@@ -493,18 +343,168 @@
         }
       ],
       "context": {
-        "diff": 0.29,
-        "tempo": 0.54,
-        "goals": 0.03,
-        "grit": 0.77,
-        "corners": 0.53,
-        "cards": 0.92,
+        "diff": 0.41,
+        "tempo": 0.25,
+        "goals": 0.17,
+        "grit": 0.12,
+        "corners": 0.37,
+        "cards": 0.56,
         "signals": {
           "ritmo": "Bassa",
           "equilibrio": "Favorita casa",
-          "fisicita": "Alta"
+          "fisicita": "Bassa"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
+    },
+    {
+      "id": 537033,
+      "uniq": "537033|2026-01-25T11:30:00Z|US Sassuolo Calcio|US Cremonese",
+      "slot": "pomeriggio",
+      "league": "Serie A",
+      "league_code": "SA",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/c111.png",
+      "home": "US Sassuolo Calcio",
+      "away": "US Cremonese",
+      "home_short": "SAS",
+      "away_short": "CRE",
+      "home_crest": "https://crests.football-data.org/471.png",
+      "away_crest": "https://crests.football-data.org/457.png",
+      "start_iso": "2026-01-25T12:30:00+01:00",
+      "start": "Domani 12:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Media",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.01,
+        "tempo": 0.07,
+        "goals": 0.34,
+        "grit": 0.01,
+        "corners": 0.32,
+        "cards": 0.4,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Bassa"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+      }
+    },
+    {
+      "id": 544412,
+      "uniq": "544412|2026-01-25T13:00:00Z|Club Atlético de Madrid|RCD Mallorca",
+      "slot": "pomeriggio",
+      "league": "Primera Division",
+      "league_code": "PD",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/laliga.png",
+      "home": "Club Atlético de Madrid",
+      "away": "RCD Mallorca",
+      "home_short": "ATL",
+      "away_short": "MAL",
+      "home_crest": "https://crests.football-data.org/78.png",
+      "away_crest": "https://crests.football-data.org/89.png",
+      "start_iso": "2026-01-25T14:00:00+01:00",
+      "start": "Domani 14:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Media",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Media",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Media",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": 0.21,
+        "tempo": 0.26,
+        "goals": 0.47,
+        "grit": 0.6,
+        "corners": 0.45,
+        "cards": 0.73,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Media"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
+      }
+    },
+    {
+      "id": 537613,
+      "uniq": "537613|2026-01-25T13:30:00Z|FC Groningen|Fortuna Sittard",
+      "slot": "pomeriggio",
+      "league": "Eredivisie",
+      "league_code": "DED",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/ED.png",
+      "home": "FC Groningen",
+      "away": "Fortuna Sittard",
+      "home_short": "GRO",
+      "away_short": "SIT",
+      "home_crest": "https://crests.football-data.org/677.png",
+      "away_crest": "https://crests.football-data.org/1920.png",
+      "start_iso": "2026-01-25T14:30:00+01:00",
+      "start": "Domani 14:30",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Alta",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Alta",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.35,
+        "tempo": 0.98,
+        "goals": 0.99,
+        "grit": 0.99,
+        "corners": 0.98,
+        "cards": 0.88,
+        "signals": {
+          "ritmo": "Alta",
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Alta"
+        },
+        "reason_corner": "Ritmo alto: spesso corner dalla pressione della favorita ospite.",
         "reason_cards": "Gara fisica → cartellini possibili (soprattutto se la sfavorita difende molto)."
       }
     },
@@ -559,26 +559,26 @@
       }
     },
     {
-      "id": 538005,
-      "uniq": "538005|2026-01-24T17:30:00Z|AFC Bournemouth|Liverpool FC",
+      "id": 540568,
+      "uniq": "540568|2026-01-24T17:30:00Z|1. FC Union Berlin|Borussia Dortmund",
       "slot": "sera",
-      "league": "Premier League",
-      "league_code": "PL",
+      "league": "Bundesliga",
+      "league_code": "BL1",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "AFC Bournemouth",
-      "away": "Liverpool FC",
-      "home_short": "BOU",
-      "away_short": "LIV",
-      "home_crest": "https://crests.football-data.org/bournemouth.png",
-      "away_crest": "https://crests.football-data.org/64.png",
+      "competition_emblem": "https://crests.football-data.org/BL1.png",
+      "home": "1. FC Union Berlin",
+      "away": "Borussia Dortmund",
+      "home_short": "UNB",
+      "away_short": "BVB",
+      "home_crest": "https://crests.football-data.org/28.png",
+      "away_crest": "https://crests.football-data.org/4.png",
       "start_iso": "2026-01-24T18:30:00+01:00",
       "start": "Oggi 18:30",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Bassa",
+          "tag": "Media",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
@@ -588,24 +588,24 @@
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Bassa",
+          "tag": "Media",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": -0.2,
-        "tempo": 0.26,
-        "goals": 0.14,
-        "grit": 0.1,
-        "corners": 0.39,
-        "cards": 0.52,
+        "diff": -0.38,
+        "tempo": 0.47,
+        "goals": 0.28,
+        "grit": 0.71,
+        "corners": 0.53,
+        "cards": 0.86,
         "signals": {
           "ritmo": "Bassa",
-          "equilibrio": "Equilibrio",
-          "fisicita": "Bassa"
+          "equilibrio": "Favorita ospite",
+          "fisicita": "Media"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
       }
     },
     {
@@ -659,26 +659,26 @@
       }
     },
     {
-      "id": 540568,
-      "uniq": "540568|2026-01-24T17:30:00Z|1. FC Union Berlin|Borussia Dortmund",
+      "id": 538005,
+      "uniq": "538005|2026-01-24T17:30:00Z|AFC Bournemouth|Liverpool FC",
       "slot": "sera",
-      "league": "Bundesliga",
-      "league_code": "BL1",
+      "league": "Premier League",
+      "league_code": "PL",
       "country": "",
       "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/BL1.png",
-      "home": "1. FC Union Berlin",
-      "away": "Borussia Dortmund",
-      "home_short": "UNB",
-      "away_short": "BVB",
-      "home_crest": "https://crests.football-data.org/28.png",
-      "away_crest": "https://crests.football-data.org/4.png",
+      "competition_emblem": "https://crests.football-data.org/PL.png",
+      "home": "AFC Bournemouth",
+      "away": "Liverpool FC",
+      "home_short": "BOU",
+      "away_short": "LIV",
+      "home_crest": "https://crests.football-data.org/bournemouth.png",
+      "away_crest": "https://crests.football-data.org/64.png",
       "start_iso": "2026-01-24T18:30:00+01:00",
       "start": "Oggi 18:30",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Media",
+          "tag": "Bassa",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
@@ -688,24 +688,24 @@
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Media",
+          "tag": "Bassa",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": -0.38,
-        "tempo": 0.47,
-        "goals": 0.28,
-        "grit": 0.71,
-        "corners": 0.53,
-        "cards": 0.86,
+        "diff": -0.2,
+        "tempo": 0.26,
+        "goals": 0.14,
+        "grit": 0.1,
+        "corners": 0.39,
+        "cards": 0.52,
         "signals": {
           "ritmo": "Bassa",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Media"
+          "equilibrio": "Equilibrio",
+          "fisicita": "Bassa"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità media → qualche cartellino possibile."
+        "reason_cards": "Fisicità bassa → cartellini meno affidabili."
       }
     },
     {
