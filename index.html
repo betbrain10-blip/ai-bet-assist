@@ -3,17 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VINCITU – IA CONTROL ROOM</title>
+<title>VINCITU – IA SALA MATCH</title>
 
 <style>
 :root{
---bg1:#0a0622;
---bg2:#02030e;
---red:#ff2424;
+--bg:#050514;
+--red:#ff2222;
 --accent:#ffaa00;
---green:#00ffc8;
---panel:rgba(20,25,60,.55);
---stroke:rgba(255,255,255,.12);
+--cyan:#00ffd0;
+--panel:rgba(30,40,90,.55);
+--stroke:rgba(255,255,255,.15);
 }
 
 *{box-sizing:border-box;font-family:system-ui}
@@ -21,38 +20,50 @@
 body{
 margin:0;
 background:
-radial-gradient(circle at 15% 5%,#27146a,transparent 40%),
-radial-gradient(circle at 90% 15%,#0a3a52,transparent 45%),
-linear-gradient(135deg,var(--bg1),var(--bg2));
+radial-gradient(circle at 10% 5%,#31136d,transparent 40%),
+radial-gradient(circle at 90% 20%,#063b4a,transparent 40%),
+linear-gradient(135deg,#02030c,#060726);
 color:white;
 }
 
-.wrap{max-width:1450px;margin:auto;padding:24px}
+.wrap{max-width:1500px;margin:auto;padding:26px}
+
+/* ===== LOGO SALA ===== */
+
+.logoBoard{
+background:black;
+border-radius:12px;
+padding:16px 50px;
+display:inline-block;
+box-shadow:
+0 0 25px rgba(255,0,0,.6),
+inset 0 0 12px rgba(255,0,0,.5);
+}
+
+.logoBoard span{
+color:var(--red);
+font-size:42px;
+font-weight:900;
+letter-spacing:6px;
+}
+
+.sub{
+font-size:11px;
+opacity:.7;
+margin-top:4px;
+text-align:center
+}
+
+/* ===== HEADER ===== */
 
 .header{
 display:flex;
 align-items:center;
-gap:20px;
-margin-bottom:22px
+gap:18px;
+margin-bottom:24px
 }
 
-.logo{
-background:black;
-padding:18px 40px;
-border-radius:20px;
-box-shadow:0 0 35px rgba(255,0,0,.55);
-}
-
-.logo span{
-font-size:40px;
-font-weight:900;
-letter-spacing:4px;
-color:var(--red);
-}
-
-.sub{font-size:12px;opacity:.7;margin-top:4px}
-
-.slot{
+.badge{
 background:rgba(255,170,0,.15);
 border:1px solid rgba(255,170,0,.6);
 padding:6px 14px;
@@ -60,70 +71,94 @@ border-radius:999px;
 font-size:12px
 }
 
+/* ===== TABS ===== */
+
+.tabs{
+display:flex;
+gap:14px;
+margin-bottom:18px
+}
+
+.tab{
+padding:10px 22px;
+border-radius:999px;
+background:rgba(255,255,255,.08);
+cursor:pointer;
+border:1px solid var(--stroke)
+}
+.tab.active{
+background:linear-gradient(90deg,#ffb000,#ff5a00);
+color:black;
+font-weight:700;
+}
+
+/* ===== GRID ===== */
+
 .grid{
 display:grid;
-grid-template-columns:2fr 1fr;
-gap:24px
+grid-template-columns:2.3fr 1fr;
+gap:22px
 }
 
 .panel{
-background:linear-gradient(180deg,rgba(40,50,120,.35),rgba(10,15,40,.65));
+background:linear-gradient(180deg,rgba(60,70,160,.35),rgba(10,15,40,.7));
 border:1px solid var(--stroke);
 border-radius:26px;
 padding:22px;
 box-shadow:0 0 60px rgba(0,0,0,.6)
 }
 
-.section{
-margin-bottom:26px
-}
-
-.section h2{
-margin:0 0 14px;
-font-size:22px
-}
-
 .match{
-border:1px solid var(--stroke);
+background:rgba(0,0,0,.35);
 border-radius:20px;
 padding:18px;
 margin-bottom:14px;
-background:rgba(0,0,0,.28)
+border:1px solid var(--stroke)
 }
+
+/* ===== BARS ===== */
 
 .bar{
 height:8px;
-border-radius:10px;
+border-radius:20px;
 background:rgba(255,255,255,.15);
 overflow:hidden
 }
 .fill{
 height:100%;
-background:linear-gradient(90deg,#00ffc8,#4aa3ff)
+background:linear-gradient(90deg,#00ffd0,#4aa3ff)
 }
+
+/* ===== RADAR ===== */
 
 .radar{
 display:grid;
 grid-template-columns:repeat(5,1fr);
-gap:10px;
-margin-top:12px
+gap:8px;
+margin-top:10px
 }
 .radar div{
 background:rgba(255,255,255,.1);
-border-radius:12px;
-padding:8px;
-font-size:12px;
+border-radius:10px;
+padding:6px;
+font-size:11px;
 text-align:center
 }
 
-.pick{
-margin-top:8px;
-background:rgba(255,255,255,.06);
-padding:8px 12px;
-border-radius:10px
-}
+/* ===== SIDE ===== */
 
 .sidebox{margin-bottom:18px}
+
+.highlight{
+color:var(--accent);
+font-weight:700
+}
+
+.footerGlow{
+margin-top:10px;
+font-size:11px;
+opacity:.7
+}
 </style>
 </head>
 
@@ -132,34 +167,46 @@ border-radius:10px
 <div class="wrap">
 
 <div class="header">
-<div class="logo">
-<span>VINCITU</span>
-<div class="sub">IA CONTROL ROOM – SISTEMA ANALISI MATCH</div>
+<div>
+<div class="logoBoard"><span>VINCITU</span></div>
+<div class="sub">SISTEMA IA SALA • ANALISI MULTI-MERCATO</div>
 </div>
-<div class="slot" id="slotBox">SERA</div>
+
+<div class="badge" id="slotBadge">SERA</div>
+<div class="badge">LIVE</div>
+</div>
+
+<!-- ===== TABS ===== -->
+<div class="tabs">
+<div class="tab active" data-sec="corners">🔵 Corner</div>
+<div class="tab" data-sec="cards">🔴 Cartellini</div>
+<div class="tab" data-sec="goals">🟡 Esiti & Gol</div>
 </div>
 
 <div class="grid">
 
-<div class="panel">
-
-<div id="content"></div>
-
-</div>
+<div class="panel" id="content"></div>
 
 <div>
 
 <div class="panel sidebox">
-<h3>⚡ Modalità Sala</h3>
-Aggiornamento automatico 3x giorno.<br>
-Solo match reali.<br>
-Analisi IA multi-mercato.
+<h3>🔥 Match più caldo</h3>
+<div class="highlight" id="hotMatch">—</div>
 </div>
 
 <div class="panel sidebox">
-<h3>📊 Come leggere</h3>
-Radar = pressione / corner / falli / gol.<br>
-Non seguire tutto: scegli 1–2 mercati.
+<h3>📡 Radar IA</h3>
+Pressione – Ritmo – Falli – Cross – Dominio
+</div>
+
+<div class="panel sidebox">
+<h3>⚡ Consiglio rapido sala</h3>
+Poche giocate, quota reale sempre al banco.
+</div>
+
+<div class="panel sidebox">
+<h3>🕒 Aggiornamento</h3>
+Ultimo refresh: <span id="timeBox"></span>
 </div>
 
 </div>
@@ -170,36 +217,49 @@ Non seguire tutto: scegli 1–2 mercati.
 
 <script>
 
+document.getElementById("timeBox").textContent =
+new Date().toLocaleTimeString("it-IT");
+
 const qs=new URLSearchParams(location.search);
 const slot=(qs.get("slot")||"sera").toLowerCase();
-document.getElementById("slotBox").textContent=slot.toUpperCase();
+document.getElementById("slotBadge").textContent=slot.toUpperCase();
+
+let eventsData=[];
+let current="corners";
 
 fetch("events.json?ts="+Date.now())
 .then(r=>r.json())
 .then(d=>{
+eventsData=d.events.filter(e=>e.slot===slot);
+render();
+});
+
+document.querySelectorAll(".tab").forEach(t=>{
+t.onclick=()=>{
+document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
+t.classList.add("active");
+current=t.dataset.sec;
+render();
+};
+});
+
+function render(){
 
 const box=document.getElementById("content");
+box.innerHTML="";
 
-const data=d.events.filter(e=>e.slot===slot);
+const sel=eventsData.slice(0,3);
 
-const sections=[
-{title:"🟡 Pressione & Corner", key:"corners"},
-{title:"🔴 Falli & Cartellini", key:"cards"},
-{title:"🔵 Esito & Gol", key:"goals"}
-];
+if(sel[0])
+document.getElementById("hotMatch").textContent=
+sel[0].home+" – "+sel[0].away;
 
-sections.forEach(sec=>{
+sel.forEach(ev=>{
 
-const secDiv=document.createElement("div");
-secDiv.className="section";
-secDiv.innerHTML=`<h2>${sec.title}</h2>`;
+const val=Math.round(ev.context[current]*10);
+const trust=70+val;
 
-data.slice(0,3).forEach(ev=>{
-
-const score=Math.round(ev.context[sec.key]*10);
-const trust=70+score;
-
-secDiv.innerHTML+=`
+box.innerHTML+=`
 
 <div class="match">
 <h3>${ev.home} – ${ev.away}</h3>
@@ -215,23 +275,21 @@ Affidabilità IA: ${trust}%
 <div>Gol<br>${Math.round(ev.context.goals*10)}/10</div>
 </div>
 
-<div class="pick">
-<b>🎯 Lettura IA</b><br>
-${sec.key==="corners" ? "Pressione laterale e ritmo: possibile linea over corner se quota congrua." :
-sec.key==="cards" ? "Fisicità e duelli frequenti: arbitro determinante → over cartellini valutabile." :
-"Differenza tecnica / ritmo gara: esito e gol dipendono dal controllo del match."}
+<div class="footerGlow">
+${
+current==="corners"
+? "IA: pressione laterale + ritmo → valutare Over 9.5 se quota congrua."
+: current==="cards"
+? "IA: fisicità e arbitro → Over 4.5 cartellini possibile."
+: "IA: differenza tecnica / controllo gara → esiti e gol dipendono dalla gestione."
+}
 </div>
 
 </div>
 `;
-
 });
+}
 
-box.appendChild(secDiv);
-
-});
-
-});
 </script>
 
 </body>
