@@ -1,296 +1,41 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VINCITU – IA SALA MATCH</title>
+import json
+from datetime import datetime
 
-<style>
-:root{
---bg:#050514;
---red:#ff2222;
---accent:#ffaa00;
---cyan:#00ffd0;
---panel:rgba(30,40,90,.55);
---stroke:rgba(255,255,255,.15);
-}
+OUT="data.json"
 
-*{box-sizing:border-box;font-family:system-ui}
+def main():
 
-body{
-margin:0;
-background:
-radial-gradient(circle at 10% 5%,#31136d,transparent 40%),
-radial-gradient(circle at 90% 20%,#063b4a,transparent 40%),
-linear-gradient(135deg,#02030c,#060726);
-color:white;
-}
+    feed={
+        "corner":[
+            {
+                "match":"Inter - Roma",
+                "league":"Serie A",
+                "pick":"Over 9.5 Corner",
+                "info":"Prob 63%"
+            }
+        ],
+        "value":[
+            {
+                "match":"Lione - Lille",
+                "league":"Ligue 1",
+                "pick":"DNB Casa",
+                "info":"Quota ≥ 1.78"
+            }
+        ],
+        "top":[
+            {
+                "match":"Barça - Betis",
+                "league":"LaLiga",
+                "pick":"Over 2.5",
+                "info":"Top giornata"
+            }
+        ]
+    }
 
-.wrap{max-width:1500px;margin:auto;padding:26px}
+    with open(OUT,"w",encoding="utf-8") as f:
+        json.dump(feed,f,indent=2,ensure_ascii=False)
 
-/* ===== LOGO SALA ===== */
+    print("QR aggiornato",datetime.now())
 
-.logoBoard{
-background:black;
-border-radius:12px;
-padding:16px 50px;
-display:inline-block;
-box-shadow:
-0 0 25px rgba(255,0,0,.6),
-inset 0 0 12px rgba(255,0,0,.5);
-}
-
-.logoBoard span{
-color:var(--red);
-font-size:42px;
-font-weight:900;
-letter-spacing:6px;
-}
-
-.sub{
-font-size:11px;
-opacity:.7;
-margin-top:4px;
-text-align:center
-}
-
-/* ===== HEADER ===== */
-
-.header{
-display:flex;
-align-items:center;
-gap:18px;
-margin-bottom:24px
-}
-
-.badge{
-background:rgba(255,170,0,.15);
-border:1px solid rgba(255,170,0,.6);
-padding:6px 14px;
-border-radius:999px;
-font-size:12px
-}
-
-/* ===== TABS ===== */
-
-.tabs{
-display:flex;
-gap:14px;
-margin-bottom:18px
-}
-
-.tab{
-padding:10px 22px;
-border-radius:999px;
-background:rgba(255,255,255,.08);
-cursor:pointer;
-border:1px solid var(--stroke)
-}
-.tab.active{
-background:linear-gradient(90deg,#ffb000,#ff5a00);
-color:black;
-font-weight:700;
-}
-
-/* ===== GRID ===== */
-
-.grid{
-display:grid;
-grid-template-columns:2.3fr 1fr;
-gap:22px
-}
-
-.panel{
-background:linear-gradient(180deg,rgba(60,70,160,.35),rgba(10,15,40,.7));
-border:1px solid var(--stroke);
-border-radius:26px;
-padding:22px;
-box-shadow:0 0 60px rgba(0,0,0,.6)
-}
-
-.match{
-background:rgba(0,0,0,.35);
-border-radius:20px;
-padding:18px;
-margin-bottom:14px;
-border:1px solid var(--stroke)
-}
-
-/* ===== BARS ===== */
-
-.bar{
-height:8px;
-border-radius:20px;
-background:rgba(255,255,255,.15);
-overflow:hidden
-}
-.fill{
-height:100%;
-background:linear-gradient(90deg,#00ffd0,#4aa3ff)
-}
-
-/* ===== RADAR ===== */
-
-.radar{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:8px;
-margin-top:10px
-}
-.radar div{
-background:rgba(255,255,255,.1);
-border-radius:10px;
-padding:6px;
-font-size:11px;
-text-align:center
-}
-
-/* ===== SIDE ===== */
-
-.sidebox{margin-bottom:18px}
-
-.highlight{
-color:var(--accent);
-font-weight:700
-}
-
-.footerGlow{
-margin-top:10px;
-font-size:11px;
-opacity:.7
-}
-</style>
-</head>
-
-<body>
-
-<div class="wrap">
-
-<div class="header">
-<div>
-<div class="logoBoard"><span>VINCITU</span></div>
-<div class="sub">SISTEMA IA SALA • ANALISI MULTI-MERCATO</div>
-</div>
-
-<div class="badge" id="slotBadge">SERA</div>
-<div class="badge">LIVE</div>
-</div>
-
-<!-- ===== TABS ===== -->
-<div class="tabs">
-<div class="tab active" data-sec="corners">🔵 Corner</div>
-<div class="tab" data-sec="cards">🔴 Cartellini</div>
-<div class="tab" data-sec="goals">🟡 Esiti & Gol</div>
-</div>
-
-<div class="grid">
-
-<div class="panel" id="content"></div>
-
-<div>
-
-<div class="panel sidebox">
-<h3>🔥 Match più caldo</h3>
-<div class="highlight" id="hotMatch">—</div>
-</div>
-
-<div class="panel sidebox">
-<h3>📡 Radar IA</h3>
-Pressione – Ritmo – Falli – Cross – Dominio
-</div>
-
-<div class="panel sidebox">
-<h3>⚡ Consiglio rapido sala</h3>
-Poche giocate, quota reale sempre al banco.
-</div>
-
-<div class="panel sidebox">
-<h3>🕒 Aggiornamento</h3>
-Ultimo refresh: <span id="timeBox"></span>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<script>
-
-document.getElementById("timeBox").textContent =
-new Date().toLocaleTimeString("it-IT");
-
-const qs=new URLSearchParams(location.search);
-const slot=(qs.get("slot")||"sera").toLowerCase();
-document.getElementById("slotBadge").textContent=slot.toUpperCase();
-
-let eventsData=[];
-let current="corners";
-
-fetch("events.json?ts="+Date.now())
-.then(r=>r.json())
-.then(d=>{
-eventsData=d.events.filter(e=>e.slot===slot);
-render();
-});
-
-document.querySelectorAll(".tab").forEach(t=>{
-t.onclick=()=>{
-document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));
-t.classList.add("active");
-current=t.dataset.sec;
-render();
-};
-});
-
-function render(){
-
-const box=document.getElementById("content");
-box.innerHTML="";
-
-const sel=eventsData.slice(0,3);
-
-if(sel[0])
-document.getElementById("hotMatch").textContent=
-sel[0].home+" – "+sel[0].away;
-
-sel.forEach(ev=>{
-
-const val=Math.round(ev.context[current]*10);
-const trust=70+val;
-
-box.innerHTML+=`
-
-<div class="match">
-<h3>${ev.home} – ${ev.away}</h3>
-
-Affidabilità IA: ${trust}%
-<div class="bar"><div class="fill" style="width:${trust}%"></div></div>
-
-<div class="radar">
-<div>Ritmo<br>${ev.context.signals.ritmo}</div>
-<div>Equilibrio<br>${ev.context.signals.equilibrio}</div>
-<div>Corner<br>${Math.round(ev.context.corners*10)}/10</div>
-<div>Cartellini<br>${Math.round(ev.context.cards*10)}/10</div>
-<div>Gol<br>${Math.round(ev.context.goals*10)}/10</div>
-</div>
-
-<div class="footerGlow">
-${
-current==="corners"
-? "IA: pressione laterale + ritmo → valutare Over 9.5 se quota congrua."
-: current==="cards"
-? "IA: fisicità e arbitro → Over 4.5 cartellini possibile."
-: "IA: differenza tecnica / controllo gara → esiti e gol dipendono dalla gestione."
-}
-</div>
-
-</div>
-`;
-});
-}
-
-</script>
-
-</body>
-</html>
+if __name__=="__main__":
+    main()
