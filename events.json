@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-01-25 05:21",
+  "updated_at": "2026-01-25 06:46",
   "timezone": "Europe/Rome",
   "counts": {
     "mattina": 5,
@@ -8,56 +8,6 @@
     "total": 15
   },
   "events": [
-    {
-      "id": 538006,
-      "uniq": "538006|2026-01-25T14:00:00Z|Crystal Palace FC|Chelsea FC",
-      "slot": "mattina",
-      "league": "Premier League",
-      "league_code": "PL",
-      "country": "",
-      "country_code": "",
-      "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Crystal Palace FC",
-      "away": "Chelsea FC",
-      "home_short": "CRY",
-      "away_short": "CHE",
-      "home_crest": "https://crests.football-data.org/354.png",
-      "away_crest": "https://crests.football-data.org/61.png",
-      "start_iso": "2026-01-25T15:00:00+01:00",
-      "start": "Oggi 15:00",
-      "markets": [
-        {
-          "label": "Over 2.5",
-          "tag": "Alta",
-          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
-        },
-        {
-          "label": "1X",
-          "tag": "Media",
-          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
-        },
-        {
-          "label": "Goal/NoGoal Sì",
-          "tag": "Alta",
-          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
-        }
-      ],
-      "context": {
-        "diff": 0.26,
-        "tempo": 0.69,
-        "goals": 0.76,
-        "grit": 0.82,
-        "corners": 0.76,
-        "cards": 0.81,
-        "signals": {
-          "ritmo": "Media",
-          "equilibrio": "Equilibrio",
-          "fisicita": "Alta"
-        },
-        "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
-        "reason_cards": "Gara fisica ed equilibrata → più contrasti, cartellini più probabili."
-      }
-    },
     {
       "id": 537028,
       "uniq": "537028|2026-01-25T14:00:00Z|Genoa CFC|Bologna FC 1909",
@@ -152,6 +102,56 @@
         "signals": {
           "ritmo": "Bassa",
           "equilibrio": "Favorita casa",
+          "fisicita": "Media"
+        },
+        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
+        "reason_cards": "Fisicità media → qualche cartellino possibile."
+      }
+    },
+    {
+      "id": 538013,
+      "uniq": "538013|2026-01-25T14:00:00Z|Newcastle United FC|Aston Villa FC",
+      "slot": "mattina",
+      "league": "Premier League",
+      "league_code": "PL",
+      "country": "",
+      "country_code": "",
+      "competition_emblem": "https://crests.football-data.org/PL.png",
+      "home": "Newcastle United FC",
+      "away": "Aston Villa FC",
+      "home_short": "NEW",
+      "away_short": "AVL",
+      "home_crest": "https://crests.football-data.org/67.png",
+      "away_crest": "https://crests.football-data.org/58.png",
+      "start_iso": "2026-01-25T15:00:00+01:00",
+      "start": "Oggi 15:00",
+      "markets": [
+        {
+          "label": "Over 2.5",
+          "tag": "Media",
+          "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
+        },
+        {
+          "label": "1X",
+          "tag": "Bassa",
+          "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
+        },
+        {
+          "label": "Goal/NoGoal Sì",
+          "tag": "Bassa",
+          "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
+        }
+      ],
+      "context": {
+        "diff": -0.72,
+        "tempo": 0.46,
+        "goals": 0.27,
+        "grit": 0.71,
+        "corners": 0.5,
+        "cards": 0.92,
+        "signals": {
+          "ritmo": "Bassa",
+          "equilibrio": "Favorita ospite",
           "fisicita": "Media"
         },
         "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
@@ -459,53 +459,53 @@
       }
     },
     {
-      "id": 538013,
-      "uniq": "538013|2026-01-25T14:00:00Z|Newcastle United FC|Aston Villa FC",
+      "id": 538006,
+      "uniq": "538006|2026-01-25T14:00:00Z|Crystal Palace FC|Chelsea FC",
       "slot": "pomeriggio",
       "league": "Premier League",
       "league_code": "PL",
       "country": "",
       "country_code": "",
       "competition_emblem": "https://crests.football-data.org/PL.png",
-      "home": "Newcastle United FC",
-      "away": "Aston Villa FC",
-      "home_short": "NEW",
-      "away_short": "AVL",
-      "home_crest": "https://crests.football-data.org/67.png",
-      "away_crest": "https://crests.football-data.org/58.png",
+      "home": "Crystal Palace FC",
+      "away": "Chelsea FC",
+      "home_short": "CRY",
+      "away_short": "CHE",
+      "home_crest": "https://crests.football-data.org/354.png",
+      "away_crest": "https://crests.football-data.org/61.png",
       "start_iso": "2026-01-25T15:00:00+01:00",
       "start": "Oggi 15:00",
       "markets": [
         {
           "label": "Over 2.5",
-          "tag": "Media",
+          "tag": "Alta",
           "note": "Indicativo: dipende dal ritmo e dalle occasioni. Verifica al banco."
         },
         {
           "label": "1X",
-          "tag": "Bassa",
+          "tag": "Media",
           "note": "Indicativo: dipende da favorita/equilibrio. Verifica al banco."
         },
         {
           "label": "Goal/NoGoal Sì",
-          "tag": "Bassa",
+          "tag": "Alta",
           "note": "Indicativo: serve pericolosità da entrambe. Verifica al banco."
         }
       ],
       "context": {
-        "diff": -0.72,
-        "tempo": 0.46,
-        "goals": 0.27,
-        "grit": 0.71,
-        "corners": 0.5,
-        "cards": 0.92,
+        "diff": 0.26,
+        "tempo": 0.69,
+        "goals": 0.76,
+        "grit": 0.82,
+        "corners": 0.76,
+        "cards": 0.81,
         "signals": {
-          "ritmo": "Bassa",
-          "equilibrio": "Favorita ospite",
-          "fisicita": "Media"
+          "ritmo": "Media",
+          "equilibrio": "Equilibrio",
+          "fisicita": "Alta"
         },
-        "reason_corner": "Ritmo basso: corner meno affidabili (valuta con prudenza).",
-        "reason_cards": "Fisicità media → qualche cartellino possibile."
+        "reason_corner": "Ritmo medio: corner possibili se una squadra spinge a tratti.",
+        "reason_cards": "Gara fisica ed equilibrata → più contrasti, cartellini più probabili."
       }
     },
     {
