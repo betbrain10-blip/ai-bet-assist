@@ -1,101 +1,123 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8" />
-<title>VINCITU AI — Pronostici Live</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VINCITU AI – Pronostici Live</title>
 
 <style>
 body {
-  background:#0b0b0b;
-  color:#fff;
-  font-family:Arial, Helvetica, sans-serif;
-  margin:0;
-  padding:0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
 }
 
 header {
-  text-align:center;
-  padding:30px;
+  text-align: center;
+  padding: 30px 0;
 }
 
 .logo {
-  font-size:42px;
-  font-weight:800;
-  border:3px solid red;
-  display:inline-block;
-  padding:12px 40px;
-  color:red;
-}
-
-.section-title {
-  text-align:center;
-  font-size:24px;
-  margin:35px 0 15px;
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px solid red;
+  color: red;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .container {
-  max-width:1100px;
-  margin:auto;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: red;
+  margin: 40px 0 20px;
 }
 
 .grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
-  gap:22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  background:#141414;
-  border-radius:12px;
-  padding:18px;
-  border:1px solid #2a2a2a;
-  cursor:pointer;
-  transition:0.25s;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .card:hover {
-  transform:scale(1.03);
-  border-color:#ff3b3b;
+  transform: scale(1.03);
+  border-color: red;
 }
 
-.badge {
-  display:inline-block;
-  background:red;
-  color:white;
-  padding:4px 10px;
-  border-radius:6px;
-  font-size:12px;
-  margin-bottom:6px;
+.card h3 {
+  margin: 0 0 10px;
 }
 
 .market {
-  color:#3cff8f;
-  font-weight:700;
-}
-
-.small {
-  color:#aaa;
-  font-size:13px;
-}
-
-.details {
-  display:none;
-  margin-top:12px;
-  border-top:1px solid #333;
-  padding-top:10px;
+  color: #00ff99;
+  font-weight: bold;
 }
 
 .updated {
-  text-align:center;
-  color:#888;
-  margin:25px;
+  text-align: center;
+  color: #888;
+  margin: 40px 0;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #111;
+  border: 2px solid red;
+  border-radius: 12px;
+  max-width: 400px;
+  padding: 25px;
+  text-align: center;
+}
+
+.modal-box h2 {
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-close {
+  background: #333;
+  color: #fff;
+}
+
+.btn-play {
+  background: red;
+  color: #fff;
 }
 </style>
-
 </head>
 
 <body>
@@ -105,22 +127,28 @@ header {
 </header>
 
 <div class="container">
+  <h2 class="section-title">🔥 CORNER AI</h2>
+  <div id="corner" class="grid"></div>
 
-<h2 class="section-title">🔥 CORNER AI</h2>
-<div id="corner" class="grid"></div>
+  <h2 class="section-title">💎 VALUE BET</h2>
+  <div id="value" class="grid"></div>
 
-<h2 class="section-title">💎 VALUE BET</h2>
-<div id="value" class="grid"></div>
+  <h2 class="section-title">⭐ TOP MATCH</h2>
+  <div id="hot" class="grid"></div>
 
-<h2 class="section-title">⭐ TOP MATCH</h2>
-<div id="hot" class="grid"></div>
-
-<div id="updated" class="updated"></div>
-
+  <div id="updated" class="updated"></div>
 </div>
 
-<!-- JS ENGINE -->
-<script src="app.js"></script>
+<!-- MODAL -->
+<div id="modal" class="modal" onclick="closeModal()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <h2 id="m-title"></h2>
+    <div id="m-body"></div>
+    <a href="#" class="btn btn-play">🎯 Gioca ora</a>
+    <div><a href="#" class="btn btn-close" onclick="closeModal()">Chiudi</a></div>
+  </div>
+</div>
 
+<script src="app.js"></script>
 </body>
 </html>
