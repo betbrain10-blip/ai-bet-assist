@@ -1,126 +1,94 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-<meta charset="UTF-8" />
-<title>VINCITU AI — Pronostici Live</title>
+// ==========================
+// VINCITU AI - FRONT ENGINE
+// ==========================
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+const DATA_URL = "./qr_export.json";
 
-<link rel="stylesheet" href="style.css">
+async function loadData() {
+  try {
+    console.log("📡 Loading feed...");
 
-<style>
-body {
-  background:#0b0b0b;
-  color:#fff;
-  font-family:Arial, Helvetica, sans-serif;
-  margin:0;
-  padding:0;
+    const res = await fetch(DATA_URL + "?t=" + Date.now());
+
+    if (!res.ok) {
+      throw new Error("HTTP error " + res.status);
+    }
+
+    const data = await res.json();
+
+    console.log("✅ Feed OK", data);
+
+    renderSection(data.corner || [], "corner");
+    renderSection(data.value || [], "value");
+    renderSection(data.hot || [], "hot");
+
+    document.getElementById("updated").innerText =
+      "Ultimo aggiornamento: " + data.updated_at;
+
+  } catch (err) {
+    console.error("❌ LOAD ERROR:", err);
+
+    document.getElementById("updated").innerText =
+      "Errore caricamento feed";
+  }
 }
 
-header {
-  text-align:center;
-  padding:30px;
+function renderSection(events, id) {
+  const box = document.getElementById(id);
+  box.innerHTML = "";
+
+  if (!events.length) {
+    box.innerHTML =
+      `<div class="empty">Nessun evento disponibile</div>`;
+    return;
+  }
+
+  events.forEach(ev => {
+    const card = document.createElement("div");
+    card.className = "card clickable";
+
+    card.innerHTML = `
+      <h3>${ev.home} - ${ev.away}</h3>
+      <div class="league">${ev.league}</div>
+      <div class="kickoff">🕒 ${ev.kickoff}</div>
+
+      <div class="market">${ev.market}</div>
+
+      <div class="prob">📊 Probabilità: ${(ev.prob * 100).toFixed(1)}%</div>
+
+      ${ev.expected_total ? `<div>📐 Corner attesi: ${ev.expected_total}</div>` : ""}
+      ${ev.quota_min ? `<div>💰 Quota min: ${ev.quota_min}</div>` : ""}
+    `;
+
+    card.onclick = () => openDetails(ev);
+
+    box.appendChild(card);
+  });
 }
 
-.logo {
-  font-size:42px;
-  font-weight:800;
-  border:3px solid red;
-  display:inline-block;
-  padding:12px 40px;
-  color:red;
+// ==========================
+// POPUP DETTAGLIO EVENTO
+// ==========================
+
+function openDetails(ev) {
+  alert(
+`🔥 ${ev.home} - ${ev.away}
+
+Campionato: ${ev.league}
+Orario: ${ev.kickoff}
+
+Mercato: ${ev.market}
+Probabilità: ${(ev.prob * 100).toFixed(1)}%
+
+${ev.expected_total ? "Corner attesi: " + ev.expected_total : ""}
+${ev.quota_min ? "Quota minima: " + ev.quota_min : ""}
+`
+  );
 }
 
-.section-title {
-  text-align:center;
-  font-size:24px;
-  margin:35px 0 15px;
-}
+// ==========================
+// AUTO REFRESH
+// ==========================
 
-.container {
-  max-width:1100px;
-  margin:auto;
-}
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
-  gap:22px;
-}
-
-.card {
-  background:#141414;
-  border-radius:12px;
-  padding:18px;
-  border:1px solid #2a2a2a;
-  cursor:pointer;
-  transition:0.25s;
-}
-
-.card:hover {
-  transform:scale(1.03);
-  border-color:#ff3b3b;
-}
-
-.badge {
-  display:inline-block;
-  background:red;
-  color:white;
-  padding:4px 10px;
-  border-radius:6px;
-  font-size:12px;
-  margin-bottom:6px;
-}
-
-.market {
-  color:#3cff8f;
-  font-weight:700;
-}
-
-.small {
-  color:#aaa;
-  font-size:13px;
-}
-
-.details {
-  display:none;
-  margin-top:12px;
-  border-top:1px solid #333;
-  padding-top:10px;
-}
-
-.updated {
-  text-align:center;
-  color:#888;
-  margin:25px;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-  <div class="logo">VINCITU AI</div>
-</header>
-
-<div class="container">
-
-<h2 class="section-title">🔥 CORNER AI</h2>
-<div id="corner" class="grid"></div>
-
-<h2 class="section-title">💎 VALUE BET</h2>
-<div id="value" class="grid"></div>
-
-<h2 class="section-title">⭐ TOP MATCH</h2>
-<div id="hot" class="grid"></div>
-
-<div id="updated" class="updated"></div>
-
-</div>
-
-<!-- JS ENGINE -->
-<script src="app.js"></script>
-
-</body>
-</html>
+loadData();
+setInterval(loadData, 60000);
