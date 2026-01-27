@@ -1,0 +1,26 @@
+{
+  "updated_at": "27/01 12:34",
+  "value": [
+    {
+      "league": "Serie A",
+      "home": "Inter",
+      "away": "Juventus",
+      "kickoff": "27/01 15:34",
+      "market": "Over 2.5",
+      "prob": 0.63,
+      "quota_min": 1.6
+    }
+  ],
+  "corner": [
+    {
+      "league": "Premier League",
+      "home": "Arsenal",
+      "away": "Chelsea",
+      "kickoff": "27/01 14:34",
+      "market": "Over 9.5",
+      "prob": 0.61,
+      "expected_total": 10.8
+    }
+  ],
+  "hot": []
+}
