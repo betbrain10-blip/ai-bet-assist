@@ -1,71 +1,126 @@
-async function loadData(){
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<title>VINCITU AI — Pronostici Live</title>
 
- const r = await fetch("qr_export.json?"+Date.now());
- const data = await r.json();
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
- document.getElementById("updated").innerText =
-   "Ultimo aggiornamento: "+data.updated_at;
+<link rel="stylesheet" href="style.css">
 
- render(data.corner,"corner");
- render(data.value,"value");
- render(data.hot,"hot");
+<style>
+body {
+  background:#0b0b0b;
+  color:#fff;
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
 }
 
-function confBadge(p){
- if(p>0.62) return `<span class="badge high">ALTA</span>`;
- if(p>0.55) return `<span class="badge mid">MEDIA</span>`;
- return `<span class="badge low">SPECULATIVA</span>`;
+header {
+  text-align:center;
+  padding:30px;
 }
 
-function render(list,id){
-
- const box=document.getElementById(id);
- box.innerHTML="";
-
- if(!list || list.length===0){
-   box.innerHTML="<p>Nessun evento attivo.</p>";
-   return;
- }
-
- list.forEach(ev=>{
-
-  const d=document.createElement("div");
-  d.className="card";
-
-  d.innerHTML=`
-   <div class="match">${ev.home} - ${ev.away}</div>
-   <div>${ev.league}</div>
-   <div>🕒 ${ev.kickoff}</div>
-
-   <div class="market">${ev.market}</div>
-
-   <div>
-     Prob ${(ev.prob*100).toFixed(1)}%
-     ${confBadge(ev.prob)}
-   </div>
-
-   <div class="details">
-     ${ev.quota_min?`Quota minima: ${ev.quota_min}<br>`:""}
-     ${ev.expected_total?`Corner stimati: ${ev.expected_total}<br>`:""}
-     ${ev.reason?`🧠 ${ev.reason}<br>`:""}
-     Algoritmo BetBrain AI.
-   </div>
-
-   <a class="button" target="_blank" href="https://www.vincitu.it">
-     GIOCA
-   </a>
-  `;
-
-  d.onclick=()=>toggle(d);
-
-  box.appendChild(d);
- });
+.logo {
+  font-size:42px;
+  font-weight:800;
+  border:3px solid red;
+  display:inline-block;
+  padding:12px 40px;
+  color:red;
 }
 
-function toggle(card){
- const det=card.querySelector(".details");
- det.style.display = det.style.display==="block"?"none":"block";
+.section-title {
+  text-align:center;
+  font-size:24px;
+  margin:35px 0 15px;
 }
 
-setInterval(loadData,60000);
-window.onload=loadData;
+.container {
+  max-width:1100px;
+  margin:auto;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+  gap:22px;
+}
+
+.card {
+  background:#141414;
+  border-radius:12px;
+  padding:18px;
+  border:1px solid #2a2a2a;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.card:hover {
+  transform:scale(1.03);
+  border-color:#ff3b3b;
+}
+
+.badge {
+  display:inline-block;
+  background:red;
+  color:white;
+  padding:4px 10px;
+  border-radius:6px;
+  font-size:12px;
+  margin-bottom:6px;
+}
+
+.market {
+  color:#3cff8f;
+  font-weight:700;
+}
+
+.small {
+  color:#aaa;
+  font-size:13px;
+}
+
+.details {
+  display:none;
+  margin-top:12px;
+  border-top:1px solid #333;
+  padding-top:10px;
+}
+
+.updated {
+  text-align:center;
+  color:#888;
+  margin:25px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo">VINCITU AI</div>
+</header>
+
+<div class="container">
+
+<h2 class="section-title">🔥 CORNER AI</h2>
+<div id="corner" class="grid"></div>
+
+<h2 class="section-title">💎 VALUE BET</h2>
+<div id="value" class="grid"></div>
+
+<h2 class="section-title">⭐ TOP MATCH</h2>
+<div id="hot" class="grid"></div>
+
+<div id="updated" class="updated"></div>
+
+</div>
+
+<!-- JS ENGINE -->
+<script src="app.js"></script>
+
+</body>
+</html>
