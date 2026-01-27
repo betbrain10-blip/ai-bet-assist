@@ -1,55 +1,137 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<title>VINCITU AI – Pronostici</title>
+<meta charset="UTF-8" />
+<title>VINCITU AI - Pronostici Live</title>
+
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-async function loadData() {
-  const res = await fetch("data.json?"+Date.now());
-  const data = await res.json();
 
-  function render(section,id){
-    const box=document.getElementById(id);
-    box.innerHTML="";
-    section.forEach(ev=>{
-      const d=document.createElement("div");
-      d.className="card";
-      d.innerHTML=`
-        <b>${ev.match}</b>
-        <div>${ev.league}</div>
-        <div>${ev.pick}</div>
-        <div class="prob">${ev.info}</div>
-      `;
-      box.appendChild(d);
-    });
-  }
-
-  render(data.corner,"corner");
-  render(data.value,"value");
-  render(data.top,"top");
+<style>
+body {
+  background:#0b0b0b;
+  color:white;
+  font-family:Arial, sans-serif;
+  text-align:center;
 }
 
-setInterval(loadData,60000);
-window.onload=loadData;
+.logo {
+  border:2px solid red;
+  display:inline-block;
+  padding:15px 40px;
+  font-size:34px;
+  color:red;
+  font-weight:bold;
+  margin:30px auto;
+}
+
+.section-title {
+  font-size:22px;
+  margin-top:40px;
+  color:#ff4444;
+}
+
+.container {
+  max-width:900px;
+  margin:auto;
+}
+
+.card {
+  background:#141414;
+  border:1px solid #333;
+  padding:15px;
+  margin:15px;
+  border-radius:10px;
+}
+
+.match {
+  font-size:20px;
+  font-weight:bold;
+}
+
+.league {
+  color:#aaa;
+}
+
+.market {
+  color:#00ffaa;
+  font-size:18px;
+}
+
+.updated {
+  margin-top:20px;
+  font-size:12px;
+  color:#777;
+}
+</style>
+
+<script>
+async function loadData() {
+
+  const res = await fetch("qr_export.json?ts=" + Date.now());
+  const data = await res.json();
+
+  document.getElementById("updated").innerText =
+    "Ultimo aggiornamento: " + data.updated_at;
+
+  render(data.corner, "corner");
+  render(data.value, "value");
+  render(data.hot, "hot");
+}
+
+function render(list, id) {
+
+  const box = document.getElementById(id);
+  box.innerHTML = "";
+
+  if (!list || list.length === 0) {
+    box.innerHTML = "<p>Nessun evento sopra soglia.</p>";
+    return;
+  }
+
+  list.forEach(ev => {
+
+    const d = document.createElement("div");
+    d.className = "card";
+
+    d.innerHTML = `
+      <div class="match">${ev.home} - ${ev.away}</div>
+      <div class="league">${ev.league}</div>
+      <div>🕒 ${ev.kickoff}</div>
+      <div class="market">${ev.market}</div>
+      <div>Probabilità: ${(ev.prob*100).toFixed(1)}%</div>
+      ${ev.quota_min ? `<div>Quota minima: ${ev.quota_min}</div>` : ""}
+      ${ev.expected_total ? `<div>Corner attesi: ${ev.expected_total}</div>` : ""}
+    `;
+
+    box.appendChild(d);
+  });
+}
+
+setInterval(loadData, 60000);
+window.onload = loadData;
 </script>
+
 </head>
 
 <body>
 
 <div class="logo">VINCITU</div>
 
-<h2>🔥 CORNER AI</h2>
-<div id="corner" class="grid"></div>
+<div class="container">
 
-<h2>💎 VALUE BET</h2>
-<div id="value" class="grid"></div>
+<h2 class="section-title">🔥 CORNER AI</h2>
+<div id="corner"></div>
 
-<h2>⭐ TOP MATCH</h2>
-<div id="top" class="grid"></div>
+<h2 class="section-title">💎 VALUE BET</h2>
+<div id="value"></div>
 
-<footer>Powered by BetBrain AI</footer>
+<h2 class="section-title">⭐ TOP MATCH</h2>
+<div id="hot"></div>
+
+<div id="updated" class="updated"></div>
+
+</div>
 
 </body>
 </html>
