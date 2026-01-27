@@ -1,6 +1,6 @@
-// ==========================
+// =======================
 // VINCITU AI - FRONT ENGINE
-// ==========================
+// =======================
 
 const DATA_URL = "./qr_export.json";
 
@@ -38,8 +38,7 @@ function renderSection(events, id) {
   box.innerHTML = "";
 
   if (!events.length) {
-    box.innerHTML =
-      `<div class="empty">Nessun evento disponibile</div>`;
+    box.innerHTML = `<div class="empty">Nessun evento disponibile</div>`;
     return;
   }
 
@@ -47,48 +46,36 @@ function renderSection(events, id) {
     const card = document.createElement("div");
     card.className = "card clickable";
 
-    card.innerHTML = `
+    let html = `
       <h3>${ev.home} - ${ev.away}</h3>
       <div class="league">${ev.league}</div>
       <div class="kickoff">🕒 ${ev.kickoff}</div>
-
       <div class="market">${ev.market}</div>
-
       <div class="prob">📊 Probabilità: ${(ev.prob * 100).toFixed(1)}%</div>
-
-      ${ev.expected_total ? `<div>📐 Corner attesi: ${ev.expected_total}</div>` : ""}
-      ${ev.quota_min ? `<div>💰 Quota min: ${ev.quota_min}</div>` : ""}
     `;
 
-    card.onclick = () => openDetails(ev);
+    if (ev.expected_total) {
+      html += `<div>📐 Corner attesi: ${ev.expected_total}</div>`;
+    }
+
+    if (ev.quota_min) {
+      html += `<div>💰 Quota minima: ${ev.quota_min}</div>`;
+    }
+
+    card.innerHTML = html;
+
+    card.onclick = () => {
+      alert(
+        `${ev.home} - ${ev.away}\n` +
+        `${ev.league}\n` +
+        `${ev.market}\n` +
+        `Probabilità ${(ev.prob * 100).toFixed(1)}%`
+      );
+    };
 
     box.appendChild(card);
   });
 }
-
-// ==========================
-// POPUP DETTAGLIO EVENTO
-// ==========================
-
-function openDetails(ev) {
-  alert(
-`🔥 ${ev.home} - ${ev.away}
-
-Campionato: ${ev.league}
-Orario: ${ev.kickoff}
-
-Mercato: ${ev.market}
-Probabilità: ${(ev.prob * 100).toFixed(1)}%
-
-${ev.expected_total ? "Corner attesi: " + ev.expected_total : ""}
-${ev.quota_min ? "Quota minima: " + ev.quota_min : ""}
-`
-  );
-}
-
-// ==========================
-// AUTO REFRESH
-// ==========================
 
 loadData();
 setInterval(loadData, 60000);
