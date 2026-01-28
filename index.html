@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>VINCITU AI – Pronostici Live</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
 </head>
-
 <body>
-  <div class="container">
 
-    <div class="logo">VINCITU AI</div>
-
-    <div id="updated" class="footer"></div>
-
-    <div class="section-title">🔥 CORNER AI</div>
-    <div id="corner"></div>
-
-    <div class="section-title">💎 VALUE BET</div>
-    <div id="value"></div>
-
-    <div class="section-title">⭐ TOP MATCH</div>
-    <div id="hot"></div>
-
+  <!-- HEADER -->
+  <div class="logo-box">
+    <h1 class="logo">VINCITU AI</h1>
   </div>
 
+  <!-- SEZIONI -->
+  <section class="section-title">🔥 CORNER AI</section>
+  <div id="corner" class="cards-container"></div>
+
+  <section class="section-title">💎 VALUE BET</section>
+  <div id="value" class="cards-container"></div>
+
+  <section class="section-title">⭐ TOP MATCH</section>
+  <div id="top" class="cards-container"></div>
+
+  <!-- FOOTER -->
+  <footer id="lastUpdate">Ultimo aggiornamento: --</footer>
+
+  <!-- JS -->
   <script src="app.js"></script>
+
 </body>
 </html>
