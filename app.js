@@ -1,93 +1,56 @@
-// ===============================
-// VINCITU AI - PRO ENGINE v2
-// ===============================
+// ==============================
+// VINCI TU AI — PRO FRONT ENGINE
+// ==============================
 
 const DATA_URL = "./qr_export.json";
 
 async function loadData() {
   try {
     const res = await fetch(DATA_URL + "?t=" + Date.now());
-    if (!res.ok) throw new Error(res.status);
-
     const data = await res.json();
 
-    renderAll(data);
+    renderSection(data.corner || [], "corner");
+    renderSection(data.value || [], "value");
+    renderSection(data.hot || [], "hot");
 
     document.getElementById("updated").innerText =
       "Ultimo aggiornamento: " + data.updated_at;
-  } catch (err) {
-    console.error("LOAD ERROR", err);
+
+  } catch (e) {
+    console.error("Errore feed", e);
+    document.getElementById("updated").innerText =
+      "Errore caricamento feed";
   }
 }
 
-// -------------------------------
-// AI PICK ENGINE
-// -------------------------------
+function renderSection(events, id) {
+  const box = document.getElementById(id);
+  box.innerHTML = "";
 
-function scorePick(p) {
-  let score = 0;
+  if (!events.length) {
+    box.innerHTML = `<div class="empty">Nessun evento oggi</div>`;
+    return;
+  }
 
-  if (p.over25) score += p.over25 * 100;
-  if (p.corner95) score += p.corner95 * 120;
-  if (p.dnb) score += p.dnb * 110;
-  if (p.cards) score += p.cards * 80;
-
-  return score;
-}
-
-// -------------------------------
-// RENDER ENGINE
-// -------------------------------
-
-function renderAll(data) {
-  const container = document.getElementById("all");
-
-  container.innerHTML = "";
-
-  data.matches.forEach(match => {
-
-    const picks = [
-      { label: "Over 2.5", value: match.over25 },
-      { label: "Over 9.5 Corner", value: match.corner95 },
-      { label: "Cards Casa", value: match.cards },
-      { label: "DNB Casa", value: match.dnb }
-    ].filter(p => p.value);
-
-    picks.forEach(p => p.score = scorePick({
-      over25: p.label.includes("Over 2.5") ? p.value : 0,
-      corner95: p.label.includes("Corner") ? p.value : 0,
-      dnb: p.label.includes("DNB") ? p.value : 0,
-      cards: p.label.includes("Cards") ? p.value : 0
-    }));
-
-    picks.sort((a,b)=>b.score-a.score);
-
-    const top = picks[0];
-
+  events.forEach(ev => {
     const card = document.createElement("div");
-    card.className = "match-card";
+    card.className = "card";
 
     card.innerHTML = `
-      <div class="league">${match.league} — ${match.kickoff}</div>
-      <h2>${match.home} vs ${match.away}</h2>
+      <span class="badge">${ev.league}</span>
+      <h3>${ev.home} vs ${ev.away}</h3>
+      <div class="league">🕘 ${ev.kickoff}</div>
 
-      <div class="top-pick">
-        🔥 TOP PICK AI<br>
-        <span>${top.label}</span>
-        <strong>${(top.value*100).toFixed(1)}%</strong>
-      </div>
+      ${ev.market ? `<div class="market">${ev.market}</div>` : ""}
 
-      <div class="others">
-        ${picks.slice(1).map(p=>`
-          <div>${p.label}: ${(p.value*100).toFixed(1)}%</div>
-        `).join("")}
-      </div>
+      ${ev.prob ? `<div class="prob">Probabilità ${(ev.prob*100).toFixed(1)}%</div>` : ""}
+
+      ${ev.expected_total ? `<div class="prob">Corner attesi ${ev.expected_total}</div>` : ""}
     `;
 
-    container.appendChild(card);
-
+    box.appendChild(card);
   });
 }
 
 loadData();
-setInterval(loadData, 60000);
+setInterval(loadData, 120000);
