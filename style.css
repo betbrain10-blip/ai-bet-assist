@@ -1,62 +1,154 @@
-body {
-  background:#000;
-  color:#eee;
-  font-family:Arial, Helvetica, sans-serif;
+/* ===========================
+   VINCI TU AI — PRO UI
+=========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  --red: #ff2a2a;
+  --orange: #ff9f1c;
+  --blue: #00e5ff;
+  --bg: #050505;
+  --card: rgba(20,20,20,.95);
+  --glass: rgba(255,255,255,.04);
 }
 
-.match-card {
-  background: linear-gradient(145deg,#0a0a0a,#151515);
-  border-radius:18px;
-  padding:22px;
-  margin:25px auto;
-  max-width:900px;
-  border:2px solid #300;
-  box-shadow:0 0 25px rgba(255,0,0,.15);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(circle at top, #120000 0%, #000 45%);
+  color: white;
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+.logo {
+  font-family: Orbitron;
+  font-size: 54px;
+  font-weight: 800;
+  padding: 22px 40px;
+  border: 3px solid var(--red);
+  color: var(--red);
+  box-shadow:
+    0 0 20px rgba(255,0,0,.5),
+    inset 0 0 15px rgba(255,0,0,.3);
+  text-align: center;
+  margin: 30px auto;
+  width: fit-content;
+  border-radius: 14px;
+  letter-spacing: 4px;
+}
+
+/* TITOLI */
+
+.section-title {
+  margin: 80px 0 30px;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 32px;
+  color: var(--orange);
+  text-shadow: 0 0 15px rgba(255,160,0,.6);
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+  gap: 32px;
+  max-width: 1400px;
+  margin: 0 auto 60px;
+  padding: 0 30px;
+}
+
+/* CARD */
+
+.card {
+  background:
+    linear-gradient(180deg,#111,#070707);
+  border-radius: 22px;
+  padding: 26px;
+  border: 2px solid rgba(255,60,60,.3);
+  box-shadow:
+    0 0 25px rgba(255,0,0,.25),
+    inset 0 0 25px rgba(255,0,0,.12);
+  transition: all .35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 45px rgba(255,60,60,.7),
+    0 0 90px rgba(0,229,255,.25);
+}
+
+/* glow line */
+
+.card::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(120deg,transparent,rgba(255,0,0,.35),transparent);
+  opacity:.6;
+}
+
+/* TEXT */
+
+.card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .league {
-  color:#aaa;
-  font-size:13px;
+  opacity:.7;
+  margin-bottom: 6px;
 }
 
-.match-card h2 {
-  margin:8px 0 14px;
+.market {
+  font-weight: 700;
+  color: var(--orange);
+  margin-top: 10px;
 }
 
-.top-pick {
-  background:linear-gradient(90deg,#ffb300,#ff3d00);
-  color:#000;
-  padding:14px;
+.prob {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* BADGE */
+
+.badge {
+  display:inline-block;
+  padding:6px 14px;
   border-radius:14px;
-  font-weight:bold;
-  animation:pulse 2s infinite;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.6px;
+  background:linear-gradient(90deg,var(--red),var(--orange));
+  margin-bottom:8px;
 }
 
-.top-pick span {
-  display:block;
-  font-size:18px;
-}
+/* FOOTER */
 
-.top-pick strong {
-  font-size:22px;
-}
-
-.others {
-  margin-top:14px;
-  display:grid;
-  gap:8px;
-}
-
-.others div {
-  background:#111;
-  padding:8px 12px;
-  border-radius:10px;
+.updated {
+  text-align:center;
+  opacity:.6;
+  margin:80px 0 40px;
   font-size:14px;
-  color:#ccc;
 }
 
-@keyframes pulse {
-  0%{box-shadow:0 0 10px rgba(255,140,0,.4);}
-  50%{box-shadow:0 0 28px rgba(255,80,0,.9);}
-  100%{box-shadow:0 0 10px rgba(255,140,0,.4);}
+/* MOBILE */
+
+@media(max-width:600px){
+  .logo{font-size:38px}
+  .section-title{font-size:24px}
 }
