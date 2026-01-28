@@ -1,154 +1,29 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VINCITU AI – Pronostici Live</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #000;
-  color: #fff;
-}
-
-header {
-  text-align: center;
-  padding: 30px 0;
-}
-
-.logo {
-  display: inline-block;
-  padding: 20px 40px;
-  border: 2px solid red;
-  color: red;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-}
-
-.section-title {
-  text-align: center;
-  color: red;
-  margin: 40px 0 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #111;
-  border: 1px solid #222;
-  border-radius: 12px;
-  padding: 20px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.03);
-  border-color: red;
-}
-
-.card h3 {
-  margin: 0 0 10px;
-}
-
-.market {
-  color: #00ff99;
-  font-weight: bold;
-}
-
-.updated {
-  text-align: center;
-  color: #888;
-  margin: 40px 0;
-}
-
-/* MODAL */
-.modal {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.85);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.modal-box {
-  background: #111;
-  border: 2px solid red;
-  border-radius: 12px;
-  max-width: 400px;
-  padding: 25px;
-  text-align: center;
-}
-
-.modal-box h2 {
-  margin-top: 0;
-}
-
-.btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-close {
-  background: #333;
-  color: #fff;
-}
-
-.btn-play {
-  background: red;
-  color: #fff;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>VINCITU AI – Pronostici Live</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="container">
 
-<header>
-  <div class="logo">VINCITU AI</div>
-</header>
+    <div class="logo">VINCITU AI</div>
 
-<div class="container">
-  <h2 class="section-title">🔥 CORNER AI</h2>
-  <div id="corner" class="grid"></div>
+    <div id="updated" class="footer"></div>
 
-  <h2 class="section-title">💎 VALUE BET</h2>
-  <div id="value" class="grid"></div>
+    <div class="section-title">🔥 CORNER AI</div>
+    <div id="corner"></div>
 
-  <h2 class="section-title">⭐ TOP MATCH</h2>
-  <div id="hot" class="grid"></div>
+    <div class="section-title">💎 VALUE BET</div>
+    <div id="value"></div>
 
-  <div id="updated" class="updated"></div>
-</div>
+    <div class="section-title">⭐ TOP MATCH</div>
+    <div id="hot"></div>
 
-<!-- MODAL -->
-<div id="modal" class="modal" onclick="closeModal()">
-  <div class="modal-box" onclick="event.stopPropagation()">
-    <h2 id="m-title"></h2>
-    <div id="m-body"></div>
-    <a href="#" class="btn btn-play">🎯 Gioca ora</a>
-    <div><a href="#" class="btn btn-close" onclick="closeModal()">Chiudi</a></div>
   </div>
-</div>
 
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
