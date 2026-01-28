@@ -1,40 +1,78 @@
-body{
-  background:#111;
-  color:white;
-  font-family:Arial;
-  text-align:center;
+body {
+  background: radial-gradient(circle at top, #090909, #000);
+  font-family: Inter, Arial, sans-serif;
+  color: white;
+  margin: 0;
 }
 
-.logo{
-  background:black;
-  color:red;
-  font-size:40px;
-  padding:15px;
-  margin:20px auto;
-  width:260px;
-  border:3px solid red;
-  font-weight:bold;
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
 }
 
-h2{color:#ff4444;margin-top:35px;}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:15px;
-  padding:15px;
+.logo {
+  text-align: center;
+  border: 2px solid red;
+  color: red;
+  padding: 14px 40px;
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: 3px;
+  box-shadow: 0 0 25px red;
+  margin-bottom: 40px;
 }
 
-.card{
-  background:#1b1b1b;
-  padding:15px;
-  border-radius:10px;
-  border:1px solid #333;
+.section-title {
+  text-align: center;
+  font-size: 22px;
+  margin: 40px 0 15px;
+  color: #ff2a2a;
 }
 
-.prob{color:#00ff9c;margin-top:6px;}
+.card {
+  background: linear-gradient(145deg, #0f0f0f, #191919);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 0 25px rgba(255,0,0,0.25);
+  transition: 0.3s;
+}
 
-footer{
-  margin:30px;
-  opacity:0.6;
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(255,0,0,0.5);
+}
+
+.match {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.league {
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+.badges span {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.hot { background: red; }
+.value { background: #00d9ff; color:black;}
+.corner { background: orange; color:black;}
+
+.market {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.footer {
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 50px;
 }
