@@ -1,22 +1,6 @@
 {
-  "updated_at": "28/01 23:02",
+  "updated_at": "28/01 23:58",
   "value": [],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "EC Bahia",
-      "kickoff": "28/01 23:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.58,
-        "xg": 2.33,
-        "expected_corners": 10.7
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
