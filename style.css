@@ -1,78 +1,62 @@
 body {
-  background: radial-gradient(circle at top, #090909, #000);
-  font-family: Inter, Arial, sans-serif;
-  color: white;
-  margin: 0;
+  background:#000;
+  color:#eee;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 30px;
-}
-
-.logo {
-  text-align: center;
-  border: 2px solid red;
-  color: red;
-  padding: 14px 40px;
-  display: inline-block;
-  font-size: 30px;
-  letter-spacing: 3px;
-  box-shadow: 0 0 25px red;
-  margin-bottom: 40px;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 22px;
-  margin: 40px 0 15px;
-  color: #ff2a2a;
-}
-
-.card {
-  background: linear-gradient(145deg, #0f0f0f, #191919);
-  border-radius: 18px;
-  padding: 20px;
-  margin-bottom: 18px;
-  box-shadow: 0 0 25px rgba(255,0,0,0.25);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 40px rgba(255,0,0,0.5);
-}
-
-.match {
-  font-size: 22px;
-  font-weight: bold;
+.match-card {
+  background: linear-gradient(145deg,#0a0a0a,#151515);
+  border-radius:18px;
+  padding:22px;
+  margin:25px auto;
+  max-width:900px;
+  border:2px solid #300;
+  box-shadow:0 0 25px rgba(255,0,0,.15);
 }
 
 .league {
-  opacity: 0.7;
-  margin-bottom: 6px;
+  color:#aaa;
+  font-size:13px;
 }
 
-.badges span {
-  display: inline-block;
-  margin-right: 8px;
-  padding: 4px 10px;
-  border-radius: 8px;
-  font-size: 13px;
+.match-card h2 {
+  margin:8px 0 14px;
 }
 
-.hot { background: red; }
-.value { background: #00d9ff; color:black;}
-.corner { background: orange; color:black;}
-
-.market {
-  margin-top: 8px;
-  font-size: 15px;
+.top-pick {
+  background:linear-gradient(90deg,#ffb300,#ff3d00);
+  color:#000;
+  padding:14px;
+  border-radius:14px;
+  font-weight:bold;
+  animation:pulse 2s infinite;
 }
 
-.footer {
-  opacity: 0.5;
-  text-align: center;
-  margin-top: 50px;
+.top-pick span {
+  display:block;
+  font-size:18px;
+}
+
+.top-pick strong {
+  font-size:22px;
+}
+
+.others {
+  margin-top:14px;
+  display:grid;
+  gap:8px;
+}
+
+.others div {
+  background:#111;
+  padding:8px 12px;
+  border-radius:10px;
+  font-size:14px;
+  color:#ccc;
+}
+
+@keyframes pulse {
+  0%{box-shadow:0 0 10px rgba(255,140,0,.4);}
+  50%{box-shadow:0 0 28px rgba(255,80,0,.9);}
+  100%{box-shadow:0 0 10px rgba(255,140,0,.4);}
 }
