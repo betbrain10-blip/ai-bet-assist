@@ -1,49 +1,19 @@
 {
-  "updated_at": "28/01 17:08",
+  "updated_at": "28/01 18:02",
   "value": [
     {
       "league": "UEFA Champions League",
-      "home": "Bayer 04 Leverkusen",
-      "away": "Villarreal CF",
+      "home": "Borussia Dortmund",
+      "away": "FC Internazionale Milano",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.7,
         "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.63,
-        "dnb_home": 0.65,
-        "xg": 2.8,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "FC Barcelona",
-      "away": "FC København",
-      "kickoff": "28/01 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.61,
-        "cards_home": 0.5,
-        "cards_away": 0.66,
-        "dnb_home": 0.73,
-        "xg": 2.91,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paphos FC",
-      "away": "SK Slavia Praha",
-      "kickoff": "28/01 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.58,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.12,
-        "expected_corners": 12.7
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 2.2,
+        "expected_corners": 8.7
       }
     },
     {
@@ -52,73 +22,103 @@
       "away": "FK Bodø/Glimt",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.65,
-        "cards_home": 0.63,
-        "cards_away": 0.55,
-        "dnb_home": 0.74,
-        "xg": 3.12,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "AFC Ajax",
-      "away": "PAE Olympiakos SFP",
-      "kickoff": "28/01 20:00",
-      "markets": {
         "over25": 0.69,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.66,
-        "xg": 2.74,
-        "expected_corners": 11.2
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.67,
+        "dnb_home": 0.58,
+        "xg": 3.29,
+        "expected_corners": 12.4
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "Eintracht Frankfurt",
-      "away": "Tottenham Hotspur FC",
-      "kickoff": "28/01 20:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.5,
-        "dnb_home": 0.61,
-        "xg": 2.34,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Manchester City FC",
-      "away": "Galatasaray SK",
+      "home": "SSC Napoli",
+      "away": "Chelsea FC",
       "kickoff": "28/01 20:00",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.52,
-        "expected_corners": 10.3
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 2.63,
+        "expected_corners": 10.2
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "Athletic Club",
-      "away": "Sporting Clube de Portugal",
+      "home": "Paris Saint-Germain FC",
+      "away": "Newcastle United FC",
+      "kickoff": "28/01 20:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.55,
+        "cards_away": 0.5,
+        "dnb_home": 0.58,
+        "xg": 2.72,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Sport Lisboa e Benfica",
+      "away": "Real Madrid CF",
+      "kickoff": "28/01 20:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.58,
+        "cards_home": 0.6,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 2.12,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Arsenal FC",
+      "away": "FK Kairat",
       "kickoff": "28/01 20:00",
       "markets": {
         "over25": 0.68,
         "corners95": 0.58,
-        "cards_home": 0.66,
+        "cards_home": 0.52,
         "cards_away": 0.51,
-        "dnb_home": 0.58,
-        "xg": 2.43,
-        "expected_corners": 10.9
+        "dnb_home": 0.62,
+        "xg": 3.39,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Liverpool FC",
+      "away": "Qarabağ Ağdam FK",
+      "kickoff": "28/01 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
+        "dnb_home": 0.66,
+        "xg": 2.42,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Club Brugge KV",
+      "away": "Olympique de Marseille",
+      "kickoff": "28/01 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.59,
+        "cards_home": 0.67,
+        "cards_away": 0.55,
+        "dnb_home": 0.63,
+        "xg": 2.44,
+        "expected_corners": 11.6
       }
     },
     {
@@ -127,13 +127,13 @@
       "away": "RB Bragantino",
       "kickoff": "28/01 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.5,
-        "cards_away": 0.65,
-        "dnb_home": 0.61,
-        "xg": 2.4,
-        "expected_corners": 11.3
+        "over25": 0.72,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.63,
+        "dnb_home": 0.58,
+        "xg": 3.12,
+        "expected_corners": 9.2
       }
     },
     {
@@ -143,27 +143,12 @@
       "kickoff": "28/01 22:00",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.6,
+        "corners95": 0.7,
         "cards_home": 0.65,
-        "cards_away": 0.57,
-        "dnb_home": 0.61,
-        "xg": 2.45,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "Clube do Remo",
-      "kickoff": "28/01 22:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 2.86,
-        "expected_corners": 10.7
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 2.65,
+        "expected_corners": 12.4
       }
     },
     {
@@ -172,13 +157,28 @@
       "away": "Santos FC",
       "kickoff": "28/01 23:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.57,
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.62,
+        "cards_away": 0.67,
+        "dnb_home": 0.56,
+        "xg": 2.11,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "EC Bahia",
+      "kickoff": "28/01 23:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.61,
+        "dnb_home": 0.72,
         "xg": 2.89,
-        "expected_corners": 10.9
+        "expected_corners": 12.6
       }
     }
   ],
@@ -189,43 +189,28 @@
       "away": "Villarreal CF",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.58,
+        "corners95": 0.65,
+        "cards_home": 0.55,
+        "cards_away": 0.6,
+        "dnb_home": 0.63,
+        "xg": 3.06,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Borussia Dortmund",
+      "away": "FC Internazionale Milano",
+      "kickoff": "28/01 20:00",
+      "markets": {
+        "over25": 0.7,
         "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.63,
-        "dnb_home": 0.65,
-        "xg": 2.8,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Royale Union Saint-Gilloise",
-      "away": "Atalanta BC",
-      "kickoff": "28/01 20:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.68,
-        "dnb_home": 0.56,
-        "xg": 3.21,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "FC Barcelona",
-      "away": "FC København",
-      "kickoff": "28/01 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.61,
-        "cards_home": 0.5,
-        "cards_away": 0.66,
-        "dnb_home": 0.73,
-        "xg": 2.91,
-        "expected_corners": 9.5
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 2.2,
+        "expected_corners": 8.7
       }
     },
     {
@@ -234,73 +219,73 @@
       "away": "FK Bodø/Glimt",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.65,
-        "cards_home": 0.63,
-        "cards_away": 0.55,
-        "dnb_home": 0.74,
-        "xg": 3.12,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "AFC Ajax",
-      "away": "PAE Olympiakos SFP",
-      "kickoff": "28/01 20:00",
-      "markets": {
         "over25": 0.69,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.66,
-        "xg": 2.74,
-        "expected_corners": 11.2
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.67,
+        "dnb_home": 0.58,
+        "xg": 3.29,
+        "expected_corners": 12.4
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "Eintracht Frankfurt",
-      "away": "Tottenham Hotspur FC",
+      "home": "Royale Union Saint-Gilloise",
+      "away": "Atalanta BC",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.5,
-        "dnb_home": 0.61,
-        "xg": 2.34,
-        "expected_corners": 9.0
+        "over25": 0.58,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.62,
+        "xg": 2.4,
+        "expected_corners": 10.0
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "Manchester City FC",
-      "away": "Galatasaray SK",
+      "home": "FC Barcelona",
+      "away": "FC København",
+      "kickoff": "28/01 20:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.6,
+        "dnb_home": 0.69,
+        "xg": 2.92,
+        "expected_corners": 11.8
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "SSC Napoli",
+      "away": "Chelsea FC",
       "kickoff": "28/01 20:00",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.52,
-        "expected_corners": 10.3
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 2.63,
+        "expected_corners": 10.2
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "Arsenal FC",
-      "away": "FK Kairat",
+      "home": "Paris Saint-Germain FC",
+      "away": "Newcastle United FC",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.65,
-        "cards_home": 0.61,
-        "cards_away": 0.58,
-        "dnb_home": 0.67,
-        "xg": 3.16,
-        "expected_corners": 9.2
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.55,
+        "cards_away": 0.5,
+        "dnb_home": 0.58,
+        "xg": 2.72,
+        "expected_corners": 11.1
       }
     },
     {
@@ -309,13 +294,13 @@
       "away": "Qarabağ Ağdam FK",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.54,
-        "dnb_home": 0.61,
-        "xg": 3.13,
-        "expected_corners": 11.5
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
+        "dnb_home": 0.66,
+        "xg": 2.42,
+        "expected_corners": 9.1
       }
     },
     {
@@ -324,43 +309,58 @@
       "away": "FC Bayern München",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 3.2,
-        "expected_corners": 11.1
+        "over25": 0.58,
+        "corners95": 0.62,
+        "cards_home": 0.5,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.47,
+        "expected_corners": 10.6
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "AS Monaco FC",
-      "away": "Juventus FC",
-      "kickoff": "28/01 20:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
-        "dnb_home": 0.74,
-        "xg": 2.87,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Club Brugge KV",
-      "away": "Olympique de Marseille",
+      "home": "Manchester City FC",
+      "away": "Galatasaray SK",
       "kickoff": "28/01 20:00",
       "markets": {
         "over25": 0.58,
-        "corners95": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
+        "dnb_home": 0.57,
+        "xg": 3.34,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "RB Bragantino",
+      "kickoff": "28/01 22:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.62,
         "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.67,
-        "xg": 2.63,
-        "expected_corners": 10.6
+        "cards_away": 0.63,
+        "dnb_home": 0.58,
+        "xg": 3.12,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "CA Paranaense",
+      "kickoff": "28/01 22:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.7,
+        "cards_home": 0.65,
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 2.65,
+        "expected_corners": 12.4
       }
     }
   ],
@@ -371,13 +371,13 @@
       "away": "FC Internazionale Milano",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.59,
-        "cards_home": 0.56,
-        "cards_away": 0.63,
-        "dnb_home": 0.69,
-        "xg": 3.29,
-        "expected_corners": 10.7
+        "over25": 0.7,
+        "corners95": 0.63,
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 2.2,
+        "expected_corners": 8.7
       }
     },
     {
@@ -386,58 +386,43 @@
       "away": "FC København",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.61,
-        "cards_home": 0.5,
-        "cards_away": 0.66,
+        "over25": 0.57,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.6,
+        "dnb_home": 0.69,
+        "xg": 2.92,
+        "expected_corners": 11.8
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "AFC Ajax",
+      "away": "PAE Olympiakos SFP",
+      "kickoff": "28/01 20:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.55,
+        "cards_home": 0.54,
+        "cards_away": 0.56,
         "dnb_home": 0.73,
-        "xg": 2.91,
-        "expected_corners": 9.5
+        "xg": 3.22,
+        "expected_corners": 9.6
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "Paphos FC",
-      "away": "SK Slavia Praha",
-      "kickoff": "28/01 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.58,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.12,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Club Atlético de Madrid",
-      "away": "FK Bodø/Glimt",
-      "kickoff": "28/01 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.65,
-        "cards_home": 0.63,
-        "cards_away": 0.55,
-        "dnb_home": 0.74,
-        "xg": 3.12,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Manchester City FC",
-      "away": "Galatasaray SK",
+      "home": "SSC Napoli",
+      "away": "Chelsea FC",
       "kickoff": "28/01 20:00",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.52,
-        "expected_corners": 10.3
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 2.63,
+        "expected_corners": 10.2
       }
     },
     {
@@ -446,13 +431,28 @@
       "away": "Juventus FC",
       "kickoff": "28/01 20:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
-        "dnb_home": 0.74,
-        "xg": 2.87,
-        "expected_corners": 8.6
+        "over25": 0.56,
+        "corners95": 0.58,
+        "cards_home": 0.51,
+        "cards_away": 0.61,
+        "dnb_home": 0.69,
+        "xg": 2.67,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "PSV",
+      "away": "FC Bayern München",
+      "kickoff": "28/01 20:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.62,
+        "cards_home": 0.5,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.47,
+        "expected_corners": 10.6
       }
     }
   ]
