@@ -25,16 +25,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Generate events.json
+      - name: Generate qr_export.json
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: |
           python generate_events.py
 
-      - name: Commit and push events.json
+      - name: Commit and push qr_export.json
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add events.json
-          git commit -m "Auto update events" || echo "Nothing to commit"
+          git add qr_export.json
+          git commit -m "Auto update qr feed" || echo "Nothing to commit"
           git push
