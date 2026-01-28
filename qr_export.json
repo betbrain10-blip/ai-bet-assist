@@ -1,26 +1,157 @@
 {
-  "updated_at": "27/01 12:34",
+  "updated_at": "28/01 14:07",
   "value": [
     {
-      "league": "Serie A",
-      "home": "Inter",
-      "away": "Juventus",
-      "kickoff": "27/01 15:34",
-      "market": "Over 2.5",
-      "prob": 0.63,
-      "quota_min": 1.6
-    }
-  ],
-  "corner": [
+      "league": "UEFA Champions League",
+      "home": "Manchester City FC",
+      "away": "Galatasaray SK",
+      "kickoff": "28/01 20:00"
+    },
     {
-      "league": "Premier League",
-      "home": "Arsenal",
-      "away": "Chelsea",
-      "kickoff": "27/01 14:34",
-      "market": "Over 9.5",
-      "prob": 0.61,
-      "expected_total": 10.8
+      "league": "UEFA Champions League",
+      "home": "Sport Lisboa e Benfica",
+      "away": "Real Madrid CF",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Arsenal FC",
+      "away": "FK Kairat",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Liverpool FC",
+      "away": "Qarabağ Ağdam FK",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "PSV",
+      "away": "FC Bayern München",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "Newcastle United FC",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "AS Monaco FC",
+      "away": "Juventus FC",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Athletic Club",
+      "away": "Sporting Clube de Portugal",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Club Brugge KV",
+      "away": "Olympique de Marseille",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "SSC Napoli",
+      "away": "Chelsea FC",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Bayer 04 Leverkusen",
+      "away": "Villarreal CF",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Borussia Dortmund",
+      "away": "FC Internazionale Milano",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Royale Union Saint-Gilloise",
+      "away": "Atalanta BC",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FC Barcelona",
+      "away": "FC København",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Eintracht Frankfurt",
+      "away": "Tottenham Hotspur FC",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Paphos FC",
+      "away": "SK Slavia Praha",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Club Atlético de Madrid",
+      "away": "FK Bodø/Glimt",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "AFC Ajax",
+      "away": "PAE Olympiakos SFP",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "CA Paranaense",
+      "kickoff": "28/01 22:00"
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Mineiro",
+      "away": "SE Palmeiras",
+      "kickoff": "28/01 22:00"
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "RB Bragantino",
+      "kickoff": "28/01 22:00"
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Vitória",
+      "away": "Clube do Remo",
+      "kickoff": "28/01 22:00"
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Fluminense FC",
+      "away": "Grêmio FBPA",
+      "kickoff": "28/01 22:30"
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "EC Bahia",
+      "kickoff": "28/01 23:00"
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Santos FC",
+      "kickoff": "28/01 23:00"
     }
   ],
+  "corner": [],
   "hot": []
 }
