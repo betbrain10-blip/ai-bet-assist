@@ -1,6 +1,12 @@
 {
-  "updated_at": "28/01 14:07",
+  "updated_at": "28/01 15:02",
   "value": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Club Brugge KV",
+      "away": "Olympique de Marseille",
+      "kickoff": "28/01 20:00"
+    },
     {
       "league": "UEFA Champions League",
       "home": "Manchester City FC",
@@ -9,8 +15,20 @@
     },
     {
       "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "Newcastle United FC",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
       "home": "Sport Lisboa e Benfica",
       "away": "Real Madrid CF",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "AS Monaco FC",
+      "away": "Juventus FC",
       "kickoff": "28/01 20:00"
     },
     {
@@ -27,32 +45,20 @@
     },
     {
       "league": "UEFA Champions League",
-      "home": "PSV",
-      "away": "FC Bayern München",
-      "kickoff": "28/01 20:00"
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "Newcastle United FC",
-      "kickoff": "28/01 20:00"
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "AS Monaco FC",
-      "away": "Juventus FC",
-      "kickoff": "28/01 20:00"
-    },
-    {
-      "league": "UEFA Champions League",
       "home": "Athletic Club",
       "away": "Sporting Clube de Portugal",
       "kickoff": "28/01 20:00"
     },
     {
       "league": "UEFA Champions League",
-      "home": "Club Brugge KV",
-      "away": "Olympique de Marseille",
+      "home": "PSV",
+      "away": "FC Bayern München",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "AFC Ajax",
+      "away": "PAE Olympiakos SFP",
       "kickoff": "28/01 20:00"
     },
     {
@@ -63,14 +69,32 @@
     },
     {
       "league": "UEFA Champions League",
+      "home": "Eintracht Frankfurt",
+      "away": "Tottenham Hotspur FC",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
       "home": "Bayer 04 Leverkusen",
       "away": "Villarreal CF",
       "kickoff": "28/01 20:00"
     },
     {
       "league": "UEFA Champions League",
+      "home": "Paphos FC",
+      "away": "SK Slavia Praha",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
       "home": "Borussia Dortmund",
       "away": "FC Internazionale Milano",
+      "kickoff": "28/01 20:00"
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Club Atlético de Madrid",
+      "away": "FK Bodø/Glimt",
       "kickoff": "28/01 20:00"
     },
     {
@@ -86,39 +110,15 @@
       "kickoff": "28/01 20:00"
     },
     {
-      "league": "UEFA Champions League",
-      "home": "Eintracht Frankfurt",
-      "away": "Tottenham Hotspur FC",
-      "kickoff": "28/01 20:00"
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paphos FC",
-      "away": "SK Slavia Praha",
-      "kickoff": "28/01 20:00"
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Club Atlético de Madrid",
-      "away": "FK Bodø/Glimt",
-      "kickoff": "28/01 20:00"
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "AFC Ajax",
-      "away": "PAE Olympiakos SFP",
-      "kickoff": "28/01 20:00"
-    },
-    {
       "league": "Campeonato Brasileiro Série A",
-      "home": "SC Internacional",
-      "away": "CA Paranaense",
+      "home": "CA Mineiro",
+      "away": "SE Palmeiras",
       "kickoff": "28/01 22:00"
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "SE Palmeiras",
+      "home": "EC Vitória",
+      "away": "Clube do Remo",
       "kickoff": "28/01 22:00"
     },
     {
@@ -129,8 +129,8 @@
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "Clube do Remo",
+      "home": "SC Internacional",
+      "away": "CA Paranaense",
       "kickoff": "28/01 22:00"
     },
     {
