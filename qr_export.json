@@ -1,5 +1,5 @@
 {
-  "updated_at": "29/01 18:04",
+  "updated_at": "29/01 19:47",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "CR Vasco da Gama",
       "kickoff": "29/01 23:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.58,
-        "dnb_home": 0.58,
-        "xg": 3.11,
-        "expected_corners": 11.5
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.61,
+        "xg": 2.92,
+        "expected_corners": 12.1
       }
     }
   ],
@@ -24,13 +24,13 @@
       "away": "CR Vasco da Gama",
       "kickoff": "29/01 23:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.58,
-        "dnb_home": 0.58,
-        "xg": 3.11,
-        "expected_corners": 11.5
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.61,
+        "xg": 2.92,
+        "expected_corners": 12.1
       }
     }
   ],
