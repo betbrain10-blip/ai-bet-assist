@@ -2,222 +2,163 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>VINCITU AI – SHOW MODE</title>
+<title>VINCITU AI – Vetrina</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-
 body {
-  margin:0;
+  margin: 0;
+  background: #000;
   font-family: Arial, Helvetica, sans-serif;
-  background:#000;
-  color:white;
-  overflow:hidden;
+  color: white;
+  overflow: hidden;
 }
 
 .bg {
-  position:fixed;
-  inset:0;
-  background:
-    repeating-linear-gradient(
-      45deg,
-      #080000,
-      #080000 20px,
-      #120000 20px,
-      #120000 40px
-    );
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    #050000,
+    #050000 20px,
+    #120000 20px,
+    #120000 40px
+  );
 }
 
 .logo {
-  margin-top:30px;
-  text-align:center;
-  font-size:54px;
-  color:#ff1a1a;
-  text-shadow:0 0 25px red;
-  border:3px solid red;
-  display:inline-block;
-  padding:15px 60px;
-  border-radius:18px;
-}
-
-.section {
-  text-align:center;
-  margin:25px 0;
-  font-size:28px;
-  color:#ffae00;
-  text-shadow:0 0 15px #ff3300;
-}
-
-.container {
-  width:85%;
-  max-width:1200px;
-  margin:0 auto;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 48px;
+  color: #ff2222;
+  text-shadow: 0 0 25px red;
+  border: 3px solid red;
+  display: inline-block;
+  padding: 15px 50px;
+  border-radius: 16px;
 }
 
 .card {
-  background:rgba(40,0,0,.85);
-  border:2px solid red;
-  border-radius:20px;
-  padding:30px;
-  margin-top:40px;
-  box-shadow:0 0 40px red;
-  animation:pulse 2.5s infinite alternate;
+  width: 80%;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: rgba(60,0,0,0.9);
+  border: 2px solid red;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 40px red;
+  animation: glow 2s infinite alternate;
 }
 
-@keyframes pulse {
-  from {box-shadow:0 0 25px red;}
-  to {box-shadow:0 0 60px crimson;}
-}
-
-.match {
-  font-size:34px;
-  font-weight:bold;
+@keyframes glow {
+  from { box-shadow: 0 0 20px red; }
+  to { box-shadow: 0 0 50px crimson; }
 }
 
 .league {
-  color:#ff9900;
-  margin-bottom:10px;
+  color: #ff9900;
+  font-size: 20px;
 }
 
-.row {
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  gap:18px;
-  margin-top:25px;
+.match {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 10px 0 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .tip {
-  background:#140000;
-  border-radius:14px;
-  padding:14px;
-  text-align:left;
-  border:1px solid #ff4444;
+  background: #140000;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #ff4444;
 }
 
-.tip strong {
-  color:#00ff99;
-}
-
-.bar {
-  height:12px;
-  background:#300;
-  border-radius:10px;
-  margin-top:6px;
-  overflow:hidden;
-}
-
-.fill {
-  height:100%;
-  background:linear-gradient(90deg,#ff0000,#ffcc00);
+.tip span {
+  color: #00ff99;
+  font-weight: bold;
 }
 
 .footer {
-  position:fixed;
-  bottom:15px;
-  width:100%;
-  text-align:center;
-  color:#aaa;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
 }
-
 </style>
 </head>
+
 <body>
 
 <div class="bg"></div>
 
 <center><div class="logo">VINCITU AI</div></center>
 
-<div class="section">🔥 SHOW MODE LIVE 🔥</div>
+<div id="slide" class="card"></div>
 
-<div class="container">
-
-<div id="card" class="card"></div>
-
-</div>
-
-<div class="footer">Rotazione automatica – modalità vetrina clienti</div>
+<div class="footer">Modalità vetrina – rotazione automatica</div>
 
 <script>
-
-const matches = [
+const slides = [
 {
- league:"UEFA Champions League",
- teams:"Inter vs Real Madrid",
- tips:{
-   "1X2 Casa":72,
-   "Over 2.5":64,
-   "Over 9.5 Corner":69,
-   "Ammoniti Totali":58,
-   "DNB Casa":66
- }
+  league: "UEFA Champions League",
+  match: "Inter vs Real Madrid",
+  tips: [
+    "1X2 Casa: 72%",
+    "Over 2.5: 64%",
+    "Corner Over 9.5: 69%",
+    "Ammoniti Totali: 58%",
+    "DNB Casa: 66%"
+  ]
 },
 {
- league:"Premier League",
- teams:"Manchester City vs Arsenal",
- tips:{
-   "1X2 Casa":68,
-   "Over 2.5":60,
-   "Over 9.5 Corner":65,
-   "Ammoniti Totali":54,
-   "DNB Casa":62
- }
+  league: "Premier League",
+  match: "Manchester City vs Arsenal",
+  tips: [
+    "1X2 Casa: 68%",
+    "Over 2.5: 61%",
+    "Corner Over 9.5: 65%",
+    "Ammoniti Totali: 55%",
+    "DNB Casa: 63%"
+  ]
 },
 {
- league:"Serie A",
- teams:"Napoli vs Juventus",
- tips:{
-   "1X2 Ospite":55,
-   "Over 2.5":61,
-   "Over 9.5 Corner":63,
-   "Ammoniti Totali":59,
-   "DNB Ospite":64
- }
+  league: "Serie A",
+  match: "Napoli vs Juventus",
+  tips: [
+    "1X2 Ospite: 56%",
+    "Over 2.5: 60%",
+    "Corner Over 9.5: 62%",
+    "Ammoniti Totali: 59%",
+    "DNB Ospite: 64%"
+  ]
 }
 ];
 
-let index = 0;
+let i = 0;
+const slide = document.getElementById("slide");
 
 function render() {
-
- const m = matches[index];
-
- let html = `
- <div class="league">${m.league}</div>
- <div class="match">${m.teams}</div>
- <div class="row">
- `;
-
- for (let k in m.tips) {
-
-   const v = m.tips[k];
-
-   html += `
-   <div class="tip">
-     ${k}: <strong>${v}%</strong>
-     <div class="bar">
-       <div class="fill" style="width:${v}%"></div>
-     </div>
-   </div>
-   `;
- }
-
- html += "</div>";
-
- const card = document.getElementById("card");
- card.style.opacity = 0;
-
- setTimeout(()=>{
-   card.innerHTML = html;
-   card.style.opacity = 1;
- },600);
-
- index++;
- if(index >= matches.length) index = 0;
+  const s = slides[i];
+  slide.innerHTML = `
+    <div class="league">${s.league}</div>
+    <div class="match">${s.match}</div>
+    <div class="grid">
+      ${s.tips.map(t => `<div class="tip">${t}</div>`).join("")}
+    </div>
+  `;
+  i = (i + 1) % slides.length;
 }
 
 render();
-setInterval(render, 7000);
-
+setInterval(render, 6000);
 </script>
 
 </body>
