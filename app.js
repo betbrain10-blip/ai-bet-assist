@@ -1,56 +1,56 @@
-// ==============================
-// VINCI TU AI — PRO FRONT ENGINE
-// ==============================
-
-const DATA_URL = "./qr_export.json";
+const DATA_URL = "qr_export.json";
 
 async function loadData() {
   try {
     const res = await fetch(DATA_URL + "?t=" + Date.now());
     const data = await res.json();
 
-    renderSection(data.corner || [], "corner");
-    renderSection(data.value || [], "value");
-    renderSection(data.hot || [], "hot");
+    renderSection("corner", data.corner || []);
+    renderSection("value", data.value || []);
+    renderSection("hot", data.hot || []);
 
-    document.getElementById("updated").innerText =
-      "Ultimo aggiornamento: " + data.updated_at;
+    const last = document.getElementById("last-update");
+    if (last && data.updated_at) {
+      last.innerText = "Ultimo aggiornamento: " + data.updated_at;
+    }
 
-  } catch (e) {
-    console.error("Errore feed", e);
-    document.getElementById("updated").innerText =
-      "Errore caricamento feed";
+  } catch (err) {
+    console.error("Errore caricamento dati:", err);
   }
 }
 
-function renderSection(events, id) {
-  const box = document.getElementById(id);
-  box.innerHTML = "";
+function renderSection(type, matches) {
+  const container = document.getElementById(type + "-container");
+  if (!container) return;
 
-  if (!events.length) {
-    box.innerHTML = `<div class="empty">Nessun evento oggi</div>`;
+  container.innerHTML = "";
+
+  if (!matches.length) {
+    container.innerHTML =
+      `<div class="empty">Nessun evento disponibile</div>`;
     return;
   }
 
-  events.forEach(ev => {
+  matches.forEach(m => {
     const card = document.createElement("div");
-    card.className = "card";
+    card.className = "match-card";
 
     card.innerHTML = `
-      <span class="badge">${ev.league}</span>
-      <h3>${ev.home} vs ${ev.away}</h3>
-      <div class="league">🕘 ${ev.kickoff}</div>
+      <div class="league">${m.league}</div>
+      <div class="teams">${m.home} vs ${m.away}</div>
+      <div class="kickoff">🕒 ${m.kickoff}</div>
 
-      ${ev.market ? `<div class="market">${ev.market}</div>` : ""}
-
-      ${ev.prob ? `<div class="prob">Probabilità ${(ev.prob*100).toFixed(1)}%</div>` : ""}
-
-      ${ev.expected_total ? `<div class="prob">Corner attesi ${ev.expected_total}</div>` : ""}
+      <div class="stats">
+        ${m.market ? `<div>📊 ${m.market}</div>` : ""}
+        ${m.prob ? `<div>🔥 Probabilità ${Math.round(m.prob * 100)}%</div>` : ""}
+        ${m.expected_total ? `<div>🚩 Corner attesi ${m.expected_total}</div>` : ""}
+        ${m.cards ? `<div>🟨 Ammoniti ${m.cards}%</div>` : ""}
+        ${m.dnb ? `<div>💎 DNB ${m.dnb}%</div>` : ""}
+      </div>
     `;
 
-    box.appendChild(card);
+    container.appendChild(card);
   });
 }
 
-loadData();
-setInterval(loadData, 120000);
+document.addEventListener("DOMContentLoaded", loadData);
