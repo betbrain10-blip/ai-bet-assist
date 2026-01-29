@@ -1,36 +1,224 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <title>VINCITU AI – Pronostici Live</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<title>VINCITU AI – SHOW MODE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+<style>
 
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#000;
+  color:white;
+  overflow:hidden;
+}
+
+.bg {
+  position:fixed;
+  inset:0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #080000,
+      #080000 20px,
+      #120000 20px,
+      #120000 40px
+    );
+}
+
+.logo {
+  margin-top:30px;
+  text-align:center;
+  font-size:54px;
+  color:#ff1a1a;
+  text-shadow:0 0 25px red;
+  border:3px solid red;
+  display:inline-block;
+  padding:15px 60px;
+  border-radius:18px;
+}
+
+.section {
+  text-align:center;
+  margin:25px 0;
+  font-size:28px;
+  color:#ffae00;
+  text-shadow:0 0 15px #ff3300;
+}
+
+.container {
+  width:85%;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.card {
+  background:rgba(40,0,0,.85);
+  border:2px solid red;
+  border-radius:20px;
+  padding:30px;
+  margin-top:40px;
+  box-shadow:0 0 40px red;
+  animation:pulse 2.5s infinite alternate;
+}
+
+@keyframes pulse {
+  from {box-shadow:0 0 25px red;}
+  to {box-shadow:0 0 60px crimson;}
+}
+
+.match {
+  font-size:34px;
+  font-weight:bold;
+}
+
+.league {
+  color:#ff9900;
+  margin-bottom:10px;
+}
+
+.row {
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:18px;
+  margin-top:25px;
+}
+
+.tip {
+  background:#140000;
+  border-radius:14px;
+  padding:14px;
+  text-align:left;
+  border:1px solid #ff4444;
+}
+
+.tip strong {
+  color:#00ff99;
+}
+
+.bar {
+  height:12px;
+  background:#300;
+  border-radius:10px;
+  margin-top:6px;
+  overflow:hidden;
+}
+
+.fill {
+  height:100%;
+  background:linear-gradient(90deg,#ff0000,#ffcc00);
+}
+
+.footer {
+  position:fixed;
+  bottom:15px;
+  width:100%;
+  text-align:center;
+  color:#aaa;
+}
+
+</style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <div class="logo-box">
-    <h1 class="logo">VINCITU AI</h1>
-  </div>
+<div class="bg"></div>
 
-  <!-- SEZIONI -->
-  <section class="section-title">🔥 CORNER AI</section>
-  <div id="corner" class="cards-container"></div>
+<center><div class="logo">VINCITU AI</div></center>
 
-  <section class="section-title">💎 VALUE BET</section>
-  <div id="value" class="cards-container"></div>
+<div class="section">🔥 SHOW MODE LIVE 🔥</div>
 
-  <section class="section-title">⭐ TOP MATCH</section>
-  <div id="top" class="cards-container"></div>
+<div class="container">
 
-  <!-- FOOTER -->
-  <footer id="lastUpdate">Ultimo aggiornamento: --</footer>
+<div id="card" class="card"></div>
 
-  <!-- JS -->
-  <script src="app.js"></script>
+</div>
+
+<div class="footer">Rotazione automatica – modalità vetrina clienti</div>
+
+<script>
+
+const matches = [
+{
+ league:"UEFA Champions League",
+ teams:"Inter vs Real Madrid",
+ tips:{
+   "1X2 Casa":72,
+   "Over 2.5":64,
+   "Over 9.5 Corner":69,
+   "Ammoniti Totali":58,
+   "DNB Casa":66
+ }
+},
+{
+ league:"Premier League",
+ teams:"Manchester City vs Arsenal",
+ tips:{
+   "1X2 Casa":68,
+   "Over 2.5":60,
+   "Over 9.5 Corner":65,
+   "Ammoniti Totali":54,
+   "DNB Casa":62
+ }
+},
+{
+ league:"Serie A",
+ teams:"Napoli vs Juventus",
+ tips:{
+   "1X2 Ospite":55,
+   "Over 2.5":61,
+   "Over 9.5 Corner":63,
+   "Ammoniti Totali":59,
+   "DNB Ospite":64
+ }
+}
+];
+
+let index = 0;
+
+function render() {
+
+ const m = matches[index];
+
+ let html = `
+ <div class="league">${m.league}</div>
+ <div class="match">${m.teams}</div>
+ <div class="row">
+ `;
+
+ for (let k in m.tips) {
+
+   const v = m.tips[k];
+
+   html += `
+   <div class="tip">
+     ${k}: <strong>${v}%</strong>
+     <div class="bar">
+       <div class="fill" style="width:${v}%"></div>
+     </div>
+   </div>
+   `;
+ }
+
+ html += "</div>";
+
+ const card = document.getElementById("card");
+ card.style.opacity = 0;
+
+ setTimeout(()=>{
+   card.innerHTML = html;
+   card.style.opacity = 1;
+ },600);
+
+ index++;
+ if(index >= matches.length) index = 0;
+}
+
+render();
+setInterval(render, 7000);
+
+</script>
 
 </body>
 </html>
