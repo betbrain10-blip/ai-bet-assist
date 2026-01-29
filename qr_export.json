@@ -1,23 +1,23 @@
 {
-  "updated_at": "29/01 04:54",
-  "value": [],
-  "corner": [
+  "updated_at": "29/01 07:29",
+  "value": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Mirassol FC",
       "away": "CR Vasco da Gama",
       "kickoff": "29/01 23:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 3.17,
-        "expected_corners": 11.9
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.52,
+        "cards_away": 0.57,
+        "dnb_home": 0.73,
+        "xg": 2.76,
+        "expected_corners": 12.7
       }
     }
   ],
+  "corner": [],
   "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -25,13 +25,13 @@
       "away": "CR Vasco da Gama",
       "kickoff": "29/01 23:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 3.17,
-        "expected_corners": 11.9
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.52,
+        "cards_away": 0.57,
+        "dnb_home": 0.73,
+        "xg": 2.76,
+        "expected_corners": 12.7
       }
     }
   ]
