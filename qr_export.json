@@ -1,52 +1,6 @@
 {
-  "updated_at": "30/01 19:50",
-  "value": [
-    {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Deportivo Alavés",
-      "kickoff": "30/01 20:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.57,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 3.01,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Derby County FC",
-      "kickoff": "30/01 20:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.58,
-        "cards_home": 0.53,
-        "cards_away": 0.6,
-        "dnb_home": 0.56,
-        "xg": 2.26,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Vitória SC",
-      "away": "Moreirense FC",
-      "kickoff": "30/01 20:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.55,
-        "cards_home": 0.53,
-        "cards_away": 0.58,
-        "dnb_home": 0.61,
-        "xg": 3.12,
-        "expected_corners": 8.6
-      }
-    }
-  ],
+  "updated_at": "30/01 21:00",
+  "value": [],
   "corner": [],
   "hot": []
 }
