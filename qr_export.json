@@ -1,5 +1,5 @@
 {
-  "updated_at": "30/01 11:04",
+  "updated_at": "30/01 12:00",
   "value": [
     {
       "league": "Eredivisie",
@@ -7,13 +7,13 @@
       "away": "FC Twente '65",
       "kickoff": "30/01 19:00",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.69,
         "corners95": 0.67,
-        "cards_home": 0.62,
-        "cards_away": 0.67,
-        "dnb_home": 0.57,
-        "xg": 2.55,
-        "expected_corners": 12.7
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.68,
+        "xg": 2.34,
+        "expected_corners": 11.2
       }
     },
     {
@@ -22,13 +22,43 @@
       "away": "VfL Wolfsburg",
       "kickoff": "30/01 19:30",
       "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.61,
+        "xg": 2.25,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "SS Lazio",
+      "away": "Genoa CFC",
+      "kickoff": "30/01 19:45",
+      "markets": {
         "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.5,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 2.78,
-        "expected_corners": 8.7
+        "corners95": 0.7,
+        "cards_home": 0.52,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 3.16,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "Le Havre AC",
+      "kickoff": "30/01 19:45",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.5,
+        "dnb_home": 0.62,
+        "xg": 3.12,
+        "expected_corners": 10.6
       }
     },
     {
@@ -37,13 +67,13 @@
       "away": "Deportivo Alavés",
       "kickoff": "30/01 20:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.64,
-        "cards_away": 0.52,
-        "dnb_home": 0.61,
-        "xg": 2.22,
-        "expected_corners": 11.6
+        "over25": 0.67,
+        "corners95": 0.56,
+        "cards_home": 0.5,
+        "cards_away": 0.67,
+        "dnb_home": 0.66,
+        "xg": 2.48,
+        "expected_corners": 10.9
       }
     },
     {
@@ -52,13 +82,13 @@
       "away": "Moreirense FC",
       "kickoff": "30/01 20:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.09,
-        "expected_corners": 10.4
+        "over25": 0.69,
+        "corners95": 0.59,
+        "cards_home": 0.55,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 2.7,
+        "expected_corners": 12.4
       }
     }
   ],
@@ -69,13 +99,13 @@
       "away": "FC Twente '65",
       "kickoff": "30/01 19:00",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.69,
         "corners95": 0.67,
-        "cards_home": 0.62,
-        "cards_away": 0.67,
-        "dnb_home": 0.57,
-        "xg": 2.55,
-        "expected_corners": 12.7
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.68,
+        "xg": 2.34,
+        "expected_corners": 11.2
       }
     },
     {
@@ -84,13 +114,28 @@
       "away": "VfL Wolfsburg",
       "kickoff": "30/01 19:30",
       "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.61,
+        "xg": 2.25,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "SS Lazio",
+      "away": "Genoa CFC",
+      "kickoff": "30/01 19:45",
+      "markets": {
         "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.5,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 2.78,
-        "expected_corners": 8.7
+        "corners95": 0.7,
+        "cards_home": 0.52,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 3.16,
+        "expected_corners": 9.1
       }
     },
     {
@@ -99,91 +144,15 @@
       "away": "Le Havre AC",
       "kickoff": "30/01 19:45",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.52,
-        "cards_away": 0.5,
-        "dnb_home": 0.66,
-        "xg": 3.15,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Deportivo Alavés",
-      "kickoff": "30/01 20:00",
-      "markets": {
         "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.64,
-        "cards_away": 0.52,
-        "dnb_home": 0.61,
-        "xg": 2.22,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Vitória SC",
-      "away": "Moreirense FC",
-      "kickoff": "30/01 20:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
+        "corners95": 0.68,
         "cards_home": 0.66,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.09,
-        "expected_corners": 10.4
+        "cards_away": 0.5,
+        "dnb_home": 0.62,
+        "xg": 3.12,
+        "expected_corners": 10.6
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "Genoa CFC",
-      "kickoff": "30/01 19:45",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.58,
-        "cards_home": 0.51,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 3.2,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Derby County FC",
-      "kickoff": "30/01 20:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.59,
-        "cards_home": 0.55,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.19,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Vitória SC",
-      "away": "Moreirense FC",
-      "kickoff": "30/01 20:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.09,
-        "expected_corners": 10.4
-      }
-    }
-  ]
+  "hot": []
 }
