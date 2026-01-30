@@ -1,141 +1,19 @@
 {
-  "updated_at": "30/01 18:00",
+  "updated_at": "30/01 19:50",
   "value": [
     {
-      "league": "Eredivisie",
-      "home": "NAC Breda",
-      "away": "FC Twente '65",
-      "kickoff": "30/01 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 2.51,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "1. FC Köln",
-      "away": "VfL Wolfsburg",
-      "kickoff": "30/01 19:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.94,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "Le Havre AC",
-      "kickoff": "30/01 19:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.6,
-        "dnb_home": 0.55,
-        "xg": 3.17,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "Genoa CFC",
-      "kickoff": "30/01 19:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.68,
-        "cards_away": 0.51,
-        "dnb_home": 0.57,
-        "xg": 3.15,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Vitória SC",
-      "away": "Moreirense FC",
-      "kickoff": "30/01 20:45",
+      "league": "Primera Division",
+      "home": "RCD Espanyol de Barcelona",
+      "away": "Deportivo Alavés",
+      "kickoff": "30/01 20:00",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.53,
-        "cards_away": 0.67,
-        "dnb_home": 0.72,
-        "xg": 2.4,
-        "expected_corners": 10.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Eredivisie",
-      "home": "NAC Breda",
-      "away": "FC Twente '65",
-      "kickoff": "30/01 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 2.51,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "1. FC Köln",
-      "away": "VfL Wolfsburg",
-      "kickoff": "30/01 19:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.94,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "Le Havre AC",
-      "kickoff": "30/01 19:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.6,
-        "dnb_home": 0.55,
-        "xg": 3.17,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "Genoa CFC",
-      "kickoff": "30/01 19:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.68,
-        "cards_away": 0.51,
-        "dnb_home": 0.57,
-        "xg": 3.15,
-        "expected_corners": 10.5
+        "corners95": 0.57,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 3.01,
+        "expected_corners": 12.7
       }
     },
     {
@@ -144,13 +22,13 @@
       "away": "Derby County FC",
       "kickoff": "30/01 20:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
-        "cards_home": 0.52,
-        "cards_away": 0.61,
-        "dnb_home": 0.62,
-        "xg": 2.44,
-        "expected_corners": 10.2
+        "over25": 0.66,
+        "corners95": 0.58,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.56,
+        "xg": 2.26,
+        "expected_corners": 9.3
       }
     },
     {
@@ -159,61 +37,16 @@
       "away": "Moreirense FC",
       "kickoff": "30/01 20:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
+        "over25": 0.69,
+        "corners95": 0.55,
         "cards_home": 0.53,
-        "cards_away": 0.67,
-        "dnb_home": 0.72,
-        "xg": 2.4,
-        "expected_corners": 10.8
+        "cards_away": 0.58,
+        "dnb_home": 0.61,
+        "xg": 3.12,
+        "expected_corners": 8.6
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Eredivisie",
-      "home": "NAC Breda",
-      "away": "FC Twente '65",
-      "kickoff": "30/01 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 2.51,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "1. FC Köln",
-      "away": "VfL Wolfsburg",
-      "kickoff": "30/01 19:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.94,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Vitória SC",
-      "away": "Moreirense FC",
-      "kickoff": "30/01 20:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.53,
-        "cards_away": 0.67,
-        "dnb_home": 0.72,
-        "xg": 2.4,
-        "expected_corners": 10.8
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
