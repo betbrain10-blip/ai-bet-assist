@@ -1,5 +1,5 @@
 {
-  "updated_at": "31/01 15:47",
+  "updated_at": "31/01 16:58",
   "value": [
     {
       "league": "Serie A",
@@ -7,43 +7,58 @@
       "away": "ACF Fiorentina",
       "kickoff": "31/01 17:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.59,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.56,
-        "xg": 3.04,
-        "expected_corners": 12.1
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 2.99,
+        "expected_corners": 11.2
       }
     },
     {
-      "league": "Bundesliga",
-      "home": "Hamburger SV",
-      "away": "FC Bayern München",
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "Club Atlético de Madrid",
       "kickoff": "31/01 17:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.7,
-        "cards_home": 0.62,
-        "cards_away": 0.68,
-        "dnb_home": 0.55,
-        "xg": 2.79,
-        "expected_corners": 10.1
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.54,
+        "cards_away": 0.53,
+        "dnb_home": 0.61,
+        "xg": 2.83,
+        "expected_corners": 12.8
       }
     },
     {
-      "league": "Premier League",
-      "home": "Chelsea FC",
-      "away": "West Ham United FC",
-      "kickoff": "31/01 17:30",
+      "league": "Eredivisie",
+      "home": "PEC Zwolle",
+      "away": "Telstar 1963",
+      "kickoff": "31/01 17:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.58,
+        "dnb_home": 0.56,
+        "xg": 3.13,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "FC Lorient",
+      "away": "FC Nantes",
+      "kickoff": "31/01 18:00",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.62,
-        "dnb_home": 0.64,
-        "xg": 2.34,
-        "expected_corners": 12.3
+        "corners95": 0.64,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.6,
+        "xg": 2.61,
+        "expected_corners": 9.2
       }
     },
     {
@@ -52,13 +67,227 @@
       "away": "FC Arouca",
       "kickoff": "31/01 18:00",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.7,
         "corners95": 0.59,
-        "cards_home": 0.59,
-        "cards_away": 0.58,
+        "cards_home": 0.66,
+        "cards_away": 0.51,
         "dnb_home": 0.73,
-        "xg": 2.97,
-        "expected_corners": 8.7
+        "xg": 3.14,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Liverpool FC",
+      "away": "Newcastle United FC",
+      "kickoff": "31/01 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.6,
+        "cards_home": 0.54,
+        "cards_away": 0.62,
+        "dnb_home": 0.73,
+        "xg": 2.28,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "AS Monaco FC",
+      "away": "Stade Rennais FC 1901",
+      "kickoff": "31/01 20:05",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.53,
+        "dnb_home": 0.65,
+        "xg": 2.52,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Alverca",
+      "away": "CF Estrela da Amadora",
+      "kickoff": "31/01 20:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.61,
+        "cards_home": 0.61,
+        "cards_away": 0.67,
+        "dnb_home": 0.67,
+        "xg": 2.12,
+        "expected_corners": 10.1
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "SSC Napoli",
+      "away": "ACF Fiorentina",
+      "kickoff": "31/01 17:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 2.99,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Chelsea FC",
+      "away": "West Ham United FC",
+      "kickoff": "31/01 17:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.64,
+        "cards_home": 0.61,
+        "cards_away": 0.67,
+        "dnb_home": 0.65,
+        "xg": 2.5,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "Club Atlético de Madrid",
+      "kickoff": "31/01 17:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.54,
+        "cards_away": 0.53,
+        "dnb_home": 0.61,
+        "xg": 2.83,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Hamburger SV",
+      "away": "FC Bayern München",
+      "kickoff": "31/01 17:30",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.64,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.63,
+        "xg": 3.03,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "PEC Zwolle",
+      "away": "Telstar 1963",
+      "kickoff": "31/01 17:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.58,
+        "dnb_home": 0.56,
+        "xg": 3.13,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "FC Lorient",
+      "away": "FC Nantes",
+      "kickoff": "31/01 18:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.64,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.6,
+        "xg": 2.61,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Elche CF",
+      "away": "FC Barcelona",
+      "kickoff": "31/01 20:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.67,
+        "cards_home": 0.63,
+        "cards_away": 0.62,
+        "dnb_home": 0.55,
+        "xg": 3.26,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Sparta Rotterdam",
+      "away": "FC Groningen",
+      "kickoff": "31/01 20:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.7,
+        "cards_home": 0.68,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 2.22,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "AS Monaco FC",
+      "away": "Stade Rennais FC 1901",
+      "kickoff": "31/01 20:05",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.53,
+        "dnb_home": 0.65,
+        "xg": 2.52,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Alverca",
+      "away": "CF Estrela da Amadora",
+      "kickoff": "31/01 20:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.61,
+        "cards_home": 0.61,
+        "cards_away": 0.67,
+        "dnb_home": 0.67,
+        "xg": 2.12,
+        "expected_corners": 10.1
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primeira Liga",
+      "home": "Rio Ave FC",
+      "away": "FC Arouca",
+      "kickoff": "31/01 18:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.66,
+        "cards_away": 0.51,
+        "dnb_home": 0.73,
+        "xg": 3.14,
+        "expected_corners": 12.7
       }
     },
     {
@@ -67,272 +296,43 @@
       "away": "Hellas Verona FC",
       "kickoff": "31/01 19:45",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.56,
-        "cards_home": 0.65,
-        "cards_away": 0.68,
-        "dnb_home": 0.67,
-        "xg": 2.94,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Liverpool FC",
-      "away": "Newcastle United FC",
-      "kickoff": "31/01 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.65,
-        "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.68,
-        "xg": 2.58,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Elche CF",
-      "away": "FC Barcelona",
-      "kickoff": "31/01 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.56,
-        "dnb_home": 0.57,
-        "xg": 2.55,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "Sparta Rotterdam",
-      "away": "FC Groningen",
-      "kickoff": "31/01 20:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.63,
-        "cards_home": 0.5,
-        "cards_away": 0.61,
-        "dnb_home": 0.59,
-        "xg": 3.19,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "AS Monaco FC",
-      "away": "Stade Rennais FC 1901",
-      "kickoff": "31/01 20:05",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.57,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.69,
-        "xg": 2.69,
-        "expected_corners": 10.1
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Ligue 1",
-      "home": "Paris FC",
-      "away": "Olympique de Marseille",
-      "kickoff": "31/01 16:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.57,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 3.16,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "Hamburger SV",
-      "away": "FC Bayern München",
-      "kickoff": "31/01 17:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.7,
-        "cards_home": 0.62,
-        "cards_away": 0.68,
-        "dnb_home": 0.55,
-        "xg": 2.79,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Chelsea FC",
-      "away": "West Ham United FC",
-      "kickoff": "31/01 17:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.62,
-        "dnb_home": 0.64,
-        "xg": 2.34,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "PEC Zwolle",
-      "away": "Telstar 1963",
-      "kickoff": "31/01 17:45",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 3.15,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Liverpool FC",
-      "away": "Newcastle United FC",
-      "kickoff": "31/01 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.65,
-        "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.68,
-        "xg": 2.58,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Elche CF",
-      "away": "FC Barcelona",
-      "kickoff": "31/01 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.56,
-        "dnb_home": 0.57,
-        "xg": 2.55,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "Sparta Rotterdam",
-      "away": "FC Groningen",
-      "kickoff": "31/01 20:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.63,
-        "cards_home": 0.5,
-        "cards_away": 0.61,
-        "dnb_home": 0.59,
-        "xg": 3.19,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Alverca",
-      "away": "CF Estrela da Amadora",
-      "kickoff": "31/01 20:30",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.66,
-        "dnb_home": 0.73,
-        "xg": 2.57,
-        "expected_corners": 11.3
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Ligue 1",
-      "home": "Paris FC",
-      "away": "Olympique de Marseille",
-      "kickoff": "31/01 16:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.57,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 3.16,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "PEC Zwolle",
-      "away": "Telstar 1963",
-      "kickoff": "31/01 17:45",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 3.15,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Rio Ave FC",
-      "away": "FC Arouca",
-      "kickoff": "31/01 18:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.59,
-        "cards_home": 0.59,
+        "over25": 0.61,
+        "corners95": 0.6,
+        "cards_home": 0.55,
         "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 2.48,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Liverpool FC",
+      "away": "Newcastle United FC",
+      "kickoff": "31/01 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.6,
+        "cards_home": 0.54,
+        "cards_away": 0.62,
         "dnb_home": 0.73,
-        "xg": 2.97,
-        "expected_corners": 8.7
+        "xg": 2.28,
+        "expected_corners": 9.8
       }
     },
     {
-      "league": "Ligue 1",
-      "home": "AS Monaco FC",
-      "away": "Stade Rennais FC 1901",
-      "kickoff": "31/01 20:05",
+      "league": "Eredivisie",
+      "home": "Sparta Rotterdam",
+      "away": "FC Groningen",
+      "kickoff": "31/01 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.57,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.69,
-        "xg": 2.69,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Alverca",
-      "away": "CF Estrela da Amadora",
-      "kickoff": "31/01 20:30",
-      "markets": {
-        "over25": 0.62,
+        "over25": 0.59,
         "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.66,
+        "cards_home": 0.68,
+        "cards_away": 0.67,
         "dnb_home": 0.73,
-        "xg": 2.57,
-        "expected_corners": 11.3
+        "xg": 2.22,
+        "expected_corners": 12.8
       }
     }
   ]
