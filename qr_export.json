@@ -1,53 +1,6 @@
 {
-  "updated_at": "01/02 19:52",
-  "value": [
-    {
-      "league": "Primera Division",
-      "home": "Athletic Club",
-      "away": "Real Sociedad de Fútbol",
-      "kickoff": "01/02 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.56,
-        "xg": 2.37,
-        "expected_corners": 10.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "Athletic Club",
-      "away": "Real Sociedad de Fútbol",
-      "kickoff": "01/02 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.56,
-        "xg": 2.37,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "Sport Lisboa e Benfica",
-      "kickoff": "01/02 20:30",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.55,
-        "dnb_home": 0.65,
-        "xg": 3.1,
-        "expected_corners": 12.6
-      }
-    }
-  ],
+  "updated_at": "01/02 20:54",
+  "value": [],
+  "corner": [],
   "hot": []
 }
