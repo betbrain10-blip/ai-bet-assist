@@ -1,66 +1,36 @@
 {
-  "updated_at": "01/02 19:05",
+  "updated_at": "01/02 19:52",
   "value": [
-    {
-      "league": "Eredivisie",
-      "home": "FC Volendam",
-      "away": "Go Ahead Eagles",
-      "kickoff": "01/02 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.67,
-        "dnb_home": 0.56,
-        "xg": 3.1,
-        "expected_corners": 9.1
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Eredivisie",
-      "home": "FC Volendam",
-      "away": "Go Ahead Eagles",
-      "kickoff": "01/02 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.67,
-        "dnb_home": 0.56,
-        "xg": 3.1,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "RC Strasbourg Alsace",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "01/02 19:45",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.46,
-        "expected_corners": 11.2
-      }
-    },
     {
       "league": "Primera Division",
       "home": "Athletic Club",
       "away": "Real Sociedad de Fútbol",
       "kickoff": "01/02 20:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.55,
-        "xg": 3.25,
-        "expected_corners": 11.0
+        "over25": 0.69,
+        "corners95": 0.7,
+        "cards_home": 0.56,
+        "cards_away": 0.53,
+        "dnb_home": 0.56,
+        "xg": 2.37,
+        "expected_corners": 10.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "Athletic Club",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "01/02 20:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.7,
+        "cards_home": 0.56,
+        "cards_away": 0.53,
+        "dnb_home": 0.56,
+        "xg": 2.37,
+        "expected_corners": 10.8
       }
     },
     {
@@ -69,31 +39,15 @@
       "away": "Sport Lisboa e Benfica",
       "kickoff": "01/02 20:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 3.08,
-        "expected_corners": 12.3
+        "over25": 0.62,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.55,
+        "dnb_home": 0.65,
+        "xg": 3.1,
+        "expected_corners": 12.6
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Ligue 1",
-      "home": "RC Strasbourg Alsace",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "01/02 19:45",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.46,
-        "expected_corners": 11.2
-      }
-    }
-  ]
+  "hot": []
 }
