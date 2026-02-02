@@ -1,49 +1,19 @@
 {
-  "updated_at": "02/02 10:30",
+  "updated_at": "02/02 14:28",
   "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "AVS",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "02/02 18:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.61,
-        "cards_home": 0.51,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 2.3,
-        "expected_corners": 8.8
-      }
-    },
     {
       "league": "Premier League",
       "home": "Sunderland AFC",
       "away": "Burnley FC",
       "kickoff": "02/02 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 2.69,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Casa Pia AC",
-      "away": "FC Porto",
-      "kickoff": "02/02 20:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.22,
-        "expected_corners": 11.1
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.52,
+        "cards_away": 0.51,
+        "dnb_home": 0.56,
+        "xg": 2.61,
+        "expected_corners": 12.1
       }
     }
   ],
@@ -54,13 +24,13 @@
       "away": "Sporting Clube de Braga",
       "kickoff": "02/02 18:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.61,
-        "cards_home": 0.51,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 2.3,
-        "expected_corners": 8.8
+        "over25": 0.57,
+        "corners95": 0.63,
+        "cards_home": 0.57,
+        "cards_away": 0.51,
+        "dnb_home": 0.57,
+        "xg": 3.09,
+        "expected_corners": 10.2
       }
     },
     {
@@ -69,45 +39,13 @@
       "away": "Burnley FC",
       "kickoff": "02/02 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 2.69,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Casa Pia AC",
-      "away": "FC Porto",
-      "kickoff": "02/02 20:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.22,
-        "expected_corners": 11.1
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Premier League",
-      "home": "Sunderland AFC",
-      "away": "Burnley FC",
-      "kickoff": "02/02 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 2.69,
-        "expected_corners": 11.7
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.52,
+        "cards_away": 0.51,
+        "dnb_home": 0.56,
+        "xg": 2.61,
+        "expected_corners": 12.1
       }
     },
     {
@@ -116,14 +54,30 @@
       "away": "Sevilla FC",
       "kickoff": "02/02 20:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.6,
-        "cards_home": 0.56,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.86,
-        "expected_corners": 11.5
+        "over25": 0.59,
+        "corners95": 0.65,
+        "cards_home": 0.55,
+        "cards_away": 0.56,
+        "dnb_home": 0.64,
+        "xg": 2.43,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Casa Pia AC",
+      "away": "FC Porto",
+      "kickoff": "02/02 20:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.63,
+        "dnb_home": 0.62,
+        "xg": 3.35,
+        "expected_corners": 11.6
       }
     }
-  ]
+  ],
+  "hot": []
 }
