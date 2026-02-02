@@ -1,6 +1,129 @@
 {
-  "updated_at": "01/02 23:51",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "02/02 05:17",
+  "value": [
+    {
+      "league": "Premier League",
+      "home": "Sunderland AFC",
+      "away": "Burnley FC",
+      "kickoff": "02/02 20:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.51,
+        "dnb_home": 0.64,
+        "xg": 2.45,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RCD Mallorca",
+      "away": "Sevilla FC",
+      "kickoff": "02/02 20:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.5,
+        "dnb_home": 0.75,
+        "xg": 2.91,
+        "expected_corners": 11.4
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primeira Liga",
+      "home": "AVS",
+      "away": "Sporting Clube de Braga",
+      "kickoff": "02/02 18:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.7,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.65,
+        "xg": 3.05,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Udinese Calcio",
+      "away": "AS Roma",
+      "kickoff": "02/02 19:45",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.6,
+        "xg": 3.24,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Sunderland AFC",
+      "away": "Burnley FC",
+      "kickoff": "02/02 20:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.51,
+        "dnb_home": 0.64,
+        "xg": 2.45,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RCD Mallorca",
+      "away": "Sevilla FC",
+      "kickoff": "02/02 20:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.5,
+        "dnb_home": 0.75,
+        "xg": 2.91,
+        "expected_corners": 11.4
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "RCD Mallorca",
+      "away": "Sevilla FC",
+      "kickoff": "02/02 20:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.5,
+        "dnb_home": 0.75,
+        "xg": 2.91,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Casa Pia AC",
+      "away": "FC Porto",
+      "kickoff": "02/02 20:45",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.55,
+        "cards_home": 0.66,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.63,
+        "expected_corners": 10.9
+      }
+    }
+  ]
 }
