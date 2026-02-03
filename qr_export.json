@@ -1,84 +1,68 @@
 {
-  "updated_at": "03/02 07:54",
+  "updated_at": "03/02 10:05",
   "value": [
+    {
+      "league": "Championship",
+      "home": "Portsmouth FC",
+      "away": "Ipswich Town FC",
+      "kickoff": "03/02 19:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.62,
+        "dnb_home": 0.56,
+        "xg": 3.4,
+        "expected_corners": 8.9
+      }
+    },
     {
       "league": "Championship",
       "home": "Hull City AFC",
       "away": "Watford FC",
       "kickoff": "03/02 19:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.57,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.67,
-        "xg": 2.99,
-        "expected_corners": 9.0
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.5,
+        "dnb_home": 0.68,
+        "xg": 2.12,
+        "expected_corners": 8.7
       }
     }
   ],
   "corner": [
     {
       "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Oxford United FC",
-      "kickoff": "03/02 19:45",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.67,
-        "dnb_home": 0.55,
-        "xg": 2.53,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Championship",
       "home": "Portsmouth FC",
       "away": "Ipswich Town FC",
       "kickoff": "03/02 19:45",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 2.72,
-        "expected_corners": 11.8
+        "over25": 0.69,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.62,
+        "dnb_home": 0.56,
+        "xg": 3.4,
+        "expected_corners": 8.9
       }
     },
     {
-      "league": "Serie A",
-      "home": "Bologna FC 1909",
-      "away": "AC Milan",
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Watford FC",
       "kickoff": "03/02 19:45",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.59,
-        "xg": 3.11,
-        "expected_corners": 12.5
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.5,
+        "dnb_home": 0.68,
+        "xg": 2.12,
+        "expected_corners": 8.7
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Portsmouth FC",
-      "away": "Ipswich Town FC",
-      "kickoff": "03/02 19:45",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 2.72,
-        "expected_corners": 11.8
-      }
-    }
-  ]
+  "hot": []
 }
