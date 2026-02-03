@@ -1,38 +1,84 @@
 {
-  "updated_at": "03/02 14:33",
+  "updated_at": "03/02 18:07",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Oxford United FC",
-      "kickoff": "03/02 19:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.59,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.65,
-        "xg": 2.14,
-        "expected_corners": 9.0
-      }
-    },
     {
       "league": "Serie A",
       "home": "Bologna FC 1909",
       "away": "AC Milan",
       "kickoff": "03/02 19:45",
       "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.59,
+        "dnb_home": 0.6,
+        "xg": 2.74,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Oxford United FC",
+      "kickoff": "03/02 19:45",
+      "markets": {
         "over25": 0.67,
         "corners95": 0.55,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 3.2,
-        "expected_corners": 9.8
+        "cards_home": 0.51,
+        "cards_away": 0.52,
+        "dnb_home": 0.66,
+        "xg": 3.29,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Watford FC",
+      "kickoff": "03/02 19:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.37,
+        "expected_corners": 8.9
       }
     }
   ],
-  "corner": [],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "Bologna FC 1909",
+      "away": "AC Milan",
+      "kickoff": "03/02 19:45",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.59,
+        "dnb_home": 0.6,
+        "xg": 2.74,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Watford FC",
+      "kickoff": "03/02 19:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.37,
+        "expected_corners": 8.9
+      }
+    }
+  ],
   "hot": [
     {
       "league": "Championship",
@@ -40,28 +86,13 @@
       "away": "Watford FC",
       "kickoff": "03/02 19:45",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
-        "dnb_home": 0.72,
-        "xg": 3.36,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Bologna FC 1909",
-      "away": "AC Milan",
-      "kickoff": "03/02 19:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.55,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 3.2,
-        "expected_corners": 9.8
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.37,
+        "expected_corners": 8.9
       }
     }
   ]
