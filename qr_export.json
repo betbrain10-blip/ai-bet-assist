@@ -1,50 +1,19 @@
 {
-  "updated_at": "04/02 21:59",
-  "value": [],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "CA Mineiro",
-      "kickoff": "04/02 22:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.52,
-        "dnb_home": 0.63,
-        "xg": 2.7,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "SC Internacional",
-      "kickoff": "04/02 22:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.52,
-        "dnb_home": 0.74,
-        "xg": 2.55,
-        "expected_corners": 11.7
-      }
-    },
+  "updated_at": "04/02 22:56",
+  "value": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Clube do Remo",
       "away": "Mirassol FC",
       "kickoff": "04/02 23:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.65,
+        "over25": 0.63,
+        "corners95": 0.55,
         "cards_home": 0.54,
-        "cards_away": 0.55,
-        "dnb_home": 0.69,
-        "xg": 2.68,
-        "expected_corners": 12.1
+        "cards_away": 0.62,
+        "dnb_home": 0.65,
+        "xg": 2.35,
+        "expected_corners": 12.5
       }
     },
     {
@@ -53,61 +22,32 @@
       "away": "São Paulo FC",
       "kickoff": "04/02 23:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 3.27,
-        "expected_corners": 9.6
+        "over25": 0.67,
+        "corners95": 0.61,
+        "cards_home": 0.51,
+        "cards_away": 0.6,
+        "dnb_home": 0.61,
+        "xg": 2.74,
+        "expected_corners": 10.2
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "SC Internacional",
-      "kickoff": "04/02 22:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.52,
-        "dnb_home": 0.74,
-        "xg": 2.55,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Clube do Remo",
-      "away": "Mirassol FC",
-      "kickoff": "04/02 23:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.55,
-        "dnb_home": 0.69,
-        "xg": 2.68,
-        "expected_corners": 12.1
-      }
-    },
+  "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Santos FC",
       "away": "São Paulo FC",
       "kickoff": "04/02 23:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 3.27,
-        "expected_corners": 9.6
+        "over25": 0.67,
+        "corners95": 0.61,
+        "cards_home": 0.51,
+        "cards_away": 0.6,
+        "dnb_home": 0.61,
+        "xg": 2.74,
+        "expected_corners": 10.2
       }
     }
-  ]
+  ],
+  "hot": []
 }
