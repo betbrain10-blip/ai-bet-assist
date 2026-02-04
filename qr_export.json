@@ -1,21 +1,6 @@
 {
-  "updated_at": "04/02 17:29",
+  "updated_at": "04/02 19:49",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "SC Internacional",
-      "kickoff": "04/02 22:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.58,
-        "cards_home": 0.53,
-        "cards_away": 0.51,
-        "dnb_home": 0.64,
-        "xg": 2.41,
-        "expected_corners": 10.3
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "RB Bragantino",
@@ -23,12 +8,27 @@
       "kickoff": "04/02 22:00",
       "markets": {
         "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.67,
+        "cards_away": 0.54,
+        "dnb_home": 0.6,
+        "xg": 2.6,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Clube do Remo",
+      "away": "Mirassol FC",
+      "kickoff": "04/02 23:00",
+      "markets": {
+        "over25": 0.65,
         "corners95": 0.68,
         "cards_home": 0.67,
-        "cards_away": 0.52,
-        "dnb_home": 0.65,
-        "xg": 2.82,
-        "expected_corners": 10.6
+        "cards_away": 0.57,
+        "dnb_home": 0.64,
+        "xg": 2.45,
+        "expected_corners": 10.0
       }
     }
   ],
@@ -40,12 +40,42 @@
       "kickoff": "04/02 22:00",
       "markets": {
         "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.67,
+        "cards_away": 0.54,
+        "dnb_home": 0.6,
+        "xg": 2.6,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Clube do Remo",
+      "away": "Mirassol FC",
+      "kickoff": "04/02 23:00",
+      "markets": {
+        "over25": 0.65,
         "corners95": 0.68,
         "cards_home": 0.67,
-        "cards_away": 0.52,
-        "dnb_home": 0.65,
-        "xg": 2.82,
-        "expected_corners": 10.6
+        "cards_away": 0.57,
+        "dnb_home": 0.64,
+        "xg": 2.45,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "São Paulo FC",
+      "kickoff": "04/02 23:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.67,
+        "cards_away": 0.55,
+        "dnb_home": 0.62,
+        "xg": 2.29,
+        "expected_corners": 8.6
       }
     }
   ],
