@@ -1,38 +1,38 @@
 {
-  "updated_at": "05/02 10:10",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "Fluminense FC",
-      "kickoff": "05/02 22:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.54,
-        "cards_away": 0.58,
-        "dnb_home": 0.61,
-        "xg": 2.93,
-        "expected_corners": 9.0
-      }
-    }
-  ],
+  "updated_at": "05/02 11:57",
+  "value": [],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
+      "home": "CR Vasco da Gama",
+      "away": "Chapecoense AF",
+      "kickoff": "05/02 23:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.67,
+        "dnb_home": 0.57,
+        "xg": 3.38,
+        "expected_corners": 11.1
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
       "home": "EC Bahia",
       "away": "Fluminense FC",
       "kickoff": "05/02 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.54,
-        "cards_away": 0.58,
-        "dnb_home": 0.61,
-        "xg": 2.93,
-        "expected_corners": 9.0
+        "over25": 0.62,
+        "corners95": 0.59,
+        "cards_home": 0.58,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.87,
+        "expected_corners": 9.7
       }
     }
-  ],
-  "hot": []
+  ]
 }
