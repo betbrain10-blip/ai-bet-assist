@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/02 05:07",
+  "updated_at": "06/02 07:55",
   "value": [
     {
       "league": "Eredivisie",
@@ -7,13 +7,13 @@
       "away": "SBV Excelsior",
       "kickoff": "06/02 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.55,
-        "xg": 2.58,
-        "expected_corners": 9.6
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.62,
+        "cards_away": 0.52,
+        "dnb_home": 0.6,
+        "xg": 2.13,
+        "expected_corners": 9.4
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "Eintracht Frankfurt",
       "kickoff": "06/02 19:30",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.67,
         "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 2.53,
-        "expected_corners": 9.6
+        "cards_home": 0.64,
+        "cards_away": 0.57,
+        "dnb_home": 0.64,
+        "xg": 2.33,
+        "expected_corners": 12.6
       }
     },
     {
@@ -37,13 +37,13 @@
       "away": "Lille OSC",
       "kickoff": "06/02 19:45",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.56,
-        "cards_home": 0.6,
-        "cards_away": 0.65,
-        "dnb_home": 0.65,
-        "xg": 2.36,
-        "expected_corners": 9.0
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.62,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 2.69,
+        "expected_corners": 10.6
       }
     },
     {
@@ -52,13 +52,43 @@
       "away": "CA Osasuna",
       "kickoff": "06/02 20:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.6,
-        "cards_home": 0.65,
-        "cards_away": 0.64,
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
         "dnb_home": 0.56,
-        "xg": 2.79,
-        "expected_corners": 10.5
+        "xg": 3.37,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Leeds United FC",
+      "away": "Nottingham Forest FC",
+      "kickoff": "06/02 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.55,
+        "dnb_home": 0.62,
+        "xg": 2.73,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Charlton Athletic FC",
+      "away": "Queens Park Rangers FC",
+      "kickoff": "06/02 20:01",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.55,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.63,
+        "xg": 2.16,
+        "expected_corners": 9.6
       }
     }
   ],
@@ -69,13 +99,13 @@
       "away": "SBV Excelsior",
       "kickoff": "06/02 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.55,
-        "xg": 2.58,
-        "expected_corners": 9.6
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.62,
+        "cards_away": 0.52,
+        "dnb_home": 0.6,
+        "xg": 2.13,
+        "expected_corners": 9.4
       }
     },
     {
@@ -84,60 +114,75 @@
       "away": "Eintracht Frankfurt",
       "kickoff": "06/02 19:30",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.67,
         "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 2.53,
-        "expected_corners": 9.6
+        "cards_home": 0.64,
+        "cards_away": 0.57,
+        "dnb_home": 0.64,
+        "xg": 2.33,
+        "expected_corners": 12.6
       }
     },
     {
-      "league": "Serie A",
-      "home": "Hellas Verona FC",
-      "away": "AC Pisa 1909",
+      "league": "Ligue 1",
+      "home": "FC Metz",
+      "away": "Lille OSC",
       "kickoff": "06/02 19:45",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.31,
-        "expected_corners": 11.0
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.62,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 2.69,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RC Celta de Vigo",
+      "away": "CA Osasuna",
+      "kickoff": "06/02 20:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.56,
+        "xg": 3.37,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Leeds United FC",
+      "away": "Nottingham Forest FC",
+      "kickoff": "06/02 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.55,
+        "dnb_home": 0.62,
+        "xg": 2.73,
+        "expected_corners": 9.3
       }
     }
   ],
   "hot": [
     {
-      "league": "Bundesliga",
-      "home": "1. FC Union Berlin",
-      "away": "Eintracht Frankfurt",
-      "kickoff": "06/02 19:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 2.53,
-        "expected_corners": 9.6
-      }
-    },
-    {
       "league": "Serie A",
       "home": "Hellas Verona FC",
       "away": "AC Pisa 1909",
       "kickoff": "06/02 19:45",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.31,
-        "expected_corners": 11.0
+        "over25": 0.61,
+        "corners95": 0.56,
+        "cards_home": 0.54,
+        "cards_away": 0.63,
+        "dnb_home": 0.69,
+        "xg": 2.64,
+        "expected_corners": 11.5
       }
     }
   ]
