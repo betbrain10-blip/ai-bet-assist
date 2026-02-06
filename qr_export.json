@@ -1,6 +1,144 @@
 {
-  "updated_at": "05/02 23:43",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "06/02 05:07",
+  "value": [
+    {
+      "league": "Eredivisie",
+      "home": "NAC Breda",
+      "away": "SBV Excelsior",
+      "kickoff": "06/02 19:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.67,
+        "dnb_home": 0.55,
+        "xg": 2.58,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "1. FC Union Berlin",
+      "away": "Eintracht Frankfurt",
+      "kickoff": "06/02 19:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.71,
+        "xg": 2.53,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "FC Metz",
+      "away": "Lille OSC",
+      "kickoff": "06/02 19:45",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.56,
+        "cards_home": 0.6,
+        "cards_away": 0.65,
+        "dnb_home": 0.65,
+        "xg": 2.36,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RC Celta de Vigo",
+      "away": "CA Osasuna",
+      "kickoff": "06/02 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.6,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 2.79,
+        "expected_corners": 10.5
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Eredivisie",
+      "home": "NAC Breda",
+      "away": "SBV Excelsior",
+      "kickoff": "06/02 19:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.67,
+        "dnb_home": 0.55,
+        "xg": 2.58,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "1. FC Union Berlin",
+      "away": "Eintracht Frankfurt",
+      "kickoff": "06/02 19:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.71,
+        "xg": 2.53,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Hellas Verona FC",
+      "away": "AC Pisa 1909",
+      "kickoff": "06/02 19:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.53,
+        "dnb_home": 0.71,
+        "xg": 2.31,
+        "expected_corners": 11.0
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Bundesliga",
+      "home": "1. FC Union Berlin",
+      "away": "Eintracht Frankfurt",
+      "kickoff": "06/02 19:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.71,
+        "xg": 2.53,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Hellas Verona FC",
+      "away": "AC Pisa 1909",
+      "kickoff": "06/02 19:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.53,
+        "dnb_home": 0.71,
+        "xg": 2.31,
+        "expected_corners": 11.0
+      }
+    }
+  ]
 }
