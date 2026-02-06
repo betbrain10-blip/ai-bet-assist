@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/02 07:55",
+  "updated_at": "06/02 10:07",
   "value": [
     {
       "league": "Eredivisie",
@@ -7,28 +7,13 @@
       "away": "SBV Excelsior",
       "kickoff": "06/02 19:00",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.64,
         "corners95": 0.61,
-        "cards_home": 0.62,
-        "cards_away": 0.52,
-        "dnb_home": 0.6,
-        "xg": 2.13,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "1. FC Union Berlin",
-      "away": "Eintracht Frankfurt",
-      "kickoff": "06/02 19:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.64,
-        "xg": 2.33,
-        "expected_corners": 12.6
+        "cards_home": 0.57,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 3.28,
+        "expected_corners": 11.3
       }
     },
     {
@@ -38,27 +23,12 @@
       "kickoff": "06/02 19:45",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.56,
-        "xg": 2.69,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "RC Celta de Vigo",
-      "away": "CA Osasuna",
-      "kickoff": "06/02 20:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.56,
-        "xg": 3.37,
-        "expected_corners": 11.3
+        "corners95": 0.7,
+        "cards_home": 0.56,
+        "cards_away": 0.53,
+        "dnb_home": 0.64,
+        "xg": 2.15,
+        "expected_corners": 11.1
       }
     },
     {
@@ -67,13 +37,28 @@
       "away": "Nottingham Forest FC",
       "kickoff": "06/02 20:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.55,
-        "dnb_home": 0.62,
-        "xg": 2.73,
-        "expected_corners": 9.3
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.54,
+        "dnb_home": 0.63,
+        "xg": 2.65,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RC Celta de Vigo",
+      "away": "CA Osasuna",
+      "kickoff": "06/02 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.59,
+        "dnb_home": 0.67,
+        "xg": 2.74,
+        "expected_corners": 10.6
       }
     },
     {
@@ -82,13 +67,13 @@
       "away": "Queens Park Rangers FC",
       "kickoff": "06/02 20:01",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.55,
-        "cards_home": 0.63,
-        "cards_away": 0.61,
-        "dnb_home": 0.63,
-        "xg": 2.16,
-        "expected_corners": 9.6
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.54,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.94,
+        "expected_corners": 8.7
       }
     }
   ],
@@ -99,13 +84,13 @@
       "away": "SBV Excelsior",
       "kickoff": "06/02 19:00",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.64,
         "corners95": 0.61,
-        "cards_home": 0.62,
-        "cards_away": 0.52,
-        "dnb_home": 0.6,
-        "xg": 2.13,
-        "expected_corners": 9.4
+        "cards_home": 0.57,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 3.28,
+        "expected_corners": 11.3
       }
     },
     {
@@ -114,13 +99,13 @@
       "away": "Eintracht Frankfurt",
       "kickoff": "06/02 19:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.64,
-        "xg": 2.33,
-        "expected_corners": 12.6
+        "over25": 0.56,
+        "corners95": 0.65,
+        "cards_home": 0.61,
+        "cards_away": 0.67,
+        "dnb_home": 0.59,
+        "xg": 3.34,
+        "expected_corners": 10.9
       }
     },
     {
@@ -130,27 +115,27 @@
       "kickoff": "06/02 19:45",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.56,
-        "xg": 2.69,
-        "expected_corners": 10.6
+        "corners95": 0.7,
+        "cards_home": 0.56,
+        "cards_away": 0.53,
+        "dnb_home": 0.64,
+        "xg": 2.15,
+        "expected_corners": 11.1
       }
     },
     {
-      "league": "Primera Division",
-      "home": "RC Celta de Vigo",
-      "away": "CA Osasuna",
-      "kickoff": "06/02 20:00",
+      "league": "Serie A",
+      "home": "Hellas Verona FC",
+      "away": "AC Pisa 1909",
+      "kickoff": "06/02 19:45",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.56,
-        "xg": 3.37,
-        "expected_corners": 11.3
+        "over25": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.56,
+        "dnb_home": 0.6,
+        "xg": 2.89,
+        "expected_corners": 12.4
       }
     },
     {
@@ -159,30 +144,75 @@
       "away": "Nottingham Forest FC",
       "kickoff": "06/02 20:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.55,
-        "dnb_home": 0.62,
-        "xg": 2.73,
-        "expected_corners": 9.3
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.54,
+        "dnb_home": 0.63,
+        "xg": 2.65,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RC Celta de Vigo",
+      "away": "CA Osasuna",
+      "kickoff": "06/02 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.59,
+        "dnb_home": 0.67,
+        "xg": 2.74,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Charlton Athletic FC",
+      "away": "Queens Park Rangers FC",
+      "kickoff": "06/02 20:01",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.54,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.94,
+        "expected_corners": 8.7
       }
     }
   ],
   "hot": [
     {
-      "league": "Serie A",
-      "home": "Hellas Verona FC",
-      "away": "AC Pisa 1909",
-      "kickoff": "06/02 19:45",
+      "league": "Eredivisie",
+      "home": "NAC Breda",
+      "away": "SBV Excelsior",
+      "kickoff": "06/02 19:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.56,
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.57,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 3.28,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Charlton Athletic FC",
+      "away": "Queens Park Rangers FC",
+      "kickoff": "06/02 20:01",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
         "cards_home": 0.54,
-        "cards_away": 0.63,
-        "dnb_home": 0.69,
-        "xg": 2.64,
-        "expected_corners": 11.5
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.94,
+        "expected_corners": 8.7
       }
     }
   ]
