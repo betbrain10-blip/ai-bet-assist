@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/02 10:07",
+  "updated_at": "06/02 11:54",
   "value": [
     {
       "league": "Eredivisie",
@@ -7,43 +7,13 @@
       "away": "SBV Excelsior",
       "kickoff": "06/02 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.57,
-        "cards_away": 0.66,
-        "dnb_home": 0.73,
-        "xg": 3.28,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Metz",
-      "away": "Lille OSC",
-      "kickoff": "06/02 19:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.7,
+        "over25": 0.67,
+        "corners95": 0.63,
         "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.64,
-        "xg": 2.15,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Leeds United FC",
-      "away": "Nottingham Forest FC",
-      "kickoff": "06/02 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.63,
-        "xg": 2.65,
-        "expected_corners": 8.6
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 3.01,
+        "expected_corners": 10.5
       }
     },
     {
@@ -52,28 +22,13 @@
       "away": "CA Osasuna",
       "kickoff": "06/02 20:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.56,
-        "cards_away": 0.59,
-        "dnb_home": 0.67,
-        "xg": 2.74,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Charlton Athletic FC",
-      "away": "Queens Park Rangers FC",
-      "kickoff": "06/02 20:01",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.54,
+        "over25": 0.7,
+        "corners95": 0.62,
+        "cards_home": 0.51,
         "cards_away": 0.6,
-        "dnb_home": 0.71,
-        "xg": 2.94,
-        "expected_corners": 8.7
+        "dnb_home": 0.62,
+        "xg": 2.53,
+        "expected_corners": 12.7
       }
     }
   ],
@@ -84,13 +39,13 @@
       "away": "SBV Excelsior",
       "kickoff": "06/02 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.57,
-        "cards_away": 0.66,
-        "dnb_home": 0.73,
-        "xg": 3.28,
-        "expected_corners": 11.3
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 3.01,
+        "expected_corners": 10.5
       }
     },
     {
@@ -99,28 +54,13 @@
       "away": "Eintracht Frankfurt",
       "kickoff": "06/02 19:30",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.59,
         "corners95": 0.65,
-        "cards_home": 0.61,
-        "cards_away": 0.67,
-        "dnb_home": 0.59,
-        "xg": 3.34,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Metz",
-      "away": "Lille OSC",
-      "kickoff": "06/02 19:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.7,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.64,
-        "xg": 2.15,
-        "expected_corners": 11.1
+        "cards_home": 0.54,
+        "cards_away": 0.52,
+        "dnb_home": 0.57,
+        "xg": 2.6,
+        "expected_corners": 11.5
       }
     },
     {
@@ -129,28 +69,13 @@
       "away": "AC Pisa 1909",
       "kickoff": "06/02 19:45",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.56,
-        "dnb_home": 0.6,
-        "xg": 2.89,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Leeds United FC",
-      "away": "Nottingham Forest FC",
-      "kickoff": "06/02 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
+        "over25": 0.55,
+        "corners95": 0.62,
+        "cards_home": 0.54,
+        "cards_away": 0.52,
         "dnb_home": 0.63,
-        "xg": 2.65,
-        "expected_corners": 8.6
+        "xg": 2.54,
+        "expected_corners": 9.1
       }
     },
     {
@@ -159,13 +84,13 @@
       "away": "CA Osasuna",
       "kickoff": "06/02 20:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.56,
-        "cards_away": 0.59,
-        "dnb_home": 0.67,
-        "xg": 2.74,
-        "expected_corners": 10.6
+        "over25": 0.7,
+        "corners95": 0.62,
+        "cards_home": 0.51,
+        "cards_away": 0.6,
+        "dnb_home": 0.62,
+        "xg": 2.53,
+        "expected_corners": 12.7
       }
     },
     {
@@ -174,13 +99,13 @@
       "away": "Queens Park Rangers FC",
       "kickoff": "06/02 20:01",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.71,
-        "xg": 2.94,
-        "expected_corners": 8.7
+        "over25": 0.61,
+        "corners95": 0.69,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.7,
+        "xg": 2.54,
+        "expected_corners": 12.5
       }
     }
   ],
@@ -191,13 +116,28 @@
       "away": "SBV Excelsior",
       "kickoff": "06/02 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.57,
-        "cards_away": 0.66,
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 3.01,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "FC Metz",
+      "away": "Lille OSC",
+      "kickoff": "06/02 19:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.6,
+        "cards_home": 0.65,
+        "cards_away": 0.62,
         "dnb_home": 0.73,
-        "xg": 3.28,
-        "expected_corners": 11.3
+        "xg": 2.75,
+        "expected_corners": 12.2
       }
     },
     {
@@ -206,13 +146,13 @@
       "away": "Queens Park Rangers FC",
       "kickoff": "06/02 20:01",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.71,
-        "xg": 2.94,
-        "expected_corners": 8.7
+        "over25": 0.61,
+        "corners95": 0.69,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.7,
+        "xg": 2.54,
+        "expected_corners": 12.5
       }
     }
   ]
