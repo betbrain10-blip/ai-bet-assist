@@ -1,109 +1,19 @@
 {
-  "updated_at": "07/02 13:55",
+  "updated_at": "07/02 14:56",
   "value": [
     {
-      "league": "Bundesliga",
-      "home": "VfL Wolfsburg",
-      "away": "Borussia Dortmund",
-      "kickoff": "07/02 14:30",
+      "league": "Championship",
+      "home": "Birmingham City FC",
+      "away": "Leicester City FC",
+      "kickoff": "07/02 15:01",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.57,
-        "cards_home": 0.51,
-        "cards_away": 0.65,
-        "dnb_home": 0.65,
-        "xg": 3.23,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "FC St. Pauli 1910",
-      "away": "VfB Stuttgart",
-      "kickoff": "07/02 14:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
-        "dnb_home": 0.64,
-        "xg": 2.67,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "SC Freiburg",
-      "away": "SV Werder Bremen",
-      "kickoff": "07/02 14:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.5,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 2.62,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Fulham FC",
-      "away": "Everton FC",
-      "kickoff": "07/02 15:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.59,
-        "cards_home": 0.51,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.98,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Arsenal FC",
-      "away": "Sunderland AFC",
-      "kickoff": "07/02 15:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.52,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Burnley FC",
-      "away": "West Ham United FC",
-      "kickoff": "07/02 15:00",
-      "markets": {
-        "over25": 0.67,
+        "over25": 0.68,
         "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 3.09,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Wolverhampton Wanderers FC",
-      "away": "Chelsea FC",
-      "kickoff": "07/02 15:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 2.48,
-        "expected_corners": 11.1
+        "cards_home": 0.55,
+        "cards_away": 0.53,
+        "dnb_home": 0.67,
+        "xg": 2.41,
+        "expected_corners": 12.1
       }
     },
     {
@@ -112,43 +22,28 @@
       "away": "Millwall FC",
       "kickoff": "07/02 15:01",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.52,
-        "dnb_home": 0.68,
-        "xg": 2.35,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Birmingham City FC",
-      "away": "Leicester City FC",
-      "kickoff": "07/02 15:01",
-      "markets": {
         "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.56,
+        "corners95": 0.64,
+        "cards_home": 0.54,
         "cards_away": 0.56,
         "dnb_home": 0.68,
-        "xg": 2.67,
-        "expected_corners": 12.0
+        "xg": 3.19,
+        "expected_corners": 11.2
       }
     },
     {
       "league": "Championship",
-      "home": "Hull City AFC",
-      "away": "Bristol City FC",
+      "home": "Preston North End FC",
+      "away": "Portsmouth FC",
       "kickoff": "07/02 15:01",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 2.36,
-        "expected_corners": 9.1
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.63,
+        "xg": 3.15,
+        "expected_corners": 8.6
       }
     },
     {
@@ -157,13 +52,13 @@
       "away": "Oxford United FC",
       "kickoff": "07/02 15:01",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.66,
-        "dnb_home": 0.7,
-        "xg": 2.38,
-        "expected_corners": 10.5
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.62,
+        "dnb_home": 0.58,
+        "xg": 3.18,
+        "expected_corners": 8.8
       }
     },
     {
@@ -172,180 +67,13 @@
       "away": "Stoke City FC",
       "kickoff": "07/02 15:01",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.56,
-        "cards_home": 0.59,
-        "cards_away": 0.67,
-        "dnb_home": 0.59,
-        "xg": 2.56,
-        "expected_corners": 8.9
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Bundesliga",
-      "home": "1. FC Heidenheim 1846",
-      "away": "Hamburger SV",
-      "kickoff": "07/02 14:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.63,
-        "cards_away": 0.54,
-        "dnb_home": 0.57,
-        "xg": 2.51,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "FC St. Pauli 1910",
-      "away": "VfB Stuttgart",
-      "kickoff": "07/02 14:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
-        "dnb_home": 0.64,
-        "xg": 2.67,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "SC Freiburg",
-      "away": "SV Werder Bremen",
-      "kickoff": "07/02 14:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.5,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 2.62,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Arsenal FC",
-      "away": "Sunderland AFC",
-      "kickoff": "07/02 15:00",
-      "markets": {
         "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.52,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Burnley FC",
-      "away": "West Ham United FC",
-      "kickoff": "07/02 15:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 3.09,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Wolverhampton Wanderers FC",
-      "away": "Chelsea FC",
-      "kickoff": "07/02 15:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 2.48,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Millwall FC",
-      "kickoff": "07/02 15:01",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.52,
-        "dnb_home": 0.68,
-        "xg": 2.35,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Birmingham City FC",
-      "away": "Leicester City FC",
-      "kickoff": "07/02 15:01",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
+        "corners95": 0.59,
         "cards_home": 0.56,
-        "cards_away": 0.56,
-        "dnb_home": 0.68,
-        "xg": 2.67,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Hull City AFC",
-      "away": "Bristol City FC",
-      "kickoff": "07/02 15:01",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.63,
         "cards_away": 0.67,
         "dnb_home": 0.74,
-        "xg": 2.36,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Preston North End FC",
-      "away": "Portsmouth FC",
-      "kickoff": "07/02 15:01",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.55,
-        "dnb_home": 0.75,
-        "xg": 2.71,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Coventry City FC",
-      "away": "Oxford United FC",
-      "kickoff": "07/02 15:01",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.66,
-        "dnb_home": 0.7,
-        "xg": 2.38,
-        "expected_corners": 10.5
+        "xg": 2.22,
+        "expected_corners": 8.6
       }
     },
     {
@@ -354,45 +82,135 @@
       "away": "RCD Mallorca",
       "kickoff": "07/02 15:15",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.63,
-        "cards_home": 0.53,
-        "cards_away": 0.51,
-        "dnb_home": 0.55,
-        "xg": 2.6,
-        "expected_corners": 10.3
+        "over25": 0.71,
+        "corners95": 0.59,
+        "cards_home": 0.67,
+        "cards_away": 0.56,
+        "dnb_home": 0.61,
+        "xg": 2.78,
+        "expected_corners": 12.5
       }
-    }
-  ],
-  "hot": [
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CF Estrela da Amadora",
+      "away": "CD Santa Clara",
+      "kickoff": "07/02 15:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 3.31,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "Stade Rennais FC 1901",
+      "kickoff": "07/02 16:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.57,
+        "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.67,
+        "xg": 2.43,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Genoa CFC",
+      "away": "SSC Napoli",
+      "kickoff": "07/02 17:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.72,
+        "xg": 3.02,
+        "expected_corners": 10.9
+      }
+    },
     {
       "league": "Bundesliga",
-      "home": "SC Freiburg",
-      "away": "SV Werder Bremen",
-      "kickoff": "07/02 14:30",
+      "home": "Borussia Mönchengladbach",
+      "away": "Bayer 04 Leverkusen",
+      "kickoff": "07/02 17:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.5,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 2.62,
-        "expected_corners": 11.1
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.68,
+        "xg": 3.16,
+        "expected_corners": 9.3
       }
     },
     {
       "league": "Premier League",
-      "home": "Arsenal FC",
-      "away": "Sunderland AFC",
+      "home": "Newcastle United FC",
+      "away": "Brentford FC",
+      "kickoff": "07/02 17:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.56,
+        "cards_home": 0.66,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 3.0,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Stade Brestois 29",
+      "away": "FC Lorient",
+      "kickoff": "07/02 18:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.66,
+        "cards_away": 0.61,
+        "dnb_home": 0.61,
+        "xg": 3.13,
+        "expected_corners": 10.2
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Premier League",
+      "home": "Fulham FC",
+      "away": "Everton FC",
       "kickoff": "07/02 15:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.52,
-        "expected_corners": 8.6
+        "over25": 0.59,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.56,
+        "dnb_home": 0.66,
+        "xg": 2.88,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Aston Villa FC",
+      "kickoff": "07/02 15:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.62,
+        "cards_home": 0.67,
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 3.27,
+        "expected_corners": 10.6
       }
     },
     {
@@ -401,28 +219,43 @@
       "away": "West Ham United FC",
       "kickoff": "07/02 15:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 3.09,
-        "expected_corners": 9.0
+        "over25": 0.61,
+        "corners95": 0.68,
+        "cards_home": 0.67,
+        "cards_away": 0.58,
+        "dnb_home": 0.57,
+        "xg": 3.18,
+        "expected_corners": 12.6
       }
     },
     {
       "league": "Championship",
-      "home": "Hull City AFC",
-      "away": "Bristol City FC",
+      "home": "Birmingham City FC",
+      "away": "Leicester City FC",
       "kickoff": "07/02 15:01",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 2.36,
-        "expected_corners": 9.1
+        "over25": 0.68,
+        "corners95": 0.61,
+        "cards_home": 0.55,
+        "cards_away": 0.53,
+        "dnb_home": 0.67,
+        "xg": 2.41,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Wrexham AFC",
+      "away": "Millwall FC",
+      "kickoff": "07/02 15:01",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.54,
+        "cards_away": 0.56,
+        "dnb_home": 0.68,
+        "xg": 3.19,
+        "expected_corners": 11.2
       }
     },
     {
@@ -431,13 +264,13 @@
       "away": "Portsmouth FC",
       "kickoff": "07/02 15:01",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.55,
-        "dnb_home": 0.75,
-        "xg": 2.71,
-        "expected_corners": 10.5
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.63,
+        "xg": 3.15,
+        "expected_corners": 8.6
       }
     },
     {
@@ -446,13 +279,180 @@
       "away": "Oxford United FC",
       "kickoff": "07/02 15:01",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.66,
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.62,
+        "dnb_home": 0.58,
+        "xg": 3.18,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Bristol City FC",
+      "kickoff": "07/02 15:01",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.62,
+        "cards_home": 0.53,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.3,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Moreirense FC",
+      "away": "Gil Vicente FC",
+      "kickoff": "07/02 15:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.67,
+        "dnb_home": 0.66,
+        "xg": 3.38,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "NEC",
+      "away": "Heracles Almelo",
+      "kickoff": "07/02 15:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.6,
         "dnb_home": 0.7,
-        "xg": 2.38,
-        "expected_corners": 10.5
+        "xg": 3.09,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Borussia Mönchengladbach",
+      "away": "Bayer 04 Leverkusen",
+      "kickoff": "07/02 17:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.68,
+        "xg": 3.16,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Girona FC",
+      "kickoff": "07/02 17:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.63,
+        "cards_home": 0.62,
+        "cards_away": 0.51,
+        "dnb_home": 0.65,
+        "xg": 2.99,
+        "expected_corners": 11.2
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Championship",
+      "home": "West Bromwich Albion FC",
+      "away": "Stoke City FC",
+      "kickoff": "07/02 15:01",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.59,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.74,
+        "xg": 2.22,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Bristol City FC",
+      "kickoff": "07/02 15:01",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.62,
+        "cards_home": 0.53,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.3,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "NEC",
+      "away": "Heracles Almelo",
+      "kickoff": "07/02 15:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.6,
+        "dnb_home": 0.7,
+        "xg": 3.09,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Genoa CFC",
+      "away": "SSC Napoli",
+      "kickoff": "07/02 17:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.72,
+        "xg": 3.02,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Newcastle United FC",
+      "away": "Brentford FC",
+      "kickoff": "07/02 17:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.56,
+        "cards_home": 0.66,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 3.0,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "PEC Zwolle",
+      "away": "FC Volendam",
+      "kickoff": "07/02 17:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.66,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.97,
+        "expected_corners": 11.9
       }
     }
   ]
