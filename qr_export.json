@@ -1,49 +1,19 @@
 {
-  "updated_at": "08/02 17:01",
+  "updated_at": "08/02 17:59",
   "value": [
     {
-      "league": "Serie A",
-      "home": "US Sassuolo Calcio",
-      "away": "FC Internazionale Milano",
-      "kickoff": "08/02 17:00",
+      "league": "Primera Division",
+      "home": "Valencia CF",
+      "away": "Real Madrid CF",
+      "kickoff": "08/02 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.51,
-        "dnb_home": 0.62,
-        "xg": 3.29,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "SS Lazio",
-      "kickoff": "08/02 19:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.15,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "Olympique de Marseille",
-      "kickoff": "08/02 19:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.64,
-        "cards_home": 0.55,
-        "cards_away": 0.63,
-        "dnb_home": 0.66,
-        "xg": 2.29,
-        "expected_corners": 9.7
+        "over25": 0.7,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.28,
+        "expected_corners": 8.8
       }
     },
     {
@@ -52,45 +22,30 @@
       "away": "FC Alverca",
       "kickoff": "08/02 20:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.67,
-        "dnb_home": 0.68,
-        "xg": 3.1,
-        "expected_corners": 12.3
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 3.18,
+        "expected_corners": 9.4
       }
     }
   ],
   "corner": [
     {
-      "league": "Serie A",
-      "home": "US Sassuolo Calcio",
-      "away": "FC Internazionale Milano",
-      "kickoff": "08/02 17:00",
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Braga",
+      "away": "Rio Ave FC",
+      "kickoff": "08/02 18:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.51,
-        "dnb_home": 0.62,
-        "xg": 3.29,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Club Atlético de Madrid",
-      "away": "Real Betis Balompié",
-      "kickoff": "08/02 17:30",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.5,
-        "cards_away": 0.65,
-        "dnb_home": 0.68,
-        "xg": 2.33,
-        "expected_corners": 9.7
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.52,
+        "dnb_home": 0.71,
+        "xg": 2.76,
+        "expected_corners": 11.2
       }
     },
     {
@@ -99,28 +54,13 @@
       "away": "SS Lazio",
       "kickoff": "08/02 19:45",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.15,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "Olympique de Marseille",
-      "kickoff": "08/02 19:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.64,
+        "over25": 0.58,
+        "corners95": 0.65,
         "cards_home": 0.55,
         "cards_away": 0.63,
-        "dnb_home": 0.66,
-        "xg": 2.29,
-        "expected_corners": 9.7
+        "dnb_home": 0.56,
+        "xg": 2.17,
+        "expected_corners": 10.9
       }
     },
     {
@@ -129,13 +69,13 @@
       "away": "Real Madrid CF",
       "kickoff": "08/02 20:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.63,
-        "cards_home": 0.64,
-        "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 2.63,
-        "expected_corners": 11.3
+        "over25": 0.7,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.28,
+        "expected_corners": 8.8
       }
     },
     {
@@ -144,13 +84,13 @@
       "away": "FC Alverca",
       "kickoff": "08/02 20:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.67,
-        "dnb_home": 0.68,
-        "xg": 3.1,
-        "expected_corners": 12.3
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 3.18,
+        "expected_corners": 9.4
       }
     }
   ],
@@ -162,27 +102,12 @@
       "kickoff": "08/02 18:00",
       "markets": {
         "over25": 0.61,
-        "corners95": 0.58,
-        "cards_home": 0.58,
-        "cards_away": 0.51,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.52,
         "dnb_home": 0.71,
-        "xg": 2.94,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "SS Lazio",
-      "kickoff": "08/02 19:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.15,
-        "expected_corners": 9.2
+        "xg": 2.76,
+        "expected_corners": 11.2
       }
     },
     {
@@ -191,13 +116,13 @@
       "away": "Real Madrid CF",
       "kickoff": "08/02 20:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.63,
-        "cards_home": 0.64,
-        "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 2.63,
-        "expected_corners": 11.3
+        "over25": 0.7,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.28,
+        "expected_corners": 8.8
       }
     }
   ]
