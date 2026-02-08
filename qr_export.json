@@ -1,99 +1,22 @@
 {
-  "updated_at": "08/02 19:15",
-  "value": [
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "SS Lazio",
-      "kickoff": "08/02 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.68,
-        "xg": 3.26,
-        "expected_corners": 10.9
-      }
-    },
+  "updated_at": "08/02 19:53",
+  "value": [],
+  "corner": [
     {
       "league": "Primera Division",
       "home": "Valencia CF",
       "away": "Real Madrid CF",
       "kickoff": "08/02 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.55,
-        "cards_home": 0.63,
-        "cards_away": 0.53,
-        "dnb_home": 0.67,
-        "xg": 3.37,
-        "expected_corners": 10.1
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "SS Lazio",
-      "kickoff": "08/02 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.68,
-        "xg": 3.26,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "Olympique de Marseille",
-      "kickoff": "08/02 19:45",
-      "markets": {
         "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 2.81,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sport Lisboa e Benfica",
-      "away": "FC Alverca",
-      "kickoff": "08/02 20:30",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.66,
+        "corners95": 0.68,
         "cards_home": 0.64,
-        "cards_away": 0.67,
-        "dnb_home": 0.56,
-        "xg": 2.85,
-        "expected_corners": 10.7
+        "cards_away": 0.61,
+        "dnb_home": 0.62,
+        "xg": 2.52,
+        "expected_corners": 9.0
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "Olympique de Marseille",
-      "kickoff": "08/02 19:45",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 2.81,
-        "expected_corners": 12.5
-      }
-    }
-  ]
+  "hot": []
 }
