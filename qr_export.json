@@ -1,6 +1,459 @@
 {
-  "updated_at": "07/02 22:59",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "08/02 00:01",
+  "value": [
+    {
+      "league": "Serie A",
+      "home": "Bologna FC 1909",
+      "away": "Parma Calcio 1913",
+      "kickoff": "08/02 11:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.58,
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.66,
+        "xg": 2.83,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Swansea City AFC",
+      "away": "Sheffield Wednesday FC",
+      "kickoff": "08/02 12:01",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.56,
+        "cards_home": 0.67,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 3.37,
+        "expected_corners": 11.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Deportivo Alavés",
+      "away": "Getafe CF",
+      "kickoff": "08/02 13:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.31,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Go Ahead Eagles",
+      "away": "Telstar 1963",
+      "kickoff": "08/02 13:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.55,
+        "cards_home": 0.53,
+        "cards_away": 0.53,
+        "dnb_home": 0.71,
+        "xg": 2.9,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "US Lecce",
+      "away": "Udinese Calcio",
+      "kickoff": "08/02 14:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.56,
+        "cards_away": 0.53,
+        "dnb_home": 0.68,
+        "xg": 2.64,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Crystal Palace FC",
+      "kickoff": "08/02 14:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.68,
+        "dnb_home": 0.59,
+        "xg": 3.3,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Athletic Club",
+      "away": "Levante UD",
+      "kickoff": "08/02 15:15",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.62,
+        "dnb_home": 0.64,
+        "xg": 2.96,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Nacional",
+      "away": "Casa Pia AC",
+      "kickoff": "08/02 15:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.55,
+        "cards_home": 0.54,
+        "cards_away": 0.54,
+        "dnb_home": 0.7,
+        "xg": 2.1,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "FC Groningen",
+      "away": "PSV",
+      "kickoff": "08/02 15:45",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.7,
+        "xg": 2.39,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Angers SCO",
+      "away": "Toulouse FC",
+      "kickoff": "08/02 16:15",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 3.15,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Le Havre AC",
+      "away": "RC Strasbourg Alsace",
+      "kickoff": "08/02 16:15",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.57,
+        "xg": 3.17,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "US Sassuolo Calcio",
+      "away": "FC Internazionale Milano",
+      "kickoff": "08/02 17:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.66,
+        "xg": 2.85,
+        "expected_corners": 9.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Eredivisie",
+      "home": "FC Utrecht",
+      "away": "Feyenoord Rotterdam",
+      "kickoff": "08/02 11:15",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.23,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Deportivo Alavés",
+      "away": "Getafe CF",
+      "kickoff": "08/02 13:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.31,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "AZ",
+      "away": "AFC Ajax",
+      "kickoff": "08/02 13:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.33,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "US Lecce",
+      "away": "Udinese Calcio",
+      "kickoff": "08/02 14:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.56,
+        "cards_away": 0.53,
+        "dnb_home": 0.68,
+        "xg": 2.64,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Crystal Palace FC",
+      "kickoff": "08/02 14:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.68,
+        "dnb_home": 0.59,
+        "xg": 3.3,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Athletic Club",
+      "away": "Levante UD",
+      "kickoff": "08/02 15:15",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.62,
+        "dnb_home": 0.64,
+        "xg": 2.96,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "FC Groningen",
+      "away": "PSV",
+      "kickoff": "08/02 15:45",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.7,
+        "xg": 2.39,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Angers SCO",
+      "away": "Toulouse FC",
+      "kickoff": "08/02 16:15",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 3.15,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Le Havre AC",
+      "away": "RC Strasbourg Alsace",
+      "kickoff": "08/02 16:15",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.57,
+        "xg": 3.17,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "FC Bayern München",
+      "away": "TSG 1899 Hoffenheim",
+      "kickoff": "08/02 16:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.56,
+        "dnb_home": 0.72,
+        "xg": 2.25,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "US Sassuolo Calcio",
+      "away": "FC Internazionale Milano",
+      "kickoff": "08/02 17:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.66,
+        "xg": 2.85,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Club Atlético de Madrid",
+      "away": "Real Betis Balompié",
+      "kickoff": "08/02 17:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.67,
+        "xg": 3.38,
+        "expected_corners": 10.8
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Eredivisie",
+      "home": "FC Utrecht",
+      "away": "Feyenoord Rotterdam",
+      "kickoff": "08/02 11:15",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.23,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Swansea City AFC",
+      "away": "Sheffield Wednesday FC",
+      "kickoff": "08/02 12:01",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.56,
+        "cards_home": 0.67,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 3.37,
+        "expected_corners": 11.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Deportivo Alavés",
+      "away": "Getafe CF",
+      "kickoff": "08/02 13:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.31,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Go Ahead Eagles",
+      "away": "Telstar 1963",
+      "kickoff": "08/02 13:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.55,
+        "cards_home": 0.53,
+        "cards_away": 0.53,
+        "dnb_home": 0.71,
+        "xg": 2.9,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "AZ",
+      "away": "AFC Ajax",
+      "kickoff": "08/02 13:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.33,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Nacional",
+      "away": "Casa Pia AC",
+      "kickoff": "08/02 15:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.55,
+        "cards_home": 0.54,
+        "cards_away": 0.54,
+        "dnb_home": 0.7,
+        "xg": 2.1,
+        "expected_corners": 11.7
+      }
+    }
+  ]
 }
