@@ -1,22 +1,6 @@
 {
-  "updated_at": "08/02 19:53",
+  "updated_at": "08/02 20:57",
   "value": [],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "Valencia CF",
-      "away": "Real Madrid CF",
-      "kickoff": "08/02 20:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.62,
-        "xg": 2.52,
-        "expected_corners": 9.0
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
