@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/02 00:01",
+  "updated_at": "09/02 05:49",
   "value": [
     {
       "league": "Serie A",
@@ -8,27 +8,12 @@
       "kickoff": "09/02 17:30",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.6,
-        "cards_home": 0.59,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 3.01,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "09/02 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.69,
-        "xg": 2.1,
-        "expected_corners": 9.3
+        "corners95": 0.56,
+        "cards_home": 0.64,
+        "cards_away": 0.5,
+        "dnb_home": 0.64,
+        "xg": 2.43,
+        "expected_corners": 8.9
       }
     },
     {
@@ -37,30 +22,30 @@
       "away": "Middlesbrough FC",
       "kickoff": "09/02 20:01",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.65,
-        "cards_away": 0.68,
-        "dnb_home": 0.59,
-        "xg": 2.7,
-        "expected_corners": 10.1
+        "over25": 0.7,
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.55,
+        "dnb_home": 0.68,
+        "xg": 3.22,
+        "expected_corners": 10.5
       }
     }
   ],
   "corner": [
     {
-      "league": "Serie A",
-      "home": "AS Roma",
-      "away": "Cagliari Calcio",
-      "kickoff": "09/02 19:45",
+      "league": "Primeira Liga",
+      "home": "FC Famalicão",
+      "away": "AVS",
+      "kickoff": "09/02 18:45",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.58,
-        "cards_away": 0.52,
-        "dnb_home": 0.57,
-        "xg": 2.4,
-        "expected_corners": 12.4
+        "over25": 0.57,
+        "corners95": 0.68,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.59,
+        "xg": 2.17,
+        "expected_corners": 9.5
       }
     },
     {
@@ -69,13 +54,28 @@
       "away": "RCD Espanyol de Barcelona",
       "kickoff": "09/02 20:00",
       "markets": {
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.56,
+        "cards_away": 0.61,
+        "dnb_home": 0.64,
+        "xg": 2.54,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Middlesbrough FC",
+      "kickoff": "09/02 20:01",
+      "markets": {
         "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.69,
-        "xg": 2.1,
-        "expected_corners": 9.3
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.55,
+        "dnb_home": 0.68,
+        "xg": 3.22,
+        "expected_corners": 10.5
       }
     },
     {
@@ -84,46 +84,15 @@
       "away": "Sporting Clube de Portugal",
       "kickoff": "09/02 20:45",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.68,
-        "dnb_home": 0.58,
-        "xg": 3.35,
-        "expected_corners": 9.2
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.53,
+        "dnb_home": 0.6,
+        "xg": 2.71,
+        "expected_corners": 9.5
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "AVS",
-      "kickoff": "09/02 18:45",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.59,
-        "cards_home": 0.61,
-        "cards_away": 0.64,
-        "dnb_home": 0.73,
-        "xg": 2.31,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "09/02 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.69,
-        "xg": 2.1,
-        "expected_corners": 9.3
-      }
-    }
-  ]
+  "hot": []
 }
