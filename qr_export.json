@@ -1,22 +1,6 @@
 {
-  "updated_at": "09/02 20:08",
+  "updated_at": "09/02 22:06",
   "value": [],
   "corner": [],
-  "hot": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "Sporting Clube de Portugal",
-      "kickoff": "09/02 20:45",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.6,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.98,
-        "expected_corners": 10.3
-      }
-    }
-  ]
+  "hot": []
 }
