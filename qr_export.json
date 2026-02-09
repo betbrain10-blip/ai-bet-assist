@@ -1,143 +1,21 @@
 {
-  "updated_at": "09/02 18:02",
-  "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "AVS",
-      "kickoff": "09/02 18:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.57,
-        "cards_home": 0.53,
-        "cards_away": 0.64,
-        "dnb_home": 0.58,
-        "xg": 2.85,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "AS Roma",
-      "away": "Cagliari Calcio",
-      "kickoff": "09/02 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.6,
-        "cards_home": 0.5,
-        "cards_away": 0.68,
-        "dnb_home": 0.61,
-        "xg": 2.93,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "09/02 20:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.36,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "Sporting Clube de Portugal",
-      "kickoff": "09/02 20:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.03,
-        "expected_corners": 9.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "09/02 20:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.36,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Middlesbrough FC",
-      "kickoff": "09/02 20:01",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.31,
-        "expected_corners": 12.3
-      }
-    }
-  ],
+  "updated_at": "09/02 20:08",
+  "value": [],
+  "corner": [],
   "hot": [
     {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "09/02 20:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.36,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Middlesbrough FC",
-      "kickoff": "09/02 20:01",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.31,
-        "expected_corners": 12.3
-      }
-    },
-    {
       "league": "Primeira Liga",
       "home": "FC Porto",
       "away": "Sporting Clube de Portugal",
       "kickoff": "09/02 20:45",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.03,
-        "expected_corners": 9.6
+        "over25": 0.61,
+        "corners95": 0.6,
+        "cards_home": 0.52,
+        "cards_away": 0.57,
+        "dnb_home": 0.74,
+        "xg": 2.98,
+        "expected_corners": 10.3
       }
     }
   ]
