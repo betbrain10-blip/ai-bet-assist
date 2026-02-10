@@ -1,81 +1,19 @@
 {
-  "updated_at": "10/02 08:08",
+  "updated_at": "10/02 11:37",
   "value": [
-    {
-      "league": "Premier League",
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "kickoff": "10/02 19:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.6,
-        "cards_home": 0.63,
-        "cards_away": 0.5,
-        "dnb_home": 0.67,
-        "xg": 2.75,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Tottenham Hotspur FC",
-      "away": "Newcastle United FC",
-      "kickoff": "10/02 19:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.55,
-        "dnb_home": 0.69,
-        "xg": 2.16,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Oxford United FC",
-      "away": "Norwich City FC",
-      "kickoff": "10/02 19:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.52,
-        "cards_away": 0.66,
-        "dnb_home": 0.65,
-        "xg": 2.97,
-        "expected_corners": 12.2
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "Premier League",
       "home": "Everton FC",
       "away": "AFC Bournemouth",
       "kickoff": "10/02 19:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.61,
-        "xg": 2.6,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Tottenham Hotspur FC",
-      "away": "Newcastle United FC",
-      "kickoff": "10/02 19:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.55,
+        "over25": 0.64,
+        "corners95": 0.58,
+        "cards_home": 0.6,
+        "cards_away": 0.57,
         "dnb_home": 0.69,
-        "xg": 2.16,
-        "expected_corners": 9.9
+        "xg": 3.36,
+        "expected_corners": 12.0
       }
     },
     {
@@ -84,13 +22,13 @@
       "away": "Norwich City FC",
       "kickoff": "10/02 19:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.52,
-        "cards_away": 0.66,
-        "dnb_home": 0.65,
-        "xg": 2.97,
-        "expected_corners": 12.2
+        "over25": 0.67,
+        "corners95": 0.58,
+        "cards_home": 0.58,
+        "cards_away": 0.53,
+        "dnb_home": 0.57,
+        "xg": 2.47,
+        "expected_corners": 10.1
       }
     },
     {
@@ -99,13 +37,13 @@
       "away": "Southampton FC",
       "kickoff": "10/02 19:45",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.5,
-        "dnb_home": 0.7,
-        "xg": 2.51,
-        "expected_corners": 10.7
+        "over25": 0.68,
+        "corners95": 0.6,
+        "cards_home": 0.61,
+        "cards_away": 0.54,
+        "dnb_home": 0.65,
+        "xg": 2.88,
+        "expected_corners": 9.9
       }
     },
     {
@@ -114,60 +52,45 @@
       "away": "West Bromwich Albion FC",
       "kickoff": "10/02 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.42,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "West Ham United FC",
-      "away": "Manchester United FC",
-      "kickoff": "10/02 20:15",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 2.19,
-        "expected_corners": 10.4
+        "over25": 0.67,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.65,
+        "dnb_home": 0.65,
+        "xg": 2.16,
+        "expected_corners": 9.7
       }
     }
   ],
-  "hot": [
+  "corner": [
+    {
+      "league": "Premier League",
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
+      "kickoff": "10/02 19:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.57,
+        "dnb_home": 0.66,
+        "xg": 2.7,
+        "expected_corners": 10.1
+      }
+    },
     {
       "league": "Premier League",
       "home": "Tottenham Hotspur FC",
       "away": "Newcastle United FC",
       "kickoff": "10/02 19:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.55,
-        "dnb_home": 0.69,
-        "xg": 2.16,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Leicester City FC",
-      "away": "Southampton FC",
-      "kickoff": "10/02 19:45",
-      "markets": {
         "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.5,
-        "dnb_home": 0.7,
-        "xg": 2.51,
-        "expected_corners": 10.7
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 3.26,
+        "expected_corners": 10.6
       }
     },
     {
@@ -176,28 +99,45 @@
       "away": "West Bromwich Albion FC",
       "kickoff": "10/02 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.42,
-        "expected_corners": 8.6
+        "over25": 0.67,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.65,
+        "dnb_home": 0.65,
+        "xg": 2.16,
+        "expected_corners": 9.7
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Premier League",
+      "home": "Everton FC",
+      "away": "AFC Bournemouth",
+      "kickoff": "10/02 19:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.58,
+        "cards_home": 0.6,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 3.36,
+        "expected_corners": 12.0
       }
     },
     {
       "league": "Premier League",
-      "home": "West Ham United FC",
-      "away": "Manchester United FC",
-      "kickoff": "10/02 20:15",
+      "home": "Tottenham Hotspur FC",
+      "away": "Newcastle United FC",
+      "kickoff": "10/02 19:30",
       "markets": {
         "over25": 0.61,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 2.19,
-        "expected_corners": 10.4
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 3.26,
+        "expected_corners": 10.6
       }
     }
   ]
