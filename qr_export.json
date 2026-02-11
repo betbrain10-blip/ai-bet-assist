@@ -1,34 +1,19 @@
 {
-  "updated_at": "11/02 20:04",
+  "updated_at": "11/02 22:00",
   "value": [
     {
-      "league": "Eredivisie",
-      "home": "NEC",
-      "away": "FC Utrecht",
-      "kickoff": "11/02 20:00",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Mirassol FC",
+      "away": "Cruzeiro EC",
+      "kickoff": "11/02 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 3.28,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Sunderland AFC",
-      "away": "Liverpool FC",
-      "kickoff": "11/02 20:15",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.53,
-        "dnb_home": 0.65,
-        "xg": 2.25,
-        "expected_corners": 12.5
+        "over25": 0.71,
+        "corners95": 0.61,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.57,
+        "xg": 2.23,
+        "expected_corners": 11.4
       }
     },
     {
@@ -37,77 +22,77 @@
       "away": "Coritiba FBC",
       "kickoff": "11/02 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.6,
-        "dnb_home": 0.57,
-        "xg": 2.37,
-        "expected_corners": 10.0
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.55,
+        "dnb_home": 0.74,
+        "xg": 2.91,
+        "expected_corners": 11.7
       }
     }
   ],
   "corner": [
-    {
-      "league": "Eredivisie",
-      "home": "NEC",
-      "away": "FC Utrecht",
-      "kickoff": "11/02 20:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 3.28,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Sunderland AFC",
-      "away": "Liverpool FC",
-      "kickoff": "11/02 20:15",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.53,
-        "dnb_home": 0.65,
-        "xg": 2.25,
-        "expected_corners": 12.5
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Mirassol FC",
       "away": "Cruzeiro EC",
       "kickoff": "11/02 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.7,
-        "cards_home": 0.55,
+        "over25": 0.71,
+        "corners95": 0.61,
+        "cards_home": 0.51,
         "cards_away": 0.66,
-        "dnb_home": 0.56,
-        "xg": 3.32,
-        "expected_corners": 11.8
+        "dnb_home": 0.57,
+        "xg": 2.23,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Coritiba FBC",
+      "kickoff": "11/02 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.55,
+        "dnb_home": 0.74,
+        "xg": 2.91,
+        "expected_corners": 11.7
       }
     }
   ],
   "hot": [
     {
-      "league": "Eredivisie",
-      "home": "NEC",
-      "away": "FC Utrecht",
-      "kickoff": "11/02 20:00",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Coritiba FBC",
+      "kickoff": "11/02 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 3.28,
-        "expected_corners": 9.3
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.55,
+        "dnb_home": 0.74,
+        "xg": 2.91,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Mineiro",
+      "away": "Clube do Remo",
+      "kickoff": "11/02 23:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.57,
+        "cards_home": 0.58,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.89,
+        "expected_corners": 9.7
       }
     }
   ]
