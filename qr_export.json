@@ -1,186 +1,19 @@
 {
-  "updated_at": "11/02 18:10",
+  "updated_at": "11/02 20:04",
   "value": [
     {
-      "league": "Premier League",
-      "home": "Manchester City FC",
-      "away": "Fulham FC",
-      "kickoff": "11/02 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.55,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.65,
-        "xg": 3.01,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Brighton & Hove Albion FC",
-      "kickoff": "11/02 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.51,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Crystal Palace FC",
-      "away": "Burnley FC",
-      "kickoff": "11/02 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.51,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.98,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Nottingham Forest FC",
-      "away": "Wolverhampton Wanderers FC",
-      "kickoff": "11/02 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.67,
-        "cards_home": 0.65,
-        "cards_away": 0.63,
-        "dnb_home": 0.56,
-        "xg": 2.46,
-        "expected_corners": 11.0
-      }
-    },
-    {
       "league": "Eredivisie",
       "home": "NEC",
       "away": "FC Utrecht",
       "kickoff": "11/02 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
+        "over25": 0.64,
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
         "dnb_home": 0.7,
-        "xg": 2.16,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "Cruzeiro EC",
-      "kickoff": "11/02 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.63,
-        "xg": 2.45,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "Clube do Remo",
-      "kickoff": "11/02 23:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.52,
-        "dnb_home": 0.61,
-        "xg": 3.02,
-        "expected_corners": 11.0
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Brighton & Hove Albion FC",
-      "kickoff": "11/02 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.51,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Crystal Palace FC",
-      "away": "Burnley FC",
-      "kickoff": "11/02 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.51,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.98,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Nottingham Forest FC",
-      "away": "Wolverhampton Wanderers FC",
-      "kickoff": "11/02 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.67,
-        "cards_home": 0.65,
-        "cards_away": 0.63,
-        "dnb_home": 0.56,
-        "xg": 2.46,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Charlton Athletic FC",
-      "away": "Stoke City FC",
-      "kickoff": "11/02 19:45",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.73,
-        "xg": 2.38,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "NEC",
-      "away": "FC Utrecht",
-      "kickoff": "11/02 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.16,
-        "expected_corners": 12.7
+        "xg": 3.28,
+        "expected_corners": 9.3
       }
     },
     {
@@ -189,28 +22,13 @@
       "away": "Liverpool FC",
       "kickoff": "11/02 20:15",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.6,
-        "xg": 2.52,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "Cruzeiro EC",
-      "kickoff": "11/02 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.65,
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.59,
         "cards_away": 0.53,
-        "dnb_home": 0.63,
-        "xg": 2.45,
-        "expected_corners": 10.8
+        "dnb_home": 0.65,
+        "xg": 2.25,
+        "expected_corners": 12.5
       }
     },
     {
@@ -219,90 +37,77 @@
       "away": "Coritiba FBC",
       "kickoff": "11/02 22:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.64,
-        "cards_home": 0.68,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 3.06,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "Clube do Remo",
-      "kickoff": "11/02 23:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.52,
-        "dnb_home": 0.61,
-        "xg": 3.02,
-        "expected_corners": 11.0
+        "over25": 0.7,
+        "corners95": 0.56,
+        "cards_home": 0.67,
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 2.37,
+        "expected_corners": 10.0
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Brighton & Hove Albion FC",
-      "kickoff": "11/02 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.51,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Crystal Palace FC",
-      "away": "Burnley FC",
-      "kickoff": "11/02 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.51,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.98,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Charlton Athletic FC",
-      "away": "Stoke City FC",
-      "kickoff": "11/02 19:45",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.73,
-        "xg": 2.38,
-        "expected_corners": 10.9
-      }
-    },
+  "corner": [
     {
       "league": "Eredivisie",
       "home": "NEC",
       "away": "FC Utrecht",
       "kickoff": "11/02 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
+        "over25": 0.64,
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
         "dnb_home": 0.7,
-        "xg": 2.16,
-        "expected_corners": 12.7
+        "xg": 3.28,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Sunderland AFC",
+      "away": "Liverpool FC",
+      "kickoff": "11/02 20:15",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
+        "dnb_home": 0.65,
+        "xg": 2.25,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Mirassol FC",
+      "away": "Cruzeiro EC",
+      "kickoff": "11/02 22:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.7,
+        "cards_home": 0.55,
+        "cards_away": 0.66,
+        "dnb_home": 0.56,
+        "xg": 3.32,
+        "expected_corners": 11.8
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Eredivisie",
+      "home": "NEC",
+      "away": "FC Utrecht",
+      "kickoff": "11/02 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.7,
+        "xg": 3.28,
+        "expected_corners": 9.3
       }
     }
   ]
