@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/02 18:11",
+  "updated_at": "12/02 19:57",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "Santos FC",
       "kickoff": "12/02 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.57,
-        "xg": 3.23,
-        "expected_corners": 8.9
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.61,
+        "dnb_home": 0.61,
+        "xg": 2.41,
+        "expected_corners": 10.4
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "Botafogo FR",
       "kickoff": "12/02 22:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 2.76,
-        "expected_corners": 10.7
+        "over25": 0.69,
+        "corners95": 0.64,
+        "cards_home": 0.67,
+        "cards_away": 0.61,
+        "dnb_home": 0.66,
+        "xg": 2.14,
+        "expected_corners": 11.9
       }
     },
     {
@@ -37,62 +37,30 @@
       "away": "RB Bragantino",
       "kickoff": "12/02 23:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.51,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.6,
-        "expected_corners": 11.5
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.66,
+        "dnb_home": 0.59,
+        "xg": 2.61,
+        "expected_corners": 9.4
       }
     }
   ],
   "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "Santos FC",
-      "kickoff": "12/02 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.57,
-        "xg": 3.23,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Fluminense FC",
-      "away": "Botafogo FR",
-      "kickoff": "12/02 22:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 2.76,
-        "expected_corners": 10.7
-      }
-    }
-  ],
-  "hot": [
     {
       "league": "Premier League",
       "home": "Brentford FC",
       "away": "Arsenal FC",
       "kickoff": "12/02 20:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.55,
-        "cards_home": 0.55,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 3.4,
-        "expected_corners": 8.9
+        "over25": 0.55,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.6,
+        "xg": 3.3,
+        "expected_corners": 12.4
       }
     },
     {
@@ -101,13 +69,13 @@
       "away": "Botafogo FR",
       "kickoff": "12/02 22:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 2.76,
-        "expected_corners": 10.7
+        "over25": 0.69,
+        "corners95": 0.64,
+        "cards_home": 0.67,
+        "cards_away": 0.61,
+        "dnb_home": 0.66,
+        "xg": 2.14,
+        "expected_corners": 11.9
       }
     },
     {
@@ -116,14 +84,15 @@
       "away": "RB Bragantino",
       "kickoff": "12/02 23:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.51,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.6,
-        "expected_corners": 11.5
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.66,
+        "dnb_home": 0.59,
+        "xg": 2.61,
+        "expected_corners": 9.4
       }
     }
-  ]
+  ],
+  "hot": []
 }
