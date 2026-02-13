@@ -1,38 +1,6 @@
 {
-  "updated_at": "13/02 20:38",
-  "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "FC Alverca",
-      "kickoff": "13/02 20:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 3.02,
-        "expected_corners": 11.1
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "FC Alverca",
-      "kickoff": "13/02 20:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 3.02,
-        "expected_corners": 11.1
-      }
-    }
-  ],
+  "updated_at": "13/02 21:35",
+  "value": [],
+  "corner": [],
   "hot": []
 }
