@@ -1,5 +1,5 @@
 {
-  "updated_at": "13/02 14:28",
+  "updated_at": "13/02 17:12",
   "value": [
     {
       "league": "Ligue 1",
@@ -7,28 +7,13 @@
       "away": "Paris Saint-Germain FC",
       "kickoff": "13/02 18:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.65,
-        "dnb_home": 0.65,
-        "xg": 2.22,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "FC Volendam",
-      "away": "PSV",
-      "kickoff": "13/02 19:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.59,
-        "cards_away": 0.53,
-        "dnb_home": 0.6,
-        "xg": 2.71,
-        "expected_corners": 10.8
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 2.64,
+        "expected_corners": 10.2
       }
     },
     {
@@ -37,13 +22,13 @@
       "away": "1. FSV Mainz 05",
       "kickoff": "13/02 19:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
+        "over25": 0.64,
+        "corners95": 0.56,
         "cards_home": 0.54,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 3.33,
-        "expected_corners": 12.1
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.65,
+        "expected_corners": 11.3
       }
     },
     {
@@ -52,43 +37,13 @@
       "away": "AC Milan",
       "kickoff": "13/02 19:45",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.55,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.75,
-        "xg": 3.4,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Elche CF",
-      "away": "CA Osasuna",
-      "kickoff": "13/02 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 2.53,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "AS Monaco FC",
-      "away": "FC Nantes",
-      "kickoff": "13/02 20:05",
-      "markets": {
         "over25": 0.65,
-        "corners95": 0.59,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.65,
-        "xg": 2.52,
-        "expected_corners": 10.0
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 3.16,
+        "expected_corners": 10.6
       }
     },
     {
@@ -97,13 +52,13 @@
       "away": "FC Alverca",
       "kickoff": "13/02 20:45",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 3.17,
-        "expected_corners": 9.7
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.6,
+        "xg": 2.96,
+        "expected_corners": 10.2
       }
     }
   ],
@@ -114,13 +69,13 @@
       "away": "Paris Saint-Germain FC",
       "kickoff": "13/02 18:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.65,
-        "dnb_home": 0.65,
-        "xg": 2.22,
-        "expected_corners": 8.8
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 2.64,
+        "expected_corners": 10.2
       }
     },
     {
@@ -129,13 +84,13 @@
       "away": "Sport Lisboa e Benfica",
       "kickoff": "13/02 18:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.63,
-        "cards_home": 0.53,
-        "cards_away": 0.56,
-        "dnb_home": 0.63,
-        "xg": 2.66,
-        "expected_corners": 10.8
+        "over25": 0.62,
+        "corners95": 0.7,
+        "cards_home": 0.65,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 3.25,
+        "expected_corners": 11.4
       }
     },
     {
@@ -144,13 +99,75 @@
       "away": "PSV",
       "kickoff": "13/02 19:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 3.32,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "AC Pisa 1909",
+      "away": "AC Milan",
+      "kickoff": "13/02 19:45",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
         "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 3.16,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Elche CF",
+      "away": "CA Osasuna",
+      "kickoff": "13/02 20:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.62,
+        "cards_home": 0.62,
         "cards_away": 0.53,
+        "dnb_home": 0.69,
+        "xg": 2.8,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Tondela",
+      "away": "FC Alverca",
+      "kickoff": "13/02 20:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
         "dnb_home": 0.6,
-        "xg": 2.71,
-        "expected_corners": 10.8
+        "xg": 2.96,
+        "expected_corners": 10.2
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primeira Liga",
+      "home": "CD Santa Clara",
+      "away": "Sport Lisboa e Benfica",
+      "kickoff": "13/02 18:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.7,
+        "cards_home": 0.65,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 3.25,
+        "expected_corners": 11.4
       }
     },
     {
@@ -159,60 +176,28 @@
       "away": "1. FSV Mainz 05",
       "kickoff": "13/02 19:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
+        "over25": 0.64,
+        "corners95": 0.56,
         "cards_home": 0.54,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 3.33,
-        "expected_corners": 12.1
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.65,
+        "expected_corners": 11.3
       }
     },
-    {
-      "league": "Primera Division",
-      "home": "Elche CF",
-      "away": "CA Osasuna",
-      "kickoff": "13/02 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 2.53,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "FC Alverca",
-      "kickoff": "13/02 20:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 3.17,
-        "expected_corners": 9.7
-      }
-    }
-  ],
-  "hot": [
     {
       "league": "Serie A",
       "home": "AC Pisa 1909",
       "away": "AC Milan",
       "kickoff": "13/02 19:45",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.55,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.75,
-        "xg": 3.4,
-        "expected_corners": 11.0
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 3.16,
+        "expected_corners": 10.6
       }
     },
     {
@@ -221,28 +206,13 @@
       "away": "CA Osasuna",
       "kickoff": "13/02 20:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 2.53,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "FC Alverca",
-      "kickoff": "13/02 20:45",
-      "markets": {
-        "over25": 0.71,
+        "over25": 0.57,
         "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 3.17,
-        "expected_corners": 9.7
+        "cards_home": 0.62,
+        "cards_away": 0.53,
+        "dnb_home": 0.69,
+        "xg": 2.8,
+        "expected_corners": 9.8
       }
     }
   ]
