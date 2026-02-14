@@ -1,83 +1,22 @@
 {
-  "updated_at": "14/02 19:45",
+  "updated_at": "14/02 20:26",
   "value": [
     {
-      "league": "Serie A",
-      "home": "FC Internazionale Milano",
-      "away": "Juventus FC",
-      "kickoff": "14/02 19:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.58,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.68,
-        "xg": 3.0,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "FC Groningen",
-      "away": "FC Utrecht",
-      "kickoff": "14/02 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.58,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 2.47,
-        "expected_corners": 8.8
-      }
-    },
-    {
       "league": "Primeira Liga",
       "home": "Gil Vicente FC",
       "away": "Sporting Clube de Braga",
       "kickoff": "14/02 20:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.53,
-        "cards_away": 0.61,
-        "dnb_home": 0.61,
-        "xg": 3.12,
-        "expected_corners": 12.5
+        "over25": 0.64,
+        "corners95": 0.58,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.62,
+        "xg": 2.55,
+        "expected_corners": 11.2
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Ligue 1",
-      "home": "Paris FC",
-      "away": "Racing Club de Lens",
-      "kickoff": "14/02 20:05",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.61,
-        "cards_home": 0.67,
-        "cards_away": 0.56,
-        "dnb_home": 0.59,
-        "xg": 2.81,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Gil Vicente FC",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "14/02 20:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.53,
-        "cards_away": 0.61,
-        "dnb_home": 0.61,
-        "xg": 3.12,
-        "expected_corners": 12.5
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
