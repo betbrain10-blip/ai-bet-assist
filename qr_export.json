@@ -1,96 +1,19 @@
 {
-  "updated_at": "14/02 16:58",
+  "updated_at": "14/02 17:33",
   "value": [
     {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "Atalanta BC",
-      "kickoff": "14/02 17:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.61,
-        "xg": 3.11,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Lille OSC",
-      "away": "Stade Brestois 29",
-      "kickoff": "14/02 18:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.56,
-        "cards_home": 0.68,
-        "cards_away": 0.61,
-        "dnb_home": 0.61,
-        "xg": 3.22,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "FC Internazionale Milano",
-      "away": "Juventus FC",
-      "kickoff": "14/02 19:45",
+      "league": "Bundesliga",
+      "home": "VfB Stuttgart",
+      "away": "1. FC Köln",
+      "kickoff": "14/02 17:30",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.6,
-        "cards_home": 0.68,
-        "cards_away": 0.66,
-        "dnb_home": 0.66,
-        "xg": 2.49,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Paris FC",
-      "away": "Racing Club de Lens",
-      "kickoff": "14/02 20:05",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.52,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Gil Vicente FC",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "14/02 20:30",
-      "markets": {
-        "over25": 0.72,
         "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.58,
-        "xg": 2.84,
-        "expected_corners": 12.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "Atalanta BC",
-      "kickoff": "14/02 17:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.61,
-        "xg": 3.11,
-        "expected_corners": 10.6
+        "cards_home": 0.56,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 3.04,
+        "expected_corners": 9.8
       }
     },
     {
@@ -99,28 +22,13 @@
       "away": "Deportivo Alavés",
       "kickoff": "14/02 17:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.7,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 3.14,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "SBV Excelsior",
-      "away": "AZ",
-      "kickoff": "14/02 17:45",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.69,
-        "cards_home": 0.62,
-        "cards_away": 0.54,
-        "dnb_home": 0.66,
-        "xg": 2.16,
-        "expected_corners": 11.5
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.59,
+        "dnb_home": 0.65,
+        "xg": 3.32,
+        "expected_corners": 8.6
       }
     },
     {
@@ -129,28 +37,28 @@
       "away": "CF Estrela da Amadora",
       "kickoff": "14/02 18:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.61,
-        "cards_home": 0.53,
-        "cards_away": 0.61,
-        "dnb_home": 0.6,
-        "xg": 2.22,
+        "over25": 0.66,
+        "corners95": 0.59,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.65,
+        "xg": 2.79,
         "expected_corners": 11.7
       }
     },
     {
-      "league": "Eredivisie",
-      "home": "AFC Ajax",
-      "away": "Fortuna Sittard",
-      "kickoff": "14/02 19:00",
+      "league": "Ligue 1",
+      "home": "Lille OSC",
+      "away": "Stade Brestois 29",
+      "kickoff": "14/02 18:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.68,
-        "cards_home": 0.6,
-        "cards_away": 0.59,
-        "dnb_home": 0.6,
-        "xg": 2.67,
-        "expected_corners": 9.5
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.56,
+        "xg": 2.59,
+        "expected_corners": 12.5
       }
     },
     {
@@ -159,28 +67,13 @@
       "away": "FC Utrecht",
       "kickoff": "14/02 20:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.59,
-        "dnb_home": 0.65,
-        "xg": 2.28,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Paris FC",
-      "away": "Racing Club de Lens",
-      "kickoff": "14/02 20:05",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.52,
-        "expected_corners": 9.5
+        "over25": 0.68,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.59,
+        "xg": 3.39,
+        "expected_corners": 12.1
       }
     },
     {
@@ -189,13 +82,135 @@
       "away": "Sporting Clube de Braga",
       "kickoff": "14/02 20:30",
       "markets": {
-        "over25": 0.72,
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.74,
+        "xg": 3.28,
+        "expected_corners": 10.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Bundesliga",
+      "home": "VfB Stuttgart",
+      "away": "1. FC Köln",
+      "kickoff": "14/02 17:30",
+      "markets": {
+        "over25": 0.68,
         "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.58,
-        "xg": 2.84,
-        "expected_corners": 12.6
+        "cards_home": 0.56,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 3.04,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Deportivo Alavés",
+      "kickoff": "14/02 17:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.59,
+        "dnb_home": 0.65,
+        "xg": 3.32,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "SBV Excelsior",
+      "away": "AZ",
+      "kickoff": "14/02 17:45",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.64,
+        "cards_home": 0.66,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 2.61,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Lille OSC",
+      "away": "Stade Brestois 29",
+      "kickoff": "14/02 18:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.56,
+        "xg": 2.59,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "AFC Ajax",
+      "away": "Fortuna Sittard",
+      "kickoff": "14/02 19:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.61,
+        "dnb_home": 0.62,
+        "xg": 3.09,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "FC Groningen",
+      "away": "FC Utrecht",
+      "kickoff": "14/02 20:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.59,
+        "xg": 3.39,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Paris FC",
+      "away": "Racing Club de Lens",
+      "kickoff": "14/02 20:05",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.65,
+        "dnb_home": 0.62,
+        "xg": 2.34,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Gil Vicente FC",
+      "away": "Sporting Clube de Braga",
+      "kickoff": "14/02 20:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.74,
+        "xg": 3.28,
+        "expected_corners": 10.8
       }
     }
   ],
@@ -206,13 +221,28 @@
       "away": "1. FC Köln",
       "kickoff": "14/02 17:30",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.6,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.75,
-        "xg": 2.47,
-        "expected_corners": 9.9
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 3.04,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "SBV Excelsior",
+      "away": "AZ",
+      "kickoff": "14/02 17:45",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.64,
+        "cards_home": 0.66,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 2.61,
+        "expected_corners": 10.0
       }
     },
     {
@@ -222,27 +252,27 @@
       "kickoff": "14/02 20:00",
       "markets": {
         "over25": 0.6,
-        "corners95": 0.58,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.73,
-        "expected_corners": 9.5
+        "corners95": 0.6,
+        "cards_home": 0.57,
+        "cards_away": 0.57,
+        "dnb_home": 0.7,
+        "xg": 3.08,
+        "expected_corners": 11.4
       }
     },
     {
-      "league": "Ligue 1",
-      "home": "Paris FC",
-      "away": "Racing Club de Lens",
-      "kickoff": "14/02 20:05",
+      "league": "Primeira Liga",
+      "home": "Gil Vicente FC",
+      "away": "Sporting Clube de Braga",
+      "kickoff": "14/02 20:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.52,
-        "expected_corners": 9.5
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.74,
+        "xg": 3.28,
+        "expected_corners": 10.8
       }
     }
   ]
