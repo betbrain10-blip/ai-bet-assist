@@ -1,22 +1,6 @@
 {
-  "updated_at": "14/02 20:26",
-  "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "Gil Vicente FC",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "14/02 20:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.58,
-        "cards_home": 0.61,
-        "cards_away": 0.55,
-        "dnb_home": 0.62,
-        "xg": 2.55,
-        "expected_corners": 11.2
-      }
-    }
-  ],
+  "updated_at": "14/02 20:51",
+  "value": [],
   "corner": [],
   "hot": []
 }
