@@ -1,81 +1,19 @@
 {
-  "updated_at": "15/02 17:25",
+  "updated_at": "15/02 17:51",
   "value": [
-    {
-      "league": "Primera Division",
-      "home": "Levante UD",
-      "away": "Valencia CF",
-      "kickoff": "15/02 17:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.56,
-        "xg": 2.71,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Olympique Lyonnais",
-      "away": "OGC Nice",
-      "kickoff": "15/02 19:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.67,
-        "xg": 2.45,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "SSC Napoli",
-      "away": "AS Roma",
-      "kickoff": "15/02 19:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.56,
-        "cards_away": 0.55,
-        "dnb_home": 0.64,
-        "xg": 2.25,
-        "expected_corners": 9.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "Levante UD",
-      "away": "Valencia CF",
-      "kickoff": "15/02 17:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.56,
-        "xg": 2.71,
-        "expected_corners": 8.9
-      }
-    },
     {
       "league": "Primeira Liga",
       "home": "AVS",
       "away": "GD Estoril Praia",
       "kickoff": "15/02 18:00",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.7,
         "corners95": 0.61,
         "cards_home": 0.67,
-        "cards_away": 0.5,
-        "dnb_home": 0.7,
-        "xg": 3.36,
-        "expected_corners": 12.0
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 3.08,
+        "expected_corners": 12.2
       }
     },
     {
@@ -84,13 +22,13 @@
       "away": "OGC Nice",
       "kickoff": "15/02 19:45",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.67,
-        "xg": 2.45,
-        "expected_corners": 9.0
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 3.18,
+        "expected_corners": 9.9
       }
     },
     {
@@ -99,13 +37,13 @@
       "away": "AS Roma",
       "kickoff": "15/02 19:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.56,
-        "cards_away": 0.55,
-        "dnb_home": 0.64,
-        "xg": 2.25,
-        "expected_corners": 9.8
+        "over25": 0.71,
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.61,
+        "dnb_home": 0.61,
+        "xg": 2.38,
+        "expected_corners": 10.0
       }
     },
     {
@@ -114,13 +52,75 @@
       "away": "FC Famalicão",
       "kickoff": "15/02 20:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.16,
-        "expected_corners": 8.8
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.68,
+        "xg": 2.15,
+        "expected_corners": 10.2
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primeira Liga",
+      "home": "AVS",
+      "away": "GD Estoril Praia",
+      "kickoff": "15/02 18:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 3.08,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Olympique Lyonnais",
+      "away": "OGC Nice",
+      "kickoff": "15/02 19:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 3.18,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RCD Mallorca",
+      "away": "Real Betis Balompié",
+      "kickoff": "15/02 20:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.54,
+        "cards_away": 0.63,
+        "dnb_home": 0.69,
+        "xg": 2.95,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Portugal",
+      "away": "FC Famalicão",
+      "kickoff": "15/02 20:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.68,
+        "xg": 2.15,
+        "expected_corners": 10.2
       }
     }
   ],
@@ -131,13 +131,13 @@
       "away": "GD Estoril Praia",
       "kickoff": "15/02 18:00",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.7,
         "corners95": 0.61,
         "cards_home": 0.67,
-        "cards_away": 0.5,
-        "dnb_home": 0.7,
-        "xg": 3.36,
-        "expected_corners": 12.0
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 3.08,
+        "expected_corners": 12.2
       }
     },
     {
@@ -146,28 +146,13 @@
       "away": "Real Betis Balompié",
       "kickoff": "15/02 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.57,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.73,
-        "xg": 2.42,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "FC Famalicão",
-      "kickoff": "15/02 20:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.16,
-        "expected_corners": 8.8
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.54,
+        "cards_away": 0.63,
+        "dnb_home": 0.69,
+        "xg": 2.95,
+        "expected_corners": 10.4
       }
     }
   ]
