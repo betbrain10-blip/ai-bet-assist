@@ -1,96 +1,20 @@
 {
-  "updated_at": "15/02 19:46",
-  "value": [
-    {
-      "league": "Serie A",
-      "home": "SSC Napoli",
-      "away": "AS Roma",
-      "kickoff": "15/02 19:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.55,
-        "dnb_home": 0.67,
-        "xg": 3.34,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "RCD Mallorca",
-      "away": "Real Betis Balompié",
-      "kickoff": "15/02 20:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.65,
-        "dnb_home": 0.66,
-        "xg": 2.91,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "FC Famalicão",
-      "kickoff": "15/02 20:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.68,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.62,
-        "xg": 2.79,
-        "expected_corners": 9.9
-      }
-    }
-  ],
+  "updated_at": "15/02 20:27",
+  "value": [],
   "corner": [
     {
-      "league": "Serie A",
-      "home": "SSC Napoli",
-      "away": "AS Roma",
-      "kickoff": "15/02 19:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.55,
-        "dnb_home": 0.67,
-        "xg": 3.34,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "RCD Mallorca",
-      "away": "Real Betis Balompié",
-      "kickoff": "15/02 20:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.65,
-        "dnb_home": 0.66,
-        "xg": 2.91,
-        "expected_corners": 9.8
-      }
-    },
-    {
       "league": "Primeira Liga",
       "home": "Sporting Clube de Portugal",
       "away": "FC Famalicão",
       "kickoff": "15/02 20:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.68,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.62,
-        "xg": 2.79,
-        "expected_corners": 9.9
+        "over25": 0.59,
+        "corners95": 0.65,
+        "cards_home": 0.54,
+        "cards_away": 0.55,
+        "dnb_home": 0.6,
+        "xg": 2.54,
+        "expected_corners": 8.7
       }
     }
   ],
