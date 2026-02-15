@@ -1,5 +1,5 @@
 {
-  "updated_at": "15/02 18:36",
+  "updated_at": "15/02 19:25",
   "value": [
     {
       "league": "Ligue 1",
@@ -7,13 +7,28 @@
       "away": "OGC Nice",
       "kickoff": "15/02 19:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 2.55,
-        "expected_corners": 10.9
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.64,
+        "cards_away": 0.53,
+        "dnb_home": 0.64,
+        "xg": 2.27,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "SSC Napoli",
+      "away": "AS Roma",
+      "kickoff": "15/02 19:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.58,
+        "dnb_home": 0.75,
+        "xg": 2.19,
+        "expected_corners": 11.4
       }
     },
     {
@@ -22,13 +37,13 @@
       "away": "Real Betis Balompié",
       "kickoff": "15/02 20:00",
       "markets": {
-        "over25": 0.63,
+        "over25": 0.7,
         "corners95": 0.57,
-        "cards_home": 0.51,
-        "cards_away": 0.66,
+        "cards_home": 0.62,
+        "cards_away": 0.62,
         "dnb_home": 0.66,
-        "xg": 2.99,
-        "expected_corners": 8.6
+        "xg": 2.58,
+        "expected_corners": 11.8
       }
     },
     {
@@ -37,13 +52,13 @@
       "away": "FC Famalicão",
       "kickoff": "15/02 20:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.64,
         "dnb_home": 0.65,
-        "xg": 3.3,
-        "expected_corners": 11.2
+        "xg": 2.77,
+        "expected_corners": 9.1
       }
     }
   ],
@@ -54,13 +69,28 @@
       "away": "OGC Nice",
       "kickoff": "15/02 19:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 2.55,
-        "expected_corners": 10.9
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.64,
+        "cards_away": 0.53,
+        "dnb_home": 0.64,
+        "xg": 2.27,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "SSC Napoli",
+      "away": "AS Roma",
+      "kickoff": "15/02 19:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.58,
+        "dnb_home": 0.75,
+        "xg": 2.19,
+        "expected_corners": 11.4
       }
     },
     {
@@ -69,30 +99,30 @@
       "away": "FC Famalicão",
       "kickoff": "15/02 20:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.64,
         "dnb_home": 0.65,
-        "xg": 3.3,
-        "expected_corners": 11.2
+        "xg": 2.77,
+        "expected_corners": 9.1
       }
     }
   ],
   "hot": [
     {
-      "league": "Ligue 1",
-      "home": "Olympique Lyonnais",
-      "away": "OGC Nice",
+      "league": "Serie A",
+      "home": "SSC Napoli",
+      "away": "AS Roma",
       "kickoff": "15/02 19:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 2.55,
-        "expected_corners": 10.9
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.58,
+        "dnb_home": 0.75,
+        "xg": 2.19,
+        "expected_corners": 11.4
       }
     }
   ]
