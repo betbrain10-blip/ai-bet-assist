@@ -1,83 +1,66 @@
 {
-  "updated_at": "16/02 08:49",
+  "updated_at": "16/02 09:54",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Coventry City FC",
-      "away": "Middlesbrough FC",
-      "kickoff": "16/02 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.26,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Rio Ave FC",
-      "away": "Moreirense FC",
-      "kickoff": "16/02 20:15",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.57,
-        "dnb_home": 0.75,
-        "xg": 2.12,
-        "expected_corners": 8.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Championship",
-      "home": "Coventry City FC",
-      "away": "Middlesbrough FC",
-      "kickoff": "16/02 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.26,
-        "expected_corners": 9.5
-      }
-    },
     {
       "league": "Primera Division",
       "home": "Girona FC",
       "away": "FC Barcelona",
       "kickoff": "16/02 20:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.55,
-        "cards_away": 0.57,
-        "dnb_home": 0.68,
-        "xg": 2.2,
-        "expected_corners": 11.5
+        "over25": 0.68,
+        "corners95": 0.57,
+        "cards_home": 0.6,
+        "cards_away": 0.58,
+        "dnb_home": 0.55,
+        "xg": 2.33,
+        "expected_corners": 12.2
       }
-    }
-  ],
-  "hot": [
+    },
     {
       "league": "Championship",
       "home": "Coventry City FC",
       "away": "Middlesbrough FC",
       "kickoff": "16/02 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.26,
-        "expected_corners": 9.5
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.64,
+        "cards_away": 0.55,
+        "dnb_home": 0.57,
+        "xg": 3.27,
+        "expected_corners": 11.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "Cagliari Calcio",
+      "away": "US Lecce",
+      "kickoff": "16/02 19:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.66,
+        "cards_home": 0.55,
+        "cards_away": 0.67,
+        "dnb_home": 0.58,
+        "xg": 2.6,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Coventry City FC",
+      "away": "Middlesbrough FC",
+      "kickoff": "16/02 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.64,
+        "cards_away": 0.55,
+        "dnb_home": 0.57,
+        "xg": 3.27,
+        "expected_corners": 11.9
       }
     },
     {
@@ -86,13 +69,30 @@
       "away": "Moreirense FC",
       "kickoff": "16/02 20:15",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.57,
-        "dnb_home": 0.75,
-        "xg": 2.12,
-        "expected_corners": 8.8
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.69,
+        "xg": 3.05,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primeira Liga",
+      "home": "Rio Ave FC",
+      "away": "Moreirense FC",
+      "kickoff": "16/02 20:15",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.69,
+        "xg": 3.05,
+        "expected_corners": 10.6
       }
     }
   ]
