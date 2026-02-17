@@ -1,6 +1,22 @@
 {
-  "updated_at": "17/02 21:36",
-  "value": [],
+  "updated_at": "17/02 22:31",
+  "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Carabobo FC",
+      "away": "CD Huachipato",
+      "kickoff": "17/02 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.5,
+        "cards_away": 0.66,
+        "dnb_home": 0.68,
+        "xg": 2.74,
+        "expected_corners": 11.4
+      }
+    }
+  ],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -8,13 +24,13 @@
       "away": "CD Huachipato",
       "kickoff": "17/02 22:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.66,
-        "cards_home": 0.56,
-        "cards_away": 0.67,
-        "dnb_home": 0.61,
-        "xg": 3.17,
-        "expected_corners": 10.7
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.5,
+        "cards_away": 0.66,
+        "dnb_home": 0.68,
+        "xg": 2.74,
+        "expected_corners": 11.4
       }
     }
   ],
