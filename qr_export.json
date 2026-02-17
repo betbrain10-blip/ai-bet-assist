@@ -1,113 +1,19 @@
 {
-  "updated_at": "17/02 08:04",
+  "updated_at": "17/02 09:11",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Wrexham AFC",
-      "kickoff": "17/02 19:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.73,
-        "xg": 2.89,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Carabobo FC",
-      "away": "CD Huachipato",
-      "kickoff": "17/02 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.56,
-        "dnb_home": 0.59,
-        "xg": 2.52,
-        "expected_corners": 9.3
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "UEFA Champions League",
       "home": "Galatasaray SK",
       "away": "Juventus FC",
       "kickoff": "17/02 17:45",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.65,
-        "cards_home": 0.61,
-        "cards_away": 0.6,
-        "dnb_home": 0.6,
-        "xg": 2.8,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Wrexham AFC",
-      "kickoff": "17/02 19:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.66,
+        "over25": 0.72,
+        "corners95": 0.58,
+        "cards_home": 0.62,
         "cards_away": 0.56,
         "dnb_home": 0.73,
-        "xg": 2.89,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "AS Monaco FC",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "17/02 20:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.63,
-        "dnb_home": 0.62,
-        "xg": 2.69,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Carabobo FC",
-      "away": "CD Huachipato",
-      "kickoff": "17/02 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.56,
-        "dnb_home": 0.59,
-        "xg": 2.52,
-        "expected_corners": 9.3
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Wrexham AFC",
-      "kickoff": "17/02 19:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.73,
-        "xg": 2.89,
-        "expected_corners": 9.4
+        "xg": 2.85,
+        "expected_corners": 9.5
       }
     },
     {
@@ -116,13 +22,122 @@
       "away": "Real Madrid CF",
       "kickoff": "17/02 20:00",
       "markets": {
-        "over25": 0.57,
+        "over25": 0.68,
         "corners95": 0.57,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.7,
-        "xg": 2.46,
-        "expected_corners": 10.2
+        "cards_home": 0.67,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 3.04,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "AS Monaco FC",
+      "away": "Paris Saint-Germain FC",
+      "kickoff": "17/02 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.63,
+        "cards_away": 0.65,
+        "dnb_home": 0.59,
+        "xg": 2.29,
+        "expected_corners": 10.4
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Championship",
+      "home": "Bristol City FC",
+      "away": "Wrexham AFC",
+      "kickoff": "17/02 19:45",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.61,
+        "cards_home": 0.55,
+        "cards_away": 0.53,
+        "dnb_home": 0.69,
+        "xg": 2.51,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "AS Monaco FC",
+      "away": "Paris Saint-Germain FC",
+      "kickoff": "17/02 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.63,
+        "cards_away": 0.65,
+        "dnb_home": 0.59,
+        "xg": 2.29,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Carabobo FC",
+      "away": "CD Huachipato",
+      "kickoff": "17/02 22:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.61,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.68,
+        "xg": 2.87,
+        "expected_corners": 8.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Galatasaray SK",
+      "away": "Juventus FC",
+      "kickoff": "17/02 17:45",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.58,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.85,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Bristol City FC",
+      "away": "Wrexham AFC",
+      "kickoff": "17/02 19:45",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.61,
+        "cards_home": 0.55,
+        "cards_away": 0.53,
+        "dnb_home": 0.69,
+        "xg": 2.51,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Sport Lisboa e Benfica",
+      "away": "Real Madrid CF",
+      "kickoff": "17/02 20:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 3.04,
+        "expected_corners": 10.6
       }
     }
   ]
