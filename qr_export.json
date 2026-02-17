@@ -1,5 +1,5 @@
 {
-  "updated_at": "17/02 20:37",
+  "updated_at": "17/02 21:36",
   "value": [],
   "corner": [
     {
@@ -8,13 +8,13 @@
       "away": "CD Huachipato",
       "kickoff": "17/02 22:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.68,
-        "cards_away": 0.59,
-        "dnb_home": 0.66,
-        "xg": 2.82,
-        "expected_corners": 8.6
+        "over25": 0.58,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.61,
+        "xg": 3.17,
+        "expected_corners": 10.7
       }
     }
   ],
