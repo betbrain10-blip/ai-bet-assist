@@ -1,84 +1,22 @@
 {
-  "updated_at": "17/02 19:49",
-  "value": [
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Wrexham AFC",
-      "kickoff": "17/02 19:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.55,
-        "dnb_home": 0.72,
-        "xg": 3.24,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Borussia Dortmund",
-      "away": "Atalanta BC",
-      "kickoff": "17/02 20:15",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.57,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.61,
-        "xg": 3.03,
-        "expected_corners": 12.1
-      }
-    }
-  ],
+  "updated_at": "17/02 20:37",
+  "value": [],
   "corner": [
     {
-      "league": "UEFA Champions League",
-      "home": "Sport Lisboa e Benfica",
-      "away": "Real Madrid CF",
-      "kickoff": "17/02 20:00",
+      "league": "Copa Libertadores",
+      "home": "Carabobo FC",
+      "away": "CD Huachipato",
+      "kickoff": "17/02 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.51,
-        "dnb_home": 0.61,
+        "over25": 0.61,
+        "corners95": 0.62,
+        "cards_home": 0.68,
+        "cards_away": 0.59,
+        "dnb_home": 0.66,
         "xg": 2.82,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "AS Monaco FC",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "17/02 20:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.62,
-        "dnb_home": 0.68,
-        "xg": 2.98,
-        "expected_corners": 12.5
+        "expected_corners": 8.6
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Wrexham AFC",
-      "kickoff": "17/02 19:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.55,
-        "dnb_home": 0.72,
-        "xg": 3.24,
-        "expected_corners": 9.5
-      }
-    }
-  ]
+  "hot": []
 }
