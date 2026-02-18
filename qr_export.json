@@ -1,6 +1,22 @@
 {
-  "updated_at": "18/02 20:39",
-  "value": [],
+  "updated_at": "18/02 21:34",
+  "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "O'Higgins FC",
+      "away": "EC Bahia",
+      "kickoff": "18/02 22:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 2.41,
+        "expected_corners": 12.2
+      }
+    }
+  ],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -8,13 +24,13 @@
       "away": "EC Bahia",
       "kickoff": "18/02 22:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.66,
-        "cards_home": 0.55,
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.67,
         "cards_away": 0.51,
         "dnb_home": 0.72,
-        "xg": 2.86,
-        "expected_corners": 8.6
+        "xg": 2.41,
+        "expected_corners": 12.2
       }
     }
   ],
@@ -25,13 +41,13 @@
       "away": "EC Bahia",
       "kickoff": "18/02 22:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.66,
-        "cards_home": 0.55,
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.67,
         "cards_away": 0.51,
         "dnb_home": 0.72,
-        "xg": 2.86,
-        "expected_corners": 8.6
+        "xg": 2.41,
+        "expected_corners": 12.2
       }
     }
   ]
