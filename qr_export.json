@@ -1,5 +1,5 @@
 {
-  "updated_at": "18/02 11:37",
+  "updated_at": "18/02 13:04",
   "value": [
     {
       "league": "UEFA Champions League",
@@ -7,13 +7,28 @@
       "away": "Newcastle United FC",
       "kickoff": "18/02 17:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.57,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 2.55,
-        "expected_corners": 9.4
+        "over25": 0.72,
+        "corners95": 0.58,
+        "cards_home": 0.55,
+        "cards_away": 0.6,
+        "dnb_home": 0.64,
+        "xg": 3.04,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "Villarreal CF",
+      "kickoff": "18/02 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 2.18,
+        "expected_corners": 9.1
       }
     },
     {
@@ -22,13 +37,28 @@
       "away": "Como 1907",
       "kickoff": "18/02 19:45",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.58,
+        "over25": 0.66,
+        "corners95": 0.57,
+        "cards_home": 0.64,
+        "cards_away": 0.62,
+        "dnb_home": 0.67,
+        "xg": 2.53,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "PAE Olympiakos SFP",
+      "away": "Bayer 04 Leverkusen",
+      "kickoff": "18/02 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.6,
         "cards_away": 0.64,
-        "dnb_home": 0.63,
-        "xg": 2.36,
-        "expected_corners": 12.2
+        "dnb_home": 0.68,
+        "xg": 3.4,
+        "expected_corners": 12.7
       }
     },
     {
@@ -37,13 +67,28 @@
       "away": "Club Atlético de Madrid",
       "kickoff": "18/02 20:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.67,
-        "dnb_home": 0.67,
-        "xg": 3.15,
-        "expected_corners": 11.6
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.65,
+        "xg": 2.18,
+        "expected_corners": 10.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FK Bodø/Glimt",
+      "away": "FC Internazionale Milano",
+      "kickoff": "18/02 20:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.58,
+        "xg": 2.61,
+        "expected_corners": 10.4
       }
     },
     {
@@ -52,13 +97,13 @@
       "away": "EC Bahia",
       "kickoff": "18/02 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.69,
-        "expected_corners": 9.1
+        "over25": 0.67,
+        "corners95": 0.58,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.6,
+        "xg": 3.24,
+        "expected_corners": 12.4
       }
     }
   ],
@@ -69,28 +114,43 @@
       "away": "Villarreal CF",
       "kickoff": "18/02 19:00",
       "markets": {
-        "over25": 0.57,
+        "over25": 0.68,
         "corners95": 0.67,
-        "cards_home": 0.6,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.25,
-        "expected_corners": 12.0
+        "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 2.18,
+        "expected_corners": 9.1
       }
     },
     {
-      "league": "Serie A",
-      "home": "AC Milan",
-      "away": "Como 1907",
-      "kickoff": "18/02 19:45",
+      "league": "Premier League",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Arsenal FC",
+      "kickoff": "18/02 20:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.58,
+        "over25": 0.59,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.62,
+        "dnb_home": 0.71,
+        "xg": 2.37,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "PAE Olympiakos SFP",
+      "away": "Bayer 04 Leverkusen",
+      "kickoff": "18/02 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.6,
         "cards_away": 0.64,
-        "dnb_home": 0.63,
-        "xg": 2.36,
-        "expected_corners": 12.2
+        "dnb_home": 0.68,
+        "xg": 3.4,
+        "expected_corners": 12.7
       }
     },
     {
@@ -99,13 +159,13 @@
       "away": "Club Atlético de Madrid",
       "kickoff": "18/02 20:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.67,
-        "dnb_home": 0.67,
-        "xg": 3.15,
-        "expected_corners": 11.6
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.65,
+        "xg": 2.18,
+        "expected_corners": 10.7
       }
     },
     {
@@ -114,75 +174,30 @@
       "away": "FC Internazionale Milano",
       "kickoff": "18/02 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.68,
-        "dnb_home": 0.57,
-        "xg": 2.53,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "O'Higgins FC",
-      "away": "EC Bahia",
-      "kickoff": "18/02 22:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.69,
-        "expected_corners": 9.1
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.58,
+        "xg": 2.61,
+        "expected_corners": 10.4
       }
     }
   ],
   "hot": [
     {
-      "league": "UEFA Champions League",
-      "home": "Qarabağ Ağdam FK",
-      "away": "Newcastle United FC",
-      "kickoff": "18/02 17:45",
+      "league": "Premier League",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Arsenal FC",
+      "kickoff": "18/02 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.57,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 2.55,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Levante UD",
-      "away": "Villarreal CF",
-      "kickoff": "18/02 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
-        "cards_home": 0.6,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.25,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "O'Higgins FC",
-      "away": "EC Bahia",
-      "kickoff": "18/02 22:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.69,
-        "expected_corners": 9.1
+        "over25": 0.59,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.62,
+        "dnb_home": 0.71,
+        "xg": 2.37,
+        "expected_corners": 11.1
       }
     }
   ]
