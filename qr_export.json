@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/02 11:12",
+  "updated_at": "19/02 13:38",
   "value": [],
   "corner": [
     {
@@ -9,12 +9,12 @@
       "kickoff": "19/02 22:00",
       "markets": {
         "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.18,
-        "expected_corners": 12.2
+        "corners95": 0.65,
+        "cards_home": 0.62,
+        "cards_away": 0.68,
+        "dnb_home": 0.67,
+        "xg": 2.47,
+        "expected_corners": 11.3
       }
     },
     {
@@ -23,45 +23,30 @@
       "away": "SC Corinthians Paulista",
       "kickoff": "19/02 22:30",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.68,
+        "over25": 0.61,
+        "corners95": 0.64,
         "cards_home": 0.62,
-        "cards_away": 0.56,
-        "dnb_home": 0.75,
-        "xg": 3.03,
-        "expected_corners": 12.0
+        "cards_away": 0.59,
+        "dnb_home": 0.73,
+        "xg": 3.34,
+        "expected_corners": 9.8
       }
     }
   ],
   "hot": [
     {
-      "league": "Copa Libertadores",
-      "home": "Juventud de Las Piedras",
-      "away": "Club Guaraní",
-      "kickoff": "19/02 22:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.18,
-        "expected_corners": 12.2
-      }
-    },
-    {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Paranaense",
       "away": "SC Corinthians Paulista",
       "kickoff": "19/02 22:30",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.68,
+        "over25": 0.61,
+        "corners95": 0.64,
         "cards_home": 0.62,
-        "cards_away": 0.56,
-        "dnb_home": 0.75,
-        "xg": 3.03,
-        "expected_corners": 12.0
+        "cards_away": 0.59,
+        "dnb_home": 0.73,
+        "xg": 3.34,
+        "expected_corners": 9.8
       }
     }
   ]
