@@ -1,54 +1,38 @@
 {
-  "updated_at": "18/02 23:55",
+  "updated_at": "19/02 02:25",
   "value": [
     {
-      "league": "Copa Libertadores",
-      "home": "O'Higgins FC",
-      "away": "EC Bahia",
-      "kickoff": "18/02 22:00",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Paranaense",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "19/02 22:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 3.26,
-        "expected_corners": 11.7
+        "over25": 0.67,
+        "corners95": 0.56,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.64,
+        "xg": 2.28,
+        "expected_corners": 8.7
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "O'Higgins FC",
-      "away": "EC Bahia",
-      "kickoff": "18/02 22:00",
+      "home": "Juventud de Las Piedras",
+      "away": "Club Guaraní",
+      "kickoff": "19/02 22:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 3.26,
-        "expected_corners": 11.7
+        "over25": 0.59,
+        "corners95": 0.61,
+        "cards_home": 0.66,
+        "cards_away": 0.61,
+        "dnb_home": 0.57,
+        "xg": 3.37,
+        "expected_corners": 10.7
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "O'Higgins FC",
-      "away": "EC Bahia",
-      "kickoff": "18/02 22:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 3.26,
-        "expected_corners": 11.7
-      }
-    }
-  ]
+  "hot": []
 }
