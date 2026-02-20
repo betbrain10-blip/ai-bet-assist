@@ -1,36 +1,49 @@
 {
-  "updated_at": "20/02 04:26",
+  "updated_at": "20/02 05:37",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "US Sassuolo Calcio",
-      "away": "Hellas Verona FC",
-      "kickoff": "20/02 19:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 3.0,
-        "expected_corners": 11.0
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "Eredivisie",
       "home": "Fortuna Sittard",
       "away": "SBV Excelsior",
       "kickoff": "20/02 19:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.7,
-        "cards_home": 0.55,
-        "cards_away": 0.67,
+        "over25": 0.71,
+        "corners95": 0.56,
+        "cards_home": 0.63,
+        "cards_away": 0.55,
         "dnb_home": 0.6,
-        "xg": 2.78,
-        "expected_corners": 9.6
+        "xg": 2.38,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "1. FSV Mainz 05",
+      "away": "Hamburger SV",
+      "kickoff": "20/02 19:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.66,
+        "cards_away": 0.67,
+        "dnb_home": 0.67,
+        "xg": 3.37,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Stade Brestois 29",
+      "away": "Olympique de Marseille",
+      "kickoff": "20/02 19:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.59,
+        "dnb_home": 0.65,
+        "xg": 2.5,
+        "expected_corners": 10.1
       }
     },
     {
@@ -39,13 +52,13 @@
       "away": "Hellas Verona FC",
       "kickoff": "20/02 19:45",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
+        "over25": 0.71,
+        "corners95": 0.58,
         "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 3.0,
-        "expected_corners": 11.0
+        "cards_away": 0.62,
+        "dnb_home": 0.58,
+        "xg": 2.54,
+        "expected_corners": 11.4
       }
     },
     {
@@ -54,28 +67,13 @@
       "away": "Preston North End FC",
       "kickoff": "20/02 20:00",
       "markets": {
-        "over25": 0.58,
+        "over25": 0.67,
         "corners95": 0.65,
-        "cards_home": 0.56,
-        "cards_away": 0.6,
-        "dnb_home": 0.64,
-        "xg": 3.11,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Athletic Club",
-      "away": "Elche CF",
-      "kickoff": "20/02 20:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.69,
-        "cards_home": 0.51,
+        "cards_home": 0.61,
         "cards_away": 0.66,
-        "dnb_home": 0.65,
-        "xg": 3.26,
-        "expected_corners": 11.0
+        "dnb_home": 0.74,
+        "xg": 2.29,
+        "expected_corners": 10.4
       }
     },
     {
@@ -84,30 +82,122 @@
       "away": "CD Tondela",
       "kickoff": "20/02 20:45",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.74,
+        "xg": 3.04,
+        "expected_corners": 12.2
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Bundesliga",
+      "home": "1. FSV Mainz 05",
+      "away": "Hamburger SV",
+      "kickoff": "20/02 19:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.64,
         "cards_home": 0.66,
-        "cards_away": 0.52,
-        "dnb_home": 0.68,
-        "xg": 2.45,
-        "expected_corners": 9.5
+        "cards_away": 0.67,
+        "dnb_home": 0.67,
+        "xg": 3.37,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Stade Brestois 29",
+      "away": "Olympique de Marseille",
+      "kickoff": "20/02 19:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.59,
+        "dnb_home": 0.65,
+        "xg": 2.5,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Athletic Club",
+      "away": "Elche CF",
+      "kickoff": "20/02 20:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.62,
+        "cards_home": 0.68,
+        "cards_away": 0.59,
+        "dnb_home": 0.67,
+        "xg": 2.22,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Blackburn Rovers FC",
+      "away": "Preston North End FC",
+      "kickoff": "20/02 20:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.61,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.29,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CF Estrela da Amadora",
+      "away": "CD Tondela",
+      "kickoff": "20/02 20:45",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.74,
+        "xg": 3.04,
+        "expected_corners": 12.2
       }
     }
   ],
   "hot": [
     {
-      "league": "Serie A",
-      "home": "US Sassuolo Calcio",
-      "away": "Hellas Verona FC",
-      "kickoff": "20/02 19:45",
+      "league": "Championship",
+      "home": "Blackburn Rovers FC",
+      "away": "Preston North End FC",
+      "kickoff": "20/02 20:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 3.0,
-        "expected_corners": 11.0
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.61,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.29,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CF Estrela da Amadora",
+      "away": "CD Tondela",
+      "kickoff": "20/02 20:45",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.74,
+        "xg": 3.04,
+        "expected_corners": 12.2
       }
     }
   ]
