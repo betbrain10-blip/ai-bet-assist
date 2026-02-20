@@ -1,22 +1,6 @@
 {
-  "updated_at": "20/02 20:31",
+  "updated_at": "20/02 21:25",
   "value": [],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "CF Estrela da Amadora",
-      "away": "CD Tondela",
-      "kickoff": "20/02 20:45",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.6,
-        "dnb_home": 0.57,
-        "xg": 2.56,
-        "expected_corners": 9.1
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
