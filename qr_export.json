@@ -1,19 +1,49 @@
 {
-  "updated_at": "20/02 08:40",
+  "updated_at": "20/02 09:40",
   "value": [
     {
-      "league": "Championship",
-      "home": "Blackburn Rovers FC",
-      "away": "Preston North End FC",
+      "league": "Eredivisie",
+      "home": "Fortuna Sittard",
+      "away": "SBV Excelsior",
+      "kickoff": "20/02 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.65,
+        "cards_away": 0.53,
+        "dnb_home": 0.68,
+        "xg": 2.73,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "1. FSV Mainz 05",
+      "away": "Hamburger SV",
+      "kickoff": "20/02 19:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.58,
+        "cards_home": 0.65,
+        "cards_away": 0.67,
+        "dnb_home": 0.65,
+        "xg": 3.09,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Athletic Club",
+      "away": "Elche CF",
       "kickoff": "20/02 20:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 3.0,
-        "expected_corners": 10.3
+        "over25": 0.69,
+        "corners95": 0.6,
+        "cards_home": 0.54,
+        "cards_away": 0.65,
+        "dnb_home": 0.67,
+        "xg": 2.45,
+        "expected_corners": 9.5
       }
     },
     {
@@ -22,30 +52,45 @@
       "away": "CD Tondela",
       "kickoff": "20/02 20:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.71,
-        "xg": 2.61,
+        "over25": 0.71,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.53,
+        "dnb_home": 0.59,
+        "xg": 2.49,
         "expected_corners": 9.8
       }
     }
   ],
   "corner": [
     {
-      "league": "Bundesliga",
-      "home": "1. FSV Mainz 05",
-      "away": "Hamburger SV",
-      "kickoff": "20/02 19:30",
+      "league": "Eredivisie",
+      "home": "Fortuna Sittard",
+      "away": "SBV Excelsior",
+      "kickoff": "20/02 19:00",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.65,
+        "cards_away": 0.53,
+        "dnb_home": 0.68,
+        "xg": 2.73,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Stade Brestois 29",
+      "away": "Olympique de Marseille",
+      "kickoff": "20/02 19:45",
+      "markets": {
+        "over25": 0.61,
         "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.55,
-        "dnb_home": 0.56,
-        "xg": 3.36,
-        "expected_corners": 9.6
+        "cards_home": 0.51,
+        "cards_away": 0.65,
+        "dnb_home": 0.63,
+        "xg": 2.37,
+        "expected_corners": 10.5
       }
     },
     {
@@ -54,28 +99,13 @@
       "away": "Hellas Verona FC",
       "kickoff": "20/02 19:45",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.61,
-        "cards_home": 0.64,
-        "cards_away": 0.63,
-        "dnb_home": 0.64,
-        "xg": 3.21,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Athletic Club",
-      "away": "Elche CF",
-      "kickoff": "20/02 20:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
-        "cards_home": 0.6,
-        "cards_away": 0.6,
-        "dnb_home": 0.71,
-        "xg": 2.55,
-        "expected_corners": 12.6
+        "over25": 0.58,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.18,
+        "expected_corners": 12.0
       }
     },
     {
@@ -84,45 +114,30 @@
       "away": "CD Tondela",
       "kickoff": "20/02 20:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.71,
-        "xg": 2.61,
+        "over25": 0.71,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.53,
+        "dnb_home": 0.59,
+        "xg": 2.49,
         "expected_corners": 9.8
       }
     }
   ],
   "hot": [
     {
-      "league": "Eredivisie",
-      "home": "Fortuna Sittard",
-      "away": "SBV Excelsior",
-      "kickoff": "20/02 19:00",
+      "league": "Serie A",
+      "home": "US Sassuolo Calcio",
+      "away": "Hellas Verona FC",
+      "kickoff": "20/02 19:45",
       "markets": {
         "over25": 0.58,
-        "corners95": 0.57,
-        "cards_home": 0.61,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 2.81,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Athletic Club",
-      "away": "Elche CF",
-      "kickoff": "20/02 20:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
-        "cards_home": 0.6,
-        "cards_away": 0.6,
-        "dnb_home": 0.71,
-        "xg": 2.55,
-        "expected_corners": 12.6
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.18,
+        "expected_corners": 12.0
       }
     },
     {
@@ -131,28 +146,13 @@
       "away": "Preston North End FC",
       "kickoff": "20/02 20:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 3.0,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CF Estrela da Amadora",
-      "away": "CD Tondela",
-      "kickoff": "20/02 20:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
+        "over25": 0.59,
+        "corners95": 0.6,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
         "dnb_home": 0.71,
-        "xg": 2.61,
-        "expected_corners": 9.8
+        "xg": 2.47,
+        "expected_corners": 11.8
       }
     }
   ]
