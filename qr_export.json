@@ -1,54 +1,6 @@
 {
-  "updated_at": "21/02 20:25",
-  "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Braga",
-      "away": "Vitória SC",
-      "kickoff": "21/02 20:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.54,
-        "cards_away": 0.5,
-        "dnb_home": 0.71,
-        "xg": 2.43,
-        "expected_corners": 9.9
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Braga",
-      "away": "Vitória SC",
-      "kickoff": "21/02 20:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.54,
-        "cards_away": 0.5,
-        "dnb_home": 0.71,
-        "xg": 2.43,
-        "expected_corners": 9.9
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Braga",
-      "away": "Vitória SC",
-      "kickoff": "21/02 20:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.54,
-        "cards_away": 0.5,
-        "dnb_home": 0.71,
-        "xg": 2.43,
-        "expected_corners": 9.9
-      }
-    }
-  ]
+  "updated_at": "21/02 20:48",
+  "value": [],
+  "corner": [],
+  "hot": []
 }
