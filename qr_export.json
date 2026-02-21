@@ -1,94 +1,171 @@
 {
-  "updated_at": "21/02 14:53",
+  "updated_at": "21/02 15:24",
   "value": [
     {
-      "league": "Championship",
-      "home": "Middlesbrough FC",
-      "away": "Oxford United FC",
-      "kickoff": "21/02 15:00",
+      "league": "Serie A",
+      "home": "US Lecce",
+      "away": "FC Internazionale Milano",
+      "kickoff": "21/02 17:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 3.19,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Watford FC",
-      "away": "Derby County FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 2.37,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Leeds United FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.65,
-        "cards_home": 0.63,
-        "cards_away": 0.62,
-        "dnb_home": 0.61,
-        "xg": 2.87,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Chelsea FC",
-      "away": "Burnley FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.59,
-        "cards_away": 0.58,
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.6,
+        "cards_away": 0.6,
         "dnb_home": 0.71,
-        "xg": 3.08,
-        "expected_corners": 11.7
+        "xg": 2.69,
+        "expected_corners": 11.4
       }
     },
     {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Portsmouth FC",
-      "kickoff": "21/02 15:00",
+      "league": "Premier League",
+      "home": "West Ham United FC",
+      "away": "AFC Bournemouth",
+      "kickoff": "21/02 17:30",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.53,
-        "cards_away": 0.52,
-        "dnb_home": 0.58,
-        "xg": 2.46,
-        "expected_corners": 10.6
+        "over25": 0.65,
+        "corners95": 0.6,
+        "cards_home": 0.61,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 3.12,
+        "expected_corners": 10.9
       }
     },
     {
       "league": "Primera Division",
-      "home": "Real Betis Balompié",
-      "away": "Rayo Vallecano de Madrid",
-      "kickoff": "21/02 15:15",
+      "home": "CA Osasuna",
+      "away": "Real Madrid CF",
+      "kickoff": "21/02 17:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
+        "over25": 0.68,
+        "corners95": 0.55,
+        "cards_home": 0.54,
+        "cards_away": 0.58,
+        "dnb_home": 0.71,
+        "xg": 2.99,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Moreirense FC",
+      "away": "Sporting Clube de Portugal",
+      "kickoff": "21/02 18:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.51,
+        "cards_away": 0.53,
         "dnb_home": 0.72,
-        "xg": 3.36,
+        "xg": 2.96,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sport Lisboa e Benfica",
+      "away": "AVS",
+      "kickoff": "21/02 18:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.5,
+        "cards_away": 0.58,
+        "dnb_home": 0.61,
+        "xg": 2.41,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Manchester City FC",
+      "away": "Newcastle United FC",
+      "kickoff": "21/02 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 2.22,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "AFC Ajax",
+      "away": "NEC",
+      "kickoff": "21/02 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 2.82,
         "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Braga",
+      "away": "Vitória SC",
+      "kickoff": "21/02 20:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.6,
+        "cards_home": 0.66,
+        "cards_away": 0.66,
+        "dnb_home": 0.56,
+        "xg": 2.32,
+        "expected_corners": 12.0
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primeira Liga",
+      "home": "FC Alverca",
+      "away": "CD Santa Clara",
+      "kickoff": "21/02 15:30",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.67,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.55,
+        "xg": 3.14,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Arouca",
+      "away": "CD Nacional",
+      "kickoff": "21/02 15:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.5,
+        "dnb_home": 0.71,
+        "xg": 3.33,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "AS Monaco FC",
+      "kickoff": "21/02 16:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.62,
+        "cards_home": 0.58,
+        "cards_away": 0.63,
+        "dnb_home": 0.58,
+        "xg": 2.84,
+        "expected_corners": 11.2
       }
     },
     {
@@ -98,12 +175,12 @@
       "kickoff": "21/02 17:00",
       "markets": {
         "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.54,
-        "cards_away": 0.53,
-        "dnb_home": 0.67,
-        "xg": 2.73,
-        "expected_corners": 10.1
+        "corners95": 0.64,
+        "cards_home": 0.6,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.69,
+        "expected_corners": 11.4
       }
     },
     {
@@ -112,240 +189,13 @@
       "away": "Borussia Dortmund",
       "kickoff": "21/02 17:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.59,
-        "cards_home": 0.55,
-        "cards_away": 0.52,
-        "dnb_home": 0.66,
-        "xg": 2.15,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "West Ham United FC",
-      "away": "AFC Bournemouth",
-      "kickoff": "21/02 17:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
-        "dnb_home": 0.59,
-        "xg": 3.27,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "CA Osasuna",
-      "away": "Real Madrid CF",
-      "kickoff": "21/02 17:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.56,
-        "cards_home": 0.66,
+        "over25": 0.59,
+        "corners95": 0.62,
+        "cards_home": 0.51,
         "cards_away": 0.64,
-        "dnb_home": 0.7,
-        "xg": 3.06,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "PSV",
-      "away": "SC Heerenveen",
-      "kickoff": "21/02 17:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.5,
-        "cards_away": 0.58,
-        "dnb_home": 0.63,
-        "xg": 2.27,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Toulouse FC",
-      "away": "Paris FC",
-      "kickoff": "21/02 18:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.56,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 3.37,
-        "expected_corners": 11.2
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Ipswich Town FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.66,
-        "dnb_home": 0.64,
-        "xg": 2.86,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Middlesbrough FC",
-      "away": "Oxford United FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 3.19,
+        "dnb_home": 0.68,
+        "xg": 2.73,
         "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Watford FC",
-      "away": "Derby County FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 2.37,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Norwich City FC",
-      "away": "Birmingham City FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.24,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Leeds United FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.65,
-        "cards_home": 0.63,
-        "cards_away": 0.62,
-        "dnb_home": 0.61,
-        "xg": 2.87,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Chelsea FC",
-      "away": "Burnley FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.59,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.08,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Portsmouth FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.53,
-        "cards_away": 0.52,
-        "dnb_home": 0.58,
-        "xg": 2.46,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Brentford FC",
-      "away": "Brighton & Hove Albion FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.68,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.89,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Betis Balompié",
-      "away": "Rayo Vallecano de Madrid",
-      "kickoff": "21/02 15:15",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.72,
-        "xg": 3.36,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Alverca",
-      "away": "CD Santa Clara",
-      "kickoff": "21/02 15:30",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.68,
-        "cards_home": 0.55,
-        "cards_away": 0.58,
-        "dnb_home": 0.62,
-        "xg": 2.21,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "West Ham United FC",
-      "away": "AFC Bournemouth",
-      "kickoff": "21/02 17:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
-        "dnb_home": 0.59,
-        "xg": 3.27,
-        "expected_corners": 8.7
       }
     },
     {
@@ -354,105 +204,165 @@
       "away": "Sporting Clube de Portugal",
       "kickoff": "21/02 18:00",
       "markets": {
-        "over25": 0.6,
+        "over25": 0.67,
         "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 3.17,
-        "expected_corners": 10.9
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Middlesbrough FC",
-      "away": "Oxford United FC",
-      "kickoff": "21/02 15:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 3.19,
-        "expected_corners": 9.0
+        "cards_home": 0.51,
+        "cards_away": 0.53,
+        "dnb_home": 0.72,
+        "xg": 2.96,
+        "expected_corners": 10.6
       }
     },
     {
-      "league": "Championship",
-      "home": "Norwich City FC",
-      "away": "Birmingham City FC",
-      "kickoff": "21/02 15:00",
+      "league": "Serie A",
+      "home": "Cagliari Calcio",
+      "away": "SS Lazio",
+      "kickoff": "21/02 19:45",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.24,
-        "expected_corners": 12.7
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.64,
+        "dnb_home": 0.64,
+        "xg": 2.45,
+        "expected_corners": 9.7
       }
     },
     {
       "league": "Premier League",
-      "home": "Chelsea FC",
-      "away": "Burnley FC",
-      "kickoff": "21/02 15:00",
+      "home": "Manchester City FC",
+      "away": "Newcastle United FC",
+      "kickoff": "21/02 20:00",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.59,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.08,
-        "expected_corners": 11.7
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 2.22,
+        "expected_corners": 12.4
       }
     },
     {
-      "league": "Premier League",
-      "home": "Brentford FC",
-      "away": "Brighton & Hove Albion FC",
-      "kickoff": "21/02 15:00",
+      "league": "Eredivisie",
+      "home": "AFC Ajax",
+      "away": "NEC",
+      "kickoff": "21/02 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.68,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.89,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Betis Balompié",
-      "away": "Rayo Vallecano de Madrid",
-      "kickoff": "21/02 15:15",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.72,
-        "xg": 3.36,
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 2.82,
         "expected_corners": 9.0
       }
     },
     {
       "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "AS Monaco FC",
-      "kickoff": "21/02 16:00",
+      "home": "Paris Saint-Germain FC",
+      "away": "FC Metz",
+      "kickoff": "21/02 20:05",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.68,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.68,
+        "xg": 2.8,
+        "expected_corners": 11.4
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primeira Liga",
+      "home": "FC Arouca",
+      "away": "CD Nacional",
+      "kickoff": "21/02 15:30",
       "markets": {
         "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.5,
+        "dnb_home": 0.71,
+        "xg": 3.33,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "US Lecce",
+      "away": "FC Internazionale Milano",
+      "kickoff": "21/02 17:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.6,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.69,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "West Ham United FC",
+      "away": "AFC Bournemouth",
+      "kickoff": "21/02 17:30",
+      "markets": {
+        "over25": 0.65,
         "corners95": 0.6,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.2,
-        "expected_corners": 11.2
+        "cards_home": 0.61,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 3.12,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "CA Osasuna",
+      "away": "Real Madrid CF",
+      "kickoff": "21/02 17:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.55,
+        "cards_home": 0.54,
+        "cards_away": 0.58,
+        "dnb_home": 0.71,
+        "xg": 2.99,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Moreirense FC",
+      "away": "Sporting Clube de Portugal",
+      "kickoff": "21/02 18:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.51,
+        "cards_away": 0.53,
+        "dnb_home": 0.72,
+        "xg": 2.96,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Manchester City FC",
+      "away": "Newcastle United FC",
+      "kickoff": "21/02 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 2.22,
+        "expected_corners": 12.4
       }
     }
   ]
