@@ -1,19 +1,52 @@
 {
-  "updated_at": "22/02 19:24",
-  "value": [
+  "updated_at": "22/02 19:45",
+  "value": [],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "AS Roma",
+      "away": "US Cremonese",
+      "kickoff": "22/02 19:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.58,
+        "xg": 3.18,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Porto",
+      "away": "Rio Ave FC",
+      "kickoff": "22/02 20:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.64,
+        "dnb_home": 0.64,
+        "xg": 3.07,
+        "expected_corners": 12.5
+      }
+    }
+  ],
+  "hot": [
     {
       "league": "Ligue 1",
       "home": "RC Strasbourg Alsace",
       "away": "Olympique Lyonnais",
       "kickoff": "22/02 19:45",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.5,
-        "cards_away": 0.59,
-        "dnb_home": 0.64,
-        "xg": 2.9,
-        "expected_corners": 11.4
+        "over25": 0.6,
+        "corners95": 0.56,
+        "cards_home": 0.55,
+        "cards_away": 0.66,
+        "dnb_home": 0.71,
+        "xg": 3.37,
+        "expected_corners": 11.5
       }
     },
     {
@@ -22,62 +55,14 @@
       "away": "Valencia CF",
       "kickoff": "22/02 20:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.58,
-        "cards_home": 0.6,
-        "cards_away": 0.66,
-        "dnb_home": 0.67,
-        "xg": 3.18,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "Rio Ave FC",
-      "kickoff": "22/02 20:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.53,
-        "cards_away": 0.62,
-        "dnb_home": 0.57,
-        "xg": 2.13,
-        "expected_corners": 8.5
+        "over25": 0.59,
+        "corners95": 0.6,
+        "cards_home": 0.63,
+        "cards_away": 0.68,
+        "dnb_home": 0.72,
+        "xg": 2.57,
+        "expected_corners": 10.3
       }
     }
-  ],
-  "corner": [
-    {
-      "league": "Serie A",
-      "home": "AS Roma",
-      "away": "US Cremonese",
-      "kickoff": "22/02 19:45",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.64,
-        "cards_home": 0.55,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.12,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "Rio Ave FC",
-      "kickoff": "22/02 20:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.53,
-        "cards_away": 0.62,
-        "dnb_home": 0.57,
-        "xg": 2.13,
-        "expected_corners": 8.5
-      }
-    }
-  ],
-  "hot": []
+  ]
 }
