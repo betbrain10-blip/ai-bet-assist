@@ -1,19 +1,19 @@
 {
-  "updated_at": "22/02 11:21",
+  "updated_at": "22/02 11:45",
   "value": [
     {
-      "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Sheffield Wednesday FC",
-      "kickoff": "22/02 12:00",
+      "league": "Eredivisie",
+      "home": "Go Ahead Eagles",
+      "away": "Heracles Almelo",
+      "kickoff": "22/02 13:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.56,
-        "dnb_home": 0.67,
-        "xg": 2.2,
-        "expected_corners": 9.1
+        "over25": 0.68,
+        "corners95": 0.56,
+        "cards_home": 0.56,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 3.33,
+        "expected_corners": 11.1
       }
     },
     {
@@ -22,43 +22,13 @@
       "away": "PEC Zwolle",
       "kickoff": "22/02 13:30",
       "markets": {
-        "over25": 0.63,
+        "over25": 0.65,
         "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.6,
-        "dnb_home": 0.56,
-        "xg": 2.21,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "Go Ahead Eagles",
-      "away": "Heracles Almelo",
-      "kickoff": "22/02 13:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.66,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 2.57,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Crystal Palace FC",
-      "away": "Wolverhampton Wanderers FC",
-      "kickoff": "22/02 14:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.95,
-        "expected_corners": 12.3
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 2.39,
+        "expected_corners": 9.0
       }
     },
     {
@@ -67,13 +37,43 @@
       "away": "Stade Rennais FC 1901",
       "kickoff": "22/02 14:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 2.16,
-        "expected_corners": 9.6
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.55,
+        "xg": 2.48,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Atalanta BC",
+      "away": "SSC Napoli",
+      "kickoff": "22/02 14:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.51,
+        "dnb_home": 0.62,
+        "xg": 2.61,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Crystal Palace FC",
+      "away": "Wolverhampton Wanderers FC",
+      "kickoff": "22/02 14:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.58,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.57,
+        "xg": 2.67,
+        "expected_corners": 9.9
       }
     },
     {
@@ -82,12 +82,164 @@
       "away": "Fulham FC",
       "kickoff": "22/02 14:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.5,
+        "cards_away": 0.68,
+        "dnb_home": 0.74,
+        "xg": 2.53,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "SC Freiburg",
+      "away": "Borussia Mönchengladbach",
+      "kickoff": "22/02 14:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.58,
+        "cards_home": 0.63,
+        "cards_away": 0.51,
         "dnb_home": 0.63,
-        "xg": 2.62,
+        "xg": 2.75,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "FC Barcelona",
+      "away": "Levante UD",
+      "kickoff": "22/02 15:15",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.65,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 3.08,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "OGC Nice",
+      "away": "FC Lorient",
+      "kickoff": "22/02 16:15",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.7,
+        "cards_home": 0.54,
+        "cards_away": 0.55,
+        "dnb_home": 0.67,
+        "xg": 2.28,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Angers SCO",
+      "away": "Lille OSC",
+      "kickoff": "22/02 16:15",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.58,
+        "cards_home": 0.67,
+        "cards_away": 0.61,
+        "dnb_home": 0.62,
+        "xg": 2.35,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Tottenham Hotspur FC",
+      "away": "Arsenal FC",
+      "kickoff": "22/02 16:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.55,
+        "cards_home": 0.54,
+        "cards_away": 0.57,
+        "dnb_home": 0.74,
+        "xg": 3.22,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "GD Estoril Praia",
+      "away": "Gil Vicente FC",
+      "kickoff": "22/02 18:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.75,
+        "xg": 2.77,
+        "expected_corners": 9.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Sheffield Wednesday FC",
+      "kickoff": "22/02 12:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.36,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "FC Utrecht",
+      "away": "PEC Zwolle",
+      "kickoff": "22/02 13:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 2.39,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "AJ Auxerre",
+      "away": "Stade Rennais FC 1901",
+      "kickoff": "22/02 14:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.55,
+        "xg": 2.48,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Atalanta BC",
+      "away": "SSC Napoli",
+      "kickoff": "22/02 14:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.51,
+        "dnb_home": 0.62,
+        "xg": 2.61,
         "expected_corners": 10.4
       }
     },
@@ -97,180 +249,13 @@
       "away": "Liverpool FC",
       "kickoff": "22/02 14:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.55,
-        "cards_home": 0.54,
-        "cards_away": 0.66,
-        "dnb_home": 0.56,
-        "xg": 2.15,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "SC Freiburg",
-      "away": "Borussia Mönchengladbach",
-      "kickoff": "22/02 14:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.64,
-        "cards_away": 0.6,
-        "dnb_home": 0.65,
-        "xg": 3.03,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "FC Barcelona",
-      "away": "Levante UD",
-      "kickoff": "22/02 15:15",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.69,
-        "cards_home": 0.6,
-        "cards_away": 0.52,
-        "dnb_home": 0.59,
-        "xg": 2.42,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "AZ",
-      "away": "Sparta Rotterdam",
-      "kickoff": "22/02 15:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.6,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.62,
-        "xg": 2.32,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Angers SCO",
-      "away": "Lille OSC",
-      "kickoff": "22/02 16:15",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.69,
-        "xg": 3.08,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Tottenham Hotspur FC",
-      "away": "Arsenal FC",
-      "kickoff": "22/02 16:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.68,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 3.15,
-        "expected_corners": 11.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Serie A",
-      "home": "Genoa CFC",
-      "away": "Torino FC",
-      "kickoff": "22/02 11:30",
-      "markets": {
         "over25": 0.62,
-        "corners95": 0.64,
-        "cards_home": 0.57,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 2.54,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Sheffield Wednesday FC",
-      "kickoff": "22/02 12:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.56,
-        "dnb_home": 0.67,
-        "xg": 2.2,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Getafe CF",
-      "away": "Sevilla FC",
-      "kickoff": "22/02 13:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.5,
-        "dnb_home": 0.7,
-        "xg": 2.82,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "FC Utrecht",
-      "away": "PEC Zwolle",
-      "kickoff": "22/02 13:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.6,
-        "dnb_home": 0.56,
-        "xg": 2.21,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "Go Ahead Eagles",
-      "away": "Heracles Almelo",
-      "kickoff": "22/02 13:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.66,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 2.57,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Crystal Palace FC",
-      "away": "Wolverhampton Wanderers FC",
-      "kickoff": "22/02 14:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.95,
-        "expected_corners": 12.3
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.64,
+        "xg": 2.73,
+        "expected_corners": 9.4
       }
     },
     {
@@ -279,28 +264,13 @@
       "away": "Fulham FC",
       "kickoff": "22/02 14:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
-        "dnb_home": 0.63,
-        "xg": 2.62,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "SC Freiburg",
-      "away": "Borussia Mönchengladbach",
-      "kickoff": "22/02 14:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.64,
-        "cards_away": 0.6,
-        "dnb_home": 0.65,
-        "xg": 3.03,
-        "expected_corners": 12.5
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.5,
+        "cards_away": 0.68,
+        "dnb_home": 0.74,
+        "xg": 2.53,
+        "expected_corners": 8.5
       }
     },
     {
@@ -310,27 +280,42 @@
       "kickoff": "22/02 15:15",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.69,
-        "cards_home": 0.6,
-        "cards_away": 0.52,
+        "corners95": 0.65,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 3.08,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "AZ",
+      "away": "Sparta Rotterdam",
+      "kickoff": "22/02 15:45",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.64,
+        "cards_home": 0.64,
+        "cards_away": 0.55,
         "dnb_home": 0.59,
-        "xg": 2.42,
-        "expected_corners": 11.7
+        "xg": 3.22,
+        "expected_corners": 9.5
       }
     },
     {
       "league": "Ligue 1",
-      "home": "Angers SCO",
-      "away": "Lille OSC",
+      "home": "OGC Nice",
+      "away": "FC Lorient",
       "kickoff": "22/02 16:15",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
+        "over25": 0.68,
+        "corners95": 0.7,
         "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.69,
-        "xg": 3.08,
-        "expected_corners": 10.0
+        "cards_away": 0.55,
+        "dnb_home": 0.67,
+        "xg": 2.28,
+        "expected_corners": 9.4
       }
     },
     {
@@ -340,12 +325,104 @@
       "kickoff": "22/02 16:15",
       "markets": {
         "over25": 0.62,
-        "corners95": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.68,
+        "xg": 2.87,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "FC St. Pauli 1910",
+      "away": "SV Werder Bremen",
+      "kickoff": "22/02 16:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.69,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.65,
+        "xg": 2.33,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "AC Milan",
+      "away": "Parma Calcio 1913",
+      "kickoff": "22/02 17:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.69,
         "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.56,
-        "xg": 2.21,
+        "cards_away": 0.63,
+        "dnb_home": 0.59,
+        "xg": 2.91,
+        "expected_corners": 10.2
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Sheffield Wednesday FC",
+      "kickoff": "22/02 12:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.36,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "FC Utrecht",
+      "away": "PEC Zwolle",
+      "kickoff": "22/02 13:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 2.39,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Sunderland AFC",
+      "away": "Fulham FC",
+      "kickoff": "22/02 14:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.5,
+        "cards_away": 0.68,
+        "dnb_home": 0.74,
+        "xg": 2.53,
         "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "FC Barcelona",
+      "away": "Levante UD",
+      "kickoff": "22/02 15:15",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.65,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 3.08,
+        "expected_corners": 8.9
       }
     },
     {
@@ -354,105 +431,28 @@
       "away": "Arsenal FC",
       "kickoff": "22/02 16:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.68,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 3.15,
-        "expected_corners": 11.3
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "Genoa CFC",
-      "away": "Torino FC",
-      "kickoff": "22/02 11:30",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.64,
-        "cards_home": 0.57,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 2.54,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Getafe CF",
-      "away": "Sevilla FC",
-      "kickoff": "22/02 13:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.5,
-        "dnb_home": 0.7,
-        "xg": 2.82,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Crystal Palace FC",
-      "away": "Wolverhampton Wanderers FC",
-      "kickoff": "22/02 14:00",
-      "markets": {
         "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.95,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "AJ Auxerre",
-      "away": "Stade Rennais FC 1901",
-      "kickoff": "22/02 14:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 2.16,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Angers SCO",
-      "away": "Lille OSC",
-      "kickoff": "22/02 16:15",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
+        "corners95": 0.55,
         "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.69,
-        "xg": 3.08,
-        "expected_corners": 10.0
+        "cards_away": 0.57,
+        "dnb_home": 0.74,
+        "xg": 3.22,
+        "expected_corners": 12.0
       }
     },
     {
-      "league": "Ligue 1",
-      "home": "OGC Nice",
-      "away": "FC Lorient",
-      "kickoff": "22/02 16:15",
+      "league": "Primeira Liga",
+      "home": "GD Estoril Praia",
+      "away": "Gil Vicente FC",
+      "kickoff": "22/02 18:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.6,
-        "cards_home": 0.51,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 2.98,
-        "expected_corners": 9.8
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.75,
+        "xg": 2.77,
+        "expected_corners": 9.6
       }
     }
   ]
