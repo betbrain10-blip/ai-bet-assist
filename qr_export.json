@@ -1,66 +1,19 @@
 {
-  "updated_at": "22/02 18:35",
+  "updated_at": "22/02 19:24",
   "value": [
-    {
-      "league": "Eredivisie",
-      "home": "Feyenoord Rotterdam",
-      "away": "Telstar 1963",
-      "kickoff": "22/02 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.13,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "Valencia CF",
-      "kickoff": "22/02 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.55,
-        "xg": 2.53,
-        "expected_corners": 9.1
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Eredivisie",
-      "home": "Feyenoord Rotterdam",
-      "away": "Telstar 1963",
-      "kickoff": "22/02 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.13,
-        "expected_corners": 11.7
-      }
-    },
     {
       "league": "Ligue 1",
       "home": "RC Strasbourg Alsace",
       "away": "Olympique Lyonnais",
       "kickoff": "22/02 19:45",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.63,
+        "over25": 0.7,
+        "corners95": 0.6,
+        "cards_home": 0.5,
+        "cards_away": 0.59,
         "dnb_home": 0.64,
-        "xg": 3.1,
-        "expected_corners": 10.3
+        "xg": 2.9,
+        "expected_corners": 11.4
       }
     },
     {
@@ -69,13 +22,13 @@
       "away": "Valencia CF",
       "kickoff": "22/02 20:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.55,
-        "xg": 2.53,
-        "expected_corners": 9.1
+        "over25": 0.68,
+        "corners95": 0.58,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 3.18,
+        "expected_corners": 11.8
       }
     },
     {
@@ -84,31 +37,47 @@
       "away": "Rio Ave FC",
       "kickoff": "22/02 20:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.68,
-        "cards_home": 0.57,
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.53,
         "cards_away": 0.62,
-        "dnb_home": 0.68,
-        "xg": 2.39,
-        "expected_corners": 8.8
+        "dnb_home": 0.57,
+        "xg": 2.13,
+        "expected_corners": 8.5
       }
     }
   ],
-  "hot": [
+  "corner": [
     {
-      "league": "Eredivisie",
-      "home": "Feyenoord Rotterdam",
-      "away": "Telstar 1963",
-      "kickoff": "22/02 19:00",
+      "league": "Serie A",
+      "home": "AS Roma",
+      "away": "US Cremonese",
+      "kickoff": "22/02 19:45",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
+        "over25": 0.55,
+        "corners95": 0.64,
+        "cards_home": 0.55,
+        "cards_away": 0.57,
+        "dnb_home": 0.58,
+        "xg": 2.12,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Porto",
+      "away": "Rio Ave FC",
+      "kickoff": "22/02 20:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.53,
+        "cards_away": 0.62,
+        "dnb_home": 0.57,
         "xg": 2.13,
-        "expected_corners": 11.7
+        "expected_corners": 8.5
       }
     }
-  ]
+  ],
+  "hot": []
 }
