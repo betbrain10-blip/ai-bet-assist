@@ -1,129 +1,38 @@
 {
-  "updated_at": "23/02 19:02",
+  "updated_at": "23/02 20:06",
   "value": [
-    {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Manchester United FC",
-      "kickoff": "23/02 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.55,
-        "cards_away": 0.54,
-        "dnb_home": 0.63,
-        "xg": 2.11,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Deportivo Alavés",
-      "away": "Girona FC",
-      "kickoff": "23/02 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 2.56,
-        "expected_corners": 10.2
-      }
-    },
     {
       "league": "Primeira Liga",
       "home": "FC Famalicão",
       "away": "Casa Pia AC",
       "kickoff": "23/02 20:15",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.6,
-        "xg": 2.65,
-        "expected_corners": 9.4
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.65,
+        "xg": 3.0,
+        "expected_corners": 11.4
       }
     }
   ],
   "corner": [
     {
-      "league": "Serie A",
-      "home": "Bologna FC 1909",
-      "away": "Udinese Calcio",
-      "kickoff": "23/02 19:45",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.47,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Manchester United FC",
-      "kickoff": "23/02 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.55,
-        "cards_away": 0.54,
-        "dnb_home": 0.63,
-        "xg": 2.11,
-        "expected_corners": 9.8
-      }
-    },
-    {
       "league": "Primeira Liga",
       "home": "FC Famalicão",
       "away": "Casa Pia AC",
       "kickoff": "23/02 20:15",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.6,
-        "xg": 2.65,
-        "expected_corners": 9.4
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.65,
+        "xg": 3.0,
+        "expected_corners": 11.4
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "Bologna FC 1909",
-      "away": "Udinese Calcio",
-      "kickoff": "23/02 19:45",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.47,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Deportivo Alavés",
-      "away": "Girona FC",
-      "kickoff": "23/02 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 2.56,
-        "expected_corners": 10.2
-      }
-    }
-  ]
+  "hot": []
 }
