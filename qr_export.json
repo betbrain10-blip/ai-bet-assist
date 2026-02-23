@@ -1,34 +1,19 @@
 {
-  "updated_at": "23/02 16:13",
+  "updated_at": "23/02 17:37",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "ACF Fiorentina",
-      "away": "AC Pisa 1909",
-      "kickoff": "23/02 17:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.59,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.72,
-        "xg": 2.47,
-        "expected_corners": 11.5
-      }
-    },
     {
       "league": "Premier League",
       "home": "Everton FC",
       "away": "Manchester United FC",
       "kickoff": "23/02 20:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.64,
         "corners95": 0.59,
         "cards_home": 0.67,
-        "cards_away": 0.54,
-        "dnb_home": 0.64,
-        "xg": 2.8,
-        "expected_corners": 8.6
+        "cards_away": 0.6,
+        "dnb_home": 0.62,
+        "xg": 3.08,
+        "expected_corners": 11.0
       }
     },
     {
@@ -37,13 +22,13 @@
       "away": "Girona FC",
       "kickoff": "23/02 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.62,
-        "xg": 3.13,
-        "expected_corners": 10.4
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.62,
+        "dnb_home": 0.71,
+        "xg": 2.16,
+        "expected_corners": 11.1
       }
     },
     {
@@ -53,16 +38,31 @@
       "kickoff": "23/02 20:15",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
-        "dnb_home": 0.67,
-        "xg": 2.86,
-        "expected_corners": 9.2
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.59,
+        "xg": 2.81,
+        "expected_corners": 12.3
       }
     }
   ],
   "corner": [
+    {
+      "league": "Primera Division",
+      "home": "Deportivo Alavés",
+      "away": "Girona FC",
+      "kickoff": "23/02 20:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.62,
+        "dnb_home": 0.71,
+        "xg": 2.16,
+        "expected_corners": 11.1
+      }
+    },
     {
       "league": "Primeira Liga",
       "home": "FC Famalicão",
@@ -70,29 +70,29 @@
       "kickoff": "23/02 20:15",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
-        "dnb_home": 0.67,
-        "xg": 2.86,
-        "expected_corners": 9.2
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.59,
+        "xg": 2.81,
+        "expected_corners": 12.3
       }
     }
   ],
   "hot": [
     {
-      "league": "Serie A",
-      "home": "ACF Fiorentina",
-      "away": "AC Pisa 1909",
-      "kickoff": "23/02 17:30",
+      "league": "Primera Division",
+      "home": "Deportivo Alavés",
+      "away": "Girona FC",
+      "kickoff": "23/02 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.59,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.72,
-        "xg": 2.47,
-        "expected_corners": 11.5
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.62,
+        "dnb_home": 0.71,
+        "xg": 2.16,
+        "expected_corners": 11.1
       }
     }
   ]
