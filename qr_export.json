@@ -1,49 +1,19 @@
 {
-  "updated_at": "23/02 02:09",
+  "updated_at": "23/02 04:35",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "ACF Fiorentina",
-      "away": "AC Pisa 1909",
-      "kickoff": "23/02 17:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.65,
-        "cards_away": 0.67,
-        "dnb_home": 0.58,
-        "xg": 3.1,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Bologna FC 1909",
-      "away": "Udinese Calcio",
-      "kickoff": "23/02 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.6,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 2.29,
-        "expected_corners": 9.7
-      }
-    },
     {
       "league": "Premier League",
       "home": "Everton FC",
       "away": "Manchester United FC",
       "kickoff": "23/02 20:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 2.25,
-        "expected_corners": 9.6
+        "over25": 0.72,
+        "corners95": 0.56,
+        "cards_home": 0.54,
+        "cards_away": 0.63,
+        "dnb_home": 0.67,
+        "xg": 3.39,
+        "expected_corners": 11.3
       }
     },
     {
@@ -52,13 +22,13 @@
       "away": "Casa Pia AC",
       "kickoff": "23/02 20:15",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.67,
-        "xg": 2.16,
-        "expected_corners": 9.1
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.55,
+        "dnb_home": 0.65,
+        "xg": 2.13,
+        "expected_corners": 12.2
       }
     }
   ],
@@ -69,43 +39,28 @@
       "away": "Udinese Calcio",
       "kickoff": "23/02 19:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.6,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 2.29,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Manchester United FC",
-      "kickoff": "23/02 20:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 2.25,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Deportivo Alavés",
-      "away": "Girona FC",
-      "kickoff": "23/02 20:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.67,
+        "over25": 0.55,
+        "corners95": 0.66,
         "cards_home": 0.62,
-        "cards_away": 0.5,
-        "dnb_home": 0.61,
-        "xg": 2.15,
-        "expected_corners": 8.5
+        "cards_away": 0.66,
+        "dnb_home": 0.69,
+        "xg": 3.32,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Famalicão",
+      "away": "Casa Pia AC",
+      "kickoff": "23/02 20:15",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.55,
+        "dnb_home": 0.65,
+        "xg": 2.13,
+        "expected_corners": 12.2
       }
     }
   ],
@@ -116,28 +71,13 @@
       "away": "Udinese Calcio",
       "kickoff": "23/02 19:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.6,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 2.29,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Manchester United FC",
-      "kickoff": "23/02 20:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
+        "over25": 0.55,
+        "corners95": 0.66,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
         "dnb_home": 0.69,
-        "xg": 2.25,
-        "expected_corners": 9.6
+        "xg": 3.32,
+        "expected_corners": 9.8
       }
     }
   ]
