@@ -1,38 +1,6 @@
 {
-  "updated_at": "23/02 20:06",
-  "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "Casa Pia AC",
-      "kickoff": "23/02 20:15",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 3.0,
-        "expected_corners": 11.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "Casa Pia AC",
-      "kickoff": "23/02 20:15",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 3.0,
-        "expected_corners": 11.4
-      }
-    }
-  ],
+  "updated_at": "23/02 21:09",
+  "value": [],
+  "corner": [],
   "hot": []
 }
