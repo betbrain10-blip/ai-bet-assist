@@ -1,248 +1,37 @@
 {
-  "updated_at": "24/02 19:48",
+  "updated_at": "24/02 20:35",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Hull City AFC",
-      "away": "Derby County FC",
-      "kickoff": "24/02 19:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.23,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "West Bromwich Albion FC",
-      "away": "Charlton Athletic FC",
-      "kickoff": "24/02 19:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.67,
-        "dnb_home": 0.61,
-        "xg": 2.13,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Middlesbrough FC",
-      "away": "Leicester City FC",
-      "kickoff": "24/02 19:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.59,
-        "cards_home": 0.56,
-        "cards_away": 0.51,
-        "dnb_home": 0.55,
-        "xg": 2.51,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Blackburn Rovers FC",
-      "away": "Bristol City FC",
-      "kickoff": "24/02 19:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.59,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Swansea City AFC",
-      "away": "Preston North End FC",
-      "kickoff": "24/02 19:45",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.57,
-        "cards_home": 0.51,
-        "cards_away": 0.66,
-        "dnb_home": 0.67,
-        "xg": 3.39,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Newcastle United FC",
-      "away": "Qarabağ Ağdam FK",
-      "kickoff": "24/02 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.59,
-        "cards_home": 0.64,
-        "cards_away": 0.68,
-        "dnb_home": 0.71,
-        "xg": 2.33,
-        "expected_corners": 9.0
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "CD Huachipato",
       "away": "Carabobo FC",
       "kickoff": "24/02 22:00",
       "markets": {
-        "over25": 0.64,
+        "over25": 0.67,
         "corners95": 0.55,
-        "cards_home": 0.67,
-        "cards_away": 0.54,
-        "dnb_home": 0.57,
-        "xg": 2.79,
-        "expected_corners": 9.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Championship",
-      "home": "Hull City AFC",
-      "away": "Derby County FC",
-      "kickoff": "24/02 19:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.23,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "West Bromwich Albion FC",
-      "away": "Charlton Athletic FC",
-      "kickoff": "24/02 19:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.67,
-        "dnb_home": 0.61,
-        "xg": 2.13,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Queens Park Rangers FC",
-      "kickoff": "24/02 20:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.65,
+        "cards_home": 0.56,
         "cards_away": 0.63,
         "dnb_home": 0.71,
-        "xg": 2.91,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Bayer 04 Leverkusen",
-      "away": "PAE Olympiakos SFP",
-      "kickoff": "24/02 20:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.68,
-        "cards_home": 0.68,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 3.27,
-        "expected_corners": 10.5
+        "xg": 2.3,
+        "expected_corners": 10.9
       }
     }
   ],
+  "corner": [],
   "hot": [
     {
-      "league": "Championship",
-      "home": "Blackburn Rovers FC",
-      "away": "Bristol City FC",
-      "kickoff": "24/02 19:45",
+      "league": "Copa Libertadores",
+      "home": "CD Huachipato",
+      "away": "Carabobo FC",
+      "kickoff": "24/02 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.59,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "FC Internazionale Milano",
-      "away": "FK Bodø/Glimt",
-      "kickoff": "24/02 20:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 2.97,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Queens Park Rangers FC",
-      "kickoff": "24/02 20:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.65,
+        "over25": 0.67,
+        "corners95": 0.55,
+        "cards_home": 0.56,
         "cards_away": 0.63,
         "dnb_home": 0.71,
-        "xg": 2.91,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Bayer 04 Leverkusen",
-      "away": "PAE Olympiakos SFP",
-      "kickoff": "24/02 20:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.68,
-        "cards_home": 0.68,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 3.27,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Newcastle United FC",
-      "away": "Qarabağ Ağdam FK",
-      "kickoff": "24/02 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.59,
-        "cards_home": 0.64,
-        "cards_away": 0.68,
-        "dnb_home": 0.71,
-        "xg": 2.33,
-        "expected_corners": 9.0
+        "xg": 2.3,
+        "expected_corners": 10.9
       }
     }
   ]
