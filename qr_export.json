@@ -1,5 +1,5 @@
 {
-  "updated_at": "24/02 20:35",
+  "updated_at": "24/02 21:34",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,13 +7,13 @@
       "away": "Carabobo FC",
       "kickoff": "24/02 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.55,
-        "cards_home": 0.56,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.3,
-        "expected_corners": 10.9
+        "over25": 0.65,
+        "corners95": 0.56,
+        "cards_home": 0.55,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.36,
+        "expected_corners": 11.8
       }
     }
   ],
@@ -25,13 +25,13 @@
       "away": "Carabobo FC",
       "kickoff": "24/02 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.55,
-        "cards_home": 0.56,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.3,
-        "expected_corners": 10.9
+        "over25": 0.65,
+        "corners95": 0.56,
+        "cards_home": 0.55,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.36,
+        "expected_corners": 11.8
       }
     }
   ]
