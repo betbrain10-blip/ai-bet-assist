@@ -1,49 +1,109 @@
 {
-  "updated_at": "25/02 16:02",
+  "updated_at": "25/02 17:34",
   "value": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Atalanta BC",
+      "away": "Borussia Dortmund",
+      "kickoff": "25/02 17:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.63,
+        "dnb_home": 0.75,
+        "xg": 3.02,
+        "expected_corners": 11.8
+      }
+    },
     {
       "league": "Championship",
       "home": "Millwall FC",
       "away": "Birmingham City FC",
       "kickoff": "25/02 19:45",
       "markets": {
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.64,
+        "cards_away": 0.63,
+        "dnb_home": 0.72,
+        "xg": 2.93,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "AS Monaco FC",
+      "kickoff": "25/02 20:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.61,
+        "cards_away": 0.51,
+        "dnb_home": 0.67,
+        "xg": 2.18,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Madrid CF",
+      "away": "Sport Lisboa e Benfica",
+      "kickoff": "25/02 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.94,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Juventus FC",
+      "away": "Galatasaray SK",
+      "kickoff": "25/02 20:00",
+      "markets": {
         "over25": 0.71,
-        "corners95": 0.57,
-        "cards_home": 0.51,
-        "cards_away": 0.62,
-        "dnb_home": 0.61,
-        "xg": 3.39,
-        "expected_corners": 12.3
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.63,
+        "xg": 3.28,
+        "expected_corners": 11.2
       }
     },
     {
       "league": "Championship",
-      "home": "Norwich City FC",
-      "away": "Sheffield Wednesday FC",
-      "kickoff": "25/02 19:45",
+      "home": "Stoke City FC",
+      "away": "Oxford United FC",
+      "kickoff": "25/02 20:00",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.55,
-        "xg": 3.2,
-        "expected_corners": 9.4
+        "corners95": 0.58,
+        "cards_home": 0.62,
+        "cards_away": 0.67,
+        "dnb_home": 0.6,
+        "xg": 3.15,
+        "expected_corners": 10.0
       }
     },
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Clube do Remo",
-      "away": "SC Internacional",
+      "league": "Copa Libertadores",
+      "home": "EC Bahia",
+      "away": "O'Higgins FC",
       "kickoff": "25/02 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.58,
-        "cards_home": 0.52,
-        "cards_away": 0.68,
-        "dnb_home": 0.61,
-        "xg": 2.28,
-        "expected_corners": 11.8
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.51,
+        "cards_away": 0.55,
+        "dnb_home": 0.59,
+        "xg": 2.56,
+        "expected_corners": 11.5
       }
     },
     {
@@ -52,13 +112,13 @@
       "away": "São Paulo FC",
       "kickoff": "25/02 22:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.6,
-        "cards_home": 0.63,
-        "cards_away": 0.58,
-        "dnb_home": 0.57,
-        "xg": 2.39,
-        "expected_corners": 12.1
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.67,
+        "dnb_home": 0.66,
+        "xg": 2.69,
+        "expected_corners": 10.1
       }
     },
     {
@@ -67,13 +127,13 @@
       "away": "SC Corinthians Paulista",
       "kickoff": "25/02 23:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.62,
-        "dnb_home": 0.57,
-        "xg": 3.03,
-        "expected_corners": 10.7
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.59,
+        "dnb_home": 0.65,
+        "xg": 2.83,
+        "expected_corners": 9.1
       }
     }
   ],
@@ -84,13 +144,13 @@
       "away": "Borussia Dortmund",
       "kickoff": "25/02 17:45",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.51,
-        "dnb_home": 0.7,
-        "xg": 2.73,
-        "expected_corners": 9.4
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.63,
+        "dnb_home": 0.75,
+        "xg": 3.02,
+        "expected_corners": 11.8
       }
     },
     {
@@ -99,13 +159,28 @@
       "away": "Coventry City FC",
       "kickoff": "25/02 19:45",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.53,
+        "over25": 0.61,
+        "corners95": 0.68,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.66,
+        "xg": 2.53,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Millwall FC",
+      "away": "Birmingham City FC",
+      "kickoff": "25/02 19:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.64,
+        "cards_away": 0.63,
         "dnb_home": 0.72,
-        "xg": 3.32,
-        "expected_corners": 11.5
+        "xg": 2.93,
+        "expected_corners": 10.3
       }
     },
     {
@@ -114,43 +189,13 @@
       "away": "Sheffield Wednesday FC",
       "kickoff": "25/02 19:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.55,
-        "xg": 3.2,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Real Madrid CF",
-      "away": "Sport Lisboa e Benfica",
-      "kickoff": "25/02 20:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.5,
-        "dnb_home": 0.73,
-        "xg": 3.09,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Juventus FC",
-      "away": "Galatasaray SK",
-      "kickoff": "25/02 20:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.61,
+        "over25": 0.61,
+        "corners95": 0.62,
+        "cards_home": 0.57,
         "cards_away": 0.55,
-        "dnb_home": 0.6,
-        "xg": 3.27,
-        "expected_corners": 11.0
+        "dnb_home": 0.74,
+        "xg": 2.89,
+        "expected_corners": 8.6
       }
     },
     {
@@ -159,28 +204,58 @@
       "away": "AS Monaco FC",
       "kickoff": "25/02 20:00",
       "markets": {
-        "over25": 0.57,
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.61,
+        "cards_away": 0.51,
+        "dnb_home": 0.67,
+        "xg": 2.18,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Madrid CF",
+      "away": "Sport Lisboa e Benfica",
+      "kickoff": "25/02 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.94,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Juventus FC",
+      "away": "Galatasaray SK",
+      "kickoff": "25/02 20:00",
+      "markets": {
+        "over25": 0.71,
         "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.53,
-        "dnb_home": 0.6,
-        "xg": 3.02,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.63,
+        "xg": 3.28,
         "expected_corners": 11.2
       }
     },
     {
-      "league": "Championship",
-      "home": "Stoke City FC",
-      "away": "Oxford United FC",
-      "kickoff": "25/02 20:00",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Clube do Remo",
+      "away": "SC Internacional",
+      "kickoff": "25/02 22:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.59,
-        "dnb_home": 0.66,
-        "xg": 3.19,
-        "expected_corners": 11.5
+        "over25": 0.57,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.68,
+        "xg": 2.17,
+        "expected_corners": 10.3
       }
     },
     {
@@ -189,13 +264,43 @@
       "away": "CA Paranaense",
       "kickoff": "25/02 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.66,
-        "cards_home": 0.5,
+        "over25": 0.58,
+        "corners95": 0.61,
+        "cards_home": 0.62,
         "cards_away": 0.53,
-        "dnb_home": 0.58,
-        "xg": 2.7,
-        "expected_corners": 8.6
+        "dnb_home": 0.65,
+        "xg": 2.52,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "EC Bahia",
+      "away": "O'Higgins FC",
+      "kickoff": "25/02 22:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.51,
+        "cards_away": 0.55,
+        "dnb_home": 0.59,
+        "xg": 2.56,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "São Paulo FC",
+      "kickoff": "25/02 22:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.67,
+        "dnb_home": 0.66,
+        "xg": 2.69,
+        "expected_corners": 10.1
       }
     },
     {
@@ -204,13 +309,13 @@
       "away": "SC Corinthians Paulista",
       "kickoff": "25/02 23:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.62,
-        "dnb_home": 0.57,
-        "xg": 3.03,
-        "expected_corners": 10.7
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.59,
+        "dnb_home": 0.65,
+        "xg": 2.83,
+        "expected_corners": 9.1
       }
     }
   ],
@@ -221,28 +326,43 @@
       "away": "Borussia Dortmund",
       "kickoff": "25/02 17:45",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.51,
-        "dnb_home": 0.7,
-        "xg": 2.73,
-        "expected_corners": 9.4
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.63,
+        "dnb_home": 0.75,
+        "xg": 3.02,
+        "expected_corners": 11.8
       }
     },
     {
       "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Coventry City FC",
+      "home": "Millwall FC",
+      "away": "Birmingham City FC",
       "kickoff": "25/02 19:45",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.53,
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.64,
+        "cards_away": 0.63,
         "dnb_home": 0.72,
-        "xg": 3.32,
-        "expected_corners": 11.5
+        "xg": 2.93,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Norwich City FC",
+      "away": "Sheffield Wednesday FC",
+      "kickoff": "25/02 19:45",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.55,
+        "dnb_home": 0.74,
+        "xg": 2.89,
+        "expected_corners": 8.6
       }
     },
     {
@@ -251,28 +371,13 @@
       "away": "Sport Lisboa e Benfica",
       "kickoff": "25/02 20:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.5,
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.63,
         "dnb_home": 0.73,
-        "xg": 3.09,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "EC Bahia",
-      "away": "O'Higgins FC",
-      "kickoff": "25/02 22:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.56,
-        "cards_home": 0.53,
-        "cards_away": 0.66,
-        "dnb_home": 0.71,
-        "xg": 3.25,
-        "expected_corners": 11.7
+        "xg": 2.94,
+        "expected_corners": 9.7
       }
     }
   ]
