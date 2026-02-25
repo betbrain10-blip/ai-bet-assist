@@ -1,38 +1,6 @@
 {
-  "updated_at": "25/02 23:27",
+  "updated_at": "25/02 23:54",
   "value": [],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "EC Bahia",
-      "away": "O'Higgins FC",
-      "kickoff": "25/02 22:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.68,
-        "cards_home": 0.57,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.26,
-        "expected_corners": 11.4
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "EC Bahia",
-      "away": "O'Higgins FC",
-      "kickoff": "25/02 22:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.68,
-        "cards_home": 0.57,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.26,
-        "expected_corners": 11.4
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
