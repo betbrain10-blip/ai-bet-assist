@@ -1,34 +1,19 @@
 {
-  "updated_at": "26/02 19:04",
+  "updated_at": "26/02 20:00",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "CR Vasco da Gama",
-      "kickoff": "26/02 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.53,
-        "dnb_home": 0.72,
-        "xg": 2.44,
-        "expected_corners": 10.3
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "Club Guaraní",
       "away": "Juventud de Las Piedras",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
+        "over25": 0.66,
+        "corners95": 0.68,
         "cards_home": 0.58,
-        "cards_away": 0.61,
-        "dnb_home": 0.58,
-        "xg": 3.38,
-        "expected_corners": 12.0
+        "cards_away": 0.58,
+        "dnb_home": 0.61,
+        "xg": 2.97,
+        "expected_corners": 9.3
       }
     }
   ],
@@ -39,13 +24,13 @@
       "away": "CR Vasco da Gama",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.53,
-        "dnb_home": 0.72,
-        "xg": 2.44,
-        "expected_corners": 10.3
+        "over25": 0.56,
+        "corners95": 0.64,
+        "cards_home": 0.53,
+        "cards_away": 0.65,
+        "dnb_home": 0.73,
+        "xg": 2.55,
+        "expected_corners": 10.0
       }
     },
     {
@@ -54,13 +39,13 @@
       "away": "Juventud de Las Piedras",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
+        "over25": 0.66,
+        "corners95": 0.68,
         "cards_home": 0.58,
-        "cards_away": 0.61,
-        "dnb_home": 0.58,
-        "xg": 3.38,
-        "expected_corners": 12.0
+        "cards_away": 0.58,
+        "dnb_home": 0.61,
+        "xg": 2.97,
+        "expected_corners": 9.3
       }
     }
   ],
@@ -71,13 +56,13 @@
       "away": "CR Vasco da Gama",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.53,
-        "dnb_home": 0.72,
-        "xg": 2.44,
-        "expected_corners": 10.3
+        "over25": 0.56,
+        "corners95": 0.64,
+        "cards_home": 0.53,
+        "cards_away": 0.65,
+        "dnb_home": 0.73,
+        "xg": 2.55,
+        "expected_corners": 10.0
       }
     }
   ]
