@@ -1,5 +1,5 @@
 {
-  "updated_at": "26/02 20:50",
+  "updated_at": "26/02 21:32",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -8,27 +8,12 @@
       "kickoff": "26/02 22:00",
       "markets": {
         "over25": 0.63,
-        "corners95": 0.58,
-        "cards_home": 0.67,
-        "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 3.31,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "CR Vasco da Gama",
-      "kickoff": "26/02 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 3.22,
-        "expected_corners": 11.8
+        "corners95": 0.56,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.55,
+        "xg": 2.41,
+        "expected_corners": 9.2
       }
     }
   ],
@@ -39,45 +24,30 @@
       "away": "CR Vasco da Gama",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
+        "over25": 0.58,
+        "corners95": 0.69,
         "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 3.22,
-        "expected_corners": 11.8
+        "cards_away": 0.55,
+        "dnb_home": 0.75,
+        "xg": 2.79,
+        "expected_corners": 11.6
       }
     }
   ],
   "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Guaraní",
-      "away": "Juventud de Las Piedras",
-      "kickoff": "26/02 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.58,
-        "cards_home": 0.67,
-        "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 3.31,
-        "expected_corners": 11.9
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Santos FC",
       "away": "CR Vasco da Gama",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
+        "over25": 0.58,
+        "corners95": 0.69,
         "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 3.22,
-        "expected_corners": 11.8
+        "cards_away": 0.55,
+        "dnb_home": 0.75,
+        "xg": 2.79,
+        "expected_corners": 11.6
       }
     }
   ]
