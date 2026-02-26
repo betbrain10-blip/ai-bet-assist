@@ -1,37 +1,53 @@
 {
-  "updated_at": "26/02 13:38",
-  "value": [],
-  "corner": [
+  "updated_at": "26/02 14:46",
+  "value": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "CR Vasco da Gama",
+      "league": "Copa Libertadores",
+      "home": "Club Guaraní",
+      "away": "Juventud de Las Piedras",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 2.66,
-        "expected_corners": 10.6
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 3.2,
+        "expected_corners": 11.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Guaraní",
+      "away": "Juventud de Las Piedras",
+      "kickoff": "26/02 22:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 3.2,
+        "expected_corners": 11.9
       }
     }
   ],
   "hot": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "CR Vasco da Gama",
+      "league": "Copa Libertadores",
+      "home": "Club Guaraní",
+      "away": "Juventud de Las Piedras",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 2.66,
-        "expected_corners": 10.6
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 3.2,
+        "expected_corners": 11.9
       }
     }
   ]
