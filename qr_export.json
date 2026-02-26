@@ -1,23 +1,54 @@
 {
-  "updated_at": "26/02 16:58",
+  "updated_at": "26/02 17:58",
   "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Guaraní",
+      "away": "Juventud de Las Piedras",
+      "kickoff": "26/02 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.58,
+        "cards_home": 0.61,
+        "cards_away": 0.66,
+        "dnb_home": 0.63,
+        "xg": 2.88,
+        "expected_corners": 9.4
+      }
+    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Santos FC",
       "away": "CR Vasco da Gama",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.86,
-        "expected_corners": 8.8
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 2.28,
+        "expected_corners": 8.9
       }
     }
   ],
-  "corner": [],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "CR Vasco da Gama",
+      "kickoff": "26/02 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 2.28,
+        "expected_corners": 8.9
+      }
+    }
+  ],
   "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -25,13 +56,13 @@
       "away": "CR Vasco da Gama",
       "kickoff": "26/02 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.86,
-        "expected_corners": 8.8
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 2.28,
+        "expected_corners": 8.9
       }
     }
   ]
