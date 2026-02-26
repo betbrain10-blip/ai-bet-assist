@@ -1,6 +1,54 @@
 {
-  "updated_at": "26/02 23:29",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "26/02 23:55",
+  "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Guaraní",
+      "away": "Juventud de Las Piedras",
+      "kickoff": "26/02 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.58,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.89,
+        "expected_corners": 9.1
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Guaraní",
+      "away": "Juventud de Las Piedras",
+      "kickoff": "26/02 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.58,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.89,
+        "expected_corners": 9.1
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Guaraní",
+      "away": "Juventud de Las Piedras",
+      "kickoff": "26/02 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.58,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.89,
+        "expected_corners": 9.1
+      }
+    }
+  ]
 }
