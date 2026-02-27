@@ -1,34 +1,49 @@
 {
-  "updated_at": "27/02 20:28",
+  "updated_at": "27/02 20:54",
   "value": [
+    {
+      "league": "Primeira Liga",
+      "home": "FC Porto",
+      "away": "FC Arouca",
+      "kickoff": "27/02 18:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.64,
+        "xg": 2.81,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Telstar 1963",
+      "away": "NAC Breda",
+      "kickoff": "27/02 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.56,
+        "dnb_home": 0.6,
+        "xg": 2.66,
+        "expected_corners": 10.5
+      }
+    },
     {
       "league": "Bundesliga",
       "home": "FC Augsburg",
       "away": "1. FC Köln",
       "kickoff": "27/02 19:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.54,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 3.08,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Parma Calcio 1913",
-      "away": "Cagliari Calcio",
-      "kickoff": "27/02 19:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.66,
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.56,
         "cards_away": 0.56,
-        "dnb_home": 0.6,
-        "xg": 3.05,
-        "expected_corners": 11.5
+        "dnb_home": 0.56,
+        "xg": 2.38,
+        "expected_corners": 11.7
       }
     },
     {
@@ -37,28 +52,43 @@
       "away": "Deportivo Alavés",
       "kickoff": "27/02 20:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.59,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.61,
-        "xg": 2.82,
-        "expected_corners": 10.9
+        "over25": 0.71,
+        "corners95": 0.58,
+        "cards_home": 0.52,
+        "cards_away": 0.51,
+        "dnb_home": 0.65,
+        "xg": 2.67,
+        "expected_corners": 11.3
       }
     },
     {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Watford FC",
+      "league": "Premier League",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Aston Villa FC",
       "kickoff": "27/02 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.59,
-        "cards_home": 0.51,
-        "cards_away": 0.61,
-        "dnb_home": 0.63,
-        "xg": 2.75,
-        "expected_corners": 12.2
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.66,
+        "xg": 3.17,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Portugal",
+      "away": "GD Estoril Praia",
+      "kickoff": "27/02 20:45",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
+        "dnb_home": 0.57,
+        "xg": 2.18,
+        "expected_corners": 12.1
       }
     }
   ],
@@ -69,13 +99,13 @@
       "away": "FC Arouca",
       "kickoff": "27/02 18:45",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.65,
-        "dnb_home": 0.56,
-        "xg": 2.42,
-        "expected_corners": 11.6
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.64,
+        "xg": 2.81,
+        "expected_corners": 8.7
       }
     },
     {
@@ -84,75 +114,13 @@
       "away": "NAC Breda",
       "kickoff": "27/02 19:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.68,
-        "cards_home": 0.59,
-        "cards_away": 0.5,
-        "dnb_home": 0.69,
-        "xg": 3.27,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Parma Calcio 1913",
-      "away": "Cagliari Calcio",
-      "kickoff": "27/02 19:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.66,
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.57,
         "cards_away": 0.56,
         "dnb_home": 0.6,
-        "xg": 3.05,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "RC Strasbourg Alsace",
-      "away": "Racing Club de Lens",
-      "kickoff": "27/02 19:45",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.53,
-        "cards_away": 0.64,
-        "dnb_home": 0.6,
-        "xg": 3.19,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Wolverhampton Wanderers FC",
-      "away": "Aston Villa FC",
-      "kickoff": "27/02 20:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.72,
-        "xg": 3.09,
-        "expected_corners": 9.0
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "NAC Breda",
-      "kickoff": "27/02 19:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.68,
-        "cards_home": 0.59,
-        "cards_away": 0.5,
-        "dnb_home": 0.69,
-        "xg": 3.27,
-        "expected_corners": 11.0
+        "xg": 2.66,
+        "expected_corners": 10.5
       }
     },
     {
@@ -161,13 +129,58 @@
       "away": "1. FC Köln",
       "kickoff": "27/02 19:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.54,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 3.08,
-        "expected_corners": 12.3
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.56,
+        "cards_away": 0.56,
+        "dnb_home": 0.56,
+        "xg": 2.38,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Parma Calcio 1913",
+      "away": "Cagliari Calcio",
+      "kickoff": "27/02 19:45",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.61,
+        "cards_away": 0.64,
+        "dnb_home": 0.68,
+        "xg": 2.6,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "RC Strasbourg Alsace",
+      "away": "Racing Club de Lens",
+      "kickoff": "27/02 19:45",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 2.42,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Bristol City FC",
+      "away": "Watford FC",
+      "kickoff": "27/02 20:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.61,
+        "cards_home": 0.51,
+        "cards_away": 0.55,
+        "dnb_home": 0.58,
+        "xg": 2.86,
+        "expected_corners": 12.7
       }
     },
     {
@@ -176,13 +189,13 @@
       "away": "Aston Villa FC",
       "kickoff": "27/02 20:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.72,
-        "xg": 3.09,
-        "expected_corners": 9.0
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.66,
+        "xg": 3.17,
+        "expected_corners": 10.4
       }
     },
     {
@@ -191,13 +204,30 @@
       "away": "GD Estoril Praia",
       "kickoff": "27/02 20:45",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.57,
-        "cards_home": 0.52,
-        "cards_away": 0.63,
-        "dnb_home": 0.72,
-        "xg": 2.28,
-        "expected_corners": 10.6
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
+        "dnb_home": 0.57,
+        "xg": 2.18,
+        "expected_corners": 12.1
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Ligue 1",
+      "home": "RC Strasbourg Alsace",
+      "away": "Racing Club de Lens",
+      "kickoff": "27/02 19:45",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 2.42,
+        "expected_corners": 11.2
       }
     }
   ]
