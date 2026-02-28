@@ -1,231 +1,34 @@
 {
-  "updated_at": "28/02 19:20",
+  "updated_at": "28/02 19:42",
   "value": [
-    {
-      "league": "Premier League",
-      "home": "AFC Bournemouth",
-      "away": "Sunderland AFC",
-      "kickoff": "28/02 12:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.75,
-        "xg": 3.17,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Derby County FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "28/02 12:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.64,
-        "xg": 2.83,
-        "expected_corners": 12.0
-      }
-    },
     {
       "league": "Championship",
       "home": "Portsmouth FC",
       "away": "Hull City AFC",
       "kickoff": "28/02 12:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.58,
-        "cards_home": 0.56,
-        "cards_away": 0.67,
-        "dnb_home": 0.6,
-        "xg": 3.32,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Athletic Club",
-      "kickoff": "28/02 13:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.48,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "SV Werder Bremen",
-      "away": "1. FC Heidenheim 1846",
-      "kickoff": "28/02 14:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.56,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.68,
-        "xg": 2.67,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "TSG 1899 Hoffenheim",
-      "away": "FC St. Pauli 1910",
-      "kickoff": "28/02 14:30",
-      "markets": {
         "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
-        "dnb_home": 0.6,
-        "xg": 2.44,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Coventry City FC",
-      "away": "Stoke City FC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.66,
         "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.57,
-        "dnb_home": 0.56,
-        "xg": 2.29,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Preston North End FC",
-      "away": "Millwall FC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.6,
-        "dnb_home": 0.58,
-        "xg": 2.57,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Oxford United FC",
-      "away": "West Bromwich Albion FC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.59,
-        "cards_home": 0.65,
-        "cards_away": 0.55,
-        "dnb_home": 0.62,
-        "xg": 2.56,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Charlton Athletic FC",
-      "away": "Wrexham AFC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.56,
-        "xg": 3.15,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Queens Park Rangers FC",
-      "away": "Sheffield United FC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
         "cards_home": 0.53,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 2.24,
-        "expected_corners": 10.9
+        "cards_away": 0.63,
+        "dnb_home": 0.64,
+        "xg": 2.76,
+        "expected_corners": 9.8
       }
     },
-    {
-      "league": "Primera Division",
-      "home": "FC Barcelona",
-      "away": "Villarreal CF",
-      "kickoff": "28/02 15:15",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 2.66,
-        "expected_corners": 11.4
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "Premier League",
       "home": "AFC Bournemouth",
       "away": "Sunderland AFC",
       "kickoff": "28/02 12:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.75,
-        "xg": 3.17,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Derby County FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "28/02 12:30",
-      "markets": {
         "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.64,
-        "xg": 2.83,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Athletic Club",
-      "kickoff": "28/02 13:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.48,
-        "expected_corners": 9.5
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.68,
+        "dnb_home": 0.62,
+        "xg": 2.67,
+        "expected_corners": 10.5
       }
     },
     {
@@ -234,42 +37,376 @@
       "away": "US Lecce",
       "kickoff": "28/02 14:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.56,
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.63,
+        "xg": 3.15,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Queens Park Rangers FC",
+      "away": "Sheffield United FC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 2.92,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Burnley FC",
+      "away": "Brentford FC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.62,
+        "dnb_home": 0.6,
+        "xg": 3.2,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Charlton Athletic FC",
+      "away": "Wrexham AFC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.53,
         "cards_away": 0.67,
-        "dnb_home": 0.68,
-        "xg": 2.43,
+        "dnb_home": 0.61,
+        "xg": 3.29,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Coventry City FC",
+      "away": "Stoke City FC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.6,
+        "cards_home": 0.64,
+        "cards_away": 0.55,
+        "dnb_home": 0.73,
+        "xg": 2.47,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "SC Heerenveen",
+      "away": "Sparta Rotterdam",
+      "kickoff": "28/02 15:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.61,
+        "cards_home": 0.68,
+        "cards_away": 0.65,
+        "dnb_home": 0.56,
+        "xg": 2.9,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Stade Rennais FC 1901",
+      "away": "Toulouse FC",
+      "kickoff": "28/02 16:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.52,
+        "cards_away": 0.68,
+        "dnb_home": 0.73,
+        "xg": 2.32,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RCD Mallorca",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "28/02 17:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.58,
+        "xg": 2.14,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Leeds United FC",
+      "away": "Manchester City FC",
+      "kickoff": "28/02 17:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.63,
+        "cards_home": 0.68,
+        "cards_away": 0.61,
+        "dnb_home": 0.55,
+        "xg": 2.92,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "AS Monaco FC",
+      "away": "Angers SCO",
+      "kickoff": "28/02 18:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.55,
+        "dnb_home": 0.66,
+        "xg": 2.78,
+        "expected_corners": 11.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Championship",
+      "home": "Portsmouth FC",
+      "away": "Hull City AFC",
+      "kickoff": "28/02 12:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.63,
+        "dnb_home": 0.64,
+        "xg": 2.76,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Sunderland AFC",
+      "kickoff": "28/02 12:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.68,
+        "dnb_home": 0.62,
+        "xg": 2.67,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Como 1907",
+      "away": "US Lecce",
+      "kickoff": "28/02 14:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.63,
+        "xg": 3.15,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Bayer 04 Leverkusen",
+      "away": "1. FSV Mainz 05",
+      "kickoff": "28/02 14:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.62,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.72,
+        "xg": 2.92,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Queens Park Rangers FC",
+      "away": "Sheffield United FC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 2.92,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Burnley FC",
+      "away": "Brentford FC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.62,
+        "dnb_home": 0.6,
+        "xg": 3.2,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Charlton Athletic FC",
+      "away": "Wrexham AFC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.67,
+        "dnb_home": 0.61,
+        "xg": 3.29,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Newcastle United FC",
+      "away": "Everton FC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.64,
+        "cards_home": 0.61,
+        "cards_away": 0.5,
+        "dnb_home": 0.74,
+        "xg": 2.23,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Preston North End FC",
+      "away": "Millwall FC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.66,
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 2.98,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield Wednesday FC",
+      "away": "Southampton FC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.62,
+        "cards_home": 0.64,
+        "cards_away": 0.6,
+        "dnb_home": 0.59,
+        "xg": 2.82,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Liverpool FC",
+      "away": "West Ham United FC",
+      "kickoff": "28/02 15:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 2.91,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "AVS",
+      "away": "CF Estrela da Amadora",
+      "kickoff": "28/02 15:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.64,
+        "cards_home": 0.6,
+        "cards_away": 0.59,
+        "dnb_home": 0.57,
+        "xg": 2.69,
+        "expected_corners": 9.7
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Championship",
+      "home": "Derby County FC",
+      "away": "Blackburn Rovers FC",
+      "kickoff": "28/02 12:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.59,
+        "cards_home": 0.58,
+        "cards_away": 0.68,
+        "dnb_home": 0.69,
+        "xg": 2.36,
         "expected_corners": 8.6
       }
     },
     {
       "league": "Bundesliga",
-      "home": "Borussia Mönchengladbach",
-      "away": "1. FC Union Berlin",
+      "home": "Bayer 04 Leverkusen",
+      "away": "1. FSV Mainz 05",
       "kickoff": "28/02 14:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.53,
+        "over25": 0.58,
+        "corners95": 0.62,
+        "cards_home": 0.61,
         "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 3.29,
-        "expected_corners": 12.8
+        "dnb_home": 0.72,
+        "xg": 2.92,
+        "expected_corners": 8.7
       }
     },
     {
-      "league": "Bundesliga",
-      "home": "TSG 1899 Hoffenheim",
-      "away": "FC St. Pauli 1910",
-      "kickoff": "28/02 14:30",
+      "league": "Championship",
+      "home": "Queens Park Rangers FC",
+      "away": "Sheffield United FC",
+      "kickoff": "28/02 15:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
-        "dnb_home": 0.6,
-        "xg": 2.44,
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 2.92,
         "expected_corners": 11.3
       }
     },
@@ -279,150 +416,13 @@
       "away": "Stoke City FC",
       "kickoff": "28/02 15:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.57,
-        "dnb_home": 0.56,
-        "xg": 2.29,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Ipswich Town FC",
-      "away": "Swansea City AFC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.68,
-        "cards_home": 0.52,
-        "cards_away": 0.6,
-        "dnb_home": 0.65,
-        "xg": 2.83,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Preston North End FC",
-      "away": "Millwall FC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.6,
-        "dnb_home": 0.58,
-        "xg": 2.57,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Liverpool FC",
-      "away": "West Ham United FC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.64,
-        "dnb_home": 0.74,
-        "xg": 2.7,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Newcastle United FC",
-      "away": "Everton FC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.58,
-        "dnb_home": 0.73,
-        "xg": 2.87,
-        "expected_corners": 8.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Charlton Athletic FC",
-      "away": "Wrexham AFC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.56,
-        "xg": 3.15,
-        "expected_corners": 10.1
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Premier League",
-      "home": "AFC Bournemouth",
-      "away": "Sunderland AFC",
-      "kickoff": "28/02 12:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.75,
-        "xg": 3.17,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Athletic Club",
-      "kickoff": "28/02 13:00",
-      "markets": {
         "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.48,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "Borussia Mönchengladbach",
-      "away": "1. FC Union Berlin",
-      "kickoff": "28/02 14:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.53,
+        "corners95": 0.6,
+        "cards_home": 0.64,
         "cards_away": 0.55,
         "dnb_home": 0.73,
-        "xg": 3.29,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Liverpool FC",
-      "away": "West Ham United FC",
-      "kickoff": "28/02 15:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.64,
-        "dnb_home": 0.74,
-        "xg": 2.7,
-        "expected_corners": 10.8
+        "xg": 2.47,
+        "expected_corners": 12.6
       }
     },
     {
@@ -431,28 +431,28 @@
       "away": "Everton FC",
       "kickoff": "28/02 15:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.58,
-        "dnb_home": 0.73,
-        "xg": 2.87,
-        "expected_corners": 8.5
+        "over25": 0.62,
+        "corners95": 0.64,
+        "cards_home": 0.61,
+        "cards_away": 0.5,
+        "dnb_home": 0.74,
+        "xg": 2.23,
+        "expected_corners": 9.0
       }
     },
     {
-      "league": "Championship",
-      "home": "Queens Park Rangers FC",
-      "away": "Sheffield United FC",
+      "league": "Premier League",
+      "home": "Liverpool FC",
+      "away": "West Ham United FC",
       "kickoff": "28/02 15:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 2.24,
-        "expected_corners": 10.9
+        "over25": 0.58,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 2.91,
+        "expected_corners": 10.8
       }
     }
   ]
