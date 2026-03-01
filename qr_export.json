@@ -1,98 +1,68 @@
 {
-  "updated_at": "01/03 19:22",
+  "updated_at": "01/03 19:43",
   "value": [
     {
-      "league": "Serie A",
-      "home": "AS Roma",
-      "away": "Juventus FC",
+      "league": "Ligue 1",
+      "home": "Olympique de Marseille",
+      "away": "Olympique Lyonnais",
       "kickoff": "01/03 19:45",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 3.22,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Girona FC",
-      "away": "RC Celta de Vigo",
-      "kickoff": "01/03 20:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.57,
-        "dnb_home": 0.59,
-        "xg": 3.25,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Rio Ave FC",
-      "away": "FC Famalicão",
-      "kickoff": "01/03 20:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.59,
-        "cards_home": 0.61,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.65,
-        "expected_corners": 12.5
+        "over25": 0.69,
+        "corners95": 0.55,
+        "cards_home": 0.6,
+        "cards_away": 0.59,
+        "dnb_home": 0.61,
+        "xg": 2.38,
+        "expected_corners": 10.3
       }
     }
   ],
   "corner": [
     {
-      "league": "Serie A",
-      "home": "AS Roma",
-      "away": "Juventus FC",
-      "kickoff": "01/03 19:45",
+      "league": "Primeira Liga",
+      "home": "Rio Ave FC",
+      "away": "FC Famalicão",
+      "kickoff": "01/03 20:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 3.22,
-        "expected_corners": 12.7
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.55,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 3.0,
+        "expected_corners": 8.9
       }
-    },
+    }
+  ],
+  "hot": [
     {
       "league": "Primera Division",
       "home": "Girona FC",
       "away": "RC Celta de Vigo",
       "kickoff": "01/03 20:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.51,
+        "over25": 0.61,
+        "corners95": 0.57,
+        "cards_home": 0.61,
         "cards_away": 0.57,
-        "dnb_home": 0.59,
-        "xg": 3.25,
-        "expected_corners": 10.6
+        "dnb_home": 0.72,
+        "xg": 2.16,
+        "expected_corners": 8.6
       }
-    }
-  ],
-  "hot": [
+    },
     {
       "league": "Primeira Liga",
       "home": "Rio Ave FC",
       "away": "FC Famalicão",
       "kickoff": "01/03 20:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.59,
-        "cards_home": 0.61,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.65,
-        "expected_corners": 12.5
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.55,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 3.0,
+        "expected_corners": 8.9
       }
     }
   ]
