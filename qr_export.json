@@ -1,66 +1,19 @@
 {
-  "updated_at": "01/03 18:34",
+  "updated_at": "01/03 19:22",
   "value": [
-    {
-      "league": "Eredivisie",
-      "home": "SBV Excelsior",
-      "away": "Go Ahead Eagles",
-      "kickoff": "01/03 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.59,
-        "cards_home": 0.65,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 3.04,
-        "expected_corners": 10.6
-      }
-    },
     {
       "league": "Serie A",
       "home": "AS Roma",
       "away": "Juventus FC",
       "kickoff": "01/03 19:45",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.38,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Olympique de Marseille",
-      "away": "Olympique Lyonnais",
-      "kickoff": "01/03 19:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.58,
-        "cards_home": 0.67,
-        "cards_away": 0.64,
-        "dnb_home": 0.59,
-        "xg": 3.1,
-        "expected_corners": 10.0
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Bundesliga",
-      "home": "Hamburger SV",
-      "away": "RB Leipzig",
-      "kickoff": "01/03 18:30",
-      "markets": {
-        "over25": 0.58,
+        "over25": 0.63,
         "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 2.87,
-        "expected_corners": 9.5
+        "cards_home": 0.51,
+        "cards_away": 0.56,
+        "dnb_home": 0.58,
+        "xg": 3.22,
+        "expected_corners": 12.7
       }
     },
     {
@@ -69,45 +22,77 @@
       "away": "RC Celta de Vigo",
       "kickoff": "01/03 20:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.62,
-        "dnb_home": 0.63,
-        "xg": 3.01,
-        "expected_corners": 10.9
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.57,
+        "dnb_home": 0.59,
+        "xg": 3.25,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Rio Ave FC",
+      "away": "FC Famalicão",
+      "kickoff": "01/03 20:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.59,
+        "cards_home": 0.61,
+        "cards_away": 0.52,
+        "dnb_home": 0.71,
+        "xg": 2.65,
+        "expected_corners": 12.5
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Bundesliga",
-      "home": "Hamburger SV",
-      "away": "RB Leipzig",
-      "kickoff": "01/03 18:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 2.87,
-        "expected_corners": 9.5
-      }
-    },
+  "corner": [
     {
       "league": "Serie A",
       "home": "AS Roma",
       "away": "Juventus FC",
       "kickoff": "01/03 19:45",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.56,
+        "dnb_home": 0.58,
+        "xg": 3.22,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Girona FC",
+      "away": "RC Celta de Vigo",
+      "kickoff": "01/03 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.57,
+        "dnb_home": 0.59,
+        "xg": 3.25,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primeira Liga",
+      "home": "Rio Ave FC",
+      "away": "FC Famalicão",
+      "kickoff": "01/03 20:30",
+      "markets": {
+        "over25": 0.68,
         "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.59,
+        "cards_home": 0.61,
+        "cards_away": 0.52,
         "dnb_home": 0.71,
-        "xg": 2.38,
-        "expected_corners": 11.6
+        "xg": 2.65,
+        "expected_corners": 12.5
       }
     }
   ]
