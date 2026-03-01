@@ -1,49 +1,19 @@
 {
-  "updated_at": "01/03 17:46",
+  "updated_at": "01/03 18:34",
   "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "Casa Pia AC",
-      "away": "Moreirense FC",
-      "kickoff": "01/03 18:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
-        "dnb_home": 0.58,
-        "xg": 2.5,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "Hamburger SV",
-      "away": "RB Leipzig",
-      "kickoff": "01/03 18:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.57,
-        "cards_home": 0.54,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 2.28,
-        "expected_corners": 12.3
-      }
-    },
     {
       "league": "Eredivisie",
       "home": "SBV Excelsior",
       "away": "Go Ahead Eagles",
       "kickoff": "01/03 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.68,
-        "xg": 2.18,
-        "expected_corners": 9.2
+        "over25": 0.69,
+        "corners95": 0.59,
+        "cards_home": 0.65,
+        "cards_away": 0.51,
+        "dnb_home": 0.65,
+        "xg": 3.04,
+        "expected_corners": 10.6
       }
     },
     {
@@ -53,12 +23,12 @@
       "kickoff": "01/03 19:45",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.7,
-        "xg": 2.47,
-        "expected_corners": 8.8
+        "corners95": 0.59,
+        "cards_home": 0.66,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 2.38,
+        "expected_corners": 11.6
       }
     },
     {
@@ -67,60 +37,30 @@
       "away": "Olympique Lyonnais",
       "kickoff": "01/03 19:45",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
+        "over25": 0.7,
+        "corners95": 0.58,
+        "cards_home": 0.67,
+        "cards_away": 0.64,
         "dnb_home": 0.59,
-        "xg": 3.04,
-        "expected_corners": 12.5
+        "xg": 3.1,
+        "expected_corners": 10.0
       }
     }
   ],
   "corner": [
     {
-      "league": "Primeira Liga",
-      "home": "Casa Pia AC",
-      "away": "Moreirense FC",
-      "kickoff": "01/03 18:00",
+      "league": "Bundesliga",
+      "home": "Hamburger SV",
+      "away": "RB Leipzig",
+      "kickoff": "01/03 18:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
-        "dnb_home": 0.58,
-        "xg": 2.5,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "SBV Excelsior",
-      "away": "Go Ahead Eagles",
-      "kickoff": "01/03 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.68,
-        "xg": 2.18,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Olympique de Marseille",
-      "away": "Olympique Lyonnais",
-      "kickoff": "01/03 19:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.59,
-        "xg": 3.04,
-        "expected_corners": 12.5
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.58,
+        "dnb_home": 0.71,
+        "xg": 2.87,
+        "expected_corners": 9.5
       }
     },
     {
@@ -129,13 +69,13 @@
       "away": "RC Celta de Vigo",
       "kickoff": "01/03 20:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.65,
-        "cards_home": 0.68,
-        "cards_away": 0.61,
-        "dnb_home": 0.6,
-        "xg": 2.39,
-        "expected_corners": 11.2
+        "over25": 0.59,
+        "corners95": 0.64,
+        "cards_home": 0.62,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 3.01,
+        "expected_corners": 10.9
       }
     }
   ],
@@ -146,13 +86,13 @@
       "away": "RB Leipzig",
       "kickoff": "01/03 18:30",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.57,
-        "cards_home": 0.54,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 2.28,
-        "expected_corners": 12.3
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.58,
+        "dnb_home": 0.71,
+        "xg": 2.87,
+        "expected_corners": 9.5
       }
     },
     {
@@ -162,12 +102,12 @@
       "kickoff": "01/03 19:45",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.7,
-        "xg": 2.47,
-        "expected_corners": 8.8
+        "corners95": 0.59,
+        "cards_home": 0.66,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 2.38,
+        "expected_corners": 11.6
       }
     }
   ]
