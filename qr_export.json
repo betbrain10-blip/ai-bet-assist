@@ -1,5 +1,5 @@
 {
-  "updated_at": "02/03 16:01",
+  "updated_at": "02/03 17:12",
   "value": [
     {
       "league": "Serie A",
@@ -8,27 +8,12 @@
       "kickoff": "02/03 17:30",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
         "dnb_home": 0.67,
-        "xg": 2.62,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Madrid CF",
-      "away": "Getafe CF",
-      "kickoff": "02/03 20:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 2.36,
-        "expected_corners": 10.2
+        "xg": 3.17,
+        "expected_corners": 9.5
       }
     }
   ],
@@ -40,12 +25,12 @@
       "kickoff": "02/03 17:30",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
         "dnb_home": 0.67,
-        "xg": 2.62,
-        "expected_corners": 11.2
+        "xg": 3.17,
+        "expected_corners": 9.5
       }
     },
     {
@@ -54,28 +39,13 @@
       "away": "ACF Fiorentina",
       "kickoff": "02/03 19:45",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.58,
-        "dnb_home": 0.65,
-        "xg": 2.59,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Birmingham City FC",
-      "away": "Middlesbrough FC",
-      "kickoff": "02/03 20:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.65,
-        "dnb_home": 0.65,
-        "xg": 2.16,
-        "expected_corners": 11.4
+        "over25": 0.56,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.57,
+        "dnb_home": 0.6,
+        "xg": 3.34,
+        "expected_corners": 12.8
       }
     },
     {
@@ -84,13 +54,28 @@
       "away": "Getafe CF",
       "kickoff": "02/03 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.65,
+        "over25": 0.6,
+        "corners95": 0.66,
+        "cards_home": 0.62,
+        "cards_away": 0.64,
+        "dnb_home": 0.57,
+        "xg": 2.79,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Birmingham City FC",
+      "away": "Middlesbrough FC",
+      "kickoff": "02/03 20:00",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.68,
+        "cards_home": 0.64,
         "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 2.36,
-        "expected_corners": 10.2
+        "dnb_home": 0.68,
+        "xg": 3.03,
+        "expected_corners": 9.4
       }
     },
     {
@@ -100,30 +85,14 @@
       "kickoff": "02/03 20:15",
       "markets": {
         "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.6,
-        "dnb_home": 0.57,
-        "xg": 2.8,
-        "expected_corners": 12.5
+        "corners95": 0.64,
+        "cards_home": 0.66,
+        "cards_away": 0.61,
+        "dnb_home": 0.68,
+        "xg": 3.1,
+        "expected_corners": 9.6
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Primera Division",
-      "home": "Real Madrid CF",
-      "away": "Getafe CF",
-      "kickoff": "02/03 20:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 2.36,
-        "expected_corners": 10.2
-      }
-    }
-  ]
+  "hot": []
 }
