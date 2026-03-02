@@ -1,18 +1,33 @@
 {
-  "updated_at": "02/03 02:06",
+  "updated_at": "02/03 04:26",
   "value": [
     {
-      "league": "Primera Division",
-      "home": "Real Madrid CF",
-      "away": "Getafe CF",
+      "league": "Serie A",
+      "home": "AC Pisa 1909",
+      "away": "Bologna FC 1909",
+      "kickoff": "02/03 17:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.57,
+        "cards_home": 0.57,
+        "cards_away": 0.56,
+        "dnb_home": 0.67,
+        "xg": 2.37,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Birmingham City FC",
+      "away": "Middlesbrough FC",
       "kickoff": "02/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.68,
-        "cards_home": 0.67,
-        "cards_away": 0.61,
-        "dnb_home": 0.67,
-        "xg": 2.68,
+        "over25": 0.63,
+        "corners95": 0.58,
+        "cards_home": 0.59,
+        "cards_away": 0.64,
+        "dnb_home": 0.71,
+        "xg": 2.63,
         "expected_corners": 9.4
       }
     }
@@ -24,13 +39,30 @@
       "away": "Getafe CF",
       "kickoff": "02/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.68,
-        "cards_home": 0.67,
-        "cards_away": 0.61,
-        "dnb_home": 0.67,
-        "xg": 2.68,
-        "expected_corners": 9.4
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.64,
+        "expected_corners": 9.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Real Madrid CF",
+      "away": "Getafe CF",
+      "kickoff": "02/03 20:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.64,
+        "expected_corners": 9.6
       }
     },
     {
@@ -39,13 +71,13 @@
       "away": "Middlesbrough FC",
       "kickoff": "02/03 20:00",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.5,
-        "dnb_home": 0.6,
-        "xg": 2.78,
-        "expected_corners": 12.1
+        "over25": 0.63,
+        "corners95": 0.58,
+        "cards_home": 0.59,
+        "cards_away": 0.64,
+        "dnb_home": 0.71,
+        "xg": 2.63,
+        "expected_corners": 9.4
       }
     },
     {
@@ -54,30 +86,13 @@
       "away": "Sport Lisboa e Benfica",
       "kickoff": "02/03 20:15",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.61,
-        "xg": 3.3,
-        "expected_corners": 8.7
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "Udinese Calcio",
-      "away": "ACF Fiorentina",
-      "kickoff": "02/03 19:45",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.57,
-        "cards_home": 0.66,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 3.33,
-        "expected_corners": 9.6
+        "over25": 0.62,
+        "corners95": 0.56,
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.18,
+        "expected_corners": 10.2
       }
     }
   ]
