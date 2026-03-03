@@ -1,34 +1,19 @@
 {
-  "updated_at": "03/03 04:25",
+  "updated_at": "03/03 05:32",
   "value": [
-    {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Burnley FC",
-      "kickoff": "03/03 19:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.75,
-        "xg": 2.88,
-        "expected_corners": 9.8
-      }
-    },
     {
       "league": "Premier League",
       "home": "Leeds United FC",
       "away": "Sunderland AFC",
       "kickoff": "03/03 19:30",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.55,
-        "dnb_home": 0.62,
-        "xg": 2.79,
-        "expected_corners": 11.7
+        "over25": 0.69,
+        "corners95": 0.65,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.14,
+        "expected_corners": 11.5
       }
     },
     {
@@ -37,13 +22,13 @@
       "away": "Brentford FC",
       "kickoff": "03/03 19:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.56,
+        "over25": 0.69,
+        "corners95": 0.66,
         "cards_home": 0.55,
-        "cards_away": 0.66,
-        "dnb_home": 0.67,
-        "xg": 2.63,
-        "expected_corners": 12.2
+        "cards_away": 0.54,
+        "dnb_home": 0.72,
+        "xg": 2.88,
+        "expected_corners": 11.8
       }
     },
     {
@@ -52,13 +37,13 @@
       "away": "Hull City AFC",
       "kickoff": "03/03 19:45",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.63,
         "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 2.76,
-        "expected_corners": 9.0
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.58,
+        "xg": 2.86,
+        "expected_corners": 10.0
       }
     },
     {
@@ -67,45 +52,45 @@
       "away": "Liverpool FC",
       "kickoff": "03/03 20:15",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.55,
-        "dnb_home": 0.6,
-        "xg": 2.7,
-        "expected_corners": 9.0
+        "over25": 0.72,
+        "corners95": 0.65,
+        "cards_home": 0.62,
+        "cards_away": 0.58,
+        "dnb_home": 0.61,
+        "xg": 2.54,
+        "expected_corners": 8.7
       }
     }
   ],
   "corner": [
     {
       "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Burnley FC",
-      "kickoff": "03/03 19:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.75,
-        "xg": 2.88,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Premier League",
       "home": "Leeds United FC",
       "away": "Sunderland AFC",
       "kickoff": "03/03 19:30",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.55,
-        "dnb_home": 0.62,
-        "xg": 2.79,
-        "expected_corners": 11.7
+        "over25": 0.69,
+        "corners95": 0.65,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.14,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Brentford FC",
+      "kickoff": "03/03 19:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.55,
+        "cards_away": 0.54,
+        "dnb_home": 0.72,
+        "xg": 2.88,
+        "expected_corners": 11.8
       }
     },
     {
@@ -114,13 +99,13 @@
       "away": "Hull City AFC",
       "kickoff": "03/03 19:45",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.63,
         "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 2.76,
-        "expected_corners": 9.0
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.58,
+        "xg": 2.86,
+        "expected_corners": 10.0
       }
     },
     {
@@ -129,45 +114,45 @@
       "away": "Liverpool FC",
       "kickoff": "03/03 20:15",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.55,
-        "dnb_home": 0.6,
-        "xg": 2.7,
-        "expected_corners": 9.0
+        "over25": 0.72,
+        "corners95": 0.65,
+        "cards_home": 0.62,
+        "cards_away": 0.58,
+        "dnb_home": 0.61,
+        "xg": 2.54,
+        "expected_corners": 8.7
       }
     }
   ],
   "hot": [
     {
       "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Burnley FC",
+      "home": "Leeds United FC",
+      "away": "Sunderland AFC",
       "kickoff": "03/03 19:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.75,
-        "xg": 2.88,
-        "expected_corners": 9.8
+        "over25": 0.69,
+        "corners95": 0.65,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.14,
+        "expected_corners": 11.5
       }
     },
     {
-      "league": "Championship",
-      "home": "Ipswich Town FC",
-      "away": "Hull City AFC",
-      "kickoff": "03/03 19:45",
+      "league": "Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Brentford FC",
+      "kickoff": "03/03 19:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 2.76,
-        "expected_corners": 9.0
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.55,
+        "cards_away": 0.54,
+        "dnb_home": 0.72,
+        "xg": 2.88,
+        "expected_corners": 11.8
       }
     }
   ]
