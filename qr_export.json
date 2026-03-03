@@ -1,21 +1,6 @@
 {
-  "updated_at": "03/03 12:57",
+  "updated_at": "03/03 14:02",
   "value": [
-    {
-      "league": "Premier League",
-      "home": "Leeds United FC",
-      "away": "Sunderland AFC",
-      "kickoff": "03/03 19:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.58,
-        "cards_home": 0.56,
-        "cards_away": 0.5,
-        "dnb_home": 0.66,
-        "xg": 3.02,
-        "expected_corners": 11.3
-      }
-    },
     {
       "league": "Championship",
       "home": "Ipswich Town FC",
@@ -23,12 +8,59 @@
       "kickoff": "03/03 19:45",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.57,
-        "cards_away": 0.67,
-        "dnb_home": 0.63,
-        "xg": 3.06,
-        "expected_corners": 9.3
+        "corners95": 0.57,
+        "cards_home": 0.56,
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 2.23,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Premier League",
+      "home": "Everton FC",
+      "away": "Burnley FC",
+      "kickoff": "03/03 19:30",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.67,
+        "cards_home": 0.55,
+        "cards_away": 0.58,
+        "dnb_home": 0.74,
+        "xg": 3.3,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Brentford FC",
+      "kickoff": "03/03 19:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.59,
+        "dnb_home": 0.59,
+        "xg": 3.08,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Leeds United FC",
+      "away": "Sunderland AFC",
+      "kickoff": "03/03 19:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.6,
+        "dnb_home": 0.58,
+        "xg": 2.69,
+        "expected_corners": 9.5
       }
     },
     {
@@ -37,62 +69,46 @@
       "away": "Liverpool FC",
       "kickoff": "03/03 20:15",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.56,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.56,
-        "xg": 2.97,
-        "expected_corners": 10.5
+        "over25": 0.62,
+        "corners95": 0.63,
+        "cards_home": 0.67,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.4,
+        "expected_corners": 9.6
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "AFC Bournemouth",
-      "away": "Brentford FC",
-      "kickoff": "03/03 19:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.53,
-        "cards_away": 0.61,
-        "dnb_home": 0.64,
-        "xg": 3.09,
-        "expected_corners": 9.6
-      }
-    },
+  "hot": [
     {
       "league": "Premier League",
       "home": "Everton FC",
       "away": "Burnley FC",
       "kickoff": "03/03 19:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.59,
-        "dnb_home": 0.65,
-        "xg": 2.78,
-        "expected_corners": 11.0
+        "over25": 0.56,
+        "corners95": 0.67,
+        "cards_home": 0.55,
+        "cards_away": 0.58,
+        "dnb_home": 0.74,
+        "xg": 3.3,
+        "expected_corners": 12.8
       }
     },
     {
-      "league": "Championship",
-      "home": "Ipswich Town FC",
-      "away": "Hull City AFC",
-      "kickoff": "03/03 19:45",
+      "league": "Premier League",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Liverpool FC",
+      "kickoff": "03/03 20:15",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.57,
-        "cards_away": 0.67,
-        "dnb_home": 0.63,
-        "xg": 3.06,
-        "expected_corners": 9.3
+        "over25": 0.62,
+        "corners95": 0.63,
+        "cards_home": 0.67,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.4,
+        "expected_corners": 9.6
       }
     }
-  ],
-  "hot": []
+  ]
 }
