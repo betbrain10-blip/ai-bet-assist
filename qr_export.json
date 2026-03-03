@@ -1,6 +1,99 @@
 {
-  "updated_at": "02/03 23:50",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "03/03 02:07",
+  "value": [
+    {
+      "league": "Premier League",
+      "home": "Everton FC",
+      "away": "Burnley FC",
+      "kickoff": "03/03 19:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.57,
+        "cards_home": 0.66,
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 3.09,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Leeds United FC",
+      "away": "Sunderland AFC",
+      "kickoff": "03/03 19:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.55,
+        "cards_home": 0.54,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 2.22,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Liverpool FC",
+      "kickoff": "03/03 20:15",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.9,
+        "expected_corners": 8.7
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Premier League",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Liverpool FC",
+      "kickoff": "03/03 20:15",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.9,
+        "expected_corners": 8.7
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Premier League",
+      "home": "Everton FC",
+      "away": "Burnley FC",
+      "kickoff": "03/03 19:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.57,
+        "cards_home": 0.66,
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 3.09,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Liverpool FC",
+      "kickoff": "03/03 20:15",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.9,
+        "expected_corners": 8.7
+      }
+    }
+  ]
 }
