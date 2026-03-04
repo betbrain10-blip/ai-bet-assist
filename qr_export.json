@@ -1,5 +1,5 @@
 {
-  "updated_at": "04/03 12:56",
+  "updated_at": "04/03 13:59",
   "value": [
     {
       "league": "Primera Division",
@@ -8,89 +8,12 @@
       "kickoff": "04/03 18:00",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.58,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.59,
-        "xg": 2.19,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Manchester City FC",
-      "away": "Nottingham Forest FC",
-      "kickoff": "04/03 19:30",
-      "markets": {
-        "over25": 0.67,
         "corners95": 0.69,
-        "cards_home": 0.55,
+        "cards_home": 0.51,
         "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.75,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Chelsea FC",
-      "kickoff": "04/03 19:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.58,
-        "cards_home": 0.6,
-        "cards_away": 0.62,
-        "dnb_home": 0.71,
-        "xg": 2.82,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Newcastle United FC",
-      "away": "Manchester United FC",
-      "kickoff": "04/03 20:15",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.55,
-        "cards_home": 0.57,
-        "cards_away": 0.62,
-        "dnb_home": 0.58,
-        "xg": 2.47,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Carabobo FC",
-      "away": "CS Cristal",
-      "kickoff": "04/03 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.58,
-        "cards_home": 0.5,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 2.99,
-        "expected_corners": 11.9
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "Manchester City FC",
-      "away": "Nottingham Forest FC",
-      "kickoff": "04/03 19:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.55,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.75,
-        "expected_corners": 11.5
+        "dnb_home": 0.6,
+        "xg": 3.02,
+        "expected_corners": 11.3
       }
     },
     {
@@ -99,13 +22,45 @@
       "away": "Arsenal FC",
       "kickoff": "04/03 19:30",
       "markets": {
-        "over25": 0.62,
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.57,
+        "xg": 3.17,
+        "expected_corners": 8.7
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Real Oviedo",
+      "kickoff": "04/03 18:00",
+      "markets": {
+        "over25": 0.7,
         "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
         "dnb_home": 0.6,
-        "xg": 2.76,
-        "expected_corners": 10.0
+        "xg": 3.02,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Arsenal FC",
+      "kickoff": "04/03 19:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.57,
+        "xg": 3.17,
+        "expected_corners": 8.7
       }
     },
     {
@@ -115,12 +70,12 @@
       "kickoff": "04/03 19:30",
       "markets": {
         "over25": 0.58,
-        "corners95": 0.7,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.55,
-        "xg": 3.24,
-        "expected_corners": 10.4
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.7,
+        "xg": 2.25,
+        "expected_corners": 9.9
       }
     },
     {
@@ -129,45 +84,28 @@
       "away": "West Ham United FC",
       "kickoff": "04/03 19:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.66,
-        "cards_away": 0.61,
-        "dnb_home": 0.65,
-        "xg": 2.34,
-        "expected_corners": 10.3
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Premier League",
-      "home": "Manchester City FC",
-      "away": "Nottingham Forest FC",
-      "kickoff": "04/03 19:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.55,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.75,
-        "expected_corners": 11.5
+        "over25": 0.57,
+        "corners95": 0.7,
+        "cards_home": 0.58,
+        "cards_away": 0.5,
+        "dnb_home": 0.59,
+        "xg": 3.3,
+        "expected_corners": 9.2
       }
     },
     {
       "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Chelsea FC",
-      "kickoff": "04/03 19:30",
+      "home": "Newcastle United FC",
+      "away": "Manchester United FC",
+      "kickoff": "04/03 20:15",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.58,
-        "cards_home": 0.6,
-        "cards_away": 0.62,
-        "dnb_home": 0.71,
-        "xg": 2.82,
-        "expected_corners": 12.6
+        "over25": 0.62,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.6,
+        "dnb_home": 0.72,
+        "xg": 2.79,
+        "expected_corners": 10.7
       }
     },
     {
@@ -176,13 +114,60 @@
       "away": "CS Cristal",
       "kickoff": "04/03 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.58,
-        "cards_home": 0.5,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 2.99,
-        "expected_corners": 11.9
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.5,
+        "dnb_home": 0.62,
+        "xg": 3.01,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Bundesliga",
+      "home": "Hamburger SV",
+      "away": "Bayer 04 Leverkusen",
+      "kickoff": "04/03 19:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.7,
+        "xg": 2.25,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Aston Villa FC",
+      "away": "Chelsea FC",
+      "kickoff": "04/03 19:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.56,
+        "cards_home": 0.67,
+        "cards_away": 0.64,
+        "dnb_home": 0.74,
+        "xg": 2.29,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Newcastle United FC",
+      "away": "Manchester United FC",
+      "kickoff": "04/03 20:15",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.6,
+        "dnb_home": 0.72,
+        "xg": 2.79,
+        "expected_corners": 10.7
       }
     }
   ]
