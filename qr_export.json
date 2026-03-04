@@ -1,22 +1,6 @@
 {
-  "updated_at": "04/03 20:32",
-  "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Carabobo FC",
-      "away": "CS Cristal",
-      "kickoff": "04/03 22:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.59,
-        "dnb_home": 0.63,
-        "xg": 2.97,
-        "expected_corners": 9.7
-      }
-    }
-  ],
+  "updated_at": "04/03 21:34",
+  "value": [],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -24,13 +8,13 @@
       "away": "CS Cristal",
       "kickoff": "04/03 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.59,
-        "dnb_home": 0.63,
-        "xg": 2.97,
-        "expected_corners": 9.7
+        "over25": 0.6,
+        "corners95": 0.64,
+        "cards_home": 0.5,
+        "cards_away": 0.53,
+        "dnb_home": 0.57,
+        "xg": 2.71,
+        "expected_corners": 9.4
       }
     }
   ],
