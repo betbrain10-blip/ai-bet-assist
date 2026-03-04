@@ -1,51 +1,36 @@
 {
-  "updated_at": "04/03 19:38",
+  "updated_at": "04/03 20:32",
   "value": [
-    {
-      "league": "Premier League",
-      "home": "Newcastle United FC",
-      "away": "Manchester United FC",
-      "kickoff": "04/03 20:15",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.56,
-        "xg": 2.44,
-        "expected_corners": 10.1
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "Newcastle United FC",
-      "away": "Manchester United FC",
-      "kickoff": "04/03 20:15",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.56,
-        "xg": 2.44,
-        "expected_corners": 10.1
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "Carabobo FC",
       "away": "CS Cristal",
       "kickoff": "04/03 22:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.55,
-        "xg": 3.07,
-        "expected_corners": 9.1
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.59,
+        "dnb_home": 0.63,
+        "xg": 2.97,
+        "expected_corners": 9.7
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Carabobo FC",
+      "away": "CS Cristal",
+      "kickoff": "04/03 22:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.59,
+        "dnb_home": 0.63,
+        "xg": 2.97,
+        "expected_corners": 9.7
       }
     }
   ],
