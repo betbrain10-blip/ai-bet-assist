@@ -1,18 +1,18 @@
 {
-  "updated_at": "04/03 04:20",
+  "updated_at": "04/03 05:29",
   "value": [
     {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Real Oviedo",
-      "kickoff": "04/03 18:00",
+      "league": "Premier League",
+      "home": "Fulham FC",
+      "away": "West Ham United FC",
+      "kickoff": "04/03 19:30",
       "markets": {
-        "over25": 0.64,
+        "over25": 0.72,
         "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.64,
-        "xg": 3.26,
+        "cards_home": 0.51,
+        "cards_away": 0.54,
+        "dnb_home": 0.71,
+        "xg": 3.11,
         "expected_corners": 11.5
       }
     },
@@ -22,75 +22,13 @@
       "away": "Chelsea FC",
       "kickoff": "04/03 19:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
+        "over25": 0.67,
+        "corners95": 0.64,
         "cards_home": 0.67,
         "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 2.52,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Carabobo FC",
-      "away": "CS Cristal",
-      "kickoff": "04/03 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.65,
-        "cards_home": 0.59,
-        "cards_away": 0.63,
-        "dnb_home": 0.68,
-        "xg": 2.92,
-        "expected_corners": 10.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "Fulham FC",
-      "away": "West Ham United FC",
-      "kickoff": "04/03 19:30",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.65,
         "dnb_home": 0.6,
-        "xg": 2.26,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Chelsea FC",
-      "kickoff": "04/03 19:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 2.52,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Brighton & Hove Albion FC",
-      "away": "Arsenal FC",
-      "kickoff": "04/03 19:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.58,
-        "dnb_home": 0.61,
-        "xg": 2.85,
-        "expected_corners": 10.3
+        "xg": 3.01,
+        "expected_corners": 11.7
       }
     },
     {
@@ -99,13 +37,13 @@
       "away": "Bayer 04 Leverkusen",
       "kickoff": "04/03 19:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.61,
+        "over25": 0.64,
+        "corners95": 0.55,
         "cards_home": 0.52,
-        "cards_away": 0.63,
-        "dnb_home": 0.58,
-        "xg": 2.69,
-        "expected_corners": 11.9
+        "cards_away": 0.58,
+        "dnb_home": 0.68,
+        "xg": 2.48,
+        "expected_corners": 9.8
       }
     },
     {
@@ -114,13 +52,13 @@
       "away": "Nottingham Forest FC",
       "kickoff": "04/03 19:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 3.27,
-        "expected_corners": 12.4
+        "over25": 0.65,
+        "corners95": 0.59,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.61,
+        "xg": 3.29,
+        "expected_corners": 10.8
       }
     },
     {
@@ -129,13 +67,60 @@
       "away": "Manchester United FC",
       "kickoff": "04/03 20:15",
       "markets": {
-        "over25": 0.58,
+        "over25": 0.68,
+        "corners95": 0.57,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.57,
+        "xg": 3.29,
+        "expected_corners": 9.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Real Oviedo",
+      "kickoff": "04/03 18:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.58,
+        "dnb_home": 0.73,
+        "xg": 3.3,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Aston Villa FC",
+      "away": "Chelsea FC",
+      "kickoff": "04/03 19:30",
+      "markets": {
+        "over25": 0.67,
         "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.54,
-        "dnb_home": 0.56,
-        "xg": 2.57,
-        "expected_corners": 10.0
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.6,
+        "xg": 3.01,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Arsenal FC",
+      "kickoff": "04/03 19:30",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.55,
+        "dnb_home": 0.67,
+        "xg": 2.49,
+        "expected_corners": 8.9
       }
     },
     {
@@ -144,30 +129,45 @@
       "away": "CS Cristal",
       "kickoff": "04/03 22:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.65,
-        "cards_home": 0.59,
-        "cards_away": 0.63,
-        "dnb_home": 0.68,
-        "xg": 2.92,
-        "expected_corners": 10.8
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.64,
+        "dnb_home": 0.65,
+        "xg": 2.73,
+        "expected_corners": 12.3
       }
     }
   ],
   "hot": [
     {
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Real Oviedo",
+      "kickoff": "04/03 18:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.58,
+        "dnb_home": 0.73,
+        "xg": 3.3,
+        "expected_corners": 11.3
+      }
+    },
+    {
       "league": "Premier League",
-      "home": "Manchester City FC",
-      "away": "Nottingham Forest FC",
+      "home": "Fulham FC",
+      "away": "West Ham United FC",
       "kickoff": "04/03 19:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 3.27,
-        "expected_corners": 12.4
+        "over25": 0.72,
+        "corners95": 0.6,
+        "cards_home": 0.51,
+        "cards_away": 0.54,
+        "dnb_home": 0.71,
+        "xg": 3.11,
+        "expected_corners": 11.5
       }
     }
   ]
