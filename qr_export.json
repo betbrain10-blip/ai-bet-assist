@@ -1,5 +1,5 @@
 {
-  "updated_at": "05/03 13:00",
+  "updated_at": "05/03 14:11",
   "value": [
     {
       "league": "Premier League",
@@ -7,32 +7,16 @@
       "away": "Crystal Palace FC",
       "kickoff": "05/03 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.59,
-        "dnb_home": 0.62,
-        "xg": 2.31,
-        "expected_corners": 9.0
+        "over25": 0.63,
+        "corners95": 0.59,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.68,
+        "xg": 2.48,
+        "expected_corners": 11.9
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "Tottenham Hotspur FC",
-      "away": "Crystal Palace FC",
-      "kickoff": "05/03 20:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.59,
-        "dnb_home": 0.62,
-        "xg": 2.31,
-        "expected_corners": 9.0
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
