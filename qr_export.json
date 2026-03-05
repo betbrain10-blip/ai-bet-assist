@@ -1,5 +1,5 @@
 {
-  "updated_at": "05/03 08:41",
+  "updated_at": "05/03 09:42",
   "value": [],
   "corner": [
     {
@@ -8,13 +8,13 @@
       "away": "Crystal Palace FC",
       "kickoff": "05/03 20:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.37,
-        "expected_corners": 9.9
+        "over25": 0.55,
+        "corners95": 0.68,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.75,
+        "xg": 2.67,
+        "expected_corners": 11.3
       }
     }
   ],
@@ -25,13 +25,13 @@
       "away": "Crystal Palace FC",
       "kickoff": "05/03 20:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.37,
-        "expected_corners": 9.9
+        "over25": 0.55,
+        "corners95": 0.68,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.75,
+        "xg": 2.67,
+        "expected_corners": 11.3
       }
     }
   ]
