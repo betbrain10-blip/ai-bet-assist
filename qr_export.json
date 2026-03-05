@@ -1,82 +1,52 @@
 {
-  "updated_at": "05/03 02:04",
+  "updated_at": "05/03 04:23",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "O'Higgins FC",
-      "away": "CD Tolima",
-      "kickoff": "05/03 00:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 3.25,
-        "expected_corners": 11.7
-      }
-    },
     {
       "league": "Premier League",
       "home": "Tottenham Hotspur FC",
       "away": "Crystal Palace FC",
       "kickoff": "05/03 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
+        "over25": 0.69,
+        "corners95": 0.67,
         "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 2.23,
-        "expected_corners": 12.3
+        "cards_away": 0.53,
+        "dnb_home": 0.72,
+        "xg": 3.36,
+        "expected_corners": 11.7
       }
     }
   ],
   "corner": [
     {
-      "league": "Copa Libertadores",
-      "home": "O'Higgins FC",
-      "away": "CD Tolima",
-      "kickoff": "05/03 00:30",
+      "league": "Premier League",
+      "home": "Tottenham Hotspur FC",
+      "away": "Crystal Palace FC",
+      "kickoff": "05/03 20:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.53,
         "dnb_home": 0.72,
-        "xg": 3.25,
+        "xg": 3.36,
         "expected_corners": 11.7
       }
-    },
+    }
+  ],
+  "hot": [
     {
       "league": "Premier League",
       "home": "Tottenham Hotspur FC",
       "away": "Crystal Palace FC",
       "kickoff": "05/03 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
+        "over25": 0.69,
+        "corners95": 0.67,
         "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 2.23,
-        "expected_corners": 12.3
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "O'Higgins FC",
-      "away": "CD Tolima",
-      "kickoff": "05/03 00:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
+        "cards_away": 0.53,
         "dnb_home": 0.72,
-        "xg": 3.25,
+        "xg": 3.36,
         "expected_corners": 11.7
       }
     }
