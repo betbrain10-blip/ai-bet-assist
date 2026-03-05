@@ -1,22 +1,6 @@
 {
-  "updated_at": "05/03 19:42",
+  "updated_at": "05/03 20:36",
   "value": [],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "Tottenham Hotspur FC",
-      "away": "Crystal Palace FC",
-      "kickoff": "05/03 20:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.53,
-        "dnb_home": 0.59,
-        "xg": 3.01,
-        "expected_corners": 9.4
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
