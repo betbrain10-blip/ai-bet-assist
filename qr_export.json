@@ -1,34 +1,19 @@
 {
-  "updated_at": "06/03 13:56",
+  "updated_at": "06/03 14:39",
   "value": [
     {
-      "league": "Eredivisie",
-      "home": "Heracles Almelo",
-      "away": "FC Utrecht",
-      "kickoff": "06/03 19:00",
+      "league": "Bundesliga",
+      "home": "FC Bayern München",
+      "away": "Borussia Mönchengladbach",
+      "kickoff": "06/03 19:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.56,
-        "xg": 3.01,
-        "expected_corners": 8.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "AS Monaco FC",
-      "kickoff": "06/03 19:45",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.8,
-        "expected_corners": 10.2
+        "over25": 0.64,
+        "corners95": 0.57,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.69,
+        "xg": 2.62,
+        "expected_corners": 9.4
       }
     },
     {
@@ -37,13 +22,43 @@
       "away": "Real Madrid CF",
       "kickoff": "06/03 20:00",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.71,
         "corners95": 0.6,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.57,
-        "xg": 2.86,
-        "expected_corners": 12.3
+        "cards_home": 0.51,
+        "cards_away": 0.61,
+        "dnb_home": 0.61,
+        "xg": 3.27,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Preston North End FC",
+      "away": "Oxford United FC",
+      "kickoff": "06/03 20:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.57,
+        "dnb_home": 0.75,
+        "xg": 2.23,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Famalicão",
+      "away": "FC Arouca",
+      "kickoff": "06/03 20:15",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.64,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.67,
+        "xg": 2.85,
+        "expected_corners": 12.8
       }
     }
   ],
@@ -54,13 +69,13 @@
       "away": "FC Utrecht",
       "kickoff": "06/03 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.56,
-        "xg": 3.01,
-        "expected_corners": 8.5
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.57,
+        "dnb_home": 0.67,
+        "xg": 2.14,
+        "expected_corners": 9.9
       }
     },
     {
@@ -69,45 +84,13 @@
       "away": "AS Monaco FC",
       "kickoff": "06/03 19:45",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.8,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "FC Arouca",
-      "kickoff": "06/03 20:15",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.58,
-        "dnb_home": 0.63,
-        "xg": 3.11,
-        "expected_corners": 10.8
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "AS Monaco FC",
-      "kickoff": "06/03 19:45",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.8,
-        "expected_corners": 10.2
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 3.07,
+        "expected_corners": 11.2
       }
     },
     {
@@ -116,13 +99,75 @@
       "away": "Oxford United FC",
       "kickoff": "06/03 20:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.47,
-        "expected_corners": 10.9
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.57,
+        "dnb_home": 0.75,
+        "xg": 2.23,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Famalicão",
+      "away": "FC Arouca",
+      "kickoff": "06/03 20:15",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.64,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.67,
+        "xg": 2.85,
+        "expected_corners": 12.8
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Bundesliga",
+      "home": "FC Bayern München",
+      "away": "Borussia Mönchengladbach",
+      "kickoff": "06/03 19:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.57,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.69,
+        "xg": 2.62,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Paris Saint-Germain FC",
+      "away": "AS Monaco FC",
+      "kickoff": "06/03 19:45",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 3.07,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Preston North End FC",
+      "away": "Oxford United FC",
+      "kickoff": "06/03 20:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.57,
+        "dnb_home": 0.75,
+        "xg": 2.23,
+        "expected_corners": 9.7
       }
     }
   ]
