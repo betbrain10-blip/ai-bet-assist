@@ -1,34 +1,19 @@
 {
-  "updated_at": "06/03 11:53",
+  "updated_at": "06/03 12:56",
   "value": [
     {
-      "league": "Bundesliga",
-      "home": "FC Bayern München",
-      "away": "Borussia Mönchengladbach",
-      "kickoff": "06/03 19:30",
+      "league": "Eredivisie",
+      "home": "Heracles Almelo",
+      "away": "FC Utrecht",
+      "kickoff": "06/03 19:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.67,
-        "xg": 2.15,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "SSC Napoli",
-      "away": "Torino FC",
-      "kickoff": "06/03 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 2.48,
-        "expected_corners": 12.5
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.67,
+        "dnb_home": 0.58,
+        "xg": 2.11,
+        "expected_corners": 9.2
       }
     },
     {
@@ -37,28 +22,13 @@
       "away": "AS Monaco FC",
       "kickoff": "06/03 19:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.6,
-        "dnb_home": 0.59,
-        "xg": 2.37,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Preston North End FC",
-      "away": "Oxford United FC",
-      "kickoff": "06/03 20:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.34,
-        "expected_corners": 12.8
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.55,
+        "dnb_home": 0.64,
+        "xg": 3.27,
+        "expected_corners": 10.2
       }
     },
     {
@@ -67,45 +37,13 @@
       "away": "Real Madrid CF",
       "kickoff": "06/03 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.55,
-        "cards_home": 0.67,
-        "cards_away": 0.64,
-        "dnb_home": 0.55,
-        "xg": 2.59,
-        "expected_corners": 12.7
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Serie A",
-      "home": "SSC Napoli",
-      "away": "Torino FC",
-      "kickoff": "06/03 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 2.48,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "AS Monaco FC",
-      "kickoff": "06/03 19:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.6,
-        "dnb_home": 0.59,
-        "xg": 2.37,
-        "expected_corners": 9.5
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.5,
+        "dnb_home": 0.63,
+        "xg": 3.09,
+        "expected_corners": 8.7
       }
     },
     {
@@ -114,13 +52,13 @@
       "away": "Oxford United FC",
       "kickoff": "06/03 20:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.34,
-        "expected_corners": 12.8
+        "over25": 0.69,
+        "corners95": 0.6,
+        "cards_home": 0.51,
+        "cards_away": 0.6,
+        "dnb_home": 0.66,
+        "xg": 2.57,
+        "expected_corners": 10.3
       }
     },
     {
@@ -129,45 +67,107 @@
       "away": "FC Arouca",
       "kickoff": "06/03 20:15",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.65,
+        "cards_away": 0.62,
+        "dnb_home": 0.65,
+        "xg": 3.3,
+        "expected_corners": 8.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Eredivisie",
+      "home": "Heracles Almelo",
+      "away": "FC Utrecht",
+      "kickoff": "06/03 19:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.67,
+        "dnb_home": 0.58,
+        "xg": 2.11,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "FC Bayern München",
+      "away": "Borussia Mönchengladbach",
+      "kickoff": "06/03 19:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.64,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Paris Saint-Germain FC",
+      "away": "AS Monaco FC",
+      "kickoff": "06/03 19:45",
+      "markets": {
+        "over25": 0.67,
         "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.61,
-        "dnb_home": 0.66,
-        "xg": 2.34,
-        "expected_corners": 10.4
+        "cards_home": 0.6,
+        "cards_away": 0.55,
+        "dnb_home": 0.64,
+        "xg": 3.27,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RC Celta de Vigo",
+      "away": "Real Madrid CF",
+      "kickoff": "06/03 20:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.5,
+        "dnb_home": 0.63,
+        "xg": 3.09,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Famalicão",
+      "away": "FC Arouca",
+      "kickoff": "06/03 20:15",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.65,
+        "cards_away": 0.62,
+        "dnb_home": 0.65,
+        "xg": 3.3,
+        "expected_corners": 8.8
       }
     }
   ],
   "hot": [
     {
-      "league": "Serie A",
-      "home": "SSC Napoli",
-      "away": "Torino FC",
-      "kickoff": "06/03 19:45",
+      "league": "Bundesliga",
+      "home": "FC Bayern München",
+      "away": "Borussia Mönchengladbach",
+      "kickoff": "06/03 19:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.56,
+        "over25": 0.61,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.64,
         "dnb_home": 0.72,
-        "xg": 2.48,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Preston North End FC",
-      "away": "Oxford United FC",
-      "kickoff": "06/03 20:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.34,
-        "expected_corners": 12.8
+        "xg": 2.64,
+        "expected_corners": 9.5
       }
     }
   ]
