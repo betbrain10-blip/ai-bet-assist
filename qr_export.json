@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/03 19:21",
+  "updated_at": "07/03 19:43",
   "value": [
     {
       "league": "Serie A",
@@ -8,27 +8,12 @@
       "kickoff": "07/03 19:45",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.59,
-        "cards_home": 0.57,
-        "cards_away": 0.66,
-        "dnb_home": 0.65,
-        "xg": 3.33,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "SBV Excelsior",
-      "away": "SC Heerenveen",
-      "kickoff": "07/03 20:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.81,
-        "expected_corners": 9.2
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.56,
+        "dnb_home": 0.59,
+        "xg": 2.54,
+        "expected_corners": 12.8
       }
     },
     {
@@ -37,12 +22,12 @@
       "away": "FC Barcelona",
       "kickoff": "07/03 20:00",
       "markets": {
-        "over25": 0.64,
+        "over25": 0.63,
         "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.67,
+        "cards_home": 0.6,
+        "cards_away": 0.53,
+        "dnb_home": 0.75,
+        "xg": 3.38,
         "expected_corners": 12.4
       }
     },
@@ -52,30 +37,45 @@
       "away": "Olympique de Marseille",
       "kickoff": "07/03 20:05",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.61,
-        "xg": 3.24,
-        "expected_corners": 11.6
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.67,
+        "xg": 2.2,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "GD Estoril Praia",
+      "away": "Casa Pia AC",
+      "kickoff": "07/03 20:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.67,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 2.78,
+        "expected_corners": 8.9
       }
     }
   ],
   "corner": [
     {
-      "league": "Eredivisie",
-      "home": "SBV Excelsior",
-      "away": "SC Heerenveen",
-      "kickoff": "07/03 20:00",
+      "league": "Serie A",
+      "home": "Juventus FC",
+      "away": "AC Pisa 1909",
+      "kickoff": "07/03 19:45",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.81,
-        "expected_corners": 9.2
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.56,
+        "dnb_home": 0.59,
+        "xg": 2.54,
+        "expected_corners": 12.8
       }
     },
     {
@@ -84,12 +84,12 @@
       "away": "FC Barcelona",
       "kickoff": "07/03 20:00",
       "markets": {
-        "over25": 0.64,
+        "over25": 0.63,
         "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.67,
+        "cards_home": 0.6,
+        "cards_away": 0.53,
+        "dnb_home": 0.75,
+        "xg": 3.38,
         "expected_corners": 12.4
       }
     },
@@ -99,13 +99,28 @@
       "away": "Olympique de Marseille",
       "kickoff": "07/03 20:05",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.61,
-        "xg": 3.24,
-        "expected_corners": 11.6
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.67,
+        "xg": 2.2,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "GD Estoril Praia",
+      "away": "Casa Pia AC",
+      "kickoff": "07/03 20:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.67,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 2.78,
+        "expected_corners": 8.9
       }
     }
   ],
@@ -116,12 +131,12 @@
       "away": "FC Barcelona",
       "kickoff": "07/03 20:00",
       "markets": {
-        "over25": 0.64,
+        "over25": 0.63,
         "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.67,
+        "cards_home": 0.6,
+        "cards_away": 0.53,
+        "dnb_home": 0.75,
+        "xg": 3.38,
         "expected_corners": 12.4
       }
     },
@@ -131,13 +146,13 @@
       "away": "Casa Pia AC",
       "kickoff": "07/03 20:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.59,
-        "cards_home": 0.63,
-        "cards_away": 0.58,
-        "dnb_home": 0.73,
-        "xg": 3.36,
-        "expected_corners": 9.2
+        "over25": 0.72,
+        "corners95": 0.67,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 2.78,
+        "expected_corners": 8.9
       }
     }
   ]
