@@ -1,38 +1,6 @@
 {
-  "updated_at": "07/03 20:25",
-  "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "GD Estoril Praia",
-      "away": "Casa Pia AC",
-      "kickoff": "07/03 20:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.56,
-        "dnb_home": 0.65,
-        "xg": 3.33,
-        "expected_corners": 11.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "GD Estoril Praia",
-      "away": "Casa Pia AC",
-      "kickoff": "07/03 20:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.56,
-        "dnb_home": 0.65,
-        "xg": 3.33,
-        "expected_corners": 11.8
-      }
-    }
-  ],
+  "updated_at": "07/03 20:48",
+  "value": [],
+  "corner": [],
   "hot": []
 }
