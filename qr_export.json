@@ -1,68 +1,51 @@
 {
-  "updated_at": "08/03 19:23",
+  "updated_at": "08/03 19:44",
   "value": [
-    {
-      "league": "Ligue 1",
-      "home": "Olympique Lyonnais",
-      "away": "Paris FC",
-      "kickoff": "08/03 19:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.59,
-        "cards_home": 0.67,
-        "cards_away": 0.52,
-        "dnb_home": 0.57,
-        "xg": 2.96,
-        "expected_corners": 9.2
-      }
-    },
     {
       "league": "Primeira Liga",
       "home": "CD Santa Clara",
       "away": "Vitória SC",
       "kickoff": "08/03 20:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.56,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.58,
-        "xg": 3.21,
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.68,
+        "xg": 2.48,
         "expected_corners": 9.2
       }
     }
   ],
   "corner": [
     {
-      "league": "Serie A",
-      "home": "AC Milan",
-      "away": "FC Internazionale Milano",
+      "league": "Ligue 1",
+      "home": "Olympique Lyonnais",
+      "away": "Paris FC",
       "kickoff": "08/03 19:45",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.72,
-        "expected_corners": 9.2
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.72,
+        "xg": 2.9,
+        "expected_corners": 9.4
       }
-    }
-  ],
-  "hot": [
+    },
     {
       "league": "Serie A",
       "home": "AC Milan",
       "away": "FC Internazionale Milano",
       "kickoff": "08/03 19:45",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.72,
-        "expected_corners": 9.2
+        "over25": 0.56,
+        "corners95": 0.61,
+        "cards_home": 0.65,
+        "cards_away": 0.58,
+        "dnb_home": 0.68,
+        "xg": 2.34,
+        "expected_corners": 12.7
       }
     },
     {
@@ -71,13 +54,45 @@
       "away": "Deportivo Alavés",
       "kickoff": "08/03 20:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.58,
+        "over25": 0.55,
+        "corners95": 0.61,
         "cards_home": 0.65,
         "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 3.23,
-        "expected_corners": 11.4
+        "dnb_home": 0.58,
+        "xg": 2.9,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Santa Clara",
+      "away": "Vitória SC",
+      "kickoff": "08/03 20:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.68,
+        "xg": 2.48,
+        "expected_corners": 9.2
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Ligue 1",
+      "home": "Olympique Lyonnais",
+      "away": "Paris FC",
+      "kickoff": "08/03 19:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.72,
+        "xg": 2.9,
+        "expected_corners": 9.4
       }
     }
   ]
