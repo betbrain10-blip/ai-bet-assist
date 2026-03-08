@@ -1,19 +1,19 @@
 {
-  "updated_at": "08/03 17:47",
+  "updated_at": "08/03 18:34",
   "value": [
     {
-      "league": "Serie A",
-      "home": "AC Milan",
-      "away": "FC Internazionale Milano",
-      "kickoff": "08/03 19:45",
+      "league": "Eredivisie",
+      "home": "NEC",
+      "away": "FC Volendam",
+      "kickoff": "08/03 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.63,
-        "dnb_home": 0.58,
-        "xg": 2.64,
-        "expected_corners": 11.4
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.66,
+        "dnb_home": 0.66,
+        "xg": 3.0,
+        "expected_corners": 10.5
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "Paris FC",
       "kickoff": "08/03 19:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.58,
-        "dnb_home": 0.59,
-        "xg": 2.18,
-        "expected_corners": 12.8
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.65,
+        "xg": 2.17,
+        "expected_corners": 10.9
       }
     },
     {
@@ -37,13 +37,13 @@
       "away": "Deportivo Alavés",
       "kickoff": "08/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.68,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.55,
-        "expected_corners": 11.6
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.66,
+        "cards_away": 0.56,
+        "dnb_home": 0.61,
+        "xg": 2.72,
+        "expected_corners": 11.5
       }
     },
     {
@@ -52,30 +52,30 @@
       "away": "Vitória SC",
       "kickoff": "08/03 20:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.57,
-        "cards_home": 0.63,
+        "over25": 0.69,
+        "corners95": 0.59,
+        "cards_home": 0.56,
         "cards_away": 0.53,
         "dnb_home": 0.6,
-        "xg": 2.94,
-        "expected_corners": 9.9
+        "xg": 2.43,
+        "expected_corners": 10.4
       }
     }
   ],
   "corner": [
     {
-      "league": "Primeira Liga",
-      "home": "Sport Lisboa e Benfica",
-      "away": "FC Porto",
-      "kickoff": "08/03 18:00",
+      "league": "Eredivisie",
+      "home": "NEC",
+      "away": "FC Volendam",
+      "kickoff": "08/03 19:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.57,
-        "dnb_home": 0.55,
-        "xg": 2.49,
-        "expected_corners": 10.9
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.66,
+        "dnb_home": 0.66,
+        "xg": 3.0,
+        "expected_corners": 10.5
       }
     },
     {
@@ -84,13 +84,13 @@
       "away": "FC Internazionale Milano",
       "kickoff": "08/03 19:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.63,
-        "dnb_home": 0.58,
-        "xg": 2.64,
-        "expected_corners": 11.4
+        "over25": 0.58,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.68,
+        "dnb_home": 0.67,
+        "xg": 2.26,
+        "expected_corners": 9.6
       }
     },
     {
@@ -99,13 +99,13 @@
       "away": "Paris FC",
       "kickoff": "08/03 19:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.58,
-        "dnb_home": 0.59,
-        "xg": 2.18,
-        "expected_corners": 12.8
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.65,
+        "xg": 2.17,
+        "expected_corners": 10.9
       }
     },
     {
@@ -114,13 +114,13 @@
       "away": "Deportivo Alavés",
       "kickoff": "08/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.68,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.55,
-        "expected_corners": 11.6
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.66,
+        "cards_away": 0.56,
+        "dnb_home": 0.61,
+        "xg": 2.72,
+        "expected_corners": 11.5
       }
     }
   ],
