@@ -1,38 +1,6 @@
 {
-  "updated_at": "08/03 20:26",
-  "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "Vitória SC",
-      "kickoff": "08/03 20:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 2.17,
-        "expected_corners": 8.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "Vitória SC",
-      "kickoff": "08/03 20:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 2.17,
-        "expected_corners": 8.8
-      }
-    }
-  ],
+  "updated_at": "08/03 20:50",
+  "value": [],
+  "corner": [],
   "hot": []
 }
