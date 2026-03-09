@@ -1,34 +1,19 @@
 {
-  "updated_at": "09/03 09:07",
+  "updated_at": "09/03 10:11",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "09/03 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.12,
-        "expected_corners": 11.6
-      }
-    },
     {
       "league": "Primeira Liga",
       "home": "CD Tondela",
       "away": "Rio Ave FC",
       "kickoff": "09/03 20:15",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.64,
+        "over25": 0.7,
+        "corners95": 0.57,
+        "cards_home": 0.66,
         "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 3.04,
-        "expected_corners": 12.3
+        "dnb_home": 0.61,
+        "xg": 2.59,
+        "expected_corners": 9.5
       }
     }
   ],
@@ -39,13 +24,13 @@
       "away": "US Sassuolo Calcio",
       "kickoff": "09/03 19:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.12,
-        "expected_corners": 11.6
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.64,
+        "dnb_home": 0.64,
+        "xg": 2.21,
+        "expected_corners": 10.2
       }
     },
     {
@@ -54,61 +39,15 @@
       "away": "Real Oviedo",
       "kickoff": "09/03 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.52,
-        "dnb_home": 0.68,
-        "xg": 2.88,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "Rio Ave FC",
-      "kickoff": "09/03 20:15",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 3.04,
-        "expected_corners": 12.3
+        "over25": 0.58,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.54,
+        "dnb_home": 0.56,
+        "xg": 2.87,
+        "expected_corners": 9.9
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "09/03 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.12,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "Rio Ave FC",
-      "kickoff": "09/03 20:15",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 3.04,
-        "expected_corners": 12.3
-      }
-    }
-  ]
+  "hot": []
 }
