@@ -1,19 +1,19 @@
 {
-  "updated_at": "09/03 11:55",
+  "updated_at": "09/03 13:06",
   "value": [
     {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Real Oviedo",
-      "kickoff": "09/03 20:00",
+      "league": "Serie A",
+      "home": "SS Lazio",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "09/03 19:45",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
-        "cards_home": 0.66,
-        "cards_away": 0.62,
-        "dnb_home": 0.68,
-        "xg": 2.14,
-        "expected_corners": 12.3
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.54,
+        "cards_away": 0.5,
+        "dnb_home": 0.6,
+        "xg": 2.9,
+        "expected_corners": 10.1
       }
     }
   ],
@@ -24,13 +24,28 @@
       "away": "US Sassuolo Calcio",
       "kickoff": "09/03 19:45",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.65,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.62,
-        "xg": 2.72,
-        "expected_corners": 10.8
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.54,
+        "cards_away": 0.5,
+        "dnb_home": 0.6,
+        "xg": 2.9,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RCD Espanyol de Barcelona",
+      "away": "Real Oviedo",
+      "kickoff": "09/03 20:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.66,
+        "cards_home": 0.68,
+        "cards_away": 0.64,
+        "dnb_home": 0.6,
+        "xg": 2.99,
+        "expected_corners": 11.9
       }
     },
     {
@@ -39,13 +54,13 @@
       "away": "Rio Ave FC",
       "kickoff": "09/03 20:15",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.7,
-        "cards_home": 0.6,
+        "over25": 0.56,
+        "corners95": 0.69,
+        "cards_home": 0.63,
         "cards_away": 0.61,
-        "dnb_home": 0.61,
-        "xg": 2.75,
-        "expected_corners": 9.4
+        "dnb_home": 0.62,
+        "xg": 3.04,
+        "expected_corners": 10.6
       }
     }
   ],
