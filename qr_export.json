@@ -1,19 +1,34 @@
 {
-  "updated_at": "09/03 02:07",
+  "updated_at": "09/03 04:29",
   "value": [
+    {
+      "league": "Serie A",
+      "home": "SS Lazio",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "09/03 19:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.56,
+        "cards_home": 0.55,
+        "cards_away": 0.63,
+        "dnb_home": 0.67,
+        "xg": 2.26,
+        "expected_corners": 11.1
+      }
+    },
     {
       "league": "Primera Division",
       "home": "RCD Espanyol de Barcelona",
       "away": "Real Oviedo",
       "kickoff": "09/03 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.6,
-        "xg": 3.03,
-        "expected_corners": 11.2
+        "over25": 0.69,
+        "corners95": 0.57,
+        "cards_home": 0.64,
+        "cards_away": 0.54,
+        "dnb_home": 0.55,
+        "xg": 3.23,
+        "expected_corners": 9.8
       }
     },
     {
@@ -22,63 +37,16 @@
       "away": "Rio Ave FC",
       "kickoff": "09/03 20:15",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.65,
-        "cards_away": 0.56,
-        "dnb_home": 0.75,
-        "xg": 2.49,
-        "expected_corners": 9.7
+        "over25": 0.72,
+        "corners95": 0.58,
+        "cards_home": 0.64,
+        "cards_away": 0.67,
+        "dnb_home": 0.66,
+        "xg": 2.41,
+        "expected_corners": 11.4
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "09/03 19:45",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 3.29,
-        "expected_corners": 11.1
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "09/03 19:45",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 3.29,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "Rio Ave FC",
-      "kickoff": "09/03 20:15",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.65,
-        "cards_away": 0.56,
-        "dnb_home": 0.75,
-        "xg": 2.49,
-        "expected_corners": 9.7
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
