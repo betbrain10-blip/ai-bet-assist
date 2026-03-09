@@ -1,66 +1,36 @@
 {
-  "updated_at": "09/03 18:53",
+  "updated_at": "09/03 19:40",
   "value": [
     {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Real Oviedo",
-      "kickoff": "09/03 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.6,
-        "dnb_home": 0.64,
-        "xg": 2.75,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "Rio Ave FC",
-      "kickoff": "09/03 20:15",
+      "league": "Serie A",
+      "home": "SS Lazio",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "09/03 19:45",
       "markets": {
         "over25": 0.69,
-        "corners95": 0.65,
+        "corners95": 0.61,
         "cards_home": 0.57,
-        "cards_away": 0.68,
-        "dnb_home": 0.64,
-        "xg": 2.26,
-        "expected_corners": 12.1
+        "cards_away": 0.66,
+        "dnb_home": 0.56,
+        "xg": 2.79,
+        "expected_corners": 11.1
       }
     }
   ],
   "corner": [
     {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Real Oviedo",
-      "kickoff": "09/03 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.6,
-        "dnb_home": 0.64,
-        "xg": 2.75,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "Rio Ave FC",
-      "kickoff": "09/03 20:15",
+      "league": "Serie A",
+      "home": "SS Lazio",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "09/03 19:45",
       "markets": {
         "over25": 0.69,
-        "corners95": 0.65,
+        "corners95": 0.61,
         "cards_home": 0.57,
-        "cards_away": 0.68,
-        "dnb_home": 0.64,
-        "xg": 2.26,
-        "expected_corners": 12.1
+        "cards_away": 0.66,
+        "dnb_home": 0.56,
+        "xg": 2.79,
+        "expected_corners": 11.1
       }
     }
   ],
