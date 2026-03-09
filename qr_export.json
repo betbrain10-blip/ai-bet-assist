@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/03 05:41",
+  "updated_at": "09/03 07:02",
   "value": [
     {
       "league": "Serie A",
@@ -8,12 +8,12 @@
       "kickoff": "09/03 19:45",
       "markets": {
         "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.63,
-        "cards_away": 0.6,
-        "dnb_home": 0.7,
-        "xg": 3.19,
-        "expected_corners": 11.9
+        "corners95": 0.58,
+        "cards_home": 0.65,
+        "cards_away": 0.54,
+        "dnb_home": 0.64,
+        "xg": 2.91,
+        "expected_corners": 9.4
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "Real Oviedo",
       "kickoff": "09/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.65,
-        "dnb_home": 0.75,
-        "xg": 2.11,
-        "expected_corners": 11.0
+        "over25": 0.71,
+        "corners95": 0.55,
+        "cards_home": 0.52,
+        "cards_away": 0.55,
+        "dnb_home": 0.69,
+        "xg": 2.92,
+        "expected_corners": 10.5
       }
     },
     {
@@ -38,76 +38,46 @@
       "kickoff": "09/03 20:15",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.62,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.59,
-        "xg": 2.65,
-        "expected_corners": 11.3
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.5,
+        "dnb_home": 0.63,
+        "xg": 3.33,
+        "expected_corners": 9.3
       }
     }
   ],
   "corner": [
     {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Real Oviedo",
-      "kickoff": "09/03 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.65,
-        "dnb_home": 0.75,
-        "xg": 2.11,
-        "expected_corners": 11.0
-      }
-    },
-    {
       "league": "Primeira Liga",
       "home": "CD Tondela",
       "away": "Rio Ave FC",
       "kickoff": "09/03 20:15",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.62,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.59,
-        "xg": 2.65,
-        "expected_corners": 11.3
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.5,
+        "dnb_home": 0.63,
+        "xg": 3.33,
+        "expected_corners": 9.3
       }
     }
   ],
   "hot": [
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "09/03 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.63,
-        "cards_away": 0.6,
-        "dnb_home": 0.7,
-        "xg": 3.19,
-        "expected_corners": 11.9
-      }
-    },
     {
       "league": "Primera Division",
       "home": "RCD Espanyol de Barcelona",
       "away": "Real Oviedo",
       "kickoff": "09/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.65,
-        "dnb_home": 0.75,
-        "xg": 2.11,
-        "expected_corners": 11.0
+        "over25": 0.71,
+        "corners95": 0.55,
+        "cards_home": 0.52,
+        "cards_away": 0.55,
+        "dnb_home": 0.69,
+        "xg": 2.92,
+        "expected_corners": 10.5
       }
     }
   ]
