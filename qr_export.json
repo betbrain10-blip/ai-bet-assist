@@ -1,126 +1,79 @@
 {
-  "updated_at": "10/03 08:42",
+  "updated_at": "10/03 09:43",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Portsmouth FC",
-      "away": "Swansea City AFC",
-      "kickoff": "10/03 19:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.5,
-        "dnb_home": 0.57,
-        "xg": 3.29,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Leicester City FC",
-      "away": "Bristol City FC",
-      "kickoff": "10/03 19:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.62,
-        "xg": 3.09,
-        "expected_corners": 8.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Sheffield Wednesday FC",
-      "away": "Watford FC",
-      "kickoff": "10/03 19:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.59,
-        "cards_away": 0.56,
-        "dnb_home": 0.55,
-        "xg": 3.06,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Hull City AFC",
-      "kickoff": "10/03 19:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.66,
-        "dnb_home": 0.6,
-        "xg": 2.4,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Derby County FC",
-      "kickoff": "10/03 19:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.58,
-        "xg": 3.23,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Club Atlético de Madrid",
-      "away": "Tottenham Hotspur FC",
-      "kickoff": "10/03 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.56,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 2.83,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Atalanta BC",
-      "away": "FC Bayern München",
-      "kickoff": "10/03 20:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.61,
-        "dnb_home": 0.67,
-        "xg": 2.56,
-        "expected_corners": 10.1
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "UEFA Champions League",
       "home": "Galatasaray SK",
       "away": "Liverpool FC",
       "kickoff": "10/03 17:45",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.5,
-        "dnb_home": 0.73,
-        "xg": 2.59,
-        "expected_corners": 9.3
+        "over25": 0.65,
+        "corners95": 0.55,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.6,
+        "xg": 3.33,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield Wednesday FC",
+      "away": "Watford FC",
+      "kickoff": "10/03 19:45",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.64,
+        "xg": 2.26,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Wrexham AFC",
+      "away": "Hull City AFC",
+      "kickoff": "10/03 19:45",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.62,
+        "dnb_home": 0.74,
+        "xg": 3.24,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Millwall FC",
+      "away": "Derby County FC",
+      "kickoff": "10/03 19:45",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.61,
+        "cards_home": 0.58,
+        "cards_away": 0.63,
+        "dnb_home": 0.63,
+        "xg": 3.35,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Leicester City FC",
+      "away": "Bristol City FC",
+      "kickoff": "10/03 19:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.57,
+        "cards_home": 0.52,
+        "cards_away": 0.51,
+        "dnb_home": 0.63,
+        "xg": 2.69,
+        "expected_corners": 9.5
       }
     },
     {
@@ -130,72 +83,27 @@
       "kickoff": "10/03 19:45",
       "markets": {
         "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.5,
-        "dnb_home": 0.57,
-        "xg": 3.29,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Leicester City FC",
-      "away": "Bristol City FC",
-      "kickoff": "10/03 19:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.5,
+        "cards_away": 0.6,
         "dnb_home": 0.62,
-        "xg": 3.09,
-        "expected_corners": 8.5
+        "xg": 2.68,
+        "expected_corners": 9.0
       }
     },
     {
-      "league": "Championship",
-      "home": "Sheffield Wednesday FC",
-      "away": "Watford FC",
-      "kickoff": "10/03 19:45",
+      "league": "UEFA Champions League",
+      "home": "Newcastle United FC",
+      "away": "FC Barcelona",
+      "kickoff": "10/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.59,
-        "cards_away": 0.56,
-        "dnb_home": 0.55,
-        "xg": 3.06,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Hull City AFC",
-      "kickoff": "10/03 19:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.52,
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.6,
         "cards_away": 0.66,
-        "dnb_home": 0.6,
-        "xg": 2.4,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Derby County FC",
-      "kickoff": "10/03 19:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.58,
-        "xg": 3.23,
-        "expected_corners": 10.0
+        "dnb_home": 0.66,
+        "xg": 3.35,
+        "expected_corners": 9.0
       }
     },
     {
@@ -204,45 +112,75 @@
       "away": "Ipswich Town FC",
       "kickoff": "10/03 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.56,
-        "xg": 2.53,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Atalanta BC",
-      "away": "FC Bayern München",
-      "kickoff": "10/03 20:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
+        "over25": 0.71,
+        "corners95": 0.59,
         "cards_home": 0.56,
-        "cards_away": 0.61,
-        "dnb_home": 0.67,
-        "xg": 2.56,
-        "expected_corners": 10.1
+        "cards_away": 0.65,
+        "dnb_home": 0.69,
+        "xg": 2.61,
+        "expected_corners": 9.1
       }
     }
   ],
-  "hot": [
+  "corner": [
     {
-      "league": "UEFA Champions League",
-      "home": "Galatasaray SK",
-      "away": "Liverpool FC",
-      "kickoff": "10/03 17:45",
+      "league": "Championship",
+      "home": "Sheffield Wednesday FC",
+      "away": "Watford FC",
+      "kickoff": "10/03 19:45",
       "markets": {
-        "over25": 0.59,
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.64,
+        "xg": 2.26,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Wrexham AFC",
+      "away": "Hull City AFC",
+      "kickoff": "10/03 19:45",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.62,
+        "dnb_home": 0.74,
+        "xg": 3.24,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Millwall FC",
+      "away": "Derby County FC",
+      "kickoff": "10/03 19:45",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.61,
+        "cards_home": 0.58,
+        "cards_away": 0.63,
+        "dnb_home": 0.63,
+        "xg": 3.35,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Portsmouth FC",
+      "away": "Swansea City AFC",
+      "kickoff": "10/03 19:45",
+      "markets": {
+        "over25": 0.69,
         "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.5,
-        "dnb_home": 0.73,
-        "xg": 2.59,
-        "expected_corners": 9.3
+        "cards_home": 0.5,
+        "cards_away": 0.6,
+        "dnb_home": 0.62,
+        "xg": 2.68,
+        "expected_corners": 9.0
       }
     },
     {
@@ -251,13 +189,75 @@
       "away": "Tottenham Hotspur FC",
       "kickoff": "10/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.56,
+        "over25": 0.62,
+        "corners95": 0.68,
         "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 2.83,
-        "expected_corners": 10.0
+        "cards_away": 0.54,
+        "dnb_home": 0.74,
+        "xg": 2.52,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Atalanta BC",
+      "away": "FC Bayern München",
+      "kickoff": "10/03 20:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.63,
+        "dnb_home": 0.62,
+        "xg": 3.1,
+        "expected_corners": 10.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Championship",
+      "home": "Wrexham AFC",
+      "away": "Hull City AFC",
+      "kickoff": "10/03 19:45",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.62,
+        "dnb_home": 0.74,
+        "xg": 3.24,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Club Atlético de Madrid",
+      "away": "Tottenham Hotspur FC",
+      "kickoff": "10/03 20:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.57,
+        "cards_away": 0.54,
+        "dnb_home": 0.74,
+        "xg": 2.52,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Stoke City FC",
+      "away": "Ipswich Town FC",
+      "kickoff": "10/03 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.59,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.69,
+        "xg": 2.61,
+        "expected_corners": 9.1
       }
     }
   ]
