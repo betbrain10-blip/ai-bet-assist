@@ -1,34 +1,19 @@
 {
-  "updated_at": "11/03 20:40",
+  "updated_at": "11/03 21:33",
   "value": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "SC Internacional",
+      "league": "Copa Libertadores",
+      "home": "CS Cristal",
+      "away": "Carabobo FC",
       "kickoff": "11/03 22:00",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.66,
-        "dnb_home": 0.7,
-        "xg": 3.21,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "EC Vitória",
-      "kickoff": "11/03 23:00",
-      "markets": {
-        "over25": 0.72,
         "corners95": 0.56,
-        "cards_home": 0.65,
-        "cards_away": 0.63,
-        "dnb_home": 0.65,
-        "xg": 2.31,
-        "expected_corners": 9.8
+        "cards_home": 0.66,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 3.25,
+        "expected_corners": 10.7
       }
     }
   ],
@@ -39,28 +24,28 @@
       "away": "SC Internacional",
       "kickoff": "11/03 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.66,
-        "dnb_home": 0.7,
-        "xg": 3.21,
-        "expected_corners": 12.7
+        "over25": 0.62,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.58,
+        "dnb_home": 0.72,
+        "xg": 3.15,
+        "expected_corners": 8.6
       }
     },
     {
-      "league": "Copa Libertadores",
-      "home": "CS Cristal",
-      "away": "Carabobo FC",
-      "kickoff": "11/03 22:00",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "EC Vitória",
+      "kickoff": "11/03 23:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.67,
-        "xg": 2.44,
-        "expected_corners": 12.1
+        "over25": 0.6,
+        "corners95": 0.64,
+        "cards_home": 0.67,
+        "cards_away": 0.64,
+        "dnb_home": 0.66,
+        "xg": 2.74,
+        "expected_corners": 9.9
       }
     }
   ],
@@ -71,13 +56,28 @@
       "away": "SC Internacional",
       "kickoff": "11/03 22:00",
       "markets": {
+        "over25": 0.62,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.58,
+        "dnb_home": 0.72,
+        "xg": 3.15,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Cristal",
+      "away": "Carabobo FC",
+      "kickoff": "11/03 22:00",
+      "markets": {
         "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.66,
-        "dnb_home": 0.7,
-        "xg": 3.21,
-        "expected_corners": 12.7
+        "corners95": 0.56,
+        "cards_home": 0.66,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 3.25,
+        "expected_corners": 10.7
       }
     }
   ]
