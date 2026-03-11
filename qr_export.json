@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/03 22:26",
+  "updated_at": "11/03 22:50",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -8,12 +8,27 @@
       "kickoff": "11/03 22:00",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.59,
-        "xg": 2.31,
-        "expected_corners": 9.3
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.64,
+        "dnb_home": 0.65,
+        "xg": 3.28,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "EC Vitória",
+      "kickoff": "11/03 23:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.57,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 3.07,
+        "expected_corners": 9.7
       }
     }
   ],
@@ -25,12 +40,27 @@
       "kickoff": "11/03 22:00",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.59,
-        "xg": 2.31,
-        "expected_corners": 9.3
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.64,
+        "dnb_home": 0.65,
+        "xg": 3.28,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "EC Vitória",
+      "kickoff": "11/03 23:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.57,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 3.07,
+        "expected_corners": 9.7
       }
     }
   ],
