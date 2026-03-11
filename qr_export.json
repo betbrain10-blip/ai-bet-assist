@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/03 22:50",
+  "updated_at": "11/03 23:26",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,28 +7,13 @@
       "away": "Carabobo FC",
       "kickoff": "11/03 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 3.28,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "EC Vitória",
-      "kickoff": "11/03 23:00",
-      "markets": {
         "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 3.07,
-        "expected_corners": 9.7
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 2.95,
+        "expected_corners": 11.8
       }
     }
   ],
@@ -39,30 +24,31 @@
       "away": "Carabobo FC",
       "kickoff": "11/03 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 3.28,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "EC Vitória",
-      "kickoff": "11/03 23:00",
-      "markets": {
         "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 3.07,
-        "expected_corners": 9.7
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 2.95,
+        "expected_corners": 11.8
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Cristal",
+      "away": "Carabobo FC",
+      "kickoff": "11/03 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 2.95,
+        "expected_corners": 11.8
+      }
+    }
+  ]
 }
