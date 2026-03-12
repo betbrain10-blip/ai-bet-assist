@@ -1,36 +1,20 @@
 {
-  "updated_at": "12/03 22:26",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Vasco da Gama",
-      "away": "SE Palmeiras",
-      "kickoff": "12/03 22:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.62,
-        "dnb_home": 0.59,
-        "xg": 3.3,
-        "expected_corners": 10.6
-      }
-    }
-  ],
+  "updated_at": "12/03 22:54",
+  "value": [],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "CR Vasco da Gama",
-      "away": "SE Palmeiras",
-      "kickoff": "12/03 22:30",
+      "home": "São Paulo FC",
+      "away": "Chapecoense AF",
+      "kickoff": "12/03 23:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.62,
-        "dnb_home": 0.59,
-        "xg": 3.3,
-        "expected_corners": 10.6
+        "over25": 0.6,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.61,
+        "dnb_home": 0.55,
+        "xg": 2.57,
+        "expected_corners": 12.0
       }
     }
   ],
