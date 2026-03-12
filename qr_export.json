@@ -1,22 +1,6 @@
 {
-  "updated_at": "12/03 22:54",
+  "updated_at": "12/03 23:28",
   "value": [],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Chapecoense AF",
-      "kickoff": "12/03 23:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.61,
-        "dnb_home": 0.55,
-        "xg": 2.57,
-        "expected_corners": 12.0
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
