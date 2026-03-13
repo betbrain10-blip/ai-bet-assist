@@ -1,20 +1,19 @@
 {
-  "updated_at": "13/03 14:03",
-  "value": [],
-  "corner": [
+  "updated_at": "13/03 15:08",
+  "value": [
     {
-      "league": "Eredivisie",
-      "home": "PEC Zwolle",
-      "away": "FC Groningen",
-      "kickoff": "13/03 19:00",
+      "league": "Bundesliga",
+      "home": "Borussia Mönchengladbach",
+      "away": "FC St. Pauli 1910",
+      "kickoff": "13/03 19:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.68,
-        "cards_home": 0.56,
-        "cards_away": 0.63,
+        "over25": 0.64,
+        "corners95": 0.55,
+        "cards_home": 0.61,
+        "cards_away": 0.54,
         "dnb_home": 0.56,
-        "xg": 3.35,
-        "expected_corners": 8.7
+        "xg": 2.66,
+        "expected_corners": 10.0
       }
     },
     {
@@ -23,13 +22,13 @@
       "away": "AJ Auxerre",
       "kickoff": "13/03 19:45",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.65,
+        "over25": 0.69,
+        "corners95": 0.59,
         "cards_home": 0.65,
-        "cards_away": 0.59,
+        "cards_away": 0.56,
         "dnb_home": 0.66,
-        "xg": 3.0,
-        "expected_corners": 10.4
+        "xg": 3.24,
+        "expected_corners": 11.3
       }
     },
     {
@@ -38,30 +37,60 @@
       "away": "Villarreal CF",
       "kickoff": "13/03 20:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.64,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.71,
-        "xg": 2.38,
-        "expected_corners": 11.9
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.58,
+        "dnb_home": 0.73,
+        "xg": 2.22,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Wrexham AFC",
+      "away": "Swansea City AFC",
+      "kickoff": "13/03 20:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.66,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 2.14,
+        "expected_corners": 11.3
       }
     }
   ],
-  "hot": [
+  "corner": [
+    {
+      "league": "Eredivisie",
+      "home": "PEC Zwolle",
+      "away": "FC Groningen",
+      "kickoff": "13/03 19:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.64,
+        "cards_away": 0.61,
+        "dnb_home": 0.74,
+        "xg": 2.15,
+        "expected_corners": 12.6
+      }
+    },
     {
       "league": "Serie A",
       "home": "Torino FC",
       "away": "Parma Calcio 1913",
       "kickoff": "13/03 19:45",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.6,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.74,
-        "xg": 3.39,
-        "expected_corners": 9.0
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.57,
+        "xg": 2.33,
+        "expected_corners": 10.2
       }
     },
     {
@@ -70,13 +99,60 @@
       "away": "Villarreal CF",
       "kickoff": "13/03 20:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.64,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.71,
-        "xg": 2.38,
-        "expected_corners": 11.9
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.58,
+        "dnb_home": 0.73,
+        "xg": 2.22,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Wrexham AFC",
+      "away": "Swansea City AFC",
+      "kickoff": "13/03 20:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.66,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 2.14,
+        "expected_corners": 11.3
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Eredivisie",
+      "home": "PEC Zwolle",
+      "away": "FC Groningen",
+      "kickoff": "13/03 19:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.64,
+        "cards_away": 0.61,
+        "dnb_home": 0.74,
+        "xg": 2.15,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Deportivo Alavés",
+      "away": "Villarreal CF",
+      "kickoff": "13/03 20:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.58,
+        "dnb_home": 0.73,
+        "xg": 2.22,
+        "expected_corners": 8.9
       }
     }
   ]
