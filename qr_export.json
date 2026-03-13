@@ -1,34 +1,19 @@
 {
-  "updated_at": "13/03 02:03",
+  "updated_at": "13/03 04:23",
   "value": [
     {
-      "league": "Eredivisie",
-      "home": "PEC Zwolle",
-      "away": "FC Groningen",
-      "kickoff": "13/03 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.54,
-        "cards_away": 0.66,
-        "dnb_home": 0.56,
-        "xg": 2.82,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "Borussia Mönchengladbach",
-      "away": "FC St. Pauli 1910",
-      "kickoff": "13/03 19:30",
+      "league": "Ligue 1",
+      "home": "Olympique de Marseille",
+      "away": "AJ Auxerre",
+      "kickoff": "13/03 19:45",
       "markets": {
         "over25": 0.67,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.6,
-        "xg": 2.97,
-        "expected_corners": 9.2
+        "corners95": 0.57,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.77,
+        "expected_corners": 11.6
       }
     },
     {
@@ -37,75 +22,30 @@
       "away": "Villarreal CF",
       "kickoff": "13/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.61,
-        "cards_home": 0.67,
-        "cards_away": 0.64,
-        "dnb_home": 0.67,
-        "xg": 2.64,
-        "expected_corners": 11.2
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.69,
+        "expected_corners": 8.8
       }
     }
   ],
   "corner": [
     {
-      "league": "Copa Libertadores",
-      "home": "CD Independiente Medellín",
-      "away": "Juventud de Las Piedras",
-      "kickoff": "13/03 00:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.65,
-        "cards_home": 0.55,
-        "cards_away": 0.63,
-        "dnb_home": 0.74,
-        "xg": 2.97,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "PEC Zwolle",
-      "away": "FC Groningen",
-      "kickoff": "13/03 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.54,
-        "cards_away": 0.66,
-        "dnb_home": 0.56,
-        "xg": 2.82,
-        "expected_corners": 10.1
-      }
-    },
-    {
       "league": "Bundesliga",
       "home": "Borussia Mönchengladbach",
       "away": "FC St. Pauli 1910",
       "kickoff": "13/03 19:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.6,
-        "xg": 2.97,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Swansea City AFC",
-      "kickoff": "13/03 20:00",
-      "markets": {
         "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.72,
-        "xg": 2.51,
-        "expected_corners": 9.1
+        "corners95": 0.7,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 2.64,
+        "expected_corners": 9.8
       }
     },
     {
@@ -114,30 +54,30 @@
       "away": "Villarreal CF",
       "kickoff": "13/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.61,
-        "cards_home": 0.67,
-        "cards_away": 0.64,
-        "dnb_home": 0.67,
-        "xg": 2.64,
-        "expected_corners": 11.2
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.69,
+        "expected_corners": 8.8
       }
     }
   ],
   "hot": [
     {
-      "league": "Copa Libertadores",
-      "home": "CD Independiente Medellín",
-      "away": "Juventud de Las Piedras",
-      "kickoff": "13/03 00:30",
+      "league": "Bundesliga",
+      "home": "Borussia Mönchengladbach",
+      "away": "FC St. Pauli 1910",
+      "kickoff": "13/03 19:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.65,
-        "cards_home": 0.55,
-        "cards_away": 0.63,
-        "dnb_home": 0.74,
-        "xg": 2.97,
-        "expected_corners": 12.5
+        "over25": 0.56,
+        "corners95": 0.7,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 2.64,
+        "expected_corners": 9.8
       }
     },
     {
@@ -146,28 +86,28 @@
       "away": "AJ Auxerre",
       "kickoff": "13/03 19:45",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.56,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.29,
-        "expected_corners": 8.8
+        "over25": 0.67,
+        "corners95": 0.57,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.77,
+        "expected_corners": 11.6
       }
     },
     {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Swansea City AFC",
+      "league": "Primera Division",
+      "home": "Deportivo Alavés",
+      "away": "Villarreal CF",
       "kickoff": "13/03 20:00",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.71,
         "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.72,
-        "xg": 2.51,
-        "expected_corners": 9.1
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.69,
+        "expected_corners": 8.8
       }
     }
   ]
