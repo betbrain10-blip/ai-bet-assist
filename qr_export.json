@@ -1,5 +1,5 @@
 {
-  "updated_at": "14/03 21:49",
+  "updated_at": "14/03 22:26",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -8,12 +8,12 @@
       "kickoff": "14/03 23:30",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 2.75,
-        "expected_corners": 10.7
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.57,
+        "dnb_home": 0.58,
+        "xg": 3.24,
+        "expected_corners": 11.3
       }
     }
   ],
@@ -25,12 +25,12 @@
       "kickoff": "14/03 23:30",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.65,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 2.75,
-        "expected_corners": 10.7
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.57,
+        "dnb_home": 0.58,
+        "xg": 3.24,
+        "expected_corners": 11.3
       }
     }
   ],
