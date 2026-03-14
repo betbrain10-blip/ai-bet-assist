@@ -1,21 +1,6 @@
 {
-  "updated_at": "14/03 10:28",
+  "updated_at": "14/03 10:55",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Oxford United FC",
-      "away": "Charlton Athletic FC",
-      "kickoff": "14/03 12:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.53,
-        "expected_corners": 11.2
-      }
-    },
     {
       "league": "Championship",
       "home": "Middlesbrough FC",
@@ -23,72 +8,57 @@
       "kickoff": "14/03 12:30",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.57,
-        "cards_home": 0.63,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 3.07,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "FC Internazionale Milano",
-      "away": "Atalanta BC",
-      "kickoff": "14/03 14:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.42,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "TSG 1899 Hoffenheim",
-      "away": "VfL Wolfsburg",
-      "kickoff": "14/03 14:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.62,
-        "cards_away": 0.6,
-        "dnb_home": 0.64,
-        "xg": 3.24,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "14/03 15:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 2.56,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 2.39,
         "expected_corners": 11.4
       }
     },
     {
+      "league": "Bundesliga",
+      "home": "Eintracht Frankfurt",
+      "away": "1. FC Heidenheim 1846",
+      "kickoff": "14/03 14:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.67,
+        "cards_away": 0.67,
+        "dnb_home": 0.71,
+        "xg": 2.7,
+        "expected_corners": 9.2
+      }
+    },
+    {
       "league": "Premier League",
-      "home": "Burnley FC",
-      "away": "AFC Bournemouth",
+      "home": "Sunderland AFC",
+      "away": "Brighton & Hove Albion FC",
       "kickoff": "14/03 15:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.59,
-        "cards_home": 0.67,
-        "cards_away": 0.6,
-        "dnb_home": 0.72,
-        "xg": 2.95,
-        "expected_corners": 10.7
+        "over25": 0.64,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.53,
+        "dnb_home": 0.66,
+        "xg": 2.52,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield Wednesday FC",
+      "away": "Ipswich Town FC",
+      "kickoff": "14/03 15:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.56,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.61,
+        "xg": 2.71,
+        "expected_corners": 11.4
       }
     },
     {
@@ -97,43 +67,58 @@
       "away": "Hull City AFC",
       "kickoff": "14/03 15:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.59,
-        "cards_away": 0.67,
+        "over25": 0.68,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.6,
         "dnb_home": 0.63,
-        "xg": 2.83,
-        "expected_corners": 9.6
+        "xg": 2.29,
+        "expected_corners": 9.8
       }
     },
     {
       "league": "Championship",
-      "home": "Norwich City FC",
-      "away": "Preston North End FC",
+      "home": "Millwall FC",
+      "away": "Blackburn Rovers FC",
       "kickoff": "14/03 15:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.64,
         "dnb_home": 0.57,
-        "xg": 2.36,
-        "expected_corners": 10.2
+        "xg": 2.61,
+        "expected_corners": 11.2
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "Vitória SC",
-      "away": "FC Famalicão",
+      "league": "Championship",
+      "home": "Birmingham City FC",
+      "away": "Sheffield United FC",
+      "kickoff": "14/03 15:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.7,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.67,
+        "xg": 2.16,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "FC Volendam",
+      "away": "Fortuna Sittard",
       "kickoff": "14/03 15:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.57,
-        "dnb_home": 0.62,
-        "xg": 2.96,
-        "expected_corners": 12.4
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 3.03,
+        "expected_corners": 10.9
       }
     },
     {
@@ -142,13 +127,13 @@
       "away": "Racing Club de Lens",
       "kickoff": "14/03 16:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.56,
+        "cards_away": 0.52,
         "dnb_home": 0.65,
-        "xg": 2.65,
-        "expected_corners": 10.8
+        "xg": 2.35,
+        "expected_corners": 11.5
       }
     },
     {
@@ -157,13 +142,28 @@
       "away": "US Lecce",
       "kickoff": "14/03 17:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.62,
-        "dnb_home": 0.63,
-        "xg": 2.99,
-        "expected_corners": 11.7
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.55,
+        "dnb_home": 0.65,
+        "xg": 2.56,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Oviedo",
+      "away": "Valencia CF",
+      "kickoff": "14/03 17:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.63,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 2.27,
+        "expected_corners": 10.5
       }
     },
     {
@@ -172,13 +172,13 @@
       "away": "Everton FC",
       "kickoff": "14/03 17:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.58,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.68,
-        "xg": 3.12,
-        "expected_corners": 12.4
+        "over25": 0.71,
+        "corners95": 0.69,
+        "cards_home": 0.58,
+        "cards_away": 0.57,
+        "dnb_home": 0.74,
+        "xg": 2.71,
+        "expected_corners": 9.6
       }
     }
   ],
@@ -189,13 +189,58 @@
       "away": "Southampton FC",
       "kickoff": "14/03 12:30",
       "markets": {
-        "over25": 0.58,
+        "over25": 0.57,
         "corners95": 0.66,
-        "cards_home": 0.6,
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.67,
+        "xg": 3.11,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Middlesbrough FC",
+      "away": "Bristol City FC",
+      "kickoff": "14/03 12:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 2.39,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Oxford United FC",
+      "away": "Charlton Athletic FC",
+      "kickoff": "14/03 12:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.65,
+        "cards_home": 0.57,
         "cards_away": 0.66,
         "dnb_home": 0.74,
-        "xg": 2.96,
-        "expected_corners": 12.8
+        "xg": 2.28,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Girona FC",
+      "away": "Athletic Club",
+      "kickoff": "14/03 13:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.65,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.63,
+        "xg": 2.59,
+        "expected_corners": 9.6
       }
     },
     {
@@ -204,13 +249,43 @@
       "away": "Atalanta BC",
       "kickoff": "14/03 14:00",
       "markets": {
-        "over25": 0.63,
+        "over25": 0.6,
         "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.42,
-        "expected_corners": 9.6
+        "cards_home": 0.65,
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 2.4,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Borussia Dortmund",
+      "away": "FC Augsburg",
+      "kickoff": "14/03 14:30",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.64,
+        "dnb_home": 0.74,
+        "xg": 2.54,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Bayer 04 Leverkusen",
+      "away": "FC Bayern München",
+      "kickoff": "14/03 14:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.65,
+        "dnb_home": 0.73,
+        "xg": 3.08,
+        "expected_corners": 12.2
       }
     },
     {
@@ -219,13 +294,13 @@
       "away": "VfL Wolfsburg",
       "kickoff": "14/03 14:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.62,
-        "cards_away": 0.6,
-        "dnb_home": 0.64,
-        "xg": 3.24,
-        "expected_corners": 9.4
+        "over25": 0.6,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.54,
+        "dnb_home": 0.61,
+        "xg": 2.38,
+        "expected_corners": 11.5
       }
     },
     {
@@ -233,181 +308,14 @@
       "home": "Eintracht Frankfurt",
       "away": "1. FC Heidenheim 1846",
       "kickoff": "14/03 14:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.68,
-        "cards_away": 0.52,
-        "dnb_home": 0.75,
-        "xg": 2.35,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "14/03 15:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 2.56,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Leicester City FC",
-      "away": "Queens Park Rangers FC",
-      "kickoff": "14/03 15:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.68,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 2.45,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Sheffield Wednesday FC",
-      "away": "Ipswich Town FC",
-      "kickoff": "14/03 15:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.66,
-        "dnb_home": 0.69,
-        "xg": 2.23,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Norwich City FC",
-      "away": "Preston North End FC",
-      "kickoff": "14/03 15:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.57,
-        "xg": 2.36,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Club Atlético de Madrid",
-      "away": "Getafe CF",
-      "kickoff": "14/03 15:15",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.56,
-        "cards_away": 0.59,
-        "dnb_home": 0.66,
-        "xg": 2.52,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Vitória SC",
-      "away": "FC Famalicão",
-      "kickoff": "14/03 15:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.57,
-        "dnb_home": 0.62,
-        "xg": 2.96,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Lorient",
-      "away": "Racing Club de Lens",
-      "kickoff": "14/03 16:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.65,
-        "xg": 2.65,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "SSC Napoli",
-      "away": "US Lecce",
-      "kickoff": "14/03 17:00",
       "markets": {
         "over25": 0.66,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.62,
-        "dnb_home": 0.63,
-        "xg": 2.99,
-        "expected_corners": 11.7
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Oxford United FC",
-      "away": "Charlton Athletic FC",
-      "kickoff": "14/03 12:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.53,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Coventry City FC",
-      "away": "Southampton FC",
-      "kickoff": "14/03 12:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 2.96,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "Eintracht Frankfurt",
-      "away": "1. FC Heidenheim 1846",
-      "kickoff": "14/03 14:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.68,
-        "cards_away": 0.52,
-        "dnb_home": 0.75,
-        "xg": 2.35,
-        "expected_corners": 9.3
+        "corners95": 0.67,
+        "cards_home": 0.67,
+        "cards_away": 0.67,
+        "dnb_home": 0.71,
+        "xg": 2.7,
+        "expected_corners": 9.2
       }
     },
     {
@@ -416,28 +324,13 @@
       "away": "Brighton & Hove Albion FC",
       "kickoff": "14/03 15:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.59,
-        "cards_home": 0.63,
-        "cards_away": 0.66,
-        "dnb_home": 0.69,
-        "xg": 3.13,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "14/03 15:00",
-      "markets": {
         "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 2.56,
-        "expected_corners": 11.4
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.53,
+        "dnb_home": 0.66,
+        "xg": 2.52,
+        "expected_corners": 11.3
       }
     },
     {
@@ -446,12 +339,119 @@
       "away": "AFC Bournemouth",
       "kickoff": "14/03 15:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.59,
+        "over25": 0.58,
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.55,
+        "dnb_home": 0.59,
+        "xg": 2.25,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Norwich City FC",
+      "away": "Preston North End FC",
+      "kickoff": "14/03 15:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.67,
+        "xg": 2.57,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Championship",
+      "home": "Middlesbrough FC",
+      "away": "Bristol City FC",
+      "kickoff": "14/03 12:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 2.39,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Oxford United FC",
+      "away": "Charlton Athletic FC",
+      "kickoff": "14/03 12:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.65,
+        "cards_home": 0.57,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.28,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Borussia Dortmund",
+      "away": "FC Augsburg",
+      "kickoff": "14/03 14:30",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.64,
+        "dnb_home": 0.74,
+        "xg": 2.54,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Bayer 04 Leverkusen",
+      "away": "FC Bayern München",
+      "kickoff": "14/03 14:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.66,
         "cards_home": 0.67,
-        "cards_away": 0.6,
-        "dnb_home": 0.72,
-        "xg": 2.95,
+        "cards_away": 0.65,
+        "dnb_home": 0.73,
+        "xg": 3.08,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Eintracht Frankfurt",
+      "away": "1. FC Heidenheim 1846",
+      "kickoff": "14/03 14:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.67,
+        "cards_away": 0.67,
+        "dnb_home": 0.71,
+        "xg": 2.7,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Club Atlético de Madrid",
+      "away": "Getafe CF",
+      "kickoff": "14/03 15:15",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.59,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 3.37,
         "expected_corners": 10.7
       }
     }
