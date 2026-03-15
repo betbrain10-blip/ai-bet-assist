@@ -1,5 +1,5 @@
 {
-  "updated_at": "15/03 21:30",
+  "updated_at": "15/03 22:28",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,108 +7,32 @@
       "away": "São Paulo FC",
       "kickoff": "15/03 23:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 2.54,
-        "expected_corners": 10.8
+        "over25": 0.63,
+        "corners95": 0.58,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.63,
+        "xg": 2.73,
+        "expected_corners": 9.8
       }
     }
   ],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "Clube do Remo",
-      "kickoff": "15/03 21:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.64,
-        "dnb_home": 0.58,
-        "xg": 2.51,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "São Paulo FC",
-      "kickoff": "15/03 23:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 2.54,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
       "home": "Cruzeiro EC",
       "away": "CR Vasco da Gama",
       "kickoff": "15/03 23:30",
       "markets": {
         "over25": 0.59,
-        "corners95": 0.63,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.57,
-        "expected_corners": 12.5
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.58,
+        "dnb_home": 0.58,
+        "xg": 2.61,
+        "expected_corners": 9.1
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "Mirassol FC",
-      "kickoff": "15/03 21:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.58,
-        "cards_home": 0.59,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 2.92,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "São Paulo FC",
-      "kickoff": "15/03 23:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 2.54,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "CR Vasco da Gama",
-      "kickoff": "15/03 23:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.63,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.57,
-        "expected_corners": 12.5
-      }
-    }
-  ]
+  "hot": []
 }
