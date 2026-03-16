@@ -1,6 +1,38 @@
 {
-  "updated_at": "16/03 20:51",
-  "value": [],
-  "corner": [],
+  "updated_at": "16/03 21:39",
+  "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Grêmio FBPA",
+      "kickoff": "16/03 23:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.51,
+        "dnb_home": 0.57,
+        "xg": 2.22,
+        "expected_corners": 12.2
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Grêmio FBPA",
+      "kickoff": "16/03 23:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.51,
+        "dnb_home": 0.57,
+        "xg": 2.22,
+        "expected_corners": 12.2
+      }
+    }
+  ],
   "hot": []
 }
