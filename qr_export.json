@@ -1,22 +1,6 @@
 {
-  "updated_at": "16/03 22:33",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Grêmio FBPA",
-      "kickoff": "16/03 23:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.57,
-        "cards_home": 0.63,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 3.2,
-        "expected_corners": 10.7
-      }
-    }
-  ],
+  "updated_at": "16/03 23:32",
+  "value": [],
   "corner": [],
   "hot": []
 }
