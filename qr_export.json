@@ -1,34 +1,19 @@
 {
-  "updated_at": "16/03 02:27",
+  "updated_at": "16/03 05:04",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Portsmouth FC",
-      "away": "Derby County FC",
-      "kickoff": "16/03 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.69,
-        "expected_corners": 10.1
-      }
-    },
     {
       "league": "Premier League",
       "home": "Brentford FC",
       "away": "Wolverhampton Wanderers FC",
       "kickoff": "16/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.57,
-        "dnb_home": 0.56,
-        "xg": 2.41,
-        "expected_corners": 12.2
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.57,
+        "cards_away": 0.52,
+        "dnb_home": 0.68,
+        "xg": 2.63,
+        "expected_corners": 12.5
       }
     },
     {
@@ -37,28 +22,28 @@
       "away": "Levante UD",
       "kickoff": "16/03 20:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.57,
-        "xg": 2.92,
-        "expected_corners": 12.4
+        "over25": 0.65,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.13,
+        "expected_corners": 10.0
       }
     },
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Grêmio FBPA",
-      "kickoff": "16/03 23:00",
+      "league": "Championship",
+      "home": "Portsmouth FC",
+      "away": "Derby County FC",
+      "kickoff": "16/03 20:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.6,
-        "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.56,
-        "xg": 3.15,
-        "expected_corners": 11.1
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.23,
+        "expected_corners": 11.4
       }
     }
   ],
@@ -69,28 +54,13 @@
       "away": "ACF Fiorentina",
       "kickoff": "16/03 19:45",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.64,
-        "cards_home": 0.5,
-        "cards_away": 0.61,
-        "dnb_home": 0.64,
+        "over25": 0.56,
+        "corners95": 0.7,
+        "cards_home": 0.59,
+        "cards_away": 0.56,
+        "dnb_home": 0.65,
         "xg": 3.21,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Portsmouth FC",
-      "away": "Derby County FC",
-      "kickoff": "16/03 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.69,
-        "expected_corners": 10.1
+        "expected_corners": 9.8
       }
     },
     {
@@ -99,13 +69,13 @@
       "away": "Wolverhampton Wanderers FC",
       "kickoff": "16/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.57,
-        "dnb_home": 0.56,
-        "xg": 2.41,
-        "expected_corners": 12.2
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.57,
+        "cards_away": 0.52,
+        "dnb_home": 0.68,
+        "xg": 2.63,
+        "expected_corners": 12.5
       }
     },
     {
@@ -114,30 +84,75 @@
       "away": "Levante UD",
       "kickoff": "16/03 20:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.57,
-        "xg": 2.92,
-        "expected_corners": 12.4
+        "over25": 0.65,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.13,
+        "expected_corners": 10.0
       }
-    }
-  ],
-  "hot": [
+    },
     {
       "league": "Championship",
       "home": "Portsmouth FC",
       "away": "Derby County FC",
       "kickoff": "16/03 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.69,
-        "expected_corners": 10.1
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.23,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Grêmio FBPA",
+      "kickoff": "16/03 23:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.66,
+        "cards_home": 0.5,
+        "cards_away": 0.58,
+        "dnb_home": 0.59,
+        "xg": 3.34,
+        "expected_corners": 11.5
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Levante UD",
+      "kickoff": "16/03 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.13,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Portsmouth FC",
+      "away": "Derby County FC",
+      "kickoff": "16/03 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.23,
+        "expected_corners": 11.4
       }
     }
   ]
