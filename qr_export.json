@@ -1,5 +1,5 @@
 {
-  "updated_at": "17/03 05:43",
+  "updated_at": "17/03 07:04",
   "value": [
     {
       "league": "UEFA Champions League",
@@ -7,13 +7,28 @@
       "away": "FK Bodø/Glimt",
       "kickoff": "17/03 17:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.59,
-        "cards_away": 0.63,
-        "dnb_home": 0.74,
-        "xg": 2.57,
-        "expected_corners": 12.2
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.5,
+        "cards_away": 0.59,
+        "dnb_home": 0.7,
+        "xg": 2.35,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Watford FC",
+      "away": "Wrexham AFC",
+      "kickoff": "17/03 19:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.72,
+        "xg": 2.27,
+        "expected_corners": 12.5
       }
     },
     {
@@ -22,60 +37,30 @@
       "away": "Paris Saint-Germain FC",
       "kickoff": "17/03 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 2.58,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Manchester City FC",
-      "away": "Real Madrid CF",
-      "kickoff": "17/03 20:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.51,
-        "dnb_home": 0.55,
-        "xg": 2.9,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Arsenal FC",
-      "away": "Bayer 04 Leverkusen",
-      "kickoff": "17/03 20:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.7,
-        "cards_home": 0.58,
-        "cards_away": 0.61,
-        "dnb_home": 0.68,
-        "xg": 2.4,
-        "expected_corners": 12.3
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.36,
+        "expected_corners": 12.6
       }
     }
   ],
   "corner": [
     {
-      "league": "UEFA Champions League",
-      "home": "Sporting Clube de Portugal",
-      "away": "FK Bodø/Glimt",
-      "kickoff": "17/03 17:45",
+      "league": "Championship",
+      "home": "Watford FC",
+      "away": "Wrexham AFC",
+      "kickoff": "17/03 19:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.59,
-        "cards_away": 0.63,
-        "dnb_home": 0.74,
-        "xg": 2.57,
-        "expected_corners": 12.2
+        "over25": 0.67,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.72,
+        "xg": 2.27,
+        "expected_corners": 12.5
       }
     },
     {
@@ -84,13 +69,13 @@
       "away": "Paris Saint-Germain FC",
       "kickoff": "17/03 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 2.58,
-        "expected_corners": 12.2
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.36,
+        "expected_corners": 12.6
       }
     },
     {
@@ -99,13 +84,13 @@
       "away": "Real Madrid CF",
       "kickoff": "17/03 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.51,
-        "dnb_home": 0.55,
-        "xg": 2.9,
-        "expected_corners": 10.6
+        "over25": 0.62,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.53,
+        "dnb_home": 0.58,
+        "xg": 2.3,
+        "expected_corners": 8.8
       }
     },
     {
@@ -114,13 +99,13 @@
       "away": "Bayer 04 Leverkusen",
       "kickoff": "17/03 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.7,
-        "cards_home": 0.58,
-        "cards_away": 0.61,
-        "dnb_home": 0.68,
-        "xg": 2.4,
-        "expected_corners": 12.3
+        "over25": 0.59,
+        "corners95": 0.64,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.72,
+        "xg": 2.85,
+        "expected_corners": 8.6
       }
     }
   ],
@@ -131,13 +116,13 @@
       "away": "FK Bodø/Glimt",
       "kickoff": "17/03 17:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.59,
-        "cards_away": 0.63,
-        "dnb_home": 0.74,
-        "xg": 2.57,
-        "expected_corners": 12.2
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.5,
+        "cards_away": 0.59,
+        "dnb_home": 0.7,
+        "xg": 2.35,
+        "expected_corners": 11.6
       }
     },
     {
@@ -146,13 +131,13 @@
       "away": "Wrexham AFC",
       "kickoff": "17/03 19:45",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.59,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.74,
-        "xg": 2.11,
-        "expected_corners": 10.6
+        "over25": 0.67,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.72,
+        "xg": 2.27,
+        "expected_corners": 12.5
       }
     },
     {
@@ -161,13 +146,28 @@
       "away": "Paris Saint-Germain FC",
       "kickoff": "17/03 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.36,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Arsenal FC",
+      "away": "Bayer 04 Leverkusen",
+      "kickoff": "17/03 20:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.64,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
         "dnb_home": 0.72,
-        "xg": 2.58,
-        "expected_corners": 12.2
+        "xg": 2.85,
+        "expected_corners": 8.6
       }
     }
   ]
