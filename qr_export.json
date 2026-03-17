@@ -1,53 +1,6 @@
 {
-  "updated_at": "17/03 20:03",
-  "value": [
-    {
-      "league": "UEFA Champions League",
-      "home": "Chelsea FC",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "17/03 20:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.66,
-        "xg": 3.37,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Manchester City FC",
-      "away": "Real Madrid CF",
-      "kickoff": "17/03 20:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.58,
-        "cards_home": 0.51,
-        "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 2.5,
-        "expected_corners": 10.9
-      }
-    }
-  ],
+  "updated_at": "17/03 21:04",
+  "value": [],
   "corner": [],
-  "hot": [
-    {
-      "league": "UEFA Champions League",
-      "home": "Arsenal FC",
-      "away": "Bayer 04 Leverkusen",
-      "kickoff": "17/03 20:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.56,
-        "cards_home": 0.53,
-        "cards_away": 0.52,
-        "dnb_home": 0.73,
-        "xg": 2.21,
-        "expected_corners": 8.8
-      }
-    }
-  ]
+  "hot": []
 }
