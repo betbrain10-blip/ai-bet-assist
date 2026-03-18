@@ -1,19 +1,19 @@
 {
-  "updated_at": "18/03 02:10",
+  "updated_at": "18/03 04:34",
   "value": [
     {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Norwich City FC",
-      "kickoff": "18/03 19:45",
+      "league": "UEFA Champions League",
+      "home": "Liverpool FC",
+      "away": "Galatasaray SK",
+      "kickoff": "18/03 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.58,
-        "cards_home": 0.62,
-        "cards_away": 0.51,
-        "dnb_home": 0.66,
-        "xg": 2.11,
-        "expected_corners": 10.1
+        "over25": 0.71,
+        "corners95": 0.57,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.57,
+        "xg": 2.6,
+        "expected_corners": 10.8
       }
     },
     {
@@ -22,13 +22,43 @@
       "away": "Atalanta BC",
       "kickoff": "18/03 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.56,
+        "over25": 0.68,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.56,
+        "dnb_home": 0.67,
+        "xg": 2.9,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Tottenham Hotspur FC",
+      "away": "Club Atlético de Madrid",
+      "kickoff": "18/03 20:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.56,
+        "cards_home": 0.63,
         "cards_away": 0.58,
         "dnb_home": 0.67,
-        "xg": 2.85,
-        "expected_corners": 8.8
+        "xg": 2.9,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Paranaense",
+      "away": "Cruzeiro EC",
+      "kickoff": "18/03 22:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.63,
+        "cards_home": 0.63,
+        "cards_away": 0.65,
+        "dnb_home": 0.63,
+        "xg": 2.26,
+        "expected_corners": 10.3
       }
     }
   ],
@@ -39,43 +69,28 @@
       "away": "Newcastle United FC",
       "kickoff": "18/03 17:45",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.64,
-        "xg": 3.19,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Liverpool FC",
-      "away": "Galatasaray SK",
-      "kickoff": "18/03 20:00",
-      "markets": {
-        "over25": 0.61,
+        "over25": 0.6,
         "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.65,
-        "xg": 3.32,
-        "expected_corners": 8.9
+        "cards_home": 0.61,
+        "cards_away": 0.51,
+        "dnb_home": 0.71,
+        "xg": 2.79,
+        "expected_corners": 11.4
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "Tottenham Hotspur FC",
-      "away": "Club Atlético de Madrid",
+      "home": "FC Bayern München",
+      "away": "Atalanta BC",
       "kickoff": "18/03 20:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.66,
-        "dnb_home": 0.63,
-        "xg": 2.53,
-        "expected_corners": 10.3
+        "over25": 0.68,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.56,
+        "dnb_home": 0.67,
+        "xg": 2.9,
+        "expected_corners": 12.1
       }
     },
     {
@@ -84,28 +99,13 @@
       "away": "Botafogo FR",
       "kickoff": "18/03 22:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.5,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.17,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "RB Bragantino",
-      "kickoff": "18/03 22:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.38,
-        "expected_corners": 9.9
+        "over25": 0.58,
+        "corners95": 0.61,
+        "cards_home": 0.65,
+        "cards_away": 0.63,
+        "dnb_home": 0.64,
+        "xg": 2.88,
+        "expected_corners": 9.0
       }
     },
     {
@@ -114,13 +114,13 @@
       "away": "Cruzeiro EC",
       "kickoff": "18/03 22:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
+        "over25": 0.65,
+        "corners95": 0.63,
         "cards_home": 0.63,
-        "cards_away": 0.57,
-        "dnb_home": 0.56,
-        "xg": 3.32,
-        "expected_corners": 12.3
+        "cards_away": 0.65,
+        "dnb_home": 0.63,
+        "xg": 2.26,
+        "expected_corners": 10.3
       }
     },
     {
@@ -130,12 +130,12 @@
       "kickoff": "18/03 23:00",
       "markets": {
         "over25": 0.59,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 2.25,
-        "expected_corners": 10.1
+        "corners95": 0.66,
+        "cards_home": 0.64,
+        "cards_away": 0.57,
+        "dnb_home": 0.61,
+        "xg": 2.48,
+        "expected_corners": 11.4
       }
     },
     {
@@ -144,30 +144,30 @@
       "away": "São Paulo FC",
       "kickoff": "18/03 23:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.63,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 9.8
+        "over25": 0.56,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.61,
+        "xg": 2.35,
+        "expected_corners": 12.2
       }
     }
   ],
   "hot": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "Botafogo FR",
-      "kickoff": "18/03 22:00",
+      "league": "UEFA Champions League",
+      "home": "FC Barcelona",
+      "away": "Newcastle United FC",
+      "kickoff": "18/03 17:45",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.5,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.17,
-        "expected_corners": 10.2
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.51,
+        "dnb_home": 0.71,
+        "xg": 2.79,
+        "expected_corners": 11.4
       }
     },
     {
@@ -176,28 +176,13 @@
       "away": "RB Bragantino",
       "kickoff": "18/03 22:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.38,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "São Paulo FC",
-      "kickoff": "18/03 23:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.63,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 9.8
+        "over25": 0.6,
+        "corners95": 0.6,
+        "cards_home": 0.55,
+        "cards_away": 0.62,
+        "dnb_home": 0.69,
+        "xg": 2.72,
+        "expected_corners": 12.0
       }
     }
   ]
