@@ -1,34 +1,19 @@
 {
-  "updated_at": "18/03 20:35",
+  "updated_at": "18/03 21:33",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "RB Bragantino",
-      "kickoff": "18/03 22:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.61,
-        "dnb_home": 0.6,
-        "xg": 2.46,
-        "expected_corners": 8.8
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "SE Palmeiras",
       "away": "Botafogo FR",
       "kickoff": "18/03 22:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 2.34,
-        "expected_corners": 9.2
+        "over25": 0.71,
+        "corners95": 0.58,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.61,
+        "xg": 3.25,
+        "expected_corners": 9.5
       }
     },
     {
@@ -37,167 +22,47 @@
       "away": "Cruzeiro EC",
       "kickoff": "18/03 22:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.7,
-        "cards_home": 0.56,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 3.07,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "São Paulo FC",
-      "kickoff": "18/03 23:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 2.68,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "Coritiba FBC",
-      "kickoff": "18/03 23:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 3.26,
-        "expected_corners": 8.7
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.63,
+        "xg": 2.73,
+        "expected_corners": 12.0
       }
     }
   ],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "RB Bragantino",
-      "kickoff": "18/03 22:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.61,
-        "dnb_home": 0.6,
-        "xg": 2.46,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "Botafogo FR",
-      "kickoff": "18/03 22:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 2.34,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
       "home": "CA Paranaense",
       "away": "Cruzeiro EC",
       "kickoff": "18/03 22:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.7,
-        "cards_home": 0.56,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 3.07,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "São Paulo FC",
-      "kickoff": "18/03 23:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 2.68,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "Coritiba FBC",
-      "kickoff": "18/03 23:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 3.26,
-        "expected_corners": 8.7
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.63,
+        "xg": 2.73,
+        "expected_corners": 12.0
       }
     }
   ],
   "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "Cruzeiro EC",
-      "kickoff": "18/03 22:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.7,
-        "cards_home": 0.56,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 3.07,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
       "home": "CA Mineiro",
       "away": "São Paulo FC",
       "kickoff": "18/03 23:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 2.68,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "Coritiba FBC",
-      "kickoff": "18/03 23:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.58,
+        "over25": 0.59,
+        "corners95": 0.56,
+        "cards_home": 0.61,
         "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 3.26,
-        "expected_corners": 8.7
+        "dnb_home": 0.74,
+        "xg": 2.15,
+        "expected_corners": 11.4
       }
     }
   ]
