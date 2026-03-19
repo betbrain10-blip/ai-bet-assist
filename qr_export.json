@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/03 08:01",
+  "updated_at": "19/03 09:08",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "EC Vitória",
       "kickoff": "19/03 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.64,
-        "xg": 2.7,
-        "expected_corners": 8.5
+        "over25": 0.72,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 3.0,
+        "expected_corners": 10.3
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "Clube do Remo",
       "kickoff": "19/03 23:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
+        "over25": 0.63,
+        "corners95": 0.55,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
         "dnb_home": 0.59,
-        "xg": 3.35,
-        "expected_corners": 10.5
+        "xg": 3.1,
+        "expected_corners": 8.6
       }
     }
   ],
@@ -39,30 +39,31 @@
       "away": "EC Vitória",
       "kickoff": "19/03 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.64,
-        "xg": 2.7,
-        "expected_corners": 8.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "Clube do Remo",
-      "kickoff": "19/03 23:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
-        "dnb_home": 0.59,
-        "xg": 3.35,
-        "expected_corners": 10.5
+        "over25": 0.72,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 3.0,
+        "expected_corners": 10.3
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Grêmio FBPA",
+      "away": "EC Vitória",
+      "kickoff": "19/03 22:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 3.0,
+        "expected_corners": 10.3
+      }
+    }
+  ]
 }
