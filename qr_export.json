@@ -1,22 +1,22 @@
 {
-  "updated_at": "19/03 22:29",
-  "value": [
+  "updated_at": "19/03 22:58",
+  "value": [],
+  "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CR Flamengo",
       "away": "Clube do Remo",
       "kickoff": "19/03 23:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.62,
-        "cards_away": 0.53,
-        "dnb_home": 0.63,
-        "xg": 2.53,
-        "expected_corners": 12.6
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.68,
+        "xg": 3.25,
+        "expected_corners": 12.0
       }
     }
   ],
-  "corner": [],
   "hot": []
 }
