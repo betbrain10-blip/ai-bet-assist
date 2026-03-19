@@ -1,34 +1,19 @@
 {
-  "updated_at": "19/03 11:07",
+  "updated_at": "19/03 11:57",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Grêmio FBPA",
-      "away": "EC Vitória",
-      "kickoff": "19/03 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.55,
-        "xg": 2.42,
-        "expected_corners": 10.9
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CR Flamengo",
       "away": "Clube do Remo",
       "kickoff": "19/03 23:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.5,
-        "cards_away": 0.55,
-        "dnb_home": 0.65,
-        "xg": 2.12,
-        "expected_corners": 10.0
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.66,
+        "xg": 2.21,
+        "expected_corners": 11.9
       }
     }
   ],
@@ -39,28 +24,13 @@
       "away": "EC Vitória",
       "kickoff": "19/03 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.55,
-        "xg": 2.42,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "Clube do Remo",
-      "kickoff": "19/03 23:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
+        "over25": 0.62,
+        "corners95": 0.65,
         "cards_home": 0.5,
-        "cards_away": 0.55,
-        "dnb_home": 0.65,
-        "xg": 2.12,
-        "expected_corners": 10.0
+        "cards_away": 0.63,
+        "dnb_home": 0.67,
+        "xg": 3.29,
+        "expected_corners": 11.0
       }
     }
   ],
