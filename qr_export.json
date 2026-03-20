@@ -1,5 +1,5 @@
 {
-  "updated_at": "20/03 10:37",
+  "updated_at": "20/03 11:31",
   "value": [
     {
       "league": "Serie A",
@@ -8,12 +8,27 @@
       "kickoff": "20/03 17:30",
       "markets": {
         "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.68,
-        "xg": 2.19,
-        "expected_corners": 11.4
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 2.66,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Heracles Almelo",
+      "away": "SBV Excelsior",
+      "kickoff": "20/03 19:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.63,
+        "dnb_home": 0.62,
+        "xg": 2.22,
+        "expected_corners": 10.2
       }
     },
     {
@@ -22,13 +37,13 @@
       "away": "Udinese Calcio",
       "kickoff": "20/03 19:45",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.64,
-        "cards_away": 0.63,
-        "dnb_home": 0.59,
-        "xg": 2.26,
-        "expected_corners": 9.7
+        "over25": 0.69,
+        "corners95": 0.57,
+        "cards_home": 0.55,
+        "cards_away": 0.58,
+        "dnb_home": 0.56,
+        "xg": 2.32,
+        "expected_corners": 9.1
       }
     },
     {
@@ -37,28 +52,43 @@
       "away": "Stoke City FC",
       "kickoff": "20/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 3.22,
-        "expected_corners": 11.0
+        "over25": 0.71,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.56,
+        "xg": 3.32,
+        "expected_corners": 10.8
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "CF Estrela da Amadora",
-      "away": "Casa Pia AC",
-      "kickoff": "20/03 20:15",
+      "league": "Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Manchester United FC",
+      "kickoff": "20/03 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
-        "cards_home": 0.61,
-        "cards_away": 0.66,
-        "dnb_home": 0.59,
-        "xg": 2.26,
-        "expected_corners": 8.9
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.67,
+        "cards_away": 0.55,
+        "dnb_home": 0.64,
+        "xg": 3.38,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Villarreal CF",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "20/03 20:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.52,
+        "dnb_home": 0.6,
+        "xg": 3.19,
+        "expected_corners": 9.5
       }
     }
   ],
@@ -70,27 +100,42 @@
       "kickoff": "20/03 17:30",
       "markets": {
         "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.68,
-        "xg": 2.19,
-        "expected_corners": 11.4
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 2.66,
+        "expected_corners": 11.5
       }
     },
     {
-      "league": "Serie A",
-      "home": "Genoa CFC",
-      "away": "Udinese Calcio",
-      "kickoff": "20/03 19:45",
+      "league": "Eredivisie",
+      "home": "Heracles Almelo",
+      "away": "SBV Excelsior",
+      "kickoff": "20/03 19:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.64,
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.56,
         "cards_away": 0.63,
-        "dnb_home": 0.59,
-        "xg": 2.26,
-        "expected_corners": 9.7
+        "dnb_home": 0.62,
+        "xg": 2.22,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "RB Leipzig",
+      "away": "TSG 1899 Hoffenheim",
+      "kickoff": "20/03 19:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.64,
+        "cards_home": 0.68,
+        "cards_away": 0.61,
+        "dnb_home": 0.69,
+        "xg": 2.48,
+        "expected_corners": 11.8
       }
     },
     {
@@ -99,28 +144,13 @@
       "away": "Angers SCO",
       "kickoff": "20/03 19:45",
       "markets": {
-        "over25": 0.55,
+        "over25": 0.56,
         "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 2.77,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "Real Sociedad de Fútbol",
-      "kickoff": "20/03 20:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.66,
-        "xg": 2.32,
-        "expected_corners": 12.7
+        "cards_home": 0.67,
+        "cards_away": 0.57,
+        "dnb_home": 0.55,
+        "xg": 2.52,
+        "expected_corners": 10.3
       }
     },
     {
@@ -129,45 +159,75 @@
       "away": "Stoke City FC",
       "kickoff": "20/03 20:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 3.22,
-        "expected_corners": 11.0
+        "over25": 0.71,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.56,
+        "xg": 3.32,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Manchester United FC",
+      "kickoff": "20/03 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.67,
+        "cards_away": 0.55,
+        "dnb_home": 0.64,
+        "xg": 3.38,
+        "expected_corners": 10.4
       }
     }
   ],
   "hot": [
     {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "Angers SCO",
-      "kickoff": "20/03 19:45",
+      "league": "Serie A",
+      "home": "Cagliari Calcio",
+      "away": "SSC Napoli",
+      "kickoff": "20/03 17:30",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 2.77,
-        "expected_corners": 11.9
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 2.66,
+        "expected_corners": 11.5
       }
     },
     {
-      "league": "Championship",
-      "home": "Preston North End FC",
-      "away": "Stoke City FC",
-      "kickoff": "20/03 20:00",
+      "league": "Bundesliga",
+      "home": "RB Leipzig",
+      "away": "TSG 1899 Hoffenheim",
+      "kickoff": "20/03 19:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 3.22,
-        "expected_corners": 11.0
+        "over25": 0.61,
+        "corners95": 0.64,
+        "cards_home": 0.68,
+        "cards_away": 0.61,
+        "dnb_home": 0.69,
+        "xg": 2.48,
+        "expected_corners": 11.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CF Estrela da Amadora",
+      "away": "Casa Pia AC",
+      "kickoff": "20/03 20:15",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.55,
+        "cards_home": 0.56,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 2.32,
+        "expected_corners": 11.9
       }
     }
   ]
