@@ -1,159 +1,38 @@
 {
-  "updated_at": "21/03 19:45",
+  "updated_at": "21/03 20:27",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "21/03 19:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.58,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.73,
-        "xg": 2.67,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "PEC Zwolle",
-      "away": "NAC Breda",
-      "kickoff": "21/03 20:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.6,
-        "cards_home": 0.62,
-        "cards_away": 0.59,
-        "dnb_home": 0.68,
-        "xg": 2.64,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Leeds United FC",
-      "away": "Brentford FC",
-      "kickoff": "21/03 20:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.7,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.56,
-        "xg": 3.23,
-        "expected_corners": 8.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "Valencia CF",
-      "kickoff": "21/03 20:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.64,
-        "cards_home": 0.58,
-        "cards_away": 0.59,
-        "dnb_home": 0.68,
-        "xg": 3.1,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Leeds United FC",
-      "away": "Brentford FC",
-      "kickoff": "21/03 20:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.7,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.56,
-        "xg": 3.23,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "OGC Nice",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "21/03 20:05",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.54,
-        "dnb_home": 0.61,
-        "xg": 3.28,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "AVS",
-      "kickoff": "21/03 20:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.64,
-        "cards_home": 0.56,
-        "cards_away": 0.62,
-        "dnb_home": 0.75,
-        "xg": 2.31,
-        "expected_corners": 8.7
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "21/03 19:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.58,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.73,
-        "xg": 2.67,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "AVS",
-      "kickoff": "21/03 20:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.64,
-        "cards_home": 0.56,
-        "cards_away": 0.62,
-        "dnb_home": 0.75,
-        "xg": 2.31,
-        "expected_corners": 8.7
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Fluminense FC",
       "away": "CA Mineiro",
       "kickoff": "21/03 21:30",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.6,
-        "cards_home": 0.64,
-        "cards_away": 0.62,
-        "dnb_home": 0.73,
-        "xg": 2.55,
-        "expected_corners": 9.7
+        "over25": 0.64,
+        "corners95": 0.56,
+        "cards_home": 0.62,
+        "cards_away": 0.61,
+        "dnb_home": 0.59,
+        "xg": 2.58,
+        "expected_corners": 12.5
       }
     }
-  ]
+  ],
+  "corner": [
+    {
+      "league": "Primeira Liga",
+      "home": "CD Tondela",
+      "away": "AVS",
+      "kickoff": "21/03 20:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.63,
+        "xg": 2.64,
+        "expected_corners": 8.6
+      }
+    }
+  ],
+  "hot": []
 }
