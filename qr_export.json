@@ -1,5 +1,5 @@
 {
-  "updated_at": "21/03 20:27",
+  "updated_at": "21/03 20:51",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,30 +7,30 @@
       "away": "CA Mineiro",
       "kickoff": "21/03 21:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.62,
-        "cards_away": 0.61,
-        "dnb_home": 0.59,
-        "xg": 2.58,
-        "expected_corners": 12.5
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.52,
+        "dnb_home": 0.58,
+        "xg": 3.28,
+        "expected_corners": 10.5
       }
     }
   ],
   "corner": [
     {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "AVS",
-      "kickoff": "21/03 20:30",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Fluminense FC",
+      "away": "CA Mineiro",
+      "kickoff": "21/03 21:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.59,
-        "dnb_home": 0.63,
-        "xg": 2.64,
-        "expected_corners": 8.6
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.52,
+        "dnb_home": 0.58,
+        "xg": 3.28,
+        "expected_corners": 10.5
       }
     }
   ],
