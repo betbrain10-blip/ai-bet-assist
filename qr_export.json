@@ -1,22 +1,6 @@
 {
-  "updated_at": "21/03 20:51",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Fluminense FC",
-      "away": "CA Mineiro",
-      "kickoff": "21/03 21:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.58,
-        "xg": 3.28,
-        "expected_corners": 10.5
-      }
-    }
-  ],
+  "updated_at": "21/03 21:25",
+  "value": [],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -24,15 +8,31 @@
       "away": "CA Mineiro",
       "kickoff": "21/03 21:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.54,
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.57,
         "cards_away": 0.52,
-        "dnb_home": 0.58,
-        "xg": 3.28,
-        "expected_corners": 10.5
+        "dnb_home": 0.69,
+        "xg": 2.22,
+        "expected_corners": 12.0
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Fluminense FC",
+      "away": "CA Mineiro",
+      "kickoff": "21/03 21:30",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.52,
+        "dnb_home": 0.69,
+        "xg": 2.22,
+        "expected_corners": 12.0
+      }
+    }
+  ]
 }
