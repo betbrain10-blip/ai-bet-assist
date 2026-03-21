@@ -1,64 +1,19 @@
 {
-  "updated_at": "21/03 17:28",
+  "updated_at": "21/03 17:52",
   "value": [
     {
-      "league": "Bundesliga",
-      "home": "Borussia Dortmund",
-      "away": "Hamburger SV",
-      "kickoff": "21/03 17:30",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "RB Bragantino",
+      "away": "Botafogo FR",
+      "kickoff": "21/03 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.55,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.56,
-        "xg": 3.19,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "AJ Auxerre",
-      "away": "Stade Brestois 29",
-      "kickoff": "21/03 18:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 2.48,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sport Lisboa e Benfica",
-      "away": "Vitória SC",
-      "kickoff": "21/03 18:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.57,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.42,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "21/03 19:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.58,
-        "cards_home": 0.68,
-        "cards_away": 0.6,
-        "dnb_home": 0.64,
-        "xg": 2.41,
-        "expected_corners": 11.3
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.52,
+        "dnb_home": 0.61,
+        "xg": 2.98,
+        "expected_corners": 8.6
       }
     },
     {
@@ -68,104 +23,12 @@
       "kickoff": "21/03 20:00",
       "markets": {
         "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.75,
-        "xg": 2.42,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "OGC Nice",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "21/03 20:05",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
+        "corners95": 0.63,
         "cards_home": 0.61,
-        "cards_away": 0.5,
-        "dnb_home": 0.72,
-        "xg": 2.87,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "AVS",
-      "kickoff": "21/03 20:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.62,
-        "xg": 3.14,
-        "expected_corners": 12.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "CA Osasuna",
-      "away": "Girona FC",
-      "kickoff": "21/03 17:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.63,
-        "xg": 2.5,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "Sparta Rotterdam",
-      "away": "FC Volendam",
-      "kickoff": "21/03 17:45",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.61,
-        "cards_home": 0.64,
-        "cards_away": 0.67,
-        "dnb_home": 0.65,
-        "xg": 2.52,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "Gil Vicente FC",
-      "kickoff": "21/03 18:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
-        "dnb_home": 0.63,
-        "xg": 2.82,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Leeds United FC",
-      "away": "Brentford FC",
-      "kickoff": "21/03 20:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.59,
-        "dnb_home": 0.68,
-        "xg": 2.76,
-        "expected_corners": 8.6
+        "cards_away": 0.54,
+        "dnb_home": 0.6,
+        "xg": 2.77,
+        "expected_corners": 10.5
       }
     },
     {
@@ -174,105 +37,13 @@
       "away": "NAC Breda",
       "kickoff": "21/03 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.63,
-        "xg": 2.25,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "Valencia CF",
-      "kickoff": "21/03 20:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.75,
-        "xg": 2.42,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Tondela",
-      "away": "AVS",
-      "kickoff": "21/03 20:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.62,
-        "xg": 3.14,
-        "expected_corners": 12.4
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Chelsea FC",
-      "kickoff": "21/03 17:30",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.56,
-        "cards_home": 0.64,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 2.35,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sport Lisboa e Benfica",
-      "away": "Vitória SC",
-      "kickoff": "21/03 18:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.57,
-        "cards_home": 0.54,
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.55,
         "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.42,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "Botafogo FR",
-      "kickoff": "21/03 19:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.58,
-        "cards_home": 0.64,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.85,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "Valencia CF",
-      "kickoff": "21/03 20:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
         "dnb_home": 0.75,
-        "xg": 2.42,
-        "expected_corners": 9.9
+        "xg": 2.41,
+        "expected_corners": 9.8
       }
     },
     {
@@ -281,13 +52,28 @@
       "away": "Paris Saint-Germain FC",
       "kickoff": "21/03 20:05",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.5,
-        "dnb_home": 0.72,
-        "xg": 2.87,
-        "expected_corners": 11.9
+        "over25": 0.63,
+        "corners95": 0.55,
+        "cards_home": 0.58,
+        "cards_away": 0.68,
+        "dnb_home": 0.68,
+        "xg": 2.91,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Tondela",
+      "away": "AVS",
+      "kickoff": "21/03 20:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.58,
+        "cards_home": 0.67,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 2.91,
+        "expected_corners": 8.7
       }
     },
     {
@@ -296,13 +82,167 @@
       "away": "CA Mineiro",
       "kickoff": "21/03 21:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.58,
+        "over25": 0.71,
+        "corners95": 0.69,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.6,
+        "xg": 2.47,
+        "expected_corners": 10.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Ligue 1",
+      "home": "AJ Auxerre",
+      "away": "Stade Brestois 29",
+      "kickoff": "21/03 18:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.55,
+        "dnb_home": 0.69,
+        "xg": 3.25,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Santa Clara",
+      "away": "Gil Vicente FC",
+      "kickoff": "21/03 18:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.62,
         "cards_home": 0.66,
-        "cards_away": 0.51,
+        "cards_away": 0.52,
+        "dnb_home": 0.58,
+        "xg": 3.24,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "RB Bragantino",
+      "away": "Botafogo FR",
+      "kickoff": "21/03 19:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.52,
+        "dnb_home": 0.61,
+        "xg": 2.98,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Juventus FC",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "21/03 19:45",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.61,
+        "dnb_home": 0.62,
+        "xg": 3.15,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Valencia CF",
+      "kickoff": "21/03 20:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.54,
+        "dnb_home": 0.6,
+        "xg": 2.77,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "PEC Zwolle",
+      "away": "NAC Breda",
+      "kickoff": "21/03 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.6,
+        "dnb_home": 0.75,
+        "xg": 2.41,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Fluminense FC",
+      "away": "CA Mineiro",
+      "kickoff": "21/03 21:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.69,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.6,
+        "xg": 2.47,
+        "expected_corners": 10.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Ligue 1",
+      "home": "AJ Auxerre",
+      "away": "Stade Brestois 29",
+      "kickoff": "21/03 18:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.55,
+        "dnb_home": 0.69,
+        "xg": 3.25,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "PEC Zwolle",
+      "away": "NAC Breda",
+      "kickoff": "21/03 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.6,
+        "dnb_home": 0.75,
+        "xg": 2.41,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Tondela",
+      "away": "AVS",
+      "kickoff": "21/03 20:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.58,
+        "cards_home": 0.67,
+        "cards_away": 0.63,
         "dnb_home": 0.74,
-        "xg": 2.11,
-        "expected_corners": 9.7
+        "xg": 2.91,
+        "expected_corners": 8.7
       }
     }
   ]
