@@ -1,22 +1,6 @@
 {
-  "updated_at": "22/03 23:27",
+  "updated_at": "22/03 23:53",
   "value": [],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "CR Flamengo",
-      "kickoff": "22/03 23:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.6,
-        "cards_away": 0.5,
-        "dnb_home": 0.62,
-        "xg": 2.12,
-        "expected_corners": 10.3
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
