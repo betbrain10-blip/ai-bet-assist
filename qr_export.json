@@ -1,22 +1,6 @@
 {
-  "updated_at": "22/03 22:52",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "CR Flamengo",
-      "kickoff": "22/03 23:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.44,
-        "expected_corners": 12.5
-      }
-    }
-  ],
+  "updated_at": "22/03 23:27",
+  "value": [],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -24,31 +8,15 @@
       "away": "CR Flamengo",
       "kickoff": "22/03 23:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.44,
-        "expected_corners": 12.5
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.5,
+        "dnb_home": 0.62,
+        "xg": 2.12,
+        "expected_corners": 10.3
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "CR Flamengo",
-      "kickoff": "22/03 23:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.44,
-        "expected_corners": 12.5
-      }
-    }
-  ]
+  "hot": []
 }
