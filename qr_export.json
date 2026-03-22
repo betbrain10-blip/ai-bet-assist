@@ -1,5 +1,5 @@
 {
-  "updated_at": "22/03 20:54",
+  "updated_at": "22/03 21:26",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "Chapecoense AF",
       "kickoff": "22/03 21:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.66,
-        "cards_away": 0.51,
-        "dnb_home": 0.63,
-        "xg": 2.45,
-        "expected_corners": 10.0
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 2.59,
+        "expected_corners": 10.8
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "CR Flamengo",
       "kickoff": "22/03 23:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.55,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 2.39,
-        "expected_corners": 9.6
+        "over25": 0.64,
+        "corners95": 0.57,
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.73,
+        "xg": 2.46,
+        "expected_corners": 11.2
       }
     }
   ],
@@ -39,13 +39,13 @@
       "away": "Mirassol FC",
       "kickoff": "22/03 21:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.64,
-        "xg": 3.24,
-        "expected_corners": 11.6
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 3.37,
+        "expected_corners": 10.4
       }
     },
     {
@@ -54,30 +54,45 @@
       "away": "Chapecoense AF",
       "kickoff": "22/03 21:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.66,
-        "cards_away": 0.51,
-        "dnb_home": 0.63,
-        "xg": 2.45,
-        "expected_corners": 10.0
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 2.59,
+        "expected_corners": 10.8
       }
     }
   ],
   "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
+      "home": "EC Vitória",
+      "away": "Mirassol FC",
+      "kickoff": "22/03 21:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 3.37,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
       "home": "SC Corinthians Paulista",
       "away": "CR Flamengo",
       "kickoff": "22/03 23:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.55,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 2.39,
-        "expected_corners": 9.6
+        "over25": 0.64,
+        "corners95": 0.57,
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.73,
+        "xg": 2.46,
+        "expected_corners": 11.2
       }
     }
   ]
