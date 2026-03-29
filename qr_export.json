@@ -1,22 +1,22 @@
 {
-  "updated_at": "29/03 15:32",
+  "updated_at": "29/03 16:35",
   "value": [],
-  "corner": [
+  "corner": [],
+  "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Paranaense",
       "away": "Botafogo FR",
       "kickoff": "29/03 22:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.61,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.63,
-        "xg": 2.36,
-        "expected_corners": 12.1
+        "over25": 0.62,
+        "corners95": 0.6,
+        "cards_home": 0.6,
+        "cards_away": 0.5,
+        "dnb_home": 0.73,
+        "xg": 2.74,
+        "expected_corners": 10.3
       }
     }
-  ],
-  "hot": []
+  ]
 }
