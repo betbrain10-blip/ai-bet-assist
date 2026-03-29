@@ -1,5 +1,5 @@
 {
-  "updated_at": "29/03 06:14",
+  "updated_at": "29/03 07:33",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "Botafogo FR",
       "kickoff": "29/03 22:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.57,
-        "cards_home": 0.64,
-        "cards_away": 0.52,
+        "over25": 0.68,
+        "corners95": 0.55,
+        "cards_home": 0.62,
+        "cards_away": 0.51,
         "dnb_home": 0.68,
-        "xg": 3.27,
-        "expected_corners": 11.5
+        "xg": 2.75,
+        "expected_corners": 8.6
       }
     }
   ],
