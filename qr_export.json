@@ -1,81 +1,19 @@
 {
-  "updated_at": "01/04 14:49",
+  "updated_at": "01/04 16:06",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "SC Internacional",
-      "away": "São Paulo FC",
-      "kickoff": "01/04 22:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.61,
-        "cards_away": 0.67,
-        "dnb_home": 0.58,
-        "xg": 2.86,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
       "home": "Cruzeiro EC",
       "away": "EC Vitória",
       "kickoff": "01/04 23:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 2.9,
-        "expected_corners": 12.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Internacional",
-      "away": "São Paulo FC",
-      "kickoff": "01/04 22:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.61,
-        "cards_away": 0.67,
-        "dnb_home": 0.58,
-        "xg": 2.86,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "EC Vitória",
-      "kickoff": "01/04 23:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 2.9,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "CA Paranaense",
-      "kickoff": "01/04 23:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.67,
-        "dnb_home": 0.62,
-        "xg": 2.92,
-        "expected_corners": 10.3
+        "over25": 0.67,
+        "corners95": 0.64,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.7,
+        "xg": 2.71,
+        "expected_corners": 12.1
       }
     },
     {
@@ -84,15 +22,108 @@
       "away": "CR Vasco da Gama",
       "kickoff": "01/04 23:30",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.72,
         "corners95": 0.66,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.66,
-        "xg": 2.8,
-        "expected_corners": 11.0
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.56,
+        "xg": 3.36,
+        "expected_corners": 10.9
       }
     }
   ],
-  "hot": []
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "Mirassol FC",
+      "kickoff": "01/04 22:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.68,
+        "cards_home": 0.64,
+        "cards_away": 0.56,
+        "dnb_home": 0.62,
+        "xg": 3.25,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "São Paulo FC",
+      "kickoff": "01/04 22:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.58,
+        "dnb_home": 0.58,
+        "xg": 3.29,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Cruzeiro EC",
+      "away": "EC Vitória",
+      "kickoff": "01/04 23:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.64,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.7,
+        "xg": 2.71,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "CA Paranaense",
+      "kickoff": "01/04 23:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.68,
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.58,
+        "xg": 3.2,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "CR Vasco da Gama",
+      "kickoff": "01/04 23:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.56,
+        "xg": 3.36,
+        "expected_corners": 10.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Cruzeiro EC",
+      "away": "EC Vitória",
+      "kickoff": "01/04 23:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.64,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.7,
+        "xg": 2.71,
+        "expected_corners": 12.1
+      }
+    }
+  ]
 }
