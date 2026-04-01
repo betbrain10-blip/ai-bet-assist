@@ -1,96 +1,66 @@
 {
-  "updated_at": "01/04 20:43",
+  "updated_at": "01/04 21:41",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Internacional",
-      "away": "São Paulo FC",
-      "kickoff": "01/04 22:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.53,
-        "dnb_home": 0.59,
-        "xg": 2.74,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "Mirassol FC",
-      "kickoff": "01/04 22:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.58,
-        "cards_home": 0.63,
-        "cards_away": 0.55,
-        "dnb_home": 0.56,
-        "xg": 2.2,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "CA Paranaense",
-      "kickoff": "01/04 23:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.61,
-        "cards_home": 0.56,
-        "cards_away": 0.54,
-        "dnb_home": 0.67,
-        "xg": 3.09,
-        "expected_corners": 10.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Internacional",
-      "away": "São Paulo FC",
-      "kickoff": "01/04 22:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.53,
-        "dnb_home": 0.59,
-        "xg": 2.74,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "CA Paranaense",
-      "kickoff": "01/04 23:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.61,
-        "cards_home": 0.56,
-        "cards_away": 0.54,
-        "dnb_home": 0.67,
-        "xg": 3.09,
-        "expected_corners": 10.3
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Cruzeiro EC",
       "away": "EC Vitória",
       "kickoff": "01/04 23:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.68,
-        "cards_home": 0.62,
-        "cards_away": 0.61,
-        "dnb_home": 0.65,
-        "xg": 2.79,
-        "expected_corners": 10.4
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.57,
+        "dnb_home": 0.55,
+        "xg": 2.12,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "CA Paranaense",
+      "kickoff": "01/04 23:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.62,
+        "xg": 2.85,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Cruzeiro EC",
+      "away": "EC Vitória",
+      "kickoff": "01/04 23:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.57,
+        "dnb_home": 0.55,
+        "xg": 2.12,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "CA Paranaense",
+      "kickoff": "01/04 23:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.62,
+        "xg": 2.85,
+        "expected_corners": 10.6
       }
     },
     {
@@ -99,13 +69,13 @@
       "away": "CR Vasco da Gama",
       "kickoff": "01/04 23:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.52,
-        "dnb_home": 0.57,
-        "xg": 2.67,
-        "expected_corners": 10.2
+        "over25": 0.59,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.53,
+        "dnb_home": 0.62,
+        "xg": 2.86,
+        "expected_corners": 10.5
       }
     }
   ],
