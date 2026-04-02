@@ -1,5 +1,5 @@
 {
-  "updated_at": "02/04 06:12",
+  "updated_at": "02/04 07:46",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,28 +7,13 @@
       "away": "CA Mineiro",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.47,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "Clube do Remo",
-      "kickoff": "02/04 22:00",
-      "markets": {
-        "over25": 0.69,
+        "over25": 0.65,
         "corners95": 0.61,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 2.51,
-        "expected_corners": 11.1
+        "cards_home": 0.58,
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 2.39,
+        "expected_corners": 11.0
       }
     }
   ],
@@ -39,46 +24,15 @@
       "away": "CA Mineiro",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.47,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "Clube do Remo",
-      "kickoff": "02/04 22:00",
-      "markets": {
-        "over25": 0.69,
+        "over25": 0.65,
         "corners95": 0.61,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 2.51,
-        "expected_corners": 11.1
+        "cards_home": 0.58,
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 2.39,
+        "expected_corners": 11.0
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "CA Mineiro",
-      "kickoff": "02/04 22:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.47,
-        "expected_corners": 11.5
-      }
-    }
-  ]
+  "hot": []
 }
