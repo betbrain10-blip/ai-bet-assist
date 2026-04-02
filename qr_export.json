@@ -1,5 +1,5 @@
 {
-  "updated_at": "02/04 10:04",
+  "updated_at": "02/04 11:24",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,63 +7,16 @@
       "away": "CA Mineiro",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.57,
-        "cards_home": 0.51,
-        "cards_away": 0.6,
-        "dnb_home": 0.58,
-        "xg": 3.38,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "Clube do Remo",
-      "kickoff": "02/04 22:00",
-      "markets": {
         "over25": 0.7,
-        "corners95": 0.64,
+        "corners95": 0.58,
         "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.52,
-        "expected_corners": 8.6
+        "cards_away": 0.56,
+        "dnb_home": 0.6,
+        "xg": 2.48,
+        "expected_corners": 8.7
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "Clube do Remo",
-      "kickoff": "02/04 22:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.52,
-        "expected_corners": 8.6
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "Clube do Remo",
-      "kickoff": "02/04 22:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.52,
-        "expected_corners": 8.6
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
