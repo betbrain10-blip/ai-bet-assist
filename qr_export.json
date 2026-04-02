@@ -1,35 +1,36 @@
 {
-  "updated_at": "02/04 12:06",
-  "value": [],
-  "corner": [
+  "updated_at": "02/04 14:01",
+  "value": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Chapecoense AF",
       "away": "CA Mineiro",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.65,
-        "cards_home": 0.67,
+        "over25": 0.65,
+        "corners95": 0.6,
+        "cards_home": 0.56,
         "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 3.11,
-        "expected_corners": 8.8
+        "dnb_home": 0.71,
+        "xg": 2.64,
+        "expected_corners": 9.5
       }
-    },
+    }
+  ],
+  "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Santos FC",
       "away": "Clube do Remo",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.68,
-        "dnb_home": 0.61,
-        "xg": 3.02,
-        "expected_corners": 11.9
+        "over25": 0.56,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.71,
+        "xg": 2.92,
+        "expected_corners": 9.9
       }
     }
   ],
@@ -40,13 +41,28 @@
       "away": "CA Mineiro",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.65,
-        "cards_home": 0.67,
+        "over25": 0.65,
+        "corners95": 0.6,
+        "cards_home": 0.56,
         "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 3.11,
-        "expected_corners": 8.8
+        "dnb_home": 0.71,
+        "xg": 2.64,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "Clube do Remo",
+      "kickoff": "02/04 22:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.71,
+        "xg": 2.92,
+        "expected_corners": 9.9
       }
     }
   ]
