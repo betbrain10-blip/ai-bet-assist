@@ -1,5 +1,5 @@
 {
-  "updated_at": "02/04 07:46",
+  "updated_at": "02/04 08:56",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,28 @@
       "away": "CA Mineiro",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.65,
-        "xg": 2.39,
-        "expected_corners": 11.0
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.69,
+        "xg": 3.1,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "Clube do Remo",
+      "kickoff": "02/04 22:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.55,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.58,
+        "xg": 2.69,
+        "expected_corners": 11.9
       }
     }
   ],
@@ -24,15 +39,31 @@
       "away": "CA Mineiro",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.65,
-        "xg": 2.39,
-        "expected_corners": 11.0
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.69,
+        "xg": 3.1,
+        "expected_corners": 10.2
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "CA Mineiro",
+      "kickoff": "02/04 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.69,
+        "xg": 3.1,
+        "expected_corners": 10.2
+      }
+    }
+  ]
 }
