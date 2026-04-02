@@ -1,20 +1,19 @@
 {
-  "updated_at": "02/04 02:22",
-  "value": [],
-  "corner": [
+  "updated_at": "02/04 04:40",
+  "value": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Chapecoense AF",
       "away": "CA Mineiro",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.51,
-        "dnb_home": 0.67,
-        "xg": 3.35,
-        "expected_corners": 9.7
+        "over25": 0.7,
+        "corners95": 0.57,
+        "cards_home": 0.57,
+        "cards_away": 0.52,
+        "dnb_home": 0.62,
+        "xg": 2.51,
+        "expected_corners": 10.8
       }
     },
     {
@@ -23,15 +22,16 @@
       "away": "Clube do Remo",
       "kickoff": "02/04 22:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.61,
-        "cards_away": 0.65,
-        "dnb_home": 0.62,
-        "xg": 3.34,
-        "expected_corners": 12.5
+        "over25": 0.7,
+        "corners95": 0.58,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.58,
+        "xg": 2.19,
+        "expected_corners": 10.2
       }
     }
   ],
+  "corner": [],
   "hot": []
 }
