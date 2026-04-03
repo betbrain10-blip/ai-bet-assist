@@ -1,54 +1,6 @@
 {
-  "updated_at": "03/04 19:11",
-  "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "CD Santa Clara",
-      "kickoff": "03/04 19:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.71,
-        "xg": 2.62,
-        "expected_corners": 12.2
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "CD Santa Clara",
-      "kickoff": "03/04 19:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.71,
-        "xg": 2.62,
-        "expected_corners": 12.2
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "CD Santa Clara",
-      "kickoff": "03/04 19:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.71,
-        "xg": 2.62,
-        "expected_corners": 12.2
-      }
-    }
-  ]
+  "updated_at": "03/04 19:59",
+  "value": [],
+  "corner": [],
+  "hot": []
 }
