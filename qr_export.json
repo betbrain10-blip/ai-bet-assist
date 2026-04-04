@@ -1,5 +1,5 @@
 {
-  "updated_at": "04/04 22:29",
+  "updated_at": "04/04 22:59",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "Fluminense FC",
       "kickoff": "04/04 23:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.62,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.3,
-        "expected_corners": 8.6
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.6,
+        "dnb_home": 0.66,
+        "xg": 3.18,
+        "expected_corners": 10.4
       }
     }
   ],
@@ -24,13 +24,13 @@
       "away": "Fluminense FC",
       "kickoff": "04/04 23:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.62,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.3,
-        "expected_corners": 8.6
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.6,
+        "dnb_home": 0.66,
+        "xg": 3.18,
+        "expected_corners": 10.4
       }
     }
   ],
