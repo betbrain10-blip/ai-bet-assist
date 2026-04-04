@@ -1,64 +1,19 @@
 {
-  "updated_at": "04/04 16:35",
+  "updated_at": "04/04 17:29",
   "value": [
-    {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "FC Groningen",
-      "kickoff": "04/04 16:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.59,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.38,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Moreirense FC",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "04/04 17:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.64,
-        "xg": 2.28,
-        "expected_corners": 12.1
-      }
-    },
     {
       "league": "Serie A",
       "home": "SS Lazio",
       "away": "Parma Calcio 1913",
       "kickoff": "04/04 18:45",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.68,
-        "xg": 2.42,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "SBV Excelsior",
-      "away": "NEC",
-      "kickoff": "04/04 19:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.53,
-        "dnb_home": 0.68,
-        "xg": 2.41,
-        "expected_corners": 11.6
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.59,
+        "xg": 2.11,
+        "expected_corners": 9.0
       }
     },
     {
@@ -67,13 +22,45 @@
       "away": "FC Twente '65",
       "kickoff": "04/04 19:00",
       "markets": {
+        "over25": 0.7,
+        "corners95": 0.58,
+        "cards_home": 0.63,
+        "cards_away": 0.65,
+        "dnb_home": 0.67,
+        "xg": 2.23,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Lille OSC",
+      "away": "Racing Club de Lens",
+      "kickoff": "04/04 19:05",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.58,
+        "cards_away": 0.63,
+        "dnb_home": 0.68,
+        "xg": 2.76,
+        "expected_corners": 11.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "SS Lazio",
+      "away": "Parma Calcio 1913",
+      "kickoff": "04/04 18:45",
+      "markets": {
         "over25": 0.65,
-        "corners95": 0.67,
+        "corners95": 0.69,
         "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.63,
-        "xg": 2.59,
-        "expected_corners": 11.2
+        "cards_away": 0.67,
+        "dnb_home": 0.59,
+        "xg": 2.11,
+        "expected_corners": 9.0
       }
     },
     {
@@ -82,120 +69,13 @@
       "away": "FC Barcelona",
       "kickoff": "04/04 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
-        "cards_home": 0.61,
-        "cards_away": 0.55,
-        "dnb_home": 0.66,
-        "xg": 2.85,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Lille OSC",
-      "away": "Racing Club de Lens",
-      "kickoff": "04/04 19:05",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.59,
-        "dnb_home": 0.6,
-        "xg": 2.9,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "FC Famalicão",
-      "kickoff": "04/04 19:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.54,
-        "dnb_home": 0.64,
-        "xg": 3.22,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Cruzeiro EC",
-      "kickoff": "04/04 21:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.62,
-        "xg": 2.81,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "Fluminense FC",
-      "kickoff": "04/04 23:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.65,
-        "xg": 2.97,
-        "expected_corners": 10.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "Moreirense FC",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "04/04 17:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.64,
-        "xg": 2.28,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "AZ",
-      "away": "Fortuna Sittard",
-      "kickoff": "04/04 17:00",
-      "markets": {
         "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.61,
-        "cards_away": 0.5,
-        "dnb_home": 0.74,
-        "xg": 2.7,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "Parma Calcio 1913",
-      "kickoff": "04/04 18:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.68,
-        "xg": 2.42,
-        "expected_corners": 10.7
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.58,
+        "dnb_home": 0.66,
+        "xg": 2.47,
+        "expected_corners": 8.7
       }
     },
     {
@@ -204,28 +84,13 @@
       "away": "NEC",
       "kickoff": "04/04 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.53,
+        "over25": 0.61,
+        "corners95": 0.65,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
         "dnb_home": 0.68,
-        "xg": 2.41,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "AFC Ajax",
-      "away": "FC Twente '65",
-      "kickoff": "04/04 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.63,
-        "xg": 2.59,
-        "expected_corners": 11.2
+        "xg": 2.67,
+        "expected_corners": 9.8
       }
     },
     {
@@ -234,91 +99,15 @@
       "away": "Racing Club de Lens",
       "kickoff": "04/04 19:05",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.59,
-        "dnb_home": 0.6,
-        "xg": 2.9,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "FC Famalicão",
-      "kickoff": "04/04 19:30",
-      "markets": {
-        "over25": 0.7,
+        "over25": 0.64,
         "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.54,
-        "dnb_home": 0.64,
-        "xg": 3.22,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Cruzeiro EC",
-      "kickoff": "04/04 21:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.62,
-        "xg": 2.81,
-        "expected_corners": 12.1
+        "cards_home": 0.58,
+        "cards_away": 0.63,
+        "dnb_home": 0.68,
+        "xg": 2.76,
+        "expected_corners": 11.6
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "FC Groningen",
-      "kickoff": "04/04 16:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.59,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.38,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Stade Brestois 29",
-      "away": "Stade Rennais FC 1901",
-      "kickoff": "04/04 17:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.6,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.73,
-        "xg": 2.22,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "AZ",
-      "away": "Fortuna Sittard",
-      "kickoff": "04/04 17:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.61,
-        "cards_away": 0.5,
-        "dnb_home": 0.74,
-        "xg": 2.7,
-        "expected_corners": 11.4
-      }
-    }
-  ]
+  "hot": []
 }
