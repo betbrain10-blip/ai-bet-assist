@@ -1,84 +1,38 @@
 {
-  "updated_at": "04/04 21:31",
+  "updated_at": "04/04 22:29",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Cruzeiro EC",
-      "kickoff": "04/04 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.7,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.6,
-        "xg": 2.78,
-        "expected_corners": 8.6
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Coritiba FBC",
       "away": "Fluminense FC",
       "kickoff": "04/04 23:30",
       "markets": {
-        "over25": 0.68,
+        "over25": 0.63,
         "corners95": 0.67,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 2.54,
-        "expected_corners": 11.6
+        "cards_home": 0.62,
+        "cards_away": 0.67,
+        "dnb_home": 0.64,
+        "xg": 2.3,
+        "expected_corners": 8.6
       }
     }
   ],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Cruzeiro EC",
-      "kickoff": "04/04 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.7,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.6,
-        "xg": 2.78,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
       "home": "Coritiba FBC",
       "away": "Fluminense FC",
       "kickoff": "04/04 23:30",
       "markets": {
-        "over25": 0.68,
+        "over25": 0.63,
         "corners95": 0.67,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 2.54,
-        "expected_corners": 11.6
+        "cards_home": 0.62,
+        "cards_away": 0.67,
+        "dnb_home": 0.64,
+        "xg": 2.3,
+        "expected_corners": 8.6
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "Fluminense FC",
-      "kickoff": "04/04 23:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.67,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 2.54,
-        "expected_corners": 11.6
-      }
-    }
-  ]
+  "hot": []
 }
