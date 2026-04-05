@@ -1,83 +1,37 @@
 {
-  "updated_at": "05/04 22:30",
+  "updated_at": "05/04 23:33",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "SE Palmeiras",
-      "kickoff": "05/04 22:30",
+      "home": "Grêmio FBPA",
+      "away": "Clube do Remo",
+      "kickoff": "05/04 23:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.57,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 2.72,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "SC Internacional",
-      "kickoff": "05/04 22:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.55,
-        "cards_home": 0.63,
-        "cards_away": 0.5,
-        "dnb_home": 0.66,
-        "xg": 2.85,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "RB Bragantino",
-      "kickoff": "05/04 23:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.65,
-        "xg": 2.38,
-        "expected_corners": 11.2
+        "over25": 0.69,
+        "corners95": 0.6,
+        "cards_home": 0.57,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 2.48,
+        "expected_corners": 12.7
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "RB Bragantino",
-      "kickoff": "05/04 23:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.65,
-        "xg": 2.38,
-        "expected_corners": 11.2
-      }
-    }
-  ],
+  "corner": [],
   "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "SE Palmeiras",
-      "kickoff": "05/04 22:30",
+      "home": "Grêmio FBPA",
+      "away": "Clube do Remo",
+      "kickoff": "05/04 23:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.57,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 2.72,
-        "expected_corners": 8.8
+        "over25": 0.69,
+        "corners95": 0.6,
+        "cards_home": 0.57,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 2.48,
+        "expected_corners": 12.7
       }
     }
   ]
