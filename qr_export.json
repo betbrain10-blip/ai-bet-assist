@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/04 14:47",
+  "updated_at": "06/04 15:47",
   "value": [
     {
       "league": "Serie A",
@@ -7,28 +7,28 @@
       "away": "Genoa CFC",
       "kickoff": "06/04 16:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.61,
-        "xg": 3.06,
-        "expected_corners": 8.5
+        "over25": 0.72,
+        "corners95": 0.56,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.66,
+        "xg": 2.13,
+        "expected_corners": 10.9
       }
     },
     {
-      "league": "Championship",
-      "home": "Swansea City AFC",
-      "away": "Middlesbrough FC",
-      "kickoff": "06/04 16:30",
+      "league": "Serie A",
+      "home": "SSC Napoli",
+      "away": "AC Milan",
+      "kickoff": "06/04 18:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.56,
-        "cards_home": 0.51,
-        "cards_away": 0.6,
-        "dnb_home": 0.71,
-        "xg": 2.49,
-        "expected_corners": 11.8
+        "over25": 0.72,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 2.13,
+        "expected_corners": 11.9
       }
     },
     {
@@ -37,60 +37,75 @@
       "away": "Coventry City FC",
       "kickoff": "06/04 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.58,
-        "dnb_home": 0.64,
-        "xg": 2.54,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Casa Pia AC",
-      "away": "Sport Lisboa e Benfica",
-      "kickoff": "06/04 19:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.59,
-        "cards_home": 0.51,
-        "cards_away": 0.56,
-        "dnb_home": 0.64,
-        "xg": 2.7,
-        "expected_corners": 10.5
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.54,
+        "cards_away": 0.52,
+        "dnb_home": 0.61,
+        "xg": 3.33,
+        "expected_corners": 9.4
       }
     }
   ],
   "corner": [
     {
       "league": "Championship",
-      "home": "Hull City AFC",
-      "away": "Coventry City FC",
-      "kickoff": "06/04 19:00",
+      "home": "Swansea City AFC",
+      "away": "Middlesbrough FC",
+      "kickoff": "06/04 16:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.58,
-        "dnb_home": 0.64,
-        "xg": 2.54,
+        "over25": 0.57,
+        "corners95": 0.63,
+        "cards_home": 0.62,
+        "cards_away": 0.51,
+        "dnb_home": 0.75,
+        "xg": 2.91,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Arouca",
+      "away": "GD Estoril Praia",
+      "kickoff": "06/04 17:45",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.16,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "SSC Napoli",
+      "away": "AC Milan",
+      "kickoff": "06/04 18:45",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 2.13,
         "expected_corners": 11.9
       }
     },
     {
-      "league": "Primera Division",
-      "home": "Girona FC",
-      "away": "Villarreal CF",
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Coventry City FC",
       "kickoff": "06/04 19:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.65,
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.54,
         "cards_away": 0.52,
-        "dnb_home": 0.72,
-        "xg": 2.98,
-        "expected_corners": 11.8
+        "dnb_home": 0.61,
+        "xg": 3.33,
+        "expected_corners": 9.4
       }
     }
   ],
@@ -101,13 +116,28 @@
       "away": "Middlesbrough FC",
       "kickoff": "06/04 16:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.56,
-        "cards_home": 0.51,
-        "cards_away": 0.6,
-        "dnb_home": 0.71,
-        "xg": 2.49,
-        "expected_corners": 11.8
+        "over25": 0.57,
+        "corners95": 0.63,
+        "cards_home": 0.62,
+        "cards_away": 0.51,
+        "dnb_home": 0.75,
+        "xg": 2.91,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Arouca",
+      "away": "GD Estoril Praia",
+      "kickoff": "06/04 17:45",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.16,
+        "expected_corners": 10.5
       }
     },
     {
@@ -116,13 +146,13 @@
       "away": "Villarreal CF",
       "kickoff": "06/04 19:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.72,
-        "xg": 2.98,
-        "expected_corners": 11.8
+        "over25": 0.61,
+        "corners95": 0.57,
+        "cards_home": 0.57,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.24,
+        "expected_corners": 9.2
       }
     }
   ]
