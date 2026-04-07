@@ -1,143 +1,53 @@
 {
-  "updated_at": "07/04 17:32",
+  "updated_at": "07/04 19:03",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Southampton FC",
-      "kickoff": "07/04 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.77,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Sporting Clube de Portugal",
-      "away": "Arsenal FC",
-      "kickoff": "07/04 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.66,
-        "cards_home": 0.54,
-        "cards_away": 0.63,
-        "dnb_home": 0.56,
-        "xg": 2.3,
-        "expected_corners": 9.4
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "Deportivo La Guaira FC",
       "away": "Fluminense FC",
       "kickoff": "07/04 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.57,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.58,
-        "xg": 3.18,
-        "expected_corners": 8.7
+        "over25": 0.71,
+        "corners95": 0.6,
+        "cards_home": 0.59,
+        "cards_away": 0.6,
+        "dnb_home": 0.69,
+        "xg": 3.2,
+        "expected_corners": 11.9
       }
     }
   ],
   "corner": [
     {
       "league": "UEFA Champions League",
-      "home": "Real Madrid CF",
-      "away": "FC Bayern München",
-      "kickoff": "07/04 19:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.61,
-        "dnb_home": 0.6,
-        "xg": 2.22,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Southampton FC",
-      "kickoff": "07/04 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.77,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "UEFA Champions League",
       "home": "Sporting Clube de Portugal",
       "away": "Arsenal FC",
       "kickoff": "07/04 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.66,
-        "cards_home": 0.54,
-        "cards_away": 0.63,
-        "dnb_home": 0.56,
-        "xg": 2.3,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CS Independiente Rivadavia",
-      "away": "Club Bolívar",
-      "kickoff": "07/04 22:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.65,
-        "cards_home": 0.5,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.93,
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.53,
+        "dnb_home": 0.61,
+        "xg": 2.36,
         "expected_corners": 10.9
       }
     }
   ],
   "hot": [
     {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Southampton FC",
-      "kickoff": "07/04 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.77,
-        "expected_corners": 9.3
-      }
-    },
-    {
       "league": "Copa Libertadores",
-      "home": "CS Independiente Rivadavia",
-      "away": "Club Bolívar",
+      "home": "Deportivo La Guaira FC",
+      "away": "Fluminense FC",
       "kickoff": "07/04 22:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.65,
-        "cards_home": 0.5,
-        "cards_away": 0.67,
+        "over25": 0.71,
+        "corners95": 0.6,
+        "cards_home": 0.59,
+        "cards_away": 0.6,
         "dnb_home": 0.69,
-        "xg": 2.93,
-        "expected_corners": 10.9
+        "xg": 3.2,
+        "expected_corners": 11.9
       }
     }
   ]
