@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/04 19:03",
+  "updated_at": "07/04 20:05",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,48 +7,47 @@
       "away": "Fluminense FC",
       "kickoff": "07/04 22:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.6,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.69,
-        "xg": 3.2,
-        "expected_corners": 11.9
+        "over25": 0.69,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 2.51,
+        "expected_corners": 9.8
       }
     }
   ],
   "corner": [
     {
-      "league": "UEFA Champions League",
-      "home": "Sporting Clube de Portugal",
-      "away": "Arsenal FC",
-      "kickoff": "07/04 19:00",
+      "league": "Copa Libertadores",
+      "home": "CS Independiente Rivadavia",
+      "away": "Club Bolívar",
+      "kickoff": "07/04 22:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
-        "dnb_home": 0.61,
-        "xg": 2.36,
-        "expected_corners": 10.9
+        "over25": 0.62,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.6,
+        "dnb_home": 0.68,
+        "xg": 3.33,
+        "expected_corners": 11.3
       }
-    }
-  ],
-  "hot": [
+    },
     {
       "league": "Copa Libertadores",
       "home": "Deportivo La Guaira FC",
       "away": "Fluminense FC",
       "kickoff": "07/04 22:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.6,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.69,
-        "xg": 3.2,
-        "expected_corners": 11.9
+        "over25": 0.69,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 2.51,
+        "expected_corners": 9.8
       }
     }
-  ]
+  ],
+  "hot": []
 }
