@@ -1,37 +1,6 @@
 {
-  "updated_at": "07/04 22:03",
-  "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CS Independiente Rivadavia",
-      "away": "Club Bolívar",
-      "kickoff": "07/04 22:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.5,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Deportivo La Guaira FC",
-      "away": "Fluminense FC",
-      "kickoff": "07/04 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.54,
-        "dnb_home": 0.57,
-        "xg": 2.86,
-        "expected_corners": 11.3
-      }
-    }
-  ],
+  "updated_at": "07/04 23:05",
+  "value": [],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -39,45 +8,30 @@
       "away": "Club Bolívar",
       "kickoff": "07/04 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.5,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Deportivo La Guaira FC",
-      "away": "Fluminense FC",
-      "kickoff": "07/04 22:00",
-      "markets": {
-        "over25": 0.69,
+        "over25": 0.59,
         "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.54,
-        "dnb_home": 0.57,
-        "xg": 2.86,
-        "expected_corners": 11.3
+        "cards_home": 0.53,
+        "cards_away": 0.64,
+        "dnb_home": 0.59,
+        "xg": 2.3,
+        "expected_corners": 11.6
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "CS Independiente Rivadavia",
-      "away": "Club Bolívar",
+      "home": "Deportivo La Guaira FC",
+      "away": "Fluminense FC",
       "kickoff": "07/04 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.5,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 12.4
+        "over25": 0.58,
+        "corners95": 0.57,
+        "cards_home": 0.61,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.37,
+        "expected_corners": 11.0
       }
     }
   ]
