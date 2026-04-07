@@ -1,53 +1,84 @@
 {
-  "updated_at": "07/04 21:10",
+  "updated_at": "07/04 22:03",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Deportivo La Guaira FC",
-      "away": "Fluminense FC",
-      "kickoff": "07/04 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.56,
-        "cards_away": 0.59,
-        "dnb_home": 0.59,
-        "xg": 2.42,
-        "expected_corners": 11.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Deportivo La Guaira FC",
-      "away": "Fluminense FC",
-      "kickoff": "07/04 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.56,
-        "cards_away": 0.59,
-        "dnb_home": 0.59,
-        "xg": 2.42,
-        "expected_corners": 11.8
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "CS Independiente Rivadavia",
       "away": "Club Bolívar",
       "kickoff": "07/04 22:00",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.67,
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.5,
+        "dnb_home": 0.73,
+        "xg": 2.16,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Deportivo La Guaira FC",
+      "away": "Fluminense FC",
+      "kickoff": "07/04 22:00",
+      "markets": {
+        "over25": 0.69,
         "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.65,
-        "xg": 2.76,
-        "expected_corners": 11.2
+        "cards_home": 0.57,
+        "cards_away": 0.54,
+        "dnb_home": 0.57,
+        "xg": 2.86,
+        "expected_corners": 11.3
       }
     }
   ],
-  "hot": []
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Independiente Rivadavia",
+      "away": "Club Bolívar",
+      "kickoff": "07/04 22:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.5,
+        "dnb_home": 0.73,
+        "xg": 2.16,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Deportivo La Guaira FC",
+      "away": "Fluminense FC",
+      "kickoff": "07/04 22:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.65,
+        "cards_home": 0.57,
+        "cards_away": 0.54,
+        "dnb_home": 0.57,
+        "xg": 2.86,
+        "expected_corners": 11.3
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Independiente Rivadavia",
+      "away": "Club Bolívar",
+      "kickoff": "07/04 22:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.5,
+        "dnb_home": 0.73,
+        "xg": 2.16,
+        "expected_corners": 12.4
+      }
+    }
+  ]
 }
