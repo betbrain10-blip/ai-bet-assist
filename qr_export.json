@@ -1,6 +1,159 @@
 {
-  "updated_at": "06/04 23:35",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "07/04 02:26",
+  "value": [
+    {
+      "league": "Championship",
+      "home": "Wrexham AFC",
+      "away": "Southampton FC",
+      "kickoff": "07/04 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.72,
+        "xg": 2.93,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Madrid CF",
+      "away": "FC Bayern München",
+      "kickoff": "07/04 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 3.35,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Independiente Rivadavia",
+      "away": "Club Bolívar",
+      "kickoff": "07/04 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 2.82,
+        "expected_corners": 8.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Championship",
+      "home": "Wrexham AFC",
+      "away": "Southampton FC",
+      "kickoff": "07/04 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.72,
+        "xg": 2.93,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Sporting Clube de Portugal",
+      "away": "Arsenal FC",
+      "kickoff": "07/04 19:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.56,
+        "xg": 3.11,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Madrid CF",
+      "away": "FC Bayern München",
+      "kickoff": "07/04 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 3.35,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Independiente Rivadavia",
+      "away": "Club Bolívar",
+      "kickoff": "07/04 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 2.82,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Deportivo La Guaira FC",
+      "away": "Fluminense FC",
+      "kickoff": "07/04 22:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.62,
+        "dnb_home": 0.62,
+        "xg": 3.19,
+        "expected_corners": 8.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Championship",
+      "home": "Wrexham AFC",
+      "away": "Southampton FC",
+      "kickoff": "07/04 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.72,
+        "xg": 2.93,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Madrid CF",
+      "away": "FC Bayern München",
+      "kickoff": "07/04 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 3.35,
+        "expected_corners": 9.8
+      }
+    }
+  ]
 }
