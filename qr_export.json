@@ -1,5 +1,5 @@
 {
-  "updated_at": "08/04 20:56",
+  "updated_at": "08/04 21:45",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,13 +7,28 @@
       "away": "Club Universitario de Deportes",
       "kickoff": "08/04 02:00",
       "markets": {
-        "over25": 0.64,
+        "over25": 0.63,
         "corners95": 0.57,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.72,
-        "xg": 3.14,
-        "expected_corners": 10.3
+        "cards_home": 0.51,
+        "cards_away": 0.67,
+        "dnb_home": 0.6,
+        "xg": 2.65,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Mirassol FC",
+      "away": "CA Lanús",
+      "kickoff": "08/04 22:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.65,
+        "dnb_home": 0.55,
+        "xg": 2.29,
+        "expected_corners": 11.6
       }
     },
     {
@@ -22,13 +37,13 @@
       "away": "Club Nacional de Football",
       "kickoff": "08/04 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.58,
-        "xg": 3.05,
-        "expected_corners": 10.7
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.67,
+        "dnb_home": 0.67,
+        "xg": 2.87,
+        "expected_corners": 12.5
       }
     }
   ],
@@ -39,13 +54,13 @@
       "away": "CA Lanús",
       "kickoff": "08/04 22:00",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 2.43,
-        "expected_corners": 11.4
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.65,
+        "dnb_home": 0.55,
+        "xg": 2.29,
+        "expected_corners": 11.6
       }
     },
     {
@@ -54,46 +69,15 @@
       "away": "Club Nacional de Football",
       "kickoff": "08/04 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.58,
-        "xg": 3.05,
-        "expected_corners": 10.7
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.67,
+        "dnb_home": 0.67,
+        "xg": 2.87,
+        "expected_corners": 12.5
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Tolima",
-      "away": "Club Universitario de Deportes",
-      "kickoff": "08/04 02:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.57,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.72,
-        "xg": 3.14,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Mirassol FC",
-      "away": "CA Lanús",
-      "kickoff": "08/04 22:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 2.43,
-        "expected_corners": 11.4
-      }
-    }
-  ]
+  "hot": []
 }
