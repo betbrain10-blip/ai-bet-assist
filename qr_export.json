@@ -1,5 +1,5 @@
 {
-  "updated_at": "08/04 10:07",
+  "updated_at": "08/04 11:30",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -9,11 +9,26 @@
       "markets": {
         "over25": 0.65,
         "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.56,
+        "cards_home": 0.65,
+        "cards_away": 0.53,
+        "dnb_home": 0.62,
+        "xg": 2.81,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "Liverpool FC",
+      "kickoff": "08/04 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
         "xg": 3.07,
-        "expected_corners": 11.2
+        "expected_corners": 12.0
       }
     },
     {
@@ -22,13 +37,13 @@
       "away": "CA Lanús",
       "kickoff": "08/04 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.66,
-        "cards_away": 0.55,
-        "dnb_home": 0.64,
-        "xg": 3.03,
-        "expected_corners": 10.9
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.52,
+        "cards_away": 0.51,
+        "dnb_home": 0.68,
+        "xg": 2.73,
+        "expected_corners": 12.6
       }
     }
   ],
@@ -41,11 +56,26 @@
       "markets": {
         "over25": 0.65,
         "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.56,
+        "cards_home": 0.65,
+        "cards_away": 0.53,
+        "dnb_home": 0.62,
+        "xg": 2.81,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "Liverpool FC",
+      "kickoff": "08/04 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
         "xg": 3.07,
-        "expected_corners": 11.2
+        "expected_corners": 12.0
       }
     },
     {
@@ -55,12 +85,12 @@
       "kickoff": "08/04 19:00",
       "markets": {
         "over25": 0.57,
-        "corners95": 0.64,
-        "cards_home": 0.56,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 3.1,
-        "expected_corners": 11.0
+        "corners95": 0.62,
+        "cards_home": 0.67,
+        "cards_away": 0.51,
+        "dnb_home": 0.63,
+        "xg": 2.29,
+        "expected_corners": 11.8
       }
     },
     {
@@ -69,13 +99,13 @@
       "away": "CA Lanús",
       "kickoff": "08/04 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.66,
-        "cards_away": 0.55,
-        "dnb_home": 0.64,
-        "xg": 3.03,
-        "expected_corners": 10.9
+        "over25": 0.65,
+        "corners95": 0.65,
+        "cards_home": 0.52,
+        "cards_away": 0.51,
+        "dnb_home": 0.68,
+        "xg": 2.73,
+        "expected_corners": 12.6
       }
     },
     {
@@ -84,15 +114,46 @@
       "away": "Club Nacional de Football",
       "kickoff": "08/04 22:00",
       "markets": {
-        "over25": 0.62,
+        "over25": 0.57,
         "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.68,
-        "xg": 2.2,
-        "expected_corners": 10.6
+        "cards_home": 0.56,
+        "cards_away": 0.52,
+        "dnb_home": 0.73,
+        "xg": 2.41,
+        "expected_corners": 9.6
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "Liverpool FC",
+      "kickoff": "08/04 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 3.07,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Coquimbo Unido",
+      "away": "Club Nacional de Football",
+      "kickoff": "08/04 22:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.67,
+        "cards_home": 0.56,
+        "cards_away": 0.52,
+        "dnb_home": 0.73,
+        "xg": 2.41,
+        "expected_corners": 9.6
+      }
+    }
+  ]
 }
