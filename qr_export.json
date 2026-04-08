@@ -1,18 +1,78 @@
 {
-  "updated_at": "08/04 14:08",
+  "updated_at": "08/04 15:56",
   "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Tolima",
+      "away": "Club Universitario de Deportes",
+      "kickoff": "08/04 02:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.58,
+        "cards_away": 0.64,
+        "dnb_home": 0.57,
+        "xg": 3.22,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FC Barcelona",
+      "away": "Club Atlético de Madrid",
+      "kickoff": "08/04 19:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 2.69,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "Liverpool FC",
+      "kickoff": "08/04 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.57,
+        "dnb_home": 0.62,
+        "xg": 2.67,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Coquimbo Unido",
+      "away": "Club Nacional de Football",
+      "kickoff": "08/04 22:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.58,
+        "cards_home": 0.67,
+        "cards_away": 0.57,
+        "dnb_home": 0.57,
+        "xg": 3.07,
+        "expected_corners": 9.2
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "Mirassol FC",
       "away": "CA Lanús",
       "kickoff": "08/04 22:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 3.05,
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.53,
+        "dnb_home": 0.65,
+        "xg": 2.56,
         "expected_corners": 8.7
       }
     }
@@ -24,28 +84,13 @@
       "away": "Club Universitario de Deportes",
       "kickoff": "08/04 02:00",
       "markets": {
-        "over25": 0.57,
+        "over25": 0.71,
         "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.51,
-        "dnb_home": 0.6,
-        "xg": 2.92,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "Liverpool FC",
-      "kickoff": "08/04 19:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.63,
-        "xg": 3.08,
-        "expected_corners": 9.3
+        "cards_home": 0.58,
+        "cards_away": 0.64,
+        "dnb_home": 0.57,
+        "xg": 3.22,
+        "expected_corners": 11.1
       }
     },
     {
@@ -54,13 +99,28 @@
       "away": "Club Atlético de Madrid",
       "kickoff": "08/04 19:00",
       "markets": {
-        "over25": 0.59,
+        "over25": 0.7,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 2.69,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "Liverpool FC",
+      "kickoff": "08/04 19:00",
+      "markets": {
+        "over25": 0.66,
         "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.67,
-        "dnb_home": 0.67,
-        "xg": 3.34,
-        "expected_corners": 10.7
+        "cards_home": 0.57,
+        "cards_away": 0.57,
+        "dnb_home": 0.62,
+        "xg": 2.67,
+        "expected_corners": 10.1
       }
     },
     {
@@ -69,12 +129,12 @@
       "away": "CA Lanús",
       "kickoff": "08/04 22:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 3.05,
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.53,
+        "dnb_home": 0.65,
+        "xg": 2.56,
         "expected_corners": 8.7
       }
     }
