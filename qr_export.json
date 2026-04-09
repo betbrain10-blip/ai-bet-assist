@@ -1,68 +1,52 @@
 {
-  "updated_at": "08/04 23:37",
-  "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "Club Nacional de Football",
-      "kickoff": "08/04 22:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.59,
-        "dnb_home": 0.62,
-        "xg": 2.98,
-        "expected_corners": 10.5
-      }
-    }
-  ],
+  "updated_at": "09/04 02:22",
+  "value": [],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Mirassol FC",
-      "away": "CA Lanús",
-      "kickoff": "08/04 22:00",
+      "home": "Universidad Central de Venezuela FC",
+      "away": "Club Libertad Asuncion",
+      "kickoff": "09/04 22:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.65,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.56,
-        "xg": 2.45,
-        "expected_corners": 11.4
+        "over25": 0.55,
+        "corners95": 0.69,
+        "cards_home": 0.51,
+        "cards_away": 0.61,
+        "dnb_home": 0.61,
+        "xg": 2.28,
+        "expected_corners": 12.5
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "Club Nacional de Football",
-      "kickoff": "08/04 22:00",
+      "home": "CA Rosario Central",
+      "away": "CAR Independiente del Valle",
+      "kickoff": "09/04 22:00",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.59,
         "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.59,
-        "dnb_home": 0.62,
-        "xg": 2.98,
-        "expected_corners": 10.5
+        "cards_home": 0.55,
+        "cards_away": 0.64,
+        "dnb_home": 0.64,
+        "xg": 3.13,
+        "expected_corners": 12.6
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "CD Tolima",
-      "away": "Club Universitario de Deportes",
-      "kickoff": "08/04 02:00",
+      "home": "CS Cristal",
+      "away": "Club Cerro Porteño",
+      "kickoff": "09/04 02:00",
       "markets": {
         "over25": 0.56,
-        "corners95": 0.6,
-        "cards_home": 0.67,
-        "cards_away": 0.52,
-        "dnb_home": 0.73,
-        "xg": 3.16,
-        "expected_corners": 10.2
+        "corners95": 0.57,
+        "cards_home": 0.56,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.98,
+        "expected_corners": 12.1
       }
     }
   ]
