@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/04 17:36",
+  "updated_at": "09/04 19:06",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,28 +7,13 @@
       "away": "Club Cerro Porteño",
       "kickoff": "09/04 02:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.5,
-        "cards_away": 0.63,
-        "dnb_home": 0.64,
-        "xg": 2.45,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Universidad Central de Venezuela FC",
-      "away": "Club Libertad Asuncion",
-      "kickoff": "09/04 22:00",
-      "markets": {
-        "over25": 0.68,
+        "over25": 0.63,
         "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.66,
-        "xg": 3.12,
-        "expected_corners": 11.9
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.72,
+        "xg": 2.25,
+        "expected_corners": 9.1
       }
     }
   ],
@@ -39,28 +24,13 @@
       "away": "Club Cerro Porteño",
       "kickoff": "09/04 02:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.5,
-        "cards_away": 0.63,
-        "dnb_home": 0.64,
-        "xg": 2.45,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Universidad Central de Venezuela FC",
-      "away": "Club Libertad Asuncion",
-      "kickoff": "09/04 22:00",
-      "markets": {
-        "over25": 0.68,
+        "over25": 0.63,
         "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.66,
-        "xg": 3.12,
-        "expected_corners": 11.9
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.72,
+        "xg": 2.25,
+        "expected_corners": 9.1
       }
     },
     {
@@ -69,15 +39,46 @@
       "away": "CAR Independiente del Valle",
       "kickoff": "09/04 22:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.64,
+        "over25": 0.61,
+        "corners95": 0.67,
+        "cards_home": 0.6,
         "cards_away": 0.64,
-        "dnb_home": 0.64,
-        "xg": 2.12,
-        "expected_corners": 8.7
+        "dnb_home": 0.65,
+        "xg": 2.95,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Universidad Central de Venezuela FC",
+      "away": "Club Libertad Asuncion",
+      "kickoff": "09/04 22:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.52,
+        "cards_away": 0.6,
+        "dnb_home": 0.66,
+        "xg": 3.18,
+        "expected_corners": 9.0
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Cristal",
+      "away": "Club Cerro Porteño",
+      "kickoff": "09/04 02:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.72,
+        "xg": 2.25,
+        "expected_corners": 9.1
+      }
+    }
+  ]
 }
