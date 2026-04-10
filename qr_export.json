@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/04 22:37",
+  "updated_at": "10/04 23:34",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,16 +7,48 @@
       "away": "CA Peñarol",
       "kickoff": "10/04 02:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.58,
-        "cards_home": 0.61,
-        "cards_away": 0.58,
-        "dnb_home": 0.61,
-        "xg": 2.28,
-        "expected_corners": 11.4
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.55,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 3.37,
+        "expected_corners": 12.4
       }
     }
   ],
-  "corner": [],
-  "hot": []
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Independiente Santa Fe",
+      "away": "CA Peñarol",
+      "kickoff": "10/04 02:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.55,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 3.37,
+        "expected_corners": 12.4
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Independiente Santa Fe",
+      "away": "CA Peñarol",
+      "kickoff": "10/04 02:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.55,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 3.37,
+        "expected_corners": 12.4
+      }
+    }
+  ]
 }
