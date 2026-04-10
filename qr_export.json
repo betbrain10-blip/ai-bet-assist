@@ -1,96 +1,19 @@
 {
-  "updated_at": "10/04 17:47",
+  "updated_at": "10/04 18:53",
   "value": [
-    {
-      "league": "Championship",
-      "home": "West Bromwich Albion FC",
-      "away": "Millwall FC",
-      "kickoff": "10/04 19:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 3.13,
-        "expected_corners": 11.1
-      }
-    },
     {
       "league": "Primera Division",
       "home": "Real Madrid CF",
       "away": "Girona FC",
       "kickoff": "10/04 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 2.56,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "Moreirense FC",
-      "kickoff": "10/04 19:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.58,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.74,
-        "xg": 2.27,
-        "expected_corners": 10.9
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Independiente Santa Fe",
-      "away": "CA Peñarol",
-      "kickoff": "10/04 02:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.65,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.57,
-        "xg": 2.83,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "FC Twente '65",
-      "away": "FC Volendam",
-      "kickoff": "10/04 18:00",
-      "markets": {
-        "over25": 0.57,
+        "over25": 0.69,
         "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.72,
-        "xg": 2.73,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "AS Roma",
-      "away": "AC Pisa 1909",
-      "kickoff": "10/04 18:45",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.62,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.66,
-        "xg": 2.38,
-        "expected_corners": 8.8
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.68,
+        "expected_corners": 10.3
       }
     },
     {
@@ -99,13 +22,13 @@
       "away": "Millwall FC",
       "kickoff": "10/04 19:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 3.13,
-        "expected_corners": 11.1
+        "over25": 0.64,
+        "corners95": 0.64,
+        "cards_home": 0.5,
+        "cards_away": 0.66,
+        "dnb_home": 0.63,
+        "xg": 2.35,
+        "expected_corners": 12.2
       }
     },
     {
@@ -114,45 +37,45 @@
       "away": "Wolverhampton Wanderers FC",
       "kickoff": "10/04 19:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.67,
-        "cards_home": 0.63,
-        "cards_away": 0.54,
-        "dnb_home": 0.62,
-        "xg": 2.9,
-        "expected_corners": 8.8
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 3.36,
+        "expected_corners": 10.0
       }
     },
+    {
+      "league": "Ligue 1",
+      "home": "Olympique de Marseille",
+      "away": "FC Metz",
+      "kickoff": "10/04 19:05",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.64,
+        "cards_home": 0.65,
+        "cards_away": 0.52,
+        "dnb_home": 0.6,
+        "xg": 2.15,
+        "expected_corners": 10.7
+      }
+    }
+  ],
+  "corner": [
     {
       "league": "Primera Division",
       "home": "Real Madrid CF",
       "away": "Girona FC",
       "kickoff": "10/04 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 2.56,
-        "expected_corners": 11.8
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Eredivisie",
-      "home": "FC Twente '65",
-      "away": "FC Volendam",
-      "kickoff": "10/04 18:00",
-      "markets": {
-        "over25": 0.57,
+        "over25": 0.69,
         "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.72,
-        "xg": 2.73,
-        "expected_corners": 8.6
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.68,
+        "expected_corners": 10.3
       }
     },
     {
@@ -161,28 +84,75 @@
       "away": "Millwall FC",
       "kickoff": "10/04 19:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 3.13,
-        "expected_corners": 11.1
+        "over25": 0.64,
+        "corners95": 0.64,
+        "cards_home": 0.5,
+        "cards_away": 0.66,
+        "dnb_home": 0.63,
+        "xg": 2.35,
+        "expected_corners": 12.2
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "Moreirense FC",
-      "kickoff": "10/04 19:45",
+      "league": "Premier League",
+      "home": "West Ham United FC",
+      "away": "Wolverhampton Wanderers FC",
+      "kickoff": "10/04 19:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.58,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.74,
-        "xg": 2.27,
-        "expected_corners": 10.9
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 3.36,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Olympique de Marseille",
+      "away": "FC Metz",
+      "kickoff": "10/04 19:05",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.64,
+        "cards_home": 0.65,
+        "cards_away": 0.52,
+        "dnb_home": 0.6,
+        "xg": 2.15,
+        "expected_corners": 10.7
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Independiente Santa Fe",
+      "away": "CA Peñarol",
+      "kickoff": "10/04 02:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.6,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.72,
+        "xg": 3.3,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Madrid CF",
+      "away": "Girona FC",
+      "kickoff": "10/04 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.68,
+        "expected_corners": 10.3
       }
     }
   ]
