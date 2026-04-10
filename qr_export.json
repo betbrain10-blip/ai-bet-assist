@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/04 20:36",
+  "updated_at": "10/04 21:37",
   "value": [],
   "corner": [
     {
@@ -8,13 +8,13 @@
       "away": "CA Peñarol",
       "kickoff": "10/04 02:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 2.24,
-        "expected_corners": 10.4
+        "over25": 0.57,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.58,
+        "xg": 2.26,
+        "expected_corners": 12.2
       }
     }
   ],
