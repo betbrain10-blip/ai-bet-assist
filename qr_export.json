@@ -1,19 +1,19 @@
 {
-  "updated_at": "12/04 16:51",
+  "updated_at": "12/04 17:34",
   "value": [
     {
-      "league": "Serie A",
-      "home": "Como 1907",
-      "away": "FC Internazionale Milano",
-      "kickoff": "12/04 18:45",
+      "league": "Bundesliga",
+      "home": "1. FSV Mainz 05",
+      "away": "SC Freiburg",
+      "kickoff": "12/04 17:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.6,
-        "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 3.29,
-        "expected_corners": 9.2
+        "over25": 0.69,
+        "corners95": 0.65,
+        "cards_home": 0.5,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 2.57,
+        "expected_corners": 12.7
       }
     },
     {
@@ -22,75 +22,45 @@
       "away": "Villarreal CF",
       "kickoff": "12/04 19:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.55,
-        "cards_away": 0.62,
-        "dnb_home": 0.73,
-        "xg": 3.08,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Fluminense FC",
-      "away": "CR Flamengo",
-      "kickoff": "12/04 21:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.6,
-        "cards_home": 0.51,
-        "cards_away": 0.62,
-        "dnb_home": 0.56,
-        "xg": 2.27,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "RB Bragantino",
-      "kickoff": "12/04 21:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
+        "over25": 0.7,
+        "corners95": 0.65,
         "cards_home": 0.61,
-        "cards_away": 0.54,
-        "dnb_home": 0.66,
-        "xg": 2.15,
-        "expected_corners": 9.8
+        "cards_away": 0.58,
+        "dnb_home": 0.74,
+        "xg": 2.71,
+        "expected_corners": 9.1
       }
     }
   ],
   "corner": [
     {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Braga",
-      "away": "FC Arouca",
-      "kickoff": "12/04 17:00",
+      "league": "Bundesliga",
+      "home": "1. FSV Mainz 05",
+      "away": "SC Freiburg",
+      "kickoff": "12/04 17:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.7,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
-        "dnb_home": 0.68,
-        "xg": 2.64,
-        "expected_corners": 12.3
+        "over25": 0.69,
+        "corners95": 0.65,
+        "cards_home": 0.5,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 2.57,
+        "expected_corners": 12.7
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "Sport Lisboa e Benfica",
-      "away": "CD Nacional",
-      "kickoff": "12/04 17:00",
+      "league": "Ligue 1",
+      "home": "Olympique Lyonnais",
+      "away": "FC Lorient",
+      "kickoff": "12/04 18:45",
       "markets": {
-        "over25": 0.62,
+        "over25": 0.57,
         "corners95": 0.61,
-        "cards_home": 0.68,
-        "cards_away": 0.52,
-        "dnb_home": 0.62,
-        "xg": 3.13,
-        "expected_corners": 11.6
+        "cards_home": 0.66,
+        "cards_away": 0.56,
+        "dnb_home": 0.71,
+        "xg": 2.9,
+        "expected_corners": 8.8
       }
     },
     {
@@ -99,13 +69,13 @@
       "away": "FC Internazionale Milano",
       "kickoff": "12/04 18:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.6,
-        "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 3.29,
-        "expected_corners": 9.2
+        "over25": 0.6,
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.55,
+        "dnb_home": 0.75,
+        "xg": 3.09,
+        "expected_corners": 9.5
       }
     },
     {
@@ -114,13 +84,13 @@
       "away": "Villarreal CF",
       "kickoff": "12/04 19:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.55,
-        "cards_away": 0.62,
-        "dnb_home": 0.73,
-        "xg": 3.08,
-        "expected_corners": 9.7
+        "over25": 0.7,
+        "corners95": 0.65,
+        "cards_home": 0.61,
+        "cards_away": 0.58,
+        "dnb_home": 0.74,
+        "xg": 2.71,
+        "expected_corners": 9.1
       }
     },
     {
@@ -129,13 +99,13 @@
       "away": "Coritiba FBC",
       "kickoff": "12/04 19:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.52,
+        "over25": 0.56,
+        "corners95": 0.61,
+        "cards_home": 0.59,
         "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 2.63,
-        "expected_corners": 9.8
+        "dnb_home": 0.7,
+        "xg": 2.15,
+        "expected_corners": 9.0
       }
     },
     {
@@ -144,13 +114,13 @@
       "away": "RB Bragantino",
       "kickoff": "12/04 21:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.54,
-        "dnb_home": 0.66,
-        "xg": 2.15,
-        "expected_corners": 9.8
+        "over25": 0.62,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.64,
+        "dnb_home": 0.58,
+        "xg": 2.1,
+        "expected_corners": 12.1
       }
     },
     {
@@ -159,13 +129,13 @@
       "away": "SE Palmeiras",
       "kickoff": "12/04 21:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.6,
-        "dnb_home": 0.6,
-        "xg": 2.11,
-        "expected_corners": 10.4
+        "over25": 0.62,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.56,
+        "dnb_home": 0.71,
+        "xg": 2.53,
+        "expected_corners": 12.8
       }
     }
   ],
@@ -176,13 +146,43 @@
       "away": "SC Freiburg",
       "kickoff": "12/04 17:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.58,
-        "cards_home": 0.58,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.83,
-        "expected_corners": 11.2
+        "over25": 0.69,
+        "corners95": 0.65,
+        "cards_home": 0.5,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 2.57,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Olympique Lyonnais",
+      "away": "FC Lorient",
+      "kickoff": "12/04 18:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.66,
+        "cards_away": 0.56,
+        "dnb_home": 0.71,
+        "xg": 2.9,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Como 1907",
+      "away": "FC Internazionale Milano",
+      "kickoff": "12/04 18:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.55,
+        "dnb_home": 0.75,
+        "xg": 3.09,
+        "expected_corners": 9.5
       }
     },
     {
@@ -191,13 +191,28 @@
       "away": "Villarreal CF",
       "kickoff": "12/04 19:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.55,
-        "cards_away": 0.62,
-        "dnb_home": 0.73,
-        "xg": 3.08,
-        "expected_corners": 9.7
+        "over25": 0.7,
+        "corners95": 0.65,
+        "cards_home": 0.61,
+        "cards_away": 0.58,
+        "dnb_home": 0.74,
+        "xg": 2.71,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "Coritiba FBC",
+      "kickoff": "12/04 19:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.61,
+        "cards_home": 0.59,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.15,
+        "expected_corners": 9.0
       }
     },
     {
@@ -208,11 +223,11 @@
       "markets": {
         "over25": 0.56,
         "corners95": 0.56,
-        "cards_home": 0.58,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 2.65,
-        "expected_corners": 10.2
+        "cards_home": 0.64,
+        "cards_away": 0.67,
+        "dnb_home": 0.74,
+        "xg": 3.34,
+        "expected_corners": 8.9
       }
     }
   ]
