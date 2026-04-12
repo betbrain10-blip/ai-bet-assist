@@ -1,38 +1,6 @@
 {
-  "updated_at": "12/04 21:34",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "RB Bragantino",
-      "kickoff": "12/04 21:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.5,
-        "cards_away": 0.62,
-        "dnb_home": 0.55,
-        "xg": 2.78,
-        "expected_corners": 12.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "RB Bragantino",
-      "kickoff": "12/04 21:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.5,
-        "cards_away": 0.62,
-        "dnb_home": 0.55,
-        "xg": 2.78,
-        "expected_corners": 12.4
-      }
-    }
-  ],
+  "updated_at": "12/04 22:34",
+  "value": [],
+  "corner": [],
   "hot": []
 }
