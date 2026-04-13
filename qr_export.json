@@ -1,6 +1,114 @@
 {
-  "updated_at": "12/04 23:34",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "13/04 02:40",
+  "value": [
+    {
+      "league": "Premier League",
+      "home": "Manchester United FC",
+      "away": "Leeds United FC",
+      "kickoff": "13/04 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.68,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 2.49,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Tondela",
+      "away": "Gil Vicente FC",
+      "kickoff": "13/04 19:15",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.68,
+        "cards_away": 0.57,
+        "dnb_home": 0.74,
+        "xg": 2.98,
+        "expected_corners": 10.2
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "ACF Fiorentina",
+      "away": "SS Lazio",
+      "kickoff": "13/04 18:45",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.64,
+        "cards_home": 0.51,
+        "cards_away": 0.59,
+        "dnb_home": 0.59,
+        "xg": 2.59,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Manchester United FC",
+      "away": "Leeds United FC",
+      "kickoff": "13/04 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.68,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 2.49,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "Getafe CF",
+      "kickoff": "13/04 19:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.64,
+        "cards_home": 0.63,
+        "cards_away": 0.54,
+        "dnb_home": 0.57,
+        "xg": 2.73,
+        "expected_corners": 10.7
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Premier League",
+      "home": "Manchester United FC",
+      "away": "Leeds United FC",
+      "kickoff": "13/04 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.68,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 2.49,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Tondela",
+      "away": "Gil Vicente FC",
+      "kickoff": "13/04 19:15",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.68,
+        "cards_away": 0.57,
+        "dnb_home": 0.74,
+        "xg": 2.98,
+        "expected_corners": 10.2
+      }
+    }
+  ]
 }
