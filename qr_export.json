@@ -1,6 +1,36 @@
 {
-  "updated_at": "14/04 09:01",
+  "updated_at": "14/04 10:44",
   "value": [
+    {
+      "league": "Championship",
+      "home": "Portsmouth FC",
+      "away": "Ipswich Town FC",
+      "kickoff": "14/04 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.55,
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.64,
+        "xg": 2.67,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Southampton FC",
+      "away": "Blackburn Rovers FC",
+      "kickoff": "14/04 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.55,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.62,
+        "xg": 2.67,
+        "expected_corners": 11.2
+      }
+    },
     {
       "league": "UEFA Champions League",
       "home": "Club Atlético de Madrid",
@@ -8,57 +38,12 @@
       "kickoff": "14/04 19:00",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.63,
-        "xg": 2.38,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Liverpool FC",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "14/04 19:00",
-      "markets": {
-        "over25": 0.66,
         "corners95": 0.69,
         "cards_home": 0.53,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.9,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Nacional de Football",
-      "away": "CD Tolima",
-      "kickoff": "14/04 22:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.58,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.62,
-        "xg": 2.45,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "CDP Junior FC",
-      "kickoff": "14/04 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.66,
-        "dnb_home": 0.69,
-        "xg": 3.39,
-        "expected_corners": 10.9
+        "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 2.35,
+        "expected_corners": 10.0
       }
     },
     {
@@ -67,13 +52,13 @@
       "away": "Cusco FC",
       "kickoff": "14/04 22:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.81,
-        "expected_corners": 10.0
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.57,
+        "dnb_home": 0.58,
+        "xg": 3.34,
+        "expected_corners": 9.7
       }
     }
   ],
@@ -85,57 +70,12 @@
       "kickoff": "14/04 19:00",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.63,
-        "xg": 2.38,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "14/04 19:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.68,
-        "cards_home": 0.68,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.57,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Portsmouth FC",
-      "away": "Ipswich Town FC",
-      "kickoff": "14/04 19:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.62,
-        "xg": 2.47,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Liverpool FC",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "14/04 19:00",
-      "markets": {
-        "over25": 0.66,
         "corners95": 0.69,
         "cards_home": 0.53,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.9,
-        "expected_corners": 11.8
+        "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 2.35,
+        "expected_corners": 10.0
       }
     },
     {
@@ -144,45 +84,13 @@
       "away": "Cusco FC",
       "kickoff": "14/04 22:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.81,
-        "expected_corners": 10.0
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "14/04 19:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.68,
-        "cards_home": 0.68,
-        "cards_away": 0.53,
-        "dnb_home": 0.7,
-        "xg": 2.57,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Liverpool FC",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "14/04 19:00",
-      "markets": {
         "over25": 0.66,
         "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 2.9,
-        "expected_corners": 11.8
+        "cards_home": 0.64,
+        "cards_away": 0.57,
+        "dnb_home": 0.58,
+        "xg": 3.34,
+        "expected_corners": 9.7
       }
     },
     {
@@ -191,13 +99,45 @@
       "away": "CDP Junior FC",
       "kickoff": "14/04 22:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.66,
-        "dnb_home": 0.69,
-        "xg": 3.39,
-        "expected_corners": 10.9
+        "over25": 0.58,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.55,
+        "dnb_home": 0.67,
+        "xg": 2.38,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Nacional de Football",
+      "away": "CD Tolima",
+      "kickoff": "14/04 22:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.63,
+        "cards_home": 0.53,
+        "cards_away": 0.63,
+        "dnb_home": 0.59,
+        "xg": 2.15,
+        "expected_corners": 8.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Club Atlético de Madrid",
+      "away": "FC Barcelona",
+      "kickoff": "14/04 19:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 2.35,
+        "expected_corners": 10.0
       }
     }
   ]
