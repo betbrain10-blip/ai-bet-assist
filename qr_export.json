@@ -1,68 +1,54 @@
 {
-  "updated_at": "14/04 20:54",
+  "updated_at": "14/04 21:52",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Nacional de Football",
-      "away": "CD Tolima",
-      "kickoff": "14/04 22:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.66,
-        "cards_home": 0.51,
-        "cards_away": 0.65,
-        "dnb_home": 0.65,
-        "xg": 2.1,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Estudiantes de La Plata",
-      "away": "Cusco FC",
-      "kickoff": "14/04 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.57,
-        "cards_home": 0.64,
-        "cards_away": 0.63,
-        "dnb_home": 0.6,
-        "xg": 2.26,
-        "expected_corners": 12.0
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "Club Cerro Porteño",
       "away": "CDP Junior FC",
       "kickoff": "14/04 22:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.6,
-        "cards_home": 0.52,
-        "cards_away": 0.51,
-        "dnb_home": 0.6,
-        "xg": 2.29,
-        "expected_corners": 11.1
+        "over25": 0.64,
+        "corners95": 0.59,
+        "cards_home": 0.62,
+        "cards_away": 0.53,
+        "dnb_home": 0.63,
+        "xg": 2.47,
+        "expected_corners": 11.8
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Nacional de Football",
-      "away": "CD Tolima",
+      "home": "Estudiantes de La Plata",
+      "away": "Cusco FC",
       "kickoff": "14/04 22:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.66,
-        "cards_home": 0.51,
-        "cards_away": 0.65,
-        "dnb_home": 0.65,
-        "xg": 2.1,
-        "expected_corners": 9.4
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.67,
+        "cards_away": 0.52,
+        "dnb_home": 0.74,
+        "xg": 3.0,
+        "expected_corners": 9.3
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Estudiantes de La Plata",
+      "away": "Cusco FC",
+      "kickoff": "14/04 22:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.67,
+        "cards_away": 0.52,
+        "dnb_home": 0.74,
+        "xg": 3.0,
+        "expected_corners": 9.3
+      }
+    }
+  ]
 }
