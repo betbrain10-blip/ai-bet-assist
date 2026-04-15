@@ -1,34 +1,20 @@
 {
-  "updated_at": "15/04 17:38",
-  "value": [
+  "updated_at": "15/04 19:17",
+  "value": [],
+  "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Universitario de Deportes",
-      "away": "CD Coquimbo Unido",
+      "home": "LDU de Quito",
+      "away": "Mirassol FC",
       "kickoff": "15/04 02:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.64,
-        "xg": 2.29,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "FC Bayern München",
-      "away": "Real Madrid CF",
-      "kickoff": "15/04 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.59,
-        "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 2.55,
-        "expected_corners": 10.5
+        "over25": 0.61,
+        "corners95": 0.63,
+        "cards_home": 0.58,
+        "cards_away": 0.67,
+        "dnb_home": 0.56,
+        "xg": 2.33,
+        "expected_corners": 10.9
       }
     },
     {
@@ -37,13 +23,13 @@
       "away": "CD Universidad Católica",
       "kickoff": "15/04 22:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.64,
-        "cards_away": 0.52,
-        "dnb_home": 0.72,
-        "xg": 2.35,
-        "expected_corners": 11.2
+        "over25": 0.59,
+        "corners95": 0.65,
+        "cards_home": 0.57,
+        "cards_away": 0.54,
+        "dnb_home": 0.62,
+        "xg": 2.26,
+        "expected_corners": 11.8
       }
     },
     {
@@ -52,122 +38,30 @@
       "away": "CA Rosario Central",
       "kickoff": "15/04 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.54,
-        "cards_away": 0.59,
-        "dnb_home": 0.62,
-        "xg": 3.35,
-        "expected_corners": 11.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Universitario de Deportes",
-      "away": "CD Coquimbo Unido",
-      "kickoff": "15/04 02:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.64,
-        "xg": 2.29,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "LDU de Quito",
-      "away": "Mirassol FC",
-      "kickoff": "15/04 02:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.72,
-        "xg": 2.24,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Arsenal FC",
-      "away": "Sporting Clube de Portugal",
-      "kickoff": "15/04 19:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.65,
-        "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 3.1,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Libertad Asuncion",
-      "away": "CA Rosario Central",
-      "kickoff": "15/04 22:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.54,
-        "cards_away": 0.59,
-        "dnb_home": 0.62,
-        "xg": 3.35,
-        "expected_corners": 11.3
+        "over25": 0.59,
+        "corners95": 0.63,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.56,
+        "xg": 2.47,
+        "expected_corners": 12.2
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "LDU de Quito",
-      "away": "Mirassol FC",
+      "home": "Club Universitario de Deportes",
+      "away": "CD Coquimbo Unido",
       "kickoff": "15/04 02:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.72,
-        "xg": 2.24,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Arsenal FC",
-      "away": "Sporting Clube de Portugal",
-      "kickoff": "15/04 19:00",
-      "markets": {
         "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.65,
+        "corners95": 0.56,
+        "cards_home": 0.62,
         "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 3.1,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Cruzeiro EC",
-      "away": "CD Universidad Católica",
-      "kickoff": "15/04 22:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.64,
-        "cards_away": 0.52,
-        "dnb_home": 0.72,
-        "xg": 2.35,
-        "expected_corners": 11.2
+        "dnb_home": 0.73,
+        "xg": 2.32,
+        "expected_corners": 10.6
       }
     }
   ]
