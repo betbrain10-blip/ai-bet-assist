@@ -1,98 +1,173 @@
 {
-  "updated_at": "14/04 23:41",
+  "updated_at": "15/04 02:32",
   "value": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Nacional de Football",
-      "away": "CD Tolima",
-      "kickoff": "14/04 22:00",
+      "home": "LDU de Quito",
+      "away": "Mirassol FC",
+      "kickoff": "15/04 02:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.64,
-        "dnb_home": 0.56,
-        "xg": 2.82,
-        "expected_corners": 9.8
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.72,
+        "xg": 2.32,
+        "expected_corners": 12.8
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "Estudiantes de La Plata",
-      "away": "Cusco FC",
-      "kickoff": "14/04 22:00",
+      "home": "Club Universitario de Deportes",
+      "away": "CD Coquimbo Unido",
+      "kickoff": "15/04 02:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
-        "dnb_home": 0.71,
-        "xg": 3.36,
-        "expected_corners": 8.7
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.68,
+        "cards_away": 0.68,
+        "dnb_home": 0.74,
+        "xg": 2.98,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FC Bayern München",
+      "away": "Real Madrid CF",
+      "kickoff": "15/04 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.68,
+        "dnb_home": 0.59,
+        "xg": 3.37,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "CA Rosario Central",
+      "kickoff": "15/04 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.69,
+        "cards_home": 0.68,
+        "cards_away": 0.52,
+        "dnb_home": 0.58,
+        "xg": 2.76,
+        "expected_corners": 12.6
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Nacional de Football",
-      "away": "CD Tolima",
-      "kickoff": "14/04 22:00",
+      "home": "LDU de Quito",
+      "away": "Mirassol FC",
+      "kickoff": "15/04 02:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.64,
-        "dnb_home": 0.56,
-        "xg": 2.82,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Estudiantes de La Plata",
-      "away": "Cusco FC",
-      "kickoff": "14/04 22:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
-        "dnb_home": 0.71,
-        "xg": 3.36,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "CDP Junior FC",
-      "kickoff": "14/04 22:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.68,
+        "over25": 0.67,
+        "corners95": 0.67,
         "cards_home": 0.53,
-        "cards_away": 0.56,
-        "dnb_home": 0.67,
-        "xg": 2.64,
-        "expected_corners": 9.3
+        "cards_away": 0.66,
+        "dnb_home": 0.72,
+        "xg": 2.32,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FC Bayern München",
+      "away": "Real Madrid CF",
+      "kickoff": "15/04 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.68,
+        "dnb_home": 0.59,
+        "xg": 3.37,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Arsenal FC",
+      "away": "Sporting Clube de Portugal",
+      "kickoff": "15/04 19:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.53,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 3.04,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "CA Rosario Central",
+      "kickoff": "15/04 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.69,
+        "cards_home": 0.68,
+        "cards_away": 0.52,
+        "dnb_home": 0.58,
+        "xg": 2.76,
+        "expected_corners": 12.6
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "Estudiantes de La Plata",
-      "away": "Cusco FC",
-      "kickoff": "14/04 22:00",
+      "home": "LDU de Quito",
+      "away": "Mirassol FC",
+      "kickoff": "15/04 02:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.72,
+        "xg": 2.32,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Universitario de Deportes",
+      "away": "CD Coquimbo Unido",
+      "kickoff": "15/04 02:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.68,
+        "cards_away": 0.68,
+        "dnb_home": 0.74,
+        "xg": 2.98,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Arsenal FC",
+      "away": "Sporting Clube de Portugal",
+      "kickoff": "15/04 19:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.53,
+        "cards_away": 0.55,
         "dnb_home": 0.71,
-        "xg": 3.36,
-        "expected_corners": 8.7
+        "xg": 3.04,
+        "expected_corners": 9.0
       }
     }
   ]
