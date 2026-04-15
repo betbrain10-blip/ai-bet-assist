@@ -1,35 +1,49 @@
 {
-  "updated_at": "15/04 19:17",
-  "value": [],
-  "corner": [
+  "updated_at": "15/04 20:26",
+  "value": [
     {
       "league": "Copa Libertadores",
-      "home": "LDU de Quito",
-      "away": "Mirassol FC",
-      "kickoff": "15/04 02:00",
+      "home": "CA Boca Juniors",
+      "away": "Barcelona SC",
+      "kickoff": "15/04 00:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.63,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.56,
-        "xg": 2.33,
-        "expected_corners": 10.9
+        "over25": 0.65,
+        "corners95": 0.59,
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.61,
+        "xg": 3.08,
+        "expected_corners": 11.2
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "Cruzeiro EC",
-      "away": "CD Universidad Católica",
-      "kickoff": "15/04 22:00",
+      "home": "Club Bolívar",
+      "away": "Deportivo La Guaira FC",
+      "kickoff": "15/04 00:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.54,
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.68,
+        "cards_away": 0.55,
+        "dnb_home": 0.61,
+        "xg": 2.94,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Universitario de Deportes",
+      "away": "CD Coquimbo Unido",
+      "kickoff": "15/04 02:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.64,
         "dnb_home": 0.62,
-        "xg": 2.26,
-        "expected_corners": 11.8
+        "xg": 3.12,
+        "expected_corners": 12.3
       }
     },
     {
@@ -38,30 +52,122 @@
       "away": "CA Rosario Central",
       "kickoff": "15/04 22:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.54,
-        "dnb_home": 0.56,
-        "xg": 2.47,
-        "expected_corners": 12.2
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.73,
+        "xg": 2.89,
+        "expected_corners": 10.3
       }
     }
   ],
-  "hot": [
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Bolívar",
+      "away": "Deportivo La Guaira FC",
+      "kickoff": "15/04 00:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.68,
+        "cards_away": 0.55,
+        "dnb_home": 0.61,
+        "xg": 2.94,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "LDU de Quito",
+      "away": "Mirassol FC",
+      "kickoff": "15/04 02:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.6,
+        "xg": 2.1,
+        "expected_corners": 8.9
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "Club Universitario de Deportes",
       "away": "CD Coquimbo Unido",
       "kickoff": "15/04 02:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.56,
+        "over25": 0.69,
+        "corners95": 0.67,
         "cards_home": 0.62,
-        "cards_away": 0.51,
+        "cards_away": 0.64,
+        "dnb_home": 0.62,
+        "xg": 3.12,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "CA Rosario Central",
+      "kickoff": "15/04 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
         "dnb_home": 0.73,
-        "xg": 2.32,
-        "expected_corners": 10.6
+        "xg": 2.89,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Cruzeiro EC",
+      "away": "CD Universidad Católica",
+      "kickoff": "15/04 22:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.64,
+        "cards_away": 0.58,
+        "dnb_home": 0.72,
+        "xg": 2.75,
+        "expected_corners": 10.5
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "CA Rosario Central",
+      "kickoff": "15/04 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.73,
+        "xg": 2.89,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Cruzeiro EC",
+      "away": "CD Universidad Católica",
+      "kickoff": "15/04 22:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.64,
+        "cards_away": 0.58,
+        "dnb_home": 0.72,
+        "xg": 2.75,
+        "expected_corners": 10.5
       }
     }
   ]
