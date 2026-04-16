@@ -1,36 +1,81 @@
 {
-  "updated_at": "16/04 11:03",
+  "updated_at": "16/04 12:42",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "SE Palmeiras",
-      "away": "CS Cristal",
-      "kickoff": "16/04 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.76,
-        "expected_corners": 9.1
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "Copa Libertadores",
       "home": "CA Lanús",
       "away": "Club Always Ready",
       "kickoff": "16/04 22:00",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.68,
         "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 3.04,
+        "expected_corners": 12.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "SC Corinthians Paulista",
+      "away": "Independiente Santa Fe",
+      "kickoff": "16/04 00:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.62,
         "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.67,
-        "xg": 2.1,
-        "expected_corners": 12.2
+        "cards_away": 0.5,
+        "dnb_home": 0.68,
+        "xg": 3.32,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Fluminense FC",
+      "away": "CS Independiente Rivadavia",
+      "kickoff": "16/04 00:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.52,
+        "dnb_home": 0.59,
+        "xg": 2.33,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CAR Independiente del Valle",
+      "away": "Universidad Central de Venezuela FC",
+      "kickoff": "16/04 02:00",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.64,
+        "cards_home": 0.67,
+        "cards_away": 0.53,
+        "dnb_home": 0.59,
+        "xg": 3.39,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Lanús",
+      "away": "Club Always Ready",
+      "kickoff": "16/04 22:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 3.04,
+        "expected_corners": 12.6
       }
     },
     {
@@ -39,31 +84,15 @@
       "away": "CS Cristal",
       "kickoff": "16/04 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.76,
-        "expected_corners": 9.1
+        "over25": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.64,
+        "dnb_home": 0.61,
+        "xg": 2.87,
+        "expected_corners": 10.2
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "SE Palmeiras",
-      "away": "CS Cristal",
-      "kickoff": "16/04 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.76,
-        "expected_corners": 9.1
-      }
-    }
-  ]
+  "hot": []
 }
