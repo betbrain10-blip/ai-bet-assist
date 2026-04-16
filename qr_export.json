@@ -1,34 +1,19 @@
 {
-  "updated_at": "16/04 06:01",
+  "updated_at": "16/04 08:12",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "Universidad Central de Venezuela FC",
-      "kickoff": "16/04 02:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.7,
-        "xg": 2.38,
-        "expected_corners": 11.0
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "SE Palmeiras",
       "away": "CS Cristal",
       "kickoff": "16/04 22:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.63,
         "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.57,
-        "dnb_home": 0.64,
-        "xg": 2.61,
-        "expected_corners": 9.2
+        "cards_home": 0.53,
+        "cards_away": 0.55,
+        "dnb_home": 0.58,
+        "xg": 2.5,
+        "expected_corners": 9.9
       }
     }
   ],
@@ -39,28 +24,13 @@
       "away": "Universidad Central de Venezuela FC",
       "kickoff": "16/04 02:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.7,
-        "xg": 2.38,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Lanús",
-      "away": "Club Always Ready",
-      "kickoff": "16/04 22:00",
-      "markets": {
         "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.55,
+        "corners95": 0.62,
+        "cards_home": 0.5,
         "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 3.11,
-        "expected_corners": 12.7
+        "dnb_home": 0.6,
+        "xg": 3.01,
+        "expected_corners": 11.6
       }
     },
     {
@@ -69,30 +39,13 @@
       "away": "CS Cristal",
       "kickoff": "16/04 22:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.63,
         "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.57,
-        "dnb_home": 0.64,
-        "xg": 2.61,
-        "expected_corners": 9.2
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "Universidad Central de Venezuela FC",
-      "kickoff": "16/04 02:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.7,
-        "xg": 2.38,
-        "expected_corners": 11.0
+        "cards_home": 0.53,
+        "cards_away": 0.55,
+        "dnb_home": 0.58,
+        "xg": 2.5,
+        "expected_corners": 9.9
       }
     },
     {
@@ -101,14 +54,15 @@
       "away": "Club Always Ready",
       "kickoff": "16/04 22:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.55,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 3.11,
-        "expected_corners": 12.7
+        "over25": 0.62,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.65,
+        "dnb_home": 0.58,
+        "xg": 2.85,
+        "expected_corners": 10.9
       }
     }
-  ]
+  ],
+  "hot": []
 }
