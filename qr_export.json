@@ -1,7 +1,53 @@
 {
-  "updated_at": "16/04 19:14",
-  "value": [],
+  "updated_at": "16/04 20:09",
+  "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CAR Independiente del Valle",
+      "away": "Universidad Central de Venezuela FC",
+      "kickoff": "16/04 02:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.64,
+        "xg": 2.3,
+        "expected_corners": 10.1
+      }
+    }
+  ],
   "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CAR Independiente del Valle",
+      "away": "Universidad Central de Venezuela FC",
+      "kickoff": "16/04 02:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.64,
+        "xg": 2.3,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "SE Palmeiras",
+      "away": "CS Cristal",
+      "kickoff": "16/04 22:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 2.33,
+        "expected_corners": 8.5
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "CA Lanús",
@@ -9,29 +55,29 @@
       "kickoff": "16/04 22:00",
       "markets": {
         "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.68,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.83,
-        "expected_corners": 12.0
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.61,
+        "xg": 2.8,
+        "expected_corners": 10.2
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "CA Lanús",
-      "away": "Club Always Ready",
+      "home": "SE Palmeiras",
+      "away": "CS Cristal",
       "kickoff": "16/04 22:00",
       "markets": {
         "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.68,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.83,
-        "expected_corners": 12.0
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 2.33,
+        "expected_corners": 8.5
       }
     }
   ]
