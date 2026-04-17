@@ -1,6 +1,84 @@
 {
-  "updated_at": "17/04 20:43",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "17/04 21:40",
+  "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CR Flamengo",
+      "away": "CD Independiente Medellín",
+      "kickoff": "17/04 00:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 2.63,
+        "expected_corners": 10.7
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Peñarol",
+      "away": "CA Platense",
+      "kickoff": "17/04 00:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.64,
+        "cards_home": 0.66,
+        "cards_away": 0.65,
+        "dnb_home": 0.59,
+        "xg": 2.74,
+        "expected_corners": 10.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CR Flamengo",
+      "away": "CD Independiente Medellín",
+      "kickoff": "17/04 00:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 2.63,
+        "expected_corners": 10.7
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Peñarol",
+      "away": "CA Platense",
+      "kickoff": "17/04 00:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.64,
+        "cards_home": 0.66,
+        "cards_away": 0.65,
+        "dnb_home": 0.59,
+        "xg": 2.74,
+        "expected_corners": 10.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CR Flamengo",
+      "away": "CD Independiente Medellín",
+      "kickoff": "17/04 00:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 2.63,
+        "expected_corners": 10.7
+      }
+    }
+  ]
 }
