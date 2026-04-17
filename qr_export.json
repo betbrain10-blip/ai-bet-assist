@@ -1,113 +1,66 @@
 {
-  "updated_at": "17/04 14:40",
+  "updated_at": "17/04 16:01",
   "value": [
-    {
-      "league": "Bundesliga",
-      "home": "FC St. Pauli 1910",
-      "away": "1. FC Köln",
-      "kickoff": "17/04 18:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.6,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.61,
-        "xg": 2.71,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "FC Internazionale Milano",
-      "away": "Cagliari Calcio",
-      "kickoff": "17/04 18:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.6,
-        "cards_home": 0.56,
-        "cards_away": 0.65,
-        "dnb_home": 0.7,
-        "xg": 2.73,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Blackburn Rovers FC",
-      "away": "Coventry City FC",
-      "kickoff": "17/04 19:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 2.35,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Rio Ave FC",
-      "away": "AVS",
-      "kickoff": "17/04 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.61,
-        "expected_corners": 11.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Championship",
-      "home": "Blackburn Rovers FC",
-      "away": "Coventry City FC",
-      "kickoff": "17/04 19:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 2.35,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Rio Ave FC",
-      "away": "AVS",
-      "kickoff": "17/04 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.61,
-        "expected_corners": 11.3
-      }
-    }
-  ],
-  "hot": [
     {
       "league": "Serie A",
       "home": "US Sassuolo Calcio",
       "away": "Como 1907",
       "kickoff": "17/04 16:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.57,
-        "cards_home": 0.54,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 2.96,
-        "expected_corners": 12.2
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.65,
+        "xg": 2.74,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "FC St. Pauli 1910",
+      "away": "1. FC Köln",
+      "kickoff": "17/04 18:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.55,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.62,
+        "xg": 2.5,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Rio Ave FC",
+      "away": "AVS",
+      "kickoff": "17/04 19:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.56,
+        "cards_home": 0.67,
+        "cards_away": 0.55,
+        "dnb_home": 0.56,
+        "xg": 2.98,
+        "expected_corners": 8.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "US Sassuolo Calcio",
+      "away": "Como 1907",
+      "kickoff": "17/04 16:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.65,
+        "xg": 2.74,
+        "expected_corners": 12.7
       }
     },
     {
@@ -116,13 +69,75 @@
       "away": "Cagliari Calcio",
       "kickoff": "17/04 18:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.6,
-        "cards_home": 0.56,
-        "cards_away": 0.65,
+        "over25": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.58,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.58,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "Toulouse FC",
+      "kickoff": "17/04 18:45",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.55,
         "dnb_home": 0.7,
-        "xg": 2.73,
-        "expected_corners": 11.2
+        "xg": 2.88,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Blackburn Rovers FC",
+      "away": "Coventry City FC",
+      "kickoff": "17/04 19:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.57,
+        "cards_away": 0.6,
+        "dnb_home": 0.68,
+        "xg": 2.13,
+        "expected_corners": 9.1
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Serie A",
+      "home": "FC Internazionale Milano",
+      "away": "Cagliari Calcio",
+      "kickoff": "17/04 18:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.58,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.58,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "Toulouse FC",
+      "kickoff": "17/04 18:45",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.55,
+        "dnb_home": 0.7,
+        "xg": 2.88,
+        "expected_corners": 12.8
       }
     }
   ]
