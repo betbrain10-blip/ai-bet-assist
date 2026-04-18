@@ -1,81 +1,19 @@
 {
-  "updated_at": "18/04 18:01",
+  "updated_at": "18/04 19:22",
   "value": [
     {
-      "league": "Premier League",
-      "home": "Chelsea FC",
-      "away": "Manchester United FC",
-      "kickoff": "18/04 19:00",
+      "league": "Primeira Liga",
+      "home": "Gil Vicente FC",
+      "away": "Vitória SC",
+      "kickoff": "18/04 19:30",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 2.46,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "Grêmio FBPA",
-      "kickoff": "18/04 23:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.7,
+        "over25": 0.65,
+        "corners95": 0.58,
         "cards_home": 0.66,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 2.26,
-        "expected_corners": 8.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "Chelsea FC",
-      "away": "Manchester United FC",
-      "kickoff": "18/04 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 2.46,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Lille OSC",
-      "away": "OGC Nice",
-      "kickoff": "18/04 19:05",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.55,
-        "xg": 2.95,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Botafogo FR",
-      "kickoff": "18/04 21:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.63,
-        "cards_away": 0.58,
-        "dnb_home": 0.68,
-        "xg": 2.53,
-        "expected_corners": 12.7
+        "cards_away": 0.56,
+        "dnb_home": 0.6,
+        "xg": 3.26,
+        "expected_corners": 11.3
       }
     },
     {
@@ -84,13 +22,28 @@
       "away": "São Paulo FC",
       "kickoff": "18/04 21:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.61,
-        "cards_home": 0.53,
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.57,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 2.87,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Botafogo FR",
+      "kickoff": "18/04 21:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.5,
         "cards_away": 0.58,
         "dnb_home": 0.66,
-        "xg": 3.17,
-        "expected_corners": 10.9
+        "xg": 2.22,
+        "expected_corners": 10.8
       }
     },
     {
@@ -99,30 +52,62 @@
       "away": "Grêmio FBPA",
       "kickoff": "18/04 23:30",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.7,
-        "cards_home": 0.66,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 2.26,
-        "expected_corners": 8.6
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.58,
+        "xg": 2.64,
+        "expected_corners": 9.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Botafogo FR",
+      "kickoff": "18/04 21:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.58,
+        "dnb_home": 0.66,
+        "xg": 2.22,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Cruzeiro EC",
+      "away": "Grêmio FBPA",
+      "kickoff": "18/04 23:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.58,
+        "xg": 2.64,
+        "expected_corners": 9.9
       }
     }
   ],
   "hot": [
     {
-      "league": "Primeira Liga",
-      "home": "Gil Vicente FC",
-      "away": "Vitória SC",
-      "kickoff": "18/04 19:30",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CR Vasco da Gama",
+      "away": "São Paulo FC",
+      "kickoff": "18/04 21:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.6,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.92,
-        "expected_corners": 10.8
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.57,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 2.87,
+        "expected_corners": 12.3
       }
     }
   ]
