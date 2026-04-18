@@ -1,99 +1,22 @@
 {
-  "updated_at": "18/04 20:48",
+  "updated_at": "18/04 21:35",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Botafogo FR",
-      "kickoff": "18/04 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.7,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.3,
-        "expected_corners": 10.1
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Vasco da Gama",
-      "away": "São Paulo FC",
-      "kickoff": "18/04 21:30",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 2.29,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Botafogo FR",
-      "kickoff": "18/04 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.7,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.3,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "18/04 23:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.63,
-        "cards_home": 0.61,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 2.72,
-        "expected_corners": 9.9
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Cruzeiro EC",
       "away": "Grêmio FBPA",
       "kickoff": "18/04 23:30",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.64,
-        "xg": 3.16,
-        "expected_corners": 12.5
+        "over25": 0.64,
+        "corners95": 0.57,
+        "cards_home": 0.6,
+        "cards_away": 0.53,
+        "dnb_home": 0.59,
+        "xg": 3.36,
+        "expected_corners": 9.3
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Botafogo FR",
-      "kickoff": "18/04 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.7,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.3,
-        "expected_corners": 10.1
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
