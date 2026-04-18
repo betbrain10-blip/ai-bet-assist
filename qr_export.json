@@ -1,53 +1,6 @@
 {
-  "updated_at": "18/04 22:35",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "18/04 23:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.59,
-        "dnb_home": 0.57,
-        "xg": 2.77,
-        "expected_corners": 9.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "18/04 23:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.59,
-        "dnb_home": 0.57,
-        "xg": 2.77,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "Grêmio FBPA",
-      "kickoff": "18/04 23:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.6,
-        "xg": 2.39,
-        "expected_corners": 10.4
-      }
-    }
-  ],
+  "updated_at": "18/04 23:34",
+  "value": [],
+  "corner": [],
   "hot": []
 }
