@@ -1,246 +1,19 @@
 {
-  "updated_at": "19/04 11:58",
+  "updated_at": "19/04 13:18",
   "value": [
-    {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Liverpool FC",
-      "kickoff": "19/04 13:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.6,
-        "cards_home": 0.59,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 2.89,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Arouca",
-      "away": "CF Estrela da Amadora",
-      "kickoff": "19/04 14:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.67,
-        "dnb_home": 0.57,
-        "xg": 3.0,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "RC Strasbourg Alsace",
-      "away": "Stade Rennais FC 1901",
-      "kickoff": "19/04 15:15",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.51,
-        "dnb_home": 0.57,
-        "xg": 3.39,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Manchester City FC",
-      "away": "Arsenal FC",
-      "kickoff": "19/04 15:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.57,
-        "cards_home": 0.53,
-        "cards_away": 0.5,
-        "dnb_home": 0.69,
-        "xg": 2.36,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "Sport Lisboa e Benfica",
-      "kickoff": "19/04 17:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.58,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 3.21,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "Bologna FC 1909",
-      "kickoff": "19/04 18:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.52,
-        "dnb_home": 0.62,
-        "xg": 2.57,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "Fluminense FC",
-      "kickoff": "19/04 19:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.56,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.67,
-        "xg": 3.23,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "CD Tondela",
-      "kickoff": "19/04 19:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.67,
-        "dnb_home": 0.59,
-        "xg": 2.11,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Braga",
-      "away": "FC Famalicão",
-      "kickoff": "19/04 19:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.55,
-        "dnb_home": 0.66,
-        "xg": 3.27,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "CA Paranaense",
-      "kickoff": "19/04 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.59,
-        "cards_home": 0.53,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 2.14,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "EC Bahia",
-      "kickoff": "19/04 22:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.61,
-        "cards_home": 0.67,
-        "cards_away": 0.54,
-        "dnb_home": 0.61,
-        "xg": 2.43,
-        "expected_corners": 9.2
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Serie A",
-      "home": "Hellas Verona FC",
-      "away": "AC Milan",
-      "kickoff": "19/04 13:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.68,
-        "cards_home": 0.67,
-        "cards_away": 0.58,
-        "dnb_home": 0.59,
-        "xg": 2.97,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Nottingham Forest FC",
-      "away": "Burnley FC",
-      "kickoff": "19/04 13:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.68,
-        "cards_home": 0.6,
-        "cards_away": 0.55,
-        "dnb_home": 0.6,
-        "xg": 3.06,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "AS Monaco FC",
-      "away": "AJ Auxerre",
-      "kickoff": "19/04 13:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.65,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.64,
-        "xg": 2.8,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Sunderland AFC",
-      "kickoff": "19/04 13:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.63,
-        "xg": 2.13,
-        "expected_corners": 11.5
-      }
-    },
     {
       "league": "Bundesliga",
       "home": "SC Freiburg",
       "away": "1. FC Heidenheim 1846",
       "kickoff": "19/04 13:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.65,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.63,
-        "xg": 2.43,
-        "expected_corners": 9.8
+        "over25": 0.72,
+        "corners95": 0.56,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.65,
+        "xg": 3.33,
+        "expected_corners": 8.6
       }
     },
     {
@@ -250,42 +23,12 @@
       "kickoff": "19/04 14:30",
       "markets": {
         "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.67,
-        "dnb_home": 0.57,
-        "xg": 3.0,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Nantes",
-      "away": "Stade Brestois 29",
-      "kickoff": "19/04 15:15",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.64,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.58,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "RC Strasbourg Alsace",
-      "away": "Stade Rennais FC 1901",
-      "kickoff": "19/04 15:15",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.51,
-        "dnb_home": 0.57,
-        "xg": 3.39,
-        "expected_corners": 11.9
+        "corners95": 0.61,
+        "cards_home": 0.57,
+        "cards_away": 0.55,
+        "dnb_home": 0.68,
+        "xg": 3.2,
+        "expected_corners": 12.3
       }
     },
     {
@@ -294,13 +37,43 @@
       "away": "Paris FC",
       "kickoff": "19/04 15:15",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.7,
-        "cards_home": 0.53,
-        "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 3.04,
-        "expected_corners": 10.9
+        "over25": 0.7,
+        "corners95": 0.6,
+        "cards_home": 0.65,
+        "cards_away": 0.63,
+        "dnb_home": 0.68,
+        "xg": 2.33,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "FC Bayern München",
+      "away": "VfB Stuttgart",
+      "kickoff": "19/04 15:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 3.39,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Manchester City FC",
+      "away": "Arsenal FC",
+      "kickoff": "19/04 15:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.65,
+        "cards_home": 0.58,
+        "cards_away": 0.53,
+        "dnb_home": 0.61,
+        "xg": 2.45,
+        "expected_corners": 12.0
       }
     },
     {
@@ -309,13 +82,13 @@
       "away": "Genoa CFC",
       "kickoff": "19/04 16:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.68,
-        "cards_home": 0.52,
-        "cards_away": 0.53,
-        "dnb_home": 0.59,
-        "xg": 3.14,
-        "expected_corners": 11.8
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.63,
+        "xg": 2.55,
+        "expected_corners": 12.0
       }
     },
     {
@@ -324,13 +97,13 @@
       "away": "1. FSV Mainz 05",
       "kickoff": "19/04 17:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.56,
-        "dnb_home": 0.57,
+        "over25": 0.67,
+        "corners95": 0.58,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.69,
         "xg": 3.28,
-        "expected_corners": 10.9
+        "expected_corners": 9.8
       }
     },
     {
@@ -339,45 +112,105 @@
       "away": "Olympique Lyonnais",
       "kickoff": "19/04 18:45",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 3.07,
-        "expected_corners": 9.2
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Liverpool FC",
-      "kickoff": "19/04 13:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.6,
-        "cards_home": 0.59,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 2.89,
-        "expected_corners": 8.8
+        "over25": 0.68,
+        "corners95": 0.58,
+        "cards_home": 0.56,
+        "cards_away": 0.57,
+        "dnb_home": 0.59,
+        "xg": 3.06,
+        "expected_corners": 9.1
       }
     },
     {
-      "league": "Ligue 1",
-      "home": "FC Metz",
-      "away": "Paris FC",
-      "kickoff": "19/04 15:15",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "Fluminense FC",
+      "kickoff": "19/04 19:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.7,
-        "cards_home": 0.53,
+        "over25": 0.68,
+        "corners95": 0.61,
+        "cards_home": 0.68,
+        "cards_away": 0.68,
+        "dnb_home": 0.67,
+        "xg": 2.4,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "CA Mineiro",
+      "kickoff": "19/04 19:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.72,
+        "xg": 3.11,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Braga",
+      "away": "FC Famalicão",
+      "kickoff": "19/04 19:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.51,
         "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 3.04,
-        "expected_corners": 10.9
+        "dnb_home": 0.68,
+        "xg": 3.36,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "RB Bragantino",
+      "away": "Clube do Remo",
+      "kickoff": "19/04 21:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.58,
+        "cards_away": 0.67,
+        "dnb_home": 0.59,
+        "xg": 2.77,
+        "expected_corners": 8.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primeira Liga",
+      "home": "FC Arouca",
+      "away": "CF Estrela da Amadora",
+      "kickoff": "19/04 14:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.57,
+        "cards_away": 0.55,
+        "dnb_home": 0.68,
+        "xg": 3.2,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "FC Bayern München",
+      "away": "VfB Stuttgart",
+      "kickoff": "19/04 15:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 3.39,
+        "expected_corners": 9.3
       }
     },
     {
@@ -386,13 +219,28 @@
       "away": "Arsenal FC",
       "kickoff": "19/04 15:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.57,
-        "cards_home": 0.53,
-        "cards_away": 0.5,
-        "dnb_home": 0.69,
-        "xg": 2.36,
-        "expected_corners": 10.3
+        "over25": 0.63,
+        "corners95": 0.65,
+        "cards_home": 0.58,
+        "cards_away": 0.53,
+        "dnb_home": 0.61,
+        "xg": 2.45,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "AC Pisa 1909",
+      "away": "Genoa CFC",
+      "kickoff": "19/04 16:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.63,
+        "xg": 2.55,
+        "expected_corners": 12.0
       }
     },
     {
@@ -401,27 +249,57 @@
       "away": "Sport Lisboa e Benfica",
       "kickoff": "19/04 17:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.58,
-        "cards_home": 0.63,
+        "over25": 0.58,
+        "corners95": 0.7,
+        "cards_home": 0.51,
         "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 3.21,
-        "expected_corners": 9.6
+        "dnb_home": 0.73,
+        "xg": 2.82,
+        "expected_corners": 11.3
       }
     },
     {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "Olympique Lyonnais",
-      "kickoff": "19/04 18:45",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "Fluminense FC",
+      "kickoff": "19/04 19:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 3.07,
+        "over25": 0.68,
+        "corners95": 0.61,
+        "cards_home": 0.68,
+        "cards_away": 0.68,
+        "dnb_home": 0.67,
+        "xg": 2.4,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Porto",
+      "away": "CD Tondela",
+      "kickoff": "19/04 19:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.5,
+        "cards_away": 0.62,
+        "dnb_home": 0.62,
+        "xg": 3.27,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Braga",
+      "away": "FC Famalicão",
+      "kickoff": "19/04 19:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.64,
+        "cards_home": 0.51,
+        "cards_away": 0.57,
+        "dnb_home": 0.68,
+        "xg": 3.36,
         "expected_corners": 9.2
       }
     },
@@ -431,13 +309,90 @@
       "away": "CA Paranaense",
       "kickoff": "19/04 21:30",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.59,
+        "over25": 0.6,
+        "corners95": 0.66,
+        "cards_home": 0.5,
+        "cards_away": 0.53,
+        "dnb_home": 0.67,
+        "xg": 2.43,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "RB Bragantino",
+      "away": "Clube do Remo",
+      "kickoff": "19/04 21:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.58,
+        "cards_away": 0.67,
+        "dnb_home": 0.59,
+        "xg": 2.77,
+        "expected_corners": 8.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Ligue 1",
+      "home": "FC Nantes",
+      "away": "Stade Brestois 29",
+      "kickoff": "19/04 15:15",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.57,
         "cards_home": 0.53,
         "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 3.2,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Portugal",
+      "away": "Sport Lisboa e Benfica",
+      "kickoff": "19/04 17:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 2.82,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Borussia Mönchengladbach",
+      "away": "1. FSV Mainz 05",
+      "kickoff": "19/04 17:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.58,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.69,
+        "xg": 3.28,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "CA Mineiro",
+      "kickoff": "19/04 19:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
         "dnb_home": 0.72,
-        "xg": 2.14,
-        "expected_corners": 9.9
+        "xg": 3.11,
+        "expected_corners": 10.1
       }
     }
   ]
