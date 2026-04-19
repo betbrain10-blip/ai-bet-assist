@@ -1,22 +1,6 @@
 {
-  "updated_at": "19/04 21:36",
+  "updated_at": "19/04 22:35",
   "value": [],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "EC Bahia",
-      "kickoff": "19/04 22:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 3.34,
-        "expected_corners": 12.2
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
