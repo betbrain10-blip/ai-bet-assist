@@ -1,5 +1,5 @@
 {
-  "updated_at": "20/04 02:40",
+  "updated_at": "20/04 05:41",
   "value": [
     {
       "league": "Serie A",
@@ -8,12 +8,29 @@
       "kickoff": "20/04 18:45",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.57,
-        "cards_home": 0.52,
-        "cards_away": 0.63,
-        "dnb_home": 0.68,
-        "xg": 2.34,
-        "expected_corners": 10.1
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.55,
+        "dnb_home": 0.57,
+        "xg": 2.58,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "US Lecce",
+      "away": "ACF Fiorentina",
+      "kickoff": "20/04 18:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.55,
+        "dnb_home": 0.57,
+        "xg": 2.58,
+        "expected_corners": 10.6
       }
     },
     {
@@ -22,13 +39,13 @@
       "away": "West Ham United FC",
       "kickoff": "20/04 19:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.55,
-        "cards_home": 0.64,
-        "cards_away": 0.58,
-        "dnb_home": 0.66,
-        "xg": 2.72,
-        "expected_corners": 10.4
+        "over25": 0.62,
+        "corners95": 0.62,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.62,
+        "xg": 3.29,
+        "expected_corners": 9.9
       }
     },
     {
@@ -37,30 +54,13 @@
       "away": "GD Estoril Praia",
       "kickoff": "20/04 19:15",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.51,
-        "dnb_home": 0.69,
-        "xg": 2.54,
-        "expected_corners": 12.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "Moreirense FC",
-      "away": "GD Estoril Praia",
-      "kickoff": "20/04 19:15",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.51,
-        "dnb_home": 0.69,
-        "xg": 2.54,
-        "expected_corners": 12.4
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.65,
+        "dnb_home": 0.72,
+        "xg": 3.12,
+        "expected_corners": 10.9
       }
     }
   ],
@@ -71,13 +71,13 @@
       "away": "GD Estoril Praia",
       "kickoff": "20/04 19:15",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.51,
-        "dnb_home": 0.69,
-        "xg": 2.54,
-        "expected_corners": 12.4
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.65,
+        "dnb_home": 0.72,
+        "xg": 3.12,
+        "expected_corners": 10.9
       }
     }
   ]
