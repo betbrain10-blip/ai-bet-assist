@@ -1,34 +1,19 @@
 {
-  "updated_at": "20/04 16:39",
+  "updated_at": "20/04 17:57",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "US Lecce",
-      "away": "ACF Fiorentina",
-      "kickoff": "20/04 18:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.57,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.65,
-        "xg": 3.36,
-        "expected_corners": 9.9
-      }
-    },
     {
       "league": "Premier League",
       "home": "Crystal Palace FC",
       "away": "West Ham United FC",
       "kickoff": "20/04 19:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.66,
-        "xg": 2.94,
-        "expected_corners": 10.6
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.68,
+        "dnb_home": 0.67,
+        "xg": 2.42,
+        "expected_corners": 9.2
       }
     },
     {
@@ -38,15 +23,77 @@
       "kickoff": "20/04 19:15",
       "markets": {
         "over25": 0.66,
-        "corners95": 0.56,
+        "corners95": 0.63,
         "cards_home": 0.61,
-        "cards_away": 0.52,
-        "dnb_home": 0.58,
-        "xg": 2.49,
-        "expected_corners": 11.6
+        "cards_away": 0.56,
+        "dnb_home": 0.7,
+        "xg": 3.17,
+        "expected_corners": 11.5
       }
     }
   ],
-  "corner": [],
-  "hot": []
+  "corner": [
+    {
+      "league": "Premier League",
+      "home": "Crystal Palace FC",
+      "away": "West Ham United FC",
+      "kickoff": "20/04 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.68,
+        "dnb_home": 0.67,
+        "xg": 2.42,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Moreirense FC",
+      "away": "GD Estoril Praia",
+      "kickoff": "20/04 19:15",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.56,
+        "dnb_home": 0.7,
+        "xg": 3.17,
+        "expected_corners": 11.5
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Serie A",
+      "home": "US Lecce",
+      "away": "ACF Fiorentina",
+      "kickoff": "20/04 18:45",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.69,
+        "xg": 3.28,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Moreirense FC",
+      "away": "GD Estoril Praia",
+      "kickoff": "20/04 19:15",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.56,
+        "dnb_home": 0.7,
+        "xg": 3.17,
+        "expected_corners": 11.5
+      }
+    }
+  ]
 }
