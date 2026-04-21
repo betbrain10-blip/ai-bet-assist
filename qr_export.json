@@ -1,111 +1,34 @@
 {
-  "updated_at": "21/04 11:17",
+  "updated_at": "21/04 12:13",
   "value": [
     {
       "league": "Primera Division",
-      "home": "Athletic Club",
-      "away": "CA Osasuna",
+      "home": "RCD Mallorca",
+      "away": "Valencia CF",
       "kickoff": "21/04 17:00",
       "markets": {
-        "over25": 0.63,
+        "over25": 0.69,
         "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 3.14,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Bristol City FC",
-      "kickoff": "21/04 18:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.68,
-        "xg": 2.36,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Coventry City FC",
-      "away": "Portsmouth FC",
-      "kickoff": "21/04 18:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.51,
-        "cards_away": 0.51,
-        "dnb_home": 0.66,
-        "xg": 2.77,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Norwich City FC",
-      "away": "Derby County FC",
-      "kickoff": "21/04 18:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.58,
-        "cards_home": 0.67,
-        "cards_away": 0.56,
+        "cards_home": 0.64,
+        "cards_away": 0.54,
         "dnb_home": 0.62,
-        "xg": 3.23,
-        "expected_corners": 11.3
+        "xg": 2.63,
+        "expected_corners": 9.7
       }
     },
-    {
-      "league": "Championship",
-      "home": "Leicester City FC",
-      "away": "Hull City AFC",
-      "kickoff": "21/04 18:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 3.05,
-        "expected_corners": 11.9
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "Primera Division",
       "home": "Athletic Club",
       "away": "CA Osasuna",
       "kickoff": "21/04 17:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 3.14,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "West Bromwich Albion FC",
-      "away": "Watford FC",
-      "kickoff": "21/04 18:45",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 2.12,
-        "expected_corners": 10.6
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.68,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.75,
+        "expected_corners": 11.2
       }
     },
     {
@@ -114,12 +37,12 @@
       "away": "Wrexham AFC",
       "kickoff": "21/04 18:45",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.62,
-        "dnb_home": 0.56,
-        "xg": 2.62,
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.55,
+        "dnb_home": 0.66,
+        "xg": 2.35,
         "expected_corners": 8.9
       }
     },
@@ -129,28 +52,60 @@
       "away": "Bristol City FC",
       "kickoff": "21/04 18:45",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.63,
+        "xg": 2.42,
+        "expected_corners": 12.4
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "RCD Mallorca",
+      "away": "Valencia CF",
+      "kickoff": "21/04 17:00",
+      "markets": {
+        "over25": 0.69,
         "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.68,
-        "xg": 2.36,
-        "expected_corners": 12.7
+        "cards_home": 0.64,
+        "cards_away": 0.54,
+        "dnb_home": 0.62,
+        "xg": 2.63,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Athletic Club",
+      "away": "CA Osasuna",
+      "kickoff": "21/04 17:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.68,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.75,
+        "expected_corners": 11.2
       }
     },
     {
       "league": "Championship",
-      "home": "Leicester City FC",
-      "away": "Hull City AFC",
+      "home": "Norwich City FC",
+      "away": "Derby County FC",
       "kickoff": "21/04 18:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 3.05,
-        "expected_corners": 11.9
+        "over25": 0.58,
+        "corners95": 0.65,
+        "cards_home": 0.64,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.46,
+        "expected_corners": 9.9
       }
     },
     {
@@ -159,13 +114,58 @@
       "away": "Millwall FC",
       "kickoff": "21/04 18:45",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.6,
-        "cards_away": 0.68,
-        "dnb_home": 0.63,
-        "xg": 2.82,
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 3.05,
         "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Oxford United FC",
+      "away": "Wrexham AFC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.55,
+        "dnb_home": 0.66,
+        "xg": 2.35,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Southampton FC",
+      "away": "Bristol City FC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.63,
+        "xg": 2.42,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Coventry City FC",
+      "away": "Portsmouth FC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.65,
+        "cards_home": 0.65,
+        "cards_away": 0.55,
+        "dnb_home": 0.63,
+        "xg": 3.14,
+        "expected_corners": 11.5
       }
     },
     {
@@ -174,28 +174,13 @@
       "away": "Chelsea FC",
       "kickoff": "21/04 19:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.61,
-        "cards_home": 0.52,
-        "cards_away": 0.68,
-        "dnb_home": 0.66,
-        "xg": 2.6,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Madrid CF",
-      "away": "Deportivo Alavés",
-      "kickoff": "21/04 19:30",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.64,
-        "cards_home": 0.64,
-        "cards_away": 0.53,
-        "dnb_home": 0.63,
-        "xg": 2.45,
-        "expected_corners": 12.0
+        "over25": 0.58,
+        "corners95": 0.65,
+        "cards_home": 0.61,
+        "cards_away": 0.63,
+        "dnb_home": 0.65,
+        "xg": 3.33,
+        "expected_corners": 12.1
       }
     },
     {
@@ -204,13 +189,28 @@
       "away": "Real Betis Balompié",
       "kickoff": "21/04 19:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
+        "over25": 0.57,
+        "corners95": 0.65,
         "cards_home": 0.56,
-        "cards_away": 0.64,
-        "dnb_home": 0.67,
-        "xg": 2.41,
-        "expected_corners": 12.2
+        "cards_away": 0.56,
+        "dnb_home": 0.57,
+        "xg": 2.62,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Madrid CF",
+      "away": "Deportivo Alavés",
+      "kickoff": "21/04 19:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.58,
+        "dnb_home": 0.73,
+        "xg": 2.3,
+        "expected_corners": 9.4
       }
     }
   ],
@@ -221,13 +221,43 @@
       "away": "CA Osasuna",
       "kickoff": "21/04 17:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 3.14,
-        "expected_corners": 12.5
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.68,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.75,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Norwich City FC",
+      "away": "Derby County FC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.65,
+        "cards_home": 0.64,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.46,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Stoke City FC",
+      "away": "Millwall FC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 3.05,
+        "expected_corners": 8.7
       }
     },
     {
@@ -237,12 +267,27 @@
       "kickoff": "21/04 18:45",
       "markets": {
         "over25": 0.59,
-        "corners95": 0.64,
+        "corners95": 0.55,
         "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 2.12,
-        "expected_corners": 10.6
+        "cards_away": 0.67,
+        "dnb_home": 0.72,
+        "xg": 3.17,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Madrid CF",
+      "away": "Deportivo Alavés",
+      "kickoff": "21/04 19:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.58,
+        "dnb_home": 0.73,
+        "xg": 2.3,
+        "expected_corners": 9.4
       }
     }
   ]
