@@ -1,6 +1,189 @@
 {
-  "updated_at": "20/04 23:08",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "21/04 00:05",
+  "value": [
+    {
+      "league": "Primera Division",
+      "home": "Athletic Club",
+      "away": "CA Osasuna",
+      "kickoff": "21/04 17:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.57,
+        "cards_home": 0.52,
+        "cards_away": 0.59,
+        "dnb_home": 0.62,
+        "xg": 2.9,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RCD Mallorca",
+      "away": "Valencia CF",
+      "kickoff": "21/04 17:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.5,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 3.05,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Southampton FC",
+      "away": "Bristol City FC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.66,
+        "cards_away": 0.66,
+        "dnb_home": 0.6,
+        "xg": 2.24,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "West Bromwich Albion FC",
+      "away": "Watford FC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.57,
+        "cards_home": 0.65,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.95,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Oxford United FC",
+      "away": "Wrexham AFC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.6,
+        "cards_home": 0.66,
+        "cards_away": 0.58,
+        "dnb_home": 0.6,
+        "xg": 2.57,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Leicester City FC",
+      "away": "Hull City AFC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.58,
+        "cards_home": 0.67,
+        "cards_away": 0.5,
+        "dnb_home": 0.59,
+        "xg": 3.2,
+        "expected_corners": 8.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "RCD Mallorca",
+      "away": "Valencia CF",
+      "kickoff": "21/04 17:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.5,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 3.05,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Southampton FC",
+      "away": "Bristol City FC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.66,
+        "cards_away": 0.66,
+        "dnb_home": 0.6,
+        "xg": 2.24,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Coventry City FC",
+      "away": "Portsmouth FC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.52,
+        "dnb_home": 0.62,
+        "xg": 2.88,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Girona FC",
+      "away": "Real Betis Balompié",
+      "kickoff": "21/04 19:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.59,
+        "xg": 2.5,
+        "expected_corners": 12.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Championship",
+      "home": "West Bromwich Albion FC",
+      "away": "Watford FC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.57,
+        "cards_home": 0.65,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.95,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Queens Park Rangers FC",
+      "away": "Swansea City AFC",
+      "kickoff": "21/04 18:45",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.59,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.74,
+        "xg": 3.13,
+        "expected_corners": 12.4
+      }
+    }
+  ]
 }
