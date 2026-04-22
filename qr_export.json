@@ -1,186 +1,19 @@
 {
-  "updated_at": "22/04 12:12",
+  "updated_at": "22/04 14:14",
   "value": [
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Nantes",
-      "kickoff": "22/04 17:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.56,
-        "xg": 2.17,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Sociedad de Fútbol",
-      "away": "Getafe CF",
-      "kickoff": "22/04 18:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.56,
-        "cards_away": 0.52,
-        "dnb_home": 0.55,
-        "xg": 2.65,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Middlesbrough FC",
-      "away": "Sheffield Wednesday FC",
-      "kickoff": "22/04 18:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.52,
-        "dnb_home": 0.64,
-        "xg": 3.12,
-        "expected_corners": 12.6
-      }
-    },
     {
       "league": "Championship",
       "home": "Charlton Athletic FC",
       "away": "Ipswich Town FC",
       "kickoff": "22/04 18:45",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.58,
-        "cards_home": 0.66,
-        "cards_away": 0.57,
-        "dnb_home": 0.66,
-        "xg": 2.12,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Birmingham City FC",
-      "away": "Preston North End FC",
-      "kickoff": "22/04 18:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 2.28,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Burnley FC",
-      "away": "Manchester City FC",
-      "kickoff": "22/04 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.59,
-        "cards_home": 0.59,
-        "cards_away": 0.64,
-        "dnb_home": 0.63,
-        "xg": 2.76,
-        "expected_corners": 12.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Nantes",
-      "kickoff": "22/04 17:00",
-      "markets": {
         "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.64,
+        "corners95": 0.55,
+        "cards_home": 0.59,
         "cards_away": 0.54,
-        "dnb_home": 0.56,
-        "xg": 2.17,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Elche CF",
-      "away": "Club Atlético de Madrid",
-      "kickoff": "22/04 17:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.62,
-        "xg": 2.8,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Sociedad de Fútbol",
-      "away": "Getafe CF",
-      "kickoff": "22/04 18:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.56,
-        "cards_away": 0.52,
-        "dnb_home": 0.55,
-        "xg": 2.65,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "Sparta Rotterdam",
-      "kickoff": "22/04 18:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.63,
-        "xg": 2.43,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Middlesbrough FC",
-      "away": "Sheffield Wednesday FC",
-      "kickoff": "22/04 18:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.52,
-        "dnb_home": 0.64,
-        "xg": 3.12,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Birmingham City FC",
-      "away": "Preston North End FC",
-      "kickoff": "22/04 18:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 2.28,
-        "expected_corners": 10.6
+        "dnb_home": 0.6,
+        "xg": 3.39,
+        "expected_corners": 10.9
       }
     },
     {
@@ -189,13 +22,28 @@
       "away": "Blackburn Rovers FC",
       "kickoff": "22/04 18:45",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.65,
-        "xg": 3.21,
-        "expected_corners": 9.5
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.55,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 2.91,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Birmingham City FC",
+      "away": "Preston North End FC",
+      "kickoff": "22/04 18:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.65,
+        "dnb_home": 0.66,
+        "xg": 2.78,
+        "expected_corners": 9.4
       }
     },
     {
@@ -204,30 +52,28 @@
       "away": "Leeds United FC",
       "kickoff": "22/04 19:00",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.7,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.56,
+        "xg": 3.18,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Burnley FC",
+      "away": "Manchester City FC",
+      "kickoff": "22/04 19:00",
+      "markets": {
+        "over25": 0.72,
         "corners95": 0.63,
         "cards_home": 0.52,
         "cards_away": 0.66,
-        "dnb_home": 0.62,
-        "xg": 3.19,
-        "expected_corners": 9.6
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Birmingham City FC",
-      "away": "Preston North End FC",
-      "kickoff": "22/04 18:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 2.28,
-        "expected_corners": 10.6
+        "dnb_home": 0.64,
+        "xg": 3.4,
+        "expected_corners": 8.5
       }
     },
     {
@@ -236,12 +82,166 @@
       "away": "RC Celta de Vigo",
       "kickoff": "22/04 19:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.57,
+        "over25": 0.69,
+        "corners95": 0.58,
+        "cards_home": 0.67,
+        "cards_away": 0.61,
+        "dnb_home": 0.65,
+        "xg": 2.28,
+        "expected_corners": 12.3
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "Elche CF",
+      "away": "Club Atlético de Madrid",
+      "kickoff": "22/04 17:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.57,
+        "dnb_home": 0.75,
+        "xg": 3.16,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Telstar 1963",
+      "away": "Sparta Rotterdam",
+      "kickoff": "22/04 18:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.7,
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.7,
+        "xg": 3.28,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Blackburn Rovers FC",
+      "kickoff": "22/04 18:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.55,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 2.91,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Birmingham City FC",
+      "away": "Preston North End FC",
+      "kickoff": "22/04 18:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.65,
+        "dnb_home": 0.66,
+        "xg": 2.78,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "AFC Bournemouth",
+      "away": "Leeds United FC",
+      "kickoff": "22/04 19:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.56,
+        "xg": 3.18,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Burnley FC",
+      "away": "Manchester City FC",
+      "kickoff": "22/04 19:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.63,
         "cards_home": 0.52,
-        "cards_away": 0.58,
-        "dnb_home": 0.72,
-        "xg": 3.19,
+        "cards_away": 0.66,
+        "dnb_home": 0.64,
+        "xg": 3.4,
+        "expected_corners": 8.5
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Elche CF",
+      "away": "Club Atlético de Madrid",
+      "kickoff": "22/04 17:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.57,
+        "dnb_home": 0.75,
+        "xg": 3.16,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Paris Saint-Germain FC",
+      "away": "FC Nantes",
+      "kickoff": "22/04 17:00",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.56,
+        "cards_home": 0.56,
+        "cards_away": 0.52,
+        "dnb_home": 0.7,
+        "xg": 2.5,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Telstar 1963",
+      "away": "Sparta Rotterdam",
+      "kickoff": "22/04 18:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.7,
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.7,
+        "xg": 3.28,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Blackburn Rovers FC",
+      "kickoff": "22/04 18:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.55,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 2.91,
         "expected_corners": 10.8
       }
     }
