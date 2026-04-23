@@ -1,5 +1,5 @@
 {
-  "updated_at": "23/04 10:05",
+  "updated_at": "23/04 11:39",
   "value": [
     {
       "league": "Primera Division",
@@ -7,13 +7,13 @@
       "away": "RCD Espanyol de Barcelona",
       "kickoff": "23/04 18:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.58,
-        "cards_home": 0.51,
-        "cards_away": 0.64,
-        "dnb_home": 0.56,
-        "xg": 2.82,
-        "expected_corners": 9.3
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.63,
+        "cards_away": 0.53,
+        "dnb_home": 0.59,
+        "xg": 3.21,
+        "expected_corners": 11.9
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "Sporting Clube de Braga",
       "kickoff": "23/04 18:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.62,
-        "dnb_home": 0.73,
-        "xg": 3.1,
-        "expected_corners": 9.5
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 3.26,
+        "expected_corners": 8.6
       }
     },
     {
@@ -37,30 +37,30 @@
       "away": "PEC Zwolle",
       "kickoff": "23/04 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.52,
+        "over25": 0.68,
+        "corners95": 0.58,
+        "cards_home": 0.56,
         "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 3.36,
-        "expected_corners": 9.4
+        "dnb_home": 0.58,
+        "xg": 2.97,
+        "expected_corners": 9.7
       }
     }
   ],
   "corner": [
     {
-      "league": "Primera Division",
-      "home": "Levante UD",
-      "away": "Sevilla FC",
-      "kickoff": "23/04 17:00",
+      "league": "Eredivisie",
+      "home": "Go Ahead Eagles",
+      "away": "AZ",
+      "kickoff": "23/04 16:45",
       "markets": {
-        "over25": 0.57,
+        "over25": 0.56,
         "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.58,
-        "dnb_home": 0.62,
-        "xg": 2.28,
-        "expected_corners": 11.0
+        "cards_home": 0.64,
+        "cards_away": 0.65,
+        "dnb_home": 0.56,
+        "xg": 3.02,
+        "expected_corners": 11.6
       }
     },
     {
@@ -69,43 +69,13 @@
       "away": "Sporting Clube de Braga",
       "kickoff": "23/04 18:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.62,
-        "dnb_home": 0.73,
-        "xg": 3.1,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "PSV",
-      "away": "PEC Zwolle",
-      "kickoff": "23/04 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.52,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 3.36,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Oviedo",
-      "away": "Villarreal CF",
-      "kickoff": "23/04 19:30",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 2.11,
-        "expected_corners": 12.7
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 3.26,
+        "expected_corners": 8.6
       }
     }
   ],
@@ -116,28 +86,13 @@
       "away": "Sporting Clube de Braga",
       "kickoff": "23/04 18:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.62,
-        "dnb_home": 0.73,
-        "xg": 3.1,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Oviedo",
-      "away": "Villarreal CF",
-      "kickoff": "23/04 19:30",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 2.11,
-        "expected_corners": 12.7
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 3.26,
+        "expected_corners": 8.6
       }
     }
   ]
