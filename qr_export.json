@@ -1,5 +1,5 @@
 {
-  "updated_at": "23/04 06:05",
+  "updated_at": "23/04 08:18",
   "value": [
     {
       "league": "Eredivisie",
@@ -7,28 +7,13 @@
       "away": "AZ",
       "kickoff": "23/04 16:45",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 3.15,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "23/04 18:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.56,
-        "cards_home": 0.65,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.92,
-        "expected_corners": 8.7
+        "over25": 0.69,
+        "corners95": 0.6,
+        "cards_home": 0.56,
+        "cards_away": 0.54,
+        "dnb_home": 0.6,
+        "xg": 2.82,
+        "expected_corners": 9.1
       }
     },
     {
@@ -37,77 +22,45 @@
       "away": "Sporting Clube de Braga",
       "kickoff": "23/04 18:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.55,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.74,
-        "xg": 3.03,
-        "expected_corners": 10.9
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.6,
+        "xg": 2.95,
+        "expected_corners": 11.0
       }
     },
     {
-      "league": "Primera Division",
-      "home": "Real Oviedo",
-      "away": "Villarreal CF",
-      "kickoff": "23/04 19:30",
+      "league": "Eredivisie",
+      "home": "PSV",
+      "away": "PEC Zwolle",
+      "kickoff": "23/04 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.6,
-        "cards_home": 0.64,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.66,
-        "expected_corners": 10.2
+        "over25": 0.69,
+        "corners95": 0.64,
+        "cards_home": 0.5,
+        "cards_away": 0.58,
+        "dnb_home": 0.63,
+        "xg": 2.18,
+        "expected_corners": 10.7
       }
     }
   ],
   "corner": [
-    {
-      "league": "Eredivisie",
-      "home": "Go Ahead Eagles",
-      "away": "AZ",
-      "kickoff": "23/04 16:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 3.15,
-        "expected_corners": 10.2
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Eredivisie",
-      "home": "Go Ahead Eagles",
-      "away": "AZ",
-      "kickoff": "23/04 16:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.67,
-        "dnb_home": 0.74,
-        "xg": 3.15,
-        "expected_corners": 10.2
-      }
-    },
     {
       "league": "Primera Division",
       "home": "Levante UD",
       "away": "Sevilla FC",
       "kickoff": "23/04 17:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 3.2,
-        "expected_corners": 11.8
+        "over25": 0.56,
+        "corners95": 0.61,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.6,
+        "xg": 2.34,
+        "expected_corners": 9.4
       }
     },
     {
@@ -116,13 +69,13 @@
       "away": "RCD Espanyol de Barcelona",
       "kickoff": "23/04 18:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.56,
-        "cards_home": 0.65,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.92,
-        "expected_corners": 8.7
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 2.75,
+        "expected_corners": 9.8
       }
     },
     {
@@ -131,13 +84,28 @@
       "away": "Sporting Clube de Braga",
       "kickoff": "23/04 18:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.55,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.74,
-        "xg": 3.03,
-        "expected_corners": 10.9
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.6,
+        "xg": 2.95,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "PSV",
+      "away": "PEC Zwolle",
+      "kickoff": "23/04 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.64,
+        "cards_home": 0.5,
+        "cards_away": 0.58,
+        "dnb_home": 0.63,
+        "xg": 2.18,
+        "expected_corners": 10.7
       }
     },
     {
@@ -146,13 +114,30 @@
       "away": "Villarreal CF",
       "kickoff": "23/04 19:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.6,
+        "over25": 0.58,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.6,
+        "xg": 2.82,
+        "expected_corners": 9.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "23/04 18:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.67,
         "cards_home": 0.64,
         "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.66,
-        "expected_corners": 10.2
+        "dnb_home": 0.69,
+        "xg": 2.75,
+        "expected_corners": 9.8
       }
     }
   ]
