@@ -1,5 +1,5 @@
 {
-  "updated_at": "24/04 10:08",
+  "updated_at": "24/04 11:39",
   "value": [
     {
       "league": "Bundesliga",
@@ -8,12 +8,42 @@
       "kickoff": "24/04 18:30",
       "markets": {
         "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 2.96,
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.64,
+        "dnb_home": 0.6,
+        "xg": 2.26,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Stade Brestois 29",
+      "away": "Racing Club de Lens",
+      "kickoff": "24/04 18:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.59,
+        "cards_home": 0.53,
+        "cards_away": 0.61,
+        "dnb_home": 0.68,
+        "xg": 3.2,
         "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "SSC Napoli",
+      "away": "US Cremonese",
+      "kickoff": "24/04 18:45",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 2.11,
+        "expected_corners": 11.1
       }
     },
     {
@@ -22,13 +52,28 @@
       "away": "Real Madrid CF",
       "kickoff": "24/04 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.69,
-        "xg": 2.91,
-        "expected_corners": 12.6
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.5,
+        "cards_away": 0.51,
+        "dnb_home": 0.6,
+        "xg": 2.43,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Leicester City FC",
+      "away": "Millwall FC",
+      "kickoff": "24/04 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.62,
+        "dnb_home": 0.6,
+        "xg": 2.26,
+        "expected_corners": 9.7
       }
     }
   ],
@@ -40,12 +85,12 @@
       "kickoff": "24/04 18:30",
       "markets": {
         "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 2.96,
-        "expected_corners": 9.5
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.64,
+        "dnb_home": 0.6,
+        "xg": 2.26,
+        "expected_corners": 10.8
       }
     },
     {
@@ -54,43 +99,13 @@
       "away": "US Cremonese",
       "kickoff": "24/04 18:45",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.62,
-        "cards_home": 0.67,
-        "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.44,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Leicester City FC",
-      "away": "Millwall FC",
-      "kickoff": "24/04 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.74,
-        "xg": 3.13,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Betis Balompié",
-      "away": "Real Madrid CF",
-      "kickoff": "24/04 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.69,
-        "xg": 2.91,
-        "expected_corners": 12.6
+        "over25": 0.7,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 2.11,
+        "expected_corners": 11.1
       }
     },
     {
@@ -99,91 +114,30 @@
       "away": "Nottingham Forest FC",
       "kickoff": "24/04 19:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 3.08,
-        "expected_corners": 9.1
+        "over25": 0.62,
+        "corners95": 0.67,
+        "cards_home": 0.52,
+        "cards_away": 0.59,
+        "dnb_home": 0.55,
+        "xg": 2.3,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Leicester City FC",
+      "away": "Millwall FC",
+      "kickoff": "24/04 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.62,
+        "dnb_home": 0.6,
+        "xg": 2.26,
+        "expected_corners": 9.7
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Bundesliga",
-      "home": "RB Leipzig",
-      "away": "1. FC Union Berlin",
-      "kickoff": "24/04 18:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 2.96,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Stade Brestois 29",
-      "away": "Racing Club de Lens",
-      "kickoff": "24/04 18:45",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.56,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Leicester City FC",
-      "away": "Millwall FC",
-      "kickoff": "24/04 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.74,
-        "xg": 3.13,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Betis Balompié",
-      "away": "Real Madrid CF",
-      "kickoff": "24/04 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.69,
-        "xg": 2.91,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Sunderland AFC",
-      "away": "Nottingham Forest FC",
-      "kickoff": "24/04 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 3.08,
-        "expected_corners": 9.1
-      }
-    }
-  ]
+  "hot": []
 }
