@@ -1,5 +1,5 @@
 {
-  "updated_at": "25/04 19:25",
+  "updated_at": "25/04 20:01",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,45 +7,13 @@
       "away": "Santos FC",
       "kickoff": "25/04 21:30",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.7,
         "corners95": 0.58,
-        "cards_home": 0.53,
-        "cards_away": 0.61,
-        "dnb_home": 0.64,
-        "xg": 3.0,
-        "expected_corners": 10.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "Vitória SC",
-      "away": "Rio Ave FC",
-      "kickoff": "25/04 19:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.57,
-        "xg": 2.76,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "SC Internacional",
-      "kickoff": "25/04 21:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.62,
-        "dnb_home": 0.71,
-        "xg": 2.31,
-        "expected_corners": 10.9
+        "cards_home": 0.59,
+        "cards_away": 0.53,
+        "dnb_home": 0.69,
+        "xg": 2.61,
+        "expected_corners": 10.7
       }
     },
     {
@@ -54,30 +22,62 @@
       "away": "Cruzeiro EC",
       "kickoff": "25/04 21:30",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.65,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.58,
-        "xg": 3.39,
-        "expected_corners": 10.5
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.56,
+        "xg": 3.0,
+        "expected_corners": 11.9
       }
-    }
-  ],
-  "hot": [
+    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Botafogo FR",
       "away": "SC Internacional",
       "kickoff": "25/04 21:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.62,
-        "dnb_home": 0.71,
-        "xg": 2.31,
-        "expected_corners": 10.9
+        "over25": 0.64,
+        "corners95": 0.57,
+        "cards_home": 0.54,
+        "cards_away": 0.65,
+        "dnb_home": 0.59,
+        "xg": 3.29,
+        "expected_corners": 8.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Clube do Remo",
+      "away": "Cruzeiro EC",
+      "kickoff": "25/04 21:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.56,
+        "xg": 3.0,
+        "expected_corners": 11.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "Santos FC",
+      "kickoff": "25/04 21:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.58,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
+        "dnb_home": 0.69,
+        "xg": 2.61,
+        "expected_corners": 10.7
       }
     }
   ]
