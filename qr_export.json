@@ -1,53 +1,6 @@
 {
-  "updated_at": "26/04 22:38",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "CR Flamengo",
-      "kickoff": "26/04 23:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.54,
-        "dnb_home": 0.58,
-        "xg": 3.07,
-        "expected_corners": 9.9
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "CR Flamengo",
-      "kickoff": "26/04 23:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.54,
-        "dnb_home": 0.58,
-        "xg": 3.07,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Fluminense FC",
-      "away": "Chapecoense AF",
-      "kickoff": "26/04 23:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.51,
-        "dnb_home": 0.62,
-        "xg": 2.75,
-        "expected_corners": 11.4
-      }
-    }
-  ],
+  "updated_at": "26/04 23:38",
+  "value": [],
+  "corner": [],
   "hot": []
 }
