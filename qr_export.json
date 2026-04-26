@@ -1,19 +1,19 @@
 {
-  "updated_at": "26/04 04:01",
+  "updated_at": "26/04 06:23",
   "value": [
     {
-      "league": "Eredivisie",
-      "home": "SBV Excelsior",
-      "away": "FC Utrecht",
-      "kickoff": "26/04 10:15",
+      "league": "Serie A",
+      "home": "ACF Fiorentina",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "26/04 10:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.5,
-        "cards_away": 0.64,
-        "dnb_home": 0.63,
-        "xg": 2.21,
-        "expected_corners": 9.7
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.62,
+        "xg": 2.95,
+        "expected_corners": 9.2
       }
     },
     {
@@ -22,13 +22,28 @@
       "away": "Wrexham AFC",
       "kickoff": "26/04 11:00",
       "markets": {
-        "over25": 0.65,
+        "over25": 0.64,
         "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 2.28,
-        "expected_corners": 12.8
+        "cards_home": 0.64,
+        "cards_away": 0.6,
+        "dnb_home": 0.59,
+        "xg": 3.38,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "26/04 12:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.71,
+        "xg": 2.55,
+        "expected_corners": 9.4
       }
     },
     {
@@ -38,27 +53,12 @@
       "kickoff": "26/04 13:00",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.61,
-        "dnb_home": 0.62,
-        "xg": 2.4,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Lorient",
-      "away": "RC Strasbourg Alsace",
-      "kickoff": "26/04 13:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.55,
-        "cards_home": 0.61,
-        "cards_away": 0.6,
-        "dnb_home": 0.56,
-        "xg": 2.94,
-        "expected_corners": 12.2
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.52,
+        "dnb_home": 0.63,
+        "xg": 2.16,
+        "expected_corners": 8.6
       }
     },
     {
@@ -68,42 +68,12 @@
       "kickoff": "26/04 13:30",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.56,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.62,
-        "xg": 3.18,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Oviedo",
-      "away": "Elche CF",
-      "kickoff": "26/04 14:15",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.6,
-        "cards_home": 0.61,
-        "cards_away": 0.55,
-        "dnb_home": 0.68,
-        "xg": 2.28,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "GD Estoril Praia",
-      "away": "FC Famalicão",
-      "kickoff": "26/04 14:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.52,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.78,
-        "expected_corners": 10.4
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.56,
+        "dnb_home": 0.65,
+        "xg": 2.89,
+        "expected_corners": 10.1
       }
     },
     {
@@ -112,58 +82,58 @@
       "away": "Lille OSC",
       "kickoff": "26/04 15:15",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.59,
-        "cards_home": 0.65,
-        "cards_away": 0.68,
-        "dnb_home": 0.55,
-        "xg": 2.92,
-        "expected_corners": 12.4
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.75,
+        "xg": 3.38,
+        "expected_corners": 10.5
       }
     },
     {
-      "league": "Bundesliga",
-      "home": "Borussia Dortmund",
-      "away": "SC Freiburg",
-      "kickoff": "26/04 15:30",
+      "league": "Primera Division",
+      "home": "CA Osasuna",
+      "away": "Sevilla FC",
+      "kickoff": "26/04 16:30",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 2.68,
-        "expected_corners": 10.9
+        "corners95": 0.64,
+        "cards_home": 0.5,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 3.1,
+        "expected_corners": 11.6
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "26/04 17:00",
+      "league": "Ligue 1",
+      "home": "Olympique de Marseille",
+      "away": "OGC Nice",
+      "kickoff": "26/04 18:45",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.53,
-        "expected_corners": 11.8
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.54,
+        "dnb_home": 0.68,
+        "xg": 3.14,
+        "expected_corners": 9.6
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "CF Estrela da Amadora",
-      "away": "FC Porto",
-      "kickoff": "26/04 17:00",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Grêmio FBPA",
+      "away": "Coritiba FBC",
+      "kickoff": "26/04 19:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.61,
-        "dnb_home": 0.74,
-        "xg": 2.61,
-        "expected_corners": 9.4
+        "over25": 0.7,
+        "corners95": 0.65,
+        "cards_home": 0.54,
+        "cards_away": 0.62,
+        "dnb_home": 0.64,
+        "xg": 2.75,
+        "expected_corners": 10.1
       }
     },
     {
@@ -172,45 +142,60 @@
       "away": "CR Vasco da Gama",
       "kickoff": "26/04 19:00",
       "markets": {
-        "over25": 0.66,
+        "over25": 0.69,
         "corners95": 0.58,
-        "cards_home": 0.66,
-        "cards_away": 0.65,
-        "dnb_home": 0.58,
-        "xg": 3.19,
-        "expected_corners": 9.5
+        "cards_home": 0.5,
+        "cards_away": 0.53,
+        "dnb_home": 0.68,
+        "xg": 2.93,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Paranaense",
+      "away": "EC Vitória",
+      "kickoff": "26/04 21:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.58,
+        "cards_home": 0.57,
+        "cards_away": 0.64,
+        "dnb_home": 0.61,
+        "xg": 2.27,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "RB Bragantino",
+      "away": "SE Palmeiras",
+      "kickoff": "26/04 21:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.52,
+        "cards_away": 0.56,
+        "dnb_home": 0.71,
+        "xg": 3.17,
+        "expected_corners": 10.1
       }
     }
   ],
   "corner": [
-    {
-      "league": "Eredivisie",
-      "home": "SBV Excelsior",
-      "away": "FC Utrecht",
-      "kickoff": "26/04 10:15",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.5,
-        "cards_away": 0.64,
-        "dnb_home": 0.63,
-        "xg": 2.21,
-        "expected_corners": 9.7
-      }
-    },
     {
       "league": "Serie A",
       "home": "ACF Fiorentina",
       "away": "US Sassuolo Calcio",
       "kickoff": "26/04 10:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.66,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.75,
-        "xg": 2.76,
-        "expected_corners": 9.3
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.62,
+        "xg": 2.95,
+        "expected_corners": 9.2
       }
     },
     {
@@ -219,13 +204,13 @@
       "away": "Wrexham AFC",
       "kickoff": "26/04 11:00",
       "markets": {
-        "over25": 0.65,
+        "over25": 0.64,
         "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 2.28,
-        "expected_corners": 12.8
+        "cards_home": 0.64,
+        "cards_away": 0.6,
+        "dnb_home": 0.59,
+        "xg": 3.38,
+        "expected_corners": 9.5
       }
     },
     {
@@ -234,28 +219,13 @@
       "away": "Real Sociedad de Fútbol",
       "kickoff": "26/04 12:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.67,
-        "cards_home": 0.56,
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.59,
         "cards_away": 0.67,
-        "dnb_home": 0.61,
-        "xg": 3.04,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "Heracles Almelo",
-      "away": "FC Volendam",
-      "kickoff": "26/04 12:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.68,
-        "xg": 3.09,
-        "expected_corners": 9.9
+        "dnb_home": 0.71,
+        "xg": 2.55,
+        "expected_corners": 9.4
       }
     },
     {
@@ -265,42 +235,57 @@
       "kickoff": "26/04 13:00",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.61,
-        "dnb_home": 0.62,
-        "xg": 2.4,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "GD Estoril Praia",
-      "away": "FC Famalicão",
-      "kickoff": "26/04 14:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.52,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.78,
-        "expected_corners": 10.4
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.52,
+        "dnb_home": 0.63,
+        "xg": 2.16,
+        "expected_corners": 8.6
       }
     },
     {
       "league": "Ligue 1",
-      "home": "Stade Rennais FC 1901",
-      "away": "FC Nantes",
-      "kickoff": "26/04 15:15",
+      "home": "FC Lorient",
+      "away": "RC Strasbourg Alsace",
+      "kickoff": "26/04 13:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.65,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.55,
-        "xg": 2.52,
-        "expected_corners": 9.1
+        "over25": 0.59,
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.63,
+        "xg": 3.27,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "VfB Stuttgart",
+      "away": "SV Werder Bremen",
+      "kickoff": "26/04 13:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.56,
+        "dnb_home": 0.65,
+        "xg": 2.89,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Oviedo",
+      "away": "Elche CF",
+      "kickoff": "26/04 14:15",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.52,
+        "dnb_home": 0.68,
+        "xg": 2.53,
+        "expected_corners": 12.7
       }
     },
     {
@@ -309,90 +294,28 @@
       "away": "FC Metz",
       "kickoff": "26/04 15:15",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.62,
-        "dnb_home": 0.67,
-        "xg": 2.43,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Torino FC",
-      "away": "FC Internazionale Milano",
-      "kickoff": "26/04 16:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.62,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 2.72,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "CA Osasuna",
-      "away": "Sevilla FC",
-      "kickoff": "26/04 16:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.66,
-        "cards_home": 0.54,
-        "cards_away": 0.65,
-        "dnb_home": 0.67,
-        "xg": 2.43,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "26/04 17:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.53,
-        "expected_corners": 11.8
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "ACF Fiorentina",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "26/04 10:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.66,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.75,
-        "xg": 2.76,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Coventry City FC",
-      "away": "Wrexham AFC",
-      "kickoff": "26/04 11:00",
-      "markets": {
-        "over25": 0.65,
+        "over25": 0.56,
         "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 2.28,
-        "expected_corners": 12.8
+        "cards_home": 0.51,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 3.17,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Paris FC",
+      "away": "Lille OSC",
+      "kickoff": "26/04 15:15",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.75,
+        "xg": 3.38,
+        "expected_corners": 10.5
       }
     },
     {
@@ -401,13 +324,13 @@
       "away": "SC Freiburg",
       "kickoff": "26/04 15:30",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 2.68,
-        "expected_corners": 10.9
+        "over25": 0.56,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.6,
+        "dnb_home": 0.56,
+        "xg": 3.36,
+        "expected_corners": 11.3
       }
     },
     {
@@ -416,43 +339,120 @@
       "away": "FC Internazionale Milano",
       "kickoff": "26/04 16:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.62,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 2.72,
-        "expected_corners": 10.6
+        "over25": 0.56,
+        "corners95": 0.65,
+        "cards_home": 0.54,
+        "cards_away": 0.58,
+        "dnb_home": 0.75,
+        "xg": 3.31,
+        "expected_corners": 12.5
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "CF Estrela da Amadora",
-      "away": "FC Porto",
-      "kickoff": "26/04 17:00",
+      "league": "Primera Division",
+      "home": "CA Osasuna",
+      "away": "Sevilla FC",
+      "kickoff": "26/04 16:30",
       "markets": {
-        "over25": 0.66,
+        "over25": 0.7,
+        "corners95": 0.64,
+        "cards_home": 0.5,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 3.1,
+        "expected_corners": 11.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "26/04 12:00",
+      "markets": {
+        "over25": 0.64,
         "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.61,
-        "dnb_home": 0.74,
-        "xg": 2.61,
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.71,
+        "xg": 2.55,
         "expected_corners": 9.4
       }
     },
     {
       "league": "Ligue 1",
-      "home": "Olympique de Marseille",
-      "away": "OGC Nice",
-      "kickoff": "26/04 18:45",
+      "home": "Paris FC",
+      "away": "Lille OSC",
+      "kickoff": "26/04 15:15",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.61,
-        "cards_home": 0.64,
-        "cards_away": 0.51,
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.75,
+        "xg": 3.38,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Torino FC",
+      "away": "FC Internazionale Milano",
+      "kickoff": "26/04 16:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.65,
+        "cards_home": 0.54,
+        "cards_away": 0.58,
+        "dnb_home": 0.75,
+        "xg": 3.31,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Villarreal CF",
+      "away": "RC Celta de Vigo",
+      "kickoff": "26/04 19:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.59,
+        "cards_home": 0.66,
+        "cards_away": 0.58,
+        "dnb_home": 0.72,
+        "xg": 2.69,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "RB Bragantino",
+      "away": "SE Palmeiras",
+      "kickoff": "26/04 21:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.52,
+        "cards_away": 0.56,
         "dnb_home": 0.71,
-        "xg": 3.27,
-        "expected_corners": 11.9
+        "xg": 3.17,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Mineiro",
+      "away": "CR Flamengo",
+      "kickoff": "26/04 23:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.6,
+        "cards_home": 0.51,
+        "cards_away": 0.53,
+        "dnb_home": 0.7,
+        "xg": 2.89,
+        "expected_corners": 12.6
       }
     }
   ]
