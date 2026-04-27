@@ -1,49 +1,19 @@
 {
-  "updated_at": "27/04 10:31",
+  "updated_at": "27/04 12:19",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "Cagliari Calcio",
-      "away": "Atalanta BC",
-      "kickoff": "27/04 16:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.61,
-        "cards_away": 0.52,
-        "dnb_home": 0.55,
-        "xg": 2.6,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "Udinese Calcio",
-      "kickoff": "27/04 18:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.51,
-        "dnb_home": 0.69,
-        "xg": 2.88,
-        "expected_corners": 10.2
-      }
-    },
     {
       "league": "Premier League",
       "home": "Manchester United FC",
       "away": "Brentford FC",
       "kickoff": "27/04 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.64,
-        "dnb_home": 0.72,
-        "xg": 3.17,
-        "expected_corners": 9.6
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.81,
+        "expected_corners": 10.3
       }
     },
     {
@@ -53,12 +23,12 @@
       "kickoff": "27/04 19:00",
       "markets": {
         "over25": 0.67,
-        "corners95": 0.67,
-        "cards_home": 0.52,
-        "cards_away": 0.65,
-        "dnb_home": 0.67,
-        "xg": 2.67,
-        "expected_corners": 9.3
+        "corners95": 0.65,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.65,
+        "xg": 3.17,
+        "expected_corners": 9.2
       }
     }
   ],
@@ -69,13 +39,13 @@
       "away": "Atalanta BC",
       "kickoff": "27/04 16:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.61,
-        "cards_away": 0.52,
-        "dnb_home": 0.55,
-        "xg": 2.6,
-        "expected_corners": 10.8
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.57,
+        "xg": 2.45,
+        "expected_corners": 9.8
       }
     },
     {
@@ -84,13 +54,13 @@
       "away": "Udinese Calcio",
       "kickoff": "27/04 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.51,
-        "dnb_home": 0.69,
-        "xg": 2.88,
-        "expected_corners": 10.2
+        "over25": 0.59,
+        "corners95": 0.64,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.52,
+        "expected_corners": 12.2
       }
     },
     {
@@ -99,13 +69,13 @@
       "away": "Brentford FC",
       "kickoff": "27/04 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.64,
-        "dnb_home": 0.72,
-        "xg": 3.17,
-        "expected_corners": 9.6
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.81,
+        "expected_corners": 10.3
       }
     },
     {
@@ -115,12 +85,12 @@
       "kickoff": "27/04 19:00",
       "markets": {
         "over25": 0.67,
-        "corners95": 0.67,
-        "cards_home": 0.52,
-        "cards_away": 0.65,
-        "dnb_home": 0.67,
-        "xg": 2.67,
-        "expected_corners": 9.3
+        "corners95": 0.65,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.65,
+        "xg": 3.17,
+        "expected_corners": 9.2
       }
     },
     {
@@ -129,13 +99,13 @@
       "away": "Casa Pia AC",
       "kickoff": "27/04 19:15",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
+        "over25": 0.58,
+        "corners95": 0.61,
         "cards_home": 0.57,
-        "cards_away": 0.6,
-        "dnb_home": 0.69,
-        "xg": 2.95,
-        "expected_corners": 12.5
+        "cards_away": 0.62,
+        "dnb_home": 0.61,
+        "xg": 2.24,
+        "expected_corners": 9.2
       }
     }
   ],
@@ -146,13 +116,13 @@
       "away": "Udinese Calcio",
       "kickoff": "27/04 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.51,
-        "dnb_home": 0.69,
-        "xg": 2.88,
-        "expected_corners": 10.2
+        "over25": 0.59,
+        "corners95": 0.64,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.52,
+        "expected_corners": 12.2
       }
     },
     {
@@ -161,28 +131,13 @@
       "away": "Brentford FC",
       "kickoff": "27/04 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.64,
-        "dnb_home": 0.72,
-        "xg": 3.17,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Gil Vicente FC",
-      "away": "Casa Pia AC",
-      "kickoff": "27/04 19:15",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.57,
-        "cards_away": 0.6,
-        "dnb_home": 0.69,
-        "xg": 2.95,
-        "expected_corners": 12.5
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.81,
+        "expected_corners": 10.3
       }
     }
   ]
