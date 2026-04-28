@@ -1,81 +1,51 @@
 {
-  "updated_at": "28/04 17:46",
+  "updated_at": "28/04 19:41",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Ipswich Town FC",
-      "kickoff": "28/04 18:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.58,
-        "cards_home": 0.56,
-        "cards_away": 0.54,
-        "dnb_home": 0.64,
-        "xg": 2.73,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Bayern München",
-      "kickoff": "28/04 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.6,
-        "xg": 2.36,
-        "expected_corners": 12.7
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "CA Lanús",
       "away": "LDU de Quito",
       "kickoff": "28/04 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.57,
-        "xg": 3.37,
-        "expected_corners": 10.6
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.59,
+        "dnb_home": 0.61,
+        "xg": 2.39,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "CAR Independiente del Valle",
+      "kickoff": "28/04 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.66,
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 2.4,
+        "expected_corners": 9.0
       }
     }
   ],
   "corner": [
     {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Bayern München",
-      "kickoff": "28/04 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.6,
-        "xg": 2.36,
-        "expected_corners": 12.7
-      }
-    },
-    {
       "league": "Copa Libertadores",
       "home": "CA Lanús",
       "away": "LDU de Quito",
       "kickoff": "28/04 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.57,
-        "xg": 3.37,
-        "expected_corners": 10.6
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.59,
+        "dnb_home": 0.61,
+        "xg": 2.39,
+        "expected_corners": 10.3
       }
     },
     {
@@ -84,31 +54,15 @@
       "away": "CAR Independiente del Valle",
       "kickoff": "28/04 22:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 3.09,
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.66,
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 2.4,
         "expected_corners": 9.0
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Libertad Asuncion",
-      "away": "CAR Independiente del Valle",
-      "kickoff": "28/04 22:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 3.09,
-        "expected_corners": 9.0
-      }
-    }
-  ]
+  "hot": []
 }
