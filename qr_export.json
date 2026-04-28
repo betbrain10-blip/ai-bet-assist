@@ -1,5 +1,5 @@
 {
-  "updated_at": "28/04 19:41",
+  "updated_at": "28/04 21:06",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,62 +7,48 @@
       "away": "LDU de Quito",
       "kickoff": "28/04 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.61,
-        "xg": 2.39,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Libertad Asuncion",
-      "away": "CAR Independiente del Valle",
-      "kickoff": "28/04 22:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.65,
-        "xg": 2.4,
-        "expected_corners": 9.0
+        "over25": 0.71,
+        "corners95": 0.58,
+        "cards_home": 0.65,
+        "cards_away": 0.68,
+        "dnb_home": 0.68,
+        "xg": 2.63,
+        "expected_corners": 8.6
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "CA Lanús",
-      "away": "LDU de Quito",
+      "home": "Club Libertad Asuncion",
+      "away": "CAR Independiente del Valle",
       "kickoff": "28/04 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.66,
-        "cards_home": 0.57,
+        "over25": 0.58,
+        "corners95": 0.7,
+        "cards_home": 0.67,
         "cards_away": 0.59,
-        "dnb_home": 0.61,
-        "xg": 2.39,
-        "expected_corners": 10.3
+        "dnb_home": 0.73,
+        "xg": 3.11,
+        "expected_corners": 9.3
       }
-    },
+    }
+  ],
+  "hot": [
     {
       "league": "Copa Libertadores",
       "home": "Club Libertad Asuncion",
       "away": "CAR Independiente del Valle",
       "kickoff": "28/04 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.65,
-        "xg": 2.4,
-        "expected_corners": 9.0
+        "over25": 0.58,
+        "corners95": 0.7,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.73,
+        "xg": 3.11,
+        "expected_corners": 9.3
       }
     }
-  ],
-  "hot": []
+  ]
 }
