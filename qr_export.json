@@ -1,22 +1,6 @@
 {
-  "updated_at": "28/04 21:06",
-  "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Lanús",
-      "away": "LDU de Quito",
-      "kickoff": "28/04 22:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.58,
-        "cards_home": 0.65,
-        "cards_away": 0.68,
-        "dnb_home": 0.68,
-        "xg": 2.63,
-        "expected_corners": 8.6
-      }
-    }
-  ],
+  "updated_at": "28/04 22:30",
+  "value": [],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -25,12 +9,12 @@
       "kickoff": "28/04 22:00",
       "markets": {
         "over25": 0.58,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.11,
-        "expected_corners": 9.3
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.65,
+        "dnb_home": 0.71,
+        "xg": 2.17,
+        "expected_corners": 12.7
       }
     }
   ],
@@ -42,12 +26,27 @@
       "kickoff": "28/04 22:00",
       "markets": {
         "over25": 0.58,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.11,
-        "expected_corners": 9.3
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.65,
+        "dnb_home": 0.71,
+        "xg": 2.17,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Lanús",
+      "away": "LDU de Quito",
+      "kickoff": "28/04 22:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.57,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.69,
+        "xg": 2.97,
+        "expected_corners": 10.7
       }
     }
   ]
