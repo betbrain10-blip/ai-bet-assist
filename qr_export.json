@@ -1,81 +1,51 @@
 {
-  "updated_at": "28/04 08:42",
+  "updated_at": "28/04 11:04",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Ipswich Town FC",
-      "kickoff": "28/04 18:45",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.59,
-        "cards_home": 0.53,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 3.06,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Bayern München",
-      "kickoff": "28/04 19:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.59,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 2.68,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Libertad Asuncion",
-      "away": "CAR Independiente del Valle",
-      "kickoff": "28/04 22:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.59,
-        "cards_away": 0.51,
-        "dnb_home": 0.67,
-        "xg": 3.04,
-        "expected_corners": 12.7
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Libertad Asuncion",
-      "away": "CAR Independiente del Valle",
-      "kickoff": "28/04 22:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.59,
-        "cards_away": 0.51,
-        "dnb_home": 0.67,
-        "xg": 3.04,
-        "expected_corners": 12.7
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "CA Lanús",
       "away": "LDU de Quito",
       "kickoff": "28/04 22:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.68,
+        "over25": 0.66,
+        "corners95": 0.6,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.58,
+        "xg": 2.21,
+        "expected_corners": 8.9
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "FC Bayern München",
+      "kickoff": "28/04 19:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.57,
+        "cards_away": 0.5,
+        "dnb_home": 0.61,
+        "xg": 3.22,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "CAR Independiente del Valle",
+      "kickoff": "28/04 22:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.63,
+        "cards_home": 0.68,
+        "cards_away": 0.52,
         "dnb_home": 0.6,
-        "xg": 2.95,
-        "expected_corners": 10.9
+        "xg": 3.13,
+        "expected_corners": 10.0
       }
     }
   ],
