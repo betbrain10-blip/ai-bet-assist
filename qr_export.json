@@ -1,34 +1,81 @@
 {
-  "updated_at": "28/04 13:12",
+  "updated_at": "28/04 15:43",
   "value": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "FC Bayern München",
+      "kickoff": "28/04 19:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.59,
+        "cards_home": 0.55,
+        "cards_away": 0.66,
+        "dnb_home": 0.63,
+        "xg": 3.15,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "CAR Independiente del Valle",
+      "kickoff": "28/04 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.64,
+        "cards_home": 0.64,
+        "cards_away": 0.6,
+        "dnb_home": 0.62,
+        "xg": 2.13,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Lanús",
+      "away": "LDU de Quito",
+      "kickoff": "28/04 22:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 2.59,
+        "expected_corners": 9.0
+      }
+    }
+  ],
+  "corner": [
     {
       "league": "Championship",
       "home": "Southampton FC",
       "away": "Ipswich Town FC",
       "kickoff": "28/04 18:45",
       "markets": {
+        "over25": 0.59,
+        "corners95": 0.62,
+        "cards_home": 0.64,
+        "cards_away": 0.66,
+        "dnb_home": 0.58,
+        "xg": 2.44,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "CAR Independiente del Valle",
+      "kickoff": "28/04 22:00",
+      "markets": {
         "over25": 0.7,
-        "corners95": 0.56,
-        "cards_home": 0.6,
-        "cards_away": 0.53,
-        "dnb_home": 0.67,
-        "xg": 2.91,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Bayern München",
-      "kickoff": "28/04 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.71,
-        "xg": 3.39,
-        "expected_corners": 12.0
+        "corners95": 0.64,
+        "cards_home": 0.64,
+        "cards_away": 0.6,
+        "dnb_home": 0.62,
+        "xg": 2.13,
+        "expected_corners": 8.7
       }
     },
     {
@@ -37,63 +84,15 @@
       "away": "LDU de Quito",
       "kickoff": "28/04 22:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.65,
         "corners95": 0.61,
         "cards_home": 0.52,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.24,
-        "expected_corners": 10.8
+        "cards_away": 0.58,
+        "dnb_home": 0.65,
+        "xg": 2.59,
+        "expected_corners": 9.0
       }
     }
   ],
-  "corner": [
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Bayern München",
-      "kickoff": "28/04 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.71,
-        "xg": 3.39,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Lanús",
-      "away": "LDU de Quito",
-      "kickoff": "28/04 22:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.61,
-        "cards_home": 0.52,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.24,
-        "expected_corners": 10.8
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Bayern München",
-      "kickoff": "28/04 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.71,
-        "xg": 3.39,
-        "expected_corners": 12.0
-      }
-    }
-  ]
+  "hot": []
 }
