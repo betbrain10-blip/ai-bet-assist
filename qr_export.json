@@ -1,66 +1,19 @@
 {
-  "updated_at": "29/04 14:36",
+  "updated_at": "29/04 16:26",
   "value": [
     {
-      "league": "Copa Libertadores",
-      "home": "CS Cristal",
-      "away": "CDP Junior FC",
-      "kickoff": "29/04 02:00",
+      "league": "UEFA Champions League",
+      "home": "Club Atlético de Madrid",
+      "away": "Arsenal FC",
+      "kickoff": "29/04 19:00",
       "markets": {
         "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.54,
+        "corners95": 0.66,
+        "cards_home": 0.62,
         "cards_away": 0.68,
-        "dnb_home": 0.59,
-        "xg": 2.7,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Tolima",
-      "away": "CD Coquimbo Unido",
-      "kickoff": "29/04 02:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 3.06,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Mirassol FC",
-      "away": "Club Always Ready",
-      "kickoff": "29/04 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.58,
-        "cards_away": 0.57,
-        "dnb_home": 0.59,
-        "xg": 2.13,
-        "expected_corners": 9.0
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Tolima",
-      "away": "CD Coquimbo Unido",
-      "kickoff": "29/04 02:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 3.06,
-        "expected_corners": 12.4
+        "dnb_home": 0.62,
+        "xg": 2.9,
+        "expected_corners": 11.4
       }
     },
     {
@@ -69,13 +22,13 @@
       "away": "CD Tondela",
       "kickoff": "29/04 19:15",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 3.22,
-        "expected_corners": 9.8
+        "over25": 0.72,
+        "corners95": 0.58,
+        "cards_home": 0.51,
+        "cards_away": 0.58,
+        "dnb_home": 0.68,
+        "xg": 2.34,
+        "expected_corners": 12.1
       }
     },
     {
@@ -84,12 +37,12 @@
       "away": "Independiente Santa Fe",
       "kickoff": "29/04 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
-        "cards_home": 0.57,
+        "over25": 0.66,
+        "corners95": 0.6,
+        "cards_home": 0.56,
         "cards_away": 0.61,
-        "dnb_home": 0.55,
-        "xg": 3.21,
+        "dnb_home": 0.63,
+        "xg": 2.79,
         "expected_corners": 12.3
       }
     },
@@ -99,45 +52,77 @@
       "away": "Club Always Ready",
       "kickoff": "29/04 22:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.58,
-        "cards_away": 0.57,
+        "over25": 0.65,
+        "corners95": 0.6,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
         "dnb_home": 0.59,
-        "xg": 2.13,
-        "expected_corners": 9.0
+        "xg": 3.04,
+        "expected_corners": 12.6
       }
     }
   ],
-  "hot": [
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Cristal",
+      "away": "CDP Junior FC",
+      "kickoff": "29/04 02:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.11,
+        "expected_corners": 10.4
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "CD Tolima",
       "away": "CD Coquimbo Unido",
       "kickoff": "29/04 02:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 3.06,
-        "expected_corners": 12.4
+        "over25": 0.56,
+        "corners95": 0.61,
+        "cards_home": 0.67,
+        "cards_away": 0.64,
+        "dnb_home": 0.59,
+        "xg": 3.37,
+        "expected_corners": 11.4
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "CD Tondela",
-      "kickoff": "29/04 19:15",
+      "league": "UEFA Champions League",
+      "home": "Club Atlético de Madrid",
+      "away": "Arsenal FC",
+      "kickoff": "29/04 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.62,
+        "cards_away": 0.68,
+        "dnb_home": 0.62,
+        "xg": 2.9,
+        "expected_corners": 11.4
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Cristal",
+      "away": "CDP Junior FC",
+      "kickoff": "29/04 02:00",
       "markets": {
         "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 3.22,
-        "expected_corners": 9.8
+        "corners95": 0.65,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.11,
+        "expected_corners": 10.4
       }
     }
   ]
