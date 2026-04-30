@@ -1,68 +1,68 @@
 {
-  "updated_at": "30/04 21:55",
+  "updated_at": "30/04 22:53",
   "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Independiente Rivadavia",
+      "away": "Deportivo La Guaira FC",
+      "kickoff": "30/04 22:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.64,
+        "cards_away": 0.61,
+        "dnb_home": 0.61,
+        "xg": 2.66,
+        "expected_corners": 8.7
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "Club Bolívar",
       "away": "Fluminense FC",
       "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.58,
-        "cards_home": 0.63,
-        "cards_away": 0.58,
-        "dnb_home": 0.63,
-        "xg": 2.54,
-        "expected_corners": 9.7
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.64,
+        "xg": 2.38,
+        "expected_corners": 11.6
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Universitario de Deportes",
-      "away": "Club Nacional de Football",
-      "kickoff": "30/04 02:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.65,
-        "cards_home": 0.61,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 2.99,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CS Independiente Rivadavia",
-      "away": "Deportivo La Guaira FC",
+      "home": "Club Bolívar",
+      "away": "Fluminense FC",
       "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
-        "cards_home": 0.55,
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.54,
         "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 3.15,
-        "expected_corners": 12.0
+        "dnb_home": 0.64,
+        "xg": 2.38,
+        "expected_corners": 11.6
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "CS Independiente Rivadavia",
-      "away": "Deportivo La Guaira FC",
-      "kickoff": "30/04 22:00",
+      "home": "Club Universitario de Deportes",
+      "away": "Club Nacional de Football",
+      "kickoff": "30/04 02:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
+        "over25": 0.56,
+        "corners95": 0.56,
         "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 3.15,
-        "expected_corners": 12.0
+        "cards_away": 0.65,
+        "dnb_home": 0.69,
+        "xg": 3.34,
+        "expected_corners": 9.5
       }
     }
   ]
