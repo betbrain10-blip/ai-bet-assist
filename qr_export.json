@@ -1,113 +1,83 @@
 {
-  "updated_at": "29/04 23:54",
+  "updated_at": "30/04 02:53",
   "value": [
     {
       "league": "Copa Libertadores",
-      "home": "Universidad Central de Venezuela FC",
-      "away": "CA Rosario Central",
-      "kickoff": "29/04 00:00",
+      "home": "CS Independiente Rivadavia",
+      "away": "Deportivo La Guaira FC",
+      "kickoff": "30/04 22:00",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.61,
-        "cards_home": 0.68,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 3.08,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Cruzeiro EC",
-      "away": "CA Boca Juniors",
-      "kickoff": "29/04 00:30",
-      "markets": {
-        "over25": 0.67,
         "corners95": 0.57,
-        "cards_home": 0.58,
-        "cards_away": 0.55,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
         "dnb_home": 0.72,
-        "xg": 2.84,
-        "expected_corners": 12.1
+        "xg": 3.25,
+        "expected_corners": 10.8
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "Mirassol FC",
-      "away": "Club Always Ready",
-      "kickoff": "29/04 22:00",
+      "home": "Club Bolívar",
+      "away": "Fluminense FC",
+      "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.56,
-        "cards_home": 0.53,
-        "cards_away": 0.62,
-        "dnb_home": 0.66,
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.64,
+        "dnb_home": 0.75,
         "xg": 2.16,
-        "expected_corners": 8.6
+        "expected_corners": 12.7
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Universidad Central de Venezuela FC",
-      "away": "CA Rosario Central",
-      "kickoff": "29/04 00:00",
+      "home": "Club Bolívar",
+      "away": "Fluminense FC",
+      "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.61,
-        "cards_home": 0.68,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 3.08,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Platense",
-      "away": "Independiente Santa Fe",
-      "kickoff": "29/04 22:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.63,
-        "xg": 3.29,
-        "expected_corners": 12.4
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.64,
+        "dnb_home": 0.75,
+        "xg": 2.16,
+        "expected_corners": 12.7
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "Universidad Central de Venezuela FC",
-      "away": "CA Rosario Central",
-      "kickoff": "29/04 00:00",
+      "home": "CS Independiente Rivadavia",
+      "away": "Deportivo La Guaira FC",
+      "kickoff": "30/04 22:00",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.61,
-        "cards_home": 0.68,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 3.08,
-        "expected_corners": 12.2
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.72,
+        "xg": 3.25,
+        "expected_corners": 10.8
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "Cruzeiro EC",
-      "away": "CA Boca Juniors",
-      "kickoff": "29/04 00:30",
+      "home": "Club Bolívar",
+      "away": "Fluminense FC",
+      "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.57,
-        "cards_home": 0.58,
-        "cards_away": 0.55,
-        "dnb_home": 0.72,
-        "xg": 2.84,
-        "expected_corners": 12.1
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.64,
+        "dnb_home": 0.75,
+        "xg": 2.16,
+        "expected_corners": 12.7
       }
     }
   ]
