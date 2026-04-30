@@ -1,5 +1,5 @@
 {
-  "updated_at": "30/04 12:14",
+  "updated_at": "30/04 14:32",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,13 +7,28 @@
       "away": "Club Nacional de Football",
       "kickoff": "30/04 02:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.71,
-        "xg": 3.33,
-        "expected_corners": 8.7
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.61,
+        "cards_away": 0.67,
+        "dnb_home": 0.6,
+        "xg": 2.59,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Bolívar",
+      "away": "Fluminense FC",
+      "kickoff": "30/04 22:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.58,
+        "cards_home": 0.54,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 2.57,
+        "expected_corners": 12.6
       }
     }
   ],
@@ -24,13 +39,13 @@
       "away": "Club Nacional de Football",
       "kickoff": "30/04 02:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.71,
-        "xg": 3.33,
-        "expected_corners": 8.7
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.61,
+        "cards_away": 0.67,
+        "dnb_home": 0.6,
+        "xg": 2.59,
+        "expected_corners": 12.5
       }
     },
     {
@@ -39,60 +54,30 @@
       "away": "Deportivo La Guaira FC",
       "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.53,
-        "cards_away": 0.52,
-        "dnb_home": 0.66,
-        "xg": 2.43,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Bolívar",
-      "away": "Fluminense FC",
-      "kickoff": "30/04 22:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 2.52,
-        "expected_corners": 12.2
+        "over25": 0.58,
+        "corners95": 0.7,
+        "cards_home": 0.6,
+        "cards_away": 0.57,
+        "dnb_home": 0.67,
+        "xg": 2.69,
+        "expected_corners": 11.6
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Universitario de Deportes",
-      "away": "Club Nacional de Football",
-      "kickoff": "30/04 02:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.71,
-        "xg": 3.33,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Copa Libertadores",
       "home": "Club Bolívar",
       "away": "Fluminense FC",
       "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 2.52,
-        "expected_corners": 12.2
+        "over25": 0.67,
+        "corners95": 0.58,
+        "cards_home": 0.54,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 2.57,
+        "expected_corners": 12.6
       }
     }
   ]
