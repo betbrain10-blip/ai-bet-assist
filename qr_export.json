@@ -1,19 +1,36 @@
 {
-  "updated_at": "30/04 17:49",
+  "updated_at": "30/04 19:21",
   "value": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "SE Palmeiras",
+      "home": "Estudiantes de La Plata",
+      "away": "CR Flamengo",
       "kickoff": "30/04 00:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 2.37,
-        "expected_corners": 11.4
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.61,
+        "dnb_home": 0.57,
+        "xg": 3.22,
+        "expected_corners": 11.1
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Estudiantes de La Plata",
+      "away": "CR Flamengo",
+      "kickoff": "30/04 00:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.61,
+        "dnb_home": 0.57,
+        "xg": 3.22,
+        "expected_corners": 11.1
       }
     },
     {
@@ -22,32 +39,32 @@
       "away": "Club Nacional de Football",
       "kickoff": "30/04 02:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.67,
-        "cards_away": 0.64,
-        "dnb_home": 0.58,
-        "xg": 2.22,
-        "expected_corners": 11.6
+        "over25": 0.56,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.62,
+        "dnb_home": 0.66,
+        "xg": 3.12,
+        "expected_corners": 9.4
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "Club Bolívar",
-      "away": "Fluminense FC",
+      "home": "CS Independiente Rivadavia",
+      "away": "Deportivo La Guaira FC",
       "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.53,
-        "dnb_home": 0.59,
-        "xg": 2.92,
-        "expected_corners": 9.4
+        "over25": 0.58,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.69,
+        "xg": 2.56,
+        "expected_corners": 9.9
       }
     }
   ],
-  "corner": [
+  "hot": [
     {
       "league": "Copa Libertadores",
       "home": "Barcelona SC",
@@ -55,57 +72,12 @@
       "kickoff": "30/04 00:00",
       "markets": {
         "over25": 0.58,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.58,
-        "dnb_home": 0.67,
-        "xg": 2.56,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Estudiantes de La Plata",
-      "away": "CR Flamengo",
-      "kickoff": "30/04 00:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.58,
-        "xg": 2.58,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "SE Palmeiras",
-      "kickoff": "30/04 00:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 2.37,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Universitario de Deportes",
-      "away": "Club Nacional de Football",
-      "kickoff": "30/04 02:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.67,
-        "cards_away": 0.64,
-        "dnb_home": 0.58,
-        "xg": 2.22,
-        "expected_corners": 11.6
+        "corners95": 0.57,
+        "cards_home": 0.61,
+        "cards_away": 0.62,
+        "dnb_home": 0.7,
+        "xg": 2.15,
+        "expected_corners": 10.5
       }
     },
     {
@@ -114,30 +86,28 @@
       "away": "Fluminense FC",
       "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.53,
-        "dnb_home": 0.59,
-        "xg": 2.92,
-        "expected_corners": 9.4
+        "over25": 0.59,
+        "corners95": 0.59,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 3.12,
+        "expected_corners": 9.9
       }
-    }
-  ],
-  "hot": [
+    },
     {
       "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "SE Palmeiras",
-      "kickoff": "30/04 00:30",
+      "home": "CS Independiente Rivadavia",
+      "away": "Deportivo La Guaira FC",
+      "kickoff": "30/04 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
+        "over25": 0.58,
+        "corners95": 0.66,
         "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 2.37,
-        "expected_corners": 11.4
+        "cards_away": 0.63,
+        "dnb_home": 0.69,
+        "xg": 2.56,
+        "expected_corners": 9.9
       }
     }
   ]
