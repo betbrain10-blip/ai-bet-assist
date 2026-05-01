@@ -1,19 +1,35 @@
 {
-  "updated_at": "01/05 11:38",
-  "value": [
+  "updated_at": "01/05 13:18",
+  "value": [],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Independiente Medellín",
+      "away": "Cusco FC",
+      "kickoff": "01/05 02:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.63,
+        "cards_home": 0.53,
+        "cards_away": 0.54,
+        "dnb_home": 0.63,
+        "xg": 2.21,
+        "expected_corners": 8.7
+      }
+    },
     {
       "league": "Serie A",
       "home": "AC Pisa 1909",
       "away": "US Lecce",
       "kickoff": "01/05 18:45",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 3.05,
-        "expected_corners": 9.7
+        "over25": 0.55,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.54,
+        "dnb_home": 0.63,
+        "xg": 2.99,
+        "expected_corners": 8.8
       }
     },
     {
@@ -22,62 +38,30 @@
       "away": "Burnley FC",
       "kickoff": "01/05 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.55,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.65,
-        "xg": 3.12,
-        "expected_corners": 12.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Independiente Medellín",
-      "away": "Cusco FC",
-      "kickoff": "01/05 02:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.67,
-        "xg": 2.38,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Girona FC",
-      "away": "RCD Mallorca",
-      "kickoff": "01/05 19:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.53,
-        "dnb_home": 0.67,
-        "xg": 2.57,
-        "expected_corners": 11.4
+        "over25": 0.55,
+        "corners95": 0.7,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 3.01,
+        "expected_corners": 11.9
       }
     }
   ],
   "hot": [
     {
-      "league": "Serie A",
-      "home": "AC Pisa 1909",
-      "away": "US Lecce",
-      "kickoff": "01/05 18:45",
+      "league": "Premier League",
+      "home": "Leeds United FC",
+      "away": "Burnley FC",
+      "kickoff": "01/05 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 3.05,
-        "expected_corners": 9.7
+        "over25": 0.55,
+        "corners95": 0.7,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 3.01,
+        "expected_corners": 11.9
       }
     }
   ]
