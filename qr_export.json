@@ -1,5 +1,5 @@
 {
-  "updated_at": "01/05 22:11",
+  "updated_at": "01/05 23:26",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,32 +7,16 @@
       "away": "Cusco FC",
       "kickoff": "01/05 02:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.62,
+        "over25": 0.7,
+        "corners95": 0.55,
+        "cards_home": 0.65,
+        "cards_away": 0.68,
         "dnb_home": 0.63,
-        "xg": 2.36,
-        "expected_corners": 12.7
+        "xg": 2.59,
+        "expected_corners": 10.1
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Independiente Medellín",
-      "away": "Cusco FC",
-      "kickoff": "01/05 02:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.62,
-        "dnb_home": 0.63,
-        "xg": 2.36,
-        "expected_corners": 12.7
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
