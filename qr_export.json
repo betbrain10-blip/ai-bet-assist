@@ -1,113 +1,68 @@
 {
-  "updated_at": "01/05 18:37",
+  "updated_at": "01/05 20:03",
   "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "SC Corinthians Paulista",
+      "away": "CA Peñarol",
+      "kickoff": "01/05 00:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.64,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.72,
+        "xg": 2.95,
+        "expected_corners": 11.7
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "CD Independiente Medellín",
       "away": "Cusco FC",
       "kickoff": "01/05 02:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 3.32,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Girona FC",
-      "away": "RCD Mallorca",
-      "kickoff": "01/05 19:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.68,
+        "over25": 0.71,
+        "corners95": 0.57,
+        "cards_home": 0.51,
+        "cards_away": 0.51,
         "dnb_home": 0.59,
-        "xg": 2.64,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Leeds United FC",
-      "away": "Burnley FC",
-      "kickoff": "01/05 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.67,
-        "dnb_home": 0.62,
-        "xg": 3.02,
-        "expected_corners": 12.0
+        "xg": 2.36,
+        "expected_corners": 9.1
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "CD Independiente Medellín",
-      "away": "Cusco FC",
-      "kickoff": "01/05 02:00",
+      "home": "SC Corinthians Paulista",
+      "away": "CA Peñarol",
+      "kickoff": "01/05 00:00",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 3.32,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Girona FC",
-      "away": "RCD Mallorca",
-      "kickoff": "01/05 19:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.68,
-        "dnb_home": 0.59,
-        "xg": 2.64,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Leeds United FC",
-      "away": "Burnley FC",
-      "kickoff": "01/05 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.67,
-        "dnb_home": 0.62,
-        "xg": 3.02,
-        "expected_corners": 12.0
+        "corners95": 0.64,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.72,
+        "xg": 2.95,
+        "expected_corners": 11.7
       }
     }
   ],
   "hot": [
     {
-      "league": "Serie A",
-      "home": "AC Pisa 1909",
-      "away": "US Lecce",
-      "kickoff": "01/05 18:45",
+      "league": "Copa Libertadores",
+      "home": "SC Corinthians Paulista",
+      "away": "CA Peñarol",
+      "kickoff": "01/05 00:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.57,
-        "cards_home": 0.54,
-        "cards_away": 0.51,
-        "dnb_home": 0.75,
-        "xg": 3.22,
-        "expected_corners": 12.4
+        "over25": 0.64,
+        "corners95": 0.64,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.72,
+        "xg": 2.95,
+        "expected_corners": 11.7
       }
     }
   ]
