@@ -1,5 +1,5 @@
 {
-  "updated_at": "01/05 17:01",
+  "updated_at": "01/05 18:37",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,28 +7,13 @@
       "away": "Cusco FC",
       "kickoff": "01/05 02:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.54,
-        "dnb_home": 0.65,
-        "xg": 2.88,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "AC Pisa 1909",
-      "away": "US Lecce",
-      "kickoff": "01/05 18:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.58,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.72,
-        "xg": 2.1,
-        "expected_corners": 12.4
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 3.32,
+        "expected_corners": 10.6
       }
     },
     {
@@ -37,12 +22,12 @@
       "away": "RCD Mallorca",
       "kickoff": "01/05 19:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.61,
-        "cards_away": 0.58,
-        "dnb_home": 0.56,
-        "xg": 2.7,
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.68,
+        "dnb_home": 0.59,
+        "xg": 2.64,
         "expected_corners": 9.5
       }
     },
@@ -52,13 +37,13 @@
       "away": "Burnley FC",
       "kickoff": "01/05 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.6,
-        "cards_away": 0.66,
-        "dnb_home": 0.55,
-        "xg": 3.06,
-        "expected_corners": 10.4
+        "over25": 0.72,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.67,
+        "dnb_home": 0.62,
+        "xg": 3.02,
+        "expected_corners": 12.0
       }
     }
   ],
@@ -69,13 +54,13 @@
       "away": "Cusco FC",
       "kickoff": "01/05 02:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.54,
-        "dnb_home": 0.65,
-        "xg": 2.88,
-        "expected_corners": 10.5
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 3.32,
+        "expected_corners": 10.6
       }
     },
     {
@@ -84,12 +69,12 @@
       "away": "RCD Mallorca",
       "kickoff": "01/05 19:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.61,
-        "cards_away": 0.58,
-        "dnb_home": 0.56,
-        "xg": 2.7,
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.68,
+        "dnb_home": 0.59,
+        "xg": 2.64,
         "expected_corners": 9.5
       }
     },
@@ -99,13 +84,13 @@
       "away": "Burnley FC",
       "kickoff": "01/05 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.6,
-        "cards_away": 0.66,
-        "dnb_home": 0.55,
-        "xg": 3.06,
-        "expected_corners": 10.4
+        "over25": 0.72,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.67,
+        "dnb_home": 0.62,
+        "xg": 3.02,
+        "expected_corners": 12.0
       }
     }
   ],
@@ -116,12 +101,12 @@
       "away": "US Lecce",
       "kickoff": "01/05 18:45",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.58,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.72,
-        "xg": 2.1,
+        "over25": 0.6,
+        "corners95": 0.57,
+        "cards_home": 0.54,
+        "cards_away": 0.51,
+        "dnb_home": 0.75,
+        "xg": 3.22,
         "expected_corners": 12.4
       }
     }
