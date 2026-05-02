@@ -1,34 +1,19 @@
 {
-  "updated_at": "02/05 19:34",
+  "updated_at": "02/05 20:41",
   "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "FC Alverca",
-      "kickoff": "02/05 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.5,
-        "dnb_home": 0.57,
-        "xg": 3.32,
-        "expected_corners": 12.6
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "EC Vitória",
       "away": "Coritiba FBC",
       "kickoff": "02/05 21:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.6,
-        "cards_away": 0.52,
-        "dnb_home": 0.61,
-        "xg": 2.78,
-        "expected_corners": 8.5
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.55,
+        "dnb_home": 0.65,
+        "xg": 3.05,
+        "expected_corners": 10.9
       }
     },
     {
@@ -37,31 +22,47 @@
       "away": "Santos FC",
       "kickoff": "02/05 21:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.56,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 3.04,
-        "expected_corners": 11.8
+        "over25": 0.72,
+        "corners95": 0.58,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 2.44,
+        "expected_corners": 12.6
       }
     }
   ],
-  "corner": [],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Vitória",
+      "away": "Coritiba FBC",
+      "kickoff": "02/05 21:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.55,
+        "dnb_home": 0.65,
+        "xg": 3.05,
+        "expected_corners": 10.9
+      }
+    }
+  ],
   "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "Santos FC",
-      "kickoff": "02/05 21:30",
+      "home": "CA Paranaense",
+      "away": "Grêmio FBPA",
+      "kickoff": "02/05 23:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.56,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 3.04,
-        "expected_corners": 11.8
+        "over25": 0.61,
+        "corners95": 0.6,
+        "cards_home": 0.53,
+        "cards_away": 0.64,
+        "dnb_home": 0.69,
+        "xg": 2.19,
+        "expected_corners": 9.6
       }
     }
   ]
