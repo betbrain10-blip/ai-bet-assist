@@ -1,38 +1,6 @@
 {
-  "updated_at": "02/05 22:41",
+  "updated_at": "02/05 23:42",
   "value": [],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "Grêmio FBPA",
-      "kickoff": "02/05 23:30",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.32,
-        "expected_corners": 8.7
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "Grêmio FBPA",
-      "kickoff": "02/05 23:30",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.51,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.32,
-        "expected_corners": 8.7
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
