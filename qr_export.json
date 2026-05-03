@@ -1,22 +1,6 @@
 {
-  "updated_at": "03/05 22:41",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "03/05 23:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.59,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.63,
-        "xg": 2.42,
-        "expected_corners": 10.8
-      }
-    }
-  ],
+  "updated_at": "03/05 23:44",
+  "value": [],
   "corner": [],
   "hot": []
 }
