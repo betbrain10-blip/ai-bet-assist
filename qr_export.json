@@ -1,34 +1,19 @@
 {
-  "updated_at": "03/05 17:23",
+  "updated_at": "03/05 18:10",
   "value": [
     {
-      "league": "Bundesliga",
-      "home": "SC Freiburg",
-      "away": "VfL Wolfsburg",
-      "kickoff": "03/05 17:30",
+      "league": "Serie A",
+      "home": "FC Internazionale Milano",
+      "away": "Parma Calcio 1913",
+      "kickoff": "03/05 18:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.55,
-        "cards_home": 0.65,
-        "cards_away": 0.5,
-        "dnb_home": 0.56,
-        "xg": 3.24,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Tottenham Hotspur FC",
-      "kickoff": "03/05 18:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.6,
-        "cards_home": 0.65,
-        "cards_away": 0.62,
-        "dnb_home": 0.63,
-        "xg": 2.12,
-        "expected_corners": 9.4
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.51,
+        "dnb_home": 0.65,
+        "xg": 2.95,
+        "expected_corners": 8.8
       }
     },
     {
@@ -37,28 +22,43 @@
       "away": "Stade Rennais FC 1901",
       "kickoff": "03/05 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.69,
-        "xg": 3.02,
-        "expected_corners": 11.8
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 2.88,
+        "expected_corners": 10.2
       }
     },
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "EC Bahia",
+      "league": "Primera Division",
+      "home": "RCD Espanyol de Barcelona",
+      "away": "Real Madrid CF",
       "kickoff": "03/05 19:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.58,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.6,
-        "xg": 2.91,
-        "expected_corners": 12.2
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.56,
+        "xg": 2.41,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Rio Ave FC",
+      "away": "Gil Vicente FC",
+      "kickoff": "03/05 19:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.59,
+        "xg": 2.12,
+        "expected_corners": 9.5
       }
     },
     {
@@ -67,13 +67,13 @@
       "away": "Fluminense FC",
       "kickoff": "03/05 21:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.69,
-        "xg": 3.1,
-        "expected_corners": 8.9
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.66,
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 2.97,
+        "expected_corners": 12.0
       }
     },
     {
@@ -83,12 +83,12 @@
       "kickoff": "03/05 21:30",
       "markets": {
         "over25": 0.67,
-        "corners95": 0.58,
-        "cards_home": 0.68,
-        "cards_away": 0.6,
-        "dnb_home": 0.75,
-        "xg": 3.3,
-        "expected_corners": 9.8
+        "corners95": 0.65,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.63,
+        "xg": 2.58,
+        "expected_corners": 10.7
       }
     },
     {
@@ -97,60 +97,120 @@
       "away": "SC Corinthians Paulista",
       "kickoff": "03/05 23:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.56,
-        "xg": 2.98,
-        "expected_corners": 11.9
+        "over25": 0.7,
+        "corners95": 0.64,
+        "cards_home": 0.54,
+        "cards_away": 0.6,
+        "dnb_home": 0.59,
+        "xg": 3.02,
+        "expected_corners": 9.9
       }
     }
   ],
   "corner": [
+    {
+      "league": "Serie A",
+      "home": "FC Internazionale Milano",
+      "away": "Parma Calcio 1913",
+      "kickoff": "03/05 18:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.51,
+        "dnb_home": 0.65,
+        "xg": 2.95,
+        "expected_corners": 8.8
+      }
+    },
     {
       "league": "Ligue 1",
       "home": "Olympique Lyonnais",
       "away": "Stade Rennais FC 1901",
       "kickoff": "03/05 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.69,
-        "xg": 3.02,
-        "expected_corners": 11.8
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 2.88,
+        "expected_corners": 10.2
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "CR Vasco da Gama",
+      "home": "São Paulo FC",
+      "away": "EC Bahia",
       "kickoff": "03/05 19:00",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.58,
         "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 2.18,
+        "cards_home": 0.67,
+        "cards_away": 0.52,
+        "dnb_home": 0.58,
+        "xg": 3.22,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RCD Espanyol de Barcelona",
+      "away": "Real Madrid CF",
+      "kickoff": "03/05 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.56,
+        "xg": 2.41,
         "expected_corners": 9.8
       }
     },
     {
+      "league": "Primeira Liga",
+      "home": "Rio Ave FC",
+      "away": "Gil Vicente FC",
+      "kickoff": "03/05 19:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.59,
+        "xg": 2.12,
+        "expected_corners": 9.5
+      }
+    },
+    {
       "league": "Campeonato Brasileiro Série A",
-      "home": "SC Internacional",
-      "away": "Fluminense FC",
+      "home": "Chapecoense AF",
+      "away": "RB Bragantino",
       "kickoff": "03/05 21:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
+        "over25": 0.67,
+        "corners95": 0.65,
         "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.69,
-        "xg": 3.1,
-        "expected_corners": 8.9
+        "cards_away": 0.51,
+        "dnb_home": 0.63,
+        "xg": 2.58,
+        "expected_corners": 10.7
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Mirassol FC",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "03/05 23:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.64,
+        "cards_home": 0.54,
+        "cards_away": 0.6,
+        "dnb_home": 0.59,
+        "xg": 3.02,
+        "expected_corners": 9.9
       }
     }
   ],
@@ -161,13 +221,13 @@
       "away": "Stade Rennais FC 1901",
       "kickoff": "03/05 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.69,
-        "xg": 3.02,
-        "expected_corners": 11.8
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 2.88,
+        "expected_corners": 10.2
       }
     },
     {
@@ -176,42 +236,12 @@
       "away": "CR Vasco da Gama",
       "kickoff": "03/05 19:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 2.18,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Internacional",
-      "away": "Fluminense FC",
-      "kickoff": "03/05 21:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.69,
-        "xg": 3.1,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "RB Bragantino",
-      "kickoff": "03/05 21:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.58,
-        "cards_home": 0.68,
-        "cards_away": 0.6,
-        "dnb_home": 0.75,
-        "xg": 3.3,
+        "over25": 0.55,
+        "corners95": 0.56,
+        "cards_home": 0.62,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 3.22,
         "expected_corners": 9.8
       }
     }
