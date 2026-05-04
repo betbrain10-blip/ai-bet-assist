@@ -1,19 +1,36 @@
 {
-  "updated_at": "04/05 09:02",
+  "updated_at": "04/05 11:21",
   "value": [
+    {
+      "league": "Premier League",
+      "home": "Everton FC",
+      "away": "Manchester City FC",
+      "kickoff": "04/05 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.54,
+        "dnb_home": 0.62,
+        "xg": 2.89,
+        "expected_corners": 11.5
+      }
+    }
+  ],
+  "corner": [
     {
       "league": "Premier League",
       "home": "Chelsea FC",
       "away": "Nottingham Forest FC",
       "kickoff": "04/05 14:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.58,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 3.37,
-        "expected_corners": 9.2
+        "over25": 0.62,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.69,
+        "xg": 2.72,
+        "expected_corners": 9.8
       }
     },
     {
@@ -22,17 +39,16 @@
       "away": "Manchester City FC",
       "kickoff": "04/05 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.57,
-        "xg": 2.26,
-        "expected_corners": 9.4
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.61,
+        "cards_away": 0.54,
+        "dnb_home": 0.62,
+        "xg": 2.89,
+        "expected_corners": 11.5
       }
     }
   ],
-  "corner": [],
   "hot": [
     {
       "league": "Premier League",
@@ -40,13 +56,13 @@
       "away": "Nottingham Forest FC",
       "kickoff": "04/05 14:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.58,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 3.37,
-        "expected_corners": 9.2
+        "over25": 0.62,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.69,
+        "xg": 2.72,
+        "expected_corners": 9.8
       }
     }
   ]
