@@ -1,19 +1,19 @@
 {
-  "updated_at": "04/05 15:29",
+  "updated_at": "04/05 17:14",
   "value": [
     {
-      "league": "Serie A",
-      "home": "AS Roma",
-      "away": "ACF Fiorentina",
-      "kickoff": "04/05 18:45",
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "04/05 19:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.68,
-        "expected_corners": 10.3
+        "over25": 0.67,
+        "corners95": 0.56,
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.7,
+        "xg": 2.44,
+        "expected_corners": 9.4
       }
     }
   ],
@@ -24,30 +24,46 @@
       "away": "ACF Fiorentina",
       "kickoff": "04/05 18:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.68,
-        "expected_corners": 10.3
+        "over25": 0.6,
+        "corners95": 0.69,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.59,
+        "xg": 3.18,
+        "expected_corners": 11.6
       }
-    },
+    }
+  ],
+  "hot": [
     {
       "league": "Primera Division",
       "home": "Sevilla FC",
       "away": "Real Sociedad de Fútbol",
       "kickoff": "04/05 19:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.53,
+        "over25": 0.67,
+        "corners95": 0.56,
+        "cards_home": 0.66,
         "cards_away": 0.52,
-        "dnb_home": 0.57,
-        "xg": 2.51,
-        "expected_corners": 11.9
+        "dnb_home": 0.7,
+        "xg": 2.44,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Portugal",
+      "away": "Vitória SC",
+      "kickoff": "04/05 19:15",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.56,
+        "cards_home": 0.51,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 3.24,
+        "expected_corners": 12.7
       }
     }
-  ],
-  "hot": []
+  ]
 }
