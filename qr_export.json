@@ -1,6 +1,174 @@
 {
-  "updated_at": "03/05 23:44",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "04/05 02:51",
+  "value": [
+    {
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "04/05 19:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.64,
+        "cards_home": 0.52,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 2.51,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Everton FC",
+      "away": "Manchester City FC",
+      "kickoff": "04/05 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.51,
+        "cards_away": 0.68,
+        "dnb_home": 0.57,
+        "xg": 3.2,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Portugal",
+      "away": "Vitória SC",
+      "kickoff": "04/05 19:15",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.23,
+        "expected_corners": 9.3
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Premier League",
+      "home": "Chelsea FC",
+      "away": "Nottingham Forest FC",
+      "kickoff": "04/05 14:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 3.39,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "AS Roma",
+      "away": "ACF Fiorentina",
+      "kickoff": "04/05 18:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.59,
+        "dnb_home": 0.75,
+        "xg": 3.08,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "04/05 19:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.64,
+        "cards_home": 0.52,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 2.51,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Everton FC",
+      "away": "Manchester City FC",
+      "kickoff": "04/05 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.51,
+        "cards_away": 0.68,
+        "dnb_home": 0.57,
+        "xg": 3.2,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Portugal",
+      "away": "Vitória SC",
+      "kickoff": "04/05 19:15",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.23,
+        "expected_corners": 9.3
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Serie A",
+      "home": "AS Roma",
+      "away": "ACF Fiorentina",
+      "kickoff": "04/05 18:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.59,
+        "dnb_home": 0.75,
+        "xg": 3.08,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "04/05 19:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.64,
+        "cards_home": 0.52,
+        "cards_away": 0.59,
+        "dnb_home": 0.74,
+        "xg": 2.51,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Portugal",
+      "away": "Vitória SC",
+      "kickoff": "04/05 19:15",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.23,
+        "expected_corners": 9.3
+      }
+    }
+  ]
 }
