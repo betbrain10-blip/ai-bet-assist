@@ -1,22 +1,38 @@
 {
-  "updated_at": "05/05 20:07",
+  "updated_at": "05/05 21:34",
   "value": [
     {
       "league": "Copa Libertadores",
-      "home": "CS Cristal",
-      "away": "SE Palmeiras",
+      "home": "CA Rosario Central",
+      "away": "Club Libertad Asuncion",
       "kickoff": "05/05 22:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.55,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.61,
-        "xg": 2.92,
-        "expected_corners": 11.5
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.6,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 2.15,
+        "expected_corners": 8.6
       }
     }
   ],
   "corner": [],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Rosario Central",
+      "away": "Club Libertad Asuncion",
+      "kickoff": "05/05 22:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.6,
+        "cards_away": 0.68,
+        "dnb_home": 0.71,
+        "xg": 2.15,
+        "expected_corners": 8.6
+      }
+    }
+  ]
 }
