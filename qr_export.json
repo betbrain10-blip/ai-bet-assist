@@ -1,6 +1,36 @@
 {
-  "updated_at": "05/05 04:40",
+  "updated_at": "05/05 07:16",
   "value": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Arsenal FC",
+      "away": "Club Atlético de Madrid",
+      "kickoff": "05/05 19:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.67,
+        "cards_away": 0.58,
+        "dnb_home": 0.56,
+        "xg": 2.31,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CS Cristal",
+      "away": "SE Palmeiras",
+      "kickoff": "05/05 22:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.65,
+        "dnb_home": 0.58,
+        "xg": 2.27,
+        "expected_corners": 10.2
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "CA Rosario Central",
@@ -9,28 +39,43 @@
       "markets": {
         "over25": 0.7,
         "corners95": 0.59,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 3.36,
-        "expected_corners": 11.9
+        "cards_home": 0.64,
+        "cards_away": 0.51,
+        "dnb_home": 0.6,
+        "xg": 3.16,
+        "expected_corners": 9.2
       }
     }
   ],
   "corner": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Arsenal FC",
+      "away": "Club Atlético de Madrid",
+      "kickoff": "05/05 19:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.62,
+        "cards_home": 0.67,
+        "cards_away": 0.58,
+        "dnb_home": 0.56,
+        "xg": 2.31,
+        "expected_corners": 10.2
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "CS Cristal",
       "away": "SE Palmeiras",
       "kickoff": "05/05 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.68,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
-        "dnb_home": 0.65,
-        "xg": 2.81,
-        "expected_corners": 10.1
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.65,
+        "dnb_home": 0.58,
+        "xg": 2.27,
+        "expected_corners": 10.2
       }
     }
   ],
