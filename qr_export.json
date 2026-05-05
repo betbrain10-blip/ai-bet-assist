@@ -1,68 +1,22 @@
 {
-  "updated_at": "05/05 18:53",
+  "updated_at": "05/05 20:07",
   "value": [
-    {
-      "league": "UEFA Champions League",
-      "home": "Arsenal FC",
-      "away": "Club Atlético de Madrid",
-      "kickoff": "05/05 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.68,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.58,
-        "xg": 3.17,
-        "expected_corners": 11.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "UEFA Champions League",
-      "home": "Arsenal FC",
-      "away": "Club Atlético de Madrid",
-      "kickoff": "05/05 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.68,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.58,
-        "xg": 3.17,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Rosario Central",
-      "away": "Club Libertad Asuncion",
-      "kickoff": "05/05 22:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.67,
-        "dnb_home": 0.59,
-        "xg": 2.86,
-        "expected_corners": 9.9
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "CS Cristal",
       "away": "SE Palmeiras",
       "kickoff": "05/05 22:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.61,
-        "dnb_home": 0.66,
-        "xg": 2.5,
-        "expected_corners": 9.2
+        "over25": 0.71,
+        "corners95": 0.55,
+        "cards_home": 0.63,
+        "cards_away": 0.65,
+        "dnb_home": 0.61,
+        "xg": 2.92,
+        "expected_corners": 11.5
       }
     }
   ],
+  "corner": [],
   "hot": []
 }
