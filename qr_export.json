@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/05 21:10",
+  "updated_at": "06/05 22:12",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,48 +7,32 @@
       "away": "Estudiantes de La Plata",
       "kickoff": "06/05 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
+        "over25": 0.64,
+        "corners95": 0.66,
         "cards_home": 0.62,
         "cards_away": 0.61,
-        "dnb_home": 0.58,
-        "xg": 2.88,
-        "expected_corners": 10.4
+        "dnb_home": 0.63,
+        "xg": 3.22,
+        "expected_corners": 9.3
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Deportivo La Guaira FC",
-      "away": "Club Bolívar",
+      "home": "Cusco FC",
+      "away": "Estudiantes de La Plata",
       "kickoff": "06/05 22:00",
       "markets": {
-        "over25": 0.55,
+        "over25": 0.64,
         "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.71,
-        "xg": 2.71,
-        "expected_corners": 11.4
+        "cards_home": 0.62,
+        "cards_away": 0.61,
+        "dnb_home": 0.63,
+        "xg": 3.22,
+        "expected_corners": 9.3
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Deportivo La Guaira FC",
-      "away": "Club Bolívar",
-      "kickoff": "06/05 22:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.71,
-        "xg": 2.71,
-        "expected_corners": 11.4
-      }
-    }
-  ]
+  "hot": []
 }
