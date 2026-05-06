@@ -1,68 +1,68 @@
 {
-  "updated_at": "06/05 17:40",
+  "updated_at": "06/05 19:45",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Deportivo La Guaira FC",
-      "away": "Club Bolívar",
-      "kickoff": "06/05 22:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.59,
-        "cards_home": 0.55,
-        "cards_away": 0.66,
-        "dnb_home": 0.64,
-        "xg": 2.47,
-        "expected_corners": 12.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "UEFA Champions League",
-      "home": "FC Bayern München",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "06/05 19:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.2,
-        "expected_corners": 9.3
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "Cusco FC",
       "away": "Estudiantes de La Plata",
       "kickoff": "06/05 22:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.67,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.58,
-        "xg": 2.14,
-        "expected_corners": 10.7
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.64,
+        "dnb_home": 0.68,
+        "xg": 2.45,
+        "expected_corners": 10.0
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Cusco FC",
+      "away": "Estudiantes de La Plata",
+      "kickoff": "06/05 22:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.64,
+        "dnb_home": 0.68,
+        "xg": 2.45,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Deportivo La Guaira FC",
+      "away": "Club Bolívar",
+      "kickoff": "06/05 22:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.64,
+        "cards_home": 0.5,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.18,
+        "expected_corners": 10.8
       }
     }
   ],
   "hot": [
     {
-      "league": "UEFA Champions League",
-      "home": "FC Bayern München",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "06/05 19:00",
+      "league": "Copa Libertadores",
+      "home": "Deportivo La Guaira FC",
+      "away": "Club Bolívar",
+      "kickoff": "06/05 22:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.2,
-        "expected_corners": 9.3
+        "over25": 0.61,
+        "corners95": 0.64,
+        "cards_home": 0.5,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.18,
+        "expected_corners": 10.8
       }
     }
   ]
