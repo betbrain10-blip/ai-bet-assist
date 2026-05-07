@@ -1,19 +1,49 @@
 {
-  "updated_at": "07/05 04:11",
+  "updated_at": "07/05 07:24",
   "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Tolima",
+      "away": "Club Nacional de Football",
+      "kickoff": "07/05 02:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.55,
+        "cards_away": 0.56,
+        "dnb_home": 0.63,
+        "xg": 3.16,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Universidad Católica",
+      "away": "Cruzeiro EC",
+      "kickoff": "07/05 02:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.65,
+        "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 3.01,
+        "expected_corners": 8.9
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "CA Platense",
       "away": "CA Peñarol",
       "kickoff": "07/05 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.68,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.81,
-        "expected_corners": 10.9
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.58,
+        "cards_away": 0.63,
+        "dnb_home": 0.61,
+        "xg": 2.62,
+        "expected_corners": 12.2
       }
     }
   ],
@@ -24,13 +54,28 @@
       "away": "Club Nacional de Football",
       "kickoff": "07/05 02:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.67,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.59,
-        "xg": 3.35,
-        "expected_corners": 12.5
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.55,
+        "cards_away": 0.56,
+        "dnb_home": 0.63,
+        "xg": 3.16,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Universidad Católica",
+      "away": "Cruzeiro EC",
+      "kickoff": "07/05 02:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.65,
+        "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 3.01,
+        "expected_corners": 8.9
       }
     },
     {
@@ -39,30 +84,30 @@
       "away": "CA Peñarol",
       "kickoff": "07/05 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.68,
-        "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.81,
-        "expected_corners": 10.9
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.58,
+        "cards_away": 0.63,
+        "dnb_home": 0.61,
+        "xg": 2.62,
+        "expected_corners": 12.2
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "CA Platense",
-      "away": "CA Peñarol",
-      "kickoff": "07/05 22:00",
+      "home": "CD Universidad Católica",
+      "away": "Cruzeiro EC",
+      "kickoff": "07/05 02:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.68,
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.65,
         "cards_away": 0.58,
-        "dnb_home": 0.74,
-        "xg": 2.81,
-        "expected_corners": 10.9
+        "dnb_home": 0.7,
+        "xg": 3.01,
+        "expected_corners": 8.9
       }
     }
   ]
