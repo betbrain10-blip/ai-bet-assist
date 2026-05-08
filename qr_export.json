@@ -1,98 +1,52 @@
 {
-  "updated_at": "08/05 18:09",
+  "updated_at": "08/05 19:54",
   "value": [
-    {
-      "league": "Bundesliga",
-      "home": "Borussia Dortmund",
-      "away": "Eintracht Frankfurt",
-      "kickoff": "08/05 18:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.56,
-        "cards_home": 0.53,
-        "cards_away": 0.58,
-        "dnb_home": 0.56,
-        "xg": 2.22,
-        "expected_corners": 10.0
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "Club Universitario de Deportes",
-      "kickoff": "08/05 00:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.54,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.03,
-        "expected_corners": 12.4
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "CDP Junior FC",
       "away": "Club Cerro Porteño",
       "kickoff": "08/05 02:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 2.77,
-        "expected_corners": 12.6
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.75,
+        "xg": 3.38,
+        "expected_corners": 10.1
       }
     },
     {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "FC Nantes",
-      "kickoff": "08/05 18:45",
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Millwall FC",
+      "kickoff": "08/05 21:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.5,
-        "cards_away": 0.5,
+        "over25": 0.71,
+        "corners95": 0.57,
+        "cards_home": 0.53,
+        "cards_away": 0.56,
         "dnb_home": 0.65,
-        "xg": 3.29,
-        "expected_corners": 11.4
+        "xg": 3.01,
+        "expected_corners": 10.8
       }
     }
   ],
+  "corner": [],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "Club Universitario de Deportes",
-      "kickoff": "08/05 00:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.54,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.03,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
       "home": "CDP Junior FC",
       "away": "Club Cerro Porteño",
       "kickoff": "08/05 02:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 2.77,
-        "expected_corners": 12.6
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.75,
+        "xg": 3.38,
+        "expected_corners": 10.1
       }
     }
   ]
