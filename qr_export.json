@@ -1,83 +1,174 @@
 {
-  "updated_at": "08/05 10:24",
+  "updated_at": "08/05 11:53",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Independiente Medellín",
-      "away": "CR Flamengo",
-      "kickoff": "08/05 00:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.58,
-        "dnb_home": 0.62,
-        "xg": 2.48,
-        "expected_corners": 12.5
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "CDP Junior FC",
       "away": "Club Cerro Porteño",
       "kickoff": "08/05 02:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.54,
+        "over25": 0.72,
+        "corners95": 0.57,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.73,
+        "xg": 2.47,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Millwall FC",
+      "kickoff": "08/05 21:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.56,
         "cards_away": 0.51,
-        "dnb_home": 0.56,
-        "xg": 2.29,
-        "expected_corners": 12.7
+        "dnb_home": 0.74,
+        "xg": 2.61,
+        "expected_corners": 11.7
       }
     }
   ],
   "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "Club Universitario de Deportes",
-      "kickoff": "08/05 00:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.53,
-        "dnb_home": 0.64,
-        "xg": 2.43,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Independiente Medellín",
-      "away": "CR Flamengo",
-      "kickoff": "08/05 00:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.67,
-        "cards_home": 0.64,
-        "cards_away": 0.58,
-        "dnb_home": 0.62,
-        "xg": 2.48,
-        "expected_corners": 12.5
-      }
-    },
     {
       "league": "Bundesliga",
       "home": "Borussia Dortmund",
       "away": "Eintracht Frankfurt",
       "kickoff": "08/05 18:30",
       "markets": {
-        "over25": 0.59,
+        "over25": 0.55,
         "corners95": 0.63,
-        "cards_home": 0.67,
+        "cards_home": 0.63,
         "cards_away": 0.54,
-        "dnb_home": 0.56,
-        "xg": 3.1,
-        "expected_corners": 11.0
+        "dnb_home": 0.58,
+        "xg": 2.43,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "FC Nantes",
+      "kickoff": "08/05 18:45",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.64,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 3.32,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Torino FC",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "08/05 18:45",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.51,
+        "dnb_home": 0.59,
+        "xg": 2.62,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "CA Osasuna",
+      "kickoff": "08/05 19:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.67,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.72,
+        "xg": 3.17,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Millwall FC",
+      "kickoff": "08/05 21:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.61,
+        "expected_corners": 11.7
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CDP Junior FC",
+      "away": "Club Cerro Porteño",
+      "kickoff": "08/05 02:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.57,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.73,
+        "xg": 2.47,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "FC Nantes",
+      "kickoff": "08/05 18:45",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.64,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 3.32,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "CA Osasuna",
+      "kickoff": "08/05 19:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.67,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.72,
+        "xg": 3.17,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Hull City AFC",
+      "away": "Millwall FC",
+      "kickoff": "08/05 21:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.61,
+        "expected_corners": 11.7
+      }
+    }
+  ]
 }
