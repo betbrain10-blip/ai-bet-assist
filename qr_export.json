@@ -1,113 +1,83 @@
 {
-  "updated_at": "07/05 23:52",
+  "updated_at": "08/05 02:53",
   "value": [
     {
-      "league": "Copa Libertadores",
-      "home": "CD Tolima",
-      "away": "Club Nacional de Football",
-      "kickoff": "07/05 02:00",
+      "league": "Bundesliga",
+      "home": "Borussia Dortmund",
+      "away": "Eintracht Frankfurt",
+      "kickoff": "08/05 18:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.57,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.32,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Mirassol FC",
-      "away": "LDU de Quito",
-      "kickoff": "07/05 22:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.58,
-        "xg": 3.33,
-        "expected_corners": 10.6
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.54,
+        "cards_away": 0.51,
+        "dnb_home": 0.59,
+        "xg": 2.69,
+        "expected_corners": 11.7
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "CD Universidad Católica",
-      "away": "Cruzeiro EC",
-      "kickoff": "07/05 02:00",
+      "home": "CDP Junior FC",
+      "away": "Club Cerro Porteño",
+      "kickoff": "08/05 02:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 3.39,
-        "expected_corners": 11.7
+        "over25": 0.59,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.62,
+        "xg": 2.54,
+        "expected_corners": 9.0
       }
     },
     {
-      "league": "Copa Libertadores",
-      "home": "CA Platense",
-      "away": "CA Peñarol",
-      "kickoff": "07/05 22:00",
+      "league": "Bundesliga",
+      "home": "Borussia Dortmund",
+      "away": "Eintracht Frankfurt",
+      "kickoff": "08/05 18:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.54,
+        "cards_away": 0.51,
         "dnb_home": 0.59,
-        "xg": 3.21,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Mirassol FC",
-      "away": "LDU de Quito",
-      "kickoff": "07/05 22:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.58,
-        "xg": 3.33,
-        "expected_corners": 10.6
+        "xg": 2.69,
+        "expected_corners": 11.7
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "CD Universidad Católica",
-      "away": "Cruzeiro EC",
-      "kickoff": "07/05 02:00",
+      "home": "CD Coquimbo Unido",
+      "away": "Club Universitario de Deportes",
+      "kickoff": "08/05 00:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
+        "over25": 0.61,
+        "corners95": 0.6,
         "cards_home": 0.59,
-        "cards_away": 0.57,
+        "cards_away": 0.5,
         "dnb_home": 0.74,
-        "xg": 3.39,
-        "expected_corners": 11.7
+        "xg": 3.2,
+        "expected_corners": 8.8
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "CD Tolima",
-      "away": "Club Nacional de Football",
-      "kickoff": "07/05 02:00",
+      "home": "CD Independiente Medellín",
+      "away": "CR Flamengo",
+      "kickoff": "08/05 00:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.57,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.32,
-        "expected_corners": 11.8
+        "over25": 0.57,
+        "corners95": 0.59,
+        "cards_home": 0.57,
+        "cards_away": 0.63,
+        "dnb_home": 0.74,
+        "xg": 3.4,
+        "expected_corners": 11.6
       }
     }
   ]
