@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/05 19:39",
+  "updated_at": "09/05 20:42",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,32 +7,32 @@
       "away": "EC Vitória",
       "kickoff": "09/05 21:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.64,
-        "xg": 3.24,
-        "expected_corners": 12.1
+        "over25": 0.64,
+        "corners95": 0.58,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.72,
+        "xg": 2.26,
+        "expected_corners": 10.6
       }
     }
   ],
-  "corner": [
+  "corner": [],
+  "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Fluminense FC",
       "away": "EC Vitória",
       "kickoff": "09/05 21:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.64,
-        "xg": 3.24,
-        "expected_corners": 12.1
+        "over25": 0.64,
+        "corners95": 0.58,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.72,
+        "xg": 2.26,
+        "expected_corners": 10.6
       }
     }
-  ],
-  "hot": []
+  ]
 }
