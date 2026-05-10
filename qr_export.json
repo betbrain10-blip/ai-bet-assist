@@ -1,34 +1,19 @@
 {
-  "updated_at": "10/05 20:09",
+  "updated_at": "10/05 21:12",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "Chapecoense AF",
-      "kickoff": "10/05 21:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 2.3,
-        "expected_corners": 8.6
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Santos FC",
       "away": "RB Bragantino",
       "kickoff": "10/05 21:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
+        "over25": 0.7,
+        "corners95": 0.63,
         "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 3.24,
-        "expected_corners": 12.3
+        "cards_away": 0.62,
+        "dnb_home": 0.64,
+        "xg": 2.21,
+        "expected_corners": 12.6
       }
     },
     {
@@ -37,13 +22,13 @@
       "away": "São Paulo FC",
       "kickoff": "10/05 21:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.64,
-        "dnb_home": 0.59,
-        "xg": 2.29,
-        "expected_corners": 9.5
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.62,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 2.18,
+        "expected_corners": 9.2
       }
     },
     {
@@ -52,13 +37,13 @@
       "away": "CR Flamengo",
       "kickoff": "10/05 22:30",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.57,
+        "over25": 0.71,
+        "corners95": 0.58,
         "cards_home": 0.55,
-        "cards_away": 0.58,
-        "dnb_home": 0.62,
-        "xg": 2.28,
-        "expected_corners": 11.6
+        "cards_away": 0.53,
+        "dnb_home": 0.73,
+        "xg": 2.69,
+        "expected_corners": 10.4
       }
     },
     {
@@ -67,13 +52,13 @@
       "away": "CA Paranaense",
       "kickoff": "10/05 23:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 2.97,
-        "expected_corners": 12.6
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 3.38,
+        "expected_corners": 11.2
       }
     }
   ],
@@ -84,13 +69,13 @@
       "away": "Chapecoense AF",
       "kickoff": "10/05 21:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 2.3,
-        "expected_corners": 8.6
+        "over25": 0.6,
+        "corners95": 0.68,
+        "cards_home": 0.67,
+        "cards_away": 0.65,
+        "dnb_home": 0.61,
+        "xg": 3.14,
+        "expected_corners": 9.7
       }
     },
     {
@@ -99,13 +84,13 @@
       "away": "RB Bragantino",
       "kickoff": "10/05 21:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
+        "over25": 0.7,
+        "corners95": 0.63,
         "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 3.24,
-        "expected_corners": 12.3
+        "cards_away": 0.62,
+        "dnb_home": 0.64,
+        "xg": 2.21,
+        "expected_corners": 12.6
       }
     },
     {
@@ -114,45 +99,13 @@
       "away": "São Paulo FC",
       "kickoff": "10/05 21:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.64,
-        "dnb_home": 0.59,
-        "xg": 2.29,
-        "expected_corners": 9.5
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "Chapecoense AF",
-      "kickoff": "10/05 21:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 2.3,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "RB Bragantino",
-      "kickoff": "10/05 21:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 3.24,
-        "expected_corners": 12.3
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.62,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 2.18,
+        "expected_corners": 9.2
       }
     },
     {
@@ -161,13 +114,45 @@
       "away": "CA Paranaense",
       "kickoff": "10/05 23:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 3.38,
+        "expected_corners": 11.2
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Grêmio FBPA",
+      "away": "CR Flamengo",
+      "kickoff": "10/05 22:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.58,
+        "cards_home": 0.55,
+        "cards_away": 0.53,
         "dnb_home": 0.73,
-        "xg": 2.97,
-        "expected_corners": 12.6
+        "xg": 2.69,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CR Vasco da Gama",
+      "away": "CA Paranaense",
+      "kickoff": "10/05 23:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.62,
+        "dnb_home": 0.72,
+        "xg": 3.38,
+        "expected_corners": 11.2
       }
     }
   ]
