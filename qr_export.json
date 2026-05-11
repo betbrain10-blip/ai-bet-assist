@@ -1,22 +1,6 @@
 {
-  "updated_at": "11/05 19:46",
+  "updated_at": "11/05 21:16",
   "value": [],
-  "corner": [
-    {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Hull City AFC",
-      "kickoff": "11/05 19:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.62,
-        "dnb_home": 0.57,
-        "xg": 2.34,
-        "expected_corners": 10.0
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
