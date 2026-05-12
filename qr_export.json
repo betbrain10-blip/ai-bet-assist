@@ -1,22 +1,6 @@
 {
-  "updated_at": "12/05 18:54",
-  "value": [
-    {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Middlesbrough FC",
-      "kickoff": "12/05 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.5,
-        "dnb_home": 0.58,
-        "xg": 3.34,
-        "expected_corners": 10.6
-      }
-    }
-  ],
+  "updated_at": "12/05 20:28",
+  "value": [],
   "corner": [
     {
       "league": "Championship",
@@ -24,13 +8,13 @@
       "away": "Middlesbrough FC",
       "kickoff": "12/05 19:00",
       "markets": {
-        "over25": 0.68,
+        "over25": 0.56,
         "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.5,
-        "dnb_home": 0.58,
-        "xg": 3.34,
-        "expected_corners": 10.6
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.63,
+        "xg": 2.38,
+        "expected_corners": 10.3
       }
     }
   ],
