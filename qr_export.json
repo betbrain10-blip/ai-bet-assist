@@ -1,81 +1,36 @@
 {
-  "updated_at": "12/05 16:36",
+  "updated_at": "12/05 18:54",
   "value": [
-    {
-      "league": "Primera Division",
-      "home": "RC Celta de Vigo",
-      "away": "Levante UD",
-      "kickoff": "12/05 17:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.55,
-        "cards_home": 0.67,
-        "cards_away": 0.55,
-        "dnb_home": 0.57,
-        "xg": 3.11,
-        "expected_corners": 8.8
-      }
-    },
     {
       "league": "Championship",
       "home": "Southampton FC",
       "away": "Middlesbrough FC",
       "kickoff": "12/05 19:00",
       "markets": {
-        "over25": 0.65,
+        "over25": 0.68,
         "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.52,
-        "dnb_home": 0.56,
-        "xg": 3.37,
-        "expected_corners": 12.4
+        "cards_home": 0.58,
+        "cards_away": 0.5,
+        "dnb_home": 0.58,
+        "xg": 3.34,
+        "expected_corners": 10.6
       }
     }
   ],
   "corner": [
     {
-      "league": "Primera Division",
-      "home": "Real Betis Balompié",
-      "away": "Elche CF",
-      "kickoff": "12/05 18:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.67,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.6,
-        "xg": 3.09,
-        "expected_corners": 11.1
-      }
-    },
-    {
       "league": "Championship",
       "home": "Southampton FC",
       "away": "Middlesbrough FC",
       "kickoff": "12/05 19:00",
       "markets": {
-        "over25": 0.65,
+        "over25": 0.68,
         "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.52,
-        "dnb_home": 0.56,
-        "xg": 3.37,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "CA Osasuna",
-      "away": "Club Atlético de Madrid",
-      "kickoff": "12/05 19:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.68,
-        "cards_home": 0.55,
-        "cards_away": 0.59,
-        "dnb_home": 0.57,
-        "xg": 2.44,
-        "expected_corners": 8.9
+        "cards_home": 0.58,
+        "cards_away": 0.5,
+        "dnb_home": 0.58,
+        "xg": 3.34,
+        "expected_corners": 10.6
       }
     }
   ],
