@@ -1,53 +1,6 @@
 {
-  "updated_at": "13/05 18:22",
+  "updated_at": "13/05 20:16",
   "value": [],
-  "corner": [
-    {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "13/05 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.62,
-        "cards_away": 0.67,
-        "dnb_home": 0.72,
-        "xg": 3.35,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Getafe CF",
-      "away": "RCD Mallorca",
-      "kickoff": "13/05 19:30",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.67,
-        "dnb_home": 0.59,
-        "xg": 3.27,
-        "expected_corners": 11.6
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "13/05 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.62,
-        "cards_away": 0.67,
-        "dnb_home": 0.72,
-        "xg": 3.35,
-        "expected_corners": 12.0
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
