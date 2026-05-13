@@ -1,113 +1,52 @@
 {
-  "updated_at": "13/05 16:18",
-  "value": [
-    {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Athletic Club",
-      "kickoff": "13/05 17:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.56,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.63,
-        "xg": 2.74,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "Sevilla FC",
-      "kickoff": "13/05 17:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.59,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.88,
-        "expected_corners": 9.7
-      }
-    },
+  "updated_at": "13/05 18:22",
+  "value": [],
+  "corner": [
     {
       "league": "Ligue 1",
-      "home": "Stade Brestois 29",
-      "away": "RC Strasbourg Alsace",
-      "kickoff": "13/05 17:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.59,
-        "cards_home": 0.57,
-        "cards_away": 0.67,
-        "dnb_home": 0.56,
-        "xg": 3.1,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Manchester City FC",
-      "away": "Crystal Palace FC",
+      "home": "Racing Club de Lens",
+      "away": "Paris Saint-Germain FC",
       "kickoff": "13/05 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.57,
-        "cards_home": 0.57,
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.62,
         "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.96,
-        "expected_corners": 9.3
+        "dnb_home": 0.72,
+        "xg": 3.35,
+        "expected_corners": 12.0
       }
     },
-    {
-      "league": "Primera Division",
-      "home": "Deportivo Alavés",
-      "away": "FC Barcelona",
-      "kickoff": "13/05 19:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.67,
-        "cards_away": 0.58,
-        "dnb_home": 0.65,
-        "xg": 3.28,
-        "expected_corners": 9.1
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "Primera Division",
       "home": "Getafe CF",
       "away": "RCD Mallorca",
       "kickoff": "13/05 19:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.56,
-        "xg": 2.68,
-        "expected_corners": 8.6
+        "over25": 0.62,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.59,
+        "xg": 3.27,
+        "expected_corners": 11.6
       }
     }
   ],
   "hot": [
     {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "Sevilla FC",
-      "kickoff": "13/05 17:00",
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "Paris Saint-Germain FC",
+      "kickoff": "13/05 19:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.59,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.62,
+        "cards_away": 0.67,
         "dnb_home": 0.72,
-        "xg": 2.88,
-        "expected_corners": 9.7
+        "xg": 3.35,
+        "expected_corners": 12.0
       }
     }
   ]
