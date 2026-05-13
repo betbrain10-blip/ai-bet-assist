@@ -1,19 +1,35 @@
 {
-  "updated_at": "13/05 05:08",
-  "value": [
+  "updated_at": "13/05 08:15",
+  "value": [],
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "RCD Espanyol de Barcelona",
+      "away": "Athletic Club",
+      "kickoff": "13/05 17:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.63,
+        "cards_home": 0.65,
+        "cards_away": 0.58,
+        "dnb_home": 0.62,
+        "xg": 2.46,
+        "expected_corners": 9.5
+      }
+    },
     {
       "league": "Primera Division",
       "home": "Villarreal CF",
       "away": "Sevilla FC",
       "kickoff": "13/05 17:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.5,
-        "cards_away": 0.66,
-        "dnb_home": 0.56,
-        "xg": 2.44,
-        "expected_corners": 11.4
+        "over25": 0.59,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.53,
+        "dnb_home": 0.64,
+        "xg": 2.2,
+        "expected_corners": 11.7
       }
     },
     {
@@ -22,13 +38,13 @@
       "away": "RC Strasbourg Alsace",
       "kickoff": "13/05 17:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.68,
-        "dnb_home": 0.67,
-        "xg": 3.04,
-        "expected_corners": 12.6
+        "over25": 0.62,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.63,
+        "xg": 2.8,
+        "expected_corners": 8.8
       }
     },
     {
@@ -37,13 +53,13 @@
       "away": "Crystal Palace FC",
       "kickoff": "13/05 19:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.57,
-        "cards_home": 0.66,
-        "cards_away": 0.55,
-        "dnb_home": 0.65,
-        "xg": 3.24,
-        "expected_corners": 11.7
+        "over25": 0.6,
+        "corners95": 0.61,
+        "cards_home": 0.59,
+        "cards_away": 0.64,
+        "dnb_home": 0.58,
+        "xg": 3.13,
+        "expected_corners": 12.4
       }
     },
     {
@@ -52,60 +68,13 @@
       "away": "RCD Mallorca",
       "kickoff": "13/05 19:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.51,
-        "cards_away": 0.58,
+        "over25": 0.6,
+        "corners95": 0.64,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
         "dnb_home": 0.66,
-        "xg": 2.22,
-        "expected_corners": 10.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Ligue 1",
-      "home": "Stade Brestois 29",
-      "away": "RC Strasbourg Alsace",
-      "kickoff": "13/05 17:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.68,
-        "dnb_home": 0.67,
-        "xg": 3.04,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Athletic Club",
-      "kickoff": "13/05 17:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.53,
-        "dnb_home": 0.57,
-        "xg": 3.0,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "13/05 19:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.5,
-        "dnb_home": 0.66,
-        "xg": 3.03,
-        "expected_corners": 11.0
+        "xg": 2.75,
+        "expected_corners": 8.8
       }
     }
   ],
@@ -116,13 +85,13 @@
       "away": "FC Barcelona",
       "kickoff": "13/05 19:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.58,
-        "cards_home": 0.51,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.13,
-        "expected_corners": 9.5
+        "over25": 0.6,
+        "corners95": 0.59,
+        "cards_home": 0.62,
+        "cards_away": 0.5,
+        "dnb_home": 0.71,
+        "xg": 2.27,
+        "expected_corners": 11.2
       }
     }
   ]
