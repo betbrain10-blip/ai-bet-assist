@@ -1,69 +1,22 @@
 {
-  "updated_at": "14/05 17:18",
-  "value": [
-    {
-      "league": "Primera Division",
-      "home": "Girona FC",
-      "away": "Real Sociedad de Fútbol",
-      "kickoff": "14/05 18:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.15,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Madrid CF",
-      "away": "Real Oviedo",
-      "kickoff": "14/05 19:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.6,
-        "cards_home": 0.6,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 2.65,
-        "expected_corners": 11.6
-      }
-    }
-  ],
+  "updated_at": "14/05 19:17",
+  "value": [],
   "corner": [
     {
       "league": "Primera Division",
-      "home": "Girona FC",
-      "away": "Real Sociedad de Fútbol",
-      "kickoff": "14/05 18:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.67,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.15,
-        "expected_corners": 9.5
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primera Division",
       "home": "Real Madrid CF",
       "away": "Real Oviedo",
       "kickoff": "14/05 19:30",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.6,
-        "cards_home": 0.6,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 2.65,
+        "over25": 0.61,
+        "corners95": 0.64,
+        "cards_home": 0.62,
+        "cards_away": 0.52,
+        "dnb_home": 0.57,
+        "xg": 2.75,
         "expected_corners": 11.6
       }
     }
-  ]
+  ],
+  "hot": []
 }
