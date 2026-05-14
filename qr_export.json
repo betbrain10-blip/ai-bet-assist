@@ -1,22 +1,6 @@
 {
-  "updated_at": "14/05 19:17",
+  "updated_at": "14/05 20:52",
   "value": [],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "Real Madrid CF",
-      "away": "Real Oviedo",
-      "kickoff": "14/05 19:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.52,
-        "dnb_home": 0.57,
-        "xg": 2.75,
-        "expected_corners": 11.6
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
