@@ -1,22 +1,22 @@
 {
-  "updated_at": "15/05 12:57",
-  "value": [
+  "updated_at": "15/05 15:20",
+  "value": [],
+  "corner": [
     {
       "league": "Premier League",
       "home": "Aston Villa FC",
       "away": "Liverpool FC",
       "kickoff": "15/05 19:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.57,
-        "cards_home": 0.52,
-        "cards_away": 0.62,
-        "dnb_home": 0.63,
-        "xg": 3.24,
-        "expected_corners": 12.1
+        "over25": 0.61,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.51,
+        "dnb_home": 0.64,
+        "xg": 2.66,
+        "expected_corners": 10.9
       }
     }
   ],
-  "corner": [],
   "hot": []
 }
