@@ -1,5 +1,5 @@
 {
-  "updated_at": "15/05 01:22",
+  "updated_at": "15/05 05:12",
   "value": [
     {
       "league": "Premier League",
@@ -8,12 +8,12 @@
       "kickoff": "15/05 19:00",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.5,
-        "dnb_home": 0.72,
-        "xg": 2.25,
-        "expected_corners": 8.9
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.57,
+        "dnb_home": 0.61,
+        "xg": 2.89,
+        "expected_corners": 11.0
       }
     }
   ],
@@ -25,30 +25,14 @@
       "kickoff": "15/05 19:00",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.5,
-        "dnb_home": 0.72,
-        "xg": 2.25,
-        "expected_corners": 8.9
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.57,
+        "dnb_home": 0.61,
+        "xg": 2.89,
+        "expected_corners": 11.0
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Premier League",
-      "home": "Aston Villa FC",
-      "away": "Liverpool FC",
-      "kickoff": "15/05 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.5,
-        "dnb_home": 0.72,
-        "xg": 2.25,
-        "expected_corners": 8.9
-      }
-    }
-  ]
+  "hot": []
 }
