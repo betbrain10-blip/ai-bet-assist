@@ -1,48 +1,18 @@
 {
-  "updated_at": "16/05 18:12",
+  "updated_at": "16/05 19:38",
   "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "FC Alverca",
-      "kickoff": "16/05 19:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 2.95,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "GD Estoril Praia",
-      "away": "Sport Lisboa e Benfica",
-      "kickoff": "16/05 19:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.64,
-        "dnb_home": 0.6,
-        "xg": 2.47,
-        "expected_corners": 12.3
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Mineiro",
       "away": "Mirassol FC",
       "kickoff": "16/05 21:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.67,
-        "cards_away": 0.66,
-        "dnb_home": 0.67,
-        "xg": 3.03,
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.62,
+        "dnb_home": 0.58,
+        "xg": 3.08,
         "expected_corners": 12.1
       }
     },
@@ -53,73 +23,28 @@
       "kickoff": "16/05 22:00",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.59,
-        "cards_home": 0.64,
-        "cards_away": 0.53,
-        "dnb_home": 0.57,
-        "xg": 2.13,
-        "expected_corners": 8.7
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.52,
+        "dnb_home": 0.75,
+        "xg": 2.79,
+        "expected_corners": 9.4
       }
     }
   ],
   "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "FC Alverca",
-      "kickoff": "16/05 19:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.59,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 2.95,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "Gil Vicente FC",
-      "kickoff": "16/05 19:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.6,
-        "xg": 2.52,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "GD Estoril Praia",
-      "away": "Sport Lisboa e Benfica",
-      "kickoff": "16/05 19:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.64,
-        "dnb_home": 0.6,
-        "xg": 2.47,
-        "expected_corners": 12.3
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Mineiro",
       "away": "Mirassol FC",
       "kickoff": "16/05 21:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.67,
-        "cards_away": 0.66,
-        "dnb_home": 0.67,
-        "xg": 3.03,
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.62,
+        "dnb_home": 0.58,
+        "xg": 3.08,
         "expected_corners": 12.1
       }
     },
@@ -129,15 +54,61 @@
       "away": "CR Vasco da Gama",
       "kickoff": "16/05 21:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.7,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.68,
-        "xg": 2.86,
-        "expected_corners": 8.8
+        "over25": 0.55,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.53,
+        "dnb_home": 0.72,
+        "xg": 2.21,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Fluminense FC",
+      "away": "São Paulo FC",
+      "kickoff": "16/05 22:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.52,
+        "dnb_home": 0.75,
+        "xg": 2.79,
+        "expected_corners": 9.4
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "CR Vasco da Gama",
+      "kickoff": "16/05 21:30",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.53,
+        "dnb_home": 0.72,
+        "xg": 2.21,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Fluminense FC",
+      "away": "São Paulo FC",
+      "kickoff": "16/05 22:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.52,
+        "dnb_home": 0.75,
+        "xg": 2.79,
+        "expected_corners": 9.4
+      }
+    }
+  ]
 }
