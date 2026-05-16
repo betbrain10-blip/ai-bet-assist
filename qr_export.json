@@ -1,38 +1,6 @@
 {
-  "updated_at": "16/05 21:49",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Fluminense FC",
-      "away": "São Paulo FC",
-      "kickoff": "16/05 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.54,
-        "dnb_home": 0.7,
-        "xg": 2.93,
-        "expected_corners": 10.7
-      }
-    }
-  ],
+  "updated_at": "16/05 22:43",
+  "value": [],
   "corner": [],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Fluminense FC",
-      "away": "São Paulo FC",
-      "kickoff": "16/05 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.54,
-        "dnb_home": 0.7,
-        "xg": 2.93,
-        "expected_corners": 10.7
-      }
-    }
-  ]
+  "hot": []
 }
