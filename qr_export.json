@@ -1,398 +1,113 @@
 {
-  "updated_at": "17/05 18:34",
+  "updated_at": "17/05 20:04",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "US Sassuolo Calcio",
-      "away": "US Lecce",
-      "kickoff": "17/05 18:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.58,
-        "xg": 2.9,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Nantes",
-      "away": "Toulouse FC",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 3.15,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "RC Strasbourg Alsace",
-      "away": "AS Monaco FC",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.59,
-        "xg": 2.62,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "OGC Nice",
-      "away": "FC Metz",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.64,
-        "xg": 3.17,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.58,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 2.23,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Lille OSC",
-      "away": "AJ Auxerre",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.55,
-        "xg": 2.48,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Stade Brestois 29",
-      "away": "Angers SCO",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.69,
-        "cards_home": 0.51,
-        "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.73,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Olympique Lyonnais",
-      "away": "Racing Club de Lens",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.64,
-        "xg": 2.63,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "FC Barcelona",
-      "away": "Real Betis Balompié",
-      "kickoff": "17/05 19:15",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.71,
-        "xg": 2.95,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Clube do Remo",
-      "kickoff": "17/05 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.67,
-        "dnb_home": 0.65,
-        "xg": 2.3,
-        "expected_corners": 9.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Serie A",
-      "home": "Cagliari Calcio",
-      "away": "Torino FC",
-      "kickoff": "17/05 18:45",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.68,
-        "cards_home": 0.67,
-        "cards_away": 0.54,
-        "dnb_home": 0.62,
-        "xg": 3.09,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "US Sassuolo Calcio",
-      "away": "US Lecce",
-      "kickoff": "17/05 18:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.58,
-        "xg": 2.9,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Udinese Calcio",
-      "away": "US Cremonese",
-      "kickoff": "17/05 18:45",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.56,
-        "cards_away": 0.63,
-        "dnb_home": 0.73,
-        "xg": 2.5,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Nantes",
-      "away": "Toulouse FC",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 3.15,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "RC Strasbourg Alsace",
-      "away": "AS Monaco FC",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.59,
-        "xg": 2.62,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "OGC Nice",
-      "away": "FC Metz",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.64,
-        "xg": 3.17,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Lille OSC",
-      "away": "AJ Auxerre",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.55,
-        "xg": 2.48,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Stade Brestois 29",
-      "away": "Angers SCO",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.69,
-        "cards_home": 0.51,
-        "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.73,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Olympique Lyonnais",
-      "away": "Racing Club de Lens",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.64,
-        "xg": 2.63,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Clube do Remo",
-      "kickoff": "17/05 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.67,
-        "dnb_home": 0.65,
-        "xg": 2.3,
-        "expected_corners": 9.4
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "RB Bragantino",
       "away": "EC Vitória",
       "kickoff": "17/05 21:30",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.64,
-        "dnb_home": 0.67,
-        "xg": 2.33,
-        "expected_corners": 10.4
+        "over25": 0.64,
+        "corners95": 0.6,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.63,
+        "xg": 2.12,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Clube do Remo",
+      "kickoff": "17/05 21:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 3.33,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Paranaense",
+      "away": "CR Flamengo",
+      "kickoff": "17/05 22:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.58,
+        "expected_corners": 9.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Clube do Remo",
+      "kickoff": "17/05 21:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 3.33,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Paranaense",
+      "away": "CR Flamengo",
+      "kickoff": "17/05 22:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.58,
+        "expected_corners": 9.8
       }
     }
   ],
   "hot": [
     {
-      "league": "Serie A",
-      "home": "Udinese Calcio",
-      "away": "US Cremonese",
-      "kickoff": "17/05 18:45",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "Clube do Remo",
+      "kickoff": "17/05 21:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.56,
-        "cards_away": 0.63,
-        "dnb_home": 0.73,
-        "xg": 2.5,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Olympique de Marseille",
-      "away": "Stade Rennais FC 1901",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.68,
-        "dnb_home": 0.71,
-        "xg": 2.46,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Nantes",
-      "away": "Toulouse FC",
-      "kickoff": "17/05 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 3.15,
-        "expected_corners": 11.2
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 3.33,
+        "expected_corners": 12.2
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "17/05 19:00",
+      "home": "CA Paranaense",
+      "away": "CR Flamengo",
+      "kickoff": "17/05 22:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.58,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 2.23,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "FC Barcelona",
-      "away": "Real Betis Balompié",
-      "kickoff": "17/05 19:15",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.64,
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.63,
         "dnb_home": 0.71,
-        "xg": 2.95,
-        "expected_corners": 12.5
+        "xg": 2.58,
+        "expected_corners": 9.8
       }
     }
   ]
