@@ -1,53 +1,38 @@
 {
-  "updated_at": "17/05 21:26",
-  "value": [],
-  "corner": [
+  "updated_at": "17/05 22:26",
+  "value": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Clube do Remo",
-      "kickoff": "17/05 21:30",
+      "home": "CA Paranaense",
+      "away": "CR Flamengo",
+      "kickoff": "17/05 22:30",
       "markets": {
-        "over25": 0.62,
+        "over25": 0.65,
         "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 2.81,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "EC Vitória",
-      "kickoff": "17/05 21:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.62,
+        "cards_home": 0.52,
         "cards_away": 0.6,
-        "dnb_home": 0.63,
-        "xg": 2.77,
-        "expected_corners": 12.3
+        "dnb_home": 0.58,
+        "xg": 2.36,
+        "expected_corners": 9.7
       }
     }
   ],
-  "hot": [
+  "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Chapecoense AF",
-      "away": "Clube do Remo",
-      "kickoff": "17/05 21:30",
+      "home": "CA Paranaense",
+      "away": "CR Flamengo",
+      "kickoff": "17/05 22:30",
       "markets": {
-        "over25": 0.62,
+        "over25": 0.65,
         "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 2.81,
-        "expected_corners": 11.9
+        "cards_home": 0.52,
+        "cards_away": 0.6,
+        "dnb_home": 0.58,
+        "xg": 2.36,
+        "expected_corners": 9.7
       }
     }
-  ]
+  ],
+  "hot": []
 }
