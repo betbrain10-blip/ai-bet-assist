@@ -1,38 +1,6 @@
 {
-  "updated_at": "18/05 03:39",
-  "value": [
-    {
-      "league": "Premier League",
-      "home": "Arsenal FC",
-      "away": "Burnley FC",
-      "kickoff": "18/05 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.61,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.58,
-        "xg": 3.37,
-        "expected_corners": 11.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "Arsenal FC",
-      "away": "Burnley FC",
-      "kickoff": "18/05 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.61,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.58,
-        "xg": 3.37,
-        "expected_corners": 11.3
-      }
-    }
-  ],
+  "updated_at": "18/05 08:03",
+  "value": [],
+  "corner": [],
   "hot": []
 }
