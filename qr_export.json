@@ -1,34 +1,49 @@
 {
-  "updated_at": "19/05 19:51",
+  "updated_at": "19/05 21:18",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "CD Tolima",
-      "kickoff": "19/05 22:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.62,
-        "cards_away": 0.51,
-        "dnb_home": 0.57,
-        "xg": 2.39,
-        "expected_corners": 10.1
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "Fluminense FC",
       "away": "Club Bolívar",
       "kickoff": "19/05 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.65,
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
+        "dnb_home": 0.62,
+        "xg": 3.19,
+        "expected_corners": 11.8
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Rosario Central",
+      "away": "Universidad Central de Venezuela FC",
+      "kickoff": "19/05 22:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.65,
+        "xg": 3.0,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Coquimbo Unido",
+      "away": "CD Tolima",
+      "kickoff": "19/05 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.6,
+        "cards_home": 0.55,
+        "cards_away": 0.55,
         "dnb_home": 0.61,
-        "xg": 3.09,
-        "expected_corners": 8.7
+        "xg": 3.07,
+        "expected_corners": 12.2
       }
     }
   ],
@@ -39,31 +54,30 @@
       "away": "Club Bolívar",
       "kickoff": "19/05 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.65,
-        "dnb_home": 0.61,
-        "xg": 3.09,
-        "expected_corners": 8.7
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
+        "dnb_home": 0.62,
+        "xg": 3.19,
+        "expected_corners": 11.8
       }
-    }
-  ],
-  "hot": [
+    },
     {
       "league": "Copa Libertadores",
       "home": "CA Rosario Central",
       "away": "Universidad Central de Venezuela FC",
       "kickoff": "19/05 22:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.57,
-        "cards_home": 0.6,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.11,
-        "expected_corners": 12.2
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.65,
+        "xg": 3.0,
+        "expected_corners": 11.0
       }
     }
-  ]
+  ],
+  "hot": []
 }
