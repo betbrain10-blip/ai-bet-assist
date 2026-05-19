@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/05 08:26",
+  "updated_at": "19/05 11:39",
   "value": [
     {
       "league": "Premier League",
@@ -7,13 +7,13 @@
       "away": "Manchester City FC",
       "kickoff": "19/05 18:30",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.6,
-        "xg": 3.14,
-        "expected_corners": 10.7
+        "over25": 0.69,
+        "corners95": 0.58,
+        "cards_home": 0.64,
+        "cards_away": 0.67,
+        "dnb_home": 0.64,
+        "xg": 3.27,
+        "expected_corners": 9.4
       }
     },
     {
@@ -22,59 +22,12 @@
       "away": "Tottenham Hotspur FC",
       "kickoff": "19/05 19:15",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.64,
-        "cards_away": 0.62,
-        "dnb_home": 0.68,
-        "xg": 2.56,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "CD Tolima",
-      "kickoff": "19/05 22:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.3,
-        "expected_corners": 9.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "AFC Bournemouth",
-      "away": "Manchester City FC",
-      "kickoff": "19/05 18:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.7,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.6,
-        "xg": 3.14,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Chelsea FC",
-      "away": "Tottenham Hotspur FC",
-      "kickoff": "19/05 19:15",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.64,
-        "cards_home": 0.64,
-        "cards_away": 0.62,
-        "dnb_home": 0.68,
-        "xg": 2.56,
+        "over25": 0.64,
+        "corners95": 0.56,
+        "cards_home": 0.55,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.54,
         "expected_corners": 10.4
       }
     },
@@ -84,60 +37,62 @@
       "away": "Universidad Central de Venezuela FC",
       "kickoff": "19/05 22:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.67,
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.59,
+        "cards_away": 0.66,
         "dnb_home": 0.57,
-        "xg": 2.16,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "CD Tolima",
-      "kickoff": "19/05 22:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.3,
-        "expected_corners": 9.8
+        "xg": 2.24,
+        "expected_corners": 10.0
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "CD Tolima",
-      "kickoff": "19/05 22:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.3,
-        "expected_corners": 9.8
-      }
-    },
+  "corner": [
     {
       "league": "Copa Libertadores",
       "home": "Fluminense FC",
       "away": "Club Bolívar",
       "kickoff": "19/05 22:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.6,
-        "cards_home": 0.62,
-        "cards_away": 0.6,
-        "dnb_home": 0.71,
-        "xg": 2.51,
-        "expected_corners": 12.1
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.56,
+        "cards_away": 0.61,
+        "dnb_home": 0.63,
+        "xg": 3.05,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Rosario Central",
+      "away": "Universidad Central de Venezuela FC",
+      "kickoff": "19/05 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.59,
+        "cards_away": 0.66,
+        "dnb_home": 0.57,
+        "xg": 2.24,
+        "expected_corners": 10.0
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Premier League",
+      "home": "Chelsea FC",
+      "away": "Tottenham Hotspur FC",
+      "kickoff": "19/05 19:15",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.56,
+        "cards_home": 0.55,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.54,
+        "expected_corners": 10.4
       }
     }
   ]
