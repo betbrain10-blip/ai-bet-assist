@@ -1,36 +1,6 @@
 {
-  "updated_at": "20/05 14:04",
+  "updated_at": "20/05 17:38",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Independiente Santa Fe",
-      "away": "CA Platense",
-      "kickoff": "20/05 00:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.58,
-        "dnb_home": 0.61,
-        "xg": 2.72,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Always Ready",
-      "away": "Mirassol FC",
-      "kickoff": "20/05 00:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.59,
-        "cards_home": 0.61,
-        "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 3.11,
-        "expected_corners": 8.9
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "CAR Independiente del Valle",
@@ -38,44 +8,12 @@
       "kickoff": "20/05 02:00",
       "markets": {
         "over25": 0.72,
-        "corners95": 0.56,
-        "cards_home": 0.55,
-        "cards_away": 0.52,
-        "dnb_home": 0.66,
-        "xg": 2.43,
-        "expected_corners": 9.1
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Independiente Santa Fe",
-      "away": "CA Platense",
-      "kickoff": "20/05 00:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.58,
-        "dnb_home": 0.61,
-        "xg": 2.72,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Boca Juniors",
-      "away": "Cruzeiro EC",
-      "kickoff": "20/05 00:30",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.61,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.63,
-        "xg": 2.24,
-        "expected_corners": 10.5
+        "corners95": 0.63,
+        "cards_home": 0.57,
+        "cards_away": 0.68,
+        "dnb_home": 0.58,
+        "xg": 2.66,
+        "expected_corners": 10.0
       }
     },
     {
@@ -84,30 +22,62 @@
       "away": "Club Universitario de Deportes",
       "kickoff": "20/05 22:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.65,
-        "xg": 2.33,
-        "expected_corners": 11.3
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.34,
+        "expected_corners": 8.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CAR Independiente del Valle",
+      "away": "Club Libertad Asuncion",
+      "kickoff": "20/05 02:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.63,
+        "cards_home": 0.57,
+        "cards_away": 0.68,
+        "dnb_home": 0.58,
+        "xg": 2.66,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Nacional de Football",
+      "away": "Club Universitario de Deportes",
+      "kickoff": "20/05 22:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.34,
+        "expected_corners": 8.6
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Always Ready",
-      "away": "Mirassol FC",
-      "kickoff": "20/05 00:00",
+      "home": "Club Nacional de Football",
+      "away": "Club Universitario de Deportes",
+      "kickoff": "20/05 22:00",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.59,
-        "cards_home": 0.61,
-        "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 3.11,
-        "expected_corners": 8.9
+        "corners95": 0.63,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 2.34,
+        "expected_corners": 8.6
       }
     }
   ]
