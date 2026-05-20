@@ -1,53 +1,114 @@
 {
-  "updated_at": "19/05 22:44",
+  "updated_at": "20/05 00:05",
   "value": [
     {
       "league": "Copa Libertadores",
-      "home": "CA Rosario Central",
-      "away": "Universidad Central de Venezuela FC",
-      "kickoff": "19/05 22:00",
+      "home": "Club Nacional de Football",
+      "away": "Club Universitario de Deportes",
+      "kickoff": "20/05 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.61,
-        "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 2.9,
-        "expected_corners": 9.4
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.5,
+        "dnb_home": 0.58,
+        "xg": 3.17,
+        "expected_corners": 9.1
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "CD Tolima",
-      "kickoff": "19/05 22:00",
+      "home": "Club Always Ready",
+      "away": "Mirassol FC",
+      "kickoff": "20/05 00:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.64,
-        "cards_away": 0.67,
-        "dnb_home": 0.56,
-        "xg": 3.04,
-        "expected_corners": 8.6
+        "over25": 0.59,
+        "corners95": 0.62,
+        "cards_home": 0.6,
+        "cards_away": 0.58,
+        "dnb_home": 0.61,
+        "xg": 3.02,
+        "expected_corners": 10.0
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "CA Rosario Central",
-      "away": "Universidad Central de Venezuela FC",
-      "kickoff": "19/05 22:00",
+      "home": "Independiente Santa Fe",
+      "away": "CA Platense",
+      "kickoff": "20/05 00:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.68,
-        "cards_home": 0.61,
-        "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 2.9,
-        "expected_corners": 9.4
+        "over25": 0.6,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.57,
+        "dnb_home": 0.73,
+        "xg": 2.36,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CAR Independiente del Valle",
+      "away": "Club Libertad Asuncion",
+      "kickoff": "20/05 02:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.54,
+        "dnb_home": 0.55,
+        "xg": 2.98,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Nacional de Football",
+      "away": "Club Universitario de Deportes",
+      "kickoff": "20/05 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.5,
+        "dnb_home": 0.58,
+        "xg": 3.17,
+        "expected_corners": 9.1
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Independiente Santa Fe",
+      "away": "CA Platense",
+      "kickoff": "20/05 00:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.57,
+        "dnb_home": 0.73,
+        "xg": 2.36,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Boca Juniors",
+      "away": "Cruzeiro EC",
+      "kickoff": "20/05 00:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.57,
+        "cards_home": 0.55,
+        "cards_away": 0.52,
+        "dnb_home": 0.69,
+        "xg": 3.02,
+        "expected_corners": 11.4
+      }
+    }
+  ]
 }
