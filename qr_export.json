@@ -1,83 +1,53 @@
 {
-  "updated_at": "20/05 17:38",
+  "updated_at": "20/05 20:13",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "Club Libertad Asuncion",
-      "kickoff": "20/05 02:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.68,
-        "dnb_home": 0.58,
-        "xg": 2.66,
-        "expected_corners": 10.0
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "Club Nacional de Football",
       "away": "Club Universitario de Deportes",
       "kickoff": "20/05 22:00",
       "markets": {
-        "over25": 0.64,
+        "over25": 0.7,
         "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.34,
-        "expected_corners": 8.6
+        "cards_home": 0.6,
+        "cards_away": 0.67,
+        "dnb_home": 0.56,
+        "xg": 2.92,
+        "expected_corners": 11.6
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "Club Libertad Asuncion",
-      "kickoff": "20/05 02:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.68,
-        "dnb_home": 0.58,
-        "xg": 2.66,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Copa Libertadores",
       "home": "Club Nacional de Football",
       "away": "Club Universitario de Deportes",
       "kickoff": "20/05 22:00",
       "markets": {
-        "over25": 0.64,
+        "over25": 0.7,
         "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.34,
-        "expected_corners": 8.6
+        "cards_home": 0.6,
+        "cards_away": 0.67,
+        "dnb_home": 0.56,
+        "xg": 2.92,
+        "expected_corners": 11.6
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Nacional de Football",
-      "away": "Club Universitario de Deportes",
-      "kickoff": "20/05 22:00",
+      "home": "CAR Independiente del Valle",
+      "away": "Club Libertad Asuncion",
+      "kickoff": "20/05 02:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.34,
-        "expected_corners": 8.6
+        "over25": 0.61,
+        "corners95": 0.56,
+        "cards_home": 0.64,
+        "cards_away": 0.51,
+        "dnb_home": 0.75,
+        "xg": 2.13,
+        "expected_corners": 9.5
       }
     }
   ]
