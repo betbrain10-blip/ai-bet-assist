@@ -1,51 +1,36 @@
 {
-  "updated_at": "21/05 19:25",
+  "updated_at": "21/05 21:11",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CDP Junior FC",
-      "away": "CS Cristal",
-      "kickoff": "21/05 02:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.58,
-        "cards_home": 0.55,
-        "cards_away": 0.66,
-        "dnb_home": 0.61,
-        "xg": 3.17,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Deportivo La Guaira FC",
-      "away": "CS Independiente Rivadavia",
-      "kickoff": "21/05 22:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.68,
-        "xg": 2.66,
-        "expected_corners": 9.4
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "Copa Libertadores",
       "home": "Cusco FC",
       "away": "CD Independiente Medellín",
       "kickoff": "21/05 02:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.58,
-        "dnb_home": 0.72,
-        "xg": 3.19,
-        "expected_corners": 10.5
+        "over25": 0.66,
+        "corners95": 0.57,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.71,
+        "xg": 2.5,
+        "expected_corners": 12.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CDP Junior FC",
+      "away": "CS Cristal",
+      "kickoff": "21/05 02:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.63,
+        "dnb_home": 0.68,
+        "xg": 2.71,
+        "expected_corners": 11.4
       }
     },
     {
@@ -54,13 +39,13 @@
       "away": "CS Independiente Rivadavia",
       "kickoff": "21/05 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.68,
-        "xg": 2.66,
-        "expected_corners": 9.4
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.99,
+        "expected_corners": 10.8
       }
     }
   ],
@@ -71,13 +56,28 @@
       "away": "CD Independiente Medellín",
       "kickoff": "21/05 02:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.62,
-        "cards_away": 0.58,
-        "dnb_home": 0.72,
-        "xg": 3.19,
-        "expected_corners": 10.5
+        "over25": 0.66,
+        "corners95": 0.57,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.71,
+        "xg": 2.5,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Deportivo La Guaira FC",
+      "away": "CS Independiente Rivadavia",
+      "kickoff": "21/05 22:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.99,
+        "expected_corners": 10.8
       }
     }
   ]
