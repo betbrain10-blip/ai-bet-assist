@@ -1,54 +1,37 @@
 {
-  "updated_at": "22/05 16:25",
-  "value": [
-    {
-      "league": "Serie A",
-      "home": "ACF Fiorentina",
-      "away": "Atalanta BC",
-      "kickoff": "22/05 18:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.7,
-        "xg": 3.3,
-        "expected_corners": 12.2
-      }
-    }
-  ],
+  "updated_at": "22/05 18:15",
+  "value": [],
   "corner": [
     {
-      "league": "Serie A",
-      "home": "ACF Fiorentina",
-      "away": "Atalanta BC",
-      "kickoff": "22/05 18:45",
+      "league": "Copa Libertadores",
+      "home": "CA Peñarol",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "22/05 00:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.7,
-        "xg": 3.3,
-        "expected_corners": 12.2
+        "over25": 0.57,
+        "corners95": 0.7,
+        "cards_home": 0.58,
+        "cards_away": 0.68,
+        "dnb_home": 0.58,
+        "xg": 2.57,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Universidad Católica",
+      "away": "Barcelona SC",
+      "kickoff": "22/05 00:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.61,
+        "cards_home": 0.65,
+        "cards_away": 0.5,
+        "dnb_home": 0.59,
+        "xg": 2.57,
+        "expected_corners": 8.9
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "ACF Fiorentina",
-      "away": "Atalanta BC",
-      "kickoff": "22/05 18:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.59,
-        "cards_away": 0.6,
-        "dnb_home": 0.7,
-        "xg": 3.3,
-        "expected_corners": 12.2
-      }
-    }
-  ]
+  "hot": []
 }
