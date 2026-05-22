@@ -1,5 +1,5 @@
 {
-  "updated_at": "22/05 13:43",
+  "updated_at": "22/05 16:25",
   "value": [
     {
       "league": "Serie A",
@@ -7,16 +7,48 @@
       "away": "Atalanta BC",
       "kickoff": "22/05 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
+        "over25": 0.71,
+        "corners95": 0.66,
         "cards_home": 0.59,
-        "cards_away": 0.55,
-        "dnb_home": 0.66,
-        "xg": 3.06,
-        "expected_corners": 8.7
+        "cards_away": 0.6,
+        "dnb_home": 0.7,
+        "xg": 3.3,
+        "expected_corners": 12.2
       }
     }
   ],
-  "corner": [],
-  "hot": []
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "ACF Fiorentina",
+      "away": "Atalanta BC",
+      "kickoff": "22/05 18:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.6,
+        "dnb_home": 0.7,
+        "xg": 3.3,
+        "expected_corners": 12.2
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Serie A",
+      "home": "ACF Fiorentina",
+      "away": "Atalanta BC",
+      "kickoff": "22/05 18:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.6,
+        "dnb_home": 0.7,
+        "xg": 3.3,
+        "expected_corners": 12.2
+      }
+    }
+  ]
 }
