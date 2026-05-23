@@ -1,246 +1,51 @@
 {
-  "updated_at": "23/05 10:52",
+  "updated_at": "23/05 11:59",
   "value": [
-    {
-      "league": "Championship",
-      "home": "Hull City AFC",
-      "away": "Southampton FC",
-      "kickoff": "23/05 01:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.6,
-        "xg": 3.12,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Bologna FC 1909",
-      "away": "FC Internazionale Milano",
-      "kickoff": "23/05 16:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.59,
-        "cards_home": 0.63,
-        "cards_away": 0.62,
-        "dnb_home": 0.56,
-        "xg": 2.92,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "SS Lazio",
-      "away": "AC Pisa 1909",
-      "kickoff": "23/05 18:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.58,
-        "cards_home": 0.5,
-        "cards_away": 0.67,
-        "dnb_home": 0.56,
-        "xg": 2.13,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Valencia CF",
-      "away": "FC Barcelona",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 2.26,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "RCD Mallorca",
-      "away": "Real Oviedo",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.6,
-        "cards_home": 0.63,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 3.29,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Girona FC",
-      "away": "Elche CF",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.6,
-        "xg": 2.6,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Getafe CF",
-      "away": "CA Osasuna",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.75,
-        "expected_corners": 9.2
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "São Paulo FC",
       "away": "Botafogo FR",
       "kickoff": "23/05 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.5,
-        "dnb_home": 0.71,
-        "xg": 2.3,
-        "expected_corners": 10.6
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.65,
+        "dnb_home": 0.67,
+        "xg": 2.38,
+        "expected_corners": 9.1
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Mirassol FC",
-      "away": "Fluminense FC",
+      "home": "Grêmio FBPA",
+      "away": "Santos FC",
       "kickoff": "23/05 22:00",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.64,
         "corners95": 0.7,
-        "cards_home": 0.66,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.93,
-        "expected_corners": 9.8
+        "cards_home": 0.52,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 2.66,
+        "expected_corners": 11.0
       }
     }
   ],
   "corner": [
     {
-      "league": "Championship",
-      "home": "Hull City AFC",
-      "away": "Southampton FC",
-      "kickoff": "23/05 01:00",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "São Paulo FC",
+      "away": "Botafogo FR",
+      "kickoff": "23/05 20:00",
       "markets": {
         "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.6,
-        "xg": 3.12,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Valencia CF",
-      "away": "FC Barcelona",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 2.26,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Girona FC",
-      "away": "Elche CF",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.6,
-        "xg": 2.6,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Getafe CF",
-      "away": "CA Osasuna",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.75,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Deportivo Alavés",
-      "away": "Rayo Vallecano de Madrid",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.5,
-        "cards_away": 0.58,
-        "dnb_home": 0.73,
-        "xg": 2.3,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Madrid CF",
-      "away": "Athletic Club",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.61,
         "corners95": 0.69,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 2.68,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "RC Celta de Vigo",
-      "away": "Sevilla FC",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.66,
-        "dnb_home": 0.65,
-        "xg": 2.62,
-        "expected_corners": 12.2
+        "cards_home": 0.64,
+        "cards_away": 0.65,
+        "dnb_home": 0.67,
+        "xg": 2.38,
+        "expected_corners": 9.1
       }
     },
     {
@@ -249,28 +54,28 @@
       "away": "SC Internacional",
       "kickoff": "23/05 20:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 2.2,
-        "expected_corners": 9.9
+        "over25": 0.6,
+        "corners95": 0.69,
+        "cards_home": 0.64,
+        "cards_away": 0.55,
+        "dnb_home": 0.68,
+        "xg": 3.16,
+        "expected_corners": 10.7
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Botafogo FR",
-      "kickoff": "23/05 20:00",
+      "home": "Grêmio FBPA",
+      "away": "Santos FC",
+      "kickoff": "23/05 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.5,
-        "dnb_home": 0.71,
-        "xg": 2.3,
-        "expected_corners": 10.6
+        "over25": 0.64,
+        "corners95": 0.7,
+        "cards_home": 0.52,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 2.66,
+        "expected_corners": 11.0
       }
     },
     {
@@ -279,106 +84,15 @@
       "away": "Fluminense FC",
       "kickoff": "23/05 22:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.66,
-        "cards_away": 0.59,
-        "dnb_home": 0.71,
-        "xg": 2.93,
-        "expected_corners": 9.8
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primera Division",
-      "home": "Valencia CF",
-      "away": "FC Barcelona",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 2.26,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Betis Balompié",
-      "away": "Levante UD",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.57,
-        "cards_home": 0.61,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 3.35,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Getafe CF",
-      "away": "CA Osasuna",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.75,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Deportivo Alavés",
-      "away": "Rayo Vallecano de Madrid",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.5,
-        "cards_away": 0.58,
-        "dnb_home": 0.73,
-        "xg": 2.3,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Real Madrid CF",
-      "away": "Athletic Club",
-      "kickoff": "23/05 19:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.67,
-        "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 2.68,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Botafogo FR",
-      "kickoff": "23/05 20:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.5,
-        "dnb_home": 0.71,
-        "xg": 2.3,
+        "over25": 0.58,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.54,
+        "dnb_home": 0.61,
+        "xg": 2.22,
         "expected_corners": 10.6
       }
     }
-  ]
+  ],
+  "hot": []
 }
