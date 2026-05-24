@@ -1,5 +1,5 @@
 {
-  "updated_at": "24/05 20:04",
+  "updated_at": "24/05 21:27",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,32 +7,63 @@
       "away": "CA Mineiro",
       "kickoff": "24/05 21:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.6,
-        "cards_home": 0.6,
-        "cards_away": 0.51,
-        "dnb_home": 0.55,
-        "xg": 2.77,
-        "expected_corners": 10.6
+        "over25": 0.72,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.68,
+        "dnb_home": 0.75,
+        "xg": 2.91,
+        "expected_corners": 10.7
       }
     }
   ],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "CA Mineiro",
+      "kickoff": "24/05 21:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.68,
+        "dnb_home": 0.75,
+        "xg": 2.91,
+        "expected_corners": 10.7
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
       "home": "CR Vasco da Gama",
       "away": "RB Bragantino",
       "kickoff": "24/05 23:30",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.56,
-        "xg": 2.17,
-        "expected_corners": 12.3
+        "over25": 0.57,
+        "corners95": 0.68,
+        "cards_home": 0.55,
+        "cards_away": 0.68,
+        "dnb_home": 0.62,
+        "xg": 2.19,
+        "expected_corners": 12.5
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "CA Mineiro",
+      "kickoff": "24/05 21:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.68,
+        "dnb_home": 0.75,
+        "xg": 2.91,
+        "expected_corners": 10.7
+      }
+    }
+  ]
 }
