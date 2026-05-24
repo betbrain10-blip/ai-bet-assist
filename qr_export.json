@@ -1,69 +1,38 @@
 {
-  "updated_at": "24/05 21:27",
+  "updated_at": "24/05 22:31",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "CA Mineiro",
-      "kickoff": "24/05 21:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.75,
-        "xg": 2.91,
-        "expected_corners": 10.7
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "CA Mineiro",
-      "kickoff": "24/05 21:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.75,
-        "xg": 2.91,
-        "expected_corners": 10.7
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CR Vasco da Gama",
       "away": "RB Bragantino",
       "kickoff": "24/05 23:30",
       "markets": {
-        "over25": 0.57,
+        "over25": 0.64,
         "corners95": 0.68,
-        "cards_home": 0.55,
-        "cards_away": 0.68,
-        "dnb_home": 0.62,
-        "xg": 2.19,
-        "expected_corners": 12.5
+        "cards_home": 0.65,
+        "cards_away": 0.52,
+        "dnb_home": 0.65,
+        "xg": 2.25,
+        "expected_corners": 9.3
       }
     }
   ],
-  "hot": [
+  "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "CA Mineiro",
-      "kickoff": "24/05 21:30",
+      "home": "CR Vasco da Gama",
+      "away": "RB Bragantino",
+      "kickoff": "24/05 23:30",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.68,
-        "dnb_home": 0.75,
-        "xg": 2.91,
-        "expected_corners": 10.7
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.52,
+        "dnb_home": 0.65,
+        "xg": 2.25,
+        "expected_corners": 9.3
       }
     }
-  ]
+  ],
+  "hot": []
 }
