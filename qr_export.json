@@ -1,6 +1,22 @@
 {
-  "updated_at": "25/05 17:42",
-  "value": [],
+  "updated_at": "25/05 19:38",
+  "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "EC Bahia",
+      "kickoff": "25/05 23:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.57,
+        "cards_away": 0.64,
+        "dnb_home": 0.62,
+        "xg": 2.83,
+        "expected_corners": 12.3
+      }
+    }
+  ],
   "corner": [],
   "hot": []
 }
