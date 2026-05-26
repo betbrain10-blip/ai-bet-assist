@@ -1,5 +1,5 @@
 {
-  "updated_at": "26/05 20:52",
+  "updated_at": "26/05 22:18",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,78 +7,16 @@
       "away": "Club Always Ready",
       "kickoff": "26/05 22:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.58,
-        "dnb_home": 0.56,
-        "xg": 3.24,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Lanús",
-      "away": "Mirassol FC",
-      "kickoff": "26/05 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.73,
-        "xg": 2.12,
-        "expected_corners": 9.5
+        "over25": 0.71,
+        "corners95": 0.59,
+        "cards_home": 0.57,
+        "cards_away": 0.64,
+        "dnb_home": 0.67,
+        "xg": 2.77,
+        "expected_corners": 12.4
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "LDU de Quito",
-      "away": "Club Always Ready",
-      "kickoff": "26/05 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.58,
-        "dnb_home": 0.56,
-        "xg": 3.24,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Lanús",
-      "away": "Mirassol FC",
-      "kickoff": "26/05 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.73,
-        "xg": 2.12,
-        "expected_corners": 9.5
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Lanús",
-      "away": "Mirassol FC",
-      "kickoff": "26/05 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.73,
-        "xg": 2.12,
-        "expected_corners": 9.5
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
