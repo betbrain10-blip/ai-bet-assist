@@ -1,22 +1,38 @@
 {
-  "updated_at": "25/05 22:33",
+  "updated_at": "26/05 00:05",
   "value": [],
   "corner": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "EC Bahia",
-      "kickoff": "25/05 23:00",
+      "league": "Copa Libertadores",
+      "home": "LDU de Quito",
+      "away": "Club Always Ready",
+      "kickoff": "26/05 22:00",
       "markets": {
-        "over25": 0.62,
+        "over25": 0.56,
         "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.59,
-        "xg": 3.03,
-        "expected_corners": 10.7
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.74,
+        "xg": 2.24,
+        "expected_corners": 10.9
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "LDU de Quito",
+      "away": "Club Always Ready",
+      "kickoff": "26/05 22:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.67,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.74,
+        "xg": 2.24,
+        "expected_corners": 10.9
+      }
+    }
+  ]
 }
