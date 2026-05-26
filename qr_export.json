@@ -1,38 +1,69 @@
 {
-  "updated_at": "26/05 18:41",
+  "updated_at": "26/05 20:52",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Lanús",
-      "away": "Mirassol FC",
-      "kickoff": "26/05 22:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.58,
-        "cards_home": 0.62,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 3.29,
-        "expected_corners": 11.7
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "LDU de Quito",
       "away": "Club Always Ready",
       "kickoff": "26/05 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.56,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 3.33,
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.63,
+        "cards_away": 0.58,
+        "dnb_home": 0.56,
+        "xg": 3.24,
         "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Lanús",
+      "away": "Mirassol FC",
+      "kickoff": "26/05 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.12,
+        "expected_corners": 9.5
       }
     }
   ],
-  "corner": [],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "LDU de Quito",
+      "away": "Club Always Ready",
+      "kickoff": "26/05 22:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.63,
+        "cards_away": 0.58,
+        "dnb_home": 0.56,
+        "xg": 3.24,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Lanús",
+      "away": "Mirassol FC",
+      "kickoff": "26/05 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.12,
+        "expected_corners": 9.5
+      }
+    }
+  ],
   "hot": [
     {
       "league": "Copa Libertadores",
@@ -40,28 +71,13 @@
       "away": "Mirassol FC",
       "kickoff": "26/05 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.58,
-        "cards_home": 0.62,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 3.29,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "LDU de Quito",
-      "away": "Club Always Ready",
-      "kickoff": "26/05 22:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.56,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 3.33,
-        "expected_corners": 9.2
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.12,
+        "expected_corners": 9.5
       }
     }
   ]
