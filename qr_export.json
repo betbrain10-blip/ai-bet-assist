@@ -1,5 +1,5 @@
 {
-  "updated_at": "27/05 20:32",
+  "updated_at": "27/05 22:40",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,28 +7,13 @@
       "away": "Universidad Central de Venezuela FC",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.6,
-        "xg": 3.09,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "CA Rosario Central",
-      "kickoff": "27/05 22:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.63,
-        "cards_away": 0.66,
-        "dnb_home": 0.75,
-        "xg": 2.8,
-        "expected_corners": 11.8
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.63,
+        "xg": 2.84,
+        "expected_corners": 10.3
       }
     }
   ],
@@ -39,13 +24,13 @@
       "away": "Universidad Central de Venezuela FC",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.65,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.6,
-        "xg": 3.09,
-        "expected_corners": 12.1
+        "over25": 0.7,
+        "corners95": 0.68,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.63,
+        "xg": 2.84,
+        "expected_corners": 10.3
       }
     }
   ],
@@ -56,13 +41,13 @@
       "away": "CA Rosario Central",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.63,
+        "over25": 0.6,
+        "corners95": 0.57,
+        "cards_home": 0.52,
         "cards_away": 0.66,
-        "dnb_home": 0.75,
-        "xg": 2.8,
-        "expected_corners": 11.8
+        "dnb_home": 0.72,
+        "xg": 2.9,
+        "expected_corners": 12.0
       }
     }
   ]
