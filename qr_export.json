@@ -1,5 +1,5 @@
 {
-  "updated_at": "27/05 03:48",
+  "updated_at": "27/05 08:03",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,28 +7,13 @@
       "away": "CA Rosario Central",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.65,
         "corners95": 0.66,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.6,
-        "xg": 2.57,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Libertad Asuncion",
-      "away": "Universidad Central de Venezuela FC",
-      "kickoff": "27/05 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.56,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.7,
-        "xg": 2.5,
-        "expected_corners": 12.1
+        "cards_home": 0.55,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.93,
+        "expected_corners": 9.4
       }
     }
   ],
@@ -39,30 +24,30 @@
       "away": "CA Rosario Central",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.65,
         "corners95": 0.66,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.6,
-        "xg": 2.57,
-        "expected_corners": 9.5
+        "cards_home": 0.55,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.93,
+        "expected_corners": 9.4
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Libertad Asuncion",
-      "away": "Universidad Central de Venezuela FC",
+      "home": "CAR Independiente del Valle",
+      "away": "CA Rosario Central",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.56,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.7,
-        "xg": 2.5,
-        "expected_corners": 12.1
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.55,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.93,
+        "expected_corners": 9.4
       }
     }
   ]
