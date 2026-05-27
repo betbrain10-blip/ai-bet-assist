@@ -1,53 +1,158 @@
 {
-  "updated_at": "27/05 22:40",
+  "updated_at": "27/05 23:59",
   "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Nacional de Football",
+      "away": "CD Coquimbo Unido",
+      "kickoff": "27/05 00:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.57,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.69,
+        "xg": 2.12,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CR Flamengo",
+      "away": "Cusco FC",
+      "kickoff": "27/05 00:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.68,
+        "dnb_home": 0.73,
+        "xg": 3.39,
+        "expected_corners": 9.8
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "Club Libertad Asuncion",
       "away": "Universidad Central de Venezuela FC",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.68,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.63,
-        "xg": 2.84,
-        "expected_corners": 10.3
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.61,
+        "dnb_home": 0.74,
+        "xg": 2.69,
+        "expected_corners": 12.2
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Libertad Asuncion",
-      "away": "Universidad Central de Venezuela FC",
-      "kickoff": "27/05 22:00",
+      "home": "CR Flamengo",
+      "away": "Cusco FC",
+      "kickoff": "27/05 00:30",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.69,
         "corners95": 0.68,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.63,
-        "xg": 2.84,
-        "expected_corners": 10.3
+        "cards_home": 0.52,
+        "cards_away": 0.68,
+        "dnb_home": 0.73,
+        "xg": 3.39,
+        "expected_corners": 9.8
       }
-    }
-  ],
-  "hot": [
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Estudiantes de La Plata",
+      "away": "CD Independiente Medellín",
+      "kickoff": "27/05 00:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.6,
+        "dnb_home": 0.55,
+        "xg": 2.31,
+        "expected_corners": 11.4
+      }
+    },
     {
       "league": "Copa Libertadores",
       "home": "CAR Independiente del Valle",
       "away": "CA Rosario Central",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.6,
+        "over25": 0.61,
+        "corners95": 0.61,
+        "cards_home": 0.61,
+        "cards_away": 0.68,
+        "dnb_home": 0.63,
+        "xg": 2.83,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "Universidad Central de Venezuela FC",
+      "kickoff": "27/05 22:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.61,
+        "dnb_home": 0.74,
+        "xg": 2.69,
+        "expected_corners": 12.2
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Nacional de Football",
+      "away": "CD Coquimbo Unido",
+      "kickoff": "27/05 00:30",
+      "markets": {
+        "over25": 0.66,
         "corners95": 0.57,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.69,
+        "xg": 2.12,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CR Flamengo",
+      "away": "Cusco FC",
+      "kickoff": "27/05 00:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.68,
         "cards_home": 0.52,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 2.9,
-        "expected_corners": 12.0
+        "cards_away": 0.68,
+        "dnb_home": 0.73,
+        "xg": 3.39,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Libertad Asuncion",
+      "away": "Universidad Central de Venezuela FC",
+      "kickoff": "27/05 22:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.61,
+        "dnb_home": 0.74,
+        "xg": 2.69,
+        "expected_corners": 12.2
       }
     }
   ]
