@@ -1,128 +1,36 @@
 {
-  "updated_at": "27/05 11:52",
+  "updated_at": "27/05 15:40",
   "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Estudiantes de La Plata",
-      "away": "CD Independiente Medellín",
-      "kickoff": "27/05 00:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.58,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 2.63,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Universitario de Deportes",
-      "away": "CD Tolima",
-      "kickoff": "27/05 00:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.57,
-        "xg": 2.5,
-        "expected_corners": 12.3
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "CAR Independiente del Valle",
       "away": "CA Rosario Central",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.12,
-        "expected_corners": 10.9
+        "over25": 0.72,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.63,
+        "xg": 2.75,
+        "expected_corners": 10.8
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Nacional de Football",
-      "away": "CD Coquimbo Unido",
-      "kickoff": "27/05 00:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.54,
-        "dnb_home": 0.55,
-        "xg": 3.31,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Universitario de Deportes",
-      "away": "CD Tolima",
-      "kickoff": "27/05 00:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.57,
-        "xg": 2.5,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "CA Rosario Central",
-      "kickoff": "27/05 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.12,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Copa Libertadores",
       "home": "Club Libertad Asuncion",
       "away": "Universidad Central de Venezuela FC",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.56,
-        "xg": 2.68,
-        "expected_corners": 8.7
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Estudiantes de La Plata",
-      "away": "CD Independiente Medellín",
-      "kickoff": "27/05 00:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.58,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 2.63,
-        "expected_corners": 8.9
+        "over25": 0.58,
+        "corners95": 0.69,
+        "cards_home": 0.58,
+        "cards_away": 0.6,
+        "dnb_home": 0.63,
+        "xg": 3.24,
+        "expected_corners": 8.8
       }
     },
     {
@@ -131,14 +39,15 @@
       "away": "CA Rosario Central",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.58,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.12,
-        "expected_corners": 10.9
+        "over25": 0.72,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.63,
+        "xg": 2.75,
+        "expected_corners": 10.8
       }
     }
-  ]
+  ],
+  "hot": []
 }
