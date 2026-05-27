@@ -1,5 +1,5 @@
 {
-  "updated_at": "27/05 18:25",
+  "updated_at": "27/05 20:32",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,47 +7,63 @@
       "away": "Universidad Central de Venezuela FC",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.5,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.84,
-        "expected_corners": 12.5
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.51,
+        "cards_away": 0.59,
+        "dnb_home": 0.6,
+        "xg": 3.09,
+        "expected_corners": 12.1
       }
-    }
-  ],
-  "corner": [
+    },
     {
       "league": "Copa Libertadores",
       "home": "CAR Independiente del Valle",
       "away": "CA Rosario Central",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.68,
-        "cards_home": 0.6,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.87,
-        "expected_corners": 9.7
+        "over25": 0.65,
+        "corners95": 0.56,
+        "cards_home": 0.63,
+        "cards_away": 0.66,
+        "dnb_home": 0.75,
+        "xg": 2.8,
+        "expected_corners": 11.8
       }
-    },
+    }
+  ],
+  "corner": [
     {
       "league": "Copa Libertadores",
       "home": "Club Libertad Asuncion",
       "away": "Universidad Central de Venezuela FC",
       "kickoff": "27/05 22:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.5,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.84,
-        "expected_corners": 12.5
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.51,
+        "cards_away": 0.59,
+        "dnb_home": 0.6,
+        "xg": 3.09,
+        "expected_corners": 12.1
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CAR Independiente del Valle",
+      "away": "CA Rosario Central",
+      "kickoff": "27/05 22:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.56,
+        "cards_home": 0.63,
+        "cards_away": 0.66,
+        "dnb_home": 0.75,
+        "xg": 2.8,
+        "expected_corners": 11.8
+      }
+    }
+  ]
 }
