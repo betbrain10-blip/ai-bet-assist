@@ -1,5 +1,5 @@
 {
-  "updated_at": "28/05 21:30",
+  "updated_at": "28/05 23:16",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,13 +7,28 @@
       "away": "Independiente Santa Fe",
       "kickoff": "28/05 00:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.61,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 3.25,
-        "expected_corners": 8.7
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.62,
+        "xg": 3.15,
+        "expected_corners": 11.8
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Fluminense FC",
+      "away": "Deportivo La Guaira FC",
+      "kickoff": "28/05 00:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.67,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.61,
+        "expected_corners": 10.5
       }
     },
     {
@@ -22,13 +37,43 @@
       "away": "CA Platense",
       "kickoff": "28/05 00:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.61,
-        "cards_away": 0.61,
+        "over25": 0.72,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
         "dnb_home": 0.62,
-        "xg": 2.98,
-        "expected_corners": 10.7
+        "xg": 2.5,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Bolívar",
+      "away": "CS Independiente Rivadavia",
+      "kickoff": "28/05 00:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.61,
+        "xg": 2.72,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Cerro Porteño",
+      "away": "CS Cristal",
+      "kickoff": "28/05 22:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.51,
+        "dnb_home": 0.57,
+        "xg": 2.8,
+        "expected_corners": 9.1
       }
     }
   ],
@@ -39,28 +84,58 @@
       "away": "Independiente Santa Fe",
       "kickoff": "28/05 00:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.61,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 3.25,
-        "expected_corners": 8.7
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.62,
+        "xg": 3.15,
+        "expected_corners": 11.8
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "SE Palmeiras",
-      "away": "CDP Junior FC",
-      "kickoff": "28/05 22:00",
+      "home": "Fluminense FC",
+      "away": "Deportivo La Guaira FC",
+      "kickoff": "28/05 00:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.66,
-        "dnb_home": 0.56,
-        "xg": 2.2,
-        "expected_corners": 11.2
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.67,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.61,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "SC Corinthians Paulista",
+      "away": "CA Platense",
+      "kickoff": "28/05 00:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.62,
+        "xg": 2.5,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Bolívar",
+      "away": "CS Independiente Rivadavia",
+      "kickoff": "28/05 00:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.61,
+        "xg": 2.72,
+        "expected_corners": 11.1
       }
     },
     {
@@ -69,30 +144,45 @@
       "away": "CS Cristal",
       "kickoff": "28/05 22:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.63,
+        "over25": 0.64,
+        "corners95": 0.67,
         "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.65,
-        "xg": 2.92,
-        "expected_corners": 10.3
+        "cards_away": 0.51,
+        "dnb_home": 0.57,
+        "xg": 2.8,
+        "expected_corners": 9.1
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "CA Peñarol",
-      "away": "Independiente Santa Fe",
+      "home": "Fluminense FC",
+      "away": "Deportivo La Guaira FC",
       "kickoff": "28/05 00:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.61,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 3.25,
-        "expected_corners": 8.7
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.67,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.61,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "SE Palmeiras",
+      "away": "CDP Junior FC",
+      "kickoff": "28/05 22:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.55,
+        "cards_home": 0.52,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 2.82,
+        "expected_corners": 11.9
       }
     }
   ]
