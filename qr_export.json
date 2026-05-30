@@ -1,94 +1,19 @@
 {
-  "updated_at": "30/05 03:23",
+  "updated_at": "30/05 06:35",
   "value": [
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "Arsenal FC",
-      "kickoff": "30/05 16:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 3.13,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "Coritiba FBC",
-      "kickoff": "30/05 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
-        "dnb_home": 0.57,
-        "xg": 2.4,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "Mirassol FC",
-      "kickoff": "30/05 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.54,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 2.56,
-        "expected_corners": 10.6
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "EC Bahia",
       "away": "Botafogo FR",
       "kickoff": "30/05 20:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.59,
-        "cards_home": 0.54,
-        "cards_away": 0.54,
-        "dnb_home": 0.63,
-        "xg": 2.47,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Grêmio FBPA",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "30/05 20:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.59,
-        "cards_home": 0.57,
-        "cards_away": 0.63,
-        "dnb_home": 0.62,
-        "xg": 2.51,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "EC Vitória",
-      "kickoff": "30/05 23:00",
-      "markets": {
         "over25": 0.63,
-        "corners95": 0.58,
+        "corners95": 0.65,
         "cards_home": 0.55,
-        "cards_away": 0.58,
-        "dnb_home": 0.61,
-        "xg": 2.68,
-        "expected_corners": 10.3
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 3.3,
+        "expected_corners": 9.3
       }
     }
   ],
@@ -99,60 +24,105 @@
       "away": "Arsenal FC",
       "kickoff": "30/05 16:00",
       "markets": {
+        "over25": 0.55,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.19,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Grêmio FBPA",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "30/05 20:30",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.64,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.6,
+        "xg": 2.84,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "Botafogo FR",
+      "kickoff": "30/05 20:30",
+      "markets": {
         "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 3.13,
-        "expected_corners": 11.2
+        "corners95": 0.65,
+        "cards_home": 0.55,
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 3.3,
+        "expected_corners": 9.3
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "Coritiba FBC",
-      "kickoff": "30/05 19:00",
+      "home": "Santos FC",
+      "away": "EC Vitória",
+      "kickoff": "30/05 23:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
-        "dnb_home": 0.57,
-        "xg": 2.4,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "Mirassol FC",
-      "kickoff": "30/05 19:00",
-      "markets": {
-        "over25": 0.65,
+        "over25": 0.56,
         "corners95": 0.63,
-        "cards_home": 0.54,
+        "cards_home": 0.67,
         "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 2.56,
-        "expected_corners": 10.6
+        "dnb_home": 0.69,
+        "xg": 3.39,
+        "expected_corners": 10.8
       }
     }
   ],
   "hot": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "Mirassol FC",
-      "kickoff": "30/05 19:00",
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "Arsenal FC",
+      "kickoff": "30/05 16:00",
       "markets": {
-        "over25": 0.65,
+        "over25": 0.55,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.19,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "Botafogo FR",
+      "kickoff": "30/05 20:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.65,
+        "cards_home": 0.55,
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 3.3,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "EC Vitória",
+      "kickoff": "30/05 23:00",
+      "markets": {
+        "over25": 0.56,
         "corners95": 0.63,
-        "cards_home": 0.54,
+        "cards_home": 0.67,
         "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 2.56,
-        "expected_corners": 10.6
+        "dnb_home": 0.69,
+        "xg": 3.39,
+        "expected_corners": 10.8
       }
     }
   ]
