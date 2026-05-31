@@ -1,34 +1,19 @@
 {
-  "updated_at": "31/05 20:07",
+  "updated_at": "31/05 21:31",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "Fluminense FC",
-      "kickoff": "31/05 23:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.56,
-        "dnb_home": 0.75,
-        "xg": 2.93,
-        "expected_corners": 12.7
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Clube do Remo",
       "away": "São Paulo FC",
       "kickoff": "31/05 23:30",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.66,
         "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
         "dnb_home": 0.57,
-        "xg": 2.29,
-        "expected_corners": 11.6
+        "xg": 2.87,
+        "expected_corners": 12.3
       }
     }
   ],
@@ -39,13 +24,13 @@
       "away": "Fluminense FC",
       "kickoff": "31/05 23:30",
       "markets": {
-        "over25": 0.66,
+        "over25": 0.56,
         "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.56,
-        "dnb_home": 0.75,
-        "xg": 2.93,
-        "expected_corners": 12.7
+        "cards_home": 0.53,
+        "cards_away": 0.51,
+        "dnb_home": 0.6,
+        "xg": 2.32,
+        "expected_corners": 11.2
       }
     },
     {
@@ -54,31 +39,15 @@
       "away": "São Paulo FC",
       "kickoff": "31/05 23:30",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.66,
         "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
         "dnb_home": 0.57,
-        "xg": 2.29,
-        "expected_corners": 11.6
+        "xg": 2.87,
+        "expected_corners": 12.3
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "Fluminense FC",
-      "kickoff": "31/05 23:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.56,
-        "dnb_home": 0.75,
-        "xg": 2.93,
-        "expected_corners": 12.7
-      }
-    }
-  ]
+  "hot": []
 }
