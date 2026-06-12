@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/06 14:18",
+  "updated_at": "12/06 17:21",
   "value": [],
   "corner": [],
   "hot": [
@@ -9,13 +9,13 @@
       "away": "Bosnia-Herzegovina",
       "kickoff": "12/06 19:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.75,
-        "xg": 2.42,
-        "expected_corners": 9.4
+        "over25": 0.56,
+        "corners95": 0.59,
+        "cards_home": 0.66,
+        "cards_away": 0.54,
+        "dnb_home": 0.74,
+        "xg": 2.47,
+        "expected_corners": 12.6
       }
     }
   ]
