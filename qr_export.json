@@ -1,22 +1,6 @@
 {
-  "updated_at": "12/06 17:21",
+  "updated_at": "12/06 19:29",
   "value": [],
   "corner": [],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Canada",
-      "away": "Bosnia-Herzegovina",
-      "kickoff": "12/06 19:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.47,
-        "expected_corners": 12.6
-      }
-    }
-  ]
+  "hot": []
 }
