@@ -1,22 +1,22 @@
 {
-  "updated_at": "12/06 06:44",
-  "value": [],
-  "corner": [
+  "updated_at": "12/06 11:00",
+  "value": [
     {
       "league": "FIFA World Cup",
       "home": "Canada",
       "away": "Bosnia-Herzegovina",
       "kickoff": "12/06 19:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.61,
+        "over25": 0.65,
+        "corners95": 0.56,
         "cards_home": 0.56,
-        "cards_away": 0.56,
+        "cards_away": 0.65,
         "dnb_home": 0.56,
-        "xg": 3.06,
-        "expected_corners": 10.5
+        "xg": 3.19,
+        "expected_corners": 9.1
       }
     }
   ],
+  "corner": [],
   "hot": []
 }
