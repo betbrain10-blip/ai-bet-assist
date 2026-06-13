@@ -1,5 +1,5 @@
 {
-  "updated_at": "13/06 08:36",
+  "updated_at": "13/06 11:13",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,47 +7,13 @@
       "away": "Switzerland",
       "kickoff": "13/06 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 2.63,
-        "expected_corners": 9.0
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Qatar",
-      "away": "Switzerland",
-      "kickoff": "13/06 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 2.63,
-        "expected_corners": 9.0
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Qatar",
-      "away": "Switzerland",
-      "kickoff": "13/06 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 2.63,
-        "expected_corners": 9.0
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.64,
+        "cards_away": 0.53,
+        "dnb_home": 0.62,
+        "xg": 2.97,
+        "expected_corners": 10.3
       }
     },
     {
@@ -56,13 +22,31 @@
       "away": "Morocco",
       "kickoff": "13/06 22:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.37,
-        "expected_corners": 10.8
+        "over25": 0.63,
+        "corners95": 0.6,
+        "cards_home": 0.61,
+        "cards_away": 0.54,
+        "dnb_home": 0.7,
+        "xg": 2.93,
+        "expected_corners": 9.2
+      }
+    }
+  ],
+  "corner": [],
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Brazil",
+      "away": "Morocco",
+      "kickoff": "13/06 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.6,
+        "cards_home": 0.61,
+        "cards_away": 0.54,
+        "dnb_home": 0.7,
+        "xg": 2.93,
+        "expected_corners": 9.2
       }
     }
   ]
