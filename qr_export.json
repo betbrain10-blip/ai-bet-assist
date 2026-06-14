@@ -1,6 +1,83 @@
 {
-  "updated_at": "13/06 23:03",
-  "value": [],
-  "corner": [],
+  "updated_at": "14/06 01:42",
+  "value": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Australia",
+      "away": "Turkey",
+      "kickoff": "14/06 04:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.58,
+        "cards_home": 0.6,
+        "cards_away": 0.65,
+        "dnb_home": 0.63,
+        "xg": 2.24,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "kickoff": "14/06 23:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.5,
+        "cards_away": 0.67,
+        "dnb_home": 0.62,
+        "xg": 2.74,
+        "expected_corners": 12.4
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Germany",
+      "away": "Curaçao",
+      "kickoff": "14/06 17:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.68,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.57,
+        "xg": 2.49,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Netherlands",
+      "away": "Japan",
+      "kickoff": "14/06 20:00",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.55,
+        "dnb_home": 0.68,
+        "xg": 2.98,
+        "expected_corners": 10.7
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Ivory Coast",
+      "away": "Ecuador",
+      "kickoff": "14/06 23:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.5,
+        "cards_away": 0.67,
+        "dnb_home": 0.62,
+        "xg": 2.74,
+        "expected_corners": 12.4
+      }
+    }
+  ],
   "hot": []
 }
