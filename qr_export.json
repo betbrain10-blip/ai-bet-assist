@@ -1,22 +1,6 @@
 {
-  "updated_at": "15/06 20:37",
+  "updated_at": "15/06 23:02",
   "value": [],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Saudi Arabia",
-      "away": "Uruguay",
-      "kickoff": "15/06 22:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.56,
-        "dnb_home": 0.59,
-        "xg": 3.21,
-        "expected_corners": 11.5
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
