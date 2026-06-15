@@ -1,51 +1,20 @@
 {
-  "updated_at": "15/06 12:12",
-  "value": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Spain",
-      "away": "Cape Verde Islands",
-      "kickoff": "15/06 16:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "FIFA World Cup",
-      "home": "Saudi Arabia",
-      "away": "Uruguay",
-      "kickoff": "15/06 22:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.52,
-        "cards_away": 0.58,
-        "dnb_home": 0.67,
-        "xg": 3.37,
-        "expected_corners": 12.0
-      }
-    }
-  ],
+  "updated_at": "15/06 17:29",
+  "value": [],
   "corner": [
     {
       "league": "FIFA World Cup",
-      "home": "Spain",
-      "away": "Cape Verde Islands",
-      "kickoff": "15/06 16:00",
+      "home": "Belgium",
+      "away": "Egypt",
+      "kickoff": "15/06 19:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 10.5
+        "over25": 0.57,
+        "corners95": 0.65,
+        "cards_home": 0.67,
+        "cards_away": 0.6,
+        "dnb_home": 0.6,
+        "xg": 2.48,
+        "expected_corners": 11.4
       }
     },
     {
@@ -54,30 +23,30 @@
       "away": "Uruguay",
       "kickoff": "15/06 22:00",
       "markets": {
-        "over25": 0.66,
+        "over25": 0.55,
         "corners95": 0.68,
-        "cards_home": 0.52,
-        "cards_away": 0.58,
-        "dnb_home": 0.67,
-        "xg": 3.37,
-        "expected_corners": 12.0
+        "cards_home": 0.61,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.2,
+        "expected_corners": 9.4
       }
     }
   ],
   "hot": [
     {
       "league": "FIFA World Cup",
-      "home": "Spain",
-      "away": "Cape Verde Islands",
-      "kickoff": "15/06 16:00",
+      "home": "Saudi Arabia",
+      "away": "Uruguay",
+      "kickoff": "15/06 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 10.5
+        "over25": 0.55,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.2,
+        "expected_corners": 9.4
       }
     }
   ]
