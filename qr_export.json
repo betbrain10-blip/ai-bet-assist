@@ -1,19 +1,19 @@
 {
-  "updated_at": "16/06 08:25",
+  "updated_at": "16/06 13:11",
   "value": [
     {
       "league": "FIFA World Cup",
-      "home": "France",
-      "away": "Senegal",
-      "kickoff": "16/06 19:00",
+      "home": "Iraq",
+      "away": "Norway",
+      "kickoff": "16/06 22:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.69,
-        "cards_home": 0.5,
-        "cards_away": 0.64,
-        "dnb_home": 0.61,
-        "xg": 2.53,
-        "expected_corners": 12.4
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.51,
+        "dnb_home": 0.65,
+        "xg": 2.44,
+        "expected_corners": 9.1
       }
     }
   ],
@@ -24,13 +24,13 @@
       "away": "Senegal",
       "kickoff": "16/06 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.69,
-        "cards_home": 0.5,
-        "cards_away": 0.64,
-        "dnb_home": 0.61,
-        "xg": 2.53,
-        "expected_corners": 12.4
+        "over25": 0.57,
+        "corners95": 0.65,
+        "cards_home": 0.67,
+        "cards_away": 0.59,
+        "dnb_home": 0.57,
+        "xg": 3.28,
+        "expected_corners": 10.0
       }
     },
     {
@@ -39,13 +39,13 @@
       "away": "Norway",
       "kickoff": "16/06 22:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.62,
-        "cards_home": 0.5,
-        "cards_away": 0.64,
-        "dnb_home": 0.6,
-        "xg": 2.52,
-        "expected_corners": 10.2
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.51,
+        "dnb_home": 0.65,
+        "xg": 2.44,
+        "expected_corners": 9.1
       }
     }
   ],
