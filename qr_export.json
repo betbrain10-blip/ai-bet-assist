@@ -1,98 +1,37 @@
 {
-  "updated_at": "17/06 16:10",
+  "updated_at": "17/06 18:40",
   "value": [
     {
       "league": "FIFA World Cup",
-      "home": "Portugal",
-      "away": "Congo DR",
-      "kickoff": "17/06 17:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.7,
-        "xg": 2.82,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "FIFA World Cup",
       "home": "England",
       "away": "Croatia",
       "kickoff": "17/06 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.69,
-        "xg": 2.97,
-        "expected_corners": 12.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Portugal",
-      "away": "Congo DR",
-      "kickoff": "17/06 17:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.64,
+        "cards_away": 0.64,
         "dnb_home": 0.7,
-        "xg": 2.82,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "FIFA World Cup",
-      "home": "England",
-      "away": "Croatia",
-      "kickoff": "17/06 20:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.69,
-        "xg": 2.97,
-        "expected_corners": 12.8
+        "xg": 2.24,
+        "expected_corners": 12.7
       }
     }
   ],
+  "corner": [],
   "hot": [
     {
       "league": "FIFA World Cup",
-      "home": "Portugal",
-      "away": "Congo DR",
-      "kickoff": "17/06 17:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.7,
-        "xg": 2.82,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "FIFA World Cup",
       "home": "England",
       "away": "Croatia",
       "kickoff": "17/06 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.62,
-        "dnb_home": 0.69,
-        "xg": 2.97,
-        "expected_corners": 12.8
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.64,
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 2.24,
+        "expected_corners": 12.7
       }
     },
     {
@@ -101,13 +40,13 @@
       "away": "Panama",
       "kickoff": "17/06 23:00",
       "markets": {
-        "over25": 0.59,
+        "over25": 0.56,
         "corners95": 0.55,
-        "cards_home": 0.65,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.63,
-        "expected_corners": 12.2
+        "cards_home": 0.61,
+        "cards_away": 0.65,
+        "dnb_home": 0.7,
+        "xg": 3.0,
+        "expected_corners": 11.8
       }
     }
   ]
