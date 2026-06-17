@@ -1,22 +1,6 @@
 {
-  "updated_at": "17/06 21:05",
+  "updated_at": "17/06 22:56",
   "value": [],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Ghana",
-      "away": "Panama",
-      "kickoff": "17/06 23:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.5,
-        "cards_away": 0.52,
-        "dnb_home": 0.62,
-        "xg": 2.93,
-        "expected_corners": 11.9
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
