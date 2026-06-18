@@ -1,38 +1,6 @@
 {
-  "updated_at": "18/06 19:27",
-  "value": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Switzerland",
-      "away": "Bosnia-Herzegovina",
-      "kickoff": "18/06 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.55,
-        "dnb_home": 0.68,
-        "xg": 2.6,
-        "expected_corners": 10.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Switzerland",
-      "away": "Bosnia-Herzegovina",
-      "kickoff": "18/06 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.55,
-        "dnb_home": 0.68,
-        "xg": 2.6,
-        "expected_corners": 10.4
-      }
-    }
-  ],
+  "updated_at": "18/06 21:33",
+  "value": [],
+  "corner": [],
   "hot": []
 }
