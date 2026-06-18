@@ -1,22 +1,6 @@
 {
-  "updated_at": "18/06 09:53",
-  "value": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Switzerland",
-      "away": "Bosnia-Herzegovina",
-      "kickoff": "18/06 19:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.54,
-        "dnb_home": 0.66,
-        "xg": 2.82,
-        "expected_corners": 12.7
-      }
-    }
-  ],
+  "updated_at": "18/06 12:51",
+  "value": [],
   "corner": [
     {
       "league": "FIFA World Cup",
@@ -24,28 +8,13 @@
       "away": "South Africa",
       "kickoff": "18/06 16:00",
       "markets": {
-        "over25": 0.6,
+        "over25": 0.59,
         "corners95": 0.67,
-        "cards_home": 0.63,
-        "cards_away": 0.58,
-        "dnb_home": 0.55,
-        "xg": 3.22,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "FIFA World Cup",
-      "home": "Switzerland",
-      "away": "Bosnia-Herzegovina",
-      "kickoff": "18/06 19:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.54,
-        "dnb_home": 0.66,
-        "xg": 2.82,
-        "expected_corners": 12.7
+        "cards_home": 0.58,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 3.28,
+        "expected_corners": 10.8
       }
     },
     {
@@ -54,15 +23,46 @@
       "away": "Qatar",
       "kickoff": "18/06 22:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.56,
-        "dnb_home": 0.61,
-        "xg": 2.24,
-        "expected_corners": 12.2
+        "over25": 0.55,
+        "corners95": 0.65,
+        "cards_home": 0.66,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.95,
+        "expected_corners": 10.7
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Czechia",
+      "away": "South Africa",
+      "kickoff": "18/06 16:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 3.28,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Canada",
+      "away": "Qatar",
+      "kickoff": "18/06 22:00",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.65,
+        "cards_home": 0.66,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.95,
+        "expected_corners": 10.7
+      }
+    }
+  ]
 }
