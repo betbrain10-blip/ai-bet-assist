@@ -1,6 +1,69 @@
 {
-  "updated_at": "18/06 23:45",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "19/06 04:16",
+  "value": [
+    {
+      "league": "FIFA World Cup",
+      "home": "United States",
+      "away": "Australia",
+      "kickoff": "19/06 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.55,
+        "dnb_home": 0.75,
+        "xg": 2.14,
+        "expected_corners": 9.2
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "FIFA World Cup",
+      "home": "United States",
+      "away": "Australia",
+      "kickoff": "19/06 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.55,
+        "dnb_home": 0.75,
+        "xg": 2.14,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Scotland",
+      "away": "Morocco",
+      "kickoff": "19/06 22:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.51,
+        "dnb_home": 0.56,
+        "xg": 3.09,
+        "expected_corners": 10.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "United States",
+      "away": "Australia",
+      "kickoff": "19/06 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.55,
+        "dnb_home": 0.75,
+        "xg": 2.14,
+        "expected_corners": 9.2
+      }
+    }
+  ]
 }
