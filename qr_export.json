@@ -1,38 +1,6 @@
 {
-  "updated_at": "19/06 21:43",
-  "value": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Scotland",
-      "away": "Morocco",
-      "kickoff": "19/06 22:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.7,
-        "cards_home": 0.63,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 2.97,
-        "expected_corners": 9.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Scotland",
-      "away": "Morocco",
-      "kickoff": "19/06 22:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.7,
-        "cards_home": 0.63,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 2.97,
-        "expected_corners": 9.6
-      }
-    }
-  ],
+  "updated_at": "19/06 22:56",
+  "value": [],
+  "corner": [],
   "hot": []
 }
