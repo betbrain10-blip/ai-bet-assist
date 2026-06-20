@@ -1,6 +1,69 @@
 {
-  "updated_at": "19/06 22:56",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "20/06 00:13",
+  "value": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "kickoff": "20/06 17:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.64,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.13,
+        "expected_corners": 11.5
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Brazil",
+      "away": "Haiti",
+      "kickoff": "20/06 00:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.62,
+        "cards_home": 0.53,
+        "cards_away": 0.61,
+        "dnb_home": 0.58,
+        "xg": 2.11,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "kickoff": "20/06 17:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.64,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.13,
+        "expected_corners": 11.5
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Netherlands",
+      "away": "Sweden",
+      "kickoff": "20/06 17:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.64,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.13,
+        "expected_corners": 11.5
+      }
+    }
+  ]
 }
