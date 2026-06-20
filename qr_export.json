@@ -1,5 +1,5 @@
 {
-  "updated_at": "20/06 00:13",
+  "updated_at": "20/06 04:50",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,63 +7,47 @@
       "away": "Sweden",
       "kickoff": "20/06 17:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.63,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.13,
-        "expected_corners": 11.5
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.51,
+        "dnb_home": 0.56,
+        "xg": 3.07,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Germany",
+      "away": "Ivory Coast",
+      "kickoff": "20/06 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.59,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.63,
+        "xg": 2.91,
+        "expected_corners": 9.8
       }
     }
   ],
   "corner": [
     {
       "league": "FIFA World Cup",
-      "home": "Brazil",
-      "away": "Haiti",
-      "kickoff": "20/06 00:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.61,
-        "dnb_home": 0.58,
-        "xg": 2.11,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "FIFA World Cup",
       "home": "Netherlands",
       "away": "Sweden",
       "kickoff": "20/06 17:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.63,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.13,
-        "expected_corners": 11.5
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.51,
+        "dnb_home": 0.56,
+        "xg": 3.07,
+        "expected_corners": 10.1
       }
     }
   ],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Netherlands",
-      "away": "Sweden",
-      "kickoff": "20/06 17:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.63,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.13,
-        "expected_corners": 11.5
-      }
-    }
-  ]
+  "hot": []
 }
