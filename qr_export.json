@@ -1,22 +1,6 @@
 {
-  "updated_at": "20/06 20:03",
-  "value": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Germany",
-      "away": "Ivory Coast",
-      "kickoff": "20/06 20:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.57,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.59,
-        "xg": 2.13,
-        "expected_corners": 10.8
-      }
-    }
-  ],
+  "updated_at": "20/06 21:46",
+  "value": [],
   "corner": [],
   "hot": []
 }
