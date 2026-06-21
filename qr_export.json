@@ -1,5 +1,5 @@
 {
-  "updated_at": "21/06 13:04",
+  "updated_at": "21/06 15:25",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,28 +7,28 @@
       "away": "Saudi Arabia",
       "kickoff": "21/06 16:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
+        "over25": 0.7,
+        "corners95": 0.66,
         "cards_home": 0.52,
-        "cards_away": 0.64,
-        "dnb_home": 0.6,
-        "xg": 2.6,
-        "expected_corners": 12.5
+        "cards_away": 0.63,
+        "dnb_home": 0.58,
+        "xg": 3.38,
+        "expected_corners": 10.6
       }
     },
     {
       "league": "FIFA World Cup",
-      "home": "Uruguay",
-      "away": "Cape Verde Islands",
-      "kickoff": "21/06 22:00",
+      "home": "Belgium",
+      "away": "Iran",
+      "kickoff": "21/06 19:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.72,
-        "expected_corners": 12.0
+        "over25": 0.66,
+        "corners95": 0.6,
+        "cards_home": 0.58,
+        "cards_away": 0.53,
+        "dnb_home": 0.69,
+        "xg": 2.23,
+        "expected_corners": 12.5
       }
     }
   ],
@@ -39,30 +39,31 @@
       "away": "Saudi Arabia",
       "kickoff": "21/06 16:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
+        "over25": 0.7,
+        "corners95": 0.66,
         "cards_home": 0.52,
-        "cards_away": 0.64,
-        "dnb_home": 0.6,
-        "xg": 2.6,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "FIFA World Cup",
-      "home": "Uruguay",
-      "away": "Cape Verde Islands",
-      "kickoff": "21/06 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.72,
-        "expected_corners": 12.0
+        "cards_away": 0.63,
+        "dnb_home": 0.58,
+        "xg": 3.38,
+        "expected_corners": 10.6
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Belgium",
+      "away": "Iran",
+      "kickoff": "21/06 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.6,
+        "cards_home": 0.58,
+        "cards_away": 0.53,
+        "dnb_home": 0.69,
+        "xg": 2.23,
+        "expected_corners": 12.5
+      }
+    }
+  ]
 }
