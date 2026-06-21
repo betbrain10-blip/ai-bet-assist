@@ -1,6 +1,22 @@
 {
-  "updated_at": "21/06 18:58",
+  "updated_at": "21/06 20:43",
   "value": [],
-  "corner": [],
+  "corner": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Uruguay",
+      "away": "Cape Verde Islands",
+      "kickoff": "21/06 22:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.7,
+        "cards_home": 0.67,
+        "cards_away": 0.65,
+        "dnb_home": 0.56,
+        "xg": 2.72,
+        "expected_corners": 12.7
+      }
+    }
+  ],
   "hot": []
 }
