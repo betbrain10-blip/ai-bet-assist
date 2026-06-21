@@ -1,6 +1,99 @@
 {
-  "updated_at": "20/06 23:08",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "21/06 01:57",
+  "value": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Uruguay",
+      "away": "Cape Verde Islands",
+      "kickoff": "21/06 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.66,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 2.55,
+        "expected_corners": 11.4
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Tunisia",
+      "away": "Japan",
+      "kickoff": "21/06 04:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.64,
+        "cards_home": 0.55,
+        "cards_away": 0.61,
+        "dnb_home": 0.57,
+        "xg": 3.18,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Belgium",
+      "away": "Iran",
+      "kickoff": "21/06 19:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.58,
+        "xg": 3.16,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Uruguay",
+      "away": "Cape Verde Islands",
+      "kickoff": "21/06 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.66,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 2.55,
+        "expected_corners": 11.4
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Spain",
+      "away": "Saudi Arabia",
+      "kickoff": "21/06 16:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.58,
+        "cards_home": 0.6,
+        "cards_away": 0.51,
+        "dnb_home": 0.7,
+        "xg": 3.34,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Uruguay",
+      "away": "Cape Verde Islands",
+      "kickoff": "21/06 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.66,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 2.55,
+        "expected_corners": 11.4
+      }
+    }
+  ]
 }
