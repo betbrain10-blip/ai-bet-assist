@@ -1,6 +1,38 @@
 {
-  "updated_at": "21/06 23:50",
-  "value": [],
-  "corner": [],
+  "updated_at": "22/06 04:12",
+  "value": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Argentina",
+      "away": "Austria",
+      "kickoff": "22/06 17:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.58,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.61,
+        "xg": 2.65,
+        "expected_corners": 9.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "FIFA World Cup",
+      "home": "France",
+      "away": "Iraq",
+      "kickoff": "22/06 21:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.55,
+        "cards_away": 0.59,
+        "dnb_home": 0.59,
+        "xg": 2.9,
+        "expected_corners": 12.5
+      }
+    }
+  ],
   "hot": []
 }
