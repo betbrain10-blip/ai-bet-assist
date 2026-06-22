@@ -1,22 +1,6 @@
 {
-  "updated_at": "22/06 19:26",
+  "updated_at": "22/06 21:37",
   "value": [],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "France",
-      "away": "Iraq",
-      "kickoff": "22/06 21:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.53,
-        "dnb_home": 0.6,
-        "xg": 3.38,
-        "expected_corners": 10.4
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
