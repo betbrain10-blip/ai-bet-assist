@@ -1,19 +1,19 @@
 {
-  "updated_at": "23/06 15:47",
+  "updated_at": "23/06 17:54",
   "value": [
     {
       "league": "FIFA World Cup",
-      "home": "Portugal",
-      "away": "Uzbekistan",
-      "kickoff": "23/06 17:00",
+      "home": "England",
+      "away": "Ghana",
+      "kickoff": "23/06 20:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.6,
-        "dnb_home": 0.69,
-        "xg": 2.43,
-        "expected_corners": 12.1
+        "over25": 0.71,
+        "corners95": 0.58,
+        "cards_home": 0.55,
+        "cards_away": 0.53,
+        "dnb_home": 0.57,
+        "xg": 3.14,
+        "expected_corners": 9.9
       }
     },
     {
@@ -22,63 +22,32 @@
       "away": "Croatia",
       "kickoff": "23/06 23:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.57,
-        "cards_home": 0.68,
-        "cards_away": 0.53,
-        "dnb_home": 0.66,
-        "xg": 2.44,
-        "expected_corners": 8.9
+        "over25": 0.7,
+        "corners95": 0.69,
+        "cards_home": 0.63,
+        "cards_away": 0.65,
+        "dnb_home": 0.68,
+        "xg": 3.34,
+        "expected_corners": 10.7
       }
     }
   ],
   "corner": [
     {
       "league": "FIFA World Cup",
-      "home": "Portugal",
-      "away": "Uzbekistan",
-      "kickoff": "23/06 17:00",
+      "home": "Panama",
+      "away": "Croatia",
+      "kickoff": "23/06 23:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.7,
         "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.6,
-        "dnb_home": 0.69,
-        "xg": 2.43,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "FIFA World Cup",
-      "home": "England",
-      "away": "Ghana",
-      "kickoff": "23/06 20:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.51,
-        "dnb_home": 0.64,
-        "xg": 2.27,
-        "expected_corners": 8.8
+        "cards_home": 0.63,
+        "cards_away": 0.65,
+        "dnb_home": 0.68,
+        "xg": 3.34,
+        "expected_corners": 10.7
       }
     }
   ],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Portugal",
-      "away": "Uzbekistan",
-      "kickoff": "23/06 17:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.6,
-        "dnb_home": 0.69,
-        "xg": 2.43,
-        "expected_corners": 12.1
-      }
-    }
-  ]
+  "hot": []
 }
