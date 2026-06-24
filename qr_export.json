@@ -1,35 +1,19 @@
 {
-  "updated_at": "24/06 01:24",
-  "value": [],
-  "corner": [
+  "updated_at": "24/06 05:36",
+  "value": [
     {
       "league": "FIFA World Cup",
-      "home": "Colombia",
-      "away": "Congo DR",
-      "kickoff": "24/06 02:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.59,
-        "xg": 3.05,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "FIFA World Cup",
-      "home": "Switzerland",
-      "away": "Canada",
+      "home": "Bosnia-Herzegovina",
+      "away": "Qatar",
       "kickoff": "24/06 19:00",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.5,
-        "dnb_home": 0.6,
-        "xg": 3.37,
-        "expected_corners": 11.3
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.61,
+        "cards_away": 0.53,
+        "dnb_home": 0.72,
+        "xg": 2.27,
+        "expected_corners": 9.7
       }
     },
     {
@@ -38,13 +22,13 @@
       "away": "Brazil",
       "kickoff": "24/06 22:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.59,
-        "dnb_home": 0.59,
-        "xg": 2.69,
-        "expected_corners": 11.5
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.52,
+        "dnb_home": 0.67,
+        "xg": 3.38,
+        "expected_corners": 9.0
       }
     },
     {
@@ -53,30 +37,77 @@
       "away": "Haiti",
       "kickoff": "24/06 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
-        "cards_home": 0.5,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.69,
-        "expected_corners": 9.4
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.66,
+        "dnb_home": 0.64,
+        "xg": 2.77,
+        "expected_corners": 9.0
       }
     }
   ],
-  "hot": [
+  "corner": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Bosnia-Herzegovina",
+      "away": "Qatar",
+      "kickoff": "24/06 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.61,
+        "cards_away": 0.53,
+        "dnb_home": 0.72,
+        "xg": 2.27,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Scotland",
+      "away": "Brazil",
+      "kickoff": "24/06 22:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.52,
+        "dnb_home": 0.67,
+        "xg": 3.38,
+        "expected_corners": 9.0
+      }
+    },
     {
       "league": "FIFA World Cup",
       "home": "Morocco",
       "away": "Haiti",
       "kickoff": "24/06 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
-        "cards_home": 0.5,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 2.69,
-        "expected_corners": 9.4
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.66,
+        "dnb_home": 0.64,
+        "xg": 2.77,
+        "expected_corners": 9.0
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Bosnia-Herzegovina",
+      "away": "Qatar",
+      "kickoff": "24/06 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.61,
+        "cards_away": 0.53,
+        "dnb_home": 0.72,
+        "xg": 2.27,
+        "expected_corners": 9.7
       }
     }
   ]
