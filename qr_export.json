@@ -1,5 +1,5 @@
 {
-  "updated_at": "25/06 11:14",
+  "updated_at": "25/06 13:35",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,28 +7,28 @@
       "away": "Ivory Coast",
       "kickoff": "25/06 20:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.66,
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.54,
         "cards_away": 0.6,
-        "dnb_home": 0.62,
-        "xg": 2.35,
-        "expected_corners": 11.9
+        "dnb_home": 0.66,
+        "xg": 2.2,
+        "expected_corners": 8.8
       }
     },
     {
       "league": "FIFA World Cup",
-      "home": "Japan",
-      "away": "Sweden",
+      "home": "Tunisia",
+      "away": "Netherlands",
       "kickoff": "25/06 23:00",
       "markets": {
         "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.56,
-        "xg": 2.25,
-        "expected_corners": 11.9
+        "corners95": 0.59,
+        "cards_home": 0.59,
+        "cards_away": 0.6,
+        "dnb_home": 0.58,
+        "xg": 3.06,
+        "expected_corners": 10.1
       }
     }
   ],
@@ -39,30 +39,46 @@
       "away": "Ivory Coast",
       "kickoff": "25/06 20:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.61,
-        "cards_home": 0.66,
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.54,
         "cards_away": 0.6,
-        "dnb_home": 0.62,
-        "xg": 2.35,
-        "expected_corners": 11.9
+        "dnb_home": 0.66,
+        "xg": 2.2,
+        "expected_corners": 8.8
       }
     },
+    {
+      "league": "FIFA World Cup",
+      "home": "Ecuador",
+      "away": "Germany",
+      "kickoff": "25/06 20:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.65,
+        "cards_away": 0.65,
+        "dnb_home": 0.63,
+        "xg": 3.14,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "hot": [
     {
       "league": "FIFA World Cup",
       "home": "Japan",
       "away": "Sweden",
       "kickoff": "25/06 23:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.56,
-        "xg": 2.25,
-        "expected_corners": 11.9
+        "over25": 0.55,
+        "corners95": 0.56,
+        "cards_home": 0.59,
+        "cards_away": 0.54,
+        "dnb_home": 0.72,
+        "xg": 2.47,
+        "expected_corners": 11.5
       }
     }
-  ],
-  "hot": []
+  ]
 }
