@@ -1,22 +1,6 @@
 {
-  "updated_at": "28/06 17:43",
+  "updated_at": "28/06 19:18",
   "value": [],
   "corner": [],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "South Africa",
-      "away": "Canada",
-      "kickoff": "28/06 19:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.58,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.7,
-        "xg": 2.47,
-        "expected_corners": 9.7
-      }
-    }
-  ]
+  "hot": []
 }
