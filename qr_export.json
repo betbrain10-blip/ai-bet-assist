@@ -1,38 +1,22 @@
 {
-  "updated_at": "28/06 16:10",
-  "value": [
+  "updated_at": "28/06 17:43",
+  "value": [],
+  "corner": [],
+  "hot": [
     {
       "league": "FIFA World Cup",
       "home": "South Africa",
       "away": "Canada",
       "kickoff": "28/06 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.56,
-        "xg": 2.29,
-        "expected_corners": 12.3
+        "over25": 0.56,
+        "corners95": 0.58,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.7,
+        "xg": 2.47,
+        "expected_corners": 9.7
       }
     }
-  ],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "South Africa",
-      "away": "Canada",
-      "kickoff": "28/06 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.56,
-        "xg": 2.29,
-        "expected_corners": 12.3
-      }
-    }
-  ],
-  "hot": []
+  ]
 }
