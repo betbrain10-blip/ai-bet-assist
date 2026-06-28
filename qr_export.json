@@ -1,5 +1,5 @@
 {
-  "updated_at": "28/06 11:06",
+  "updated_at": "28/06 12:54",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,13 +7,13 @@
       "away": "Canada",
       "kickoff": "28/06 19:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.56,
-        "cards_home": 0.65,
-        "cards_away": 0.6,
-        "dnb_home": 0.68,
-        "xg": 2.54,
-        "expected_corners": 10.4
+        "over25": 0.72,
+        "corners95": 0.6,
+        "cards_home": 0.56,
+        "cards_away": 0.54,
+        "dnb_home": 0.6,
+        "xg": 2.98,
+        "expected_corners": 12.2
       }
     }
   ],
