@@ -1,6 +1,22 @@
 {
-  "updated_at": "29/06 13:11",
-  "value": [],
+  "updated_at": "29/06 16:44",
+  "value": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Germany",
+      "away": "Paraguay",
+      "kickoff": "29/06 20:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.6,
+        "cards_home": 0.67,
+        "cards_away": 0.63,
+        "dnb_home": 0.58,
+        "xg": 2.76,
+        "expected_corners": 9.8
+      }
+    }
+  ],
   "corner": [
     {
       "league": "FIFA World Cup",
@@ -8,13 +24,13 @@
       "away": "Japan",
       "kickoff": "29/06 17:00",
       "markets": {
-        "over25": 0.62,
+        "over25": 0.57,
         "corners95": 0.61,
         "cards_home": 0.5,
-        "cards_away": 0.56,
-        "dnb_home": 0.74,
-        "xg": 3.38,
-        "expected_corners": 9.5
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 3.15,
+        "expected_corners": 9.0
       }
     }
   ],
@@ -25,28 +41,13 @@
       "away": "Japan",
       "kickoff": "29/06 17:00",
       "markets": {
-        "over25": 0.62,
+        "over25": 0.57,
         "corners95": 0.61,
         "cards_home": 0.5,
-        "cards_away": 0.56,
-        "dnb_home": 0.74,
-        "xg": 3.38,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "FIFA World Cup",
-      "home": "Germany",
-      "away": "Paraguay",
-      "kickoff": "29/06 20:30",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.58,
-        "cards_home": 0.51,
-        "cards_away": 0.6,
+        "cards_away": 0.54,
         "dnb_home": 0.69,
-        "xg": 2.66,
-        "expected_corners": 11.1
+        "xg": 3.15,
+        "expected_corners": 9.0
       }
     }
   ]
