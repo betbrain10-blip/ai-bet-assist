@@ -1,37 +1,19 @@
 {
-  "updated_at": "30/06 04:44",
-  "value": [],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "France",
-      "away": "Sweden",
-      "kickoff": "30/06 21:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 3.26,
-        "expected_corners": 9.2
-      }
-    }
-  ],
-  "hot": [
+  "updated_at": "30/06 08:29",
+  "value": [
     {
       "league": "FIFA World Cup",
       "home": "Ivory Coast",
       "away": "Norway",
       "kickoff": "30/06 17:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.58,
-        "cards_home": 0.65,
-        "cards_away": 0.56,
-        "dnb_home": 0.69,
-        "xg": 3.3,
-        "expected_corners": 11.5
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.55,
+        "cards_away": 0.55,
+        "dnb_home": 0.62,
+        "xg": 2.85,
+        "expected_corners": 8.6
       }
     },
     {
@@ -40,13 +22,62 @@
       "away": "Sweden",
       "kickoff": "30/06 21:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 3.26,
-        "expected_corners": 9.2
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.69,
+        "xg": 2.66,
+        "expected_corners": 9.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Ivory Coast",
+      "away": "Norway",
+      "kickoff": "30/06 17:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.55,
+        "cards_away": 0.55,
+        "dnb_home": 0.62,
+        "xg": 2.85,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "France",
+      "away": "Sweden",
+      "kickoff": "30/06 21:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.69,
+        "xg": 2.66,
+        "expected_corners": 9.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "France",
+      "away": "Sweden",
+      "kickoff": "30/06 21:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.69,
+        "xg": 2.66,
+        "expected_corners": 9.6
       }
     }
   ]
