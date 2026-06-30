@@ -1,53 +1,52 @@
 {
-  "updated_at": "30/06 00:03",
-  "value": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Netherlands",
-      "away": "Morocco",
-      "kickoff": "30/06 01:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 2.85,
-        "expected_corners": 9.1
-      }
-    }
-  ],
+  "updated_at": "30/06 04:44",
+  "value": [],
   "corner": [
     {
       "league": "FIFA World Cup",
-      "home": "Netherlands",
-      "away": "Morocco",
-      "kickoff": "30/06 01:00",
+      "home": "France",
+      "away": "Sweden",
+      "kickoff": "30/06 21:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 2.85,
-        "expected_corners": 9.1
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 3.26,
+        "expected_corners": 9.2
       }
     }
   ],
   "hot": [
     {
       "league": "FIFA World Cup",
-      "home": "Netherlands",
-      "away": "Morocco",
-      "kickoff": "30/06 01:00",
+      "home": "Ivory Coast",
+      "away": "Norway",
+      "kickoff": "30/06 17:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.57,
+        "over25": 0.59,
+        "corners95": 0.58,
+        "cards_home": 0.65,
+        "cards_away": 0.56,
         "dnb_home": 0.69,
-        "xg": 2.85,
-        "expected_corners": 9.1
+        "xg": 3.3,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "France",
+      "away": "Sweden",
+      "kickoff": "30/06 21:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 3.26,
+        "expected_corners": 9.2
       }
     }
   ]
