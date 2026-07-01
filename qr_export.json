@@ -1,37 +1,6 @@
 {
-  "updated_at": "01/07 06:26",
-  "value": [
-    {
-      "league": "FIFA World Cup",
-      "home": "England",
-      "away": "Congo DR",
-      "kickoff": "01/07 16:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.59,
-        "cards_home": 0.6,
-        "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 3.35,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "FIFA World Cup",
-      "home": "Belgium",
-      "away": "Senegal",
-      "kickoff": "01/07 20:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.72,
-        "expected_corners": 11.5
-      }
-    }
-  ],
+  "updated_at": "01/07 10:29",
+  "value": [],
   "corner": [
     {
       "league": "FIFA World Cup",
@@ -39,12 +8,12 @@
       "away": "Senegal",
       "kickoff": "01/07 20:00",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.58,
         "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.72,
+        "cards_home": 0.63,
+        "cards_away": 0.58,
+        "dnb_home": 0.74,
+        "xg": 3.39,
         "expected_corners": 11.5
       }
     }
@@ -52,31 +21,16 @@
   "hot": [
     {
       "league": "FIFA World Cup",
-      "home": "England",
-      "away": "Congo DR",
-      "kickoff": "01/07 16:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.59,
-        "cards_home": 0.6,
-        "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 3.35,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "FIFA World Cup",
       "home": "Belgium",
       "away": "Senegal",
       "kickoff": "01/07 20:00",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.58,
         "corners95": 0.69,
-        "cards_home": 0.53,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.72,
+        "cards_home": 0.63,
+        "cards_away": 0.58,
+        "dnb_home": 0.74,
+        "xg": 3.39,
         "expected_corners": 11.5
       }
     }
