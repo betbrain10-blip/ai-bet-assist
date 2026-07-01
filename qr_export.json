@@ -1,5 +1,5 @@
 {
-  "updated_at": "01/07 16:05",
+  "updated_at": "01/07 18:24",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,13 +7,13 @@
       "away": "Senegal",
       "kickoff": "01/07 20:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.52,
-        "dnb_home": 0.74,
-        "xg": 2.64,
-        "expected_corners": 9.0
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.67,
+        "cards_away": 0.56,
+        "dnb_home": 0.65,
+        "xg": 2.58,
+        "expected_corners": 9.5
       }
     }
   ],
@@ -24,31 +24,15 @@
       "away": "Senegal",
       "kickoff": "01/07 20:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.52,
-        "dnb_home": 0.74,
-        "xg": 2.64,
-        "expected_corners": 9.0
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.67,
+        "cards_away": 0.56,
+        "dnb_home": 0.65,
+        "xg": 2.58,
+        "expected_corners": 9.5
       }
     }
   ],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Belgium",
-      "away": "Senegal",
-      "kickoff": "01/07 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.52,
-        "dnb_home": 0.74,
-        "xg": 2.64,
-        "expected_corners": 9.0
-      }
-    }
-  ]
+  "hot": []
 }
