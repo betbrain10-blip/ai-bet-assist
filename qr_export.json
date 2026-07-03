@@ -1,5 +1,5 @@
 {
-  "updated_at": "03/07 20:38",
+  "updated_at": "03/07 22:03",
   "value": [],
   "corner": [
     {
@@ -8,13 +8,13 @@
       "away": "Cape Verde Islands",
       "kickoff": "03/07 22:00",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.67,
-        "cards_home": 0.61,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.11,
-        "expected_corners": 10.9
+        "over25": 0.58,
+        "corners95": 0.63,
+        "cards_home": 0.54,
+        "cards_away": 0.6,
+        "dnb_home": 0.55,
+        "xg": 2.79,
+        "expected_corners": 11.2
       }
     }
   ],
