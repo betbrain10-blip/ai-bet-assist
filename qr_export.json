@@ -1,19 +1,19 @@
 {
-  "updated_at": "03/07 01:09",
+  "updated_at": "03/07 05:25",
   "value": [],
   "corner": [
     {
       "league": "FIFA World Cup",
-      "home": "Switzerland",
-      "away": "Algeria",
-      "kickoff": "03/07 03:00",
+      "home": "Australia",
+      "away": "Egypt",
+      "kickoff": "03/07 18:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.58,
-        "xg": 2.12,
+        "over25": 0.58,
+        "corners95": 0.62,
+        "cards_home": 0.56,
+        "cards_away": 0.58,
+        "dnb_home": 0.75,
+        "xg": 2.42,
         "expected_corners": 12.3
       }
     },
@@ -23,30 +23,30 @@
       "away": "Cape Verde Islands",
       "kickoff": "03/07 22:00",
       "markets": {
-        "over25": 0.55,
+        "over25": 0.61,
         "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.62,
-        "expected_corners": 11.3
+        "cards_home": 0.62,
+        "cards_away": 0.51,
+        "dnb_home": 0.68,
+        "xg": 2.94,
+        "expected_corners": 10.3
       }
     }
   ],
   "hot": [
     {
       "league": "FIFA World Cup",
-      "home": "Argentina",
-      "away": "Cape Verde Islands",
-      "kickoff": "03/07 22:00",
+      "home": "Australia",
+      "away": "Egypt",
+      "kickoff": "03/07 18:00",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.62,
-        "expected_corners": 11.3
+        "over25": 0.58,
+        "corners95": 0.62,
+        "cards_home": 0.56,
+        "cards_away": 0.58,
+        "dnb_home": 0.75,
+        "xg": 2.42,
+        "expected_corners": 12.3
       }
     }
   ]
