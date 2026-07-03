@@ -1,22 +1,6 @@
 {
-  "updated_at": "03/07 22:03",
+  "updated_at": "03/07 23:34",
   "value": [],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Argentina",
-      "away": "Cape Verde Islands",
-      "kickoff": "03/07 22:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.63,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.55,
-        "xg": 2.79,
-        "expected_corners": 11.2
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
