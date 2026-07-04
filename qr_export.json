@@ -1,5 +1,5 @@
 {
-  "updated_at": "04/07 17:33",
+  "updated_at": "04/07 19:11",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,13 +7,13 @@
       "away": "France",
       "kickoff": "04/07 21:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.57,
-        "xg": 2.34,
-        "expected_corners": 8.5
+        "over25": 0.64,
+        "corners95": 0.7,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.6,
+        "xg": 3.06,
+        "expected_corners": 11.6
       }
     }
   ],
@@ -24,13 +24,13 @@
       "away": "France",
       "kickoff": "04/07 21:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.57,
-        "xg": 2.34,
-        "expected_corners": 8.5
+        "over25": 0.64,
+        "corners95": 0.7,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.6,
+        "xg": 3.06,
+        "expected_corners": 11.6
       }
     }
   ],
