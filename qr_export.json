@@ -1,5 +1,5 @@
 {
-  "updated_at": "04/07 12:43",
+  "updated_at": "04/07 14:36",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,13 +7,28 @@
       "away": "Morocco",
       "kickoff": "04/07 17:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.66,
-        "dnb_home": 0.62,
-        "xg": 2.93,
-        "expected_corners": 10.2
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 2.23,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "FIFA World Cup",
+      "home": "Paraguay",
+      "away": "France",
+      "kickoff": "04/07 21:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.59,
+        "cards_home": 0.52,
+        "cards_away": 0.6,
+        "dnb_home": 0.58,
+        "xg": 2.94,
+        "expected_corners": 11.6
       }
     }
   ],
@@ -24,15 +39,31 @@
       "away": "Morocco",
       "kickoff": "04/07 17:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.66,
-        "dnb_home": 0.62,
-        "xg": 2.93,
-        "expected_corners": 10.2
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 2.23,
+        "expected_corners": 12.4
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Canada",
+      "away": "Morocco",
+      "kickoff": "04/07 17:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 2.23,
+        "expected_corners": 12.4
+      }
+    }
+  ]
 }
