@@ -1,6 +1,54 @@
 {
-  "updated_at": "05/07 00:00",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "05/07 04:38",
+  "value": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Brazil",
+      "away": "Norway",
+      "kickoff": "05/07 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.86,
+        "expected_corners": 10.1
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Brazil",
+      "away": "Norway",
+      "kickoff": "05/07 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.86,
+        "expected_corners": 10.1
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Brazil",
+      "away": "Norway",
+      "kickoff": "05/07 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.86,
+        "expected_corners": 10.1
+      }
+    }
+  ]
 }
