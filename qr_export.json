@@ -1,22 +1,6 @@
 {
-  "updated_at": "05/07 19:49",
+  "updated_at": "05/07 20:58",
   "value": [],
   "corner": [],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Brazil",
-      "away": "Norway",
-      "kickoff": "05/07 20:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.72,
-        "xg": 2.25,
-        "expected_corners": 12.4
-      }
-    }
-  ]
+  "hot": []
 }
