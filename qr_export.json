@@ -1,22 +1,6 @@
 {
-  "updated_at": "06/07 12:23",
+  "updated_at": "06/07 15:59",
   "value": [],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Portugal",
-      "away": "Spain",
-      "kickoff": "06/07 19:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.65,
-        "cards_away": 0.68,
-        "dnb_home": 0.6,
-        "xg": 2.96,
-        "expected_corners": 10.1
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
