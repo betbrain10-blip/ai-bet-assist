@@ -1,22 +1,6 @@
 {
-  "updated_at": "07/07 19:53",
+  "updated_at": "07/07 21:23",
   "value": [],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Switzerland",
-      "away": "Colombia",
-      "kickoff": "07/07 20:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.64,
-        "dnb_home": 0.66,
-        "xg": 2.16,
-        "expected_corners": 10.5
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
