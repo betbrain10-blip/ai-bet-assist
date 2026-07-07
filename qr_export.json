@@ -1,38 +1,22 @@
 {
-  "updated_at": "07/07 01:15",
-  "value": [
+  "updated_at": "07/07 05:36",
+  "value": [],
+  "corner": [],
+  "hot": [
     {
       "league": "FIFA World Cup",
       "home": "Argentina",
       "away": "Egypt",
       "kickoff": "07/07 16:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.67,
-        "xg": 2.47,
-        "expected_corners": 10.4
+        "over25": 0.62,
+        "corners95": 0.59,
+        "cards_home": 0.62,
+        "cards_away": 0.6,
+        "dnb_home": 0.73,
+        "xg": 3.08,
+        "expected_corners": 9.5
       }
     }
-  ],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Argentina",
-      "away": "Egypt",
-      "kickoff": "07/07 16:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.67,
-        "xg": 2.47,
-        "expected_corners": 10.4
-      }
-    }
-  ],
-  "hot": []
+  ]
 }
