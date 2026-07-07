@@ -1,5 +1,5 @@
 {
-  "updated_at": "07/07 17:32",
+  "updated_at": "07/07 19:53",
   "value": [],
   "corner": [
     {
@@ -8,31 +8,15 @@
       "away": "Colombia",
       "kickoff": "07/07 20:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 2.48,
-        "expected_corners": 12.4
+        "over25": 0.62,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.66,
+        "xg": 2.16,
+        "expected_corners": 10.5
       }
     }
   ],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Switzerland",
-      "away": "Colombia",
-      "kickoff": "07/07 20:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 2.48,
-        "expected_corners": 12.4
-      }
-    }
-  ]
+  "hot": []
 }
