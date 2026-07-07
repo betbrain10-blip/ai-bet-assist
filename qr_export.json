@@ -1,68 +1,38 @@
 {
-  "updated_at": "07/07 15:25",
-  "value": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Argentina",
-      "away": "Egypt",
-      "kickoff": "07/07 16:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.66,
-        "dnb_home": 0.62,
-        "xg": 2.6,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "FIFA World Cup",
-      "home": "Switzerland",
-      "away": "Colombia",
-      "kickoff": "07/07 20:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.5,
-        "cards_away": 0.67,
-        "dnb_home": 0.57,
-        "xg": 2.86,
-        "expected_corners": 10.4
-      }
-    }
-  ],
+  "updated_at": "07/07 17:32",
+  "value": [],
   "corner": [
     {
       "league": "FIFA World Cup",
-      "home": "Argentina",
-      "away": "Egypt",
-      "kickoff": "07/07 16:00",
+      "home": "Switzerland",
+      "away": "Colombia",
+      "kickoff": "07/07 20:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.66,
-        "dnb_home": 0.62,
-        "xg": 2.6,
-        "expected_corners": 10.6
+        "over25": 0.6,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.62,
+        "dnb_home": 0.7,
+        "xg": 2.48,
+        "expected_corners": 12.4
       }
-    },
+    }
+  ],
+  "hot": [
     {
       "league": "FIFA World Cup",
       "home": "Switzerland",
       "away": "Colombia",
       "kickoff": "07/07 20:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.64,
-        "cards_home": 0.5,
-        "cards_away": 0.67,
-        "dnb_home": 0.57,
-        "xg": 2.86,
-        "expected_corners": 10.4
+        "over25": 0.6,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.62,
+        "dnb_home": 0.7,
+        "xg": 2.48,
+        "expected_corners": 12.4
       }
     }
-  ],
-  "hot": []
+  ]
 }
