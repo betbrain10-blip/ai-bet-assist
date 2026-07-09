@@ -1,38 +1,22 @@
 {
-  "updated_at": "09/07 16:12",
-  "value": [
+  "updated_at": "09/07 18:16",
+  "value": [],
+  "corner": [
     {
       "league": "FIFA World Cup",
       "home": "France",
       "away": "Morocco",
       "kickoff": "09/07 20:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.55,
-        "cards_home": 0.58,
+        "over25": 0.56,
+        "corners95": 0.65,
+        "cards_home": 0.51,
         "cards_away": 0.64,
-        "dnb_home": 0.73,
-        "xg": 2.71,
-        "expected_corners": 12.7
+        "dnb_home": 0.64,
+        "xg": 2.56,
+        "expected_corners": 11.9
       }
     }
   ],
-  "corner": [],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "France",
-      "away": "Morocco",
-      "kickoff": "09/07 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.55,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.73,
-        "xg": 2.71,
-        "expected_corners": 12.7
-      }
-    }
-  ]
+  "hot": []
 }
