@@ -1,22 +1,6 @@
 {
-  "updated_at": "09/07 18:16",
+  "updated_at": "09/07 20:18",
   "value": [],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "France",
-      "away": "Morocco",
-      "kickoff": "09/07 20:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.51,
-        "cards_away": 0.64,
-        "dnb_home": 0.64,
-        "xg": 2.56,
-        "expected_corners": 11.9
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
