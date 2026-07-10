@@ -1,22 +1,6 @@
 {
-  "updated_at": "10/07 15:11",
+  "updated_at": "10/07 17:17",
   "value": [],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Spain",
-      "away": "Belgium",
-      "kickoff": "10/07 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.68,
-        "cards_home": 0.55,
-        "cards_away": 0.55,
-        "dnb_home": 0.58,
-        "xg": 2.81,
-        "expected_corners": 10.9
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
