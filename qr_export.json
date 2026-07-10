@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/07 05:33",
+  "updated_at": "10/07 09:33",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,13 +7,13 @@
       "away": "Belgium",
       "kickoff": "10/07 19:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 2.29,
-        "expected_corners": 9.0
+        "over25": 0.67,
+        "corners95": 0.64,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.72,
+        "xg": 2.44,
+        "expected_corners": 8.5
       }
     }
   ],
@@ -24,15 +24,31 @@
       "away": "Belgium",
       "kickoff": "10/07 19:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 2.29,
-        "expected_corners": 9.0
+        "over25": 0.67,
+        "corners95": 0.64,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.72,
+        "xg": 2.44,
+        "expected_corners": 8.5
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "FIFA World Cup",
+      "home": "Spain",
+      "away": "Belgium",
+      "kickoff": "10/07 19:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.64,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.72,
+        "xg": 2.44,
+        "expected_corners": 8.5
+      }
+    }
+  ]
 }
