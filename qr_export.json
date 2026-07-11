@@ -1,22 +1,22 @@
 {
-  "updated_at": "11/07 04:19",
+  "updated_at": "11/07 06:34",
   "value": [],
-  "corner": [],
-  "hot": [
+  "corner": [
     {
       "league": "FIFA World Cup",
       "home": "Norway",
       "away": "England",
       "kickoff": "11/07 21:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.58,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.69,
-        "xg": 2.86,
-        "expected_corners": 12.3
+        "over25": 0.62,
+        "corners95": 0.7,
+        "cards_home": 0.56,
+        "cards_away": 0.61,
+        "dnb_home": 0.58,
+        "xg": 2.43,
+        "expected_corners": 11.6
       }
     }
-  ]
+  ],
+  "hot": []
 }
