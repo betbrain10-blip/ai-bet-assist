@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/07 14:21",
+  "updated_at": "11/07 15:30",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,13 +7,13 @@
       "away": "England",
       "kickoff": "11/07 21:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 10.5
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.65,
+        "dnb_home": 0.6,
+        "xg": 2.66,
+        "expected_corners": 10.9
       }
     }
   ],
@@ -24,31 +24,15 @@
       "away": "England",
       "kickoff": "11/07 21:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 10.5
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.65,
+        "dnb_home": 0.6,
+        "xg": 2.66,
+        "expected_corners": 10.9
       }
     }
   ],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Norway",
-      "away": "England",
-      "kickoff": "11/07 21:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 10.5
-      }
-    }
-  ]
+  "hot": []
 }
