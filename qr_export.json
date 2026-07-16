@@ -1,5 +1,5 @@
 {
-  "updated_at": "16/07 20:25",
+  "updated_at": "16/07 21:32",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,28 +7,13 @@
       "away": "Santos FC",
       "kickoff": "16/07 22:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.65,
-        "xg": 2.93,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "CR Vasco da Gama",
-      "kickoff": "16/07 22:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.58,
-        "cards_home": 0.61,
-        "cards_away": 0.67,
-        "dnb_home": 0.65,
-        "xg": 2.67,
-        "expected_corners": 10.1
+        "over25": 0.67,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.62,
+        "dnb_home": 0.61,
+        "xg": 3.1,
+        "expected_corners": 12.1
       }
     }
   ],
@@ -39,13 +24,13 @@
       "away": "Santos FC",
       "kickoff": "16/07 22:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.68,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.65,
-        "xg": 2.93,
-        "expected_corners": 9.4
+        "over25": 0.67,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.62,
+        "dnb_home": 0.61,
+        "xg": 3.1,
+        "expected_corners": 12.1
       }
     }
   ],
