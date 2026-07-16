@@ -1,6 +1,84 @@
 {
-  "updated_at": "15/07 23:57",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "16/07 03:15",
+  "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "Santos FC",
+      "kickoff": "16/07 22:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 3.01,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Vitória",
+      "away": "CR Vasco da Gama",
+      "kickoff": "16/07 22:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.65,
+        "cards_home": 0.52,
+        "cards_away": 0.59,
+        "dnb_home": 0.64,
+        "xg": 3.25,
+        "expected_corners": 11.5
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "Santos FC",
+      "kickoff": "16/07 22:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 3.01,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Vitória",
+      "away": "CR Vasco da Gama",
+      "kickoff": "16/07 22:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.65,
+        "cards_home": 0.52,
+        "cards_away": 0.59,
+        "dnb_home": 0.64,
+        "xg": 3.25,
+        "expected_corners": 11.5
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "Santos FC",
+      "kickoff": "16/07 22:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.71,
+        "xg": 3.01,
+        "expected_corners": 9.1
+      }
+    }
+  ]
 }
