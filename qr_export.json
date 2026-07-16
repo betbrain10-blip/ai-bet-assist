@@ -1,5 +1,5 @@
 {
-  "updated_at": "16/07 17:45",
+  "updated_at": "16/07 19:09",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,47 +7,16 @@
       "away": "Santos FC",
       "kickoff": "16/07 22:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.62,
-        "dnb_home": 0.66,
-        "xg": 2.97,
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.63,
+        "xg": 2.49,
         "expected_corners": 9.7
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "CR Vasco da Gama",
-      "kickoff": "16/07 22:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.67,
-        "cards_home": 0.56,
-        "cards_away": 0.68,
-        "dnb_home": 0.67,
-        "xg": 2.71,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "Santos FC",
-      "kickoff": "16/07 22:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.62,
-        "dnb_home": 0.66,
-        "xg": 2.97,
-        "expected_corners": 9.7
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
