@@ -1,19 +1,51 @@
 {
-  "updated_at": "17/07 03:45",
+  "updated_at": "17/07 06:14",
   "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Fluminense FC",
+      "away": "RB Bragantino",
+      "kickoff": "17/07 23:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.59,
+        "dnb_home": 0.66,
+        "xg": 2.48,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Mirassol FC",
+      "away": "Grêmio FBPA",
+      "kickoff": "17/07 23:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.7,
+        "xg": 2.67,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "EC Bahia",
       "away": "Chapecoense AF",
       "kickoff": "17/07 22:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.57,
-        "xg": 2.63,
-        "expected_corners": 10.2
+        "over25": 0.61,
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.61,
+        "dnb_home": 0.66,
+        "xg": 2.81,
+        "expected_corners": 9.3
       }
     },
     {
@@ -22,13 +54,13 @@
       "away": "RB Bragantino",
       "kickoff": "17/07 23:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.52,
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.58,
         "cards_away": 0.59,
-        "dnb_home": 0.65,
-        "xg": 2.5,
-        "expected_corners": 9.7
+        "dnb_home": 0.66,
+        "xg": 2.48,
+        "expected_corners": 10.1
       }
     },
     {
@@ -37,32 +69,31 @@
       "away": "Grêmio FBPA",
       "kickoff": "17/07 23:00",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.63,
         "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.67,
-        "dnb_home": 0.62,
-        "xg": 2.5,
-        "expected_corners": 10.8
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.7,
+        "xg": 2.67,
+        "expected_corners": 10.6
       }
     }
   ],
-  "corner": [
+  "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Mirassol FC",
       "away": "Grêmio FBPA",
       "kickoff": "17/07 23:00",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.63,
         "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.67,
-        "dnb_home": 0.62,
-        "xg": 2.5,
-        "expected_corners": 10.8
+        "cards_home": 0.66,
+        "cards_away": 0.52,
+        "dnb_home": 0.7,
+        "xg": 2.67,
+        "expected_corners": 10.6
       }
     }
-  ],
-  "hot": []
+  ]
 }
