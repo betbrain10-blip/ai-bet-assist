@@ -1,5 +1,5 @@
 {
-  "updated_at": "18/07 18:01",
+  "updated_at": "18/07 19:40",
   "value": [],
   "corner": [
     {
@@ -8,13 +8,13 @@
       "away": "England",
       "kickoff": "18/07 21:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.54,
-        "dnb_home": 0.71,
-        "xg": 3.31,
-        "expected_corners": 9.6
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.58,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.31,
+        "expected_corners": 8.9
       }
     }
   ],
@@ -25,13 +25,13 @@
       "away": "England",
       "kickoff": "18/07 21:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.54,
-        "dnb_home": 0.71,
-        "xg": 3.31,
-        "expected_corners": 9.6
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.58,
+        "cards_away": 0.53,
+        "dnb_home": 0.74,
+        "xg": 2.31,
+        "expected_corners": 8.9
       }
     }
   ]
