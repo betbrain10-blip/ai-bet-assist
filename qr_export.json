@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/07 05:51",
+  "updated_at": "19/07 08:16",
   "value": [
     {
       "league": "FIFA World Cup",
@@ -7,48 +7,16 @@
       "away": "Argentina",
       "kickoff": "19/07 19:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.62,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 2.79,
-        "expected_corners": 9.6
+        "over25": 0.66,
+        "corners95": 0.59,
+        "cards_home": 0.65,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 2.85,
+        "expected_corners": 11.0
       }
     }
   ],
-  "corner": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Spain",
-      "away": "Argentina",
-      "kickoff": "19/07 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.62,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 2.79,
-        "expected_corners": 9.6
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "FIFA World Cup",
-      "home": "Spain",
-      "away": "Argentina",
-      "kickoff": "19/07 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.62,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 2.79,
-        "expected_corners": 9.6
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
