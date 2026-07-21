@@ -1,5 +1,5 @@
 {
-  "updated_at": "21/07 09:10",
+  "updated_at": "21/07 11:22",
   "value": [],
   "corner": [
     {
@@ -8,13 +8,13 @@
       "away": "EC Bahia",
       "kickoff": "21/07 22:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.61,
-        "cards_away": 0.65,
-        "dnb_home": 0.7,
-        "xg": 2.14,
-        "expected_corners": 9.4
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.73,
+        "xg": 3.26,
+        "expected_corners": 8.9
       }
     }
   ],
@@ -25,13 +25,13 @@
       "away": "EC Bahia",
       "kickoff": "21/07 22:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.61,
-        "cards_away": 0.65,
-        "dnb_home": 0.7,
-        "xg": 2.14,
-        "expected_corners": 9.4
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.61,
+        "dnb_home": 0.73,
+        "xg": 3.26,
+        "expected_corners": 8.9
       }
     }
   ]
