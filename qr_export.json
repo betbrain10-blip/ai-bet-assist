@@ -1,22 +1,22 @@
 {
-  "updated_at": "21/07 12:52",
+  "updated_at": "21/07 15:02",
   "value": [],
-  "corner": [
+  "corner": [],
+  "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Mineiro",
       "away": "EC Bahia",
       "kickoff": "21/07 22:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.7,
-        "cards_home": 0.55,
-        "cards_away": 0.65,
-        "dnb_home": 0.65,
-        "xg": 2.67,
-        "expected_corners": 12.2
+        "over25": 0.57,
+        "corners95": 0.58,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.69,
+        "xg": 3.08,
+        "expected_corners": 11.1
       }
     }
-  ],
-  "hot": []
+  ]
 }
