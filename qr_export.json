@@ -1,5 +1,5 @@
 {
-  "updated_at": "22/07 17:18",
+  "updated_at": "22/07 18:40",
   "value": [],
   "corner": [
     {
@@ -8,13 +8,13 @@
       "away": "SE Palmeiras",
       "kickoff": "22/07 22:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.2,
-        "expected_corners": 10.7
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.64,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 3.38,
+        "expected_corners": 8.6
       }
     }
   ],
@@ -25,13 +25,13 @@
       "away": "SE Palmeiras",
       "kickoff": "22/07 22:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.2,
-        "expected_corners": 10.7
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.64,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 3.38,
+        "expected_corners": 8.6
       }
     }
   ]
