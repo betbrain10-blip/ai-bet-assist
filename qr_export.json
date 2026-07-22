@@ -1,22 +1,38 @@
 {
-  "updated_at": "22/07 09:58",
-  "value": [],
-  "corner": [
+  "updated_at": "22/07 11:54",
+  "value": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Coritiba FBC",
       "away": "SE Palmeiras",
       "kickoff": "22/07 22:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
+        "over25": 0.63,
+        "corners95": 0.6,
         "cards_home": 0.58,
-        "cards_away": 0.67,
-        "dnb_home": 0.6,
-        "xg": 2.92,
-        "expected_corners": 10.4
+        "cards_away": 0.58,
+        "dnb_home": 0.71,
+        "xg": 2.7,
+        "expected_corners": 12.6
       }
     }
   ],
-  "hot": []
+  "corner": [],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "SE Palmeiras",
+      "kickoff": "22/07 22:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.6,
+        "cards_home": 0.58,
+        "cards_away": 0.58,
+        "dnb_home": 0.71,
+        "xg": 2.7,
+        "expected_corners": 12.6
+      }
+    }
+  ]
 }
