@@ -1,6 +1,22 @@
 {
-  "updated_at": "22/07 07:09",
+  "updated_at": "22/07 09:58",
   "value": [],
-  "corner": [],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "SE Palmeiras",
+      "kickoff": "22/07 22:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.69,
+        "cards_home": 0.58,
+        "cards_away": 0.67,
+        "dnb_home": 0.6,
+        "xg": 2.92,
+        "expected_corners": 10.4
+      }
+    }
+  ],
   "hot": []
 }
