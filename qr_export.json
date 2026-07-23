@@ -1,6 +1,53 @@
 {
-  "updated_at": "22/07 23:02",
+  "updated_at": "23/07 01:00",
   "value": [],
-  "corner": [],
-  "hot": []
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "EC Vitória",
+      "kickoff": "23/07 22:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.65,
+        "cards_away": 0.59,
+        "dnb_home": 0.67,
+        "xg": 2.99,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "Clube do Remo",
+      "kickoff": "23/07 22:30",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.65,
+        "dnb_home": 0.74,
+        "xg": 3.36,
+        "expected_corners": 9.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "Clube do Remo",
+      "kickoff": "23/07 22:30",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.65,
+        "dnb_home": 0.74,
+        "xg": 3.36,
+        "expected_corners": 9.6
+      }
+    }
+  ]
 }
