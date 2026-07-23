@@ -1,5 +1,5 @@
 {
-  "updated_at": "23/07 13:57",
+  "updated_at": "23/07 15:56",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,47 +7,48 @@
       "away": "EC Vitória",
       "kickoff": "23/07 22:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.52,
-        "cards_away": 0.59,
-        "dnb_home": 0.57,
-        "xg": 2.95,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "Clube do Remo",
-      "kickoff": "23/07 22:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.56,
-        "cards_home": 0.57,
-        "cards_away": 0.54,
-        "dnb_home": 0.65,
-        "xg": 3.22,
-        "expected_corners": 10.9
+        "over25": 0.71,
+        "corners95": 0.57,
+        "cards_home": 0.66,
+        "cards_away": 0.55,
+        "dnb_home": 0.73,
+        "xg": 2.47,
+        "expected_corners": 12.0
       }
     }
   ],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "Clube do Remo",
+      "kickoff": "23/07 22:30",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.61,
+        "cards_home": 0.51,
+        "cards_away": 0.58,
+        "dnb_home": 0.56,
+        "xg": 2.56,
+        "expected_corners": 12.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
       "home": "Botafogo FR",
       "away": "EC Vitória",
       "kickoff": "23/07 22:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.52,
-        "cards_away": 0.59,
-        "dnb_home": 0.57,
-        "xg": 2.95,
-        "expected_corners": 12.3
+        "over25": 0.71,
+        "corners95": 0.57,
+        "cards_home": 0.66,
+        "cards_away": 0.55,
+        "dnb_home": 0.73,
+        "xg": 2.47,
+        "expected_corners": 12.0
       }
     }
-  ],
-  "hot": []
+  ]
 }
