@@ -1,7 +1,38 @@
 {
-  "updated_at": "23/07 01:00",
-  "value": [],
+  "updated_at": "23/07 04:23",
+  "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "Clube do Remo",
+      "kickoff": "23/07 22:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.6,
+        "dnb_home": 0.73,
+        "xg": 2.19,
+        "expected_corners": 12.2
+      }
+    }
+  ],
   "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "Clube do Remo",
+      "kickoff": "23/07 22:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.6,
+        "dnb_home": 0.73,
+        "xg": 2.19,
+        "expected_corners": 12.2
+      }
+    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Botafogo FR",
@@ -10,26 +41,11 @@
       "markets": {
         "over25": 0.62,
         "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
-        "dnb_home": 0.67,
-        "xg": 2.99,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "Clube do Remo",
-      "kickoff": "23/07 22:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.65,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 3.36,
-        "expected_corners": 9.6
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.6,
+        "xg": 2.83,
+        "expected_corners": 10.7
       }
     }
   ],
@@ -40,13 +56,13 @@
       "away": "Clube do Remo",
       "kickoff": "23/07 22:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.65,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.74,
-        "xg": 3.36,
-        "expected_corners": 9.6
+        "over25": 0.64,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.6,
+        "dnb_home": 0.73,
+        "xg": 2.19,
+        "expected_corners": 12.2
       }
     }
   ]
