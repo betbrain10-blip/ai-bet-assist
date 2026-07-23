@@ -1,19 +1,19 @@
 {
-  "updated_at": "23/07 07:04",
+  "updated_at": "23/07 09:57",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "Clube do Remo",
+      "home": "Botafogo FR",
+      "away": "EC Vitória",
       "kickoff": "23/07 22:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 2.44,
-        "expected_corners": 9.7
+        "over25": 0.72,
+        "corners95": 0.57,
+        "cards_home": 0.59,
+        "cards_away": 0.64,
+        "dnb_home": 0.65,
+        "xg": 3.35,
+        "expected_corners": 11.3
       }
     }
   ],
@@ -24,46 +24,15 @@
       "away": "Clube do Remo",
       "kickoff": "23/07 22:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 2.44,
+        "over25": 0.62,
+        "corners95": 0.64,
+        "cards_home": 0.68,
+        "cards_away": 0.56,
+        "dnb_home": 0.58,
+        "xg": 2.61,
         "expected_corners": 9.7
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "EC Vitória",
-      "kickoff": "23/07 22:30",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.6,
-        "cards_home": 0.56,
-        "cards_away": 0.55,
-        "dnb_home": 0.69,
-        "xg": 2.92,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "Clube do Remo",
-      "kickoff": "23/07 22:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 2.44,
-        "expected_corners": 9.7
-      }
-    }
-  ]
+  "hot": []
 }
