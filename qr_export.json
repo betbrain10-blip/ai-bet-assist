@@ -1,34 +1,34 @@
 {
-  "updated_at": "25/07 20:09",
+  "updated_at": "25/07 21:24",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "Chapecoense AF",
-      "kickoff": "25/07 21:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.6,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.56,
-        "xg": 2.28,
-        "expected_corners": 12.3
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Paranaense",
       "away": "SC Internacional",
       "kickoff": "25/07 21:30",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
+        "over25": 0.67,
+        "corners95": 0.56,
+        "cards_home": 0.52,
+        "cards_away": 0.65,
+        "dnb_home": 0.66,
+        "xg": 2.75,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "Chapecoense AF",
+      "kickoff": "25/07 21:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.57,
         "cards_home": 0.61,
         "cards_away": 0.53,
-        "dnb_home": 0.63,
-        "xg": 2.57,
-        "expected_corners": 12.2
+        "dnb_home": 0.59,
+        "xg": 2.9,
+        "expected_corners": 11.9
       }
     },
     {
@@ -37,30 +37,30 @@
       "away": "Mirassol FC",
       "kickoff": "25/07 23:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.57,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.59,
-        "xg": 3.17,
-        "expected_corners": 9.7
+        "over25": 0.68,
+        "corners95": 0.7,
+        "cards_home": 0.6,
+        "cards_away": 0.54,
+        "dnb_home": 0.56,
+        "xg": 3.33,
+        "expected_corners": 11.3
       }
     }
   ],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "SC Internacional",
-      "kickoff": "25/07 21:30",
+      "home": "CR Vasco da Gama",
+      "away": "Mirassol FC",
+      "kickoff": "25/07 23:30",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.67,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.63,
-        "xg": 2.57,
-        "expected_corners": 12.2
+        "over25": 0.68,
+        "corners95": 0.7,
+        "cards_home": 0.6,
+        "cards_away": 0.54,
+        "dnb_home": 0.56,
+        "xg": 3.33,
+        "expected_corners": 11.3
       }
     }
   ],
