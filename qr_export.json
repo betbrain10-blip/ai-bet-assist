@@ -1,111 +1,51 @@
 {
-  "updated_at": "26/07 18:07",
+  "updated_at": "26/07 19:43",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "26/07 19:00",
+      "home": "CR Flamengo",
+      "away": "São Paulo FC",
+      "kickoff": "26/07 21:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.58,
-        "cards_home": 0.64,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 3.35,
-        "expected_corners": 11.9
+        "over25": 0.72,
+        "corners95": 0.6,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.69,
+        "xg": 3.24,
+        "expected_corners": 11.5
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "Botafogo FR",
-      "kickoff": "26/07 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.65,
-        "cards_home": 0.61,
-        "cards_away": 0.55,
-        "dnb_home": 0.66,
-        "xg": 3.13,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "CA Mineiro",
-      "kickoff": "26/07 22:30",
+      "home": "Grêmio FBPA",
+      "away": "Fluminense FC",
+      "kickoff": "26/07 21:30",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.17,
-        "expected_corners": 10.3
+        "corners95": 0.57,
+        "cards_home": 0.65,
+        "cards_away": 0.55,
+        "dnb_home": 0.59,
+        "xg": 2.28,
+        "expected_corners": 12.5
       }
     }
   ],
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Cruzeiro EC",
-      "away": "Botafogo FR",
-      "kickoff": "26/07 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.65,
-        "cards_home": 0.61,
-        "cards_away": 0.55,
-        "dnb_home": 0.66,
-        "xg": 3.13,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
       "home": "RB Bragantino",
       "away": "Coritiba FBC",
       "kickoff": "26/07 21:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.66,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.42,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "São Paulo FC",
-      "kickoff": "26/07 21:30",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.64,
-        "cards_home": 0.66,
-        "cards_away": 0.55,
-        "dnb_home": 0.74,
-        "xg": 3.38,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Clube do Remo",
-      "away": "EC Vitória",
-      "kickoff": "26/07 22:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
+        "over25": 0.62,
+        "corners95": 0.67,
         "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.7,
-        "expected_corners": 9.2
+        "cards_away": 0.51,
+        "dnb_home": 0.67,
+        "xg": 3.14,
+        "expected_corners": 11.6
       }
     },
     {
@@ -114,60 +54,13 @@
       "away": "CA Mineiro",
       "kickoff": "26/07 22:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.17,
-        "expected_corners": 10.3
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "26/07 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.58,
-        "cards_home": 0.64,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 3.35,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "Coritiba FBC",
-      "kickoff": "26/07 21:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.66,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.42,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "São Paulo FC",
-      "kickoff": "26/07 21:30",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.64,
-        "cards_home": 0.66,
-        "cards_away": 0.55,
-        "dnb_home": 0.74,
-        "xg": 3.38,
-        "expected_corners": 12.3
+        "over25": 0.56,
+        "corners95": 0.63,
+        "cards_home": 0.54,
+        "cards_away": 0.51,
+        "dnb_home": 0.64,
+        "xg": 2.22,
+        "expected_corners": 8.5
       }
     },
     {
@@ -176,13 +69,30 @@
       "away": "EC Vitória",
       "kickoff": "26/07 22:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.7,
-        "expected_corners": 9.2
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.63,
+        "cards_away": 0.55,
+        "dnb_home": 0.65,
+        "xg": 2.54,
+        "expected_corners": 8.7
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CR Flamengo",
+      "away": "São Paulo FC",
+      "kickoff": "26/07 21:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.6,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.69,
+        "xg": 3.24,
+        "expected_corners": 11.5
       }
     }
   ]
