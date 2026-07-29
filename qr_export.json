@@ -1,6 +1,21 @@
 {
-  "updated_at": "29/07 14:08",
+  "updated_at": "29/07 16:00",
   "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "CR Flamengo",
+      "kickoff": "29/07 22:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.52,
+        "dnb_home": 0.71,
+        "xg": 2.25,
+        "expected_corners": 11.6
+      }
+    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Mirassol FC",
@@ -8,11 +23,11 @@
       "kickoff": "29/07 22:30",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.5,
-        "dnb_home": 0.6,
-        "xg": 2.62,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
+        "dnb_home": 0.71,
+        "xg": 3.02,
         "expected_corners": 12.6
       }
     }
@@ -20,16 +35,31 @@
   "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "CR Flamengo",
+      "kickoff": "29/07 22:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.52,
+        "dnb_home": 0.71,
+        "xg": 2.25,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
       "home": "Mirassol FC",
       "away": "Clube do Remo",
       "kickoff": "29/07 22:30",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.5,
-        "dnb_home": 0.6,
-        "xg": 2.62,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
+        "dnb_home": 0.71,
+        "xg": 3.02,
         "expected_corners": 12.6
       }
     }
@@ -41,13 +71,28 @@
       "away": "CR Flamengo",
       "kickoff": "29/07 22:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.57,
-        "cards_home": 0.61,
-        "cards_away": 0.58,
-        "dnb_home": 0.73,
-        "xg": 2.87,
-        "expected_corners": 12.4
+        "over25": 0.69,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.52,
+        "dnb_home": 0.71,
+        "xg": 2.25,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Mirassol FC",
+      "away": "Clube do Remo",
+      "kickoff": "29/07 22:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
+        "dnb_home": 0.71,
+        "xg": 3.02,
+        "expected_corners": 12.6
       }
     }
   ]
