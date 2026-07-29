@@ -1,5 +1,5 @@
 {
-  "updated_at": "29/07 18:31",
+  "updated_at": "29/07 20:12",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "Clube do Remo",
       "kickoff": "29/07 22:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
+        "over25": 0.63,
+        "corners95": 0.65,
         "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.68,
-        "xg": 2.15,
-        "expected_corners": 11.9
+        "cards_away": 0.65,
+        "dnb_home": 0.67,
+        "xg": 2.94,
+        "expected_corners": 10.0
       }
     }
   ],
@@ -24,15 +24,46 @@
       "away": "Clube do Remo",
       "kickoff": "29/07 22:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
+        "over25": 0.63,
+        "corners95": 0.65,
         "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.68,
-        "xg": 2.15,
-        "expected_corners": 11.9
+        "cards_away": 0.65,
+        "dnb_home": 0.67,
+        "xg": 2.94,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "CR Flamengo",
+      "kickoff": "29/07 22:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.65,
+        "cards_home": 0.67,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.98,
+        "expected_corners": 12.5
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "CR Flamengo",
+      "kickoff": "29/07 22:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.65,
+        "cards_home": 0.67,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.98,
+        "expected_corners": 12.5
+      }
+    }
+  ]
 }
