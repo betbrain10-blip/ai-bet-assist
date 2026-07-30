@@ -1,6 +1,22 @@
 {
-  "updated_at": "30/07 05:22",
-  "value": [],
+  "updated_at": "30/07 07:54",
+  "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "CA Paranaense",
+      "kickoff": "30/07 22:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.59,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.73,
+        "xg": 2.72,
+        "expected_corners": 9.2
+      }
+    }
+  ],
   "corner": [],
   "hot": [
     {
@@ -9,13 +25,13 @@
       "away": "CA Paranaense",
       "kickoff": "30/07 22:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.58,
-        "cards_home": 0.52,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 3.27,
-        "expected_corners": 10.0
+        "over25": 0.68,
+        "corners95": 0.59,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.73,
+        "xg": 2.72,
+        "expected_corners": 9.2
       }
     }
   ]
