@@ -1,35 +1,36 @@
 {
-  "updated_at": "07/08 15:54",
-  "value": [],
-  "corner": [
+  "updated_at": "07/08 16:53",
+  "value": [
     {
       "league": "Eredivisie",
       "home": "SC Cambuur-Leeuwarden",
       "away": "SBV Excelsior",
       "kickoff": "07/08 18:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.66,
-        "cards_home": 0.65,
-        "cards_away": 0.52,
-        "dnb_home": 0.65,
-        "xg": 3.03,
-        "expected_corners": 9.5
+        "over25": 0.64,
+        "corners95": 0.59,
+        "cards_home": 0.59,
+        "cards_away": 0.56,
+        "dnb_home": 0.58,
+        "xg": 2.17,
+        "expected_corners": 12.5
       }
-    },
+    }
+  ],
+  "corner": [
     {
       "league": "Primeira Liga",
       "home": "GD Estoril Praia",
       "away": "FC Famalicão",
       "kickoff": "07/08 19:15",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.53,
-        "cards_away": 0.5,
+        "over25": 0.59,
+        "corners95": 0.64,
+        "cards_home": 0.51,
+        "cards_away": 0.55,
         "dnb_home": 0.68,
-        "xg": 2.24,
-        "expected_corners": 11.3
+        "xg": 3.39,
+        "expected_corners": 8.9
       }
     }
   ],
