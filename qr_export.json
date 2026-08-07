@@ -1,6 +1,84 @@
 {
-  "updated_at": "07/08 05:15",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "07/08 06:45",
+  "value": [
+    {
+      "league": "Eredivisie",
+      "home": "SC Cambuur-Leeuwarden",
+      "away": "SBV Excelsior",
+      "kickoff": "07/08 18:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.58,
+        "dnb_home": 0.62,
+        "xg": 2.97,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "GD Estoril Praia",
+      "away": "FC Famalicão",
+      "kickoff": "07/08 19:15",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.45,
+        "expected_corners": 12.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Eredivisie",
+      "home": "SC Cambuur-Leeuwarden",
+      "away": "SBV Excelsior",
+      "kickoff": "07/08 18:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.58,
+        "dnb_home": 0.62,
+        "xg": 2.97,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "GD Estoril Praia",
+      "away": "FC Famalicão",
+      "kickoff": "07/08 19:15",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.45,
+        "expected_corners": 12.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primeira Liga",
+      "home": "GD Estoril Praia",
+      "away": "FC Famalicão",
+      "kickoff": "07/08 19:15",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.45,
+        "expected_corners": 12.6
+      }
+    }
+  ]
 }
