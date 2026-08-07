@@ -1,38 +1,6 @@
 {
-  "updated_at": "07/08 03:27",
-  "value": [
-    {
-      "league": "Eredivisie",
-      "home": "SC Cambuur-Leeuwarden",
-      "away": "SBV Excelsior",
-      "kickoff": "07/08 18:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.47,
-        "expected_corners": 12.2
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Eredivisie",
-      "home": "SC Cambuur-Leeuwarden",
-      "away": "SBV Excelsior",
-      "kickoff": "07/08 18:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.47,
-        "expected_corners": 12.2
-      }
-    }
-  ],
+  "updated_at": "07/08 05:15",
+  "value": [],
+  "corner": [],
   "hot": []
 }
