@@ -1,22 +1,6 @@
 {
-  "updated_at": "07/08 18:54",
+  "updated_at": "07/08 19:51",
   "value": [],
   "corner": [],
-  "hot": [
-    {
-      "league": "Primeira Liga",
-      "home": "GD Estoril Praia",
-      "away": "FC Famalicão",
-      "kickoff": "07/08 19:15",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.59,
-        "cards_home": 0.67,
-        "cards_away": 0.58,
-        "dnb_home": 0.75,
-        "xg": 2.71,
-        "expected_corners": 12.6
-      }
-    }
-  ]
+  "hot": []
 }
