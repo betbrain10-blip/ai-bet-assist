@@ -1,19 +1,19 @@
 {
-  "updated_at": "08/08 19:55",
+  "updated_at": "08/08 20:30",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "Chapecoense AF",
-      "kickoff": "08/08 23:30",
+      "home": "Clube do Remo",
+      "away": "CA Mineiro",
+      "kickoff": "08/08 21:30",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.66,
         "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.52,
-        "dnb_home": 0.72,
-        "xg": 2.29,
-        "expected_corners": 8.7
+        "cards_home": 0.6,
+        "cards_away": 0.54,
+        "dnb_home": 0.73,
+        "xg": 2.9,
+        "expected_corners": 9.3
       }
     }
   ],
@@ -24,13 +24,30 @@
       "away": "CA Mineiro",
       "kickoff": "08/08 21:30",
       "markets": {
-        "over25": 0.61,
+        "over25": 0.66,
         "corners95": 0.65,
-        "cards_home": 0.63,
-        "cards_away": 0.57,
-        "dnb_home": 0.56,
-        "xg": 2.93,
-        "expected_corners": 12.4
+        "cards_home": 0.6,
+        "cards_away": 0.54,
+        "dnb_home": 0.73,
+        "xg": 2.9,
+        "expected_corners": 9.3
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Clube do Remo",
+      "away": "CA Mineiro",
+      "kickoff": "08/08 21:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.54,
+        "dnb_home": 0.73,
+        "xg": 2.9,
+        "expected_corners": 9.3
       }
     },
     {
@@ -39,30 +56,13 @@
       "away": "Chapecoense AF",
       "kickoff": "08/08 23:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.52,
-        "dnb_home": 0.72,
-        "xg": 2.29,
-        "expected_corners": 8.7
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "Chapecoense AF",
-      "kickoff": "08/08 23:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.52,
-        "dnb_home": 0.72,
-        "xg": 2.29,
-        "expected_corners": 8.7
+        "over25": 0.62,
+        "corners95": 0.55,
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 2.61,
+        "expected_corners": 9.3
       }
     }
   ]
