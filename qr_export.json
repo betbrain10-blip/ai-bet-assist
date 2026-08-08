@@ -1,5 +1,5 @@
 {
-  "updated_at": "08/08 18:50",
+  "updated_at": "08/08 19:28",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "CA Mineiro",
       "kickoff": "08/08 21:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.58,
-        "cards_home": 0.55,
-        "cards_away": 0.66,
-        "dnb_home": 0.59,
-        "xg": 2.25,
-        "expected_corners": 12.6
+        "over25": 0.7,
+        "corners95": 0.57,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.72,
+        "xg": 2.22,
+        "expected_corners": 10.6
       }
     }
   ],
@@ -21,17 +21,17 @@
   "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Grêmio FBPA",
-      "away": "São Paulo FC",
-      "kickoff": "08/08 19:00",
+      "home": "Clube do Remo",
+      "away": "CA Mineiro",
+      "kickoff": "08/08 21:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.58,
-        "cards_home": 0.67,
+        "over25": 0.7,
+        "corners95": 0.57,
+        "cards_home": 0.62,
         "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 3.16,
-        "expected_corners": 10.1
+        "dnb_home": 0.72,
+        "xg": 2.22,
+        "expected_corners": 10.6
       }
     }
   ]
