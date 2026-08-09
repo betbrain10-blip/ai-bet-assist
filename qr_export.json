@@ -1,20 +1,19 @@
 {
-  "updated_at": "09/08 20:30",
-  "value": [],
-  "corner": [
+  "updated_at": "09/08 21:30",
+  "value": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Santos FC",
       "away": "CA Paranaense",
       "kickoff": "09/08 21:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.64,
+        "over25": 0.67,
+        "corners95": 0.68,
+        "cards_home": 0.54,
         "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 3.11,
-        "expected_corners": 8.9
+        "dnb_home": 0.55,
+        "xg": 2.48,
+        "expected_corners": 11.9
       }
     },
     {
@@ -23,46 +22,47 @@
       "away": "SC Corinthians Paulista",
       "kickoff": "09/08 21:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.54,
-        "dnb_home": 0.59,
-        "xg": 2.51,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "EC Vitória",
-      "kickoff": "09/08 22:30",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.65,
-        "dnb_home": 0.62,
-        "xg": 2.72,
-        "expected_corners": 12.0
+        "over25": 0.72,
+        "corners95": 0.69,
+        "cards_home": 0.51,
+        "cards_away": 0.64,
+        "dnb_home": 0.61,
+        "xg": 2.67,
+        "expected_corners": 9.0
       }
     }
   ],
-  "hot": [
+  "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Santos FC",
       "away": "CA Paranaense",
       "kickoff": "09/08 21:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.64,
+        "over25": 0.67,
+        "corners95": 0.68,
+        "cards_home": 0.54,
         "cards_away": 0.51,
-        "dnb_home": 0.71,
-        "xg": 3.11,
-        "expected_corners": 8.9
+        "dnb_home": 0.55,
+        "xg": 2.48,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "RB Bragantino",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "09/08 21:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.69,
+        "cards_home": 0.51,
+        "cards_away": 0.64,
+        "dnb_home": 0.61,
+        "xg": 2.67,
+        "expected_corners": 9.0
       }
     }
-  ]
+  ],
+  "hot": []
 }
