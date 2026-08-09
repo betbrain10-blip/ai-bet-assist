@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/08 07:31",
+  "updated_at": "09/08 08:41",
   "value": [
     {
       "league": "Eredivisie",
@@ -7,13 +7,28 @@
       "away": "AFC Ajax",
       "kickoff": "09/08 12:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.56,
-        "cards_away": 0.62,
+        "over25": 0.65,
+        "corners95": 0.7,
+        "cards_home": 0.55,
+        "cards_away": 0.58,
         "dnb_home": 0.72,
-        "xg": 3.34,
-        "expected_corners": 10.6
+        "xg": 3.01,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "FC Groningen",
+      "away": "FC Utrecht",
+      "kickoff": "09/08 12:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.68,
+        "dnb_home": 0.65,
+        "xg": 3.13,
+        "expected_corners": 12.6
       }
     },
     {
@@ -22,13 +37,13 @@
       "away": "Mirassol FC",
       "kickoff": "09/08 14:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.55,
-        "dnb_home": 0.67,
-        "xg": 2.31,
-        "expected_corners": 8.8
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
+        "dnb_home": 0.71,
+        "xg": 3.22,
+        "expected_corners": 9.6
       }
     },
     {
@@ -37,13 +52,28 @@
       "away": "FC Alverca",
       "kickoff": "09/08 17:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.51,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SE Palmeiras",
+      "away": "SC Internacional",
+      "kickoff": "09/08 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.67,
         "cards_home": 0.59,
-        "cards_away": 0.58,
-        "dnb_home": 0.66,
-        "xg": 2.93,
-        "expected_corners": 12.4
+        "cards_away": 0.59,
+        "dnb_home": 0.68,
+        "xg": 3.25,
+        "expected_corners": 9.3
       }
     },
     {
@@ -52,13 +82,13 @@
       "away": "CR Vasco da Gama",
       "kickoff": "09/08 19:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.6,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.56,
-        "xg": 3.0,
-        "expected_corners": 8.8
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.61,
+        "cards_away": 0.58,
+        "dnb_home": 0.59,
+        "xg": 2.1,
+        "expected_corners": 8.9
       }
     },
     {
@@ -67,13 +97,13 @@
       "away": "Sporting Clube de Braga",
       "kickoff": "09/08 19:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 2.79,
-        "expected_corners": 10.4
+        "over25": 0.69,
+        "corners95": 0.56,
+        "cards_home": 0.53,
+        "cards_away": 0.63,
+        "dnb_home": 0.59,
+        "xg": 2.28,
+        "expected_corners": 11.6
       }
     },
     {
@@ -82,42 +112,27 @@
       "away": "Académico de Viseu FC",
       "kickoff": "09/08 19:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.64,
-        "cards_away": 0.51,
-        "dnb_home": 0.57,
-        "xg": 3.29,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Gil Vicente FC",
-      "away": "Rio Ave FC",
-      "kickoff": "09/08 19:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.7,
-        "cards_home": 0.64,
-        "cards_away": 0.55,
-        "dnb_home": 0.58,
-        "xg": 2.99,
-        "expected_corners": 9.3
+        "over25": 0.68,
+        "corners95": 0.56,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 2.78,
+        "expected_corners": 10.2
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "SC Corinthians Paulista",
+      "home": "Santos FC",
+      "away": "CA Paranaense",
       "kickoff": "09/08 21:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.7,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.77,
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.63,
+        "dnb_home": 0.63,
+        "xg": 2.39,
         "expected_corners": 8.7
       }
     },
@@ -127,30 +142,30 @@
       "away": "EC Vitória",
       "kickoff": "09/08 22:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.66,
-        "dnb_home": 0.63,
-        "xg": 3.22,
-        "expected_corners": 9.6
+        "over25": 0.7,
+        "corners95": 0.67,
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.67,
+        "xg": 2.28,
+        "expected_corners": 9.0
       }
     }
   ],
   "corner": [
     {
       "league": "Eredivisie",
-      "home": "Sparta Rotterdam",
-      "away": "Feyenoord Rotterdam",
-      "kickoff": "09/08 10:15",
+      "home": "PEC Zwolle",
+      "away": "AFC Ajax",
+      "kickoff": "09/08 12:30",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.64,
-        "cards_home": 0.66,
+        "over25": 0.65,
+        "corners95": 0.7,
+        "cards_home": 0.55,
         "cards_away": 0.58,
-        "dnb_home": 0.6,
-        "xg": 2.85,
-        "expected_corners": 12.8
+        "dnb_home": 0.72,
+        "xg": 3.01,
+        "expected_corners": 12.5
       }
     },
     {
@@ -159,13 +174,13 @@
       "away": "FC Utrecht",
       "kickoff": "09/08 12:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 2.4,
-        "expected_corners": 10.7
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.68,
+        "dnb_home": 0.65,
+        "xg": 3.13,
+        "expected_corners": 12.6
       }
     },
     {
@@ -174,28 +189,13 @@
       "away": "Mirassol FC",
       "kickoff": "09/08 14:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.55,
-        "dnb_home": 0.67,
-        "xg": 2.31,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "SC Heerenveen",
-      "away": "FC Twente '65",
-      "kickoff": "09/08 14:45",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.7,
-        "xg": 3.0,
-        "expected_corners": 11.1
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
+        "dnb_home": 0.71,
+        "xg": 3.22,
+        "expected_corners": 9.6
       }
     },
     {
@@ -204,13 +204,13 @@
       "away": "FC Alverca",
       "kickoff": "09/08 17:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.58,
-        "dnb_home": 0.66,
-        "xg": 2.93,
-        "expected_corners": 12.4
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.51,
+        "expected_corners": 12.5
       }
     },
     {
@@ -219,43 +219,13 @@
       "away": "SC Internacional",
       "kickoff": "09/08 19:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.56,
-        "dnb_home": 0.69,
-        "xg": 2.48,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Moreirense FC",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "09/08 19:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 2.79,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sport Lisboa e Benfica",
-      "away": "Académico de Viseu FC",
-      "kickoff": "09/08 19:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.64,
-        "cards_away": 0.51,
-        "dnb_home": 0.57,
-        "xg": 3.29,
-        "expected_corners": 12.3
+        "over25": 0.65,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.68,
+        "xg": 3.25,
+        "expected_corners": 9.3
       }
     },
     {
@@ -264,27 +234,27 @@
       "away": "Rio Ave FC",
       "kickoff": "09/08 19:30",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.7,
-        "cards_home": 0.64,
-        "cards_away": 0.55,
-        "dnb_home": 0.58,
-        "xg": 2.99,
-        "expected_corners": 9.3
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.58,
+        "dnb_home": 0.71,
+        "xg": 2.85,
+        "expected_corners": 12.1
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "SC Corinthians Paulista",
+      "home": "Santos FC",
+      "away": "CA Paranaense",
       "kickoff": "09/08 21:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.7,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.77,
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.63,
+        "dnb_home": 0.63,
+        "xg": 2.39,
         "expected_corners": 8.7
       }
     },
@@ -294,45 +264,60 @@
       "away": "EC Vitória",
       "kickoff": "09/08 22:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.66,
-        "dnb_home": 0.63,
-        "xg": 3.22,
-        "expected_corners": 9.6
+        "over25": 0.7,
+        "corners95": 0.67,
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.67,
+        "xg": 2.28,
+        "expected_corners": 9.0
       }
     }
   ],
   "hot": [
     {
       "league": "Eredivisie",
-      "home": "PEC Zwolle",
-      "away": "AFC Ajax",
-      "kickoff": "09/08 12:30",
+      "home": "Sparta Rotterdam",
+      "away": "Feyenoord Rotterdam",
+      "kickoff": "09/08 10:15",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.56,
-        "cards_away": 0.62,
-        "dnb_home": 0.72,
-        "xg": 3.34,
-        "expected_corners": 10.6
+        "over25": 0.62,
+        "corners95": 0.57,
+        "cards_home": 0.51,
+        "cards_away": 0.53,
+        "dnb_home": 0.73,
+        "xg": 2.98,
+        "expected_corners": 11.3
       }
     },
     {
       "league": "Eredivisie",
-      "home": "FC Groningen",
-      "away": "FC Utrecht",
+      "home": "PEC Zwolle",
+      "away": "AFC Ajax",
       "kickoff": "09/08 12:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 2.4,
-        "expected_corners": 10.7
+        "over25": 0.65,
+        "corners95": 0.7,
+        "cards_home": 0.55,
+        "cards_away": 0.58,
+        "dnb_home": 0.72,
+        "xg": 3.01,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Cruzeiro EC",
+      "away": "Mirassol FC",
+      "kickoff": "09/08 14:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
+        "dnb_home": 0.71,
+        "xg": 3.22,
+        "expected_corners": 9.6
       }
     },
     {
@@ -341,43 +326,43 @@
       "away": "FC Twente '65",
       "kickoff": "09/08 14:45",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.7,
-        "xg": 3.0,
-        "expected_corners": 11.1
+        "over25": 0.61,
+        "corners95": 0.55,
+        "cards_home": 0.57,
+        "cards_away": 0.67,
+        "dnb_home": 0.74,
+        "xg": 3.15,
+        "expected_corners": 11.9
       }
     },
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "SC Internacional",
-      "kickoff": "09/08 19:00",
+      "league": "Primeira Liga",
+      "home": "FC Porto",
+      "away": "FC Alverca",
+      "kickoff": "09/08 17:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.56,
-        "dnb_home": 0.69,
-        "xg": 2.48,
-        "expected_corners": 10.2
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.51,
+        "expected_corners": 12.5
       }
     },
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "09/08 21:30",
+      "league": "Primeira Liga",
+      "home": "Sport Lisboa e Benfica",
+      "away": "Académico de Viseu FC",
+      "kickoff": "09/08 19:30",
       "markets": {
         "over25": 0.68,
-        "corners95": 0.7,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.77,
-        "expected_corners": 8.7
+        "corners95": 0.56,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
+        "dnb_home": 0.73,
+        "xg": 2.78,
+        "expected_corners": 10.2
       }
     }
   ]
