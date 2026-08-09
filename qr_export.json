@@ -1,6 +1,128 @@
 {
-  "updated_at": "08/08 23:36",
-  "value": [],
-  "corner": [],
+  "updated_at": "09/08 01:41",
+  "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SE Palmeiras",
+      "away": "SC Internacional",
+      "kickoff": "09/08 19:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.62,
+        "cards_home": 0.54,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 2.33,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "RB Bragantino",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "09/08 21:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.59,
+        "cards_home": 0.56,
+        "cards_away": 0.53,
+        "dnb_home": 0.57,
+        "xg": 2.55,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "CA Paranaense",
+      "kickoff": "09/08 21:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.68,
+        "xg": 2.83,
+        "expected_corners": 11.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Cruzeiro EC",
+      "away": "Mirassol FC",
+      "kickoff": "09/08 14:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.64,
+        "cards_away": 0.52,
+        "dnb_home": 0.55,
+        "xg": 3.19,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "CR Vasco da Gama",
+      "kickoff": "09/08 19:00",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.66,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.58,
+        "xg": 2.26,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SE Palmeiras",
+      "away": "SC Internacional",
+      "kickoff": "09/08 19:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.62,
+        "cards_home": 0.54,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 2.33,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "CA Paranaense",
+      "kickoff": "09/08 21:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.68,
+        "xg": 2.83,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CR Flamengo",
+      "away": "EC Vitória",
+      "kickoff": "09/08 22:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.62,
+        "cards_home": 0.52,
+        "cards_away": 0.52,
+        "dnb_home": 0.65,
+        "xg": 2.29,
+        "expected_corners": 11.7
+      }
+    }
+  ],
   "hot": []
 }
