@@ -1,111 +1,34 @@
 {
-  "updated_at": "09/08 16:00",
+  "updated_at": "09/08 17:03",
   "value": [
     {
-      "league": "Primeira Liga",
-      "home": "Gil Vicente FC",
-      "away": "Rio Ave FC",
-      "kickoff": "09/08 19:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.65,
-        "xg": 2.86,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sport Lisboa e Benfica",
-      "away": "Académico de Viseu FC",
-      "kickoff": "09/08 19:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.67,
-        "dnb_home": 0.67,
-        "xg": 2.71,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Moreirense FC",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "09/08 19:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.65,
-        "xg": 2.24,
-        "expected_corners": 11.9
-      }
-    },
-    {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "CA Paranaense",
-      "kickoff": "09/08 21:30",
+      "home": "EC Bahia",
+      "away": "CR Vasco da Gama",
+      "kickoff": "09/08 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.59,
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.58,
         "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 3.17,
-        "expected_corners": 9.7
+        "dnb_home": 0.73,
+        "xg": 2.69,
+        "expected_corners": 11.1
       }
     },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "09/08 21:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.56,
-        "xg": 2.99,
-        "expected_corners": 8.7
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "SE Palmeiras",
       "away": "SC Internacional",
       "kickoff": "09/08 19:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.62,
-        "dnb_home": 0.57,
-        "xg": 2.68,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Gil Vicente FC",
-      "away": "Rio Ave FC",
-      "kickoff": "09/08 19:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.65,
-        "xg": 2.86,
-        "expected_corners": 9.8
+        "over25": 0.64,
+        "corners95": 0.58,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.61,
+        "xg": 2.48,
+        "expected_corners": 12.8
       }
     },
     {
@@ -114,28 +37,13 @@
       "away": "Académico de Viseu FC",
       "kickoff": "09/08 19:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.67,
-        "dnb_home": 0.67,
-        "xg": 2.71,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Moreirense FC",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "09/08 19:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.65,
-        "xg": 2.24,
-        "expected_corners": 11.9
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.57,
+        "cards_away": 0.66,
+        "dnb_home": 0.6,
+        "xg": 2.49,
+        "expected_corners": 11.8
       }
     },
     {
@@ -144,13 +52,13 @@
       "away": "CA Paranaense",
       "kickoff": "09/08 21:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.59,
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.62,
         "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 3.17,
-        "expected_corners": 9.7
+        "dnb_home": 0.65,
+        "xg": 3.06,
+        "expected_corners": 8.6
       }
     },
     {
@@ -159,13 +67,105 @@
       "away": "SC Corinthians Paulista",
       "kickoff": "09/08 21:30",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.64,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 3.24,
+        "expected_corners": 12.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primeira Liga",
+      "home": "FC Porto",
+      "away": "FC Alverca",
+      "kickoff": "09/08 17:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.65,
+        "cards_away": 0.52,
+        "dnb_home": 0.62,
+        "xg": 3.15,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "CR Vasco da Gama",
+      "kickoff": "09/08 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.51,
+        "dnb_home": 0.73,
+        "xg": 2.69,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Gil Vicente FC",
+      "away": "Rio Ave FC",
+      "kickoff": "09/08 19:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.61,
+        "cards_away": 0.68,
+        "dnb_home": 0.62,
+        "xg": 2.25,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Moreirense FC",
+      "away": "Sporting Clube de Braga",
+      "kickoff": "09/08 19:30",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.51,
+        "dnb_home": 0.6,
+        "xg": 2.17,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sport Lisboa e Benfica",
+      "away": "Académico de Viseu FC",
+      "kickoff": "09/08 19:30",
+      "markets": {
+        "over25": 0.64,
         "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.56,
-        "xg": 2.99,
-        "expected_corners": 8.7
+        "cards_home": 0.57,
+        "cards_away": 0.66,
+        "dnb_home": 0.6,
+        "xg": 2.49,
+        "expected_corners": 11.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "RB Bragantino",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "09/08 21:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.64,
+        "cards_away": 0.51,
+        "dnb_home": 0.72,
+        "xg": 3.24,
+        "expected_corners": 12.8
       }
     },
     {
@@ -174,45 +174,45 @@
       "away": "EC Vitória",
       "kickoff": "09/08 22:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.62,
-        "cards_away": 0.53,
-        "dnb_home": 0.62,
-        "xg": 2.16,
-        "expected_corners": 11.2
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.66,
+        "cards_away": 0.6,
+        "dnb_home": 0.56,
+        "xg": 2.88,
+        "expected_corners": 9.3
       }
     }
   ],
   "hot": [
     {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "FC Alverca",
-      "kickoff": "09/08 17:00",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Bahia",
+      "away": "CR Vasco da Gama",
+      "kickoff": "09/08 19:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.58,
-        "cards_home": 0.52,
-        "cards_away": 0.56,
-        "dnb_home": 0.74,
-        "xg": 3.11,
-        "expected_corners": 10.1
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.51,
+        "dnb_home": 0.73,
+        "xg": 2.69,
+        "expected_corners": 11.1
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "CA Paranaense",
+      "home": "RB Bragantino",
+      "away": "SC Corinthians Paulista",
       "kickoff": "09/08 21:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.65,
-        "cards_home": 0.59,
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.64,
         "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 3.17,
-        "expected_corners": 9.7
+        "dnb_home": 0.72,
+        "xg": 3.24,
+        "expected_corners": 12.8
       }
     }
   ]
