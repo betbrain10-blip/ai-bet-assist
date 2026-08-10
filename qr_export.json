@@ -1,38 +1,6 @@
 {
-  "updated_at": "10/08 18:12",
-  "value": [
-    {
-      "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "CD Nacional",
-      "kickoff": "10/08 19:15",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.55,
-        "xg": 2.25,
-        "expected_corners": 11.7
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "CD Nacional",
-      "kickoff": "10/08 19:15",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.65,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.55,
-        "xg": 2.25,
-        "expected_corners": 11.7
-      }
-    }
-  ],
+  "updated_at": "10/08 19:29",
+  "value": [],
+  "corner": [],
   "hot": []
 }
