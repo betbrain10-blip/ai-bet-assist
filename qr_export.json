@@ -1,22 +1,6 @@
 {
-  "updated_at": "10/08 02:22",
+  "updated_at": "10/08 04:12",
   "value": [],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "CD Nacional",
-      "kickoff": "10/08 19:15",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.64,
-        "cards_home": 0.56,
-        "cards_away": 0.6,
-        "dnb_home": 0.64,
-        "xg": 3.17,
-        "expected_corners": 10.7
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
