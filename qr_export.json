@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/08 14:35",
+  "updated_at": "10/08 15:58",
   "value": [
     {
       "league": "Primeira Liga",
@@ -7,13 +7,13 @@
       "away": "CD Nacional",
       "kickoff": "10/08 19:15",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.57,
-        "xg": 3.2,
-        "expected_corners": 9.7
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.66,
+        "xg": 2.94,
+        "expected_corners": 11.0
       }
     }
   ],
@@ -24,13 +24,13 @@
       "away": "CD Nacional",
       "kickoff": "10/08 19:15",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.57,
-        "xg": 3.2,
-        "expected_corners": 9.7
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.66,
+        "xg": 2.94,
+        "expected_corners": 11.0
       }
     }
   ],
