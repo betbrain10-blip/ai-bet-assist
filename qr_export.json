@@ -1,5 +1,5 @@
 {
-  "updated_at": "11/08 04:18",
+  "updated_at": "11/08 05:34",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,12 +7,12 @@
       "away": "CS Independiente Rivadavia",
       "kickoff": "11/08 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 2.38,
+        "over25": 0.68,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.3,
         "expected_corners": 11.5
       }
     }
@@ -24,12 +24,12 @@
       "away": "CS Independiente Rivadavia",
       "kickoff": "11/08 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 2.38,
+        "over25": 0.68,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.3,
         "expected_corners": 11.5
       }
     }
@@ -41,12 +41,12 @@
       "away": "CS Independiente Rivadavia",
       "kickoff": "11/08 22:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.68,
-        "dnb_home": 0.74,
-        "xg": 2.38,
+        "over25": 0.68,
+        "corners95": 0.65,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.3,
         "expected_corners": 11.5
       }
     }
