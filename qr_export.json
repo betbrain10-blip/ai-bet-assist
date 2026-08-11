@@ -1,22 +1,6 @@
 {
-  "updated_at": "11/08 11:42",
+  "updated_at": "11/08 13:02",
   "value": [],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Fluminense FC",
-      "away": "CS Independiente Rivadavia",
-      "kickoff": "11/08 22:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.57,
-        "xg": 2.62,
-        "expected_corners": 12.2
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
