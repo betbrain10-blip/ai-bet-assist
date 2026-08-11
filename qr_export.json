@@ -1,22 +1,6 @@
 {
-  "updated_at": "11/08 22:40",
-  "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Fluminense FC",
-      "away": "CS Independiente Rivadavia",
-      "kickoff": "11/08 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 2.29,
-        "expected_corners": 9.7
-      }
-    }
-  ],
+  "updated_at": "11/08 23:38",
+  "value": [],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -24,31 +8,15 @@
       "away": "CS Independiente Rivadavia",
       "kickoff": "11/08 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 2.29,
-        "expected_corners": 9.7
+        "over25": 0.61,
+        "corners95": 0.7,
+        "cards_home": 0.55,
+        "cards_away": 0.5,
+        "dnb_home": 0.67,
+        "xg": 3.08,
+        "expected_corners": 11.3
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Fluminense FC",
-      "away": "CS Independiente Rivadavia",
-      "kickoff": "11/08 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 2.29,
-        "expected_corners": 9.7
-      }
-    }
-  ]
+  "hot": []
 }
