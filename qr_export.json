@@ -1,22 +1,99 @@
 {
-  "updated_at": "11/08 23:38",
-  "value": [],
-  "corner": [
+  "updated_at": "12/08 01:52",
+  "value": [
     {
       "league": "Copa Libertadores",
-      "home": "Fluminense FC",
-      "away": "CS Independiente Rivadavia",
-      "kickoff": "11/08 22:00",
+      "home": "Estudiantes de La Plata",
+      "away": "CD Universidad Católica",
+      "kickoff": "12/08 00:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.7,
-        "cards_home": 0.55,
-        "cards_away": 0.5,
-        "dnb_home": 0.67,
-        "xg": 3.08,
-        "expected_corners": 11.3
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.72,
+        "xg": 3.39,
+        "expected_corners": 9.4
       }
     }
   ],
-  "hot": []
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Tolima",
+      "away": "CAR Independiente del Valle",
+      "kickoff": "12/08 00:30",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 2.14,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Estudiantes de La Plata",
+      "away": "CD Universidad Católica",
+      "kickoff": "12/08 00:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.72,
+        "xg": 3.39,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Platense",
+      "away": "CD Coquimbo Unido",
+      "kickoff": "12/08 22:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.59,
+        "xg": 2.2,
+        "expected_corners": 12.3
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Tolima",
+      "away": "CAR Independiente del Valle",
+      "kickoff": "12/08 00:30",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 2.14,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Estudiantes de La Plata",
+      "away": "CD Universidad Católica",
+      "kickoff": "12/08 00:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.72,
+        "xg": 3.39,
+        "expected_corners": 9.4
+      }
+    }
+  ]
 }
