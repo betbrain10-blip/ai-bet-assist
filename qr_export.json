@@ -1,38 +1,22 @@
 {
-  "updated_at": "12/08 17:27",
-  "value": [],
-  "corner": [
+  "updated_at": "12/08 18:27",
+  "value": [
     {
       "league": "Copa Libertadores",
       "home": "CA Platense",
       "away": "CD Coquimbo Unido",
       "kickoff": "12/08 22:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.72,
-        "xg": 3.38,
-        "expected_corners": 10.6
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.68,
+        "xg": 2.82,
+        "expected_corners": 9.1
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Platense",
-      "away": "CD Coquimbo Unido",
-      "kickoff": "12/08 22:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.72,
-        "xg": 3.38,
-        "expected_corners": 10.6
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
