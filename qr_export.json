@@ -1,6 +1,37 @@
 {
-  "updated_at": "12/08 22:39",
-  "value": [],
+  "updated_at": "12/08 23:39",
+  "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CA Platense",
+      "away": "CD Coquimbo Unido",
+      "kickoff": "12/08 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.66,
+        "cards_away": 0.53,
+        "dnb_home": 0.55,
+        "xg": 2.98,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "SE Palmeiras",
+      "away": "Club Cerro Porteño",
+      "kickoff": "12/08 22:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.7,
+        "cards_home": 0.62,
+        "cards_away": 0.67,
+        "dnb_home": 0.64,
+        "xg": 3.13,
+        "expected_corners": 11.9
+      }
+    }
+  ],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -8,31 +39,30 @@
       "away": "CD Coquimbo Unido",
       "kickoff": "12/08 22:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.72,
-        "xg": 3.0,
-        "expected_corners": 12.5
+        "over25": 0.66,
+        "corners95": 0.7,
+        "cards_home": 0.66,
+        "cards_away": 0.53,
+        "dnb_home": 0.55,
+        "xg": 2.98,
+        "expected_corners": 11.4
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "SE Palmeiras",
+      "away": "Club Cerro Porteño",
+      "kickoff": "12/08 22:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.7,
+        "cards_home": 0.62,
+        "cards_away": 0.67,
+        "dnb_home": 0.64,
+        "xg": 3.13,
+        "expected_corners": 11.9
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Platense",
-      "away": "CD Coquimbo Unido",
-      "kickoff": "12/08 22:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.72,
-        "xg": 3.0,
-        "expected_corners": 12.5
-      }
-    }
-  ]
+  "hot": []
 }
