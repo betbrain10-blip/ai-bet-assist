@@ -1,22 +1,6 @@
 {
-  "updated_at": "12/08 20:42",
-  "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CA Platense",
-      "away": "CD Coquimbo Unido",
-      "kickoff": "12/08 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.64,
-        "xg": 2.7,
-        "expected_corners": 8.8
-      }
-    }
-  ],
+  "updated_at": "12/08 21:43",
+  "value": [],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -24,13 +8,28 @@
       "away": "CD Coquimbo Unido",
       "kickoff": "12/08 22:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
+        "over25": 0.62,
+        "corners95": 0.63,
+        "cards_home": 0.65,
+        "cards_away": 0.62,
+        "dnb_home": 0.55,
+        "xg": 3.13,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "SE Palmeiras",
+      "away": "Club Cerro Porteño",
+      "kickoff": "12/08 22:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.65,
         "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.64,
-        "xg": 2.7,
-        "expected_corners": 8.8
+        "cards_away": 0.55,
+        "dnb_home": 0.63,
+        "xg": 3.39,
+        "expected_corners": 9.5
       }
     }
   ],
