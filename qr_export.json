@@ -1,5 +1,5 @@
 {
-  "updated_at": "12/08 19:38",
+  "updated_at": "12/08 20:42",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,28 +7,13 @@
       "away": "CD Coquimbo Unido",
       "kickoff": "12/08 22:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.52,
-        "cards_away": 0.6,
-        "dnb_home": 0.6,
-        "xg": 2.28,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "SE Palmeiras",
-      "away": "Club Cerro Porteño",
-      "kickoff": "12/08 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.69,
-        "xg": 3.17,
-        "expected_corners": 12.2
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 2.7,
+        "expected_corners": 8.8
       }
     }
   ],
@@ -39,46 +24,15 @@
       "away": "CD Coquimbo Unido",
       "kickoff": "12/08 22:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.52,
-        "cards_away": 0.6,
-        "dnb_home": 0.6,
-        "xg": 2.28,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "SE Palmeiras",
-      "away": "Club Cerro Porteño",
-      "kickoff": "12/08 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.69,
-        "xg": 3.17,
-        "expected_corners": 12.2
+        "over25": 0.69,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.52,
+        "dnb_home": 0.64,
+        "xg": 2.7,
+        "expected_corners": 8.8
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "SE Palmeiras",
-      "away": "Club Cerro Porteño",
-      "kickoff": "12/08 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.64,
-        "dnb_home": 0.69,
-        "xg": 3.17,
-        "expected_corners": 12.2
-      }
-    }
-  ]
+  "hot": []
 }
