@@ -1,52 +1,37 @@
 {
-  "updated_at": "13/08 05:56",
+  "updated_at": "13/08 07:37",
   "value": [],
   "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Cruzeiro EC",
-      "away": "CR Flamengo",
-      "kickoff": "13/08 00:30",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 2.12,
-        "expected_corners": 11.5
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "Mirassol FC",
       "away": "LDU de Quito",
       "kickoff": "13/08 22:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.68,
-        "cards_home": 0.66,
-        "cards_away": 0.59,
-        "dnb_home": 0.61,
-        "xg": 2.93,
-        "expected_corners": 10.4
+        "over25": 0.61,
+        "corners95": 0.62,
+        "cards_home": 0.52,
+        "cards_away": 0.62,
+        "dnb_home": 0.74,
+        "xg": 2.48,
+        "expected_corners": 11.7
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "Cruzeiro EC",
-      "away": "CR Flamengo",
-      "kickoff": "13/08 00:30",
+      "home": "Mirassol FC",
+      "away": "LDU de Quito",
+      "kickoff": "13/08 22:00",
       "markets": {
-        "over25": 0.56,
+        "over25": 0.61,
         "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 2.12,
-        "expected_corners": 11.5
+        "cards_home": 0.52,
+        "cards_away": 0.62,
+        "dnb_home": 0.74,
+        "xg": 2.48,
+        "expected_corners": 11.7
       }
     }
   ]
