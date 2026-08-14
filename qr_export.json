@@ -1,113 +1,53 @@
 {
-  "updated_at": "14/08 08:44",
+  "updated_at": "14/08 09:59",
   "value": [
-    {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "Sparta Rotterdam",
-      "kickoff": "14/08 18:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.55,
-        "xg": 2.63,
-        "expected_corners": 9.8
-      }
-    },
     {
       "league": "Championship",
       "home": "Wolverhampton Wanderers FC",
       "away": "Blackburn Rovers FC",
       "kickoff": "14/08 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.55,
-        "cards_home": 0.55,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 2.64,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "Vitória SC",
-      "kickoff": "14/08 19:15",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
+        "over25": 0.69,
+        "corners95": 0.66,
         "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.75,
-        "xg": 2.34,
-        "expected_corners": 9.8
+        "cards_away": 0.54,
+        "dnb_home": 0.58,
+        "xg": 2.11,
+        "expected_corners": 11.9
       }
     }
   ],
   "corner": [
     {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "Sparta Rotterdam",
-      "kickoff": "14/08 18:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.55,
-        "xg": 2.63,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "Vitória SC",
-      "kickoff": "14/08 19:15",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.75,
-        "xg": 2.34,
-        "expected_corners": 9.8
-      }
-    }
-  ],
-  "hot": [
-    {
       "league": "Championship",
       "home": "Wolverhampton Wanderers FC",
       "away": "Blackburn Rovers FC",
       "kickoff": "14/08 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.55,
-        "cards_home": 0.55,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 2.64,
-        "expected_corners": 12.7
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.58,
+        "xg": 2.11,
+        "expected_corners": 11.9
       }
-    },
+    }
+  ],
+  "hot": [
     {
       "league": "Primeira Liga",
       "home": "Sporting Clube de Portugal",
       "away": "Vitória SC",
       "kickoff": "14/08 19:15",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.62,
-        "cards_away": 0.64,
-        "dnb_home": 0.75,
-        "xg": 2.34,
-        "expected_corners": 9.8
+        "over25": 0.56,
+        "corners95": 0.6,
+        "cards_home": 0.66,
+        "cards_away": 0.65,
+        "dnb_home": 0.71,
+        "xg": 3.21,
+        "expected_corners": 10.3
       }
     }
   ]
