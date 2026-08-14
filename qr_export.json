@@ -1,68 +1,36 @@
 {
-  "updated_at": "14/08 14:50",
+  "updated_at": "14/08 15:50",
   "value": [
     {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "Sparta Rotterdam",
-      "kickoff": "14/08 18:00",
+      "league": "Championship",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Blackburn Rovers FC",
+      "kickoff": "14/08 19:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.6,
-        "dnb_home": 0.58,
-        "xg": 2.71,
-        "expected_corners": 8.9
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.51,
+        "cards_away": 0.58,
+        "dnb_home": 0.6,
+        "xg": 2.99,
+        "expected_corners": 11.9
       }
     }
   ],
   "corner": [
     {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "Sparta Rotterdam",
-      "kickoff": "14/08 18:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.6,
-        "dnb_home": 0.58,
-        "xg": 2.71,
-        "expected_corners": 8.9
-      }
-    },
-    {
       "league": "Championship",
       "home": "Wolverhampton Wanderers FC",
       "away": "Blackburn Rovers FC",
       "kickoff": "14/08 19:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.6,
-        "dnb_home": 0.7,
-        "xg": 3.21,
-        "expected_corners": 9.4
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Wolverhampton Wanderers FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "14/08 19:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.6,
-        "dnb_home": 0.7,
-        "xg": 3.21,
-        "expected_corners": 9.4
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.51,
+        "cards_away": 0.58,
+        "dnb_home": 0.6,
+        "xg": 2.99,
+        "expected_corners": 11.9
       }
     },
     {
@@ -71,14 +39,15 @@
       "away": "Vitória SC",
       "kickoff": "14/08 19:15",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.57,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.75,
-        "xg": 2.66,
-        "expected_corners": 9.8
+        "over25": 0.57,
+        "corners95": 0.65,
+        "cards_home": 0.55,
+        "cards_away": 0.51,
+        "dnb_home": 0.55,
+        "xg": 2.83,
+        "expected_corners": 11.6
       }
     }
-  ]
+  ],
+  "hot": []
 }
