@@ -1,54 +1,98 @@
 {
-  "updated_at": "13/08 23:39",
+  "updated_at": "14/08 01:52",
   "value": [
     {
       "league": "Copa Libertadores",
-      "home": "Mirassol FC",
-      "away": "LDU de Quito",
-      "kickoff": "13/08 22:00",
+      "home": "CA Rosario Central",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "14/08 00:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
+        "over25": 0.72,
+        "corners95": 0.6,
         "cards_home": 0.58,
-        "cards_away": 0.63,
-        "dnb_home": 0.72,
-        "xg": 3.31,
-        "expected_corners": 10.7
+        "cards_away": 0.58,
+        "dnb_home": 0.61,
+        "xg": 2.17,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Blackburn Rovers FC",
+      "kickoff": "14/08 19:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.64,
+        "dnb_home": 0.65,
+        "xg": 2.8,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Portugal",
+      "away": "Vitória SC",
+      "kickoff": "14/08 19:15",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 3.37,
+        "expected_corners": 12.6
       }
     }
   ],
   "corner": [
     {
-      "league": "Copa Libertadores",
-      "home": "Mirassol FC",
-      "away": "LDU de Quito",
-      "kickoff": "13/08 22:00",
+      "league": "Eredivisie",
+      "home": "Telstar 1963",
+      "away": "Sparta Rotterdam",
+      "kickoff": "14/08 18:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.58,
-        "cards_away": 0.63,
-        "dnb_home": 0.72,
-        "xg": 3.31,
-        "expected_corners": 10.7
+        "over25": 0.62,
+        "corners95": 0.67,
+        "cards_home": 0.61,
+        "cards_away": 0.58,
+        "dnb_home": 0.55,
+        "xg": 2.17,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Blackburn Rovers FC",
+      "kickoff": "14/08 19:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.64,
+        "dnb_home": 0.65,
+        "xg": 2.8,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Portugal",
+      "away": "Vitória SC",
+      "kickoff": "14/08 19:15",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 3.37,
+        "expected_corners": 12.6
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Mirassol FC",
-      "away": "LDU de Quito",
-      "kickoff": "13/08 22:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.58,
-        "cards_away": 0.63,
-        "dnb_home": 0.72,
-        "xg": 3.31,
-        "expected_corners": 10.7
-      }
-    }
-  ]
+  "hot": []
 }
