@@ -1,51 +1,81 @@
 {
-  "updated_at": "15/08 17:18",
+  "updated_at": "15/08 17:45",
   "value": [
-    {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "Rayo Vallecano de Madrid",
-      "kickoff": "15/08 19:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.52,
-        "dnb_home": 0.58,
-        "xg": 3.2,
-        "expected_corners": 12.7
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "Deportivo Alavés",
-      "away": "Getafe CF",
-      "kickoff": "15/08 17:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.67,
-        "xg": 2.74,
-        "expected_corners": 9.5
-      }
-    },
     {
       "league": "Eredivisie",
       "home": "SBV Excelsior",
       "away": "PSV",
       "kickoff": "15/08 18:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
+        "over25": 0.68,
+        "corners95": 0.7,
+        "cards_home": 0.53,
+        "cards_away": 0.68,
         "dnb_home": 0.73,
-        "xg": 3.33,
-        "expected_corners": 11.4
+        "xg": 2.28,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Fortuna Sittard",
+      "away": "SC Cambuur-Leeuwarden",
+      "kickoff": "15/08 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.61,
+        "xg": 2.9,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Rayo Vallecano de Madrid",
+      "kickoff": "15/08 19:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.61,
+        "expected_corners": 9.4
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Eredivisie",
+      "home": "SBV Excelsior",
+      "away": "PSV",
+      "kickoff": "15/08 18:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.7,
+        "cards_home": 0.53,
+        "cards_away": 0.68,
+        "dnb_home": 0.73,
+        "xg": 2.28,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Fortuna Sittard",
+      "away": "SC Cambuur-Leeuwarden",
+      "kickoff": "15/08 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.61,
+        "xg": 2.9,
+        "expected_corners": 12.4
       }
     },
     {
@@ -54,13 +84,13 @@
       "away": "FC Porto",
       "kickoff": "15/08 19:30",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.67,
-        "cards_home": 0.53,
-        "cards_away": 0.53,
-        "dnb_home": 0.55,
-        "xg": 2.91,
-        "expected_corners": 12.6
+        "over25": 0.56,
+        "corners95": 0.7,
+        "cards_home": 0.64,
+        "cards_away": 0.64,
+        "dnb_home": 0.58,
+        "xg": 2.59,
+        "expected_corners": 8.8
       }
     },
     {
@@ -69,13 +99,13 @@
       "away": "Rayo Vallecano de Madrid",
       "kickoff": "15/08 19:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.52,
-        "dnb_home": 0.58,
-        "xg": 3.2,
-        "expected_corners": 12.7
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.61,
+        "expected_corners": 9.4
       }
     }
   ],
@@ -86,28 +116,28 @@
       "away": "PSV",
       "kickoff": "15/08 18:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
+        "over25": 0.68,
+        "corners95": 0.7,
+        "cards_home": 0.53,
+        "cards_away": 0.68,
         "dnb_home": 0.73,
-        "xg": 3.33,
-        "expected_corners": 11.4
+        "xg": 2.28,
+        "expected_corners": 9.8
       }
     },
     {
-      "league": "Eredivisie",
-      "home": "Fortuna Sittard",
-      "away": "SC Cambuur-Leeuwarden",
-      "kickoff": "15/08 19:00",
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Rayo Vallecano de Madrid",
+      "kickoff": "15/08 19:30",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.6,
+        "over25": 0.69,
+        "corners95": 0.62,
         "cards_home": 0.53,
         "cards_away": 0.66,
-        "dnb_home": 0.69,
-        "xg": 3.26,
-        "expected_corners": 10.3
+        "dnb_home": 0.74,
+        "xg": 2.61,
+        "expected_corners": 9.4
       }
     }
   ]
