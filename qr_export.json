@@ -1,22 +1,6 @@
 {
-  "updated_at": "15/08 19:24",
-  "value": [
-    {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "Rayo Vallecano de Madrid",
-      "kickoff": "15/08 19:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.57,
-        "cards_home": 0.62,
-        "cards_away": 0.66,
-        "dnb_home": 0.57,
-        "xg": 3.23,
-        "expected_corners": 8.8
-      }
-    }
-  ],
+  "updated_at": "15/08 19:44",
+  "value": [],
   "corner": [],
   "hot": []
 }
