@@ -1,38 +1,6 @@
 {
-  "updated_at": "16/08 16:23",
+  "updated_at": "16/08 16:49",
   "value": [],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Levante UD",
-      "kickoff": "16/08 17:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 2.69,
-        "expected_corners": 10.5
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primera Division",
-      "home": "RCD Espanyol de Barcelona",
-      "away": "Levante UD",
-      "kickoff": "16/08 17:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.53,
-        "dnb_home": 0.73,
-        "xg": 2.69,
-        "expected_corners": 10.5
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
