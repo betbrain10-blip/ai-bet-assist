@@ -1,6 +1,37 @@
 {
-  "updated_at": "16/08 23:43",
-  "value": [],
+  "updated_at": "17/08 01:12",
+  "value": [
+    {
+      "league": "Primera Division",
+      "home": "RC Deportivo La Coruña",
+      "away": "Elche CF",
+      "kickoff": "17/08 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.59,
+        "cards_home": 0.59,
+        "cards_away": 0.53,
+        "dnb_home": 0.62,
+        "xg": 2.5,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Cardiff City FC",
+      "away": "Wrexham AFC",
+      "kickoff": "17/08 19:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.58,
+        "cards_home": 0.57,
+        "cards_away": 0.5,
+        "dnb_home": 0.66,
+        "xg": 2.39,
+        "expected_corners": 11.5
+      }
+    }
+  ],
   "corner": [],
   "hot": []
 }
