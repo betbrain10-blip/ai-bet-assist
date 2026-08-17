@@ -1,5 +1,5 @@
 {
-  "updated_at": "17/08 21:24",
+  "updated_at": "17/08 21:49",
   "value": [],
   "corner": [
     {
@@ -8,15 +8,31 @@
       "away": "Clube do Remo",
       "kickoff": "17/08 23:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.57,
-        "xg": 2.74,
-        "expected_corners": 8.9
+        "over25": 0.58,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.72,
+        "xg": 2.63,
+        "expected_corners": 8.6
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "Clube do Remo",
+      "kickoff": "17/08 23:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.72,
+        "xg": 2.63,
+        "expected_corners": 8.6
+      }
+    }
+  ]
 }
