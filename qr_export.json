@@ -1,5 +1,5 @@
 {
-  "updated_at": "17/08 06:52",
+  "updated_at": "17/08 07:51",
   "value": [
     {
       "league": "Primera Division",
@@ -8,12 +8,27 @@
       "kickoff": "17/08 19:00",
       "markets": {
         "over25": 0.66,
-        "corners95": 0.55,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.65,
-        "xg": 2.6,
+        "corners95": 0.69,
+        "cards_home": 0.54,
+        "cards_away": 0.55,
+        "dnb_home": 0.56,
+        "xg": 3.32,
         "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Cardiff City FC",
+      "away": "Wrexham AFC",
+      "kickoff": "17/08 19:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.76,
+        "expected_corners": 9.0
       }
     },
     {
@@ -22,32 +37,93 @@
       "away": "Sport Lisboa e Benfica",
       "kickoff": "17/08 19:15",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.65,
-        "xg": 2.59,
-        "expected_corners": 11.9
+        "over25": 0.64,
+        "corners95": 0.58,
+        "cards_home": 0.57,
+        "cards_away": 0.64,
+        "dnb_home": 0.71,
+        "xg": 2.66,
+        "expected_corners": 11.3
       }
     }
   ],
   "corner": [
+    {
+      "league": "Primera Division",
+      "home": "RC Deportivo La Coruña",
+      "away": "Elche CF",
+      "kickoff": "17/08 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.54,
+        "cards_away": 0.55,
+        "dnb_home": 0.56,
+        "xg": 3.32,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Cardiff City FC",
+      "away": "Wrexham AFC",
+      "kickoff": "17/08 19:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.76,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "Clube do Remo",
+      "kickoff": "17/08 23:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.62,
+        "dnb_home": 0.61,
+        "xg": 2.46,
+        "expected_corners": 11.0
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Championship",
+      "home": "Cardiff City FC",
+      "away": "Wrexham AFC",
+      "kickoff": "17/08 19:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.76,
+        "expected_corners": 9.0
+      }
+    },
     {
       "league": "Primeira Liga",
       "home": "Casa Pia AC",
       "away": "Sport Lisboa e Benfica",
       "kickoff": "17/08 19:15",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.52,
-        "cards_away": 0.54,
-        "dnb_home": 0.65,
-        "xg": 2.59,
-        "expected_corners": 11.9
+        "over25": 0.64,
+        "corners95": 0.58,
+        "cards_home": 0.57,
+        "cards_away": 0.64,
+        "dnb_home": 0.71,
+        "xg": 2.66,
+        "expected_corners": 11.3
       }
     }
-  ],
-  "hot": []
+  ]
 }
