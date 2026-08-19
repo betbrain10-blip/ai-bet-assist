@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/08 10:27",
+  "updated_at": "19/08 10:55",
   "value": [
     {
       "league": "Primera Division",
@@ -7,60 +7,45 @@
       "away": "Málaga CF",
       "kickoff": "19/08 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.61,
-        "cards_home": 0.68,
-        "cards_away": 0.65,
-        "dnb_home": 0.67,
-        "xg": 3.18,
-        "expected_corners": 9.6
+        "over25": 0.67,
+        "corners95": 0.55,
+        "cards_home": 0.54,
+        "cards_away": 0.6,
+        "dnb_home": 0.6,
+        "xg": 2.75,
+        "expected_corners": 10.1
       }
     },
     {
       "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "CA Platense",
+      "home": "Club Cerro Porteño",
+      "away": "SE Palmeiras",
       "kickoff": "19/08 22:00",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.71,
         "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 2.56,
-        "expected_corners": 11.4
+        "cards_home": 0.66,
+        "cards_away": 0.62,
+        "dnb_home": 0.61,
+        "xg": 3.19,
+        "expected_corners": 12.5
       }
     }
   ],
   "corner": [
     {
-      "league": "Primera Division",
-      "home": "Club Atlético de Madrid",
-      "away": "Málaga CF",
-      "kickoff": "19/08 19:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.61,
-        "cards_home": 0.68,
-        "cards_away": 0.65,
-        "dnb_home": 0.67,
-        "xg": 3.18,
-        "expected_corners": 9.6
-      }
-    },
-    {
       "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "CA Platense",
+      "home": "Club Cerro Porteño",
+      "away": "SE Palmeiras",
       "kickoff": "19/08 22:00",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.71,
         "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 2.56,
-        "expected_corners": 11.4
+        "cards_home": 0.66,
+        "cards_away": 0.62,
+        "dnb_home": 0.61,
+        "xg": 3.19,
+        "expected_corners": 12.5
       }
     }
   ],
@@ -71,13 +56,13 @@
       "away": "CA Platense",
       "kickoff": "19/08 22:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 2.56,
-        "expected_corners": 11.4
+        "over25": 0.55,
+        "corners95": 0.59,
+        "cards_home": 0.6,
+        "cards_away": 0.59,
+        "dnb_home": 0.75,
+        "xg": 2.36,
+        "expected_corners": 10.1
       }
     }
   ]
