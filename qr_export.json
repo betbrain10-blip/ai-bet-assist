@@ -1,38 +1,6 @@
 {
-  "updated_at": "19/08 20:54",
-  "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "SE Palmeiras",
-      "kickoff": "19/08 22:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.51,
-        "dnb_home": 0.66,
-        "xg": 2.55,
-        "expected_corners": 11.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "SE Palmeiras",
-      "kickoff": "19/08 22:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.51,
-        "dnb_home": 0.66,
-        "xg": 2.55,
-        "expected_corners": 11.8
-      }
-    }
-  ],
+  "updated_at": "19/08 21:23",
+  "value": [],
+  "corner": [],
   "hot": []
 }
