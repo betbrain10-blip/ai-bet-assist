@@ -1,6 +1,84 @@
 {
-  "updated_at": "19/08 21:23",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "19/08 21:50",
+  "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Cerro Porteño",
+      "away": "SE Palmeiras",
+      "kickoff": "19/08 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.62,
+        "dnb_home": 0.55,
+        "xg": 2.87,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Coquimbo Unido",
+      "away": "CA Platense",
+      "kickoff": "19/08 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.11,
+        "expected_corners": 9.3
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Cerro Porteño",
+      "away": "SE Palmeiras",
+      "kickoff": "19/08 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.62,
+        "dnb_home": 0.55,
+        "xg": 2.87,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Coquimbo Unido",
+      "away": "CA Platense",
+      "kickoff": "19/08 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.11,
+        "expected_corners": 9.3
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Coquimbo Unido",
+      "away": "CA Platense",
+      "kickoff": "19/08 22:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.11,
+        "expected_corners": 9.3
+      }
+    }
+  ]
 }
