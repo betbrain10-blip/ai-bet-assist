@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/08 19:23",
+  "updated_at": "19/08 19:48",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,47 +7,48 @@
       "away": "CA Platense",
       "kickoff": "19/08 22:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.56,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 3.23,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "SE Palmeiras",
-      "kickoff": "19/08 22:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.65,
-        "xg": 2.87,
-        "expected_corners": 8.7
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.64,
+        "dnb_home": 0.74,
+        "xg": 3.1,
+        "expected_corners": 12.2
       }
     }
   ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "SE Palmeiras",
+      "home": "CD Coquimbo Unido",
+      "away": "CA Platense",
       "kickoff": "19/08 22:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.65,
-        "xg": 2.87,
-        "expected_corners": 8.7
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.64,
+        "dnb_home": 0.74,
+        "xg": 3.1,
+        "expected_corners": 12.2
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Coquimbo Unido",
+      "away": "CA Platense",
+      "kickoff": "19/08 22:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.64,
+        "dnb_home": 0.74,
+        "xg": 3.1,
+        "expected_corners": 12.2
+      }
+    }
+  ]
 }
