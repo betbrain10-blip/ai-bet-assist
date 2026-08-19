@@ -1,5 +1,5 @@
 {
-  "updated_at": "19/08 15:58",
+  "updated_at": "19/08 16:38",
   "value": [
     {
       "league": "Primera Division",
@@ -7,43 +7,13 @@
       "away": "Málaga CF",
       "kickoff": "19/08 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.52,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "CD Coquimbo Unido",
-      "away": "CA Platense",
-      "kickoff": "19/08 22:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.58,
-        "cards_home": 0.62,
-        "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 2.81,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "Club Cerro Porteño",
-      "away": "SE Palmeiras",
-      "kickoff": "19/08 22:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.58,
-        "cards_home": 0.52,
-        "cards_away": 0.59,
-        "dnb_home": 0.67,
-        "xg": 2.65,
-        "expected_corners": 11.3
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 3.02,
+        "expected_corners": 9.1
       }
     }
   ],
@@ -54,13 +24,43 @@
       "away": "Málaga CF",
       "kickoff": "19/08 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.52,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 11.7
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 3.02,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "Club Cerro Porteño",
+      "away": "SE Palmeiras",
+      "kickoff": "19/08 22:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.59,
+        "dnb_home": 0.55,
+        "xg": 2.68,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "CD Coquimbo Unido",
+      "away": "CA Platense",
+      "kickoff": "19/08 22:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.68,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.59,
+        "xg": 3.07,
+        "expected_corners": 10.7
       }
     }
   ],
@@ -71,13 +71,13 @@
       "away": "Málaga CF",
       "kickoff": "19/08 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.52,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 11.7
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 3.02,
+        "expected_corners": 9.1
       }
     }
   ]
