@@ -1,37 +1,6 @@
 {
-  "updated_at": "20/08 05:28",
-  "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CR Flamengo",
-      "away": "Cruzeiro EC",
-      "kickoff": "20/08 00:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.61,
-        "dnb_home": 0.65,
-        "xg": 3.33,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Deportivo Alavés",
-      "kickoff": "20/08 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.64,
-        "cards_home": 0.55,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 2.39,
-        "expected_corners": 10.7
-      }
-    }
-  ],
+  "updated_at": "20/08 05:58",
+  "value": [],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -39,28 +8,13 @@
       "away": "Cruzeiro EC",
       "kickoff": "20/08 00:30",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.62,
         "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.61,
-        "dnb_home": 0.65,
-        "xg": 3.33,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Deportivo Alavés",
-      "kickoff": "20/08 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.64,
-        "cards_home": 0.55,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 2.39,
-        "expected_corners": 10.7
+        "cards_home": 0.61,
+        "cards_away": 0.65,
+        "dnb_home": 0.6,
+        "xg": 2.64,
+        "expected_corners": 11.3
       }
     },
     {
@@ -69,31 +23,15 @@
       "away": "Mirassol FC",
       "kickoff": "20/08 22:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.68,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.66,
-        "xg": 3.04,
-        "expected_corners": 9.8
+        "over25": 0.59,
+        "corners95": 0.62,
+        "cards_home": 0.66,
+        "cards_away": 0.65,
+        "dnb_home": 0.56,
+        "xg": 3.14,
+        "expected_corners": 12.1
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Deportivo Alavés",
-      "kickoff": "20/08 19:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.64,
-        "cards_home": 0.55,
-        "cards_away": 0.56,
-        "dnb_home": 0.72,
-        "xg": 2.39,
-        "expected_corners": 10.7
-      }
-    }
-  ]
+  "hot": []
 }
