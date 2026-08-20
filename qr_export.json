@@ -1,5 +1,5 @@
 {
-  "updated_at": "20/08 15:32",
+  "updated_at": "20/08 16:33",
   "value": [
     {
       "league": "Primera Division",
@@ -7,30 +7,45 @@
       "away": "Deportivo Alavés",
       "kickoff": "20/08 19:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.7,
+        "corners95": 0.6,
+        "cards_home": 0.58,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.45,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "LDU de Quito",
+      "away": "Mirassol FC",
+      "kickoff": "20/08 22:00",
+      "markets": {
+        "over25": 0.63,
         "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 2.23,
-        "expected_corners": 9.6
+        "cards_home": 0.57,
+        "cards_away": 0.59,
+        "dnb_home": 0.66,
+        "xg": 2.38,
+        "expected_corners": 10.6
       }
     }
   ],
   "corner": [
     {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Deportivo Alavés",
-      "kickoff": "20/08 19:00",
+      "league": "Copa Libertadores",
+      "home": "LDU de Quito",
+      "away": "Mirassol FC",
+      "kickoff": "20/08 22:00",
       "markets": {
-        "over25": 0.67,
+        "over25": 0.63,
         "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 2.23,
-        "expected_corners": 9.6
+        "cards_home": 0.57,
+        "cards_away": 0.59,
+        "dnb_home": 0.66,
+        "xg": 2.38,
+        "expected_corners": 10.6
       }
     }
   ],
@@ -41,13 +56,13 @@
       "away": "Deportivo Alavés",
       "kickoff": "20/08 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.67,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 2.23,
-        "expected_corners": 9.6
+        "over25": 0.7,
+        "corners95": 0.6,
+        "cards_home": 0.58,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.45,
+        "expected_corners": 12.0
       }
     }
   ]
