@@ -1,22 +1,7 @@
 {
-  "updated_at": "20/08 18:46",
+  "updated_at": "20/08 19:29",
   "value": [],
   "corner": [
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Deportivo Alavés",
-      "kickoff": "20/08 19:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.63,
-        "dnb_home": 0.75,
-        "xg": 2.57,
-        "expected_corners": 9.4
-      }
-    },
     {
       "league": "Copa Libertadores",
       "home": "LDU de Quito",
@@ -24,30 +9,14 @@
       "kickoff": "20/08 22:00",
       "markets": {
         "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.65,
-        "dnb_home": 0.58,
-        "xg": 2.29,
-        "expected_corners": 10.0
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.55,
+        "dnb_home": 0.64,
+        "xg": 3.3,
+        "expected_corners": 8.7
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Deportivo Alavés",
-      "kickoff": "20/08 19:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.63,
-        "dnb_home": 0.75,
-        "xg": 2.57,
-        "expected_corners": 9.4
-      }
-    }
-  ]
+  "hot": []
 }
