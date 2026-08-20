@@ -1,22 +1,6 @@
 {
-  "updated_at": "20/08 22:25",
-  "value": [
-    {
-      "league": "Copa Libertadores",
-      "home": "LDU de Quito",
-      "away": "Mirassol FC",
-      "kickoff": "20/08 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.13,
-        "expected_corners": 11.0
-      }
-    }
-  ],
+  "updated_at": "20/08 22:55",
+  "value": [],
   "corner": [
     {
       "league": "Copa Libertadores",
@@ -24,31 +8,15 @@
       "away": "Mirassol FC",
       "kickoff": "20/08 22:00",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.13,
-        "expected_corners": 11.0
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.53,
+        "cards_away": 0.56,
+        "dnb_home": 0.61,
+        "xg": 2.82,
+        "expected_corners": 8.8
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Copa Libertadores",
-      "home": "LDU de Quito",
-      "away": "Mirassol FC",
-      "kickoff": "20/08 22:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.61,
-        "dnb_home": 0.7,
-        "xg": 2.13,
-        "expected_corners": 11.0
-      }
-    }
-  ]
+  "hot": []
 }
