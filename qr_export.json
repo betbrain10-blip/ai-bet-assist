@@ -1,5 +1,5 @@
 {
-  "updated_at": "20/08 03:45",
+  "updated_at": "20/08 04:35",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,32 +7,78 @@
       "away": "Cruzeiro EC",
       "kickoff": "20/08 00:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.59,
-        "dnb_home": 0.57,
-        "xg": 2.69,
-        "expected_corners": 9.7
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.71,
+        "xg": 2.1,
+        "expected_corners": 12.6
       }
     }
   ],
   "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CR Flamengo",
+      "away": "Cruzeiro EC",
+      "kickoff": "20/08 00:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.71,
+        "xg": 2.1,
+        "expected_corners": 12.6
+      }
+    },
     {
       "league": "Primera Division",
       "home": "Rayo Vallecano de Madrid",
       "away": "Deportivo Alavés",
       "kickoff": "20/08 19:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.63,
-        "xg": 3.11,
-        "expected_corners": 10.2
+        "over25": 0.6,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.59,
+        "dnb_home": 0.61,
+        "xg": 2.6,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "LDU de Quito",
+      "away": "Mirassol FC",
+      "kickoff": "20/08 22:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.63,
+        "dnb_home": 0.62,
+        "xg": 3.27,
+        "expected_corners": 12.1
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "CR Flamengo",
+      "away": "Cruzeiro EC",
+      "kickoff": "20/08 00:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.66,
+        "dnb_home": 0.71,
+        "xg": 2.1,
+        "expected_corners": 12.6
+      }
+    }
+  ]
 }
