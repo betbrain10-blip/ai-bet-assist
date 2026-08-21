@@ -1,5 +1,5 @@
 {
-  "updated_at": "21/08 02:43",
+  "updated_at": "21/08 03:49",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,45 +7,30 @@
       "away": "CA Rosario Central",
       "kickoff": "21/08 00:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.55,
-        "dnb_home": 0.71,
-        "xg": 3.35,
-        "expected_corners": 9.1
+        "over25": 0.67,
+        "corners95": 0.56,
+        "cards_home": 0.57,
+        "cards_away": 0.52,
+        "dnb_home": 0.68,
+        "xg": 3.29,
+        "expected_corners": 12.1
       }
     }
   ],
   "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "SC Corinthians Paulista",
-      "away": "CA Rosario Central",
-      "kickoff": "21/08 00:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.55,
-        "dnb_home": 0.71,
-        "xg": 3.35,
-        "expected_corners": 9.1
-      }
-    },
     {
       "league": "Primera Division",
       "home": "Real Betis Balompié",
       "away": "Real Sociedad de Fútbol",
       "kickoff": "21/08 19:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.64,
-        "cards_home": 0.54,
-        "cards_away": 0.67,
-        "dnb_home": 0.67,
-        "xg": 2.43,
-        "expected_corners": 8.8
+        "over25": 0.6,
+        "corners95": 0.63,
+        "cards_home": 0.56,
+        "cards_away": 0.6,
+        "dnb_home": 0.57,
+        "xg": 3.26,
+        "expected_corners": 12.2
       }
     },
     {
@@ -54,29 +39,29 @@
       "away": "Coventry City FC",
       "kickoff": "21/08 19:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.56,
-        "dnb_home": 0.63,
-        "xg": 2.67,
-        "expected_corners": 11.1
+        "over25": 0.59,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.71,
+        "xg": 2.78,
+        "expected_corners": 9.1
       }
     }
   ],
   "hot": [
     {
-      "league": "Copa Libertadores",
-      "home": "SC Corinthians Paulista",
-      "away": "CA Rosario Central",
-      "kickoff": "21/08 00:30",
+      "league": "Premier League",
+      "home": "Arsenal FC",
+      "away": "Coventry City FC",
+      "kickoff": "21/08 19:00",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.59,
         "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.55,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
         "dnb_home": 0.71,
-        "xg": 3.35,
+        "xg": 2.78,
         "expected_corners": 9.1
       }
     }
