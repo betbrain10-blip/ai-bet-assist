@@ -1,51 +1,51 @@
 {
-  "updated_at": "21/08 17:57",
+  "updated_at": "21/08 18:41",
   "value": [
-    {
-      "league": "Primera Division",
-      "home": "Real Betis Balompié",
-      "away": "Real Sociedad de Fútbol",
-      "kickoff": "21/08 19:00",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.6,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.59,
-        "xg": 3.18,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Arsenal FC",
-      "away": "Coventry City FC",
-      "kickoff": "21/08 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 2.95,
-        "expected_corners": 10.4
-      }
-    }
-  ],
-  "corner": [
     {
       "league": "Ligue 1",
       "home": "Olympique de Marseille",
       "away": "RC Strasbourg Alsace",
       "kickoff": "21/08 18:45",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.64,
-        "dnb_home": 0.66,
-        "xg": 2.86,
-        "expected_corners": 10.2
+        "over25": 0.7,
+        "corners95": 0.56,
+        "cards_home": 0.65,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.18,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Betis Balompié",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "21/08 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.24,
+        "expected_corners": 10.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "Real Betis Balompié",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "21/08 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.6,
+        "dnb_home": 0.71,
+        "xg": 2.24,
+        "expected_corners": 10.8
       }
     },
     {
@@ -54,30 +54,45 @@
       "away": "Coventry City FC",
       "kickoff": "21/08 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 2.95,
-        "expected_corners": 10.4
+        "over25": 0.55,
+        "corners95": 0.7,
+        "cards_home": 0.67,
+        "cards_away": 0.5,
+        "dnb_home": 0.64,
+        "xg": 2.4,
+        "expected_corners": 12.3
       }
     }
   ],
   "hot": [
     {
-      "league": "Premier League",
-      "home": "Arsenal FC",
-      "away": "Coventry City FC",
+      "league": "Ligue 1",
+      "home": "Olympique de Marseille",
+      "away": "RC Strasbourg Alsace",
+      "kickoff": "21/08 18:45",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.56,
+        "cards_home": 0.65,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.18,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Betis Balompié",
+      "away": "Real Sociedad de Fútbol",
       "kickoff": "21/08 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.6,
         "dnb_home": 0.71,
-        "xg": 2.95,
-        "expected_corners": 10.4
+        "xg": 2.24,
+        "expected_corners": 10.8
       }
     }
   ]
