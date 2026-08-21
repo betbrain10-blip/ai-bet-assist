@@ -1,5 +1,5 @@
 {
-  "updated_at": "21/08 04:36",
+  "updated_at": "21/08 05:31",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -8,12 +8,12 @@
       "kickoff": "21/08 00:30",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.55,
-        "dnb_home": 0.6,
-        "xg": 2.11,
-        "expected_corners": 8.9
+        "corners95": 0.64,
+        "cards_home": 0.66,
+        "cards_away": 0.65,
+        "dnb_home": 0.56,
+        "xg": 2.2,
+        "expected_corners": 11.3
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "Coventry City FC",
       "kickoff": "21/08 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.64,
-        "xg": 2.75,
-        "expected_corners": 12.5
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.62,
+        "dnb_home": 0.75,
+        "xg": 3.18,
+        "expected_corners": 11.6
       }
     },
     {
@@ -37,12 +37,12 @@
       "away": "Real Sociedad de Fútbol",
       "kickoff": "21/08 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.59,
-        "xg": 2.86,
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.65,
+        "dnb_home": 0.71,
+        "xg": 2.42,
         "expected_corners": 9.0
       }
     }
@@ -55,12 +55,12 @@
       "kickoff": "21/08 00:30",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.55,
-        "dnb_home": 0.6,
-        "xg": 2.11,
-        "expected_corners": 8.9
+        "corners95": 0.64,
+        "cards_home": 0.66,
+        "cards_away": 0.65,
+        "dnb_home": 0.56,
+        "xg": 2.2,
+        "expected_corners": 11.3
       }
     },
     {
@@ -69,13 +69,13 @@
       "away": "Coventry City FC",
       "kickoff": "21/08 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.64,
-        "xg": 2.75,
-        "expected_corners": 12.5
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.62,
+        "dnb_home": 0.75,
+        "xg": 3.18,
+        "expected_corners": 11.6
       }
     },
     {
@@ -84,15 +84,46 @@
       "away": "Real Sociedad de Fútbol",
       "kickoff": "21/08 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.66,
-        "cards_home": 0.62,
-        "cards_away": 0.55,
-        "dnb_home": 0.59,
-        "xg": 2.86,
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.65,
+        "dnb_home": 0.71,
+        "xg": 2.42,
         "expected_corners": 9.0
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Premier League",
+      "home": "Arsenal FC",
+      "away": "Coventry City FC",
+      "kickoff": "21/08 19:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.59,
+        "cards_away": 0.62,
+        "dnb_home": 0.75,
+        "xg": 3.18,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Betis Balompié",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "21/08 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.65,
+        "dnb_home": 0.71,
+        "xg": 2.42,
+        "expected_corners": 9.0
+      }
+    }
+  ]
 }
