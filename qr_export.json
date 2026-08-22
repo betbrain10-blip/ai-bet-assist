@@ -1,5 +1,5 @@
 {
-  "updated_at": "22/08 19:28",
+  "updated_at": "22/08 19:47",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,63 +7,32 @@
       "away": "CR Flamengo",
       "kickoff": "22/08 23:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.57,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 3.35,
-        "expected_corners": 10.9
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.55,
+        "dnb_home": 0.68,
+        "xg": 2.15,
+        "expected_corners": 12.8
       }
     }
   ],
   "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "FC Alverca",
-      "kickoff": "22/08 19:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 3.35,
-        "expected_corners": 12.0
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Portugal",
-      "away": "FC Alverca",
-      "kickoff": "22/08 19:30",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.63,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 3.35,
-        "expected_corners": 12.0
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Cruzeiro EC",
       "away": "CR Flamengo",
       "kickoff": "22/08 23:30",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.57,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.74,
-        "xg": 3.35,
-        "expected_corners": 10.9
+        "over25": 0.63,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.55,
+        "dnb_home": 0.68,
+        "xg": 2.15,
+        "expected_corners": 12.8
       }
     }
-  ]
+  ],
+  "hot": []
 }
