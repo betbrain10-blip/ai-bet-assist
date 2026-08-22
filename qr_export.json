@@ -1,21 +1,6 @@
 {
-  "updated_at": "22/08 21:20",
+  "updated_at": "22/08 21:45",
   "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Internacional",
-      "away": "CA Mineiro",
-      "kickoff": "22/08 21:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.67,
-        "xg": 3.1,
-        "expected_corners": 9.1
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "Cruzeiro EC",
@@ -23,32 +8,16 @@
       "kickoff": "22/08 23:30",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.58,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.69,
-        "xg": 3.1,
-        "expected_corners": 9.0
+        "corners95": 0.59,
+        "cards_home": 0.65,
+        "cards_away": 0.58,
+        "dnb_home": 0.71,
+        "xg": 3.31,
+        "expected_corners": 11.9
       }
     }
   ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Internacional",
-      "away": "CA Mineiro",
-      "kickoff": "22/08 21:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.67,
-        "xg": 3.1,
-        "expected_corners": 9.1
-      }
-    }
-  ],
+  "corner": [],
   "hot": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -57,12 +26,12 @@
       "kickoff": "22/08 23:30",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.58,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.69,
-        "xg": 3.1,
-        "expected_corners": 9.0
+        "corners95": 0.59,
+        "cards_home": 0.65,
+        "cards_away": 0.58,
+        "dnb_home": 0.71,
+        "xg": 3.31,
+        "expected_corners": 11.9
       }
     }
   ]
