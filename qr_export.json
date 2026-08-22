@@ -1,321 +1,34 @@
 {
-  "updated_at": "22/08 04:31",
+  "updated_at": "22/08 05:25",
   "value": [
     {
       "league": "Championship",
-      "home": "Birmingham City FC",
-      "away": "Bristol City FC",
-      "kickoff": "22/08 11:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Championship",
       "home": "Millwall FC",
       "away": "Norwich City FC",
       "kickoff": "22/08 11:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.27,
-        "expected_corners": 10.7
+        "over25": 0.66,
+        "corners95": 0.56,
+        "cards_home": 0.63,
+        "cards_away": 0.54,
+        "dnb_home": 0.65,
+        "xg": 2.64,
+        "expected_corners": 11.8
       }
     },
     {
       "league": "Championship",
-      "home": "Lincoln City FC",
-      "away": "Portsmouth FC",
+      "home": "Birmingham City FC",
+      "away": "Bristol City FC",
       "kickoff": "22/08 11:30",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.57,
-        "xg": 2.1,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Preston North End FC",
-      "away": "Wolverhampton Wanderers FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
         "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.5,
-        "dnb_home": 0.71,
-        "xg": 2.7,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "West Ham United FC",
-      "away": "Charlton Athletic FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.74,
-        "xg": 3.11,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Watford FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.66,
-        "dnb_home": 0.75,
-        "xg": 2.77,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Swansea City AFC",
-      "away": "Sheffield United FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.54,
+        "corners95": 0.56,
+        "cards_home": 0.66,
         "cards_away": 0.57,
         "dnb_home": 0.69,
-        "xg": 2.83,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Ipswich Town FC",
-      "away": "Sunderland AFC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.56,
-        "xg": 2.44,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "Fortuna Sittard",
-      "away": "AZ",
-      "kickoff": "22/08 14:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.6,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.71,
-        "xg": 3.15,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CS Marítimo",
-      "away": "Académico de Viseu FC",
-      "kickoff": "22/08 14:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
-        "dnb_home": 0.64,
-        "xg": 2.59,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "AJ Auxerre",
-      "kickoff": "22/08 15:15",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.57,
-        "cards_home": 0.53,
-        "cards_away": 0.68,
-        "dnb_home": 0.65,
-        "xg": 3.11,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Udinese Calcio",
-      "away": "Como 1907",
-      "kickoff": "22/08 16:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.71,
-        "xg": 2.28,
-        "expected_corners": 9.9
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Championship",
-      "home": "Birmingham City FC",
-      "away": "Bristol City FC",
-      "kickoff": "22/08 11:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Norwich City FC",
-      "kickoff": "22/08 11:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.27,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Hull City AFC",
-      "away": "Manchester United FC",
-      "kickoff": "22/08 11:30",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.64,
-        "dnb_home": 0.75,
-        "xg": 2.28,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Lincoln City FC",
-      "away": "Portsmouth FC",
-      "kickoff": "22/08 11:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.57,
-        "xg": 2.1,
-        "expected_corners": 11.5
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Nottingham Forest FC",
-      "away": "Leeds United FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 3.28,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Southampton FC",
-      "away": "Stoke City FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.68,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.63,
-        "xg": 3.14,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Preston North End FC",
-      "away": "Wolverhampton Wanderers FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.5,
-        "dnb_home": 0.71,
-        "xg": 2.7,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Blackburn Rovers FC",
-      "away": "Middlesbrough FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.63,
-        "cards_away": 0.55,
-        "dnb_home": 0.74,
-        "xg": 2.44,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "West Ham United FC",
-      "away": "Charlton Athletic FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.74,
-        "xg": 3.11,
-        "expected_corners": 10.3
+        "xg": 2.22,
+        "expected_corners": 10.0
       }
     },
     {
@@ -324,13 +37,13 @@
       "away": "Cardiff City FC",
       "kickoff": "22/08 14:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.53,
-        "cards_away": 0.63,
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
         "dnb_home": 0.56,
-        "xg": 3.1,
-        "expected_corners": 10.6
+        "xg": 2.55,
+        "expected_corners": 9.1
       }
     },
     {
@@ -339,105 +52,13 @@
       "away": "Bolton Wanderers FC",
       "kickoff": "22/08 14:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.53,
-        "dnb_home": 0.67,
-        "xg": 2.77,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Wrexham AFC",
-      "away": "Watford FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.66,
-        "dnb_home": 0.75,
-        "xg": 2.77,
-        "expected_corners": 11.4
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Birmingham City FC",
-      "away": "Bristol City FC",
-      "kickoff": "22/08 11:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.52,
-        "dnb_home": 0.7,
-        "xg": 3.24,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Norwich City FC",
-      "kickoff": "22/08 11:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.59,
-        "dnb_home": 0.73,
-        "xg": 3.27,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Hull City AFC",
-      "away": "Manchester United FC",
-      "kickoff": "22/08 11:30",
-      "markets": {
-        "over25": 0.62,
+        "over25": 0.69,
         "corners95": 0.63,
-        "cards_home": 0.59,
-        "cards_away": 0.64,
-        "dnb_home": 0.75,
-        "xg": 2.28,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Preston North End FC",
-      "away": "Wolverhampton Wanderers FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.63,
-        "cards_home": 0.65,
-        "cards_away": 0.5,
-        "dnb_home": 0.71,
-        "xg": 2.7,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Blackburn Rovers FC",
-      "away": "Middlesbrough FC",
-      "kickoff": "22/08 14:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.63,
-        "cards_away": 0.55,
-        "dnb_home": 0.74,
-        "xg": 2.44,
-        "expected_corners": 10.4
+        "cards_home": 0.5,
+        "cards_away": 0.61,
+        "dnb_home": 0.63,
+        "xg": 2.77,
+        "expected_corners": 11.8
       }
     },
     {
@@ -446,13 +67,392 @@
       "away": "Charlton Athletic FC",
       "kickoff": "22/08 14:00",
       "markets": {
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.67,
+        "dnb_home": 0.59,
+        "xg": 2.83,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Preston North End FC",
+      "away": "Wolverhampton Wanderers FC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.6,
+        "dnb_home": 0.6,
+        "xg": 2.34,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Fortuna Sittard",
+      "away": "AZ",
+      "kickoff": "22/08 14:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.6,
+        "cards_home": 0.52,
+        "cards_away": 0.65,
+        "dnb_home": 0.58,
+        "xg": 3.29,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Athletic Club",
+      "away": "Sevilla FC",
+      "kickoff": "22/08 15:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.6,
+        "dnb_home": 0.56,
+        "xg": 2.46,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "AJ Auxerre",
+      "kickoff": "22/08 15:15",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.69,
+        "xg": 2.61,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Brentford FC",
+      "away": "Tottenham Hotspur FC",
+      "kickoff": "22/08 16:30",
+      "markets": {
         "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.65,
+        "dnb_home": 0.57,
+        "xg": 2.49,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Udinese Calcio",
+      "away": "Como 1907",
+      "kickoff": "22/08 16:30",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.67,
+        "cards_home": 0.66,
+        "cards_away": 0.59,
+        "dnb_home": 0.66,
+        "xg": 3.31,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "Sparta Rotterdam",
+      "away": "FC Utrecht",
+      "kickoff": "22/08 16:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.51,
+        "cards_away": 0.52,
+        "dnb_home": 0.68,
+        "xg": 3.31,
+        "expected_corners": 9.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Championship",
+      "home": "Lincoln City FC",
+      "away": "Portsmouth FC",
+      "kickoff": "22/08 11:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.65,
+        "cards_home": 0.62,
+        "cards_away": 0.5,
+        "dnb_home": 0.61,
+        "xg": 3.29,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Southampton FC",
+      "away": "Stoke City FC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.56,
         "corners95": 0.63,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.74,
-        "xg": 3.11,
-        "expected_corners": 10.3
+        "cards_home": 0.63,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 3.01,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Derby County FC",
+      "away": "Cardiff City FC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.56,
+        "xg": 2.55,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Ipswich Town FC",
+      "away": "Sunderland AFC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.61,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.65,
+        "xg": 3.14,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Queens Park Rangers FC",
+      "away": "Bolton Wanderers FC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.61,
+        "dnb_home": 0.63,
+        "xg": 2.77,
+        "expected_corners": 11.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Blackburn Rovers FC",
+      "away": "Middlesbrough FC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.7,
+        "cards_home": 0.63,
+        "cards_away": 0.57,
+        "dnb_home": 0.57,
+        "xg": 2.88,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "West Ham United FC",
+      "away": "Charlton Athletic FC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.67,
+        "dnb_home": 0.59,
+        "xg": 2.83,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Preston North End FC",
+      "away": "Wolverhampton Wanderers FC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.68,
+        "cards_home": 0.66,
+        "cards_away": 0.6,
+        "dnb_home": 0.6,
+        "xg": 2.34,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CS Marítimo",
+      "away": "Académico de Viseu FC",
+      "kickoff": "22/08 14:30",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.55,
+        "xg": 2.78,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Athletic Club",
+      "away": "Sevilla FC",
+      "kickoff": "22/08 15:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.6,
+        "dnb_home": 0.56,
+        "xg": 2.46,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "AJ Auxerre",
+      "kickoff": "22/08 15:15",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.69,
+        "xg": 2.61,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Brentford FC",
+      "away": "Tottenham Hotspur FC",
+      "kickoff": "22/08 16:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.65,
+        "dnb_home": 0.57,
+        "xg": 2.49,
+        "expected_corners": 11.7
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Premier League",
+      "home": "Hull City AFC",
+      "away": "Manchester United FC",
+      "kickoff": "22/08 11:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.57,
+        "cards_home": 0.51,
+        "cards_away": 0.6,
+        "dnb_home": 0.7,
+        "xg": 2.46,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Birmingham City FC",
+      "away": "Bristol City FC",
+      "kickoff": "22/08 11:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.56,
+        "cards_home": 0.66,
+        "cards_away": 0.57,
+        "dnb_home": 0.69,
+        "xg": 2.22,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Swansea City AFC",
+      "away": "Sheffield United FC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.58,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.71,
+        "xg": 2.99,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Everton FC",
+      "away": "Crystal Palace FC",
+      "kickoff": "22/08 14:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.6,
+        "cards_home": 0.58,
+        "cards_away": 0.55,
+        "dnb_home": 0.69,
+        "xg": 2.24,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "AJ Auxerre",
+      "kickoff": "22/08 15:15",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.69,
+        "xg": 2.61,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Valencia CF",
+      "away": "RC Celta de Vigo",
+      "kickoff": "22/08 17:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.55,
+        "cards_away": 0.51,
+        "dnb_home": 0.7,
+        "xg": 2.27,
+        "expected_corners": 10.9
       }
     }
   ]
