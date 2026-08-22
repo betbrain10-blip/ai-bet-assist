@@ -1,5 +1,5 @@
 {
-  "updated_at": "22/08 22:20",
+  "updated_at": "22/08 22:47",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "CR Flamengo",
       "kickoff": "22/08 23:30",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.67,
         "corners95": 0.63,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.64,
-        "xg": 3.34,
-        "expected_corners": 12.4
+        "cards_home": 0.53,
+        "cards_away": 0.59,
+        "dnb_home": 0.59,
+        "xg": 2.47,
+        "expected_corners": 11.6
       }
     }
   ],
@@ -24,13 +24,13 @@
       "away": "CR Flamengo",
       "kickoff": "22/08 23:30",
       "markets": {
-        "over25": 0.7,
+        "over25": 0.67,
         "corners95": 0.63,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.64,
-        "xg": 3.34,
-        "expected_corners": 12.4
+        "cards_home": 0.53,
+        "cards_away": 0.59,
+        "dnb_home": 0.59,
+        "xg": 2.47,
+        "expected_corners": 11.6
       }
     }
   ],
