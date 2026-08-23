@@ -1,38 +1,6 @@
 {
-  "updated_at": "23/08 22:20",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "23/08 22:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.54,
-        "dnb_home": 0.65,
-        "xg": 2.61,
-        "expected_corners": 12.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "SC Corinthians Paulista",
-      "kickoff": "23/08 22:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.54,
-        "dnb_home": 0.65,
-        "xg": 2.61,
-        "expected_corners": 12.6
-      }
-    }
-  ],
+  "updated_at": "23/08 22:47",
+  "value": [],
+  "corner": [],
   "hot": []
 }
