@@ -1,79 +1,34 @@
 {
-  "updated_at": "23/08 10:21",
+  "updated_at": "23/08 10:49",
   "value": [
+    {
+      "league": "Eredivisie",
+      "home": "PSV",
+      "away": "FC Groningen",
+      "kickoff": "23/08 12:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.55,
+        "dnb_home": 0.57,
+        "xg": 2.44,
+        "expected_corners": 11.7
+      }
+    },
     {
       "league": "Premier League",
       "home": "Brighton & Hove Albion FC",
       "away": "Aston Villa FC",
       "kickoff": "23/08 13:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.68,
-        "dnb_home": 0.6,
-        "xg": 3.06,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Manchester City FC",
-      "away": "AFC Bournemouth",
-      "kickoff": "23/08 13:00",
-      "markets": {
         "over25": 0.69,
-        "corners95": 0.58,
-        "cards_home": 0.5,
-        "cards_away": 0.56,
-        "dnb_home": 0.67,
-        "xg": 2.61,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "SC Cambuur-Leeuwarden",
-      "away": "Feyenoord Rotterdam",
-      "kickoff": "23/08 14:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.55,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.63,
-        "xg": 2.49,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Club Atlético de Madrid",
-      "away": "Villarreal CF",
-      "kickoff": "23/08 15:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.53,
-        "dnb_home": 0.66,
-        "xg": 2.68,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Le Havre AC",
-      "away": "AS Monaco FC",
-      "kickoff": "23/08 15:15",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.61,
-        "xg": 2.37,
-        "expected_corners": 10.8
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.52,
+        "dnb_home": 0.58,
+        "xg": 2.27,
+        "expected_corners": 11.1
       }
     },
     {
@@ -82,28 +37,13 @@
       "away": "Liverpool FC",
       "kickoff": "23/08 15:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.58,
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
         "dnb_home": 0.71,
-        "xg": 2.39,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Frosinone Calcio",
-      "away": "Juventus FC",
-      "kickoff": "23/08 16:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.63,
-        "cards_away": 0.62,
-        "dnb_home": 0.73,
-        "xg": 2.39,
-        "expected_corners": 10.9
+        "xg": 2.47,
+        "expected_corners": 11.7
       }
     },
     {
@@ -112,58 +52,58 @@
       "away": "US Lecce",
       "kickoff": "23/08 16:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.58,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.65,
-        "xg": 2.28,
-        "expected_corners": 8.6
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.64,
+        "cards_away": 0.64,
+        "dnb_home": 0.67,
+        "xg": 3.05,
+        "expected_corners": 8.8
       }
     },
     {
-      "league": "Serie A",
-      "home": "Atalanta BC",
-      "away": "US Sassuolo Calcio",
+      "league": "Primeira Liga",
+      "home": "CD Santa Clara",
+      "away": "FC Famalicão",
+      "kickoff": "23/08 17:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.85,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Paris Saint-Germain FC",
+      "away": "Stade Rennais FC 1901",
       "kickoff": "23/08 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.52,
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.61,
         "cards_away": 0.58,
-        "dnb_home": 0.67,
-        "xg": 2.44,
-        "expected_corners": 12.2
+        "dnb_home": 0.6,
+        "xg": 2.12,
+        "expected_corners": 8.8
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "CR Vasco da Gama",
+      "home": "RB Bragantino",
+      "away": "Grêmio FBPA",
       "kickoff": "23/08 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 2.48,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "EC Bahia",
-      "kickoff": "23/08 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 3.02,
-        "expected_corners": 11.6
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.61,
+        "cards_away": 0.62,
+        "dnb_home": 0.62,
+        "xg": 2.67,
+        "expected_corners": 12.6
       }
     },
     {
@@ -173,12 +113,27 @@
       "kickoff": "23/08 19:30",
       "markets": {
         "over25": 0.71,
-        "corners95": 0.64,
+        "corners95": 0.56,
         "cards_home": 0.59,
-        "cards_away": 0.51,
-        "dnb_home": 0.61,
-        "xg": 3.23,
-        "expected_corners": 10.5
+        "cards_away": 0.62,
+        "dnb_home": 0.6,
+        "xg": 3.39,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "Mirassol FC",
+      "kickoff": "23/08 21:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.6,
+        "xg": 3.08,
+        "expected_corners": 10.0
       }
     }
   ],
@@ -189,13 +144,28 @@
       "away": "Burnley FC",
       "kickoff": "23/08 11:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.55,
-        "cards_away": 0.66,
-        "dnb_home": 0.62,
-        "xg": 3.22,
-        "expected_corners": 8.5
+        "over25": 0.58,
+        "corners95": 0.66,
+        "cards_home": 0.64,
+        "cards_away": 0.64,
+        "dnb_home": 0.58,
+        "xg": 2.56,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "PSV",
+      "away": "FC Groningen",
+      "kickoff": "23/08 12:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.55,
+        "dnb_home": 0.57,
+        "xg": 2.44,
+        "expected_corners": 11.7
       }
     },
     {
@@ -204,28 +174,73 @@
       "away": "Lille OSC",
       "kickoff": "23/08 13:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.69,
-        "cards_home": 0.57,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 2.57,
-        "expected_corners": 9.1
+        "over25": 0.58,
+        "corners95": 0.61,
+        "cards_home": 0.52,
+        "cards_away": 0.67,
+        "dnb_home": 0.59,
+        "xg": 2.6,
+        "expected_corners": 10.1
       }
     },
     {
-      "league": "Primera Division",
-      "home": "Club Atlético de Madrid",
-      "away": "Villarreal CF",
-      "kickoff": "23/08 15:00",
+      "league": "Premier League",
+      "home": "Brighton & Hove Albion FC",
+      "away": "Aston Villa FC",
+      "kickoff": "23/08 13:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.62,
-        "cards_away": 0.53,
-        "dnb_home": 0.66,
-        "xg": 2.68,
-        "expected_corners": 11.7
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.52,
+        "dnb_home": 0.58,
+        "xg": 2.27,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Manchester City FC",
+      "away": "AFC Bournemouth",
+      "kickoff": "23/08 13:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.58,
+        "dnb_home": 0.61,
+        "xg": 2.74,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Vitória SC",
+      "away": "CD Nacional",
+      "kickoff": "23/08 14:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.63,
+        "cards_home": 0.66,
+        "cards_away": 0.54,
+        "dnb_home": 0.6,
+        "xg": 3.19,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "SC Cambuur-Leeuwarden",
+      "away": "Feyenoord Rotterdam",
+      "kickoff": "23/08 14:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.64,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.73,
+        "xg": 2.65,
+        "expected_corners": 10.3
       }
     },
     {
@@ -234,13 +249,13 @@
       "away": "AS Monaco FC",
       "kickoff": "23/08 15:15",
       "markets": {
-        "over25": 0.63,
+        "over25": 0.62,
         "corners95": 0.61,
-        "cards_home": 0.66,
-        "cards_away": 0.54,
-        "dnb_home": 0.61,
-        "xg": 2.37,
-        "expected_corners": 10.8
+        "cards_home": 0.51,
+        "cards_away": 0.55,
+        "dnb_home": 0.72,
+        "xg": 2.21,
+        "expected_corners": 8.8
       }
     },
     {
@@ -249,13 +264,43 @@
       "away": "Liverpool FC",
       "kickoff": "23/08 15:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.58,
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
         "dnb_home": 0.71,
-        "xg": 2.39,
-        "expected_corners": 10.9
+        "xg": 2.47,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Frosinone Calcio",
+      "away": "Juventus FC",
+      "kickoff": "23/08 16:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.62,
+        "cards_home": 0.57,
+        "cards_away": 0.54,
+        "dnb_home": 0.62,
+        "xg": 2.1,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Venezia FC",
+      "away": "US Lecce",
+      "kickoff": "23/08 16:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.64,
+        "cards_away": 0.64,
+        "dnb_home": 0.67,
+        "xg": 3.05,
+        "expected_corners": 8.8
       }
     },
     {
@@ -264,13 +309,75 @@
       "away": "FC Famalicão",
       "kickoff": "23/08 17:00",
       "markets": {
+        "over25": 0.68,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.85,
+        "expected_corners": 10.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Eredivisie",
+      "home": "SC Cambuur-Leeuwarden",
+      "away": "Feyenoord Rotterdam",
+      "kickoff": "23/08 14:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.64,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.73,
+        "xg": 2.65,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Le Havre AC",
+      "away": "AS Monaco FC",
+      "kickoff": "23/08 15:15",
+      "markets": {
         "over25": 0.62,
-        "corners95": 0.65,
+        "corners95": 0.61,
         "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.68,
-        "xg": 2.4,
-        "expected_corners": 9.1
+        "cards_away": 0.55,
+        "dnb_home": 0.72,
+        "xg": 2.21,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Newcastle United FC",
+      "away": "Liverpool FC",
+      "kickoff": "23/08 15:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
+        "dnb_home": 0.71,
+        "xg": 2.47,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CD Santa Clara",
+      "away": "FC Famalicão",
+      "kickoff": "23/08 17:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.68,
+        "cards_home": 0.6,
+        "cards_away": 0.64,
+        "dnb_home": 0.72,
+        "xg": 2.85,
+        "expected_corners": 10.9
       }
     },
     {
@@ -279,12 +386,12 @@
       "away": "Real Racing Club de Santander",
       "kickoff": "23/08 17:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.7,
+        "over25": 0.61,
+        "corners95": 0.63,
         "cards_home": 0.55,
-        "cards_away": 0.51,
+        "cards_away": 0.63,
         "dnb_home": 0.72,
-        "xg": 2.11,
+        "xg": 2.18,
         "expected_corners": 8.9
       }
     },
@@ -294,165 +401,13 @@
       "away": "US Sassuolo Calcio",
       "kickoff": "23/08 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.52,
-        "cards_away": 0.58,
-        "dnb_home": 0.67,
-        "xg": 2.44,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "CR Vasco da Gama",
-      "kickoff": "23/08 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 2.48,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "EC Bahia",
-      "kickoff": "23/08 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 3.02,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "Grêmio FBPA",
-      "kickoff": "23/08 19:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.61,
-        "cards_home": 0.62,
-        "cards_away": 0.57,
-        "dnb_home": 0.73,
-        "xg": 2.97,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "FC Arouca",
-      "kickoff": "23/08 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.64,
-        "cards_home": 0.59,
-        "cards_away": 0.51,
-        "dnb_home": 0.61,
-        "xg": 3.23,
-        "expected_corners": 10.5
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Ligue 1",
-      "home": "Angers SCO",
-      "away": "Lille OSC",
-      "kickoff": "23/08 13:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.69,
+        "over25": 0.58,
+        "corners95": 0.68,
         "cards_home": 0.57,
-        "cards_away": 0.51,
-        "dnb_home": 0.73,
-        "xg": 2.57,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Newcastle United FC",
-      "away": "Liverpool FC",
-      "kickoff": "23/08 15:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.62,
-        "cards_home": 0.62,
-        "cards_away": 0.58,
+        "cards_away": 0.57,
         "dnb_home": 0.71,
-        "xg": 2.39,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Frosinone Calcio",
-      "away": "Juventus FC",
-      "kickoff": "23/08 16:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.63,
-        "cards_away": 0.62,
-        "dnb_home": 0.73,
-        "xg": 2.39,
-        "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Getafe CF",
-      "away": "Real Racing Club de Santander",
-      "kickoff": "23/08 17:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.7,
-        "cards_home": 0.55,
-        "cards_away": 0.51,
-        "dnb_home": 0.72,
-        "xg": 2.11,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SE Palmeiras",
-      "away": "CR Vasco da Gama",
-      "kickoff": "23/08 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 2.48,
+        "xg": 2.49,
         "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "EC Bahia",
-      "kickoff": "23/08 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.62,
-        "cards_home": 0.52,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 3.02,
-        "expected_corners": 11.6
       }
     }
   ]
