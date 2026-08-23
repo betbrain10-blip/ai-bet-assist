@@ -1,5 +1,5 @@
 {
-  "updated_at": "23/08 21:44",
+  "updated_at": "23/08 22:20",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "SC Corinthians Paulista",
       "kickoff": "23/08 22:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.57,
-        "xg": 3.01,
-        "expected_corners": 12.0
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.54,
+        "dnb_home": 0.65,
+        "xg": 2.61,
+        "expected_corners": 12.6
       }
     }
   ],
@@ -24,13 +24,13 @@
       "away": "SC Corinthians Paulista",
       "kickoff": "23/08 22:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.69,
-        "cards_home": 0.54,
-        "cards_away": 0.6,
-        "dnb_home": 0.57,
-        "xg": 3.01,
-        "expected_corners": 12.0
+        "over25": 0.64,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.54,
+        "dnb_home": 0.65,
+        "xg": 2.61,
+        "expected_corners": 12.6
       }
     }
   ],
