@@ -1,5 +1,5 @@
 {
-  "updated_at": "24/08 21:00",
+  "updated_at": "24/08 21:53",
   "value": [],
   "corner": [
     {
@@ -8,13 +8,13 @@
       "away": "CA Paranaense",
       "kickoff": "24/08 23:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.61,
-        "cards_home": 0.55,
-        "cards_away": 0.67,
-        "dnb_home": 0.56,
-        "xg": 2.17,
-        "expected_corners": 10.3
+        "over25": 0.6,
+        "corners95": 0.64,
+        "cards_home": 0.59,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 3.39,
+        "expected_corners": 9.3
       }
     }
   ],
