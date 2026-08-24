@@ -1,66 +1,19 @@
 {
-  "updated_at": "24/08 17:29",
+  "updated_at": "24/08 18:00",
   "value": [
-    {
-      "league": "Premier League",
-      "home": "Fulham FC",
-      "away": "Chelsea FC",
-      "kickoff": "24/08 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.62,
-        "xg": 2.62,
-        "expected_corners": 12.2
-      }
-    },
     {
       "league": "Primera Division",
       "home": "Málaga CF",
       "away": "RC Deportivo La Coruña",
       "kickoff": "24/08 19:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.58,
-        "cards_home": 0.54,
-        "cards_away": 0.67,
-        "dnb_home": 0.67,
-        "xg": 3.0,
-        "expected_corners": 11.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "CA Osasuna",
-      "away": "Levante UD",
-      "kickoff": "24/08 17:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.66,
-        "cards_home": 0.59,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 3.36,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Fulham FC",
-      "away": "Chelsea FC",
-      "kickoff": "24/08 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.62,
-        "xg": 2.62,
-        "expected_corners": 12.2
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.6,
+        "dnb_home": 0.56,
+        "xg": 2.12,
+        "expected_corners": 11.9
       }
     },
     {
@@ -69,30 +22,77 @@
       "away": "CA Paranaense",
       "kickoff": "24/08 23:00",
       "markets": {
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.51,
+        "dnb_home": 0.59,
+        "xg": 2.57,
+        "expected_corners": 12.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "AS Roma",
+      "away": "ACF Fiorentina",
+      "kickoff": "24/08 18:45",
+      "markets": {
         "over25": 0.61,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.55,
-        "dnb_home": 0.62,
-        "xg": 2.66,
-        "expected_corners": 12.5
+        "corners95": 0.65,
+        "cards_home": 0.68,
+        "cards_away": 0.54,
+        "dnb_home": 0.66,
+        "xg": 2.34,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Málaga CF",
+      "away": "RC Deportivo La Coruña",
+      "kickoff": "24/08 19:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.6,
+        "dnb_home": 0.56,
+        "xg": 2.12,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "CA Paranaense",
+      "kickoff": "24/08 23:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.54,
+        "cards_away": 0.51,
+        "dnb_home": 0.59,
+        "xg": 2.57,
+        "expected_corners": 12.6
       }
     }
   ],
   "hot": [
     {
-      "league": "Primera Division",
-      "home": "CA Osasuna",
-      "away": "Levante UD",
-      "kickoff": "24/08 17:30",
+      "league": "Premier League",
+      "home": "Fulham FC",
+      "away": "Chelsea FC",
+      "kickoff": "24/08 19:00",
       "markets": {
         "over25": 0.58,
-        "corners95": 0.66,
-        "cards_home": 0.59,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 3.36,
-        "expected_corners": 9.2
+        "corners95": 0.58,
+        "cards_home": 0.52,
+        "cards_away": 0.65,
+        "dnb_home": 0.75,
+        "xg": 2.1,
+        "expected_corners": 10.9
       }
     }
   ]
