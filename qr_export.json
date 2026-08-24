@@ -1,38 +1,6 @@
 {
-  "updated_at": "24/08 22:53",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "CA Paranaense",
-      "kickoff": "24/08 23:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.67,
-        "cards_away": 0.51,
-        "dnb_home": 0.66,
-        "xg": 2.32,
-        "expected_corners": 10.6
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "CA Paranaense",
-      "kickoff": "24/08 23:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.67,
-        "cards_away": 0.51,
-        "dnb_home": 0.66,
-        "xg": 2.32,
-        "expected_corners": 10.6
-      }
-    }
-  ],
+  "updated_at": "24/08 23:20",
+  "value": [],
+  "corner": [],
   "hot": []
 }
