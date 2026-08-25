@@ -1,38 +1,6 @@
 {
-  "updated_at": "25/08 03:47",
-  "value": [
-    {
-      "league": "Primera Division",
-      "home": "Valencia CF",
-      "away": "Real Betis Balompié",
-      "kickoff": "25/08 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 3.26,
-        "expected_corners": 11.4
-      }
-    }
-  ],
+  "updated_at": "25/08 04:37",
+  "value": [],
   "corner": [],
-  "hot": [
-    {
-      "league": "Primera Division",
-      "home": "Valencia CF",
-      "away": "Real Betis Balompié",
-      "kickoff": "25/08 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.57,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 3.26,
-        "expected_corners": 11.4
-      }
-    }
-  ]
+  "hot": []
 }
