@@ -1,83 +1,37 @@
 {
-  "updated_at": "26/08 03:52",
+  "updated_at": "26/08 04:37",
   "value": [
     {
-      "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "CD Tolima",
-      "kickoff": "26/08 00:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.0,
-        "expected_corners": 10.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "CD Tolima",
-      "kickoff": "26/08 00:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.0,
-        "expected_corners": 10.3
-      }
-    },
-    {
       "league": "Primera Division",
       "home": "Real Madrid CF",
       "away": "Real Sociedad de Fútbol",
       "kickoff": "26/08 19:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 3.18,
-        "expected_corners": 12.3
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.61,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 3.35,
+        "expected_corners": 9.3
       }
     }
   ],
+  "corner": [],
   "hot": [
     {
-      "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "CD Tolima",
-      "kickoff": "26/08 00:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.63,
-        "cards_home": 0.67,
-        "cards_away": 0.54,
-        "dnb_home": 0.73,
-        "xg": 3.0,
-        "expected_corners": 10.3
-      }
-    },
-    {
       "league": "Primera Division",
       "home": "Real Madrid CF",
       "away": "Real Sociedad de Fútbol",
       "kickoff": "26/08 19:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.69,
-        "xg": 3.18,
-        "expected_corners": 12.3
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.61,
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 3.35,
+        "expected_corners": 9.3
       }
     }
   ]
