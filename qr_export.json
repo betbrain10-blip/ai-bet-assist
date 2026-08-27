@@ -1,38 +1,6 @@
 {
-  "updated_at": "27/08 14:29",
+  "updated_at": "27/08 23:54",
   "value": [],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "RC Celta de Vigo",
-      "away": "CA Osasuna",
-      "kickoff": "27/08 18:30",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 9.6
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primera Division",
-      "home": "RC Celta de Vigo",
-      "away": "CA Osasuna",
-      "kickoff": "27/08 18:30",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.73,
-        "xg": 2.16,
-        "expected_corners": 9.6
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
