@@ -1,203 +1,19 @@
 {
-  "updated_at": "29/08 18:45",
+  "updated_at": "29/08 21:30",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "Parma Calcio 1913",
-      "kickoff": "29/08 18:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.61,
-        "cards_away": 0.61,
-        "dnb_home": 0.72,
-        "xg": 2.14,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Lorient",
-      "away": "ES Troyes AC",
-      "kickoff": "29/08 18:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.68,
-        "cards_away": 0.66,
-        "dnb_home": 0.6,
-        "xg": 2.54,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "RB Bragantino",
-      "kickoff": "29/08 23:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 3.39,
-        "expected_corners": 11.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Ligue 1",
-      "home": "Stade Brestois 29",
-      "away": "Toulouse FC",
-      "kickoff": "29/08 18:45",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.68,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 3.29,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Olympique Lyonnais",
-      "away": "Le Havre AC",
-      "kickoff": "29/08 18:45",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.53,
-        "cards_away": 0.62,
-        "dnb_home": 0.67,
-        "xg": 2.33,
-        "expected_corners": 11.3
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "Parma Calcio 1913",
-      "kickoff": "29/08 18:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.61,
-        "cards_away": 0.61,
-        "dnb_home": 0.72,
-        "xg": 2.14,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "FC Lorient",
-      "away": "ES Troyes AC",
-      "kickoff": "29/08 18:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.68,
-        "cards_away": 0.66,
-        "dnb_home": 0.6,
-        "xg": 2.54,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "Club Atlético de Madrid",
-      "kickoff": "29/08 19:30",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.65,
-        "cards_away": 0.66,
-        "dnb_home": 0.56,
-        "xg": 3.11,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "RB Bragantino",
-      "kickoff": "29/08 23:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 3.39,
-        "expected_corners": 11.8
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Ligue 1",
-      "home": "Stade Brestois 29",
-      "away": "Toulouse FC",
-      "kickoff": "29/08 18:45",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.68,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.73,
-        "xg": 3.29,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "AJ Auxerre",
-      "away": "Angers SCO",
-      "kickoff": "29/08 18:45",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.56,
-        "cards_home": 0.67,
-        "cards_away": 0.59,
-        "dnb_home": 0.69,
-        "xg": 3.12,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "Parma Calcio 1913",
-      "kickoff": "29/08 18:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.61,
-        "cards_home": 0.61,
-        "cards_away": 0.61,
-        "dnb_home": 0.72,
-        "xg": 2.14,
-        "expected_corners": 10.4
-      }
-    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Mineiro",
       "away": "EC Vitória",
       "kickoff": "29/08 21:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.57,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.7,
-        "xg": 2.43,
-        "expected_corners": 9.9
+        "over25": 0.7,
+        "corners95": 0.56,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.66,
+        "xg": 2.88,
+        "expected_corners": 12.7
       }
     },
     {
@@ -206,13 +22,47 @@
       "away": "RB Bragantino",
       "kickoff": "29/08 23:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.69,
-        "xg": 3.39,
-        "expected_corners": 11.8
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.11,
+        "expected_corners": 12.1
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "São Paulo FC",
+      "away": "RB Bragantino",
+      "kickoff": "29/08 23:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.11,
+        "expected_corners": 12.1
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "São Paulo FC",
+      "away": "RB Bragantino",
+      "kickoff": "29/08 23:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.11,
+        "expected_corners": 12.1
       }
     }
   ]
