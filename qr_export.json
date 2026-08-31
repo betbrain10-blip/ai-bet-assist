@@ -1,6 +1,144 @@
 {
-  "updated_at": "30/08 23:41",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "31/08 03:55",
+  "value": [
+    {
+      "league": "Primera Division",
+      "home": "CA Osasuna",
+      "away": "Getafe CF",
+      "kickoff": "31/08 17:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.58,
+        "cards_home": 0.64,
+        "cards_away": 0.55,
+        "dnb_home": 0.6,
+        "xg": 2.25,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Atalanta BC",
+      "away": "Bologna FC 1909",
+      "kickoff": "31/08 18:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.62,
+        "xg": 3.4,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sport Lisboa e Benfica",
+      "away": "GD Estoril Praia",
+      "kickoff": "31/08 19:15",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.64,
+        "cards_away": 0.61,
+        "dnb_home": 0.62,
+        "xg": 2.47,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Clube do Remo",
+      "away": "Coritiba FBC",
+      "kickoff": "31/08 23:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.59,
+        "dnb_home": 0.55,
+        "xg": 3.31,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "US Lecce",
+      "away": "AS Roma",
+      "kickoff": "31/08 16:30",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.65,
+        "dnb_home": 0.56,
+        "xg": 2.74,
+        "expected_corners": 10.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Atalanta BC",
+      "away": "Bologna FC 1909",
+      "kickoff": "31/08 18:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.66,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
+        "dnb_home": 0.62,
+        "xg": 3.4,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sport Lisboa e Benfica",
+      "away": "GD Estoril Praia",
+      "kickoff": "31/08 19:15",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.66,
+        "cards_home": 0.64,
+        "cards_away": 0.61,
+        "dnb_home": 0.62,
+        "xg": 2.47,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Clube do Remo",
+      "away": "Coritiba FBC",
+      "kickoff": "31/08 23:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.59,
+        "dnb_home": 0.55,
+        "xg": 3.31,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Premier League",
+      "home": "Aston Villa FC",
+      "away": "Arsenal FC",
+      "kickoff": "31/08 19:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.57,
+        "cards_home": 0.62,
+        "cards_away": 0.62,
+        "dnb_home": 0.71,
+        "xg": 3.11,
+        "expected_corners": 9.4
+      }
+    }
+  ]
 }
