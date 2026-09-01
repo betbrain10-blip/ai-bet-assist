@@ -1,96 +1,19 @@
 {
-  "updated_at": "01/09 12:40",
+  "updated_at": "01/09 17:09",
   "value": [
-    {
-      "league": "Championship",
-      "home": "West Ham United FC",
-      "away": "Wolverhampton Wanderers FC",
-      "kickoff": "01/09 18:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.57,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.6,
-        "xg": 2.89,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Bolton Wanderers FC",
-      "kickoff": "01/09 18:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.58,
-        "cards_home": 0.66,
-        "cards_away": 0.51,
-        "dnb_home": 0.65,
-        "xg": 2.63,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Swansea City AFC",
-      "away": "Watford FC",
-      "kickoff": "01/09 18:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.7,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 3.17,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Lincoln City FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "01/09 18:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.51,
-        "dnb_home": 0.55,
-        "xg": 2.29,
-        "expected_corners": 9.9
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Championship",
-      "home": "Portsmouth FC",
-      "away": "Derby County FC",
-      "kickoff": "01/09 18:45",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.7,
-        "cards_home": 0.59,
-        "cards_away": 0.63,
-        "dnb_home": 0.58,
-        "xg": 2.58,
-        "expected_corners": 12.7
-      }
-    },
     {
       "league": "Championship",
       "home": "Preston North End FC",
       "away": "Bristol City FC",
       "kickoff": "01/09 18:45",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.67,
-        "cards_home": 0.68,
-        "cards_away": 0.61,
-        "dnb_home": 0.67,
-        "xg": 2.4,
-        "expected_corners": 9.9
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.66,
+        "cards_away": 0.57,
+        "dnb_home": 0.58,
+        "xg": 3.39,
+        "expected_corners": 12.6
       }
     },
     {
@@ -99,43 +22,13 @@
       "away": "Watford FC",
       "kickoff": "01/09 18:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.7,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 3.17,
-        "expected_corners": 11.2
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Lincoln City FC",
-      "away": "Blackburn Rovers FC",
-      "kickoff": "01/09 18:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.51,
-        "dnb_home": 0.55,
-        "xg": 2.29,
+        "over25": 0.7,
+        "corners95": 0.56,
+        "cards_home": 0.55,
+        "cards_away": 0.55,
+        "dnb_home": 0.74,
+        "xg": 2.66,
         "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Stoke City FC",
-      "away": "Norwich City FC",
-      "kickoff": "01/09 19:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.66,
-        "dnb_home": 0.61,
-        "xg": 3.32,
-        "expected_corners": 10.1
       }
     },
     {
@@ -144,13 +37,75 @@
       "away": "Southampton FC",
       "kickoff": "01/09 19:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.55,
+        "over25": 0.68,
+        "corners95": 0.56,
+        "cards_home": 0.51,
+        "cards_away": 0.59,
         "dnb_home": 0.74,
-        "xg": 2.93,
-        "expected_corners": 12.5
+        "xg": 2.7,
+        "expected_corners": 8.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Championship",
+      "home": "Preston North End FC",
+      "away": "Bristol City FC",
+      "kickoff": "01/09 18:45",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.63,
+        "cards_home": 0.66,
+        "cards_away": 0.57,
+        "dnb_home": 0.58,
+        "xg": 3.39,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Lincoln City FC",
+      "away": "Blackburn Rovers FC",
+      "kickoff": "01/09 18:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.63,
+        "xg": 2.64,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Portsmouth FC",
+      "away": "Derby County FC",
+      "kickoff": "01/09 18:45",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.5,
+        "dnb_home": 0.65,
+        "xg": 2.6,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "West Ham United FC",
+      "away": "Wolverhampton Wanderers FC",
+      "kickoff": "01/09 18:45",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.61,
+        "cards_home": 0.58,
+        "cards_away": 0.58,
+        "dnb_home": 0.66,
+        "xg": 2.51,
+        "expected_corners": 11.7
       }
     }
   ],
@@ -161,13 +116,13 @@
       "away": "Watford FC",
       "kickoff": "01/09 18:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.7,
-        "cards_home": 0.59,
-        "cards_away": 0.61,
-        "dnb_home": 0.73,
-        "xg": 3.17,
-        "expected_corners": 11.2
+        "over25": 0.7,
+        "corners95": 0.56,
+        "cards_home": 0.55,
+        "cards_away": 0.55,
+        "dnb_home": 0.74,
+        "xg": 2.66,
+        "expected_corners": 9.9
       }
     },
     {
@@ -176,13 +131,13 @@
       "away": "Southampton FC",
       "kickoff": "01/09 19:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.55,
+        "over25": 0.68,
+        "corners95": 0.56,
+        "cards_home": 0.51,
+        "cards_away": 0.59,
         "dnb_home": 0.74,
-        "xg": 2.93,
-        "expected_corners": 12.5
+        "xg": 2.7,
+        "expected_corners": 8.8
       }
     }
   ]
