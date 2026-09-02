@@ -1,19 +1,19 @@
 {
-  "updated_at": "02/09 09:50",
+  "updated_at": "02/09 14:06",
   "value": [
     {
       "league": "Championship",
-      "home": "Queens Park Rangers FC",
-      "away": "Cardiff City FC",
+      "home": "West Bromwich Albion FC",
+      "away": "Charlton Athletic FC",
       "kickoff": "02/09 18:45",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.56,
-        "cards_home": 0.53,
-        "cards_away": 0.51,
-        "dnb_home": 0.64,
-        "xg": 3.23,
-        "expected_corners": 11.4
+        "over25": 0.69,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.61,
+        "dnb_home": 0.6,
+        "xg": 2.95,
+        "expected_corners": 11.2
       }
     },
     {
@@ -22,28 +22,13 @@
       "away": "Wrexham AFC",
       "kickoff": "02/09 18:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 2.75,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "West Bromwich Albion FC",
-      "away": "Charlton Athletic FC",
-      "kickoff": "02/09 18:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.59,
+        "over25": 0.71,
+        "corners95": 0.6,
         "cards_home": 0.55,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.84,
-        "expected_corners": 8.9
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 3.24,
+        "expected_corners": 9.8
       }
     },
     {
@@ -52,30 +37,45 @@
       "away": "Middlesbrough FC",
       "kickoff": "02/09 19:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.55,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 3.17,
-        "expected_corners": 8.6
+        "over25": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.56,
+        "cards_away": 0.6,
+        "dnb_home": 0.56,
+        "xg": 2.12,
+        "expected_corners": 8.9
       }
     }
   ],
   "corner": [
     {
       "league": "Championship",
-      "home": "Millwall FC",
-      "away": "Wrexham AFC",
+      "home": "West Bromwich Albion FC",
+      "away": "Charlton Athletic FC",
       "kickoff": "02/09 18:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.56,
-        "dnb_home": 0.66,
-        "xg": 2.75,
-        "expected_corners": 8.6
+        "over25": 0.69,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.61,
+        "dnb_home": 0.6,
+        "xg": 2.95,
+        "expected_corners": 11.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Queens Park Rangers FC",
+      "away": "Cardiff City FC",
+      "kickoff": "02/09 18:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.66,
+        "cards_home": 0.61,
+        "cards_away": 0.57,
+        "dnb_home": 0.64,
+        "xg": 2.5,
+        "expected_corners": 11.6
       }
     },
     {
@@ -84,45 +84,45 @@
       "away": "Mirassol FC",
       "kickoff": "02/09 22:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.62,
-        "cards_home": 0.67,
-        "cards_away": 0.53,
-        "dnb_home": 0.67,
-        "xg": 2.29,
-        "expected_corners": 11.9
+        "over25": 0.6,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 3.07,
+        "expected_corners": 11.1
       }
     }
   ],
   "hot": [
     {
       "league": "Championship",
-      "home": "West Bromwich Albion FC",
-      "away": "Charlton Athletic FC",
+      "home": "Millwall FC",
+      "away": "Wrexham AFC",
       "kickoff": "02/09 18:45",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.59,
+        "over25": 0.71,
+        "corners95": 0.6,
         "cards_home": 0.55,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.84,
-        "expected_corners": 8.9
+        "cards_away": 0.63,
+        "dnb_home": 0.7,
+        "xg": 3.24,
+        "expected_corners": 9.8
       }
     },
     {
-      "league": "Championship",
-      "home": "Burnley FC",
-      "away": "Middlesbrough FC",
-      "kickoff": "02/09 19:00",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CR Flamengo",
+      "away": "Mirassol FC",
+      "kickoff": "02/09 22:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.55,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.72,
-        "xg": 3.17,
-        "expected_corners": 8.6
+        "over25": 0.6,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 3.07,
+        "expected_corners": 11.1
       }
     }
   ]
