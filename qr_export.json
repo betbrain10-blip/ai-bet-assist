@@ -1,38 +1,6 @@
 {
-  "updated_at": "02/09 20:55",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "Mirassol FC",
-      "kickoff": "02/09 22:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.68,
-        "cards_away": 0.58,
-        "dnb_home": 0.64,
-        "xg": 2.6,
-        "expected_corners": 9.0
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "Mirassol FC",
-      "kickoff": "02/09 22:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.64,
-        "cards_home": 0.68,
-        "cards_away": 0.58,
-        "dnb_home": 0.64,
-        "xg": 2.6,
-        "expected_corners": 9.0
-      }
-    }
-  ],
+  "updated_at": "02/09 23:02",
+  "value": [],
+  "corner": [],
   "hot": []
 }
