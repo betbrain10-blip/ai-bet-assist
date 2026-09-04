@@ -1,38 +1,6 @@
 {
-  "updated_at": "04/09 19:18",
+  "updated_at": "04/09 21:39",
   "value": [],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "Moreirense FC",
-      "kickoff": "04/09 19:15",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.64,
-        "dnb_home": 0.69,
-        "xg": 2.27,
-        "expected_corners": 11.2
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primeira Liga",
-      "home": "FC Porto",
-      "away": "Moreirense FC",
-      "kickoff": "04/09 19:15",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.64,
-        "dnb_home": 0.69,
-        "xg": 2.27,
-        "expected_corners": 11.2
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
