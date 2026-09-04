@@ -1,6 +1,114 @@
 {
-  "updated_at": "03/09 23:47",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "04/09 03:07",
+  "value": [
+    {
+      "league": "Ligue 1",
+      "home": "Olympique Lyonnais",
+      "away": "AJ Auxerre",
+      "kickoff": "04/09 17:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.6,
+        "cards_home": 0.63,
+        "cards_away": 0.63,
+        "dnb_home": 0.57,
+        "xg": 2.97,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "VfB Stuttgart",
+      "away": "1. FC Köln",
+      "kickoff": "04/09 18:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.56,
+        "cards_home": 0.64,
+        "cards_away": 0.65,
+        "dnb_home": 0.72,
+        "xg": 2.44,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Betis Balompié",
+      "away": "Real Madrid CF",
+      "kickoff": "04/09 19:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.55,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 2.38,
+        "expected_corners": 10.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "Genoa CFC",
+      "away": "Como 1907",
+      "kickoff": "04/09 18:45",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.57,
+        "dnb_home": 0.56,
+        "xg": 3.15,
+        "expected_corners": 9.4
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Bundesliga",
+      "home": "VfB Stuttgart",
+      "away": "1. FC Köln",
+      "kickoff": "04/09 18:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.56,
+        "cards_home": 0.64,
+        "cards_away": 0.65,
+        "dnb_home": 0.72,
+        "xg": 2.44,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Ipswich Town FC",
+      "away": "Liverpool FC",
+      "kickoff": "04/09 19:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.6,
+        "cards_home": 0.51,
+        "cards_away": 0.55,
+        "dnb_home": 0.75,
+        "xg": 3.18,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Real Betis Balompié",
+      "away": "Real Madrid CF",
+      "kickoff": "04/09 19:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.55,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 2.38,
+        "expected_corners": 10.8
+      }
+    }
+  ]
 }
