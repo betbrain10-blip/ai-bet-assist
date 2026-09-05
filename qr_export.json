@@ -1,22 +1,6 @@
 {
-  "updated_at": "05/09 21:30",
+  "updated_at": "05/09 23:34",
   "value": [],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "CA Mineiro",
-      "kickoff": "05/09 21:30",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.58,
-        "dnb_home": 0.64,
-        "xg": 3.15,
-        "expected_corners": 9.6
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
