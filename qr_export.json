@@ -1,139 +1,19 @@
 {
-  "updated_at": "06/09 12:14",
+  "updated_at": "06/09 15:37",
   "value": [
-    {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "SC Cambuur-Leeuwarden",
-      "kickoff": "06/09 12:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.63,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.5,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "SC Heerenveen",
-      "away": "AZ",
-      "kickoff": "06/09 12:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.58,
-        "cards_home": 0.6,
-        "cards_away": 0.54,
-        "dnb_home": 0.68,
-        "xg": 3.12,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Frosinone Calcio",
-      "away": "Venezia FC",
-      "kickoff": "06/09 13:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 3.19,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "Mirassol FC",
-      "kickoff": "06/09 14:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.73,
-        "xg": 2.81,
-        "expected_corners": 12.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Valencia CF",
-      "away": "FC Barcelona",
-      "kickoff": "06/09 14:15",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.6,
-        "cards_home": 0.64,
-        "cards_away": 0.51,
-        "dnb_home": 0.75,
-        "xg": 2.54,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "ADO Den Haag",
-      "away": "Fortuna Sittard",
-      "kickoff": "06/09 14:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.55,
-        "xg": 2.41,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Arsenal FC",
-      "away": "Chelsea FC",
-      "kickoff": "06/09 15:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.57,
-        "cards_home": 0.67,
-        "cards_away": 0.51,
-        "dnb_home": 0.63,
-        "xg": 2.63,
-        "expected_corners": 9.8
-      }
-    },
     {
       "league": "Primera Division",
       "home": "Deportivo Alavés",
       "away": "CA Osasuna",
       "kickoff": "06/09 16:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.56,
-        "cards_home": 0.65,
-        "cards_away": 0.55,
-        "dnb_home": 0.59,
-        "xg": 2.37,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Vitória SC",
-      "away": "Casa Pia AC",
-      "kickoff": "06/09 17:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.66,
-        "xg": 3.24,
-        "expected_corners": 10.5
+        "over25": 0.66,
+        "corners95": 0.6,
+        "cards_home": 0.52,
+        "cards_away": 0.51,
+        "dnb_home": 0.71,
+        "xg": 2.65,
+        "expected_corners": 12.5
       }
     },
     {
@@ -142,28 +22,13 @@
       "away": "Paris FC",
       "kickoff": "06/09 18:45",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.67,
+        "over25": 0.71,
+        "corners95": 0.65,
         "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.6,
-        "xg": 3.26,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Clube do Remo",
-      "away": "CR Flamengo",
-      "kickoff": "06/09 19:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.55,
-        "xg": 2.95,
-        "expected_corners": 11.9
+        "cards_away": 0.67,
+        "dnb_home": 0.72,
+        "xg": 3.09,
+        "expected_corners": 8.8
       }
     },
     {
@@ -172,150 +37,60 @@
       "away": "CA Paranaense",
       "kickoff": "06/09 19:00",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.57,
+        "over25": 0.65,
+        "corners95": 0.56,
         "cards_home": 0.64,
-        "cards_away": 0.63,
-        "dnb_home": 0.72,
-        "xg": 2.64,
-        "expected_corners": 12.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Manchester United FC",
-      "kickoff": "06/09 13:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.68,
-        "cards_home": 0.65,
-        "cards_away": 0.57,
-        "dnb_home": 0.66,
-        "xg": 2.18,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Parma Calcio 1913",
-      "away": "AC Monza",
-      "kickoff": "06/09 13:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.7,
-        "xg": 3.26,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "ES Troyes AC",
-      "away": "RC Strasbourg Alsace",
-      "kickoff": "06/09 13:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.38,
-        "expected_corners": 12.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "Mirassol FC",
-      "kickoff": "06/09 14:00",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.73,
-        "xg": 2.81,
-        "expected_corners": 12.6
+        "cards_away": 0.55,
+        "dnb_home": 0.62,
+        "xg": 2.54,
+        "expected_corners": 8.9
       }
     },
     {
       "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "Rio Ave FC",
-      "kickoff": "06/09 14:30",
+      "home": "Gil Vicente FC",
+      "away": "Académico de Viseu FC",
+      "kickoff": "06/09 19:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.64,
-        "cards_away": 0.54,
-        "dnb_home": 0.56,
-        "xg": 2.6,
+        "over25": 0.66,
+        "corners95": 0.56,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.88,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "SE Palmeiras",
+      "kickoff": "06/09 21:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.59,
+        "dnb_home": 0.68,
+        "xg": 2.98,
         "expected_corners": 10.0
       }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "ADO Den Haag",
-      "away": "Fortuna Sittard",
-      "kickoff": "06/09 14:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.55,
-        "xg": 2.41,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Angers SCO",
-      "away": "Stade Rennais FC 1901",
-      "kickoff": "06/09 15:15",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.68,
-        "cards_home": 0.62,
-        "cards_away": 0.62,
-        "dnb_home": 0.71,
-        "xg": 2.54,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Bologna FC 1909",
-      "away": "US Sassuolo Calcio",
-      "kickoff": "06/09 16:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.65,
-        "cards_home": 0.66,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.28,
-        "expected_corners": 9.7
-      }
-    },
+    }
+  ],
+  "corner": [
     {
       "league": "Primera Division",
       "home": "Málaga CF",
       "away": "Levante UD",
       "kickoff": "06/09 16:30",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.67,
-        "cards_home": 0.62,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 3.11,
-        "expected_corners": 11.8
+        "over25": 0.59,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.56,
+        "dnb_home": 0.62,
+        "xg": 3.13,
+        "expected_corners": 10.7
       }
     },
     {
@@ -324,28 +99,13 @@
       "away": "Casa Pia AC",
       "kickoff": "06/09 17:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.63,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
+        "over25": 0.55,
+        "corners95": 0.65,
+        "cards_home": 0.52,
+        "cards_away": 0.61,
         "dnb_home": 0.66,
-        "xg": 3.24,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Juventus FC",
-      "away": "AC Milan",
-      "kickoff": "06/09 18:45",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.62,
-        "cards_home": 0.58,
-        "cards_away": 0.66,
-        "dnb_home": 0.61,
-        "xg": 2.47,
-        "expected_corners": 11.3
+        "xg": 2.76,
+        "expected_corners": 9.5
       }
     },
     {
@@ -354,105 +114,120 @@
       "away": "Paris FC",
       "kickoff": "06/09 18:45",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.67,
+        "over25": 0.71,
+        "corners95": 0.65,
         "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.6,
-        "xg": 3.26,
-        "expected_corners": 12.5
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Eredivisie",
-      "home": "Telstar 1963",
-      "away": "SC Cambuur-Leeuwarden",
-      "kickoff": "06/09 12:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.57,
-        "cards_home": 0.63,
-        "cards_away": 0.68,
-        "dnb_home": 0.73,
-        "xg": 2.5,
+        "cards_away": 0.67,
+        "dnb_home": 0.72,
+        "xg": 3.09,
         "expected_corners": 8.8
       }
     },
     {
       "league": "Serie A",
-      "home": "Parma Calcio 1913",
-      "away": "AC Monza",
-      "kickoff": "06/09 13:00",
+      "home": "Juventus FC",
+      "away": "AC Milan",
+      "kickoff": "06/09 18:45",
       "markets": {
         "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.7,
-        "xg": 3.26,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Frosinone Calcio",
-      "away": "Venezia FC",
-      "kickoff": "06/09 13:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.56,
-        "cards_away": 0.66,
-        "dnb_home": 0.74,
-        "xg": 3.19,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "ES Troyes AC",
-      "away": "RC Strasbourg Alsace",
-      "kickoff": "06/09 13:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.69,
-        "cards_home": 0.63,
-        "cards_away": 0.52,
-        "dnb_home": 0.71,
-        "xg": 2.38,
-        "expected_corners": 12.8
+        "corners95": 0.68,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.69,
+        "xg": 2.57,
+        "expected_corners": 12.7
       }
     },
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "Coritiba FBC",
-      "away": "Mirassol FC",
-      "kickoff": "06/09 14:00",
+      "home": "SC Internacional",
+      "away": "Santos FC",
+      "kickoff": "06/09 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.66,
-        "cards_away": 0.56,
-        "dnb_home": 0.73,
-        "xg": 2.81,
-        "expected_corners": 12.6
+        "over25": 0.59,
+        "corners95": 0.67,
+        "cards_home": 0.65,
+        "cards_away": 0.52,
+        "dnb_home": 0.55,
+        "xg": 2.1,
+        "expected_corners": 9.0
       }
     },
     {
-      "league": "Primera Division",
-      "home": "Valencia CF",
-      "away": "FC Barcelona",
-      "kickoff": "06/09 14:15",
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "SE Palmeiras",
+      "kickoff": "06/09 21:30",
       "markets": {
-        "over25": 0.63,
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.59,
+        "dnb_home": 0.68,
+        "xg": 2.98,
+        "expected_corners": 10.0
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Deportivo Alavés",
+      "away": "CA Osasuna",
+      "kickoff": "06/09 16:30",
+      "markets": {
+        "over25": 0.66,
         "corners95": 0.6,
-        "cards_home": 0.64,
+        "cards_home": 0.52,
         "cards_away": 0.51,
-        "dnb_home": 0.75,
-        "xg": 2.54,
-        "expected_corners": 10.3
+        "dnb_home": 0.71,
+        "xg": 2.65,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Olympique de Marseille",
+      "away": "Paris FC",
+      "kickoff": "06/09 18:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.65,
+        "cards_home": 0.66,
+        "cards_away": 0.67,
+        "dnb_home": 0.72,
+        "xg": 3.09,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Juventus FC",
+      "away": "AC Milan",
+      "kickoff": "06/09 18:45",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.68,
+        "cards_home": 0.54,
+        "cards_away": 0.61,
+        "dnb_home": 0.69,
+        "xg": 2.57,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Gil Vicente FC",
+      "away": "Académico de Viseu FC",
+      "kickoff": "06/09 19:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.56,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.71,
+        "xg": 2.88,
+        "expected_corners": 9.6
       }
     }
   ]
