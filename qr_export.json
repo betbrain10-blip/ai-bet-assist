@@ -1,38 +1,6 @@
 {
-  "updated_at": "06/09 20:38",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "SE Palmeiras",
-      "kickoff": "06/09 21:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.53,
-        "dnb_home": 0.56,
-        "xg": 2.35,
-        "expected_corners": 11.8
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "SE Palmeiras",
-      "kickoff": "06/09 21:30",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.53,
-        "dnb_home": 0.56,
-        "xg": 2.35,
-        "expected_corners": 11.8
-      }
-    }
-  ],
+  "updated_at": "06/09 22:42",
+  "value": [],
+  "corner": [],
   "hot": []
 }
