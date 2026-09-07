@@ -1,6 +1,113 @@
 {
-  "updated_at": "06/09 22:42",
-  "value": [],
-  "corner": [],
+  "updated_at": "07/09 00:41",
+  "value": [
+    {
+      "league": "Serie A",
+      "home": "Udinese Calcio",
+      "away": "SS Lazio",
+      "kickoff": "07/09 18:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.55,
+        "cards_away": 0.54,
+        "dnb_home": 0.65,
+        "xg": 2.23,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "GD Estoril Praia",
+      "away": "FC Arouca",
+      "kickoff": "07/09 19:15",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.59,
+        "cards_home": 0.65,
+        "cards_away": 0.67,
+        "dnb_home": 0.68,
+        "xg": 2.71,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Elche CF",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "07/09 19:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.65,
+        "dnb_home": 0.64,
+        "xg": 2.13,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Vitória",
+      "away": "Grêmio FBPA",
+      "kickoff": "07/09 23:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.67,
+        "dnb_home": 0.61,
+        "xg": 2.11,
+        "expected_corners": 12.5
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "Udinese Calcio",
+      "away": "SS Lazio",
+      "kickoff": "07/09 18:45",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.62,
+        "cards_home": 0.55,
+        "cards_away": 0.54,
+        "dnb_home": 0.65,
+        "xg": 2.23,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Elche CF",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "07/09 19:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.65,
+        "dnb_home": 0.64,
+        "xg": 2.13,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "EC Vitória",
+      "away": "Grêmio FBPA",
+      "kickoff": "07/09 23:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.67,
+        "dnb_home": 0.61,
+        "xg": 2.11,
+        "expected_corners": 12.5
+      }
+    }
+  ],
   "hot": []
 }
