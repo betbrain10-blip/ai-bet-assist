@@ -1,19 +1,49 @@
 {
-  "updated_at": "07/09 05:42",
+  "updated_at": "07/09 11:41",
   "value": [
+    {
+      "league": "Serie A",
+      "home": "Cagliari Calcio",
+      "away": "US Lecce",
+      "kickoff": "07/09 16:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.51,
+        "dnb_home": 0.59,
+        "xg": 3.34,
+        "expected_corners": 11.3
+      }
+    },
     {
       "league": "Primera Division",
       "home": "Getafe CF",
       "away": "RC Celta de Vigo",
       "kickoff": "07/09 17:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.6,
+        "over25": 0.68,
+        "corners95": 0.57,
+        "cards_home": 0.53,
         "cards_away": 0.63,
-        "dnb_home": 0.61,
+        "dnb_home": 0.73,
         "xg": 2.6,
-        "expected_corners": 8.7
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "GD Estoril Praia",
+      "away": "FC Arouca",
+      "kickoff": "07/09 19:15",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.68,
+        "cards_home": 0.67,
+        "cards_away": 0.64,
+        "dnb_home": 0.58,
+        "xg": 2.13,
+        "expected_corners": 9.9
       }
     },
     {
@@ -23,29 +53,29 @@
       "kickoff": "07/09 19:30",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.55,
-        "cards_home": 0.56,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 2.24,
-        "expected_corners": 9.0
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.56,
+        "dnb_home": 0.6,
+        "xg": 3.25,
+        "expected_corners": 12.6
       }
     }
   ],
   "corner": [
     {
-      "league": "Primera Division",
-      "home": "Getafe CF",
-      "away": "RC Celta de Vigo",
-      "kickoff": "07/09 17:00",
+      "league": "Serie A",
+      "home": "Cagliari Calcio",
+      "away": "US Lecce",
+      "kickoff": "07/09 16:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 2.6,
-        "expected_corners": 8.7
+        "over25": 0.68,
+        "corners95": 0.62,
+        "cards_home": 0.62,
+        "cards_away": 0.51,
+        "dnb_home": 0.59,
+        "xg": 3.34,
+        "expected_corners": 11.3
       }
     },
     {
@@ -54,45 +84,45 @@
       "away": "FC Arouca",
       "kickoff": "07/09 19:15",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.53,
+        "over25": 0.67,
+        "corners95": 0.68,
+        "cards_home": 0.67,
+        "cards_away": 0.64,
         "dnb_home": 0.58,
-        "xg": 3.2,
-        "expected_corners": 12.7
+        "xg": 2.13,
+        "expected_corners": 9.9
       }
     },
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "Grêmio FBPA",
-      "kickoff": "07/09 23:00",
+      "league": "Primera Division",
+      "home": "Elche CF",
+      "away": "Real Sociedad de Fútbol",
+      "kickoff": "07/09 19:30",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.6,
-        "cards_away": 0.67,
-        "dnb_home": 0.68,
-        "xg": 2.83,
-        "expected_corners": 9.1
+        "over25": 0.64,
+        "corners95": 0.69,
+        "cards_home": 0.67,
+        "cards_away": 0.56,
+        "dnb_home": 0.6,
+        "xg": 3.25,
+        "expected_corners": 12.6
       }
     }
   ],
   "hot": [
     {
-      "league": "Serie A",
-      "home": "Udinese Calcio",
-      "away": "SS Lazio",
-      "kickoff": "07/09 18:45",
+      "league": "Primera Division",
+      "home": "Getafe CF",
+      "away": "RC Celta de Vigo",
+      "kickoff": "07/09 17:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.55,
-        "cards_home": 0.67,
-        "cards_away": 0.68,
-        "dnb_home": 0.75,
-        "xg": 2.51,
-        "expected_corners": 12.4
+        "over25": 0.68,
+        "corners95": 0.57,
+        "cards_home": 0.53,
+        "cards_away": 0.63,
+        "dnb_home": 0.73,
+        "xg": 2.6,
+        "expected_corners": 12.7
       }
     }
   ]
