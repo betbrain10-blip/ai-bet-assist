@@ -1,19 +1,19 @@
 {
-  "updated_at": "09/09 09:34",
+  "updated_at": "09/09 14:10",
   "value": [
     {
       "league": "UEFA Champions League",
-      "home": "VfB Stuttgart",
-      "away": "Viking FK",
+      "home": "FC Barcelona",
+      "away": "Feyenoord Rotterdam",
       "kickoff": "09/09 16:45",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.7,
-        "cards_home": 0.55,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.86,
-        "expected_corners": 9.3
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.69,
+        "expected_corners": 10.1
       }
     },
     {
@@ -22,28 +22,28 @@
       "away": "Telstar 1963",
       "kickoff": "09/09 16:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.66,
-        "dnb_home": 0.57,
-        "xg": 3.2,
-        "expected_corners": 10.6
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.62,
+        "dnb_home": 0.73,
+        "xg": 3.14,
+        "expected_corners": 11.9
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "FC Barcelona",
-      "away": "Feyenoord Rotterdam",
+      "home": "VfB Stuttgart",
+      "away": "Viking FK",
       "kickoff": "09/09 16:45",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.57,
-        "xg": 2.95,
-        "expected_corners": 10.0
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.59,
+        "dnb_home": 0.6,
+        "xg": 3.06,
+        "expected_corners": 9.6
       }
     },
     {
@@ -52,43 +52,13 @@
       "away": "West Bromwich Albion FC",
       "kickoff": "09/09 18:45",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.67,
-        "dnb_home": 0.59,
-        "xg": 2.58,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "ŠK Slovan Bratislava",
-      "kickoff": "09/09 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.88,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Charlton Athletic FC",
-      "away": "Queens Park Rangers FC",
-      "kickoff": "09/09 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.55,
-        "dnb_home": 0.72,
-        "xg": 2.62,
-        "expected_corners": 9.4
+        "over25": 0.72,
+        "corners95": 0.59,
+        "cards_home": 0.61,
+        "cards_away": 0.62,
+        "dnb_home": 0.75,
+        "xg": 2.32,
+        "expected_corners": 9.8
       }
     },
     {
@@ -97,135 +67,13 @@
       "away": "Arsenal FC",
       "kickoff": "09/09 19:00",
       "markets": {
-        "over25": 0.66,
+        "over25": 0.64,
         "corners95": 0.57,
-        "cards_home": 0.67,
-        "cards_away": 0.53,
-        "dnb_home": 0.57,
-        "xg": 3.4,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Moreirense FC",
-      "away": "Sport Lisboa e Benfica",
-      "kickoff": "09/09 19:45",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.59,
-        "cards_home": 0.57,
-        "cards_away": 0.65,
-        "dnb_home": 0.6,
-        "xg": 3.12,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "SE Palmeiras",
-      "away": "LDU de Quito",
-      "kickoff": "09/09 22:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.63,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.75,
-        "xg": 2.61,
-        "expected_corners": 9.5
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "UEFA Champions League",
-      "home": "VfB Stuttgart",
-      "away": "Viking FK",
-      "kickoff": "09/09 16:45",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.7,
         "cards_home": 0.55,
-        "cards_away": 0.6,
-        "dnb_home": 0.67,
-        "xg": 2.86,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "FC Twente '65",
-      "away": "Telstar 1963",
-      "kickoff": "09/09 16:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.68,
-        "cards_home": 0.63,
-        "cards_away": 0.66,
-        "dnb_home": 0.57,
-        "xg": 3.2,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "FC Barcelona",
-      "away": "Feyenoord Rotterdam",
-      "kickoff": "09/09 16:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.57,
-        "xg": 2.95,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Derby County FC",
-      "away": "West Bromwich Albion FC",
-      "kickoff": "09/09 18:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.67,
-        "dnb_home": 0.59,
-        "xg": 2.58,
-        "expected_corners": 11.6
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Sporting Clube de Portugal",
-      "away": "Galatasaray SK",
-      "kickoff": "09/09 19:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 2.98,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "ŠK Slovan Bratislava",
-      "kickoff": "09/09 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.88,
-        "expected_corners": 11.7
+        "cards_away": 0.62,
+        "dnb_home": 0.6,
+        "xg": 2.17,
+        "expected_corners": 10.7
       }
     },
     {
@@ -234,60 +82,13 @@
       "away": "Club Atlético de Madrid",
       "kickoff": "09/09 19:00",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.6,
-        "xg": 2.72,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Charlton Athletic FC",
-      "away": "Queens Park Rangers FC",
-      "kickoff": "09/09 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.55,
-        "dnb_home": 0.72,
-        "xg": 2.62,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "SE Palmeiras",
-      "away": "LDU de Quito",
-      "kickoff": "09/09 22:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.63,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
-        "dnb_home": 0.75,
-        "xg": 2.61,
-        "expected_corners": 9.5
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "UEFA Champions League",
-      "home": "Sporting Clube de Portugal",
-      "away": "Galatasaray SK",
-      "kickoff": "09/09 19:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.59,
-        "dnb_home": 0.74,
-        "xg": 2.98,
-        "expected_corners": 8.9
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 2.93,
+        "expected_corners": 11.3
       }
     },
     {
@@ -296,28 +97,135 @@
       "away": "ŠK Slovan Bratislava",
       "kickoff": "09/09 19:00",
       "markets": {
-        "over25": 0.64,
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.68,
+        "cards_away": 0.65,
+        "dnb_home": 0.74,
+        "xg": 2.23,
+        "expected_corners": 10.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "UEFA Champions League",
+      "home": "FC Barcelona",
+      "away": "Feyenoord Rotterdam",
+      "kickoff": "09/09 16:45",
+      "markets": {
+        "over25": 0.67,
         "corners95": 0.69,
-        "cards_home": 0.58,
+        "cards_home": 0.53,
         "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.88,
-        "expected_corners": 11.7
+        "dnb_home": 0.7,
+        "xg": 2.69,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "FC Twente '65",
+      "away": "Telstar 1963",
+      "kickoff": "09/09 16:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.62,
+        "dnb_home": 0.73,
+        "xg": 3.14,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "VfB Stuttgart",
+      "away": "Viking FK",
+      "kickoff": "09/09 16:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.59,
+        "dnb_home": 0.6,
+        "xg": 3.06,
+        "expected_corners": 9.6
       }
     },
     {
       "league": "Championship",
-      "home": "Charlton Athletic FC",
-      "away": "Queens Park Rangers FC",
+      "home": "Norwich City FC",
+      "away": "Birmingham City FC",
+      "kickoff": "09/09 18:45",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.65,
+        "cards_home": 0.64,
+        "cards_away": 0.53,
+        "dnb_home": 0.61,
+        "xg": 2.36,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Liverpool FC",
+      "away": "Club Atlético de Madrid",
       "kickoff": "09/09 19:00",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 2.93,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "ŠK Slovan Bratislava",
+      "kickoff": "09/09 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.68,
+        "cards_away": 0.65,
+        "dnb_home": 0.74,
+        "xg": 2.23,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Sporting Clube de Portugal",
+      "away": "Galatasaray SK",
+      "kickoff": "09/09 19:00",
+      "markets": {
+        "over25": 0.6,
         "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.55,
-        "dnb_home": 0.72,
-        "xg": 2.62,
-        "expected_corners": 9.4
+        "cards_home": 0.68,
+        "cards_away": 0.56,
+        "dnb_home": 0.75,
+        "xg": 2.6,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Moreirense FC",
+      "away": "Sport Lisboa e Benfica",
+      "kickoff": "09/09 19:45",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.62,
+        "xg": 3.21,
+        "expected_corners": 10.2
       }
     },
     {
@@ -326,13 +234,105 @@
       "away": "LDU de Quito",
       "kickoff": "09/09 22:00",
       "markets": {
+        "over25": 0.56,
+        "corners95": 0.64,
+        "cards_home": 0.62,
+        "cards_away": 0.62,
+        "dnb_home": 0.58,
+        "xg": 2.81,
+        "expected_corners": 10.3
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "UEFA Champions League",
+      "home": "FC Barcelona",
+      "away": "Feyenoord Rotterdam",
+      "kickoff": "09/09 16:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.69,
+        "cards_home": 0.53,
+        "cards_away": 0.61,
+        "dnb_home": 0.7,
+        "xg": 2.69,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "FC Twente '65",
+      "away": "Telstar 1963",
+      "kickoff": "09/09 16:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.67,
+        "cards_home": 0.68,
+        "cards_away": 0.62,
+        "dnb_home": 0.73,
+        "xg": 3.14,
+        "expected_corners": 11.9
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Derby County FC",
+      "away": "West Bromwich Albion FC",
+      "kickoff": "09/09 18:45",
+      "markets": {
         "over25": 0.72,
-        "corners95": 0.63,
-        "cards_home": 0.64,
-        "cards_away": 0.64,
+        "corners95": 0.59,
+        "cards_home": 0.61,
+        "cards_away": 0.62,
         "dnb_home": 0.75,
-        "xg": 2.61,
-        "expected_corners": 9.5
+        "xg": 2.32,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Charlton Athletic FC",
+      "away": "Queens Park Rangers FC",
+      "kickoff": "09/09 19:00",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.55,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.69,
+        "xg": 2.42,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Liverpool FC",
+      "away": "Club Atlético de Madrid",
+      "kickoff": "09/09 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.52,
+        "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 2.93,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Paris Saint-Germain FC",
+      "away": "ŠK Slovan Bratislava",
+      "kickoff": "09/09 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.68,
+        "cards_away": 0.65,
+        "dnb_home": 0.74,
+        "xg": 2.23,
+        "expected_corners": 10.8
       }
     }
   ]
