@@ -1,6 +1,38 @@
 {
-  "updated_at": "09/09 20:29",
-  "value": [],
-  "corner": [],
+  "updated_at": "09/09 22:42",
+  "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "SE Palmeiras",
+      "away": "LDU de Quito",
+      "kickoff": "09/09 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.7,
+        "cards_home": 0.64,
+        "cards_away": 0.52,
+        "dnb_home": 0.6,
+        "xg": 2.53,
+        "expected_corners": 10.2
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "SE Palmeiras",
+      "away": "LDU de Quito",
+      "kickoff": "09/09 22:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.7,
+        "cards_home": 0.64,
+        "cards_away": 0.52,
+        "dnb_home": 0.6,
+        "xg": 2.53,
+        "expected_corners": 10.2
+      }
+    }
+  ],
   "hot": []
 }
