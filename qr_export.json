@@ -1,5 +1,5 @@
 {
-  "updated_at": "10/09 10:42",
+  "updated_at": "10/09 14:51",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,13 +7,13 @@
       "away": "SC Corinthians Paulista",
       "kickoff": "10/09 00:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.59,
-        "cards_home": 0.62,
-        "cards_away": 0.62,
-        "dnb_home": 0.62,
-        "xg": 2.69,
-        "expected_corners": 11.7
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.65,
+        "cards_away": 0.6,
+        "dnb_home": 0.69,
+        "xg": 3.21,
+        "expected_corners": 12.0
       }
     },
     {
@@ -22,13 +22,28 @@
       "away": "FK Shakhtar Donetsk",
       "kickoff": "10/09 16:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.59,
-        "cards_home": 0.64,
-        "cards_away": 0.61,
-        "dnb_home": 0.67,
-        "xg": 2.24,
-        "expected_corners": 9.3
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.41,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Fenerbahçe SK",
+      "away": "AS Roma",
+      "kickoff": "10/09 16:45",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 2.76,
+        "expected_corners": 9.4
       }
     },
     {
@@ -37,13 +52,13 @@
       "away": "Sabah FK",
       "kickoff": "10/09 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.38,
-        "expected_corners": 9.3
+        "over25": 0.7,
+        "corners95": 0.56,
+        "cards_home": 0.51,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 2.72,
+        "expected_corners": 11.6
       }
     },
     {
@@ -52,45 +67,75 @@
       "away": "FK Bodø/Glimt",
       "kickoff": "10/09 19:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.51,
-        "cards_away": 0.67,
-        "dnb_home": 0.59,
-        "xg": 3.12,
-        "expected_corners": 12.2
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "CF Estrela da Amadora",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "10/09 19:15",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 2.18,
-        "expected_corners": 9.9
+        "over25": 0.69,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.73,
+        "xg": 3.09,
+        "expected_corners": 10.3
       }
     }
   ],
   "corner": [
     {
+      "league": "Copa Libertadores",
+      "home": "Estudiantes de La Plata",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "10/09 00:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.65,
+        "cards_away": 0.6,
+        "dnb_home": 0.69,
+        "xg": 3.21,
+        "expected_corners": 12.0
+      }
+    },
+    {
       "league": "UEFA Champions League",
-      "home": "Manchester United FC",
-      "away": "Sabah FK",
+      "home": "PSV",
+      "away": "FK Shakhtar Donetsk",
+      "kickoff": "10/09 16:45",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.41,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Fenerbahçe SK",
+      "away": "AS Roma",
+      "kickoff": "10/09 16:45",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 2.76,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "SK Slavia Praha",
+      "away": "Racing Club de Lens",
       "kickoff": "10/09 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
+        "over25": 0.61,
+        "corners95": 0.66,
         "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.38,
-        "expected_corners": 9.3
+        "cards_away": 0.62,
+        "dnb_home": 0.57,
+        "xg": 2.6,
+        "expected_corners": 9.2
       }
     },
     {
@@ -99,60 +144,105 @@
       "away": "RB Leipzig",
       "kickoff": "10/09 19:00",
       "markets": {
-        "over25": 0.6,
+        "over25": 0.61,
         "corners95": 0.65,
-        "cards_home": 0.58,
-        "cards_away": 0.61,
-        "dnb_home": 0.59,
-        "xg": 2.36,
-        "expected_corners": 11.2
+        "cards_home": 0.65,
+        "cards_away": 0.63,
+        "dnb_home": 0.6,
+        "xg": 3.39,
+        "expected_corners": 10.8
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "CF Estrela da Amadora",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "10/09 19:15",
+      "league": "UEFA Champions League",
+      "home": "FC Bayern München",
+      "away": "FK Bodø/Glimt",
+      "kickoff": "10/09 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 2.18,
-        "expected_corners": 9.9
+        "over25": 0.69,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.73,
+        "xg": 3.09,
+        "expected_corners": 10.3
       }
     }
   ],
   "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Estudiantes de La Plata",
+      "away": "SC Corinthians Paulista",
+      "kickoff": "10/09 00:30",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.65,
+        "cards_home": 0.65,
+        "cards_away": 0.6,
+        "dnb_home": 0.69,
+        "xg": 3.21,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "PSV",
+      "away": "FK Shakhtar Donetsk",
+      "kickoff": "10/09 16:45",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.66,
+        "dnb_home": 0.74,
+        "xg": 2.41,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Fenerbahçe SK",
+      "away": "AS Roma",
+      "kickoff": "10/09 16:45",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.63,
+        "cards_home": 0.5,
+        "cards_away": 0.57,
+        "dnb_home": 0.71,
+        "xg": 2.76,
+        "expected_corners": 9.4
+      }
+    },
     {
       "league": "UEFA Champions League",
       "home": "Manchester United FC",
       "away": "Sabah FK",
       "kickoff": "10/09 19:00",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.69,
-        "xg": 2.38,
-        "expected_corners": 9.3
+        "over25": 0.7,
+        "corners95": 0.56,
+        "cards_home": 0.51,
+        "cards_away": 0.67,
+        "dnb_home": 0.7,
+        "xg": 2.72,
+        "expected_corners": 11.6
       }
     },
     {
-      "league": "Primeira Liga",
-      "home": "CF Estrela da Amadora",
-      "away": "Sporting Clube de Braga",
-      "kickoff": "10/09 19:15",
+      "league": "UEFA Champions League",
+      "home": "FC Bayern München",
+      "away": "FK Bodø/Glimt",
+      "kickoff": "10/09 19:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 2.18,
-        "expected_corners": 9.9
+        "over25": 0.69,
+        "corners95": 0.63,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.73,
+        "xg": 3.09,
+        "expected_corners": 10.3
       }
     }
   ]
