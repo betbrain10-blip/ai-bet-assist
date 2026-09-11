@@ -1,81 +1,19 @@
 {
-  "updated_at": "11/09 06:24",
+  "updated_at": "11/09 11:40",
   "value": [
     {
-      "league": "Copa Libertadores",
-      "home": "CAR Independiente del Valle",
-      "away": "CR Flamengo",
-      "kickoff": "11/09 00:30",
+      "league": "Bundesliga",
+      "home": "1. FC Union Berlin",
+      "away": "FC Schalke 04",
+      "kickoff": "11/09 18:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.6,
-        "cards_home": 0.52,
-        "cards_away": 0.56,
-        "dnb_home": 0.7,
-        "xg": 2.45,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "AZ",
-      "away": "Willem II Tilburg",
-      "kickoff": "11/09 18:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.47,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Stade Rennais FC 1901",
-      "away": "Olympique de Marseille",
-      "kickoff": "11/09 18:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.52,
-        "dnb_home": 0.62,
-        "xg": 3.02,
-        "expected_corners": 10.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Eredivisie",
-      "home": "AZ",
-      "away": "Willem II Tilburg",
-      "kickoff": "11/09 18:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.47,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Stade Rennais FC 1901",
-      "away": "Olympique de Marseille",
-      "kickoff": "11/09 18:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.52,
-        "dnb_home": 0.62,
-        "xg": 3.02,
-        "expected_corners": 10.3
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.74,
+        "xg": 3.08,
+        "expected_corners": 10.8
       }
     },
     {
@@ -84,105 +22,107 @@
       "away": "ACF Fiorentina",
       "kickoff": "11/09 18:45",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.67,
-        "cards_home": 0.55,
-        "cards_away": 0.64,
-        "dnb_home": 0.65,
-        "xg": 2.43,
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.58,
+        "dnb_home": 0.58,
+        "xg": 3.22,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Stade Rennais FC 1901",
+      "away": "Olympique de Marseille",
+      "kickoff": "11/09 18:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.6,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.7,
+        "xg": 2.62,
         "expected_corners": 10.9
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "West Ham United FC",
-      "away": "Wrexham AFC",
-      "kickoff": "11/09 19:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 2.45,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "Valencia CF",
-      "kickoff": "11/09 19:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 2.23,
-        "expected_corners": 9.8
       }
     }
   ],
-  "hot": [
+  "corner": [
     {
       "league": "Copa Libertadores",
       "home": "CAR Independiente del Valle",
       "away": "CR Flamengo",
       "kickoff": "11/09 00:30",
       "markets": {
-        "over25": 0.69,
+        "over25": 0.56,
+        "corners95": 0.62,
+        "cards_home": 0.5,
+        "cards_away": 0.5,
+        "dnb_home": 0.6,
+        "xg": 2.72,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "1. FC Union Berlin",
+      "away": "FC Schalke 04",
+      "kickoff": "11/09 18:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.74,
+        "xg": 3.08,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Venezia FC",
+      "away": "ACF Fiorentina",
+      "kickoff": "11/09 18:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.6,
+        "cards_away": 0.58,
+        "dnb_home": 0.58,
+        "xg": 3.22,
+        "expected_corners": 11.1
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Bundesliga",
+      "home": "1. FC Union Berlin",
+      "away": "FC Schalke 04",
+      "kickoff": "11/09 18:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.69,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.74,
+        "xg": 3.08,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Stade Rennais FC 1901",
+      "away": "Olympique de Marseille",
+      "kickoff": "11/09 18:45",
+      "markets": {
+        "over25": 0.68,
         "corners95": 0.6,
-        "cards_home": 0.52,
-        "cards_away": 0.56,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
         "dnb_home": 0.7,
-        "xg": 2.45,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "AZ",
-      "away": "Willem II Tilburg",
-      "kickoff": "11/09 18:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.66,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 2.47,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "West Ham United FC",
-      "away": "Wrexham AFC",
-      "kickoff": "11/09 19:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.68,
-        "cards_home": 0.51,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 2.45,
-        "expected_corners": 11.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "Valencia CF",
-      "kickoff": "11/09 19:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.69,
-        "xg": 2.23,
-        "expected_corners": 9.8
+        "xg": 2.62,
+        "expected_corners": 10.9
       }
     }
   ]
