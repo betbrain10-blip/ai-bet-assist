@@ -1,64 +1,19 @@
 {
-  "updated_at": "14/09 01:22",
+  "updated_at": "14/09 06:44",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "Como 1907",
-      "away": "Parma Calcio 1913",
-      "kickoff": "14/09 16:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.54,
-        "dnb_home": 0.7,
-        "xg": 2.7,
-        "expected_corners": 10.1
-      }
-    },
     {
       "league": "Serie A",
       "home": "Torino FC",
       "away": "AS Roma",
       "kickoff": "14/09 16:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.72,
-        "xg": 2.29,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Rio Ave FC",
-      "away": "CF Estrela da Amadora",
-      "kickoff": "14/09 17:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.67,
-        "cards_home": 0.67,
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.61,
         "cards_away": 0.61,
-        "dnb_home": 0.75,
-        "xg": 3.26,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Leeds United FC",
-      "away": "Newcastle United FC",
-      "kickoff": "14/09 19:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.66,
-        "xg": 2.1,
-        "expected_corners": 10.0
+        "dnb_home": 0.55,
+        "xg": 2.6,
+        "expected_corners": 8.5
       }
     },
     {
@@ -67,28 +22,13 @@
       "away": "Real Betis Balompié",
       "kickoff": "14/09 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.63,
-        "dnb_home": 0.69,
-        "xg": 3.32,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Braga",
-      "away": "GD Estoril Praia",
-      "kickoff": "14/09 19:45",
-      "markets": {
         "over25": 0.65,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.97,
-        "expected_corners": 12.5
+        "corners95": 0.56,
+        "cards_home": 0.51,
+        "cards_away": 0.66,
+        "dnb_home": 0.63,
+        "xg": 3.39,
+        "expected_corners": 10.0
       }
     },
     {
@@ -97,13 +37,13 @@
       "away": "Clube do Remo",
       "kickoff": "14/09 23:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.75,
-        "xg": 3.06,
-        "expected_corners": 12.6
+        "over25": 0.72,
+        "corners95": 0.7,
+        "cards_home": 0.66,
+        "cards_away": 0.51,
+        "dnb_home": 0.6,
+        "xg": 2.61,
+        "expected_corners": 11.6
       }
     }
   ],
@@ -114,13 +54,28 @@
       "away": "AS Roma",
       "kickoff": "14/09 16:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.72,
-        "xg": 2.29,
-        "expected_corners": 11.8
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.55,
+        "xg": 2.6,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Como 1907",
+      "away": "Parma Calcio 1913",
+      "kickoff": "14/09 16:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.63,
+        "cards_home": 0.61,
+        "cards_away": 0.64,
+        "dnb_home": 0.56,
+        "xg": 2.47,
+        "expected_corners": 11.5
       }
     },
     {
@@ -129,13 +84,13 @@
       "away": "CF Estrela da Amadora",
       "kickoff": "14/09 17:45",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.58,
         "corners95": 0.67,
         "cards_home": 0.67,
-        "cards_away": 0.61,
-        "dnb_home": 0.75,
-        "xg": 3.26,
-        "expected_corners": 9.1
+        "cards_away": 0.66,
+        "dnb_home": 0.66,
+        "xg": 2.12,
+        "expected_corners": 11.3
       }
     },
     {
@@ -144,13 +99,13 @@
       "away": "Udinese Calcio",
       "kickoff": "14/09 18:45",
       "markets": {
-        "over25": 0.55,
+        "over25": 0.6,
         "corners95": 0.61,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.75,
-        "xg": 2.39,
-        "expected_corners": 10.4
+        "cards_home": 0.56,
+        "cards_away": 0.59,
+        "dnb_home": 0.56,
+        "xg": 3.06,
+        "expected_corners": 9.7
       }
     },
     {
@@ -159,28 +114,13 @@
       "away": "Newcastle United FC",
       "kickoff": "14/09 19:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.67,
-        "cards_away": 0.63,
-        "dnb_home": 0.66,
-        "xg": 2.1,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "Real Betis Balompié",
-      "kickoff": "14/09 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.63,
-        "dnb_home": 0.69,
-        "xg": 3.32,
-        "expected_corners": 9.6
+        "over25": 0.59,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.68,
+        "xg": 3.15,
+        "expected_corners": 11.2
       }
     },
     {
@@ -189,12 +129,12 @@
       "away": "CS Marítimo",
       "kickoff": "14/09 19:15",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.68,
-        "cards_home": 0.58,
-        "cards_away": 0.68,
-        "dnb_home": 0.62,
-        "xg": 2.32,
+        "over25": 0.59,
+        "corners95": 0.7,
+        "cards_home": 0.59,
+        "cards_away": 0.57,
+        "dnb_home": 0.6,
+        "xg": 3.36,
         "expected_corners": 12.3
       }
     },
@@ -204,13 +144,13 @@
       "away": "GD Estoril Praia",
       "kickoff": "14/09 19:45",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.97,
-        "expected_corners": 12.5
+        "over25": 0.58,
+        "corners95": 0.63,
+        "cards_home": 0.58,
+        "cards_away": 0.61,
+        "dnb_home": 0.6,
+        "xg": 2.52,
+        "expected_corners": 10.3
       }
     },
     {
@@ -219,106 +159,15 @@
       "away": "Clube do Remo",
       "kickoff": "14/09 23:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.63,
-        "dnb_home": 0.75,
-        "xg": 3.06,
-        "expected_corners": 12.6
+        "over25": 0.72,
+        "corners95": 0.7,
+        "cards_home": 0.66,
+        "cards_away": 0.51,
+        "dnb_home": 0.6,
+        "xg": 2.61,
+        "expected_corners": 11.6
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Serie A",
-      "home": "Como 1907",
-      "away": "Parma Calcio 1913",
-      "kickoff": "14/09 16:30",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.6,
-        "cards_home": 0.54,
-        "cards_away": 0.54,
-        "dnb_home": 0.7,
-        "xg": 2.7,
-        "expected_corners": 10.1
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Torino FC",
-      "away": "AS Roma",
-      "kickoff": "14/09 16:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.61,
-        "cards_home": 0.51,
-        "cards_away": 0.55,
-        "dnb_home": 0.72,
-        "xg": 2.29,
-        "expected_corners": 11.8
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Rio Ave FC",
-      "away": "CF Estrela da Amadora",
-      "kickoff": "14/09 17:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.61,
-        "dnb_home": 0.75,
-        "xg": 3.26,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "FC Internazionale Milano",
-      "away": "Udinese Calcio",
-      "kickoff": "14/09 18:45",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.61,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.75,
-        "xg": 2.39,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "Real Betis Balompié",
-      "kickoff": "14/09 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.63,
-        "dnb_home": 0.69,
-        "xg": 3.32,
-        "expected_corners": 9.6
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "Sporting Clube de Braga",
-      "away": "GD Estoril Praia",
-      "kickoff": "14/09 19:45",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.53,
-        "dnb_home": 0.71,
-        "xg": 2.97,
-        "expected_corners": 12.5
-      }
-    }
-  ]
+  "hot": []
 }
