@@ -1,172 +1,20 @@
 {
-  "updated_at": "15/09 16:49",
-  "value": [
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "15/09 17:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.56,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.76,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "AFC Ajax",
-      "away": "Willem II Tilburg",
-      "kickoff": "15/09 18:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.67,
-        "dnb_home": 0.58,
-        "xg": 2.48,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Lincoln City FC",
-      "kickoff": "15/09 18:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.57,
-        "cards_home": 0.6,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.76,
-        "expected_corners": 12.0
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primera Division",
-      "home": "Deportivo Alavés",
-      "away": "Valencia CF",
-      "kickoff": "15/09 18:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.67,
-        "cards_home": 0.62,
-        "cards_away": 0.59,
-        "dnb_home": 0.67,
-        "xg": 2.32,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "AFC Ajax",
-      "away": "Willem II Tilburg",
-      "kickoff": "15/09 18:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.67,
-        "dnb_home": 0.58,
-        "xg": 2.48,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Middlesbrough FC",
-      "away": "Millwall FC",
-      "kickoff": "15/09 18:45",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.67,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.55,
-        "xg": 2.54,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Elche CF",
-      "away": "Real Madrid CF",
-      "kickoff": "15/09 19:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.67,
-        "cards_home": 0.55,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 2.81,
-        "expected_corners": 9.7
-      }
-    },
+  "updated_at": "15/09 20:00",
+  "value": [],
+  "corner": [],
+  "hot": [
     {
       "league": "Copa Libertadores",
       "home": "CA Platense",
       "away": "Fluminense FC",
       "kickoff": "15/09 22:00",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.52,
-        "dnb_home": 0.65,
-        "xg": 3.21,
-        "expected_corners": 12.2
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primera Division",
-      "home": "Rayo Vallecano de Madrid",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "15/09 17:00",
-      "markets": {
-        "over25": 0.67,
+        "over25": 0.56,
         "corners95": 0.56,
-        "cards_home": 0.63,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 2.76,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Lincoln City FC",
-      "kickoff": "15/09 18:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.57,
-        "cards_home": 0.6,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.76,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Elche CF",
-      "away": "Real Madrid CF",
-      "kickoff": "15/09 19:30",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.67,
-        "cards_home": 0.55,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 2.81,
+        "cards_home": 0.57,
+        "cards_away": 0.63,
+        "dnb_home": 0.71,
+        "xg": 3.33,
         "expected_corners": 9.7
       }
     }
