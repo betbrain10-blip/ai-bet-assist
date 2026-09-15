@@ -1,22 +1,129 @@
 {
-  "updated_at": "14/09 22:37",
-  "value": [],
-  "corner": [
+  "updated_at": "15/09 01:10",
+  "value": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Bahia",
-      "away": "Clube do Remo",
-      "kickoff": "14/09 23:00",
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "15/09 17:00",
       "markets": {
-        "over25": 0.6,
+        "over25": 0.63,
         "corners95": 0.68,
-        "cards_home": 0.6,
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 3.21,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Bristol City FC",
+      "away": "Lincoln City FC",
+      "kickoff": "15/09 18:45",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.6,
+        "cards_home": 0.57,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 2.17,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Elche CF",
+      "away": "Real Madrid CF",
+      "kickoff": "15/09 19:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.63,
         "cards_away": 0.58,
-        "dnb_home": 0.66,
-        "xg": 2.94,
-        "expected_corners": 11.0
+        "dnb_home": 0.59,
+        "xg": 2.76,
+        "expected_corners": 11.9
       }
     }
   ],
-  "hot": []
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "15/09 17:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 3.21,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "AFC Ajax",
+      "away": "Willem II Tilburg",
+      "kickoff": "15/09 18:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.61,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.58,
+        "xg": 2.32,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Middlesbrough FC",
+      "away": "Millwall FC",
+      "kickoff": "15/09 18:45",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.6,
+        "dnb_home": 0.6,
+        "xg": 3.3,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Elche CF",
+      "away": "Real Madrid CF",
+      "kickoff": "15/09 19:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.61,
+        "cards_home": 0.63,
+        "cards_away": 0.58,
+        "dnb_home": 0.59,
+        "xg": 2.76,
+        "expected_corners": 11.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Rayo Vallecano de Madrid",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "15/09 17:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.68,
+        "cards_home": 0.59,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 3.21,
+        "expected_corners": 9.6
+      }
+    }
+  ]
 }
