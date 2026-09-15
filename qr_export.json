@@ -1,22 +1,22 @@
 {
-  "updated_at": "15/09 20:00",
+  "updated_at": "15/09 23:02",
   "value": [],
-  "corner": [],
-  "hot": [
+  "corner": [
     {
       "league": "Copa Libertadores",
       "home": "CA Platense",
       "away": "Fluminense FC",
       "kickoff": "15/09 22:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.56,
-        "cards_home": 0.57,
-        "cards_away": 0.63,
-        "dnb_home": 0.71,
-        "xg": 3.33,
-        "expected_corners": 9.7
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.57,
+        "xg": 2.52,
+        "expected_corners": 10.1
       }
     }
-  ]
+  ],
+  "hot": []
 }
