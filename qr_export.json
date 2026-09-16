@@ -1,51 +1,66 @@
 {
-  "updated_at": "16/09 07:17",
+  "updated_at": "16/09 12:42",
   "value": [
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "Athletic Club",
+      "kickoff": "16/09 19:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.59,
+        "cards_away": 0.52,
+        "dnb_home": 0.67,
+        "xg": 2.13,
+        "expected_corners": 9.3
+      }
+    },
     {
       "league": "Primera Division",
       "home": "FC Barcelona",
       "away": "Real Racing Club de Santander",
       "kickoff": "16/09 19:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.59,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.73,
-        "xg": 2.88,
-        "expected_corners": 11.1
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.56,
+        "dnb_home": 0.75,
+        "xg": 3.07,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "LDU de Quito",
+      "away": "SE Palmeiras",
+      "kickoff": "16/09 22:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.54,
+        "dnb_home": 0.57,
+        "xg": 3.38,
+        "expected_corners": 10.4
       }
     }
   ],
   "corner": [
     {
       "league": "Primera Division",
-      "home": "Club Atlético de Madrid",
-      "away": "CA Osasuna",
-      "kickoff": "16/09 17:00",
-      "markets": {
-        "over25": 0.55,
-        "corners95": 0.63,
-        "cards_home": 0.51,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 3.39,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Primera Division",
       "home": "RC Deportivo La Coruña",
       "away": "Sevilla FC",
       "kickoff": "16/09 17:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.58,
-        "dnb_home": 0.7,
-        "xg": 2.88,
-        "expected_corners": 11.4
+        "over25": 0.57,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.56,
+        "dnb_home": 0.6,
+        "xg": 2.41,
+        "expected_corners": 9.3
       }
     },
     {
@@ -54,13 +69,58 @@
       "away": "Athletic Club",
       "kickoff": "16/09 19:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.62,
-        "cards_home": 0.57,
-        "cards_away": 0.5,
-        "dnb_home": 0.59,
-        "xg": 2.51,
-        "expected_corners": 10.2
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.59,
+        "cards_away": 0.52,
+        "dnb_home": 0.67,
+        "xg": 2.13,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "FC Barcelona",
+      "away": "Real Racing Club de Santander",
+      "kickoff": "16/09 19:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.56,
+        "dnb_home": 0.75,
+        "xg": 3.07,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Copa Libertadores",
+      "home": "LDU de Quito",
+      "away": "SE Palmeiras",
+      "kickoff": "16/09 22:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.69,
+        "cards_home": 0.66,
+        "cards_away": 0.54,
+        "dnb_home": 0.57,
+        "xg": 3.38,
+        "expected_corners": 10.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "Grêmio FBPA",
+      "kickoff": "16/09 22:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.68,
+        "dnb_home": 0.67,
+        "xg": 2.2,
+        "expected_corners": 10.1
       }
     }
   ],
@@ -71,28 +131,13 @@
       "away": "CA Osasuna",
       "kickoff": "16/09 17:00",
       "markets": {
-        "over25": 0.55,
-        "corners95": 0.63,
-        "cards_home": 0.51,
+        "over25": 0.58,
+        "corners95": 0.57,
+        "cards_home": 0.59,
         "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 3.39,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "RC Deportivo La Coruña",
-      "away": "Sevilla FC",
-      "kickoff": "16/09 17:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.58,
-        "dnb_home": 0.7,
-        "xg": 2.88,
-        "expected_corners": 11.4
+        "dnb_home": 0.71,
+        "xg": 2.6,
+        "expected_corners": 12.5
       }
     },
     {
@@ -101,43 +146,13 @@
       "away": "Real Racing Club de Santander",
       "kickoff": "16/09 19:30",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.59,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.73,
-        "xg": 2.88,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Copa Libertadores",
-      "home": "LDU de Quito",
-      "away": "SE Palmeiras",
-      "kickoff": "16/09 22:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.6,
-        "cards_home": 0.61,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 2.55,
-        "expected_corners": 10.4
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Botafogo FR",
-      "away": "Grêmio FBPA",
-      "kickoff": "16/09 22:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.55,
-        "cards_home": 0.58,
-        "cards_away": 0.54,
-        "dnb_home": 0.71,
-        "xg": 2.78,
-        "expected_corners": 12.7
+        "over25": 0.66,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.56,
+        "dnb_home": 0.75,
+        "xg": 3.07,
+        "expected_corners": 9.9
       }
     }
   ]
