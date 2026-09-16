@@ -1,22 +1,129 @@
 {
-  "updated_at": "15/09 23:02",
-  "value": [],
-  "corner": [
+  "updated_at": "16/09 01:31",
+  "value": [
     {
-      "league": "Copa Libertadores",
-      "home": "CA Platense",
-      "away": "Fluminense FC",
-      "kickoff": "15/09 22:00",
+      "league": "Primera Division",
+      "home": "RC Deportivo La Coruña",
+      "away": "Sevilla FC",
+      "kickoff": "16/09 17:00",
       "markets": {
-        "over25": 0.57,
-        "corners95": 0.61,
-        "cards_home": 0.6,
-        "cards_away": 0.66,
-        "dnb_home": 0.57,
-        "xg": 2.52,
-        "expected_corners": 10.1
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.49,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "FC Barcelona",
+      "away": "Real Racing Club de Santander",
+      "kickoff": "16/09 19:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 2.19,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "Grêmio FBPA",
+      "kickoff": "16/09 22:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.62,
+        "dnb_home": 0.66,
+        "xg": 3.28,
+        "expected_corners": 10.0
       }
     }
   ],
-  "hot": []
+  "corner": [
+    {
+      "league": "Primera Division",
+      "home": "RC Deportivo La Coruña",
+      "away": "Sevilla FC",
+      "kickoff": "16/09 17:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.49,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Club Atlético de Madrid",
+      "away": "CA Osasuna",
+      "kickoff": "16/09 17:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.64,
+        "dnb_home": 0.64,
+        "xg": 2.88,
+        "expected_corners": 12.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "FC Barcelona",
+      "away": "Real Racing Club de Santander",
+      "kickoff": "16/09 19:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.51,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 2.19,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Botafogo FR",
+      "away": "Grêmio FBPA",
+      "kickoff": "16/09 22:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.58,
+        "cards_away": 0.62,
+        "dnb_home": 0.66,
+        "xg": 3.28,
+        "expected_corners": 10.0
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "RC Deportivo La Coruña",
+      "away": "Sevilla FC",
+      "kickoff": "16/09 17:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 2.49,
+        "expected_corners": 8.5
+      }
+    }
+  ]
 }
