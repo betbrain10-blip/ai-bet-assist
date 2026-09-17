@@ -1,6 +1,84 @@
 {
-  "updated_at": "16/09 23:09",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "17/09 01:35",
+  "value": [
+    {
+      "league": "Primera Division",
+      "home": "Real Betis Balompié",
+      "away": "Getafe CF",
+      "kickoff": "17/09 17:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.5,
+        "cards_away": 0.59,
+        "dnb_home": 0.72,
+        "xg": 2.88,
+        "expected_corners": 8.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Málaga CF",
+      "away": "Villarreal CF",
+      "kickoff": "17/09 19:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.69,
+        "cards_home": 0.5,
+        "cards_away": 0.56,
+        "dnb_home": 0.58,
+        "xg": 3.38,
+        "expected_corners": 10.1
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Copa Libertadores",
+      "home": "SC Corinthians Paulista",
+      "away": "Estudiantes de La Plata",
+      "kickoff": "17/09 00:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.68,
+        "dnb_home": 0.63,
+        "xg": 2.37,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Málaga CF",
+      "away": "Villarreal CF",
+      "kickoff": "17/09 19:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.69,
+        "cards_home": 0.5,
+        "cards_away": 0.56,
+        "dnb_home": 0.58,
+        "xg": 3.38,
+        "expected_corners": 10.1
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Real Betis Balompié",
+      "away": "Getafe CF",
+      "kickoff": "17/09 17:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.58,
+        "cards_home": 0.5,
+        "cards_away": 0.59,
+        "dnb_home": 0.72,
+        "xg": 2.88,
+        "expected_corners": 8.8
+      }
+    }
+  ]
 }
