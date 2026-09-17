@@ -1,23 +1,23 @@
 {
-  "updated_at": "17/09 20:30",
-  "value": [],
-  "corner": [
+  "updated_at": "17/09 23:22",
+  "value": [
     {
       "league": "Copa Libertadores",
       "home": "SC Corinthians Paulista",
       "away": "Estudiantes de La Plata",
       "kickoff": "17/09 00:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.51,
-        "cards_away": 0.6,
-        "dnb_home": 0.75,
-        "xg": 2.85,
-        "expected_corners": 12.4
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.62,
+        "cards_away": 0.55,
+        "dnb_home": 0.7,
+        "xg": 2.14,
+        "expected_corners": 9.4
       }
     }
   ],
+  "corner": [],
   "hot": [
     {
       "league": "Copa Libertadores",
@@ -25,13 +25,13 @@
       "away": "Estudiantes de La Plata",
       "kickoff": "17/09 00:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.51,
-        "cards_away": 0.6,
-        "dnb_home": 0.75,
-        "xg": 2.85,
-        "expected_corners": 12.4
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.62,
+        "cards_away": 0.55,
+        "dnb_home": 0.7,
+        "xg": 2.14,
+        "expected_corners": 9.4
       }
     }
   ]
