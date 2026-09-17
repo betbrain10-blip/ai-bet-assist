@@ -1,5 +1,5 @@
 {
-  "updated_at": "17/09 01:35",
+  "updated_at": "17/09 07:12",
   "value": [
     {
       "league": "Primera Division",
@@ -7,13 +7,13 @@
       "away": "Getafe CF",
       "kickoff": "17/09 17:00",
       "markets": {
-        "over25": 0.65,
+        "over25": 0.67,
         "corners95": 0.58,
-        "cards_home": 0.5,
-        "cards_away": 0.59,
-        "dnb_home": 0.72,
-        "xg": 2.88,
-        "expected_corners": 8.8
+        "cards_home": 0.61,
+        "cards_away": 0.56,
+        "dnb_home": 0.65,
+        "xg": 2.82,
+        "expected_corners": 12.0
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "Villarreal CF",
       "kickoff": "17/09 19:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.5,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 3.38,
-        "expected_corners": 10.1
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.53,
+        "cards_away": 0.68,
+        "dnb_home": 0.57,
+        "xg": 2.38,
+        "expected_corners": 9.3
       }
     }
   ],
@@ -39,12 +39,12 @@
       "away": "Estudiantes de La Plata",
       "kickoff": "17/09 00:30",
       "markets": {
-        "over25": 0.61,
+        "over25": 0.58,
         "corners95": 0.65,
-        "cards_home": 0.6,
-        "cards_away": 0.68,
-        "dnb_home": 0.63,
-        "xg": 2.37,
+        "cards_home": 0.63,
+        "cards_away": 0.52,
+        "dnb_home": 0.69,
+        "xg": 3.21,
         "expected_corners": 10.5
       }
     },
@@ -54,30 +54,30 @@
       "away": "Villarreal CF",
       "kickoff": "17/09 19:30",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.5,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 3.38,
-        "expected_corners": 10.1
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.53,
+        "cards_away": 0.68,
+        "dnb_home": 0.57,
+        "xg": 2.38,
+        "expected_corners": 9.3
       }
     }
   ],
   "hot": [
     {
-      "league": "Primera Division",
-      "home": "Real Betis Balompié",
-      "away": "Getafe CF",
-      "kickoff": "17/09 17:00",
+      "league": "Copa Libertadores",
+      "home": "SC Corinthians Paulista",
+      "away": "Estudiantes de La Plata",
+      "kickoff": "17/09 00:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.58,
-        "cards_home": 0.5,
-        "cards_away": 0.59,
-        "dnb_home": 0.72,
-        "xg": 2.88,
-        "expected_corners": 8.8
+        "over25": 0.58,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.52,
+        "dnb_home": 0.69,
+        "xg": 3.21,
+        "expected_corners": 10.5
       }
     }
   ]
