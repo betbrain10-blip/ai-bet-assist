@@ -1,5 +1,5 @@
 {
-  "updated_at": "18/09 06:20",
+  "updated_at": "18/09 11:37",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,43 +7,28 @@
       "away": "CAR Independiente del Valle",
       "kickoff": "18/09 00:30",
       "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.58,
+        "cards_away": 0.53,
+        "dnb_home": 0.61,
+        "xg": 2.63,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "AC Monza",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "18/09 18:45",
+      "markets": {
         "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.62,
-        "dnb_home": 0.68,
-        "xg": 2.11,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "FC Bayern München",
-      "away": "1. FC Union Berlin",
-      "kickoff": "18/09 18:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.57,
-        "xg": 2.25,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Premier League",
-      "home": "Brentford FC",
-      "away": "Chelsea FC",
-      "kickoff": "18/09 19:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.66,
-        "dnb_home": 0.62,
-        "xg": 3.31,
-        "expected_corners": 11.8
+        "corners95": 0.68,
+        "cards_home": 0.68,
+        "cards_away": 0.59,
+        "dnb_home": 0.66,
+        "xg": 3.18,
+        "expected_corners": 10.9
       }
     },
     {
@@ -52,13 +37,13 @@
       "away": "Elche CF",
       "kickoff": "18/09 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.62,
-        "cards_home": 0.57,
+        "over25": 0.63,
+        "corners95": 0.6,
+        "cards_home": 0.65,
         "cards_away": 0.54,
-        "dnb_home": 0.68,
-        "xg": 2.54,
-        "expected_corners": 8.7
+        "dnb_home": 0.72,
+        "xg": 2.74,
+        "expected_corners": 9.3
       }
     }
   ],
@@ -69,28 +54,28 @@
       "away": "CAR Independiente del Valle",
       "kickoff": "18/09 00:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.62,
-        "dnb_home": 0.68,
-        "xg": 2.11,
-        "expected_corners": 11.9
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.58,
+        "cards_away": 0.53,
+        "dnb_home": 0.61,
+        "xg": 2.63,
+        "expected_corners": 11.1
       }
     },
     {
-      "league": "Bundesliga",
-      "home": "FC Bayern München",
-      "away": "1. FC Union Berlin",
-      "kickoff": "18/09 18:30",
+      "league": "Eredivisie",
+      "home": "FC Groningen",
+      "away": "PEC Zwolle",
+      "kickoff": "18/09 18:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.65,
-        "dnb_home": 0.57,
-        "xg": 2.25,
-        "expected_corners": 9.4
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.61,
+        "cards_away": 0.55,
+        "dnb_home": 0.67,
+        "xg": 2.23,
+        "expected_corners": 12.4
       }
     },
     {
@@ -99,13 +84,13 @@
       "away": "US Sassuolo Calcio",
       "kickoff": "18/09 18:45",
       "markets": {
-        "over25": 0.62,
+        "over25": 0.71,
         "corners95": 0.68,
-        "cards_home": 0.5,
-        "cards_away": 0.68,
-        "dnb_home": 0.56,
-        "xg": 2.87,
-        "expected_corners": 11.8
+        "cards_home": 0.68,
+        "cards_away": 0.59,
+        "dnb_home": 0.66,
+        "xg": 3.18,
+        "expected_corners": 10.9
       }
     },
     {
@@ -114,13 +99,45 @@
       "away": "Chelsea FC",
       "kickoff": "18/09 19:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.66,
-        "dnb_home": 0.62,
-        "xg": 3.31,
-        "expected_corners": 11.8
+        "over25": 0.61,
+        "corners95": 0.66,
+        "cards_home": 0.5,
+        "cards_away": 0.67,
+        "dnb_home": 0.64,
+        "xg": 2.4,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Bristol City FC",
+      "away": "Watford FC",
+      "kickoff": "18/09 19:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.61,
+        "cards_home": 0.61,
+        "cards_away": 0.59,
+        "dnb_home": 0.64,
+        "xg": 3.38,
+        "expected_corners": 9.5
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Bundesliga",
+      "home": "FC Bayern München",
+      "away": "1. FC Union Berlin",
+      "kickoff": "18/09 18:30",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.57,
+        "cards_home": 0.62,
+        "cards_away": 0.58,
+        "dnb_home": 0.7,
+        "xg": 3.27,
+        "expected_corners": 12.2
       }
     },
     {
@@ -129,30 +146,13 @@
       "away": "Elche CF",
       "kickoff": "18/09 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.62,
-        "cards_home": 0.57,
+        "over25": 0.63,
+        "corners95": 0.6,
+        "cards_home": 0.65,
         "cards_away": 0.54,
-        "dnb_home": 0.68,
-        "xg": 2.54,
-        "expected_corners": 8.7
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Eredivisie",
-      "home": "FC Groningen",
-      "away": "PEC Zwolle",
-      "kickoff": "18/09 18:00",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.59,
-        "cards_home": 0.52,
-        "cards_away": 0.53,
         "dnb_home": 0.72,
-        "xg": 3.04,
-        "expected_corners": 12.4
+        "xg": 2.74,
+        "expected_corners": 9.3
       }
     }
   ]
