@@ -1,38 +1,6 @@
 {
-  "updated_at": "20/09 20:22",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "EC Bahia",
-      "kickoff": "20/09 22:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.6,
-        "cards_home": 0.53,
-        "cards_away": 0.62,
-        "dnb_home": 0.72,
-        "xg": 2.94,
-        "expected_corners": 8.8
-      }
-    }
-  ],
+  "updated_at": "20/09 22:36",
+  "value": [],
   "corner": [],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "EC Bahia",
-      "kickoff": "20/09 22:30",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.6,
-        "cards_home": 0.53,
-        "cards_away": 0.62,
-        "dnb_home": 0.72,
-        "xg": 2.94,
-        "expected_corners": 8.8
-      }
-    }
-  ]
+  "hot": []
 }
