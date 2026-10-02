@@ -1,22 +1,6 @@
 {
-  "updated_at": "02/10 10:39",
-  "value": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Santos FC",
-      "kickoff": "02/10 23:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.6,
-        "cards_home": 0.65,
-        "cards_away": 0.61,
-        "dnb_home": 0.55,
-        "xg": 2.27,
-        "expected_corners": 9.6
-      }
-    }
-  ],
+  "updated_at": "02/10 16:29",
+  "value": [],
   "corner": [],
   "hot": []
 }
