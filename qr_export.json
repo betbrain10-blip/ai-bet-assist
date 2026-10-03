@@ -1,5 +1,5 @@
 {
-  "updated_at": "03/10 05:34",
+  "updated_at": "03/10 11:10",
   "value": [
     {
       "league": "Campeonato Brasileiro Série A",
@@ -7,13 +7,13 @@
       "away": "RB Bragantino",
       "kickoff": "03/10 21:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 3.07,
-        "expected_corners": 9.8
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.74,
+        "xg": 3.11,
+        "expected_corners": 9.4
       }
     }
   ],
@@ -24,15 +24,31 @@
       "away": "RB Bragantino",
       "kickoff": "03/10 21:30",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.67,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.61,
-        "xg": 3.07,
-        "expected_corners": 9.8
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.74,
+        "xg": 3.11,
+        "expected_corners": 9.4
       }
     }
   ],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Mineiro",
+      "away": "RB Bragantino",
+      "kickoff": "03/10 21:30",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.63,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.74,
+        "xg": 3.11,
+        "expected_corners": 9.4
+      }
+    }
+  ]
 }
