@@ -1,38 +1,22 @@
 {
-  "updated_at": "02/10 20:54",
-  "value": [],
-  "corner": [
+  "updated_at": "03/10 00:10",
+  "value": [
     {
       "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Santos FC",
-      "kickoff": "02/10 23:00",
+      "home": "CA Mineiro",
+      "away": "RB Bragantino",
+      "kickoff": "03/10 21:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.26,
-        "expected_corners": 11.4
+        "over25": 0.64,
+        "corners95": 0.6,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
+        "dnb_home": 0.57,
+        "xg": 2.73,
+        "expected_corners": 11.7
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Santos FC",
-      "kickoff": "02/10 23:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.66,
-        "cards_home": 0.57,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.26,
-        "expected_corners": 11.4
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
