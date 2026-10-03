@@ -1,22 +1,22 @@
 {
-  "updated_at": "03/10 15:11",
-  "value": [],
-  "corner": [
+  "updated_at": "03/10 18:46",
+  "value": [
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Mineiro",
       "away": "RB Bragantino",
       "kickoff": "03/10 21:30",
       "markets": {
-        "over25": 0.6,
-        "corners95": 0.64,
-        "cards_home": 0.63,
-        "cards_away": 0.64,
-        "dnb_home": 0.55,
-        "xg": 2.51,
-        "expected_corners": 12.6
+        "over25": 0.72,
+        "corners95": 0.56,
+        "cards_home": 0.56,
+        "cards_away": 0.65,
+        "dnb_home": 0.65,
+        "xg": 2.12,
+        "expected_corners": 9.9
       }
     }
   ],
+  "corner": [],
   "hot": []
 }
