@@ -1,5 +1,5 @@
 {
-  "updated_at": "09/10 09:26",
+  "updated_at": "09/10 16:27",
   "value": [
     {
       "league": "Primeira Liga",
@@ -8,12 +8,12 @@
       "kickoff": "09/10 17:45",
       "markets": {
         "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.65,
+        "corners95": 0.57,
+        "cards_home": 0.6,
         "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.34,
-        "expected_corners": 10.7
+        "dnb_home": 0.61,
+        "xg": 3.27,
+        "expected_corners": 12.4
       }
     },
     {
@@ -22,13 +22,13 @@
       "away": "SC Heerenveen",
       "kickoff": "09/10 18:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.52,
-        "dnb_home": 0.66,
-        "xg": 2.46,
-        "expected_corners": 12.7
+        "over25": 0.69,
+        "corners95": 0.56,
+        "cards_home": 0.57,
+        "cards_away": 0.53,
+        "dnb_home": 0.73,
+        "xg": 3.18,
+        "expected_corners": 8.9
       }
     },
     {
@@ -37,137 +37,13 @@
       "away": "SV Werder Bremen",
       "kickoff": "09/10 18:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.67,
-        "xg": 2.94,
-        "expected_corners": 9.5
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Primeira Liga",
-      "home": "Moreirense FC",
-      "away": "Gil Vicente FC",
-      "kickoff": "09/10 17:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.34,
+        "over25": 0.64,
+        "corners95": 0.6,
+        "cards_home": 0.53,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 3.24,
         "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Eredivisie",
-      "home": "PSV",
-      "away": "SC Heerenveen",
-      "kickoff": "09/10 18:00",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.66,
-        "cards_home": 0.55,
-        "cards_away": 0.52,
-        "dnb_home": 0.66,
-        "xg": 2.46,
-        "expected_corners": 12.7
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "Borussia Dortmund",
-      "away": "SV Werder Bremen",
-      "kickoff": "09/10 18:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.52,
-        "dnb_home": 0.67,
-        "xg": 2.94,
-        "expected_corners": 9.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "Olympique Lyonnais",
-      "kickoff": "09/10 18:45",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.52,
-        "dnb_home": 0.72,
-        "xg": 3.1,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Málaga CF",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "09/10 19:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.67,
-        "expected_corners": 8.5
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Primeira Liga",
-      "home": "Moreirense FC",
-      "away": "Gil Vicente FC",
-      "kickoff": "09/10 17:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.64,
-        "cards_home": 0.65,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 3.34,
-        "expected_corners": 10.7
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Racing Club de Lens",
-      "away": "Olympique Lyonnais",
-      "kickoff": "09/10 18:45",
-      "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.52,
-        "dnb_home": 0.72,
-        "xg": 3.1,
-        "expected_corners": 9.0
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Málaga CF",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "09/10 19:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.68,
-        "cards_home": 0.54,
-        "cards_away": 0.61,
-        "dnb_home": 0.71,
-        "xg": 2.67,
-        "expected_corners": 8.5
       }
     },
     {
@@ -176,13 +52,92 @@
       "away": "Sporting Clube de Portugal",
       "kickoff": "09/10 19:15",
       "markets": {
+        "over25": 0.69,
+        "corners95": 0.6,
+        "cards_home": 0.62,
+        "cards_away": 0.57,
+        "dnb_home": 0.57,
+        "xg": 2.31,
+        "expected_corners": 10.6
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "Olympique Lyonnais",
+      "kickoff": "09/10 18:45",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.68,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.69,
+        "xg": 3.14,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Málaga CF",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "09/10 19:00",
+      "markets": {
         "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.5,
+        "cards_away": 0.53,
+        "dnb_home": 0.56,
+        "xg": 2.21,
+        "expected_corners": 10.2
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Eredivisie",
+      "home": "PSV",
+      "away": "SC Heerenveen",
+      "kickoff": "09/10 18:00",
+      "markets": {
+        "over25": 0.69,
         "corners95": 0.56,
-        "cards_home": 0.58,
-        "cards_away": 0.58,
-        "dnb_home": 0.71,
-        "xg": 2.6,
-        "expected_corners": 11.0
+        "cards_home": 0.57,
+        "cards_away": 0.53,
+        "dnb_home": 0.73,
+        "xg": 3.18,
+        "expected_corners": 8.9
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Borussia Dortmund",
+      "away": "SV Werder Bremen",
+      "kickoff": "09/10 18:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.6,
+        "cards_home": 0.53,
+        "cards_away": 0.67,
+        "dnb_home": 0.75,
+        "xg": 3.24,
+        "expected_corners": 10.7
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "Olympique Lyonnais",
+      "kickoff": "09/10 18:45",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.68,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.69,
+        "xg": 3.14,
+        "expected_corners": 12.5
       }
     }
   ]
