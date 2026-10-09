@@ -1,53 +1,203 @@
 {
-  "updated_at": "08/10 22:22",
+  "updated_at": "09/10 02:24",
   "value": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "CA Mineiro",
-      "kickoff": "08/10 23:00",
+      "league": "Primeira Liga",
+      "home": "Moreirense FC",
+      "away": "Gil Vicente FC",
+      "kickoff": "09/10 17:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.62,
-        "cards_away": 0.58,
+        "over25": 0.63,
+        "corners95": 0.56,
+        "cards_home": 0.51,
+        "cards_away": 0.55,
+        "dnb_home": 0.74,
+        "xg": 3.27,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "PSV",
+      "away": "SC Heerenveen",
+      "kickoff": "09/10 18:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.61,
+        "xg": 3.17,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "West Ham United FC",
+      "away": "Queens Park Rangers FC",
+      "kickoff": "09/10 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.63,
         "dnb_home": 0.72,
-        "xg": 2.68,
-        "expected_corners": 9.0
+        "xg": 2.64,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Málaga CF",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "09/10 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.55,
+        "dnb_home": 0.66,
+        "xg": 3.15,
+        "expected_corners": 12.2
       }
     }
   ],
   "corner": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "CA Mineiro",
-      "kickoff": "08/10 23:00",
+      "league": "Eredivisie",
+      "home": "PSV",
+      "away": "SC Heerenveen",
+      "kickoff": "09/10 18:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.62,
-        "cards_away": 0.58,
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.61,
+        "xg": 3.17,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Borussia Dortmund",
+      "away": "SV Werder Bremen",
+      "kickoff": "09/10 18:30",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.62,
+        "dnb_home": 0.67,
+        "xg": 3.28,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "Olympique Lyonnais",
+      "kickoff": "09/10 18:45",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.73,
+        "xg": 2.31,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "West Ham United FC",
+      "away": "Queens Park Rangers FC",
+      "kickoff": "09/10 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.63,
         "dnb_home": 0.72,
-        "xg": 2.68,
-        "expected_corners": 9.0
+        "xg": 2.64,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Málaga CF",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "09/10 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.55,
+        "dnb_home": 0.66,
+        "xg": 3.15,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Sporting Clube de Braga",
+      "away": "Sporting Clube de Portugal",
+      "kickoff": "09/10 19:15",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.67,
+        "cards_home": 0.53,
+        "cards_away": 0.64,
+        "dnb_home": 0.57,
+        "xg": 3.01,
+        "expected_corners": 11.7
       }
     }
   ],
   "hot": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "CA Mineiro",
-      "kickoff": "08/10 23:00",
+      "league": "Primeira Liga",
+      "home": "Moreirense FC",
+      "away": "Gil Vicente FC",
+      "kickoff": "09/10 17:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.69,
-        "cards_home": 0.62,
-        "cards_away": 0.58,
+        "over25": 0.63,
+        "corners95": 0.56,
+        "cards_home": 0.51,
+        "cards_away": 0.55,
+        "dnb_home": 0.74,
+        "xg": 3.27,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Racing Club de Lens",
+      "away": "Olympique Lyonnais",
+      "kickoff": "09/10 18:45",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.73,
+        "xg": 2.31,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "West Ham United FC",
+      "away": "Queens Park Rangers FC",
+      "kickoff": "09/10 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.56,
+        "cards_away": 0.63,
         "dnb_home": 0.72,
-        "xg": 2.68,
-        "expected_corners": 9.0
+        "xg": 2.64,
+        "expected_corners": 11.1
       }
     }
   ]
