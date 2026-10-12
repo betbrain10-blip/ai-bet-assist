@@ -1,6 +1,219 @@
 {
-  "updated_at": "11/10 23:03",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "12/10 02:34",
+  "value": [
+    {
+      "league": "Serie A",
+      "home": "Atalanta BC",
+      "away": "Venezia FC",
+      "kickoff": "12/10 16:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.55,
+        "dnb_home": 0.63,
+        "xg": 2.77,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Torino FC",
+      "away": "Udinese Calcio",
+      "kickoff": "12/10 18:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.64,
+        "xg": 3.09,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "Sevilla FC",
+      "kickoff": "12/10 19:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.29,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Famalicão",
+      "away": "FC Alverca",
+      "kickoff": "12/10 19:15",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.65,
+        "cards_away": 0.68,
+        "dnb_home": 0.75,
+        "xg": 2.95,
+        "expected_corners": 10.8
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "Atalanta BC",
+      "away": "Venezia FC",
+      "kickoff": "12/10 16:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.61,
+        "cards_home": 0.5,
+        "cards_away": 0.55,
+        "dnb_home": 0.63,
+        "xg": 2.77,
+        "expected_corners": 11.3
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Torino FC",
+      "away": "Udinese Calcio",
+      "kickoff": "12/10 18:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.7,
+        "cards_home": 0.61,
+        "cards_away": 0.61,
+        "dnb_home": 0.64,
+        "xg": 3.09,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Coventry City FC",
+      "away": "Newcastle United FC",
+      "kickoff": "12/10 19:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.63,
+        "dnb_home": 0.59,
+        "xg": 3.36,
+        "expected_corners": 10.0
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "Sevilla FC",
+      "kickoff": "12/10 19:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.29,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Coritiba FBC",
+      "away": "Botafogo FR",
+      "kickoff": "12/10 19:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.65,
+        "cards_home": 0.66,
+        "cards_away": 0.66,
+        "dnb_home": 0.59,
+        "xg": 2.27,
+        "expected_corners": 8.7
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Famalicão",
+      "away": "FC Alverca",
+      "kickoff": "12/10 19:15",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.65,
+        "cards_away": 0.68,
+        "dnb_home": 0.75,
+        "xg": 2.95,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "CA Paranaense",
+      "kickoff": "12/10 22:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.15,
+        "expected_corners": 9.9
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "Sevilla FC",
+      "kickoff": "12/10 19:00",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.66,
+        "cards_home": 0.51,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.29,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Famalicão",
+      "away": "FC Alverca",
+      "kickoff": "12/10 19:15",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.64,
+        "cards_home": 0.65,
+        "cards_away": 0.68,
+        "dnb_home": 0.75,
+        "xg": 2.95,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "CA Paranaense",
+      "kickoff": "12/10 22:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.15,
+        "expected_corners": 9.9
+      }
+    }
+  ]
 }
