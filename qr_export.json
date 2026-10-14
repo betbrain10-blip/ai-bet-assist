@@ -1,5 +1,5 @@
 {
-  "updated_at": "14/10 05:51",
+  "updated_at": "14/10 11:17",
   "value": [
     {
       "league": "UEFA Champions League",
@@ -8,12 +8,12 @@
       "kickoff": "14/10 16:45",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
-        "dnb_home": 0.58,
-        "xg": 2.51,
-        "expected_corners": 11.4
+        "corners95": 0.68,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.62,
+        "xg": 2.53,
+        "expected_corners": 12.3
       }
     },
     {
@@ -22,43 +22,28 @@
       "away": "Derby County FC",
       "kickoff": "14/10 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.5,
-        "dnb_home": 0.63,
-        "xg": 2.11,
-        "expected_corners": 10.2
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.65,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.91,
+        "expected_corners": 11.6
       }
     },
     {
       "league": "Championship",
-      "home": "Portsmouth FC",
-      "away": "Sheffield United FC",
+      "home": "Norwich City FC",
+      "away": "Southampton FC",
       "kickoff": "14/10 18:45",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.56,
-        "cards_home": 0.61,
-        "cards_away": 0.54,
-        "dnb_home": 0.68,
-        "xg": 2.73,
-        "expected_corners": 8.6
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "ŠK Slovan Bratislava",
-      "away": "VfB Stuttgart",
-      "kickoff": "14/10 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 3.28,
-        "expected_corners": 10.8
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.61,
+        "dnb_home": 0.61,
+        "xg": 3.03,
+        "expected_corners": 10.6
       }
     },
     {
@@ -67,13 +52,88 @@
       "away": "West Ham United FC",
       "kickoff": "14/10 19:00",
       "markets": {
-        "over25": 0.66,
+        "over25": 0.69,
         "corners95": 0.61,
+        "cards_home": 0.53,
+        "cards_away": 0.58,
+        "dnb_home": 0.67,
+        "xg": 3.0,
+        "expected_corners": 12.3
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Betis Balompié",
+      "away": "FC Porto",
+      "kickoff": "14/10 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.58,
+        "cards_home": 0.51,
+        "cards_away": 0.65,
+        "dnb_home": 0.63,
+        "xg": 3.37,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "AS Roma",
+      "away": "Real Madrid CF",
+      "kickoff": "14/10 19:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.58,
         "cards_home": 0.54,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 2.94,
-        "expected_corners": 9.1
+        "cards_away": 0.68,
+        "dnb_home": 0.57,
+        "xg": 3.02,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "ŠK Slovan Bratislava",
+      "away": "VfB Stuttgart",
+      "kickoff": "14/10 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.67,
+        "cards_away": 0.56,
+        "dnb_home": 0.57,
+        "xg": 2.48,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FK Bodø/Glimt",
+      "away": "Borussia Dortmund",
+      "kickoff": "14/10 19:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.65,
+        "dnb_home": 0.59,
+        "xg": 2.38,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Aston Villa FC",
+      "away": "Fenerbahçe SK",
+      "kickoff": "14/10 19:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.54,
+        "dnb_home": 0.72,
+        "xg": 2.13,
+        "expected_corners": 11.0
       }
     },
     {
@@ -82,28 +142,13 @@
       "away": "PAE AEK",
       "kickoff": "14/10 19:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.6,
-        "dnb_home": 0.74,
-        "xg": 2.16,
-        "expected_corners": 11.7
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Manchester City FC",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "14/10 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.58,
-        "cards_home": 0.63,
-        "cards_away": 0.59,
-        "dnb_home": 0.63,
-        "xg": 3.29,
-        "expected_corners": 9.5
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 2.56,
+        "expected_corners": 9.3
       }
     }
   ],
@@ -114,13 +159,13 @@
       "away": "Liverpool FC",
       "kickoff": "14/10 16:45",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.66,
-        "dnb_home": 0.73,
-        "xg": 2.47,
-        "expected_corners": 8.7
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 3.2,
+        "expected_corners": 10.8
       }
     },
     {
@@ -130,12 +175,12 @@
       "kickoff": "14/10 16:45",
       "markets": {
         "over25": 0.7,
-        "corners95": 0.64,
-        "cards_home": 0.55,
-        "cards_away": 0.53,
-        "dnb_home": 0.58,
-        "xg": 2.51,
-        "expected_corners": 11.4
+        "corners95": 0.68,
+        "cards_home": 0.57,
+        "cards_away": 0.61,
+        "dnb_home": 0.62,
+        "xg": 2.53,
+        "expected_corners": 12.3
       }
     },
     {
@@ -144,13 +189,13 @@
       "away": "Derby County FC",
       "kickoff": "14/10 18:45",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.67,
-        "cards_home": 0.58,
-        "cards_away": 0.5,
-        "dnb_home": 0.63,
-        "xg": 2.11,
-        "expected_corners": 10.2
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.65,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.91,
+        "expected_corners": 11.6
       }
     },
     {
@@ -159,58 +204,13 @@
       "away": "Southampton FC",
       "kickoff": "14/10 18:45",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.57,
-        "xg": 3.35,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "AS Roma",
-      "away": "Real Madrid CF",
-      "kickoff": "14/10 19:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.59,
-        "dnb_home": 0.55,
-        "xg": 2.7,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "ŠK Slovan Bratislava",
-      "away": "VfB Stuttgart",
-      "kickoff": "14/10 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 3.28,
-        "expected_corners": 10.8
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "FK Bodø/Glimt",
-      "away": "Borussia Dortmund",
-      "kickoff": "14/10 19:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.65,
-        "cards_home": 0.55,
-        "cards_away": 0.59,
-        "dnb_home": 0.64,
-        "xg": 2.18,
-        "expected_corners": 9.5
+        "over25": 0.71,
+        "corners95": 0.68,
+        "cards_home": 0.52,
+        "cards_away": 0.61,
+        "dnb_home": 0.61,
+        "xg": 3.03,
+        "expected_corners": 10.6
       }
     },
     {
@@ -219,28 +219,43 @@
       "away": "West Ham United FC",
       "kickoff": "14/10 19:00",
       "markets": {
-        "over25": 0.66,
+        "over25": 0.69,
         "corners95": 0.61,
-        "cards_home": 0.54,
-        "cards_away": 0.53,
-        "dnb_home": 0.74,
-        "xg": 2.94,
-        "expected_corners": 9.1
+        "cards_home": 0.53,
+        "cards_away": 0.58,
+        "dnb_home": 0.67,
+        "xg": 3.0,
+        "expected_corners": 12.3
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "FK Shakhtar Donetsk",
-      "away": "PAE AEK",
+      "home": "ŠK Slovan Bratislava",
+      "away": "VfB Stuttgart",
       "kickoff": "14/10 19:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.6,
-        "dnb_home": 0.74,
-        "xg": 2.16,
-        "expected_corners": 11.7
+        "over25": 0.63,
+        "corners95": 0.64,
+        "cards_home": 0.67,
+        "cards_away": 0.56,
+        "dnb_home": 0.57,
+        "xg": 2.48,
+        "expected_corners": 12.7
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FK Bodø/Glimt",
+      "away": "Borussia Dortmund",
+      "kickoff": "14/10 19:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.65,
+        "dnb_home": 0.59,
+        "xg": 2.38,
+        "expected_corners": 12.5
       }
     },
     {
@@ -249,13 +264,28 @@
       "away": "Fenerbahçe SK",
       "kickoff": "14/10 19:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.59,
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.54,
         "dnb_home": 0.72,
-        "xg": 2.96,
-        "expected_corners": 10.2
+        "xg": 2.13,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FK Shakhtar Donetsk",
+      "away": "PAE AEK",
+      "kickoff": "14/10 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 2.56,
+        "expected_corners": 9.3
       }
     }
   ],
@@ -266,58 +296,28 @@
       "away": "Liverpool FC",
       "kickoff": "14/10 16:45",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.65,
-        "cards_away": 0.66,
-        "dnb_home": 0.73,
-        "xg": 2.47,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "ŠK Slovan Bratislava",
-      "away": "VfB Stuttgart",
-      "kickoff": "14/10 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.67,
-        "cards_away": 0.55,
-        "dnb_home": 0.7,
-        "xg": 3.28,
+        "over25": 0.6,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.54,
+        "dnb_home": 0.69,
+        "xg": 3.2,
         "expected_corners": 10.8
       }
     },
     {
       "league": "Championship",
-      "home": "Lincoln City FC",
-      "away": "West Ham United FC",
-      "kickoff": "14/10 19:00",
+      "home": "Queens Park Rangers FC",
+      "away": "Derby County FC",
+      "kickoff": "14/10 18:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.54,
-        "cards_away": 0.53,
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.65,
+        "cards_away": 0.51,
         "dnb_home": 0.74,
-        "xg": 2.94,
-        "expected_corners": 9.1
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "FK Shakhtar Donetsk",
-      "away": "PAE AEK",
-      "kickoff": "14/10 19:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.61,
-        "cards_home": 0.58,
-        "cards_away": 0.6,
-        "dnb_home": 0.74,
-        "xg": 2.16,
-        "expected_corners": 11.7
+        "xg": 2.91,
+        "expected_corners": 11.6
       }
     },
     {
@@ -326,13 +326,28 @@
       "away": "Fenerbahçe SK",
       "kickoff": "14/10 19:00",
       "markets": {
-        "over25": 0.56,
-        "corners95": 0.62,
-        "cards_home": 0.53,
-        "cards_away": 0.59,
+        "over25": 0.68,
+        "corners95": 0.66,
+        "cards_home": 0.54,
+        "cards_away": 0.54,
         "dnb_home": 0.72,
-        "xg": 2.96,
-        "expected_corners": 10.2
+        "xg": 2.13,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FK Shakhtar Donetsk",
+      "away": "PAE AEK",
+      "kickoff": "14/10 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.7,
+        "xg": 2.56,
+        "expected_corners": 9.3
       }
     }
   ]
