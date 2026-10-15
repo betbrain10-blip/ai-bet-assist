@@ -1,5 +1,5 @@
 {
-  "updated_at": "15/10 06:59",
+  "updated_at": "15/10 12:35",
   "value": [
     {
       "league": "Copa Libertadores",
@@ -7,16 +7,32 @@
       "away": "SE Palmeiras",
       "kickoff": "15/10 00:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.57,
-        "cards_home": 0.51,
-        "cards_away": 0.54,
-        "dnb_home": 0.59,
-        "xg": 2.42,
-        "expected_corners": 9.2
+        "over25": 0.68,
+        "corners95": 0.59,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.71,
+        "xg": 3.39,
+        "expected_corners": 12.3
       }
     }
   ],
   "corner": [],
-  "hot": []
+  "hot": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Fluminense FC",
+      "away": "SE Palmeiras",
+      "kickoff": "15/10 00:30",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.59,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.71,
+        "xg": 3.39,
+        "expected_corners": 12.3
+      }
+    }
+  ]
 }
