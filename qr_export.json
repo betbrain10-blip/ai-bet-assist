@@ -1,37 +1,218 @@
 {
-  "updated_at": "15/10 23:37",
-  "value": [],
+  "updated_at": "16/10 03:19",
+  "value": [
+    {
+      "league": "Copa Libertadores",
+      "home": "Estudiantes de La Plata",
+      "away": "CR Flamengo",
+      "kickoff": "16/10 00:30",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 2.36,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "Eintracht Frankfurt",
+      "away": "1. FC Köln",
+      "kickoff": "16/10 18:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.58,
+        "cards_home": 0.64,
+        "cards_away": 0.53,
+        "dnb_home": 0.57,
+        "xg": 2.93,
+        "expected_corners": 9.0
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Le Mans FC",
+      "away": "Toulouse FC",
+      "kickoff": "16/10 18:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.68,
+        "dnb_home": 0.74,
+        "xg": 2.91,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Frosinone Calcio",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "16/10 18:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.64,
+        "cards_away": 0.54,
+        "dnb_home": 0.61,
+        "xg": 3.28,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "RC Deportivo La Coruña",
+      "away": "Levante UD",
+      "kickoff": "16/10 19:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.52,
+        "dnb_home": 0.61,
+        "xg": 2.64,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Burnley FC",
+      "away": "Wolverhampton Wanderers FC",
+      "kickoff": "16/10 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 3.08,
+        "expected_corners": 8.6
+      }
+    }
+  ],
   "corner": [
     {
       "league": "Copa Libertadores",
-      "home": "Fluminense FC",
-      "away": "SE Palmeiras",
-      "kickoff": "15/10 00:30",
+      "home": "Estudiantes de La Plata",
+      "away": "CR Flamengo",
+      "kickoff": "16/10 00:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.85,
-        "expected_corners": 12.2
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 2.36,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Eredivisie",
+      "home": "SC Heerenveen",
+      "away": "SBV Excelsior",
+      "kickoff": "16/10 18:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.63,
+        "cards_home": 0.65,
+        "cards_away": 0.64,
+        "dnb_home": 0.58,
+        "xg": 2.4,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Le Mans FC",
+      "away": "Toulouse FC",
+      "kickoff": "16/10 18:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.68,
+        "dnb_home": 0.74,
+        "xg": 2.91,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Frosinone Calcio",
+      "away": "US Sassuolo Calcio",
+      "kickoff": "16/10 18:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.64,
+        "cards_home": 0.64,
+        "cards_away": 0.54,
+        "dnb_home": 0.61,
+        "xg": 3.28,
+        "expected_corners": 12.4
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Burnley FC",
+      "away": "Wolverhampton Wanderers FC",
+      "kickoff": "16/10 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 3.08,
+        "expected_corners": 8.6
       }
     }
   ],
   "hot": [
     {
       "league": "Copa Libertadores",
-      "home": "Fluminense FC",
-      "away": "SE Palmeiras",
-      "kickoff": "15/10 00:30",
+      "home": "Estudiantes de La Plata",
+      "away": "CR Flamengo",
+      "kickoff": "16/10 00:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.67,
-        "dnb_home": 0.69,
-        "xg": 2.85,
-        "expected_corners": 12.2
+        "over25": 0.69,
+        "corners95": 0.66,
+        "cards_home": 0.57,
+        "cards_away": 0.6,
+        "dnb_home": 0.74,
+        "xg": 2.36,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Le Mans FC",
+      "away": "Toulouse FC",
+      "kickoff": "16/10 18:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.68,
+        "dnb_home": 0.74,
+        "xg": 2.91,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Burnley FC",
+      "away": "Wolverhampton Wanderers FC",
+      "kickoff": "16/10 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.55,
+        "dnb_home": 0.71,
+        "xg": 3.08,
+        "expected_corners": 8.6
       }
     }
   ]
