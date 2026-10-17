@@ -1,129 +1,22 @@
 {
-  "updated_at": "17/10 19:01",
-  "value": [
-    {
-      "league": "Eredivisie",
-      "home": "Sparta Rotterdam",
-      "away": "Willem II Tilburg",
-      "kickoff": "17/10 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 3.25,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "Coritiba FBC",
-      "kickoff": "17/10 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.53,
-        "expected_corners": 8.7
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "SE Palmeiras",
-      "kickoff": "17/10 22:30",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.67,
-        "dnb_home": 0.62,
-        "xg": 2.31,
-        "expected_corners": 12.2
-      }
-    }
-  ],
+  "updated_at": "17/10 21:35",
+  "value": [],
   "corner": [
     {
-      "league": "Eredivisie",
-      "home": "Sparta Rotterdam",
-      "away": "Willem II Tilburg",
-      "kickoff": "17/10 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.62,
-        "cards_home": 0.63,
-        "cards_away": 0.56,
-        "dnb_home": 0.58,
-        "xg": 3.25,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "Coritiba FBC",
-      "kickoff": "17/10 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.53,
-        "expected_corners": 8.7
-      }
-    },
-    {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Paranaense",
       "away": "SE Palmeiras",
       "kickoff": "17/10 22:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.69,
-        "cards_home": 0.66,
-        "cards_away": 0.67,
-        "dnb_home": 0.62,
-        "xg": 2.31,
-        "expected_corners": 12.2
+        "over25": 0.57,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.51,
+        "dnb_home": 0.61,
+        "xg": 2.41,
+        "expected_corners": 12.7
       }
     }
   ],
-  "hot": [
-    {
-      "league": "Primera Division",
-      "home": "Valencia CF",
-      "away": "Athletic Club",
-      "kickoff": "17/10 19:00",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.6,
-        "cards_home": 0.52,
-        "cards_away": 0.59,
-        "dnb_home": 0.7,
-        "xg": 2.92,
-        "expected_corners": 8.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "Coritiba FBC",
-      "kickoff": "17/10 21:30",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.66,
-        "cards_home": 0.51,
-        "cards_away": 0.63,
-        "dnb_home": 0.7,
-        "xg": 2.53,
-        "expected_corners": 8.7
-      }
-    }
-  ]
+  "hot": []
 }
