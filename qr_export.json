@@ -1,22 +1,6 @@
 {
-  "updated_at": "19/10 20:22",
+  "updated_at": "19/10 23:51",
   "value": [],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "EC Vitória",
-      "kickoff": "19/10 23:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.56,
-        "xg": 2.71,
-        "expected_corners": 11.3
-      }
-    }
-  ],
+  "corner": [],
   "hot": []
 }
