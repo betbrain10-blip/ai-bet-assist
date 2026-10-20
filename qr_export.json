@@ -1,81 +1,19 @@
 {
-  "updated_at": "20/10 14:25",
+  "updated_at": "20/10 18:36",
   "value": [
     {
-      "league": "UEFA Champions League",
-      "home": "SSC Napoli",
-      "away": "FK Bodø/Glimt",
-      "kickoff": "20/10 19:00",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.58,
-        "dnb_home": 0.72,
-        "xg": 2.42,
-        "expected_corners": 12.4
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "AS Roma",
-      "away": "ŠK Slovan Bratislava",
-      "kickoff": "20/10 19:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.56,
-        "expected_corners": 10.5
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Paris Saint-Germain FC",
-      "away": "FC Barcelona",
-      "kickoff": "20/10 19:00",
+      "league": "Championship",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Portsmouth FC",
+      "kickoff": "20/10 18:45",
       "markets": {
         "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.68,
-        "cards_away": 0.59,
-        "dnb_home": 0.62,
-        "xg": 2.37,
-        "expected_corners": 12.3
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Liverpool FC",
-      "away": "Villarreal CF",
-      "kickoff": "20/10 19:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.51,
-        "cards_away": 0.62,
-        "dnb_home": 0.63,
-        "xg": 3.13,
-        "expected_corners": 8.9
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "UEFA Champions League",
-      "home": "Sabah FK",
-      "away": "Borussia Dortmund",
-      "kickoff": "20/10 16:45",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.63,
-        "cards_home": 0.55,
-        "cards_away": 0.61,
-        "dnb_home": 0.6,
-        "xg": 2.33,
-        "expected_corners": 10.5
+        "corners95": 0.62,
+        "cards_home": 0.54,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 2.87,
+        "expected_corners": 11.7
       }
     },
     {
@@ -84,13 +22,13 @@
       "away": "FK Bodø/Glimt",
       "kickoff": "20/10 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.58,
-        "dnb_home": 0.72,
-        "xg": 2.42,
-        "expected_corners": 12.4
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 2.94,
+        "expected_corners": 10.8
       }
     },
     {
@@ -99,28 +37,13 @@
       "away": "Club Atlético de Madrid",
       "kickoff": "20/10 19:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.64,
-        "cards_home": 0.58,
-        "cards_away": 0.56,
-        "dnb_home": 0.68,
-        "xg": 3.02,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Manchester City FC",
-      "away": "PAE AEK",
-      "kickoff": "20/10 19:00",
-      "markets": {
-        "over25": 0.58,
-        "corners95": 0.69,
-        "cards_home": 0.68,
-        "cards_away": 0.54,
-        "dnb_home": 0.57,
-        "xg": 2.45,
-        "expected_corners": 9.5
+        "over25": 0.67,
+        "corners95": 0.59,
+        "cards_home": 0.67,
+        "cards_away": 0.6,
+        "dnb_home": 0.6,
+        "xg": 3.37,
+        "expected_corners": 11.7
       }
     },
     {
@@ -129,13 +52,13 @@
       "away": "FC Barcelona",
       "kickoff": "20/10 19:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.68,
+        "over25": 0.69,
+        "corners95": 0.56,
+        "cards_home": 0.64,
         "cards_away": 0.59,
-        "dnb_home": 0.62,
-        "xg": 2.37,
-        "expected_corners": 12.3
+        "dnb_home": 0.74,
+        "xg": 3.39,
+        "expected_corners": 9.3
       }
     },
     {
@@ -144,45 +67,45 @@
       "away": "Villarreal CF",
       "kickoff": "20/10 19:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.51,
-        "cards_away": 0.62,
-        "dnb_home": 0.63,
-        "xg": 3.13,
+        "over25": 0.66,
+        "corners95": 0.58,
+        "cards_home": 0.62,
+        "cards_away": 0.67,
+        "dnb_home": 0.57,
+        "xg": 2.73,
         "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "FC Porto",
-      "away": "PSV",
-      "kickoff": "20/10 19:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.68,
-        "cards_away": 0.62,
-        "dnb_home": 0.74,
-        "xg": 3.4,
-        "expected_corners": 11.6
       }
     }
   ],
-  "hot": [
+  "corner": [
+    {
+      "league": "Championship",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Portsmouth FC",
+      "kickoff": "20/10 18:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.54,
+        "cards_away": 0.66,
+        "dnb_home": 0.67,
+        "xg": 2.87,
+        "expected_corners": 11.7
+      }
+    },
     {
       "league": "UEFA Champions League",
       "home": "SSC Napoli",
       "away": "FK Bodø/Glimt",
       "kickoff": "20/10 19:00",
       "markets": {
-        "over25": 0.67,
-        "corners95": 0.62,
-        "cards_home": 0.51,
-        "cards_away": 0.58,
-        "dnb_home": 0.72,
-        "xg": 2.42,
-        "expected_corners": 12.4
+        "over25": 0.66,
+        "corners95": 0.68,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.65,
+        "xg": 2.94,
+        "expected_corners": 10.8
       }
     },
     {
@@ -191,28 +114,30 @@
       "away": "ŠK Slovan Bratislava",
       "kickoff": "20/10 19:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.66,
-        "cards_away": 0.6,
-        "dnb_home": 0.73,
-        "xg": 2.56,
-        "expected_corners": 10.5
+        "over25": 0.6,
+        "corners95": 0.62,
+        "cards_home": 0.68,
+        "cards_away": 0.55,
+        "dnb_home": 0.64,
+        "xg": 2.22,
+        "expected_corners": 8.8
       }
-    },
+    }
+  ],
+  "hot": [
     {
       "league": "UEFA Champions League",
-      "home": "FC Porto",
-      "away": "PSV",
+      "home": "Paris Saint-Germain FC",
+      "away": "FC Barcelona",
       "kickoff": "20/10 19:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.68,
-        "cards_away": 0.62,
+        "over25": 0.69,
+        "corners95": 0.56,
+        "cards_home": 0.64,
+        "cards_away": 0.59,
         "dnb_home": 0.74,
-        "xg": 3.4,
-        "expected_corners": 11.6
+        "xg": 3.39,
+        "expected_corners": 9.3
       }
     }
   ]
