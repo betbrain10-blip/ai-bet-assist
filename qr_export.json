@@ -1,6 +1,219 @@
 {
-  "updated_at": "20/10 22:07",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "21/10 00:45",
+  "value": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Como 1907",
+      "away": "Manchester United FC",
+      "kickoff": "21/10 16:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.6,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.95,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Lille OSC",
+      "away": "Galatasaray SK",
+      "kickoff": "21/10 16:45",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.68,
+        "dnb_home": 0.65,
+        "xg": 2.54,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Aston Villa FC",
+      "away": "Viking FK",
+      "kickoff": "21/10 19:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.6,
+        "cards_home": 0.54,
+        "cards_away": 0.68,
+        "dnb_home": 0.59,
+        "xg": 2.11,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Betis Balompié",
+      "away": "Feyenoord Rotterdam",
+      "kickoff": "21/10 19:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.68,
+        "xg": 3.23,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Club Brugge KV",
+      "away": "Racing Club de Lens",
+      "kickoff": "21/10 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.6,
+        "xg": 3.22,
+        "expected_corners": 10.2
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Lille OSC",
+      "away": "Galatasaray SK",
+      "kickoff": "21/10 16:45",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.64,
+        "cards_home": 0.57,
+        "cards_away": 0.68,
+        "dnb_home": 0.65,
+        "xg": 2.54,
+        "expected_corners": 12.8
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Levante UD",
+      "away": "Athletic Club",
+      "kickoff": "21/10 18:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.66,
+        "dnb_home": 0.56,
+        "xg": 2.19,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FC Bayern München",
+      "away": "Arsenal FC",
+      "kickoff": "21/10 19:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.67,
+        "cards_home": 0.5,
+        "cards_away": 0.62,
+        "dnb_home": 0.66,
+        "xg": 2.64,
+        "expected_corners": 10.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Madrid CF",
+      "away": "RB Leipzig",
+      "kickoff": "21/10 19:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.64,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.58,
+        "xg": 3.26,
+        "expected_corners": 9.3
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Betis Balompié",
+      "away": "Feyenoord Rotterdam",
+      "kickoff": "21/10 19:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.66,
+        "cards_home": 0.53,
+        "cards_away": 0.57,
+        "dnb_home": 0.68,
+        "xg": 3.23,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Club Brugge KV",
+      "away": "Racing Club de Lens",
+      "kickoff": "21/10 19:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.66,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.6,
+        "xg": 3.22,
+        "expected_corners": 10.2
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FC Internazionale Milano",
+      "away": "FK Shakhtar Donetsk",
+      "kickoff": "21/10 19:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.53,
+        "dnb_home": 0.7,
+        "xg": 3.37,
+        "expected_corners": 10.0
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Como 1907",
+      "away": "Manchester United FC",
+      "kickoff": "21/10 16:45",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.6,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.95,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "FC Internazionale Milano",
+      "away": "FK Shakhtar Donetsk",
+      "kickoff": "21/10 19:00",
+      "markets": {
+        "over25": 0.58,
+        "corners95": 0.65,
+        "cards_home": 0.6,
+        "cards_away": 0.53,
+        "dnb_home": 0.7,
+        "xg": 3.37,
+        "expected_corners": 10.0
+      }
+    }
+  ]
 }
