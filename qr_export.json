@@ -1,22 +1,22 @@
 {
-  "updated_at": "22/10 18:42",
-  "value": [
+  "updated_at": "22/10 22:07",
+  "value": [],
+  "corner": [],
+  "hot": [
     {
       "league": "Copa Libertadores",
       "home": "SE Palmeiras",
       "away": "Fluminense FC",
       "kickoff": "22/10 00:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.57,
-        "cards_home": 0.51,
-        "cards_away": 0.66,
-        "dnb_home": 0.64,
-        "xg": 3.24,
-        "expected_corners": 11.4
+        "over25": 0.6,
+        "corners95": 0.56,
+        "cards_home": 0.53,
+        "cards_away": 0.62,
+        "dnb_home": 0.69,
+        "xg": 3.08,
+        "expected_corners": 12.8
       }
     }
-  ],
-  "corner": [],
-  "hot": []
+  ]
 }
