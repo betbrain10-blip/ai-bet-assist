@@ -1,97 +1,19 @@
 {
-  "updated_at": "26/10 01:31",
+  "updated_at": "26/10 07:26",
   "value": [
     {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "Olympique Lyonnais",
-      "kickoff": "26/10 19:30",
-      "markets": {
-        "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.64,
-        "cards_away": 0.55,
-        "dnb_home": 0.69,
-        "xg": 2.48,
-        "expected_corners": 9.8
-      }
-    },
-    {
       "league": "Primera Division",
       "home": "Sevilla FC",
       "away": "CA Osasuna",
       "kickoff": "26/10 20:00",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 2.51,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "CA Mineiro",
-      "kickoff": "26/10 23:00",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.6,
-        "cards_home": 0.63,
-        "cards_away": 0.63,
-        "dnb_home": 0.62,
-        "xg": 2.27,
-        "expected_corners": 8.9
-      }
-    }
-  ],
-  "corner": [],
-  "hot": [
-    {
-      "league": "Primeira Liga",
-      "home": "CD Santa Clara",
-      "away": "Sport Lisboa e Benfica",
-      "kickoff": "26/10 18:45",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.58,
-        "cards_home": 0.65,
-        "cards_away": 0.6,
-        "dnb_home": 0.72,
-        "xg": 2.72,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Paris Saint-Germain FC",
-      "away": "Olympique Lyonnais",
-      "kickoff": "26/10 19:30",
-      "markets": {
         "over25": 0.65,
-        "corners95": 0.56,
-        "cards_home": 0.64,
-        "cards_away": 0.55,
-        "dnb_home": 0.69,
-        "xg": 2.48,
-        "expected_corners": 9.8
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "CA Osasuna",
-      "kickoff": "26/10 20:00",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.59,
-        "cards_home": 0.66,
-        "cards_away": 0.55,
-        "dnb_home": 0.73,
-        "xg": 2.51,
-        "expected_corners": 11.4
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.58,
+        "xg": 2.38,
+        "expected_corners": 9.2
       }
     },
     {
@@ -100,14 +22,77 @@
       "away": "Grêmio FBPA",
       "kickoff": "26/10 22:30",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.56,
-        "cards_home": 0.51,
-        "cards_away": 0.65,
-        "dnb_home": 0.73,
-        "xg": 3.11,
-        "expected_corners": 9.2
+        "over25": 0.71,
+        "corners95": 0.58,
+        "cards_home": 0.62,
+        "cards_away": 0.66,
+        "dnb_home": 0.6,
+        "xg": 2.35,
+        "expected_corners": 9.1
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CR Flamengo",
+      "away": "CA Mineiro",
+      "kickoff": "26/10 23:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.65,
+        "xg": 2.32,
+        "expected_corners": 11.8
       }
     }
-  ]
+  ],
+  "corner": [
+    {
+      "league": "Ligue 1",
+      "home": "Paris Saint-Germain FC",
+      "away": "Olympique Lyonnais",
+      "kickoff": "26/10 19:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.7,
+        "cards_home": 0.51,
+        "cards_away": 0.5,
+        "dnb_home": 0.59,
+        "xg": 2.81,
+        "expected_corners": 11.1
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "CA Osasuna",
+      "kickoff": "26/10 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.63,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.58,
+        "xg": 2.38,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CR Flamengo",
+      "away": "CA Mineiro",
+      "kickoff": "26/10 23:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.64,
+        "cards_home": 0.62,
+        "cards_away": 0.56,
+        "dnb_home": 0.65,
+        "xg": 2.32,
+        "expected_corners": 11.8
+      }
+    }
+  ],
+  "hot": []
 }
