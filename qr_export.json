@@ -1,6 +1,99 @@
 {
-  "updated_at": "26/10 23:59",
-  "value": [],
-  "corner": [],
-  "hot": []
+  "updated_at": "27/10 04:48",
+  "value": [
+    {
+      "league": "Serie A",
+      "home": "US Sassuolo Calcio",
+      "away": "SS Lazio",
+      "kickoff": "27/10 17:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.65,
+        "cards_home": 0.65,
+        "cards_away": 0.66,
+        "dnb_home": 0.58,
+        "xg": 2.78,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Torino FC",
+      "away": "Como 1907",
+      "kickoff": "27/10 19:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 3.35,
+        "expected_corners": 12.0
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Serie A",
+      "home": "US Sassuolo Calcio",
+      "away": "SS Lazio",
+      "kickoff": "27/10 17:30",
+      "markets": {
+        "over25": 0.72,
+        "corners95": 0.65,
+        "cards_home": 0.65,
+        "cards_away": 0.66,
+        "dnb_home": 0.58,
+        "xg": 2.78,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Torino FC",
+      "away": "Como 1907",
+      "kickoff": "27/10 19:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 3.35,
+        "expected_corners": 12.0
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Serie A",
+      "home": "Torino FC",
+      "away": "Como 1907",
+      "kickoff": "27/10 19:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.62,
+        "cards_home": 0.63,
+        "cards_away": 0.59,
+        "dnb_home": 0.69,
+        "xg": 3.35,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "AS Roma",
+      "away": "Cagliari Calcio",
+      "kickoff": "27/10 19:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.56,
+        "cards_home": 0.52,
+        "cards_away": 0.54,
+        "dnb_home": 0.71,
+        "xg": 3.38,
+        "expected_corners": 10.0
+      }
+    }
+  ]
 }
