@@ -1,126 +1,34 @@
 {
-  "updated_at": "28/10 06:01",
+  "updated_at": "28/10 13:20",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "Parma Calcio 1913",
-      "away": "Udinese Calcio",
-      "kickoff": "28/10 17:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.53,
-        "cards_away": 0.6,
-        "dnb_home": 0.63,
-        "xg": 2.96,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Genoa CFC",
-      "away": "Juventus FC",
-      "kickoff": "28/10 19:45",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.68,
-        "cards_home": 0.6,
-        "cards_away": 0.6,
-        "dnb_home": 0.55,
-        "xg": 3.22,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "AC Monza",
-      "away": "SSC Napoli",
-      "kickoff": "28/10 19:45",
-      "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.74,
-        "xg": 2.68,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "RB Bragantino",
-      "away": "Chapecoense AF",
-      "kickoff": "28/10 22:30",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.56,
-        "dnb_home": 0.73,
-        "xg": 3.12,
-        "expected_corners": 10.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "Santos FC",
-      "away": "SE Palmeiras",
-      "kickoff": "28/10 22:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.53,
-        "cards_away": 0.68,
-        "dnb_home": 0.55,
-        "xg": 2.94,
-        "expected_corners": 11.3
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Serie A",
-      "home": "Parma Calcio 1913",
-      "away": "Udinese Calcio",
-      "kickoff": "28/10 17:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.63,
-        "cards_home": 0.53,
-        "cards_away": 0.6,
-        "dnb_home": 0.63,
-        "xg": 2.96,
-        "expected_corners": 10.0
-      }
-    },
     {
       "league": "Serie A",
       "home": "AC Milan",
       "away": "Bologna FC 1909",
       "kickoff": "28/10 17:30",
       "markets": {
-        "over25": 0.58,
-        "corners95": 0.64,
-        "cards_home": 0.61,
-        "cards_away": 0.68,
-        "dnb_home": 0.57,
-        "xg": 2.39,
-        "expected_corners": 9.2
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.62,
+        "cards_away": 0.61,
+        "dnb_home": 0.59,
+        "xg": 2.81,
+        "expected_corners": 10.9
       }
     },
     {
       "league": "Serie A",
-      "home": "Genoa CFC",
-      "away": "Juventus FC",
-      "kickoff": "28/10 19:45",
+      "home": "Parma Calcio 1913",
+      "away": "Udinese Calcio",
+      "kickoff": "28/10 17:30",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.68,
-        "cards_home": 0.6,
-        "cards_away": 0.6,
-        "dnb_home": 0.55,
-        "xg": 3.22,
-        "expected_corners": 9.4
+        "over25": 0.63,
+        "corners95": 0.59,
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.72,
+        "xg": 2.94,
+        "expected_corners": 12.1
       }
     },
     {
@@ -129,13 +37,28 @@
       "away": "SSC Napoli",
       "kickoff": "28/10 19:45",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
+        "over25": 0.67,
+        "corners95": 0.57,
+        "cards_home": 0.58,
+        "cards_away": 0.64,
         "dnb_home": 0.74,
-        "xg": 2.68,
-        "expected_corners": 11.4
+        "xg": 3.04,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Fluminense FC",
+      "away": "SC Internacional",
+      "kickoff": "28/10 22:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.66,
+        "xg": 2.51,
+        "expected_corners": 12.3
       }
     },
     {
@@ -145,12 +68,12 @@
       "kickoff": "28/10 22:30",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.56,
-        "dnb_home": 0.73,
-        "xg": 3.12,
-        "expected_corners": 10.2
+        "corners95": 0.63,
+        "cards_home": 0.53,
+        "cards_away": 0.62,
+        "dnb_home": 0.6,
+        "xg": 2.75,
+        "expected_corners": 9.8
       }
     },
     {
@@ -160,29 +83,74 @@
       "kickoff": "28/10 22:30",
       "markets": {
         "over25": 0.66,
-        "corners95": 0.66,
-        "cards_home": 0.53,
+        "corners95": 0.62,
+        "cards_home": 0.51,
         "cards_away": 0.68,
-        "dnb_home": 0.55,
-        "xg": 2.94,
-        "expected_corners": 11.3
+        "dnb_home": 0.69,
+        "xg": 3.2,
+        "expected_corners": 8.5
       }
     }
   ],
-  "hot": [
+  "corner": [
     {
       "league": "Serie A",
-      "home": "AC Monza",
-      "away": "SSC Napoli",
+      "home": "AC Milan",
+      "away": "Bologna FC 1909",
+      "kickoff": "28/10 17:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.63,
+        "cards_home": 0.62,
+        "cards_away": 0.61,
+        "dnb_home": 0.59,
+        "xg": 2.81,
+        "expected_corners": 10.9
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Venezia FC",
+      "away": "FC Internazionale Milano",
+      "kickoff": "28/10 17:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.67,
+        "dnb_home": 0.74,
+        "xg": 3.19,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Genoa CFC",
+      "away": "Juventus FC",
       "kickoff": "28/10 19:45",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.7,
-        "cards_home": 0.54,
-        "cards_away": 0.56,
-        "dnb_home": 0.74,
-        "xg": 2.68,
-        "expected_corners": 11.4
+        "over25": 0.56,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.61,
+        "dnb_home": 0.73,
+        "xg": 2.4,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Fluminense FC",
+      "away": "SC Internacional",
+      "kickoff": "28/10 22:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.67,
+        "cards_home": 0.59,
+        "cards_away": 0.51,
+        "dnb_home": 0.66,
+        "xg": 2.51,
+        "expected_corners": 12.3
       }
     },
     {
@@ -192,12 +160,104 @@
       "kickoff": "28/10 22:30",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.7,
-        "cards_home": 0.65,
-        "cards_away": 0.56,
+        "corners95": 0.63,
+        "cards_home": 0.53,
+        "cards_away": 0.62,
+        "dnb_home": 0.6,
+        "xg": 2.75,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "SE Palmeiras",
+      "kickoff": "28/10 22:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.62,
+        "cards_home": 0.51,
+        "cards_away": 0.68,
+        "dnb_home": 0.69,
+        "xg": 3.2,
+        "expected_corners": 8.5
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Serie A",
+      "home": "Venezia FC",
+      "away": "FC Internazionale Milano",
+      "kickoff": "28/10 17:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.68,
+        "cards_home": 0.61,
+        "cards_away": 0.67,
+        "dnb_home": 0.74,
+        "xg": 3.19,
+        "expected_corners": 12.0
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Parma Calcio 1913",
+      "away": "Udinese Calcio",
+      "kickoff": "28/10 17:30",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.59,
+        "cards_home": 0.62,
+        "cards_away": 0.63,
+        "dnb_home": 0.72,
+        "xg": 2.94,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Genoa CFC",
+      "away": "Juventus FC",
+      "kickoff": "28/10 19:45",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.68,
+        "cards_home": 0.58,
+        "cards_away": 0.61,
         "dnb_home": 0.73,
-        "xg": 3.12,
-        "expected_corners": 10.2
+        "xg": 2.4,
+        "expected_corners": 10.8
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "AC Monza",
+      "away": "SSC Napoli",
+      "kickoff": "28/10 19:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.57,
+        "cards_home": 0.58,
+        "cards_away": 0.64,
+        "dnb_home": 0.74,
+        "xg": 3.04,
+        "expected_corners": 11.0
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Santos FC",
+      "away": "SE Palmeiras",
+      "kickoff": "28/10 22:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.62,
+        "cards_home": 0.51,
+        "cards_away": 0.68,
+        "dnb_home": 0.69,
+        "xg": 3.2,
+        "expected_corners": 8.5
       }
     }
   ]
