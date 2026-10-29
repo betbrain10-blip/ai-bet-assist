@@ -1,49 +1,19 @@
 {
-  "updated_at": "29/10 09:24",
+  "updated_at": "29/10 16:20",
   "value": [
-    {
-      "league": "Serie A",
-      "home": "Frosinone Calcio",
-      "away": "US Lecce",
-      "kickoff": "29/10 17:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.55,
-        "xg": 2.71,
-        "expected_corners": 10.3
-      }
-    },
     {
       "league": "Serie A",
       "home": "ACF Fiorentina",
       "away": "Atalanta BC",
       "kickoff": "29/10 19:45",
       "markets": {
-        "over25": 0.68,
+        "over25": 0.7,
         "corners95": 0.63,
-        "cards_home": 0.55,
+        "cards_home": 0.67,
         "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.34,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "Cruzeiro EC",
-      "kickoff": "29/10 22:30",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.59,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 3.1,
-        "expected_corners": 10.2
+        "dnb_home": 0.64,
+        "xg": 3.11,
+        "expected_corners": 11.6
       }
     },
     {
@@ -54,43 +24,43 @@
       "markets": {
         "over25": 0.63,
         "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.57,
-        "dnb_home": 0.66,
-        "xg": 2.65,
-        "expected_corners": 10.6
+        "cards_home": 0.56,
+        "cards_away": 0.55,
+        "dnb_home": 0.73,
+        "xg": 2.44,
+        "expected_corners": 8.8
       }
     }
   ],
   "corner": [
     {
       "league": "Serie A",
-      "home": "Frosinone Calcio",
-      "away": "US Lecce",
-      "kickoff": "29/10 17:30",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.68,
-        "cards_home": 0.65,
-        "cards_away": 0.65,
-        "dnb_home": 0.55,
-        "xg": 2.71,
-        "expected_corners": 10.3
-      }
-    },
-    {
-      "league": "Serie A",
       "home": "ACF Fiorentina",
       "away": "Atalanta BC",
       "kickoff": "29/10 19:45",
       "markets": {
-        "over25": 0.68,
+        "over25": 0.7,
         "corners95": 0.63,
-        "cards_home": 0.55,
+        "cards_home": 0.67,
         "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.34,
-        "expected_corners": 8.9
+        "dnb_home": 0.64,
+        "xg": 3.11,
+        "expected_corners": 11.6
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CA Mineiro",
+      "away": "Cruzeiro EC",
+      "kickoff": "29/10 22:30",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.62,
+        "cards_home": 0.6,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.67,
+        "expected_corners": 9.8
       }
     },
     {
@@ -101,28 +71,58 @@
       "markets": {
         "over25": 0.63,
         "corners95": 0.65,
-        "cards_home": 0.65,
-        "cards_away": 0.57,
-        "dnb_home": 0.66,
-        "xg": 2.65,
-        "expected_corners": 10.6
+        "cards_home": 0.56,
+        "cards_away": 0.55,
+        "dnb_home": 0.73,
+        "xg": 2.44,
+        "expected_corners": 8.8
       }
     }
   ],
   "hot": [
+    {
+      "league": "Serie A",
+      "home": "Frosinone Calcio",
+      "away": "US Lecce",
+      "kickoff": "29/10 17:30",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.57,
+        "cards_home": 0.65,
+        "cards_away": 0.68,
+        "dnb_home": 0.69,
+        "xg": 2.25,
+        "expected_corners": 11.3
+      }
+    },
     {
       "league": "Campeonato Brasileiro Série A",
       "home": "CA Mineiro",
       "away": "Cruzeiro EC",
       "kickoff": "29/10 22:30",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.59,
-        "cards_home": 0.58,
-        "cards_away": 0.62,
-        "dnb_home": 0.7,
-        "xg": 3.1,
-        "expected_corners": 10.2
+        "over25": 0.62,
+        "corners95": 0.62,
+        "cards_home": 0.6,
+        "cards_away": 0.51,
+        "dnb_home": 0.74,
+        "xg": 2.67,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "CR Vasco da Gama",
+      "away": "CR Flamengo",
+      "kickoff": "29/10 23:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.65,
+        "cards_home": 0.56,
+        "cards_away": 0.55,
+        "dnb_home": 0.73,
+        "xg": 2.44,
+        "expected_corners": 8.8
       }
     }
   ]
