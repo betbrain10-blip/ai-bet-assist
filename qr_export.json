@@ -1,18 +1,63 @@
 {
-  "updated_at": "30/10 07:32",
+  "updated_at": "30/10 14:50",
   "value": [
+    {
+      "league": "Ligue 1",
+      "home": "OGC Nice",
+      "away": "Stade Rennais FC 1901",
+      "kickoff": "30/10 18:00",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.59,
+        "cards_home": 0.68,
+        "cards_away": 0.62,
+        "dnb_home": 0.57,
+        "xg": 3.14,
+        "expected_corners": 10.3
+      }
+    },
     {
       "league": "Ligue 1",
       "home": "Le Havre AC",
       "away": "Paris Saint-Germain FC",
       "kickoff": "30/10 18:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
+        "over25": 0.67,
+        "corners95": 0.6,
+        "cards_home": 0.51,
+        "cards_away": 0.57,
+        "dnb_home": 0.63,
+        "xg": 2.54,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "Bundesliga",
+      "home": "SV 07 Elversberg",
+      "away": "1. FSV Mainz 05",
+      "kickoff": "30/10 19:30",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.59,
         "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 3.1,
+        "cards_away": 0.53,
+        "dnb_home": 0.64,
+        "xg": 2.14,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Wrexham AFC",
+      "kickoff": "30/10 20:00",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.63,
+        "cards_home": 0.58,
+        "cards_away": 0.63,
+        "dnb_home": 0.61,
+        "xg": 2.33,
         "expected_corners": 12.1
       }
     },
@@ -23,12 +68,12 @@
       "kickoff": "30/10 20:05",
       "markets": {
         "over25": 0.63,
-        "corners95": 0.56,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.56,
-        "xg": 2.13,
-        "expected_corners": 12.7
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.71,
+        "xg": 3.08,
+        "expected_corners": 10.3
       }
     },
     {
@@ -37,59 +82,29 @@
       "away": "Sporting Clube de Portugal",
       "kickoff": "30/10 20:15",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.72,
-        "xg": 2.56,
-        "expected_corners": 11.0
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.73,
+        "xg": 2.68,
+        "expected_corners": 11.5
       }
     }
   ],
   "corner": [
     {
-      "league": "Ligue 1",
-      "home": "OGC Nice",
-      "away": "Stade Rennais FC 1901",
-      "kickoff": "30/10 18:00",
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Wrexham AFC",
+      "kickoff": "30/10 20:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.69,
-        "cards_home": 0.52,
-        "cards_away": 0.62,
-        "dnb_home": 0.67,
-        "xg": 2.2,
-        "expected_corners": 11.9
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Le Havre AC",
-      "away": "Paris Saint-Germain FC",
-      "kickoff": "30/10 18:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.64,
-        "dnb_home": 0.62,
-        "xg": 3.1,
-        "expected_corners": 12.1
-      }
-    },
-    {
-      "league": "Bundesliga",
-      "home": "SV 07 Elversberg",
-      "away": "1. FSV Mainz 05",
-      "kickoff": "30/10 19:30",
-      "markets": {
-        "over25": 0.58,
+        "over25": 0.67,
         "corners95": 0.63,
-        "cards_home": 0.66,
-        "cards_away": 0.53,
-        "dnb_home": 0.63,
-        "xg": 2.74,
+        "cards_home": 0.58,
+        "cards_away": 0.63,
+        "dnb_home": 0.61,
+        "xg": 2.33,
         "expected_corners": 12.1
       }
     },
@@ -99,60 +114,43 @@
       "away": "RCD Espanyol de Barcelona",
       "kickoff": "30/10 20:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.66,
-        "cards_home": 0.61,
-        "cards_away": 0.66,
-        "dnb_home": 0.61,
-        "xg": 3.09,
+        "over25": 0.56,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.62,
+        "dnb_home": 0.69,
+        "xg": 2.73,
         "expected_corners": 9.6
       }
     },
     {
-      "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Wrexham AFC",
-      "kickoff": "30/10 20:00",
+      "league": "Ligue 1",
+      "home": "Lille OSC",
+      "away": "Racing Club de Lens",
+      "kickoff": "30/10 20:05",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.61,
-        "cards_home": 0.65,
-        "cards_away": 0.64,
-        "dnb_home": 0.68,
-        "xg": 3.17,
-        "expected_corners": 8.7
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.71,
+        "xg": 3.08,
+        "expected_corners": 10.3
       }
     },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "Mirassol FC",
-      "kickoff": "30/10 23:00",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.61,
-        "dnb_home": 0.69,
-        "xg": 3.18,
-        "expected_corners": 9.3
-      }
-    }
-  ],
-  "hot": [
     {
       "league": "Primeira Liga",
       "home": "Casa Pia AC",
       "away": "Sporting Clube de Portugal",
       "kickoff": "30/10 20:15",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.56,
-        "cards_home": 0.64,
-        "cards_away": 0.57,
-        "dnb_home": 0.72,
-        "xg": 2.56,
-        "expected_corners": 11.0
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.73,
+        "xg": 2.68,
+        "expected_corners": 11.5
       }
     },
     {
@@ -161,13 +159,75 @@
       "away": "Mirassol FC",
       "kickoff": "30/10 23:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.61,
+        "over25": 0.57,
+        "corners95": 0.65,
+        "cards_home": 0.68,
+        "cards_away": 0.57,
+        "dnb_home": 0.75,
+        "xg": 2.54,
+        "expected_corners": 11.3
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "Primera Division",
+      "home": "Villarreal CF",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "30/10 20:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.63,
+        "cards_home": 0.64,
+        "cards_away": 0.62,
         "dnb_home": 0.69,
-        "xg": 3.18,
-        "expected_corners": 9.3
+        "xg": 2.73,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Lille OSC",
+      "away": "Racing Club de Lens",
+      "kickoff": "30/10 20:05",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.67,
+        "cards_home": 0.62,
+        "cards_away": 0.54,
+        "dnb_home": 0.71,
+        "xg": 3.08,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Casa Pia AC",
+      "away": "Sporting Clube de Portugal",
+      "kickoff": "30/10 20:15",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.61,
+        "cards_home": 0.53,
+        "cards_away": 0.6,
+        "dnb_home": 0.73,
+        "xg": 2.68,
+        "expected_corners": 11.5
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SC Corinthians Paulista",
+      "away": "Mirassol FC",
+      "kickoff": "30/10 23:00",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.65,
+        "cards_home": 0.68,
+        "cards_away": 0.57,
+        "dnb_home": 0.75,
+        "xg": 2.54,
+        "expected_corners": 11.3
       }
     }
   ]
