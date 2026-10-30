@@ -1,52 +1,128 @@
 {
-  "updated_at": "29/10 21:18",
-  "value": [],
+  "updated_at": "30/10 01:15",
+  "value": [
+    {
+      "league": "Ligue 1",
+      "home": "Le Havre AC",
+      "away": "Paris Saint-Germain FC",
+      "kickoff": "30/10 18:00",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.63,
+        "dnb_home": 0.61,
+        "xg": 2.33,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Wrexham AFC",
+      "kickoff": "30/10 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.55,
+        "cards_home": 0.61,
+        "cards_away": 0.57,
+        "dnb_home": 0.59,
+        "xg": 2.46,
+        "expected_corners": 10.3
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Villarreal CF",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "30/10 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 2.51,
+        "expected_corners": 9.9
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "Casa Pia AC",
+      "away": "Sporting Clube de Portugal",
+      "kickoff": "30/10 20:15",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.6,
+        "cards_home": 0.54,
+        "cards_away": 0.66,
+        "dnb_home": 0.58,
+        "xg": 3.26,
+        "expected_corners": 9.2
+      }
+    }
+  ],
   "corner": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Vasco da Gama",
-      "away": "CR Flamengo",
-      "kickoff": "29/10 23:00",
+      "league": "Ligue 1",
+      "home": "Le Havre AC",
+      "away": "Paris Saint-Germain FC",
+      "kickoff": "30/10 18:00",
       "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.6,
-        "cards_away": 0.53,
+        "over25": 0.7,
+        "corners95": 0.62,
+        "cards_home": 0.59,
+        "cards_away": 0.63,
+        "dnb_home": 0.61,
+        "xg": 2.33,
+        "expected_corners": 10.6
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "OGC Nice",
+      "away": "Stade Rennais FC 1901",
+      "kickoff": "30/10 18:00",
+      "markets": {
+        "over25": 0.56,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.54,
         "dnb_home": 0.73,
-        "xg": 2.91,
-        "expected_corners": 9.7
+        "xg": 2.21,
+        "expected_corners": 11.7
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Villarreal CF",
+      "away": "RCD Espanyol de Barcelona",
+      "kickoff": "30/10 20:00",
+      "markets": {
+        "over25": 0.71,
+        "corners95": 0.69,
+        "cards_home": 0.57,
+        "cards_away": 0.62,
+        "dnb_home": 0.63,
+        "xg": 2.51,
+        "expected_corners": 9.9
       }
     }
   ],
   "hot": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Mineiro",
-      "away": "Cruzeiro EC",
-      "kickoff": "29/10 22:30",
+      "league": "Ligue 1",
+      "home": "OGC Nice",
+      "away": "Stade Rennais FC 1901",
+      "kickoff": "30/10 18:00",
       "markets": {
         "over25": 0.56,
-        "corners95": 0.57,
-        "cards_home": 0.5,
-        "cards_away": 0.62,
-        "dnb_home": 0.72,
-        "xg": 2.83,
-        "expected_corners": 11.1
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Vasco da Gama",
-      "away": "CR Flamengo",
-      "kickoff": "29/10 23:00",
-      "markets": {
-        "over25": 0.59,
-        "corners95": 0.64,
-        "cards_home": 0.6,
-        "cards_away": 0.53,
+        "corners95": 0.67,
+        "cards_home": 0.51,
+        "cards_away": 0.54,
         "dnb_home": 0.73,
-        "xg": 2.91,
-        "expected_corners": 9.7
+        "xg": 2.21,
+        "expected_corners": 11.7
       }
     }
   ]
