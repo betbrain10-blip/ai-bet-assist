@@ -1,19 +1,19 @@
 {
-  "updated_at": "30/10 19:50",
+  "updated_at": "30/10 23:28",
   "value": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "Mirassol FC",
-      "kickoff": "30/10 23:00",
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Wrexham AFC",
+      "kickoff": "30/10 20:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.25,
-        "expected_corners": 10.6
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.55,
+        "cards_away": 0.53,
+        "dnb_home": 0.55,
+        "xg": 3.31,
+        "expected_corners": 8.7
       }
     }
   ],
@@ -24,58 +24,13 @@
       "away": "Wrexham AFC",
       "kickoff": "30/10 20:00",
       "markets": {
-        "over25": 0.62,
-        "corners95": 0.65,
-        "cards_home": 0.54,
-        "cards_away": 0.52,
-        "dnb_home": 0.67,
-        "xg": 2.11,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Primera Division",
-      "home": "Villarreal CF",
-      "away": "RCD Espanyol de Barcelona",
-      "kickoff": "30/10 20:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.67,
-        "cards_home": 0.5,
-        "cards_away": 0.66,
-        "dnb_home": 0.6,
-        "xg": 2.58,
-        "expected_corners": 9.3
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Lille OSC",
-      "away": "Racing Club de Lens",
-      "kickoff": "30/10 20:05",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.65,
-        "cards_home": 0.57,
-        "cards_away": 0.59,
-        "dnb_home": 0.68,
-        "xg": 2.47,
-        "expected_corners": 8.5
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "SC Corinthians Paulista",
-      "away": "Mirassol FC",
-      "kickoff": "30/10 23:00",
-      "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.57,
-        "cards_away": 0.57,
-        "dnb_home": 0.58,
-        "xg": 2.25,
-        "expected_corners": 10.6
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.55,
+        "cards_away": 0.53,
+        "dnb_home": 0.55,
+        "xg": 3.31,
+        "expected_corners": 8.7
       }
     }
   ],
