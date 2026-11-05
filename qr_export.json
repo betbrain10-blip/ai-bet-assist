@@ -1,38 +1,6 @@
 {
-  "updated_at": "04/11 21:24",
+  "updated_at": "05/11 01:39",
   "value": [],
-  "corner": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CR Flamengo",
-      "away": "Grêmio FBPA",
-      "kickoff": "04/11 22:30",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.7,
-        "cards_home": 0.53,
-        "cards_away": 0.67,
-        "dnb_home": 0.56,
-        "xg": 2.18,
-        "expected_corners": 11.5
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "CA Paranaense",
-      "away": "CR Vasco da Gama",
-      "kickoff": "04/11 22:30",
-      "markets": {
-        "over25": 0.6,
-        "corners95": 0.55,
-        "cards_home": 0.59,
-        "cards_away": 0.55,
-        "dnb_home": 0.74,
-        "xg": 2.36,
-        "expected_corners": 10.2
-      }
-    }
-  ]
+  "corner": [],
+  "hot": []
 }
