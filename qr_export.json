@@ -1,6 +1,38 @@
 {
-  "updated_at": "05/11 08:59",
-  "value": [],
+  "updated_at": "05/11 17:17",
+  "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SE Palmeiras",
+      "away": "Clube do Remo",
+      "kickoff": "05/11 22:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.56,
+        "cards_home": 0.58,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 3.24,
+        "expected_corners": 11.1
+      }
+    }
+  ],
   "corner": [],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "SE Palmeiras",
+      "away": "Clube do Remo",
+      "kickoff": "05/11 22:30",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.56,
+        "cards_home": 0.58,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 3.24,
+        "expected_corners": 11.1
+      }
+    }
+  ]
 }
