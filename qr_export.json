@@ -1,5 +1,5 @@
 {
-  "updated_at": "06/11 11:19",
+  "updated_at": "06/11 18:14",
   "value": [
     {
       "league": "Eredivisie",
@@ -7,13 +7,13 @@
       "away": "PEC Zwolle",
       "kickoff": "06/11 19:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.56,
+        "over25": 0.63,
+        "corners95": 0.57,
         "cards_home": 0.54,
-        "cards_away": 0.58,
-        "dnb_home": 0.7,
-        "xg": 2.14,
-        "expected_corners": 12.4
+        "cards_away": 0.57,
+        "dnb_home": 0.72,
+        "xg": 2.86,
+        "expected_corners": 11.3
       }
     },
     {
@@ -22,28 +22,13 @@
       "away": "Borussia Mönchengladbach",
       "kickoff": "06/11 19:30",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.63,
-        "xg": 3.22,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Toulouse FC",
-      "away": "RC Strasbourg Alsace",
-      "kickoff": "06/11 19:45",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.47,
-        "expected_corners": 10.6
+        "over25": 0.63,
+        "corners95": 0.56,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.56,
+        "expected_corners": 9.5
       }
     },
     {
@@ -52,28 +37,28 @@
       "away": "Udinese Calcio",
       "kickoff": "06/11 19:45",
       "markets": {
-        "over25": 0.68,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 2.26,
-        "expected_corners": 12.7
+        "over25": 0.66,
+        "corners95": 0.56,
+        "cards_home": 0.58,
+        "cards_away": 0.57,
+        "dnb_home": 0.7,
+        "xg": 3.24,
+        "expected_corners": 9.7
       }
     },
     {
-      "league": "Premier League",
-      "home": "Everton FC",
-      "away": "Coventry City FC",
-      "kickoff": "06/11 20:00",
+      "league": "Ligue 1",
+      "home": "Toulouse FC",
+      "away": "RC Strasbourg Alsace",
+      "kickoff": "06/11 19:45",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.83,
-        "expected_corners": 11.0
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.76,
+        "expected_corners": 12.1
       }
     },
     {
@@ -82,75 +67,13 @@
       "away": "Bolton Wanderers FC",
       "kickoff": "06/11 20:00",
       "markets": {
-        "over25": 0.7,
-        "corners95": 0.6,
-        "cards_home": 0.51,
-        "cards_away": 0.5,
-        "dnb_home": 0.63,
-        "xg": 2.69,
-        "expected_corners": 11.4
-      }
-    },
-    {
-      "league": "Primeira Liga",
-      "home": "FC Famalicão",
-      "away": "FC Arouca",
-      "kickoff": "06/11 20:45",
-      "markets": {
-        "over25": 0.67,
-        "corners95": 0.61,
-        "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.63,
-        "xg": 3.21,
-        "expected_corners": 9.4
-      }
-    }
-  ],
-  "corner": [
-    {
-      "league": "Bundesliga",
-      "home": "Hamburger SV",
-      "away": "Borussia Mönchengladbach",
-      "kickoff": "06/11 19:30",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.62,
-        "cards_home": 0.56,
-        "cards_away": 0.58,
-        "dnb_home": 0.63,
-        "xg": 3.22,
-        "expected_corners": 12.5
-      }
-    },
-    {
-      "league": "Ligue 1",
-      "home": "Toulouse FC",
-      "away": "RC Strasbourg Alsace",
-      "kickoff": "06/11 19:45",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.61,
-        "cards_away": 0.67,
-        "dnb_home": 0.64,
-        "xg": 2.47,
-        "expected_corners": 10.6
-      }
-    },
-    {
-      "league": "Serie A",
-      "home": "Venezia FC",
-      "away": "Udinese Calcio",
-      "kickoff": "06/11 19:45",
-      "markets": {
         "over25": 0.68,
-        "corners95": 0.69,
-        "cards_home": 0.61,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 2.26,
-        "expected_corners": 12.7
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.62,
+        "dnb_home": 0.64,
+        "xg": 2.6,
+        "expected_corners": 8.6
       }
     },
     {
@@ -159,13 +82,13 @@
       "away": "Coventry City FC",
       "kickoff": "06/11 20:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.69,
-        "cards_home": 0.64,
-        "cards_away": 0.66,
-        "dnb_home": 0.58,
-        "xg": 2.83,
-        "expected_corners": 11.0
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.68,
+        "dnb_home": 0.57,
+        "xg": 3.0,
+        "expected_corners": 12.1
       }
     },
     {
@@ -174,13 +97,75 @@
       "away": "FC Arouca",
       "kickoff": "06/11 20:45",
       "markets": {
+        "over25": 0.7,
+        "corners95": 0.59,
+        "cards_home": 0.66,
+        "cards_away": 0.68,
+        "dnb_home": 0.75,
+        "xg": 2.23,
+        "expected_corners": 10.7
+      }
+    }
+  ],
+  "corner": [
+    {
+      "league": "Ligue 1",
+      "home": "Toulouse FC",
+      "away": "RC Strasbourg Alsace",
+      "kickoff": "06/11 19:45",
+      "markets": {
         "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.76,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Derby County FC",
+      "away": "Bolton Wanderers FC",
+      "kickoff": "06/11 20:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.63,
+        "cards_home": 0.55,
+        "cards_away": 0.62,
+        "dnb_home": 0.64,
+        "xg": 2.6,
+        "expected_corners": 8.6
+      }
+    },
+    {
+      "league": "Primera Division",
+      "home": "Sevilla FC",
+      "away": "Deportivo Alavés",
+      "kickoff": "06/11 20:00",
+      "markets": {
+        "over25": 0.59,
         "corners95": 0.61,
         "cards_home": 0.56,
-        "cards_away": 0.57,
-        "dnb_home": 0.63,
-        "xg": 3.21,
-        "expected_corners": 9.4
+        "cards_away": 0.68,
+        "dnb_home": 0.6,
+        "xg": 3.37,
+        "expected_corners": 12.2
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Everton FC",
+      "away": "Coventry City FC",
+      "kickoff": "06/11 20:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.57,
+        "cards_away": 0.68,
+        "dnb_home": 0.57,
+        "xg": 3.0,
+        "expected_corners": 12.1
       }
     },
     {
@@ -189,13 +174,13 @@
       "away": "Fluminense FC",
       "kickoff": "06/11 23:00",
       "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.14,
-        "expected_corners": 8.8
+        "over25": 0.55,
+        "corners95": 0.68,
+        "cards_home": 0.56,
+        "cards_away": 0.61,
+        "dnb_home": 0.6,
+        "xg": 2.57,
+        "expected_corners": 11.8
       }
     }
   ],
@@ -206,43 +191,73 @@
       "away": "PEC Zwolle",
       "kickoff": "06/11 19:00",
       "markets": {
-        "over25": 0.69,
-        "corners95": 0.56,
+        "over25": 0.63,
+        "corners95": 0.57,
         "cards_home": 0.54,
-        "cards_away": 0.58,
-        "dnb_home": 0.7,
-        "xg": 2.14,
-        "expected_corners": 12.4
+        "cards_away": 0.57,
+        "dnb_home": 0.72,
+        "xg": 2.86,
+        "expected_corners": 11.3
       }
     },
     {
-      "league": "Primera Division",
-      "home": "Sevilla FC",
-      "away": "Deportivo Alavés",
-      "kickoff": "06/11 20:00",
+      "league": "Bundesliga",
+      "home": "Hamburger SV",
+      "away": "Borussia Mönchengladbach",
+      "kickoff": "06/11 19:30",
       "markets": {
-        "over25": 0.61,
+        "over25": 0.63,
+        "corners95": 0.56,
+        "cards_home": 0.63,
+        "cards_away": 0.56,
+        "dnb_home": 0.74,
+        "xg": 2.56,
+        "expected_corners": 9.5
+      }
+    },
+    {
+      "league": "Serie A",
+      "home": "Venezia FC",
+      "away": "Udinese Calcio",
+      "kickoff": "06/11 19:45",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.56,
+        "cards_home": 0.58,
+        "cards_away": 0.57,
+        "dnb_home": 0.7,
+        "xg": 3.24,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Ligue 1",
+      "home": "Toulouse FC",
+      "away": "RC Strasbourg Alsace",
+      "kickoff": "06/11 19:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.56,
+        "cards_away": 0.51,
+        "dnb_home": 0.69,
+        "xg": 2.76,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "FC Famalicão",
+      "away": "FC Arouca",
+      "kickoff": "06/11 20:45",
+      "markets": {
+        "over25": 0.7,
         "corners95": 0.59,
         "cards_home": 0.66,
-        "cards_away": 0.65,
-        "dnb_home": 0.72,
-        "xg": 3.17,
-        "expected_corners": 9.2
-      }
-    },
-    {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "EC Vitória",
-      "away": "Fluminense FC",
-      "kickoff": "06/11 23:00",
-      "markets": {
-        "over25": 0.61,
-        "corners95": 0.62,
-        "cards_home": 0.6,
-        "cards_away": 0.54,
-        "dnb_home": 0.74,
-        "xg": 2.14,
-        "expected_corners": 8.8
+        "cards_away": 0.68,
+        "dnb_home": 0.75,
+        "xg": 2.23,
+        "expected_corners": 10.7
       }
     }
   ]
