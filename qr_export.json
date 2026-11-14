@@ -1,6 +1,37 @@
 {
-  "updated_at": "13/11 21:11",
+  "updated_at": "14/11 01:34",
   "value": [],
-  "corner": [],
+  "corner": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Mirassol FC",
+      "away": "CA Mineiro",
+      "kickoff": "14/11 21:30",
+      "markets": {
+        "over25": 0.55,
+        "corners95": 0.69,
+        "cards_home": 0.55,
+        "cards_away": 0.56,
+        "dnb_home": 0.62,
+        "xg": 2.85,
+        "expected_corners": 9.4
+      }
+    },
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "Chapecoense AF",
+      "away": "CR Vasco da Gama",
+      "kickoff": "14/11 23:30",
+      "markets": {
+        "over25": 0.57,
+        "corners95": 0.62,
+        "cards_home": 0.65,
+        "cards_away": 0.6,
+        "dnb_home": 0.65,
+        "xg": 3.3,
+        "expected_corners": 9.7
+      }
+    }
+  ],
   "hot": []
 }
