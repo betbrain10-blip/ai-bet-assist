@@ -1,34 +1,19 @@
 {
-  "updated_at": "24/11 01:46",
+  "updated_at": "24/11 12:01",
   "value": [
-    {
-      "league": "UEFA Champions League",
-      "home": "FK Bodø/Glimt",
-      "away": "LASK Linz",
-      "kickoff": "24/11 17:45",
-      "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.54,
-        "dnb_home": 0.6,
-        "xg": 2.45,
-        "expected_corners": 10.5
-      }
-    },
     {
       "league": "UEFA Champions League",
       "home": "Galatasaray SK",
       "away": "Aston Villa FC",
       "kickoff": "24/11 17:45",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.57,
-        "dnb_home": 0.64,
-        "xg": 2.5,
-        "expected_corners": 10.0
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.65,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 2.52,
+        "expected_corners": 8.5
       }
     },
     {
@@ -37,13 +22,28 @@
       "away": "Preston North End FC",
       "kickoff": "24/11 19:45",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.59,
-        "xg": 3.31,
-        "expected_corners": 10.5
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.63,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 3.1,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Bristol City FC",
+      "away": "Wrexham AFC",
+      "kickoff": "24/11 19:45",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.57,
+        "cards_home": 0.65,
+        "cards_away": 0.62,
+        "dnb_home": 0.64,
+        "xg": 2.33,
+        "expected_corners": 9.8
       }
     },
     {
@@ -52,73 +52,13 @@
       "away": "Queens Park Rangers FC",
       "kickoff": "24/11 19:45",
       "markets": {
-        "over25": 0.72,
-        "corners95": 0.59,
-        "cards_home": 0.6,
-        "cards_away": 0.64,
-        "dnb_home": 0.61,
-        "xg": 3.23,
-        "expected_corners": 9.7
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Sheffield United FC",
-      "away": "Southampton FC",
-      "kickoff": "24/11 19:45",
-      "markets": {
-        "over25": 0.66,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.59,
-        "xg": 2.67,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Middlesbrough FC",
-      "away": "Swansea City AFC",
-      "kickoff": "24/11 19:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.66,
-        "dnb_home": 0.64,
-        "xg": 3.36,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Manchester City FC",
-      "away": "SSC Napoli",
-      "kickoff": "24/11 20:00",
-      "markets": {
         "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.55,
-        "dnb_home": 0.64,
-        "xg": 2.8,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Feyenoord Rotterdam",
-      "away": "FC Porto",
-      "kickoff": "24/11 20:00",
-      "markets": {
-        "over25": 0.69,
-        "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.5,
-        "dnb_home": 0.58,
-        "xg": 2.53,
-        "expected_corners": 8.6
+        "corners95": 0.6,
+        "cards_home": 0.57,
+        "cards_away": 0.67,
+        "dnb_home": 0.68,
+        "xg": 2.82,
+        "expected_corners": 9.1
       }
     },
     {
@@ -127,13 +67,58 @@
       "away": "Racing Club de Lens",
       "kickoff": "24/11 20:00",
       "markets": {
-        "over25": 0.63,
+        "over25": 0.66,
+        "corners95": 0.62,
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.75,
+        "xg": 3.26,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Manchester City FC",
+      "away": "SSC Napoli",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.69,
         "corners95": 0.69,
         "cards_home": 0.56,
-        "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 3.34,
-        "expected_corners": 12.2
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 2.4,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Feyenoord Rotterdam",
+      "away": "FC Porto",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.54,
+        "cards_away": 0.57,
+        "dnb_home": 0.73,
+        "xg": 2.38,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Real Madrid CF",
+      "away": "PSV",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.64,
+        "corners95": 0.56,
+        "cards_home": 0.58,
+        "cards_away": 0.65,
+        "dnb_home": 0.67,
+        "xg": 3.13,
+        "expected_corners": 9.9
       }
     },
     {
@@ -143,42 +128,12 @@
       "kickoff": "24/11 20:00",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 3.06,
-        "expected_corners": 9.9
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "ŠK Slovan Bratislava",
-      "away": "Real Betis Balompié",
-      "kickoff": "24/11 20:00",
-      "markets": {
-        "over25": 0.71,
         "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 2.66,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Real Madrid CF",
-      "away": "PSV",
-      "kickoff": "24/11 20:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.59,
-        "dnb_home": 0.64,
-        "xg": 2.77,
-        "expected_corners": 11.1
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.69,
+        "xg": 2.91,
+        "expected_corners": 8.5
       }
     }
   ],
@@ -189,13 +144,13 @@
       "away": "LASK Linz",
       "kickoff": "24/11 17:45",
       "markets": {
-        "over25": 0.71,
+        "over25": 0.59,
         "corners95": 0.66,
-        "cards_home": 0.67,
-        "cards_away": 0.54,
-        "dnb_home": 0.6,
-        "xg": 2.45,
-        "expected_corners": 10.5
+        "cards_home": 0.56,
+        "cards_away": 0.52,
+        "dnb_home": 0.59,
+        "xg": 3.02,
+        "expected_corners": 10.9
       }
     },
     {
@@ -204,28 +159,13 @@
       "away": "Aston Villa FC",
       "kickoff": "24/11 17:45",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.63,
-        "cards_away": 0.57,
-        "dnb_home": 0.64,
-        "xg": 2.5,
-        "expected_corners": 10.0
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Bristol City FC",
-      "away": "Wrexham AFC",
-      "kickoff": "24/11 19:45",
-      "markets": {
-        "over25": 0.62,
-        "corners95": 0.65,
-        "cards_home": 0.56,
-        "cards_away": 0.52,
-        "dnb_home": 0.57,
-        "xg": 2.62,
-        "expected_corners": 9.6
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.65,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 2.52,
+        "expected_corners": 8.5
       }
     },
     {
@@ -234,13 +174,28 @@
       "away": "Preston North End FC",
       "kickoff": "24/11 19:45",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.65,
-        "cards_home": 0.64,
-        "cards_away": 0.65,
-        "dnb_home": 0.59,
-        "xg": 3.31,
-        "expected_corners": 10.5
+        "over25": 0.66,
+        "corners95": 0.67,
+        "cards_home": 0.63,
+        "cards_away": 0.51,
+        "dnb_home": 0.58,
+        "xg": 3.1,
+        "expected_corners": 9.8
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Portsmouth FC",
+      "away": "West Ham United FC",
+      "kickoff": "24/11 19:45",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.61,
+        "cards_home": 0.6,
+        "cards_away": 0.66,
+        "dnb_home": 0.57,
+        "xg": 2.25,
+        "expected_corners": 10.9
       }
     },
     {
@@ -249,58 +204,13 @@
       "away": "Southampton FC",
       "kickoff": "24/11 19:45",
       "markets": {
-        "over25": 0.66,
-        "corners95": 0.7,
-        "cards_home": 0.67,
-        "cards_away": 0.65,
-        "dnb_home": 0.59,
-        "xg": 2.67,
-        "expected_corners": 9.4
-      }
-    },
-    {
-      "league": "Championship",
-      "home": "Middlesbrough FC",
-      "away": "Swansea City AFC",
-      "kickoff": "24/11 19:45",
-      "markets": {
-        "over25": 0.68,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.66,
-        "dnb_home": 0.64,
-        "xg": 3.36,
-        "expected_corners": 8.8
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Manchester City FC",
-      "away": "SSC Napoli",
-      "kickoff": "24/11 20:00",
-      "markets": {
-        "over25": 0.7,
-        "corners95": 0.69,
-        "cards_home": 0.59,
-        "cards_away": 0.55,
-        "dnb_home": 0.64,
-        "xg": 2.8,
-        "expected_corners": 12.0
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Feyenoord Rotterdam",
-      "away": "FC Porto",
-      "kickoff": "24/11 20:00",
-      "markets": {
-        "over25": 0.69,
+        "over25": 0.6,
         "corners95": 0.66,
-        "cards_home": 0.64,
-        "cards_away": 0.5,
-        "dnb_home": 0.58,
-        "xg": 2.53,
-        "expected_corners": 8.6
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.7,
+        "xg": 3.38,
+        "expected_corners": 9.2
       }
     },
     {
@@ -309,28 +219,58 @@
       "away": "Racing Club de Lens",
       "kickoff": "24/11 20:00",
       "markets": {
-        "over25": 0.63,
-        "corners95": 0.69,
-        "cards_home": 0.56,
+        "over25": 0.66,
+        "corners95": 0.62,
+        "cards_home": 0.52,
         "cards_away": 0.63,
-        "dnb_home": 0.63,
-        "xg": 3.34,
-        "expected_corners": 12.2
+        "dnb_home": 0.75,
+        "xg": 3.26,
+        "expected_corners": 12.5
       }
     },
     {
       "league": "UEFA Champions League",
-      "home": "Como 1907",
-      "away": "PAE AEK",
+      "home": "Manchester City FC",
+      "away": "SSC Napoli",
       "kickoff": "24/11 20:00",
       "markets": {
-        "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 3.06,
-        "expected_corners": 9.9
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 2.4,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Feyenoord Rotterdam",
+      "away": "FC Porto",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.54,
+        "cards_away": 0.57,
+        "dnb_home": 0.73,
+        "xg": 2.38,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Derby County FC",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.64,
+        "expected_corners": 8.9
       }
     },
     {
@@ -339,45 +279,13 @@
       "away": "Real Betis Balompié",
       "kickoff": "24/11 20:00",
       "markets": {
-        "over25": 0.71,
-        "corners95": 0.66,
-        "cards_home": 0.63,
-        "cards_away": 0.59,
-        "dnb_home": 0.56,
-        "xg": 2.66,
-        "expected_corners": 8.9
-      }
-    },
-    {
-      "league": "UEFA Champions League",
-      "home": "Real Madrid CF",
-      "away": "PSV",
-      "kickoff": "24/11 20:00",
-      "markets": {
-        "over25": 0.72,
-        "corners95": 0.62,
-        "cards_home": 0.59,
-        "cards_away": 0.59,
-        "dnb_home": 0.64,
-        "xg": 2.77,
-        "expected_corners": 11.1
-      }
-    }
-  ],
-  "hot": [
-    {
-      "league": "Championship",
-      "home": "Wolverhampton Wanderers FC",
-      "away": "Derby County FC",
-      "kickoff": "24/11 20:00",
-      "markets": {
-        "over25": 0.57,
-        "corners95": 0.56,
-        "cards_home": 0.62,
-        "cards_away": 0.58,
+        "over25": 0.58,
+        "corners95": 0.67,
+        "cards_home": 0.6,
+        "cards_away": 0.67,
         "dnb_home": 0.71,
-        "xg": 3.21,
-        "expected_corners": 12.0
+        "xg": 3.17,
+        "expected_corners": 9.7
       }
     },
     {
@@ -387,12 +295,119 @@
       "kickoff": "24/11 20:00",
       "markets": {
         "over25": 0.64,
-        "corners95": 0.67,
-        "cards_home": 0.51,
-        "cards_away": 0.66,
-        "dnb_home": 0.72,
-        "xg": 3.06,
-        "expected_corners": 9.9
+        "corners95": 0.66,
+        "cards_home": 0.67,
+        "cards_away": 0.62,
+        "dnb_home": 0.69,
+        "xg": 2.91,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Arsenal FC",
+      "away": "Borussia Dortmund",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.61,
+        "cards_home": 0.59,
+        "cards_away": 0.61,
+        "dnb_home": 0.62,
+        "xg": 3.39,
+        "expected_corners": 10.8
+      }
+    }
+  ],
+  "hot": [
+    {
+      "league": "UEFA Champions League",
+      "home": "Galatasaray SK",
+      "away": "Aston Villa FC",
+      "kickoff": "24/11 17:45",
+      "markets": {
+        "over25": 0.67,
+        "corners95": 0.66,
+        "cards_home": 0.65,
+        "cards_away": 0.67,
+        "dnb_home": 0.73,
+        "xg": 2.52,
+        "expected_corners": 8.5
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Sheffield United FC",
+      "away": "Southampton FC",
+      "kickoff": "24/11 19:45",
+      "markets": {
+        "over25": 0.6,
+        "corners95": 0.66,
+        "cards_home": 0.6,
+        "cards_away": 0.62,
+        "dnb_home": 0.7,
+        "xg": 3.38,
+        "expected_corners": 9.2
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "RB Leipzig",
+      "away": "Racing Club de Lens",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.66,
+        "corners95": 0.62,
+        "cards_home": 0.52,
+        "cards_away": 0.63,
+        "dnb_home": 0.75,
+        "xg": 3.26,
+        "expected_corners": 12.5
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Manchester City FC",
+      "away": "SSC Napoli",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.69,
+        "corners95": 0.69,
+        "cards_home": 0.56,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 2.4,
+        "expected_corners": 12.1
+      }
+    },
+    {
+      "league": "UEFA Champions League",
+      "home": "Feyenoord Rotterdam",
+      "away": "FC Porto",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.65,
+        "corners95": 0.61,
+        "cards_home": 0.54,
+        "cards_away": 0.57,
+        "dnb_home": 0.73,
+        "xg": 2.38,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Wolverhampton Wanderers FC",
+      "away": "Derby County FC",
+      "kickoff": "24/11 20:00",
+      "markets": {
+        "over25": 0.62,
+        "corners95": 0.69,
+        "cards_home": 0.52,
+        "cards_away": 0.56,
+        "dnb_home": 0.73,
+        "xg": 2.64,
+        "expected_corners": 8.9
       }
     }
   ]
