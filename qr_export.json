@@ -1,6 +1,38 @@
 {
-  "updated_at": "25/11 23:59",
-  "value": [],
+  "updated_at": "26/11 08:00",
+  "value": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "São Paulo FC",
+      "away": "Clube do Remo",
+      "kickoff": "26/11 23:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.59,
+        "cards_home": 0.67,
+        "cards_away": 0.64,
+        "dnb_home": 0.74,
+        "xg": 2.12,
+        "expected_corners": 10.4
+      }
+    }
+  ],
   "corner": [],
-  "hot": []
+  "hot": [
+    {
+      "league": "Campeonato Brasileiro Série A",
+      "home": "São Paulo FC",
+      "away": "Clube do Remo",
+      "kickoff": "26/11 23:00",
+      "markets": {
+        "over25": 0.68,
+        "corners95": 0.59,
+        "cards_home": 0.67,
+        "cards_away": 0.64,
+        "dnb_home": 0.74,
+        "xg": 2.12,
+        "expected_corners": 10.4
+      }
+    }
+  ]
 }
