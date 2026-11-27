@@ -1,53 +1,128 @@
 {
-  "updated_at": "26/11 18:33",
+  "updated_at": "27/11 02:01",
   "value": [
     {
+      "league": "Bundesliga",
+      "home": "SV Werder Bremen",
+      "away": "Borussia Mönchengladbach",
+      "kickoff": "27/11 19:30",
+      "markets": {
+        "over25": 0.7,
+        "corners95": 0.6,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 3.33,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CS Marítimo",
+      "away": "CD Nacional",
+      "kickoff": "27/11 20:15",
+      "markets": {
+        "over25": 0.63,
+        "corners95": 0.63,
+        "cards_home": 0.53,
+        "cards_away": 0.59,
+        "dnb_home": 0.59,
+        "xg": 2.18,
+        "expected_corners": 11.6
+      }
+    },
+    {
       "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Clube do Remo",
-      "kickoff": "26/11 23:00",
+      "home": "Fluminense FC",
+      "away": "Cruzeiro EC",
+      "kickoff": "27/11 23:00",
       "markets": {
         "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.13,
-        "expected_corners": 12.7
+        "corners95": 0.57,
+        "cards_home": 0.67,
+        "cards_away": 0.67,
+        "dnb_home": 0.58,
+        "xg": 2.5,
+        "expected_corners": 9.9
       }
     }
   ],
   "corner": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Clube do Remo",
-      "kickoff": "26/11 23:00",
+      "league": "Serie A",
+      "home": "Venezia FC",
+      "away": "Bologna FC 1909",
+      "kickoff": "27/11 19:45",
       "markets": {
-        "over25": 0.65,
+        "over25": 0.55,
+        "corners95": 0.66,
+        "cards_home": 0.52,
+        "cards_away": 0.66,
+        "dnb_home": 0.68,
+        "xg": 2.18,
+        "expected_corners": 9.7
+      }
+    },
+    {
+      "league": "Premier League",
+      "home": "Nottingham Forest FC",
+      "away": "Chelsea FC",
+      "kickoff": "27/11 20:00",
+      "markets": {
+        "over25": 0.59,
+        "corners95": 0.61,
+        "cards_home": 0.55,
+        "cards_away": 0.65,
+        "dnb_home": 0.62,
+        "xg": 2.18,
+        "expected_corners": 10.1
+      }
+    },
+    {
+      "league": "Primeira Liga",
+      "home": "CS Marítimo",
+      "away": "CD Nacional",
+      "kickoff": "27/11 20:15",
+      "markets": {
+        "over25": 0.63,
         "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.13,
-        "expected_corners": 12.7
+        "cards_home": 0.53,
+        "cards_away": 0.59,
+        "dnb_home": 0.59,
+        "xg": 2.18,
+        "expected_corners": 11.6
       }
     }
   ],
   "hot": [
     {
-      "league": "Campeonato Brasileiro Série A",
-      "home": "São Paulo FC",
-      "away": "Clube do Remo",
-      "kickoff": "26/11 23:00",
+      "league": "Bundesliga",
+      "home": "SV Werder Bremen",
+      "away": "Borussia Mönchengladbach",
+      "kickoff": "27/11 19:30",
       "markets": {
-        "over25": 0.65,
-        "corners95": 0.63,
-        "cards_home": 0.68,
-        "cards_away": 0.51,
-        "dnb_home": 0.74,
-        "xg": 2.13,
-        "expected_corners": 12.7
+        "over25": 0.7,
+        "corners95": 0.6,
+        "cards_home": 0.54,
+        "cards_away": 0.64,
+        "dnb_home": 0.73,
+        "xg": 3.33,
+        "expected_corners": 9.6
+      }
+    },
+    {
+      "league": "Championship",
+      "home": "Southampton FC",
+      "away": "Middlesbrough FC",
+      "kickoff": "27/11 20:00",
+      "markets": {
+        "over25": 0.61,
+        "corners95": 0.57,
+        "cards_home": 0.58,
+        "cards_away": 0.61,
+        "dnb_home": 0.75,
+        "xg": 2.79,
+        "expected_corners": 9.9
       }
     }
   ]
